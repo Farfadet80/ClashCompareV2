@@ -1,0 +1,260 @@
+{
+  "version": "3.3",
+  "detector_classes": [
+    {
+      "id": "town-hall",
+      "name": "Hôtel de ville",
+      "category": "core"
+    },
+    {
+      "id": "cannon",
+      "name": "Canon",
+      "category": "defense"
+    },
+    {
+      "id": "archer-tower",
+      "name": "Tour d'archers",
+      "category": "defense"
+    },
+    {
+      "id": "mortar",
+      "name": "Mortier",
+      "category": "defense"
+    },
+    {
+      "id": "air-defense",
+      "name": "Défense antiaérienne",
+      "category": "defense"
+    },
+    {
+      "id": "wizard-tower",
+      "name": "Tour de sorciers",
+      "category": "defense"
+    },
+    {
+      "id": "air-sweeper",
+      "name": "Propulseur d'air",
+      "category": "defense"
+    },
+    {
+      "id": "hidden-tesla",
+      "name": "Tesla camouflée",
+      "category": "defense"
+    },
+    {
+      "id": "bomb-tower",
+      "name": "Tour à bombes",
+      "category": "defense"
+    },
+    {
+      "id": "x-bow",
+      "name": "Arc-X",
+      "category": "defense"
+    },
+    {
+      "id": "inferno-tower",
+      "name": "Tour de l'enfer",
+      "category": "defense"
+    },
+    {
+      "id": "eagle-artillery",
+      "name": "Aigle artilleur",
+      "category": "defense"
+    },
+    {
+      "id": "scattershot",
+      "name": "Catapulte erratique",
+      "category": "defense"
+    },
+    {
+      "id": "builders-hut",
+      "name": "Cabane d'ouvrier",
+      "category": "defense"
+    },
+    {
+      "id": "spell-tower",
+      "name": "Tour de sorts",
+      "category": "defense"
+    },
+    {
+      "id": "monolith",
+      "name": "Monolithe",
+      "category": "defense"
+    },
+    {
+      "id": "ricochet-cannon",
+      "name": "Canon ricochet",
+      "category": "merged-defense"
+    },
+    {
+      "id": "multi-archer-tower",
+      "name": "Tour multi-archers",
+      "category": "merged-defense"
+    },
+    {
+      "id": "firespitter",
+      "name": "Cracheur de feu",
+      "category": "defense"
+    },
+    {
+      "id": "wall",
+      "name": "Mur",
+      "category": "wall"
+    },
+    {
+      "id": "gold-mine",
+      "name": "Mine d'or",
+      "category": "resource"
+    },
+    {
+      "id": "elixir-collector",
+      "name": "Extracteur d'élixir",
+      "category": "resource"
+    },
+    {
+      "id": "dark-elixir-drill",
+      "name": "Foreuse d'élixir noir",
+      "category": "resource"
+    },
+    {
+      "id": "gold-storage",
+      "name": "Réserve d'or",
+      "category": "resource"
+    },
+    {
+      "id": "elixir-storage",
+      "name": "Réserve d'élixir",
+      "category": "resource"
+    },
+    {
+      "id": "dark-elixir-storage",
+      "name": "Réserve d'élixir noir",
+      "category": "resource"
+    },
+    {
+      "id": "clan-castle",
+      "name": "Château de clan",
+      "category": "army"
+    },
+    {
+      "id": "army-camp",
+      "name": "Camp militaire",
+      "category": "army"
+    },
+    {
+      "id": "barracks",
+      "name": "Caserne",
+      "category": "army"
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratoire",
+      "category": "army"
+    },
+    {
+      "id": "spell-factory",
+      "name": "Usine de sorts",
+      "category": "army"
+    },
+    {
+      "id": "dark-spell-factory",
+      "name": "Usine de sorts noirs",
+      "category": "army"
+    },
+    {
+      "id": "workshop",
+      "name": "Atelier",
+      "category": "army"
+    },
+    {
+      "id": "pet-house",
+      "name": "Animalerie",
+      "category": "army"
+    },
+    {
+      "id": "blacksmith",
+      "name": "Forgeron",
+      "category": "army"
+    },
+    {
+      "id": "hero-hall",
+      "name": "Hall des héros",
+      "category": "hero"
+    },
+    {
+      "id": "dark-barracks",
+      "name": "Caserne noire",
+      "category": "army"
+    },
+    {
+      "id": "multi-gear-tower",
+      "name": "Tour multi-équipée",
+      "category": "defense"
+    },
+    {
+      "id": "revenge-tower",
+      "name": "Tour vengeuse",
+      "category": "defense"
+    },
+    {
+      "id": "super-wizard-tower",
+      "name": "Tour de super sorciers",
+      "category": "defense"
+    },
+    {
+      "id": "town-hall-guardian",
+      "name": "Gardien d'hôtel de ville",
+      "category": "town-hall-guardian"
+    },
+    {
+      "id": "crafted-defense",
+      "name": "Défense fabriquée",
+      "category": "crafted-defense"
+    },
+    {
+      "id": "bomb",
+      "name": "Bombe",
+      "category": "trap"
+    },
+    {
+      "id": "spring-trap",
+      "name": "Piège à ressort",
+      "category": "trap"
+    },
+    {
+      "id": "air-bomb",
+      "name": "Bombe aérienne",
+      "category": "trap"
+    },
+    {
+      "id": "giant-bomb",
+      "name": "Bombe géante",
+      "category": "trap"
+    },
+    {
+      "id": "seeking-air-mine",
+      "name": "Mine chercheuse",
+      "category": "trap"
+    },
+    {
+      "id": "skeleton-trap",
+      "name": "Piège squelettique",
+      "category": "trap"
+    },
+    {
+      "id": "tornado-trap",
+      "name": "Piège tornade",
+      "category": "trap"
+    },
+    {
+      "id": "giga-bomb",
+      "name": "Giga bombe",
+      "category": "trap"
+    }
+  ],
+  "strategy": {
+    "stage_1": "Detect building/trap type from full village screenshot.",
+    "stage_2": "Crop each detection and classify level/supercharge within that building type.",
+    "reason": "A two-stage model is far more practical than hundreds of building-level detector classes."
+  }
+}
