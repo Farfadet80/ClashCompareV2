@@ -3,47 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#101827">
+  <meta name="theme-color" content="#0b1220">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="CoC Compare">
+  <meta name="apple-mobile-web-app-title" content="ClashCompare">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>CoC Compare</title>
+  <title>ClashCompare V2</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app">
-    <header class="hero">
-      <div class="logo">⚔️</div>
-      <div>
-        <h1>CoC Compare</h1>
-        <p>Compare deux joueurs Clash of Clans</p>
-      </div>
-    </header>
+<main class="app">
+  <header class="hero">
+    <div class="logo">⚔️</div>
+    <div>
+      <h1>ClashCompare</h1>
+      <p>Compare deux joueurs Clash of Clans</p>
+    </div>
+  </header>
 
-    <section class="card">
-      <h2>👤 Joueurs</h2>
+  <section class="card">
+    <h2>Joueurs</h2>
+    <label for="player1">Joueur A</label>
+    <input id="player1" placeholder="#TAGJOUEUR" autocomplete="off" autocapitalize="characters">
 
-      <label for="player1">Joueur 1</label>
-      <input id="player1" type="text" autocomplete="off" placeholder="#XXXXXXXX" maxlength="15">
+    <label for="player2">Joueur B</label>
+    <input id="player2" placeholder="#TAGJOUEUR" autocomplete="off" autocapitalize="characters">
 
-      <label for="player2">Joueur 2</label>
-      <input id="player2" type="text" autocomplete="off" placeholder="#XXXXXXXX" maxlength="15">
+    <button id="compareBtn" class="primary">Comparer</button>
+    <button id="clearBtn" class="secondary">Effacer</button>
 
-      <button id="compareBtn" class="primary">🔍 Comparer</button>
-      <button id="clearBtn" class="secondary">Effacer</button>
+    <p id="status" class="hint">Les tags restent enregistrés sur cet appareil.</p>
+  </section>
 
-      <p class="hint">Les tags sont enregistrés uniquement sur cet appareil.</p>
-    </section>
+  <section id="profiles" class="profiles hidden"></section>
 
-    <section id="result" class="card hidden" aria-live="polite"></section>
+  <section id="comparison" class="card hidden">
+    <h2>Comparatif</h2>
+    <div id="compareRows"></div>
+  </section>
 
-    <footer>
-      V1 • Interface prête pour la connexion aux vraies données
-    </footer>
-  </main>
+  <section class="card info">
+    <h2>V2</h2>
+    <p>Cette version récupère les données publiques disponibles via l’API officielle Clash of Clans.</p>
+    <p class="small">Les bâtiments et murs du village principal ne sont pas fournis directement par l’endpoint joueur officiel.</p>
+  </section>
 
-  <script src="app.js"></script>
+  <footer>ClashCompare V2</footer>
+</main>
+<script src="config.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

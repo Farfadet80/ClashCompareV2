@@ -1,11 +1,11 @@
 {
-  "name": "CoC Compare",
-  "short_name": "CoC Compare",
+  "name": "ClashCompare V2",
+  "short_name": "ClashCompare",
   "description": "Compare deux joueurs Clash of Clans.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0b1220",
-  "theme_color": "#101827",
+  "background_color": "#09111f",
+  "theme_color": "#0b1220",
   "lang": "fr",
   "icons": [
     {

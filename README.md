@@ -1,21 +1,35 @@
-# CoC Compare — PWA V1
+# ClashCompare V2
 
-Cette version est prête à être hébergée gratuitement avec GitHub Pages.
+Contenu :
+- PWA GitHub Pages
+- récupération de vraies données joueur
+- profils Joueur A / Joueur B
+- comparaison HDV, trophées, XP, étoiles de guerre, dons
+- héros
+- estimation de progression des troupes et sorts disponibles dans l'API
+- Cloudflare Worker séparé pour protéger le token API
 
-## Installation
+## Fichiers à mettre à la racine de ton dépôt GitHub
 
-1. Crée un dépôt GitHub public.
-2. Envoie tous les fichiers contenus dans ce ZIP dans le dépôt.
-3. Garde `index.html` à la racine.
-4. Va dans **Settings → Pages**.
-5. Dans **Build and deployment**, choisis **Deploy from a branch**.
-6. Choisis la branche `main` et le dossier `/ (root)`.
-7. Clique sur **Save**.
-8. Ouvre l'adresse GitHub Pages dans Safari sur ton iPhone.
-9. Safari → Partager → Ajouter à l'écran d'accueil.
+index.html
+style.css
+app.js
+config.js
+manifest.json
+service-worker.js
+icons/
 
-## Important
+Le dossier `cloudflare-worker/` n'a pas besoin d'être servi par GitHub Pages. Il contient le code à copier dans Cloudflare.
 
-La V1 affiche actuellement des statistiques de démonstration.
+## Mise à jour depuis V1
 
-Pour connecter l'API officielle Clash of Clans, il faudra utiliser un petit backend/proxy sécurisé afin de ne pas exposer la clé API dans le code public de la PWA.
+Tu peux remplacer les anciens fichiers par ceux de la V2.
+
+IMPORTANT : configure ensuite `config.js` avec l'URL de ton Worker.
+
+Lis :
+cloudflare-worker/README-CLOUDFLARE.md
+
+## Limite actuelle
+
+L'endpoint joueur Clash of Clans fournit beaucoup de données (profil, troupes, héros, sorts, etc.), mais pas la liste complète des bâtiments et murs du village principal. Cette partie demandera donc une autre méthode.
