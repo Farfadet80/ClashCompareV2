@@ -1,3 +1,5 @@
-// IMPORTANT : remplace uniquement l'URL ci-dessous après avoir créé ton Cloudflare Worker.
-// Exemple : https://clashcompare-api.tonpseudo.workers.dev
-window.CLASHCOMPARE_API = "COLLE_ICI_URL_DU_WORKER";
+// ClashCompare V3
+// Le # joueur reste dans l'interface.
+// Plus tard, renseigner ici l'URL d'un backend compatible si vous souhaitez enrichir
+// la fiche avec les données publiques de l'API officielle Clash of Clans.
+window.CLASHCOMPARE_API = "";

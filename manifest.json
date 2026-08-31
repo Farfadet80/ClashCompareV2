@@ -1,24 +1,9 @@
 {
-  "name": "ClashCompare V2",
+  "name": "ClashCompare V3",
   "short_name": "ClashCompare",
-  "description": "Compare deux joueurs Clash of Clans.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#09111f",
-  "theme_color": "#0b1220",
-  "lang": "fr",
-  "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ]
+  "background_color": "#0b1220",
+  "theme_color": "#111827",
+  "icons": []
 }

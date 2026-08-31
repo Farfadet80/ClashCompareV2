@@ -1,57 +1,91 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="ClashCompare">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>ClashCompare V2</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#111827" />
+  <title>ClashCompare V3</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="app">
-  <header class="hero">
-    <div class="logo">⚔️</div>
+  <header class="topbar">
     <div>
-      <h1>ClashCompare</h1>
-      <p>Compare deux joueurs Clash of Clans</p>
+      <div class="brand">⚔️ ClashCompare</div>
+      <div class="subtitle">Compare deux villages à partir du # joueur + d'une capture</div>
     </div>
   </header>
 
-  <section class="card">
-    <h2>Joueurs</h2>
-    <label for="player1">Joueur A</label>
-    <input id="player1" placeholder="#TAGJOUEUR" autocomplete="off" autocapitalize="characters">
+  <main class="wrap">
+    <section class="tabs" aria-label="Navigation">
+      <button class="tab active" data-tab="a">Joueur A</button>
+      <button class="tab" data-tab="b">Joueur B</button>
+      <button class="tab" data-tab="compare">Comparatif</button>
+    </section>
 
-    <label for="player2">Joueur B</label>
-    <input id="player2" placeholder="#TAGJOUEUR" autocomplete="off" autocapitalize="characters">
+    <section id="panel-a" class="panel active"></section>
+    <section id="panel-b" class="panel"></section>
 
-    <button id="compareBtn" class="primary">Comparer</button>
-    <button id="clearBtn" class="secondary">Effacer</button>
+    <section id="panel-compare" class="panel">
+      <div class="card">
+        <h2>Comparatif</h2>
+        <p class="muted">Ajoute les deux joueurs et leurs captures, puis lance l'analyse.</p>
+        <div id="compare-content" class="compare-grid"></div>
+      </div>
+    </section>
+  </main>
 
-    <p id="status" class="hint">Les tags restent enregistrés sur cet appareil.</p>
-  </section>
+  <template id="player-template">
+    <div class="card player-card">
+      <div class="player-head">
+        <div>
+          <h2 class="player-title">Joueur</h2>
+          <p class="muted">Le # reste recommandé pour enrichir les données publiques du profil.</p>
+        </div>
+        <span class="status-pill">En attente</span>
+      </div>
 
-  <section id="profiles" class="profiles hidden"></section>
+      <label class="field">
+        <span># du joueur</span>
+        <input class="tag-input" type="text" autocapitalize="characters" placeholder="#ABC123XYZ" />
+      </label>
 
-  <section id="comparison" class="card hidden">
-    <h2>Comparatif</h2>
-    <div id="compareRows"></div>
-  </section>
+      <div class="upload-box">
+        <input class="image-input" type="file" accept="image/*" hidden />
+        <button class="upload-btn" type="button">
+          <span class="upload-icon">📸</span>
+          <span>Ajouter l'image du village</span>
+        </button>
 
-  <section class="card info">
-    <h2>V2</h2>
-    <p>Cette version récupère les données publiques disponibles via l’API officielle Clash of Clans.</p>
-    <p class="small">Les bâtiments et murs du village principal ne sont pas fournis directement par l’endpoint joueur officiel.</p>
-  </section>
+        <div class="photo-tip">
+          <strong>Pour un meilleur traitement :</strong>
+          ouvre Clash of Clans → <b>Modifier le village</b> → <b>Mode photo</b>, puis fais une capture avec tout le village visible et envoie cette image ici.
+        </div>
 
-  <footer>ClashCompare V2</footer>
-</main>
-<script src="config.js"></script>
-<script src="app.js"></script>
+        <img class="preview" alt="Aperçu du village" hidden />
+      </div>
+
+      <div class="actions">
+        <button class="analyze-btn primary" type="button">Analyser le village</button>
+        <button class="clear-btn ghost" type="button">Effacer</button>
+      </div>
+
+      <div class="analysis-area" hidden>
+        <h3>Résultat de l'analyse</h3>
+        <div class="notice">
+          La V3 prépare l'image et la fiche joueur dans le navigateur. La reconnaissance détaillée des bâtiments sera branchée sur le moteur de vision sans exposer de clé Supercell.
+        </div>
+        <div class="result-grid">
+          <div class="stat"><span>Tag</span><b class="r-tag">—</b></div>
+          <div class="stat"><span>Image</span><b class="r-image">—</b></div>
+          <div class="stat"><span>Qualité de capture</span><b class="r-quality">—</b></div>
+          <div class="stat"><span>État</span><b class="r-state">Prête</b></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

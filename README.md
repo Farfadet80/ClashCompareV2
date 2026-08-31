@@ -1,35 +1,19 @@
-# ClashCompare V2
+# ClashCompare V3
 
-Contenu :
-- PWA GitHub Pages
-- récupération de vraies données joueur
-- profils Joueur A / Joueur B
-- comparaison HDV, trophées, XP, étoiles de guerre, dons
-- héros
-- estimation de progression des troupes et sorts disponibles dans l'API
-- Cloudflare Worker séparé pour protéger le token API
+PWA iPhone de comparaison de villages Clash of Clans.
 
-## Fichiers à mettre à la racine de ton dépôt GitHub
+## V3
+- # joueur conservé
+- Joueur A / Joueur B
+- Import d'une capture complète du village
+- Conseil sous le bouton d'import :
+  Modifier le village -> Mode photo -> capture complète
+- Aperçu de l'image
+- Vérification de la résolution de la capture
+- Onglet Comparatif
+- PWA installable depuis Safari
 
-index.html
-style.css
-app.js
-config.js
-manifest.json
-service-worker.js
-icons/
-
-Le dossier `cloudflare-worker/` n'a pas besoin d'être servi par GitHub Pages. Il contient le code à copier dans Cloudflare.
-
-## Mise à jour depuis V1
-
-Tu peux remplacer les anciens fichiers par ceux de la V2.
-
-IMPORTANT : configure ensuite `config.js` avec l'URL de ton Worker.
-
-Lis :
-cloudflare-worker/README-CLOUDFLARE.md
-
-## Limite actuelle
-
-L'endpoint joueur Clash of Clans fournit beaucoup de données (profil, troupes, héros, sorts, etc.), mais pas la liste complète des bâtiments et murs du village principal. Cette partie demandera donc une autre méthode.
+## Important
+Cette version met en place l'interface et le flux d'import/analyse.
+Elle ne prétend pas encore reconnaître de façon fiable tous les bâtiments et niveaux :
+le moteur de vision devra être ajouté ensuite.
