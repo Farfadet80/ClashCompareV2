@@ -110,3 +110,13 @@ renderCompare();
 if("serviceWorker" in navigator){
   window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
 }
+
+fetch("./data/buildings.json")
+  .then(r => r.json())
+  .then(catalog => {
+    const levels = catalog.buildings.reduce((n,b)=>n+b.levels.length,0);
+    const el = document.querySelector("#catalog-count");
+    if(el) el.textContent = `${catalog.buildings.length} types de bâtiments • ${levels} emplacements niveau`;
+    window.CLASHCOMPARE_BUILDINGS = catalog;
+  })
+  .catch(()=>{ const el=document.querySelector("#catalog-count"); if(el) el.textContent="Catalogue indisponible"; });

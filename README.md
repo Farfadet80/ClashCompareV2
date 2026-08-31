@@ -32,3 +32,17 @@ Les images de référence ne sont volontairement pas redistribuées dans le ZIP.
 Catalogue étendu avec les catégories visuelles récentes du village principal, les pièges,
 les défenses fabriquées, le gardien d'HDV et les états de supercharge.
 La mise à jour du 31/08/2026 (supercharges Cabane d'ouvrier + Monolithe) est prise en compte.
+
+
+## V3.3 — AI Training Ready
+- Pipeline en 2 étapes : détection du type de bâtiment puis classification du niveau
+- Structure de dataset YOLO prête
+- `classes.json` généré depuis le catalogue V3.2
+- Notebook Google Colab inclus
+- Export ONNX prévu pour exécution dans le navigateur
+- Dossier `models/` prêt à recevoir le modèle entraîné
+
+### Pourquoi 2 étapes ?
+Détecter directement des centaines de combinaisons bâtiment+niveau est beaucoup moins robuste.
+ClashCompare détecte d'abord `cannon`, `archer-tower`, etc., puis un classifieur dédié estime
+le niveau du crop détecté.
