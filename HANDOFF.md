@@ -1,6 +1,6 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-04 (référence HANDOFF + Git + objectifs produit)
+Dernière mise à jour : 2026-09-04 (passation ChatGPT + HANDOFF + Git)
 
 ## État actuel
 
@@ -238,6 +238,11 @@ Pièges VAL 640→800 (mAP50-95) : air-bomb 0,12→0,22 ; bomb 0,18→0,24 ; spr
 - models/experimental/level-cannon.pt + README
 - models/README.md, service-worker.js (clashcompare-v3-5-infer800), HANDOFF.md
 
+
+## Passation ChatGPT
+
+Vision produit et décisions ChatGPT → Cursor : voir **PASSATION-CHATGPT.md** (complète ce HANDOFF).
+Si conflit technique : **fichiers / métriques / Git réels** prioritaires.
 
 ## Objectifs produit (référence Jimmy)
 
