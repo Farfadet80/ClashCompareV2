@@ -35,6 +35,19 @@ def main() -> None:
     parser.add_argument("--cls-pw", type=float, default=0.0)
     parser.add_argument("--distill-model", type=Path, help="Modèle professeur pour la distillation")
     parser.add_argument("--allow-small-dataset", action="store_true")
+    parser.add_argument(
+        "--allow-split-overlap",
+        action="store_true",
+        help=(
+            "Utilise le train brut même s'il chevauche val/test. "
+            "Dangereux : réservé à un diagnostic explicite."
+        ),
+    )
+    parser.add_argument(
+        "--prepare-only",
+        action="store_true",
+        help="Valide et matérialise la config assainie sans lancer d'entraînement.",
+    )
     parser.add_argument("--resume", type=Path, help="Checkpoint last.pt à reprendre")
     parser.add_argument("--reuse-run-name", action="store_true", help="Autorise explicitement un dossier de run existant")
     args = parser.parse_args()
@@ -58,8 +71,26 @@ def main() -> None:
     runtime_config = TRAINING / "runs" / "dataset.resolved.yaml"
     config = yaml.safe_load(source_config.read_text(encoding="utf-8"))
     config["path"] = str((TRAINING / "dataset" / "detector").resolve())
+    if not args.allow_split_overlap:
+        clean_train_list = TRAINING / "dataset" / "detector" / "train-clean.txt"
+        audit = [
+            sys.executable,
+            str(TRAINING / "scripts" / "audit_split_integrity.py"),
+            "--yaml",
+            str(source_config),
+            "--clean-train-list",
+            str(clean_train_list),
+        ]
+        subprocess.run(audit, check=True)
+        config["train"] = str(clean_train_list.resolve())
+        print(f"Train assaini utilisé: {clean_train_list}")
+    else:
+        print("ATTENTION: chevauchements train/val/test explicitement autorisés.")
     runtime_config.parent.mkdir(parents=True, exist_ok=True)
     runtime_config.write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
+    if args.prepare_only:
+        print(f"Configuration prête: {runtime_config}")
+        return
 
     run_dir = TRAINING / "runs" / args.name
     if run_dir.exists() and not args.reuse_run_name:

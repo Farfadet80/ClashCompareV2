@@ -277,11 +277,43 @@ Si conflit technique : **fichiers / métriques / Git réels** prioritaires.
 - Avant grosses features : vérifier bout-en-bout + commit/tag de sauvegarde propre.
 - Si casse : git checkout / revert vers le dernier tag de sauvegarde.
 
+## Audit intégrité des splits (2026-09-04)
+
+L'audit exact par stem et SHA-256 a confirmé une fuite introduite **après
+l'entraînement V5** par les imports `--as-train` :
+
+- train brut : 999 images ;
+- 42 images train identiques à VAL ;
+- 26 images train identiques à TEST ;
+- train assaini : **931 images** ;
+- val et test restent disjoints.
+
+Conséquence : les métriques V5 restent défendables (V5 a été entraînée avant ces 68
+copies), mais V6 et tout futur fine-tune sur les 999 images brutes sont biaisés.
+
+Correctif non destructif :
+
+- `training/scripts/audit_split_integrity.py` génère
+  `training/dataset/detector/train-clean.txt` et
+  `training/reports/split-integrity.json` ;
+- aucune image ni annotation source n'est supprimée ;
+- `train_detector.py` utilise désormais le train assaini par défaut ;
+- `import_public_dataset.py` empêche toute nouvelle copie de val/test dans train,
+  y compris avec `--as-train`.
+
+Avant tout nouvel entraînement :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\audit_split_integrity.py
+.\.venv\Scripts\python.exe training\scripts\train_detector.py --prepare-only
+```
+
 ## TODO
 
-1. Baseline YOLO : V5 + imgsz 800 + TTA — ne pas repartir de zéro ; mesurer toute tentative vs cette baseline.
-2. UX comparaison : 3 vues (A / B / comparatif), tags éditables, quantités par niveau, icônes, %% maxage HDV.
-3. Plus de captures Mode photo (pièges / teslas) — datasets publics épuisés localement.
+1. Valider et figer le train assaini 931 images avant tout fine-tune.
+2. Collecter/annoter des captures Mode photo ciblées pièges/Teslas ; sources publiques locales épuisées.
+3. Fine-tune depuis `epoch79.pt`, puis mesurer VAL 800+TTA avant toute consultation du test.
 4. Plus de crops **niveaux** (canons) avant de sortir level-cannon de la quarantaine.
-5. Brancher API CoC plus tard (CLASHCOMPARE_API encore vide — normal) ; jamais inventer les bâtiments.
-6. PWA iPhone soignée — après pipeline fiable.
+5. UX comparaison : 3 vues, tags éditables, quantités par niveau, icônes, %% maxage HDV.
+6. Brancher API CoC plus tard (`CLASHCOMPARE_API` vide — normal) ; jamais inventer les bâtiments.
+7. PWA iPhone soignée — après pipeline fiable.
