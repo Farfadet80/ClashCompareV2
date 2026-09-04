@@ -60,9 +60,27 @@ Le projet contient déjà la partie PWA ; ne pas la supprimer inutilement.
 
 GitHub Pages avait notamment été envisagé comme solution gratuite d'hébergement, mais aucun déploiement définitif n'est confirmé actuellement.
 
+### Architecture de production non tranchée
+
+**Aucune architecture d'exécution YOLO en production n'a encore été définitivement retenue.**
+
+Les trois options restent ouvertes :
+
+- backend hébergé ;
+- serveur local sur le PC ;
+- ONNX exécuté dans le navigateur.
+
+`serve_compare.py` + YOLO/PyTorch constituent le pipeline local actuel. Cela ne signifie
+pas que le serveur local est l'architecture finale. De même, GitHub Pages ne concerne que
+le frontend/PWA statique et ne peut pas exécuter ce backend Python.
+
+Pour l'instant, conserver l'architecture actuelle. Ne pas migrer YOLO/PyTorch vers ONNX
+navigateur ou vers un backend cloud sans validation explicite. La décision sera prise
+quand le pipeline YOLO sera suffisamment fiable.
+
 ---
 
-## 4. COMPARAISON FINALE SOUHAITÉÉ
+## 4. COMPARAISON FINALE SOUHAITÉE
 
 À terme, ClashCompare doit comparer le plus précisément possible :
 

@@ -19,7 +19,7 @@ Dernière mise à jour : 2026-09-04 (passation ChatGPT + HANDOFF + Git)
 - Le navigateur n’exécute pas ONNX lui-même : il envoie la capture au serveur Python local.
 - Classifieurs de niveaux : seulement `air-defense` (8–11) et `town-hall` (10–14).
 - `town-hall-guardian` : 0 annotation.
-- Pas de dépôt Git (pas de dossier `.git`, `git` absent du PATH).
+- Dépôt Git actif : `Farfadet80/ClashCompareV2`, branche `main`.
 
 ## Architecture
 
@@ -27,6 +27,11 @@ Dernière mise à jour : 2026-09-04 (passation ChatGPT + HANDOFF + Git)
 - **Vision** : Ultralytics YOLO11, entraînement Windows + GTX 1050.
 - **API CoC** : prévue plus tard via backend ; pas de clé dans le repo.
 - **Données village détaillées** : vision (YOLO), pas l’API.
+- **Production non tranchée** : backend hébergé, serveur local ou ONNX navigateur restent
+  trois options ouvertes. Le serveur local est le pipeline actuel, pas une décision finale.
+- GitHub Pages a seulement été envisagé pour le frontend/PWA statique.
+- Ne pas migrer la vision vers le cloud ou le navigateur sans validation explicite ;
+  décider après fiabilisation du pipeline YOLO.
 
 ## Installation / lancement
 
@@ -114,7 +119,11 @@ Copy-Item models\releases\building-detector-v5s-distilled-640\building-detector-
 Copy-Item models\releases\building-detector-v5s-distilled-640\building-detector-v5s-distilled-640.onnx models\building-detector.onnx
 ```
 
-Parité PT/ONNX OK (43 détections, SHA-256 PT `866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d`). ONNX 640×640. V4 reste dans `models/releases/building-detector-v4-pedro-no-guardian/`. Inférence : `--imgsz 640`.
+À cette étape historique, la parité PT/ONNX était OK (43 détections, SHA-256 PT
+`866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d`) avec ONNX
+640×640 et `--imgsz 640`. La configuration active actuelle est **imgsz 800 + TTA**
+(voir `models/ACTIVE.json`). V4 reste archivée dans
+`models/releases/building-detector-v4-pedro-no-guardian/`.
 
 ## GPU
 
