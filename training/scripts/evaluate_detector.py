@@ -32,6 +32,11 @@ def main() -> None:
     parser.add_argument("--split", choices=("val", "test"), default="val")
     parser.add_argument("--imgsz", type=int, default=800)
     parser.add_argument("--batch", type=int, default=2)
+    parser.add_argument(
+        "--augment",
+        action="store_true",
+        help="TTA Ultralytics (augment=True) pendant model.val",
+    )
     parser.add_argument("--device", default="0")
     parser.add_argument("--name", default=None)
     args = parser.parse_args()
@@ -63,6 +68,7 @@ def main() -> None:
             device=args.device,
             workers=0,
             plots=True,
+            augment=args.augment,
             project=str(output_root),
             name=run_name,
             exist_ok=True,
@@ -88,6 +94,7 @@ def main() -> None:
         "data": str(data_path),
         "split": args.split,
         "imgsz": args.imgsz,
+        "augment_tta": bool(args.augment),
         "precision": float(metrics.box.mp),
         "recall": float(metrics.box.mr),
         "map50": float(metrics.box.map50),

@@ -41,6 +41,8 @@ def check_release() -> None:
         raise SystemExit(f"ERREUR: release active inattendue: {meta.get('release')}")
     if int(meta.get("imgsz", 0)) != EXPECTED_IMGSZ:
         raise SystemExit(f"ERREUR: imgsz active inattendu: {meta.get('imgsz')}")
+    if meta.get("tta") is not True:
+        raise SystemExit(f"ERREUR: TTA active attendue (true), reçu: {meta.get('tta')}")
 
     release_dir = ROOT / "models" / "releases" / ACTIVE_RELEASE
     pt_alias = ROOT / "models" / "building-detector.pt"
@@ -76,7 +78,7 @@ def check_release() -> None:
             "(voir models/experimental/)"
         )
 
-    print(f"Release active: {ACTIVE_RELEASE} (imgsz {EXPECTED_IMGSZ})")
+    print(f"Release active: {ACTIVE_RELEASE} (imgsz {EXPECTED_IMGSZ}, TTA on)")
     print(f"PT SHA-256: {pt_hash}")
     print(f"ONNX input: {shape}")
     print(f"Classifieurs production: {', '.join(PRODUCTION_LEVEL_CLASSIFIERS)}")

@@ -1,4 +1,4 @@
-const CACHE="clashcompare-v3-5-infer800b";
+const CACHE="clashcompare-v3-6-infer800-tta";
 const ASSETS=["./","./index.html","./style.css","./app.js","./config.js","./manifest.json","./data/buildings.json"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));

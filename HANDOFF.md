@@ -1,17 +1,17 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-04 (promotion inférence imgsz 800 + allowlist niveaux)
+Dernière mise à jour : 2026-09-04 (TTA promue sur imgsz 800)
 
 ## État actuel
 
 ### Ce qui fonctionne
 
-- Marqueur release : models/ACTIVE.json → uilding-detector-v5s-infer800 (imgsz 800).
+- Marqueur release : `models/ACTIVE.json` → `building-detector-v5s-infer800` (imgsz 800, **TTA on**).
 - PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, import d’image, catalogue 50 bâtiments / 543 niveaux).
-- **Analyse réelle** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800**). Plus de fake de métadonnées.
+- **Analyse réelle** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**). Plus de fake de métadonnées.
 - Pipeline YOLO local : détection des **types** de bâtiments, puis classifieurs de niveaux partiels (jamais inventés).
 - Environnement `.venv` : Python 3.12.10, **PyTorch 2.7.1+cu118**, Ultralytics **8.4.137**, CUDA 11.8, GPU **GTX 1050 CC 6.1 (`sm_61`)** — inférence et entraînement CUDA OK.
-- Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800**). Archive train : `building-detector-v5s-distilled-640/`.
+- Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800 + TTA**). Archive train : `building-detector-v5s-distilled-640/`.
 - Run V5 `building-detector-v5s-distilled-640` : **terminé 80/80** le 2026-09-02 18:14 (pas un arrêt à 71).
 
 ### Ce qui ne fonctionne pas encore
@@ -240,9 +240,48 @@ Pièges VAL 640→800 (mAP50-95) : air-bomb 0,12→0,22 ; bomb 0,18→0,24 ; spr
 
 ## TODO
 
-1. Inférence **imgsz 800** promue (2026-09-04) — poids V5 inchangés ; archive ONNX 640 conservée.
-2. SAHI/tiling et V6 : non promus (sous baseline).
+1. Inférence **imgsz 800 + TTA** promue (2026-09-04 soir) — mêmes poids V5.
+2. SAHI/tiling, V6, imgsz 704/832/896/960 : non promus (sous baseline AP).
 3. Plus de captures Mode photo (pièges / teslas) — datasets publics épuisés localement.
 4. Plus de crops **niveaux** (canons surtout) avant de sortir level-cannon de la quarantaine.
 5. API CoC pour héros / labo / sorts — jamais inventer les bâtiments.
 6. Réinstaller Git si versionnage souhaité.
+
+## Session 2026-09-04 soir (Cursor) — sweep imgsz + TTA
+
+### Tests exécutés
+- `check_environment.py` : CUDA GTX 1050 OK, release infer800.
+- `validate_dataset.py` : train 999 / val 118 / test 60.
+- `smoke_test_yolo.py` : OK.
+- Classifieurs : air-defense test **100 %** ; town-hall test **98 %**.
+- Sweep imgsz VAL (mêmes poids V5) :
+
+| imgsz | P | R | mAP50 | mAP50-95 |
+|---:|---:|---:|---:|---:|
+| 704 | 0,8257 | 0,8254 | 0,8328 | 0,6130 |
+| **800** | **0,8259** | **0,8236** | **0,8416** | **0,6247** |
+| 832 | 0,8604 | 0,8009 | 0,8343 | 0,6201 |
+| 896 | 0,8617 | 0,7918 | 0,8327 | 0,6186 |
+| 960 | 0,8409 | 0,7774 | 0,8152 | 0,6048 |
+
+- SAHI VAL imgsz 800 / tiles 800 / overlap 20 % : mAP50-95 **0,6166** vs contrôle global **0,6201** → non promu.
+- TTA Ultralytics (`augment=True`, imgsz 800) :
+
+| Split | Config | P | R | mAP50 | mAP50-95 |
+|---|---|---:|---:|---:|---:|
+| Val | 800 | 0,8259 | 0,8236 | 0,8416 | 0,6247 |
+| Val | **800+TTA** | **0,8692** | **0,8259** | **0,8532** | **0,6319** |
+| Test | 800 | 0,8273 | 0,8281 | 0,8390 | 0,6121 |
+| Test | **800+TTA** | **0,8525** | 0,8235 | **0,8573** | **0,6222** |
+
+JSON : `training/runs/evaluations/v5-alias-*-imgsz800-tta/metrics.json`.
+
+### Décisions
+- **Promouvoir TTA** en défaut (`analyze_village` / `serve_compare`) : mAP50 et mAP50-95 progressent sur le test réservé (+1,8 / +1,0 pp). Rappel F1 −0,46 pp accepté (décision AP comme pour SAHI).
+- **Ne pas** promouvoir d'autres imgsz ni SAHI@800.
+- Poids PT/ONNX inchangés. Désactiver TTA : `analyze_village.py … --no-tta`.
+- Smoke analyse test : 44 détections avec TTA.
+
+### Fichiers touchés
+- `training/scripts/analyze_village.py`, `serve_compare.py`, `evaluate_detector.py` (`--augment`), `check_environment.py`
+- `models/ACTIVE.json`, `service-worker.js` (`clashcompare-v3-6-infer800-tta`), `HANDOFF.md`, `models/README.md`

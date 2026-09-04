@@ -66,6 +66,7 @@ def analyze_image(
     conf: float = 0.25,
     level_conf: float = 0.60,
     imgsz: int = 800,
+    tta: bool = True,
     device: str = "0",
     output_dir: Path | None = None,
 ) -> dict:
@@ -80,7 +81,14 @@ def analyze_image(
     device = resolve_device(device)
     image = Image.open(source).convert("RGB")
     detector = load_detector(detector_path)
-    result = detector.predict(image, imgsz=imgsz, conf=conf, device=device, verbose=False)[0]
+    result = detector.predict(
+        image,
+        imgsz=imgsz,
+        conf=conf,
+        device=device,
+        augment=tta,
+        verbose=False,
+    )[0]
 
     detections: list[dict] = []
     crops_by_building: dict[str, list[tuple[int, Image.Image]]] = defaultdict(list)
@@ -126,8 +134,9 @@ def analyze_image(
 
     payload = {
         "source": str(source.resolve()),
-        "engine": "building-detector-v5s-infer800",
+        "engine": "building-detector-v5s-infer800-tta" if tta else "building-detector-v5s-infer800",
         "imgsz": imgsz,
+        "tta": bool(tta),
         "device": str(device),
         "count": len(detections),
         "detections": detections,
@@ -175,6 +184,12 @@ def main() -> None:
     parser.add_argument("--conf", type=float, default=0.25)
     parser.add_argument("--level-conf", type=float, default=0.60, help="Confiance minimale avant d'afficher un niveau")
     parser.add_argument("--imgsz", type=int, default=800)
+    parser.add_argument(
+        "--tta",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="TTA Ultralytics (augment=True). Promue 2026-09-04 : +mAP50/mAP50-95 sur le test réservé.",
+    )
     parser.add_argument("--device", default="0")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "training" / "runs" / "inference")
     args = parser.parse_args()
@@ -185,6 +200,7 @@ def main() -> None:
         conf=args.conf,
         level_conf=args.level_conf,
         imgsz=args.imgsz,
+        tta=args.tta,
         device=args.device,
         output_dir=args.output_dir,
     )

@@ -2,8 +2,9 @@
   "release": "building-detector-v5s-infer800",
   "weights_train_run": "building-detector-v5s-distilled-640",
   "imgsz": 800,
+  "tta": true,
   "promoted_on": "2026-09-04",
-  "decision": "Mêmes poids V5 ; inférence 800 bat 640 sur le test réservé (mAP50-95 0.6121 vs 0.5788).",
+  "decision": "Mêmes poids V5 ; imgsz 800 + TTA Ultralytics (augment=True). Test réservé : mAP50 0.857 / mAP50-95 0.622 vs baseline 800 sans TTA 0.839 / 0.612. Rappel F1 légèrement inférieur (−0,46 pp) ; décision sur les AP.",
   "pt_sha256": "866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d",
   "aliases": {
     "pt": "models/building-detector.pt",
@@ -11,5 +12,14 @@
   },
   "release_dir": "models/releases/building-detector-v5s-infer800",
   "level_classifiers": ["air-defense", "town-hall"],
-  "not_promoted": ["building-detector-v6-weakclass-ft", "sahi-tiling", "level-cannon"]
+  "not_promoted": [
+    "building-detector-v6-weakclass-ft",
+    "sahi-tiling",
+    "sahi-tiling-imgsz800",
+    "imgsz-704",
+    "imgsz-832",
+    "imgsz-896",
+    "imgsz-960",
+    "level-cannon"
+  ]
 }

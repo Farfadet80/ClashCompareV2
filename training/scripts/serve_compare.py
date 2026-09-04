@@ -81,8 +81,9 @@ class Handler(SimpleHTTPRequestHandler):
                 200,
                 {
                     "ok": True,
-                    "engine": "building-detector-v5s-infer800",
+                    "engine": "building-detector-v5s-infer800-tta",
                     "imgsz": 800,
+                    "tta": True,
                 },
             )
             return
