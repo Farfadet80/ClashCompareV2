@@ -1,0 +1,2544 @@
+{
+  "dataset_yaml": "training/dataset.yaml",
+  "dataset_root": "training/dataset/detector",
+  "split_image_counts": {
+    "test": 60,
+    "train": 999,
+    "val": 118
+  },
+  "cross_split_same_stem_pairs": {
+    "test-train": 26,
+    "train-val": 42
+  },
+  "cross_split_same_hash_pairs": {
+    "test-train": 26,
+    "train-val": 42
+  },
+  "train_images_before": 999,
+  "train_images_excluded": 68,
+  "train_images_clean": 931,
+  "excluded_train_files": [
+    "training/dataset/detector/images/train/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-78496b9902-Screenshot_2025-12-15-20-27-13-82_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.81a09d0e787d342bb9afe4d955a90c20.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-86d3c23607-Screenshot_2025-12-15-15-57-19-52_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.cbda89d459070369508f534331ca58ac.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-9e789b4be0-18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-9f890a9834-Screenshot_2025-12-15-15-52-54-08_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c99c03f0485a0fcacafb22b59c6e74a1.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-bef1365bf6-18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-d0c5f31412-18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-daf663be9c-th18_war_25_jpg.rf.cb0c2fa8c10d57887b3d6cf4b0db515e.jpg",
+    "training/dataset/detector/images/train/base-finder-th18-f3de4b8aca-Screenshot_2025-12-15-15-52-09-53_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.f48b48f8aff6d9bab7ebdf5e68307466.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-092b6d6230-th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-185b7dd322-th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-2196373ebe-th11_farm_1837_jpg.rf.bfc096c53cf76310302cb16c16f3f191.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-239ce94fbf-th12_war_1935_jpg.rf.3da541582c05ba5b6efff266ae6b0949.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-26693d79aa-th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-31e65e8211-th11_defence_1840_jpg.rf.30b6a7a7d93e256d45a1ea2df0965aa1.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-36809aa649-th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-3b6258e64b-th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-3c50924914-th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-46a8851321-th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-5091bdd706-th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-54927651e2-th11_war_2007_jpg.rf.50d0cb2b2b6ef9b512c3f7d9a22ee356.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-57cc0db0ce-th13_farm_1592_jpg.rf.0c4ab5cbb4c66bafecded99f0dca9763.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-5e02772a6e-th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-61808a6a2c-th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-664a2d7ceb-th7_farm_1887_jpg.rf.7e2d2a114abedb3cce97a4490aed8238.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-6866307a70-th16_war_1822_jpg.rf.7514c8c571050d5ecca478a1539f8173.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-69bcc2e09e-th3_war_26_jpg.rf.6323f8e078612694712174c3266b4c1e.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-6bdc17046a-th6_farm_1813_jpg.rf.66cf5fea279d19f0199d3244333f6976.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-718e7a3e59-th5_war_1720_jpg.rf.020caacbdaca3768f99f0e153457628c.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-73f6bb1aa3-th6_war_1810_jpg.rf.f7df67a270f1dde6457cf7667736e884.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-763c1f5f6e-th12_defence_2008_jpg.rf.d858ea14f1e6c15180e06a69aa9641a2.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-8228305f99-th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-863f12c501-th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-8755e9ebd5-th3_war_23_jpg.rf.1262ac93366adb381668f734b5a34d9c.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-929d45e058-th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-932fc36c9c-th6_defence_1867_jpg.rf.290f8aec9bfcfd78df1552520bcb9d29.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-94c9513714-th13_defence_2009_jpg.rf.0d50abe1d3bdbbf0de5345f49b40bdcb.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-99704800ba-th6_defence_1868_jpg.rf.7ce10b4d30d71d78b0fb12f86031c910.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-b9487cc3b3-th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-bf4c566bab-th4_defence_1628_jpg.rf.b60eb9550e35a3b6b8589c2091545857.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-c28991a688-th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-c97df176a1-th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-ce4b015da0-th7_farm_1885_jpg.rf.51d514dcadaef8ea467ea6907cb27a21.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-dc390e3caa-th3_war_25_jpg.rf.e555e8b9ab008fe336205c2d34cfc340.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-dcebe3ded8-th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-de94206deb-th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-e5fac6e532-th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-eb68205ab3-th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-ebff86aef3-th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-f004d250c7-th3_defence_143_jpg.rf.53960e341b8a6a97df2a7b4e357e9661.jpg",
+    "training/dataset/detector/images/train/coc-all-traps-f43fecf51c-th13_war_1608_jpg.rf.d30574b69c60006884d3803575752727.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-008b44716e-th6-war-base-coc_jpg.rf.6bf2d998ab8f468c01732aaa9002c4d3.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-26e09458f7-th6_farm_158_jpg.rf.00cae9644d615a197b181a65291b5993.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-2d5c37c65b-th6-farming-base-anti-air_jpg.rf.6c30b220c50c1aeb3a02834635b5a70c.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-78b3098c74-th6-anti-3star-war-base_jpg.rf.498964d1be30c4d2bdacf1807d065fc3.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-7f3de131eb-th6-war-base_jpg.rf.088baf5e6947c06d4fdcff569c39b89e.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-aa93ea874c-coc-base-th6-2025-3-_jpg.rf.ce1949127bd37aae7eeb2341a5c51cd0.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-b9051dc34e-th6-trophy-base-coc_jpg.rf.1ad525d567e985238db79a7da6bffc8e.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-c77150ba73-th6-anti-air-base-coc_jpg.rf.6f79cec35f6b21092872828311ec0979.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-db72e8036f-th6-farming-base-layout_jpg.rf.1a275fa67501591a107f3563888631dc.jpg",
+    "training/dataset/detector/images/train/evans-home-village-building-detector-e8809c8e6d-th6_farm_170_jpg.rf.06a8000d18ee08ab279f19de6a02d4b5.jpg",
+    "training/dataset/detector/images/train/glenn-th18-gigabomb-38935d56d5-IMG_0112_jpg.rf.2bfed1e3be03d940018685018b695035.jpg",
+    "training/dataset/detector/images/train/glenn-th18-gigabomb-4a250cebde-IMG_0123_jpg.rf.2782c33728f6165f7ffc2a6236695739.jpg",
+    "training/dataset/detector/images/train/glenn-th18-gigabomb-6020c66e87-IMG_0133_jpg.rf.a15444ca0307ee01d1528c5503577fe9.jpg",
+    "training/dataset/detector/images/train/glenn-th18-gigabomb-8c9d6c47d9-IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+    "training/dataset/detector/images/train/glenn-th18-gigabomb-daf7aaaa9a-IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+    "training/dataset/detector/images/train/glenn-th18-gigabomb-f410adbcda-IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.jpg"
+  ],
+  "same_stem_groups": [
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
+          "sha256": "85262cd72576c346314dd2ed82961f888ef312fd779bdd2d2097b4bf2b8d83af"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
+          "sha256": "85262cd72576c346314dd2ed82961f888ef312fd779bdd2d2097b4bf2b8d83af"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",
+          "sha256": "18e504a7f1dd16527dfce871fc334b1e5c8a412c2f3049612f94966028033721"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",
+          "sha256": "18e504a7f1dd16527dfce871fc334b1e5c8a412c2f3049612f94966028033721"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-78496b9902-Screenshot_2025-12-15-20-27-13-82_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.81a09d0e787d342bb9afe4d955a90c20.jpg",
+          "sha256": "3e3981085437ce98ae3fe4344a55835407de6a955a4816b2fb84c507c07ab132"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-78496b9902-Screenshot_2025-12-15-20-27-13-82_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.81a09d0e787d342bb9afe4d955a90c20.jpg",
+          "sha256": "3e3981085437ce98ae3fe4344a55835407de6a955a4816b2fb84c507c07ab132"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-86d3c23607-Screenshot_2025-12-15-15-57-19-52_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.cbda89d459070369508f534331ca58ac.jpg",
+          "sha256": "5754f5b39b1206d214946211190223ffaebe380c204a6d917119e64c3d236606"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-86d3c23607-Screenshot_2025-12-15-15-57-19-52_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.cbda89d459070369508f534331ca58ac.jpg",
+          "sha256": "5754f5b39b1206d214946211190223ffaebe380c204a6d917119e64c3d236606"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-9e789b4be0-18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.jpg",
+          "sha256": "91386195e182ccddbd403ea33232d43db2b42fe4401abf6859250e40abfb7693"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-9e789b4be0-18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.jpg",
+          "sha256": "91386195e182ccddbd403ea33232d43db2b42fe4401abf6859250e40abfb7693"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-9f890a9834-Screenshot_2025-12-15-15-52-54-08_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c99c03f0485a0fcacafb22b59c6e74a1.jpg",
+          "sha256": "444bcb2daf55995995484b626cf036502397ff4f043a799dc6dffb05c0257614"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-9f890a9834-Screenshot_2025-12-15-15-52-54-08_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c99c03f0485a0fcacafb22b59c6e74a1.jpg",
+          "sha256": "444bcb2daf55995995484b626cf036502397ff4f043a799dc6dffb05c0257614"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-bef1365bf6-18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.jpg",
+          "sha256": "f1906cafb2f4dfc5ff98b6c0ca9fec16ad2d982cbecd84d0cff487f3922acde3"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-bef1365bf6-18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.jpg",
+          "sha256": "f1906cafb2f4dfc5ff98b6c0ca9fec16ad2d982cbecd84d0cff487f3922acde3"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-d0c5f31412-18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.jpg",
+          "sha256": "b696163adcb67896d93df2cf85517f69757bcf9311634859998bf121f89a1ce3"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-d0c5f31412-18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.jpg",
+          "sha256": "b696163adcb67896d93df2cf85517f69757bcf9311634859998bf121f89a1ce3"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-daf663be9c-th18_war_25_jpg.rf.cb0c2fa8c10d57887b3d6cf4b0db515e.jpg",
+          "sha256": "fc0545d8831951df5d44dc4475352bd80a546586151383058f4b3de50fcbc825"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-daf663be9c-th18_war_25_jpg.rf.cb0c2fa8c10d57887b3d6cf4b0db515e.jpg",
+          "sha256": "fc0545d8831951df5d44dc4475352bd80a546586151383058f4b3de50fcbc825"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-f3de4b8aca-Screenshot_2025-12-15-15-52-09-53_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.f48b48f8aff6d9bab7ebdf5e68307466.jpg",
+          "sha256": "0adbfc77b29fd4dd7545052c842fa1ea913f400d506ad58efeb870539cc49a8a"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-f3de4b8aca-Screenshot_2025-12-15-15-52-09-53_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.f48b48f8aff6d9bab7ebdf5e68307466.jpg",
+          "sha256": "0adbfc77b29fd4dd7545052c842fa1ea913f400d506ad58efeb870539cc49a8a"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-092b6d6230-th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.jpg",
+          "sha256": "cf67dfe890ddff77fd196c54dbb98b1ced138f4e7d3cfc1865ff9f82148c3189"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-092b6d6230-th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.jpg",
+          "sha256": "cf67dfe890ddff77fd196c54dbb98b1ced138f4e7d3cfc1865ff9f82148c3189"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-185b7dd322-th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+          "sha256": "1f531f2a149d9d37cc5d7abb7599a7aeac1dda6adf753c6440f772d91891a78a"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-185b7dd322-th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+          "sha256": "1f531f2a149d9d37cc5d7abb7599a7aeac1dda6adf753c6440f772d91891a78a"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-2196373ebe-th11_farm_1837_jpg.rf.bfc096c53cf76310302cb16c16f3f191.jpg",
+          "sha256": "380f8eba6c3af901a15525ddf5ad19004fcd3db803f201487075eed0c3c6be60"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-2196373ebe-th11_farm_1837_jpg.rf.bfc096c53cf76310302cb16c16f3f191.jpg",
+          "sha256": "380f8eba6c3af901a15525ddf5ad19004fcd3db803f201487075eed0c3c6be60"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-239ce94fbf-th12_war_1935_jpg.rf.3da541582c05ba5b6efff266ae6b0949.jpg",
+          "sha256": "8de756daa41c03591c9520a1c61c0361b9e4248f340fbfb697c07165f3bee6b6"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-239ce94fbf-th12_war_1935_jpg.rf.3da541582c05ba5b6efff266ae6b0949.jpg",
+          "sha256": "8de756daa41c03591c9520a1c61c0361b9e4248f340fbfb697c07165f3bee6b6"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-26693d79aa-th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+          "sha256": "70486beb3b54f1ba44395669ce864e517775056310c35af32d38e5b99b970a2e"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-26693d79aa-th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+          "sha256": "70486beb3b54f1ba44395669ce864e517775056310c35af32d38e5b99b970a2e"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-31e65e8211-th11_defence_1840_jpg.rf.30b6a7a7d93e256d45a1ea2df0965aa1.jpg",
+          "sha256": "46024fe21d9c26b8593105b15c68a94ea2da01fbc0b4cfceef7e02e77e29490e"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-31e65e8211-th11_defence_1840_jpg.rf.30b6a7a7d93e256d45a1ea2df0965aa1.jpg",
+          "sha256": "46024fe21d9c26b8593105b15c68a94ea2da01fbc0b4cfceef7e02e77e29490e"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-36809aa649-th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.jpg",
+          "sha256": "bb932e5a24d73614038f4b147c77429895763b3b194e0781ac43f2392bf82619"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-36809aa649-th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.jpg",
+          "sha256": "bb932e5a24d73614038f4b147c77429895763b3b194e0781ac43f2392bf82619"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-3b6258e64b-th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.jpg",
+          "sha256": "94f9ae0fea26eee73c1f4cb9fb5d51cf671dfea127906c9d9fa41c0f5af212c4"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-3b6258e64b-th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.jpg",
+          "sha256": "94f9ae0fea26eee73c1f4cb9fb5d51cf671dfea127906c9d9fa41c0f5af212c4"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-3c50924914-th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.jpg",
+          "sha256": "3dc48d97b2c35d9fedc08dbe58507f5670edb2da70797fc8f1f5969f084d7431"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-3c50924914-th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.jpg",
+          "sha256": "3dc48d97b2c35d9fedc08dbe58507f5670edb2da70797fc8f1f5969f084d7431"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-46a8851321-th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+          "sha256": "76dd7b7d85c127dd194352142366e1fe76ba9630164d4f0fbdd2cb3a8b26407a"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-46a8851321-th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+          "sha256": "76dd7b7d85c127dd194352142366e1fe76ba9630164d4f0fbdd2cb3a8b26407a"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-5091bdd706-th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+          "sha256": "481834daa4fa8e8a7b25b2a895160cff21d2f2742728ebccb25eb68805ae8514"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-5091bdd706-th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+          "sha256": "481834daa4fa8e8a7b25b2a895160cff21d2f2742728ebccb25eb68805ae8514"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-54927651e2-th11_war_2007_jpg.rf.50d0cb2b2b6ef9b512c3f7d9a22ee356.jpg",
+          "sha256": "4d5006843445026c7baac701d62b86396b219b3cf57735df675fe3184d43a31c"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-54927651e2-th11_war_2007_jpg.rf.50d0cb2b2b6ef9b512c3f7d9a22ee356.jpg",
+          "sha256": "4d5006843445026c7baac701d62b86396b219b3cf57735df675fe3184d43a31c"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-57cc0db0ce-th13_farm_1592_jpg.rf.0c4ab5cbb4c66bafecded99f0dca9763.jpg",
+          "sha256": "a8b60315169b7194094e4cfb86408e12fa18685465f5d8f67a2835d2f4eb8863"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-57cc0db0ce-th13_farm_1592_jpg.rf.0c4ab5cbb4c66bafecded99f0dca9763.jpg",
+          "sha256": "a8b60315169b7194094e4cfb86408e12fa18685465f5d8f67a2835d2f4eb8863"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-5e02772a6e-th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+          "sha256": "e10d54c12c9f36743577346bac87d845ee74f2fd62754dd90ed1c67172e30f15"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-5e02772a6e-th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+          "sha256": "e10d54c12c9f36743577346bac87d845ee74f2fd62754dd90ed1c67172e30f15"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-61808a6a2c-th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.jpg",
+          "sha256": "9aa34aea5969bea074da874fd4178b8ac197afa65b2230892494fae6bdd71b73"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-61808a6a2c-th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.jpg",
+          "sha256": "9aa34aea5969bea074da874fd4178b8ac197afa65b2230892494fae6bdd71b73"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-664a2d7ceb-th7_farm_1887_jpg.rf.7e2d2a114abedb3cce97a4490aed8238.jpg",
+          "sha256": "36e46a4f9a9d4e4e8c2385223e5fb48c8243455b8af4643d05ee473044d3c7af"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-664a2d7ceb-th7_farm_1887_jpg.rf.7e2d2a114abedb3cce97a4490aed8238.jpg",
+          "sha256": "36e46a4f9a9d4e4e8c2385223e5fb48c8243455b8af4643d05ee473044d3c7af"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-6866307a70-th16_war_1822_jpg.rf.7514c8c571050d5ecca478a1539f8173.jpg",
+          "sha256": "f1328eefe583c776e1d05e13bffb058cb112a6478a4ae6c6406560a95cb6f978"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-6866307a70-th16_war_1822_jpg.rf.7514c8c571050d5ecca478a1539f8173.jpg",
+          "sha256": "f1328eefe583c776e1d05e13bffb058cb112a6478a4ae6c6406560a95cb6f978"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-69bcc2e09e-th3_war_26_jpg.rf.6323f8e078612694712174c3266b4c1e.jpg",
+          "sha256": "df76bdaecd7f8cc7390f6f4265f6374fb33d7e06347d32899befdc68119e4bae"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-69bcc2e09e-th3_war_26_jpg.rf.6323f8e078612694712174c3266b4c1e.jpg",
+          "sha256": "df76bdaecd7f8cc7390f6f4265f6374fb33d7e06347d32899befdc68119e4bae"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-6bdc17046a-th6_farm_1813_jpg.rf.66cf5fea279d19f0199d3244333f6976.jpg",
+          "sha256": "e69d375fa9812a83f006aa6b6e045d919451fed35d9372abd2fd79126558c458"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-6bdc17046a-th6_farm_1813_jpg.rf.66cf5fea279d19f0199d3244333f6976.jpg",
+          "sha256": "e69d375fa9812a83f006aa6b6e045d919451fed35d9372abd2fd79126558c458"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-718e7a3e59-th5_war_1720_jpg.rf.020caacbdaca3768f99f0e153457628c.jpg",
+          "sha256": "290dfa40c0bd7254d7f8d9b006d02843699cc466586d430e1111ab2d3ffc6298"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-718e7a3e59-th5_war_1720_jpg.rf.020caacbdaca3768f99f0e153457628c.jpg",
+          "sha256": "290dfa40c0bd7254d7f8d9b006d02843699cc466586d430e1111ab2d3ffc6298"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-73f6bb1aa3-th6_war_1810_jpg.rf.f7df67a270f1dde6457cf7667736e884.jpg",
+          "sha256": "0de37285a86046711dff60baec9679c3b194c814bf1d8a3b0de838887348a630"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-73f6bb1aa3-th6_war_1810_jpg.rf.f7df67a270f1dde6457cf7667736e884.jpg",
+          "sha256": "0de37285a86046711dff60baec9679c3b194c814bf1d8a3b0de838887348a630"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-763c1f5f6e-th12_defence_2008_jpg.rf.d858ea14f1e6c15180e06a69aa9641a2.jpg",
+          "sha256": "7a31d5b52bcb01e54cde1a0311391cdd7f0e52e4a7d782b77e3f3c09317637a6"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-763c1f5f6e-th12_defence_2008_jpg.rf.d858ea14f1e6c15180e06a69aa9641a2.jpg",
+          "sha256": "7a31d5b52bcb01e54cde1a0311391cdd7f0e52e4a7d782b77e3f3c09317637a6"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-8228305f99-th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+          "sha256": "a4984c7a2ab80501ae7813460c250f3b2d66dca65ee175b72eb044566ba9477b"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-8228305f99-th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+          "sha256": "a4984c7a2ab80501ae7813460c250f3b2d66dca65ee175b72eb044566ba9477b"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-863f12c501-th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.jpg",
+          "sha256": "c680c5e84646c81c0d56b28f8fd21d817cb3cb23a25507fb6ad39e38257bb88f"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-863f12c501-th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.jpg",
+          "sha256": "c680c5e84646c81c0d56b28f8fd21d817cb3cb23a25507fb6ad39e38257bb88f"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-8755e9ebd5-th3_war_23_jpg.rf.1262ac93366adb381668f734b5a34d9c.jpg",
+          "sha256": "087afc9844573288261f2c86d3a3186bb99aa2052b1db05dcf34c1b26d8b7d6e"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-8755e9ebd5-th3_war_23_jpg.rf.1262ac93366adb381668f734b5a34d9c.jpg",
+          "sha256": "087afc9844573288261f2c86d3a3186bb99aa2052b1db05dcf34c1b26d8b7d6e"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-929d45e058-th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.jpg",
+          "sha256": "f37a08d000e7db140326656872867c2dd0171565b26b8fd665e1d6468bd147a5"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-929d45e058-th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.jpg",
+          "sha256": "f37a08d000e7db140326656872867c2dd0171565b26b8fd665e1d6468bd147a5"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-932fc36c9c-th6_defence_1867_jpg.rf.290f8aec9bfcfd78df1552520bcb9d29.jpg",
+          "sha256": "ab17ae80367c75896a090744b7bb7809f3eda8780d6947dfaeecd0cb79fb7269"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-932fc36c9c-th6_defence_1867_jpg.rf.290f8aec9bfcfd78df1552520bcb9d29.jpg",
+          "sha256": "ab17ae80367c75896a090744b7bb7809f3eda8780d6947dfaeecd0cb79fb7269"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-94c9513714-th13_defence_2009_jpg.rf.0d50abe1d3bdbbf0de5345f49b40bdcb.jpg",
+          "sha256": "5378c670ec3cdf637e6f52303888d627d65287535eb195caef63b2ad8ceed343"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-94c9513714-th13_defence_2009_jpg.rf.0d50abe1d3bdbbf0de5345f49b40bdcb.jpg",
+          "sha256": "5378c670ec3cdf637e6f52303888d627d65287535eb195caef63b2ad8ceed343"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-99704800ba-th6_defence_1868_jpg.rf.7ce10b4d30d71d78b0fb12f86031c910.jpg",
+          "sha256": "417938d79d49edfcf8725bbdd580ea0f81cd359f72dc3da9a5be06f6cf774812"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-99704800ba-th6_defence_1868_jpg.rf.7ce10b4d30d71d78b0fb12f86031c910.jpg",
+          "sha256": "417938d79d49edfcf8725bbdd580ea0f81cd359f72dc3da9a5be06f6cf774812"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-b9487cc3b3-th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+          "sha256": "d4c0fdcda45b1f4ed3a1fcafc14a35aaf64c40397f83176574b3358dd1e3000d"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-b9487cc3b3-th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+          "sha256": "d4c0fdcda45b1f4ed3a1fcafc14a35aaf64c40397f83176574b3358dd1e3000d"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-bf4c566bab-th4_defence_1628_jpg.rf.b60eb9550e35a3b6b8589c2091545857.jpg",
+          "sha256": "83f3e9ed13a5e71bce1b8d2fc4ab033aa0bf1cf4e443a47eb39e921bb94969d7"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-bf4c566bab-th4_defence_1628_jpg.rf.b60eb9550e35a3b6b8589c2091545857.jpg",
+          "sha256": "83f3e9ed13a5e71bce1b8d2fc4ab033aa0bf1cf4e443a47eb39e921bb94969d7"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-c28991a688-th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+          "sha256": "a28c25f07edd7b2a5809c1be55369c87f2bfb943ba2369db9514bba9e874b5b9"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-c28991a688-th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+          "sha256": "a28c25f07edd7b2a5809c1be55369c87f2bfb943ba2369db9514bba9e874b5b9"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-c97df176a1-th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.jpg",
+          "sha256": "ab98646cb8e06184e53dd844f966225eb5fb72f612bd51a27717b446b76df96d"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-c97df176a1-th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.jpg",
+          "sha256": "ab98646cb8e06184e53dd844f966225eb5fb72f612bd51a27717b446b76df96d"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-ce4b015da0-th7_farm_1885_jpg.rf.51d514dcadaef8ea467ea6907cb27a21.jpg",
+          "sha256": "94c0e738bea2669e39c174b98aea135e1a6355c5a9d44677acfbb82d7dd98678"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-ce4b015da0-th7_farm_1885_jpg.rf.51d514dcadaef8ea467ea6907cb27a21.jpg",
+          "sha256": "94c0e738bea2669e39c174b98aea135e1a6355c5a9d44677acfbb82d7dd98678"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-dc390e3caa-th3_war_25_jpg.rf.e555e8b9ab008fe336205c2d34cfc340.jpg",
+          "sha256": "450bd32b7f84cf491018e16d0251662b8c7ff18c8bf6554dc9a4aa230937bf96"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-dc390e3caa-th3_war_25_jpg.rf.e555e8b9ab008fe336205c2d34cfc340.jpg",
+          "sha256": "450bd32b7f84cf491018e16d0251662b8c7ff18c8bf6554dc9a4aa230937bf96"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-dcebe3ded8-th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.jpg",
+          "sha256": "6159497da8336dd700b46a77c86c237842c4081280659c9d9eeb674a3d74fbc4"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-dcebe3ded8-th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.jpg",
+          "sha256": "6159497da8336dd700b46a77c86c237842c4081280659c9d9eeb674a3d74fbc4"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-de94206deb-th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+          "sha256": "5a3cc3a13e961b9ee1765a1b7ef3d3c8472dd02edeb4a0225956eb5943f4e613"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-de94206deb-th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+          "sha256": "5a3cc3a13e961b9ee1765a1b7ef3d3c8472dd02edeb4a0225956eb5943f4e613"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-e5fac6e532-th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+          "sha256": "4eabf451bff7e3887942f89dafaab9bd7776e5d1281b1586e0c8178b9dbf6ed8"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-e5fac6e532-th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+          "sha256": "4eabf451bff7e3887942f89dafaab9bd7776e5d1281b1586e0c8178b9dbf6ed8"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-eb68205ab3-th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+          "sha256": "1d781bed1c5df1cd1130d12f75c2c220d560e3e4bb562c2a9ad9d6dbfc00eee0"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-eb68205ab3-th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+          "sha256": "1d781bed1c5df1cd1130d12f75c2c220d560e3e4bb562c2a9ad9d6dbfc00eee0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-ebff86aef3-th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.jpg",
+          "sha256": "11ac35c3c3bda7f76d93fb70e951938857c11afff32fc1d8dc486a22417c8995"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-ebff86aef3-th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.jpg",
+          "sha256": "11ac35c3c3bda7f76d93fb70e951938857c11afff32fc1d8dc486a22417c8995"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-f004d250c7-th3_defence_143_jpg.rf.53960e341b8a6a97df2a7b4e357e9661.jpg",
+          "sha256": "e50fd1138db5c466509af0f4a1acc0145436365ac64360bf3d6b8bec3c6fe2d7"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-f004d250c7-th3_defence_143_jpg.rf.53960e341b8a6a97df2a7b4e357e9661.jpg",
+          "sha256": "e50fd1138db5c466509af0f4a1acc0145436365ac64360bf3d6b8bec3c6fe2d7"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-f43fecf51c-th13_war_1608_jpg.rf.d30574b69c60006884d3803575752727.jpg",
+          "sha256": "1b1565fd4ebb042c786d7c64c989d9cf80a9ded453de0a4bb02dade86f6b24a4"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-f43fecf51c-th13_war_1608_jpg.rf.d30574b69c60006884d3803575752727.jpg",
+          "sha256": "1b1565fd4ebb042c786d7c64c989d9cf80a9ded453de0a4bb02dade86f6b24a4"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-008b44716e-th6-war-base-coc_jpg.rf.6bf2d998ab8f468c01732aaa9002c4d3.jpg",
+          "sha256": "b791a558e9a4e8f789ab532b9b2a66c352a743aa5766c782f012af9801fd8b82"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-008b44716e-th6-war-base-coc_jpg.rf.6bf2d998ab8f468c01732aaa9002c4d3.jpg",
+          "sha256": "b791a558e9a4e8f789ab532b9b2a66c352a743aa5766c782f012af9801fd8b82"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-26e09458f7-th6_farm_158_jpg.rf.00cae9644d615a197b181a65291b5993.jpg",
+          "sha256": "17e231a3db0507d3c0dbd24b737f3d740d9c54cc865dce6b8b847f1596ef7f73"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-26e09458f7-th6_farm_158_jpg.rf.00cae9644d615a197b181a65291b5993.jpg",
+          "sha256": "17e231a3db0507d3c0dbd24b737f3d740d9c54cc865dce6b8b847f1596ef7f73"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-2d5c37c65b-th6-farming-base-anti-air_jpg.rf.6c30b220c50c1aeb3a02834635b5a70c.jpg",
+          "sha256": "9e878ad6914aca6985530413f417c0ea972811efa94d0c28b1ebc45619249a10"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-2d5c37c65b-th6-farming-base-anti-air_jpg.rf.6c30b220c50c1aeb3a02834635b5a70c.jpg",
+          "sha256": "9e878ad6914aca6985530413f417c0ea972811efa94d0c28b1ebc45619249a10"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-78b3098c74-th6-anti-3star-war-base_jpg.rf.498964d1be30c4d2bdacf1807d065fc3.jpg",
+          "sha256": "0ce3705621b4973bcd213c47bed4064d6a2ae66aac29a764a63c56afacb2ad4c"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-78b3098c74-th6-anti-3star-war-base_jpg.rf.498964d1be30c4d2bdacf1807d065fc3.jpg",
+          "sha256": "0ce3705621b4973bcd213c47bed4064d6a2ae66aac29a764a63c56afacb2ad4c"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-7f3de131eb-th6-war-base_jpg.rf.088baf5e6947c06d4fdcff569c39b89e.jpg",
+          "sha256": "2964e956738d3a3f1dc99575fbfcb31a8c8e37a8bed7ea2aa7c95ad181139dc8"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-7f3de131eb-th6-war-base_jpg.rf.088baf5e6947c06d4fdcff569c39b89e.jpg",
+          "sha256": "2964e956738d3a3f1dc99575fbfcb31a8c8e37a8bed7ea2aa7c95ad181139dc8"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-aa93ea874c-coc-base-th6-2025-3-_jpg.rf.ce1949127bd37aae7eeb2341a5c51cd0.jpg",
+          "sha256": "fc4aae048e861148edf5c6d8a1620802e96ae4634e0f020079e5a94b3c267de0"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-aa93ea874c-coc-base-th6-2025-3-_jpg.rf.ce1949127bd37aae7eeb2341a5c51cd0.jpg",
+          "sha256": "fc4aae048e861148edf5c6d8a1620802e96ae4634e0f020079e5a94b3c267de0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-b9051dc34e-th6-trophy-base-coc_jpg.rf.1ad525d567e985238db79a7da6bffc8e.jpg",
+          "sha256": "d51beec0ab5c211befbacb3743cdd4184fb6de2ffac56b4ecf1bcb34401ea0be"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-b9051dc34e-th6-trophy-base-coc_jpg.rf.1ad525d567e985238db79a7da6bffc8e.jpg",
+          "sha256": "d51beec0ab5c211befbacb3743cdd4184fb6de2ffac56b4ecf1bcb34401ea0be"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-c77150ba73-th6-anti-air-base-coc_jpg.rf.6f79cec35f6b21092872828311ec0979.jpg",
+          "sha256": "121a3c27d96f56bc62631df9f8f2ba77327887c06f19d72c19fd2931a8bb4f64"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-c77150ba73-th6-anti-air-base-coc_jpg.rf.6f79cec35f6b21092872828311ec0979.jpg",
+          "sha256": "121a3c27d96f56bc62631df9f8f2ba77327887c06f19d72c19fd2931a8bb4f64"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-db72e8036f-th6-farming-base-layout_jpg.rf.1a275fa67501591a107f3563888631dc.jpg",
+          "sha256": "bc63369e116d4a61d40dd5ab6863a57489bf9829f48a985968a27d2aee012481"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-db72e8036f-th6-farming-base-layout_jpg.rf.1a275fa67501591a107f3563888631dc.jpg",
+          "sha256": "bc63369e116d4a61d40dd5ab6863a57489bf9829f48a985968a27d2aee012481"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-e8809c8e6d-th6_farm_170_jpg.rf.06a8000d18ee08ab279f19de6a02d4b5.jpg",
+          "sha256": "3a1a699c5bb6b1a7396b41070cfd8edaa155a4c645e1f1f67e34d717bc4c9e27"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-e8809c8e6d-th6_farm_170_jpg.rf.06a8000d18ee08ab279f19de6a02d4b5.jpg",
+          "sha256": "3a1a699c5bb6b1a7396b41070cfd8edaa155a4c645e1f1f67e34d717bc4c9e27"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-38935d56d5-IMG_0112_jpg.rf.2bfed1e3be03d940018685018b695035.jpg",
+          "sha256": "f79f071bccd7c1add1b5879dccdb3b4269384a88c0e0f3a2f9fc720331d62cc0"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-38935d56d5-IMG_0112_jpg.rf.2bfed1e3be03d940018685018b695035.jpg",
+          "sha256": "f79f071bccd7c1add1b5879dccdb3b4269384a88c0e0f3a2f9fc720331d62cc0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-4a250cebde-IMG_0123_jpg.rf.2782c33728f6165f7ffc2a6236695739.jpg",
+          "sha256": "ed4884fd112469b1fad9009d3900e97887d720e0139f5bc091637ae8e3150934"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-4a250cebde-IMG_0123_jpg.rf.2782c33728f6165f7ffc2a6236695739.jpg",
+          "sha256": "ed4884fd112469b1fad9009d3900e97887d720e0139f5bc091637ae8e3150934"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-6020c66e87-IMG_0133_jpg.rf.a15444ca0307ee01d1528c5503577fe9.jpg",
+          "sha256": "dc3edacf19ccc9cc8338d56febc1fac9a4cc61f1d9a26dc85bdad7756b773ecf"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-6020c66e87-IMG_0133_jpg.rf.a15444ca0307ee01d1528c5503577fe9.jpg",
+          "sha256": "dc3edacf19ccc9cc8338d56febc1fac9a4cc61f1d9a26dc85bdad7756b773ecf"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-8c9d6c47d9-IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+          "sha256": "f2935cb1b7b629d470c6edf3f6615cda3c9ddae5e3f604e95b460289c4c936a0"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-8c9d6c47d9-IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+          "sha256": "f2935cb1b7b629d470c6edf3f6615cda3c9ddae5e3f604e95b460289c4c936a0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/glenn-th18-gigabomb-daf7aaaa9a-IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+          "sha256": "141488d5d93e5bfcc06c92e0ae6f3d82daeb2d4d282d32b5c6c8e7e523958ef7"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-daf7aaaa9a-IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+          "sha256": "141488d5d93e5bfcc06c92e0ae6f3d82daeb2d4d282d32b5c6c8e7e523958ef7"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/glenn-th18-gigabomb-f410adbcda-IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.jpg",
+          "sha256": "61c20f18c216e5779fa447ce5969f56ff2d094df196dec2058837a2fa0a05568"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-f410adbcda-IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.jpg",
+          "sha256": "61c20f18c216e5779fa447ce5969f56ff2d094df196dec2058837a2fa0a05568"
+        }
+      ]
+    }
+  ],
+  "same_hash_groups": [
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
+          "sha256": "85262cd72576c346314dd2ed82961f888ef312fd779bdd2d2097b4bf2b8d83af"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
+          "sha256": "85262cd72576c346314dd2ed82961f888ef312fd779bdd2d2097b4bf2b8d83af"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",
+          "sha256": "18e504a7f1dd16527dfce871fc334b1e5c8a412c2f3049612f94966028033721"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",
+          "sha256": "18e504a7f1dd16527dfce871fc334b1e5c8a412c2f3049612f94966028033721"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-78496b9902-Screenshot_2025-12-15-20-27-13-82_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.81a09d0e787d342bb9afe4d955a90c20.jpg",
+          "sha256": "3e3981085437ce98ae3fe4344a55835407de6a955a4816b2fb84c507c07ab132"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-78496b9902-Screenshot_2025-12-15-20-27-13-82_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.81a09d0e787d342bb9afe4d955a90c20.jpg",
+          "sha256": "3e3981085437ce98ae3fe4344a55835407de6a955a4816b2fb84c507c07ab132"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-86d3c23607-Screenshot_2025-12-15-15-57-19-52_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.cbda89d459070369508f534331ca58ac.jpg",
+          "sha256": "5754f5b39b1206d214946211190223ffaebe380c204a6d917119e64c3d236606"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-86d3c23607-Screenshot_2025-12-15-15-57-19-52_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.cbda89d459070369508f534331ca58ac.jpg",
+          "sha256": "5754f5b39b1206d214946211190223ffaebe380c204a6d917119e64c3d236606"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-9e789b4be0-18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.jpg",
+          "sha256": "91386195e182ccddbd403ea33232d43db2b42fe4401abf6859250e40abfb7693"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-9e789b4be0-18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.jpg",
+          "sha256": "91386195e182ccddbd403ea33232d43db2b42fe4401abf6859250e40abfb7693"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-9f890a9834-Screenshot_2025-12-15-15-52-54-08_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c99c03f0485a0fcacafb22b59c6e74a1.jpg",
+          "sha256": "444bcb2daf55995995484b626cf036502397ff4f043a799dc6dffb05c0257614"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-9f890a9834-Screenshot_2025-12-15-15-52-54-08_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c99c03f0485a0fcacafb22b59c6e74a1.jpg",
+          "sha256": "444bcb2daf55995995484b626cf036502397ff4f043a799dc6dffb05c0257614"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-bef1365bf6-18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.jpg",
+          "sha256": "f1906cafb2f4dfc5ff98b6c0ca9fec16ad2d982cbecd84d0cff487f3922acde3"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-bef1365bf6-18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.jpg",
+          "sha256": "f1906cafb2f4dfc5ff98b6c0ca9fec16ad2d982cbecd84d0cff487f3922acde3"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-d0c5f31412-18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.jpg",
+          "sha256": "b696163adcb67896d93df2cf85517f69757bcf9311634859998bf121f89a1ce3"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/base-finder-th18-d0c5f31412-18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.jpg",
+          "sha256": "b696163adcb67896d93df2cf85517f69757bcf9311634859998bf121f89a1ce3"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-daf663be9c-th18_war_25_jpg.rf.cb0c2fa8c10d57887b3d6cf4b0db515e.jpg",
+          "sha256": "fc0545d8831951df5d44dc4475352bd80a546586151383058f4b3de50fcbc825"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-daf663be9c-th18_war_25_jpg.rf.cb0c2fa8c10d57887b3d6cf4b0db515e.jpg",
+          "sha256": "fc0545d8831951df5d44dc4475352bd80a546586151383058f4b3de50fcbc825"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/base-finder-th18-f3de4b8aca-Screenshot_2025-12-15-15-52-09-53_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.f48b48f8aff6d9bab7ebdf5e68307466.jpg",
+          "sha256": "0adbfc77b29fd4dd7545052c842fa1ea913f400d506ad58efeb870539cc49a8a"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/base-finder-th18-f3de4b8aca-Screenshot_2025-12-15-15-52-09-53_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.f48b48f8aff6d9bab7ebdf5e68307466.jpg",
+          "sha256": "0adbfc77b29fd4dd7545052c842fa1ea913f400d506ad58efeb870539cc49a8a"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-092b6d6230-th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.jpg",
+          "sha256": "cf67dfe890ddff77fd196c54dbb98b1ced138f4e7d3cfc1865ff9f82148c3189"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-092b6d6230-th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.jpg",
+          "sha256": "cf67dfe890ddff77fd196c54dbb98b1ced138f4e7d3cfc1865ff9f82148c3189"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-185b7dd322-th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+          "sha256": "1f531f2a149d9d37cc5d7abb7599a7aeac1dda6adf753c6440f772d91891a78a"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-185b7dd322-th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+          "sha256": "1f531f2a149d9d37cc5d7abb7599a7aeac1dda6adf753c6440f772d91891a78a"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-2196373ebe-th11_farm_1837_jpg.rf.bfc096c53cf76310302cb16c16f3f191.jpg",
+          "sha256": "380f8eba6c3af901a15525ddf5ad19004fcd3db803f201487075eed0c3c6be60"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-2196373ebe-th11_farm_1837_jpg.rf.bfc096c53cf76310302cb16c16f3f191.jpg",
+          "sha256": "380f8eba6c3af901a15525ddf5ad19004fcd3db803f201487075eed0c3c6be60"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-239ce94fbf-th12_war_1935_jpg.rf.3da541582c05ba5b6efff266ae6b0949.jpg",
+          "sha256": "8de756daa41c03591c9520a1c61c0361b9e4248f340fbfb697c07165f3bee6b6"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-239ce94fbf-th12_war_1935_jpg.rf.3da541582c05ba5b6efff266ae6b0949.jpg",
+          "sha256": "8de756daa41c03591c9520a1c61c0361b9e4248f340fbfb697c07165f3bee6b6"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-26693d79aa-th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+          "sha256": "70486beb3b54f1ba44395669ce864e517775056310c35af32d38e5b99b970a2e"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-26693d79aa-th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+          "sha256": "70486beb3b54f1ba44395669ce864e517775056310c35af32d38e5b99b970a2e"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-31e65e8211-th11_defence_1840_jpg.rf.30b6a7a7d93e256d45a1ea2df0965aa1.jpg",
+          "sha256": "46024fe21d9c26b8593105b15c68a94ea2da01fbc0b4cfceef7e02e77e29490e"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-31e65e8211-th11_defence_1840_jpg.rf.30b6a7a7d93e256d45a1ea2df0965aa1.jpg",
+          "sha256": "46024fe21d9c26b8593105b15c68a94ea2da01fbc0b4cfceef7e02e77e29490e"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-36809aa649-th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.jpg",
+          "sha256": "bb932e5a24d73614038f4b147c77429895763b3b194e0781ac43f2392bf82619"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-36809aa649-th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.jpg",
+          "sha256": "bb932e5a24d73614038f4b147c77429895763b3b194e0781ac43f2392bf82619"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-3b6258e64b-th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.jpg",
+          "sha256": "94f9ae0fea26eee73c1f4cb9fb5d51cf671dfea127906c9d9fa41c0f5af212c4"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-3b6258e64b-th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.jpg",
+          "sha256": "94f9ae0fea26eee73c1f4cb9fb5d51cf671dfea127906c9d9fa41c0f5af212c4"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-3c50924914-th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.jpg",
+          "sha256": "3dc48d97b2c35d9fedc08dbe58507f5670edb2da70797fc8f1f5969f084d7431"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-3c50924914-th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.jpg",
+          "sha256": "3dc48d97b2c35d9fedc08dbe58507f5670edb2da70797fc8f1f5969f084d7431"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-46a8851321-th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+          "sha256": "76dd7b7d85c127dd194352142366e1fe76ba9630164d4f0fbdd2cb3a8b26407a"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-46a8851321-th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+          "sha256": "76dd7b7d85c127dd194352142366e1fe76ba9630164d4f0fbdd2cb3a8b26407a"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-5091bdd706-th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+          "sha256": "481834daa4fa8e8a7b25b2a895160cff21d2f2742728ebccb25eb68805ae8514"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-5091bdd706-th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+          "sha256": "481834daa4fa8e8a7b25b2a895160cff21d2f2742728ebccb25eb68805ae8514"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-54927651e2-th11_war_2007_jpg.rf.50d0cb2b2b6ef9b512c3f7d9a22ee356.jpg",
+          "sha256": "4d5006843445026c7baac701d62b86396b219b3cf57735df675fe3184d43a31c"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-54927651e2-th11_war_2007_jpg.rf.50d0cb2b2b6ef9b512c3f7d9a22ee356.jpg",
+          "sha256": "4d5006843445026c7baac701d62b86396b219b3cf57735df675fe3184d43a31c"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-57cc0db0ce-th13_farm_1592_jpg.rf.0c4ab5cbb4c66bafecded99f0dca9763.jpg",
+          "sha256": "a8b60315169b7194094e4cfb86408e12fa18685465f5d8f67a2835d2f4eb8863"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-57cc0db0ce-th13_farm_1592_jpg.rf.0c4ab5cbb4c66bafecded99f0dca9763.jpg",
+          "sha256": "a8b60315169b7194094e4cfb86408e12fa18685465f5d8f67a2835d2f4eb8863"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-5e02772a6e-th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+          "sha256": "e10d54c12c9f36743577346bac87d845ee74f2fd62754dd90ed1c67172e30f15"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-5e02772a6e-th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+          "sha256": "e10d54c12c9f36743577346bac87d845ee74f2fd62754dd90ed1c67172e30f15"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-61808a6a2c-th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.jpg",
+          "sha256": "9aa34aea5969bea074da874fd4178b8ac197afa65b2230892494fae6bdd71b73"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-61808a6a2c-th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.jpg",
+          "sha256": "9aa34aea5969bea074da874fd4178b8ac197afa65b2230892494fae6bdd71b73"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-664a2d7ceb-th7_farm_1887_jpg.rf.7e2d2a114abedb3cce97a4490aed8238.jpg",
+          "sha256": "36e46a4f9a9d4e4e8c2385223e5fb48c8243455b8af4643d05ee473044d3c7af"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-664a2d7ceb-th7_farm_1887_jpg.rf.7e2d2a114abedb3cce97a4490aed8238.jpg",
+          "sha256": "36e46a4f9a9d4e4e8c2385223e5fb48c8243455b8af4643d05ee473044d3c7af"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-6866307a70-th16_war_1822_jpg.rf.7514c8c571050d5ecca478a1539f8173.jpg",
+          "sha256": "f1328eefe583c776e1d05e13bffb058cb112a6478a4ae6c6406560a95cb6f978"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-6866307a70-th16_war_1822_jpg.rf.7514c8c571050d5ecca478a1539f8173.jpg",
+          "sha256": "f1328eefe583c776e1d05e13bffb058cb112a6478a4ae6c6406560a95cb6f978"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-69bcc2e09e-th3_war_26_jpg.rf.6323f8e078612694712174c3266b4c1e.jpg",
+          "sha256": "df76bdaecd7f8cc7390f6f4265f6374fb33d7e06347d32899befdc68119e4bae"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-69bcc2e09e-th3_war_26_jpg.rf.6323f8e078612694712174c3266b4c1e.jpg",
+          "sha256": "df76bdaecd7f8cc7390f6f4265f6374fb33d7e06347d32899befdc68119e4bae"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-6bdc17046a-th6_farm_1813_jpg.rf.66cf5fea279d19f0199d3244333f6976.jpg",
+          "sha256": "e69d375fa9812a83f006aa6b6e045d919451fed35d9372abd2fd79126558c458"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-6bdc17046a-th6_farm_1813_jpg.rf.66cf5fea279d19f0199d3244333f6976.jpg",
+          "sha256": "e69d375fa9812a83f006aa6b6e045d919451fed35d9372abd2fd79126558c458"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-718e7a3e59-th5_war_1720_jpg.rf.020caacbdaca3768f99f0e153457628c.jpg",
+          "sha256": "290dfa40c0bd7254d7f8d9b006d02843699cc466586d430e1111ab2d3ffc6298"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-718e7a3e59-th5_war_1720_jpg.rf.020caacbdaca3768f99f0e153457628c.jpg",
+          "sha256": "290dfa40c0bd7254d7f8d9b006d02843699cc466586d430e1111ab2d3ffc6298"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-73f6bb1aa3-th6_war_1810_jpg.rf.f7df67a270f1dde6457cf7667736e884.jpg",
+          "sha256": "0de37285a86046711dff60baec9679c3b194c814bf1d8a3b0de838887348a630"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-73f6bb1aa3-th6_war_1810_jpg.rf.f7df67a270f1dde6457cf7667736e884.jpg",
+          "sha256": "0de37285a86046711dff60baec9679c3b194c814bf1d8a3b0de838887348a630"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-763c1f5f6e-th12_defence_2008_jpg.rf.d858ea14f1e6c15180e06a69aa9641a2.jpg",
+          "sha256": "7a31d5b52bcb01e54cde1a0311391cdd7f0e52e4a7d782b77e3f3c09317637a6"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-763c1f5f6e-th12_defence_2008_jpg.rf.d858ea14f1e6c15180e06a69aa9641a2.jpg",
+          "sha256": "7a31d5b52bcb01e54cde1a0311391cdd7f0e52e4a7d782b77e3f3c09317637a6"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-8228305f99-th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+          "sha256": "a4984c7a2ab80501ae7813460c250f3b2d66dca65ee175b72eb044566ba9477b"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-8228305f99-th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+          "sha256": "a4984c7a2ab80501ae7813460c250f3b2d66dca65ee175b72eb044566ba9477b"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-863f12c501-th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.jpg",
+          "sha256": "c680c5e84646c81c0d56b28f8fd21d817cb3cb23a25507fb6ad39e38257bb88f"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-863f12c501-th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.jpg",
+          "sha256": "c680c5e84646c81c0d56b28f8fd21d817cb3cb23a25507fb6ad39e38257bb88f"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-8755e9ebd5-th3_war_23_jpg.rf.1262ac93366adb381668f734b5a34d9c.jpg",
+          "sha256": "087afc9844573288261f2c86d3a3186bb99aa2052b1db05dcf34c1b26d8b7d6e"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-8755e9ebd5-th3_war_23_jpg.rf.1262ac93366adb381668f734b5a34d9c.jpg",
+          "sha256": "087afc9844573288261f2c86d3a3186bb99aa2052b1db05dcf34c1b26d8b7d6e"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-929d45e058-th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.jpg",
+          "sha256": "f37a08d000e7db140326656872867c2dd0171565b26b8fd665e1d6468bd147a5"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-929d45e058-th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.jpg",
+          "sha256": "f37a08d000e7db140326656872867c2dd0171565b26b8fd665e1d6468bd147a5"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-932fc36c9c-th6_defence_1867_jpg.rf.290f8aec9bfcfd78df1552520bcb9d29.jpg",
+          "sha256": "ab17ae80367c75896a090744b7bb7809f3eda8780d6947dfaeecd0cb79fb7269"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-932fc36c9c-th6_defence_1867_jpg.rf.290f8aec9bfcfd78df1552520bcb9d29.jpg",
+          "sha256": "ab17ae80367c75896a090744b7bb7809f3eda8780d6947dfaeecd0cb79fb7269"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-94c9513714-th13_defence_2009_jpg.rf.0d50abe1d3bdbbf0de5345f49b40bdcb.jpg",
+          "sha256": "5378c670ec3cdf637e6f52303888d627d65287535eb195caef63b2ad8ceed343"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-94c9513714-th13_defence_2009_jpg.rf.0d50abe1d3bdbbf0de5345f49b40bdcb.jpg",
+          "sha256": "5378c670ec3cdf637e6f52303888d627d65287535eb195caef63b2ad8ceed343"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-99704800ba-th6_defence_1868_jpg.rf.7ce10b4d30d71d78b0fb12f86031c910.jpg",
+          "sha256": "417938d79d49edfcf8725bbdd580ea0f81cd359f72dc3da9a5be06f6cf774812"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-99704800ba-th6_defence_1868_jpg.rf.7ce10b4d30d71d78b0fb12f86031c910.jpg",
+          "sha256": "417938d79d49edfcf8725bbdd580ea0f81cd359f72dc3da9a5be06f6cf774812"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-b9487cc3b3-th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+          "sha256": "d4c0fdcda45b1f4ed3a1fcafc14a35aaf64c40397f83176574b3358dd1e3000d"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-b9487cc3b3-th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+          "sha256": "d4c0fdcda45b1f4ed3a1fcafc14a35aaf64c40397f83176574b3358dd1e3000d"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-bf4c566bab-th4_defence_1628_jpg.rf.b60eb9550e35a3b6b8589c2091545857.jpg",
+          "sha256": "83f3e9ed13a5e71bce1b8d2fc4ab033aa0bf1cf4e443a47eb39e921bb94969d7"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-bf4c566bab-th4_defence_1628_jpg.rf.b60eb9550e35a3b6b8589c2091545857.jpg",
+          "sha256": "83f3e9ed13a5e71bce1b8d2fc4ab033aa0bf1cf4e443a47eb39e921bb94969d7"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-c28991a688-th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+          "sha256": "a28c25f07edd7b2a5809c1be55369c87f2bfb943ba2369db9514bba9e874b5b9"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-c28991a688-th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+          "sha256": "a28c25f07edd7b2a5809c1be55369c87f2bfb943ba2369db9514bba9e874b5b9"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-c97df176a1-th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.jpg",
+          "sha256": "ab98646cb8e06184e53dd844f966225eb5fb72f612bd51a27717b446b76df96d"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-c97df176a1-th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.jpg",
+          "sha256": "ab98646cb8e06184e53dd844f966225eb5fb72f612bd51a27717b446b76df96d"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-ce4b015da0-th7_farm_1885_jpg.rf.51d514dcadaef8ea467ea6907cb27a21.jpg",
+          "sha256": "94c0e738bea2669e39c174b98aea135e1a6355c5a9d44677acfbb82d7dd98678"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-ce4b015da0-th7_farm_1885_jpg.rf.51d514dcadaef8ea467ea6907cb27a21.jpg",
+          "sha256": "94c0e738bea2669e39c174b98aea135e1a6355c5a9d44677acfbb82d7dd98678"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-dc390e3caa-th3_war_25_jpg.rf.e555e8b9ab008fe336205c2d34cfc340.jpg",
+          "sha256": "450bd32b7f84cf491018e16d0251662b8c7ff18c8bf6554dc9a4aa230937bf96"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-dc390e3caa-th3_war_25_jpg.rf.e555e8b9ab008fe336205c2d34cfc340.jpg",
+          "sha256": "450bd32b7f84cf491018e16d0251662b8c7ff18c8bf6554dc9a4aa230937bf96"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-dcebe3ded8-th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.jpg",
+          "sha256": "6159497da8336dd700b46a77c86c237842c4081280659c9d9eeb674a3d74fbc4"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-dcebe3ded8-th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.jpg",
+          "sha256": "6159497da8336dd700b46a77c86c237842c4081280659c9d9eeb674a3d74fbc4"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-de94206deb-th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+          "sha256": "5a3cc3a13e961b9ee1765a1b7ef3d3c8472dd02edeb4a0225956eb5943f4e613"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-de94206deb-th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+          "sha256": "5a3cc3a13e961b9ee1765a1b7ef3d3c8472dd02edeb4a0225956eb5943f4e613"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-e5fac6e532-th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+          "sha256": "4eabf451bff7e3887942f89dafaab9bd7776e5d1281b1586e0c8178b9dbf6ed8"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-e5fac6e532-th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+          "sha256": "4eabf451bff7e3887942f89dafaab9bd7776e5d1281b1586e0c8178b9dbf6ed8"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-eb68205ab3-th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+          "sha256": "1d781bed1c5df1cd1130d12f75c2c220d560e3e4bb562c2a9ad9d6dbfc00eee0"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-eb68205ab3-th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+          "sha256": "1d781bed1c5df1cd1130d12f75c2c220d560e3e4bb562c2a9ad9d6dbfc00eee0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-ebff86aef3-th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.jpg",
+          "sha256": "11ac35c3c3bda7f76d93fb70e951938857c11afff32fc1d8dc486a22417c8995"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-ebff86aef3-th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.jpg",
+          "sha256": "11ac35c3c3bda7f76d93fb70e951938857c11afff32fc1d8dc486a22417c8995"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-f004d250c7-th3_defence_143_jpg.rf.53960e341b8a6a97df2a7b4e357e9661.jpg",
+          "sha256": "e50fd1138db5c466509af0f4a1acc0145436365ac64360bf3d6b8bec3c6fe2d7"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/coc-all-traps-f004d250c7-th3_defence_143_jpg.rf.53960e341b8a6a97df2a7b4e357e9661.jpg",
+          "sha256": "e50fd1138db5c466509af0f4a1acc0145436365ac64360bf3d6b8bec3c6fe2d7"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/coc-all-traps-f43fecf51c-th13_war_1608_jpg.rf.d30574b69c60006884d3803575752727.jpg",
+          "sha256": "1b1565fd4ebb042c786d7c64c989d9cf80a9ded453de0a4bb02dade86f6b24a4"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/coc-all-traps-f43fecf51c-th13_war_1608_jpg.rf.d30574b69c60006884d3803575752727.jpg",
+          "sha256": "1b1565fd4ebb042c786d7c64c989d9cf80a9ded453de0a4bb02dade86f6b24a4"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-008b44716e-th6-war-base-coc_jpg.rf.6bf2d998ab8f468c01732aaa9002c4d3.jpg",
+          "sha256": "b791a558e9a4e8f789ab532b9b2a66c352a743aa5766c782f012af9801fd8b82"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-008b44716e-th6-war-base-coc_jpg.rf.6bf2d998ab8f468c01732aaa9002c4d3.jpg",
+          "sha256": "b791a558e9a4e8f789ab532b9b2a66c352a743aa5766c782f012af9801fd8b82"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-26e09458f7-th6_farm_158_jpg.rf.00cae9644d615a197b181a65291b5993.jpg",
+          "sha256": "17e231a3db0507d3c0dbd24b737f3d740d9c54cc865dce6b8b847f1596ef7f73"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-26e09458f7-th6_farm_158_jpg.rf.00cae9644d615a197b181a65291b5993.jpg",
+          "sha256": "17e231a3db0507d3c0dbd24b737f3d740d9c54cc865dce6b8b847f1596ef7f73"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-2d5c37c65b-th6-farming-base-anti-air_jpg.rf.6c30b220c50c1aeb3a02834635b5a70c.jpg",
+          "sha256": "9e878ad6914aca6985530413f417c0ea972811efa94d0c28b1ebc45619249a10"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-2d5c37c65b-th6-farming-base-anti-air_jpg.rf.6c30b220c50c1aeb3a02834635b5a70c.jpg",
+          "sha256": "9e878ad6914aca6985530413f417c0ea972811efa94d0c28b1ebc45619249a10"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-78b3098c74-th6-anti-3star-war-base_jpg.rf.498964d1be30c4d2bdacf1807d065fc3.jpg",
+          "sha256": "0ce3705621b4973bcd213c47bed4064d6a2ae66aac29a764a63c56afacb2ad4c"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-78b3098c74-th6-anti-3star-war-base_jpg.rf.498964d1be30c4d2bdacf1807d065fc3.jpg",
+          "sha256": "0ce3705621b4973bcd213c47bed4064d6a2ae66aac29a764a63c56afacb2ad4c"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-7f3de131eb-th6-war-base_jpg.rf.088baf5e6947c06d4fdcff569c39b89e.jpg",
+          "sha256": "2964e956738d3a3f1dc99575fbfcb31a8c8e37a8bed7ea2aa7c95ad181139dc8"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-7f3de131eb-th6-war-base_jpg.rf.088baf5e6947c06d4fdcff569c39b89e.jpg",
+          "sha256": "2964e956738d3a3f1dc99575fbfcb31a8c8e37a8bed7ea2aa7c95ad181139dc8"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-aa93ea874c-coc-base-th6-2025-3-_jpg.rf.ce1949127bd37aae7eeb2341a5c51cd0.jpg",
+          "sha256": "fc4aae048e861148edf5c6d8a1620802e96ae4634e0f020079e5a94b3c267de0"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-aa93ea874c-coc-base-th6-2025-3-_jpg.rf.ce1949127bd37aae7eeb2341a5c51cd0.jpg",
+          "sha256": "fc4aae048e861148edf5c6d8a1620802e96ae4634e0f020079e5a94b3c267de0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-b9051dc34e-th6-trophy-base-coc_jpg.rf.1ad525d567e985238db79a7da6bffc8e.jpg",
+          "sha256": "d51beec0ab5c211befbacb3743cdd4184fb6de2ffac56b4ecf1bcb34401ea0be"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-b9051dc34e-th6-trophy-base-coc_jpg.rf.1ad525d567e985238db79a7da6bffc8e.jpg",
+          "sha256": "d51beec0ab5c211befbacb3743cdd4184fb6de2ffac56b4ecf1bcb34401ea0be"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-c77150ba73-th6-anti-air-base-coc_jpg.rf.6f79cec35f6b21092872828311ec0979.jpg",
+          "sha256": "121a3c27d96f56bc62631df9f8f2ba77327887c06f19d72c19fd2931a8bb4f64"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-c77150ba73-th6-anti-air-base-coc_jpg.rf.6f79cec35f6b21092872828311ec0979.jpg",
+          "sha256": "121a3c27d96f56bc62631df9f8f2ba77327887c06f19d72c19fd2931a8bb4f64"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-db72e8036f-th6-farming-base-layout_jpg.rf.1a275fa67501591a107f3563888631dc.jpg",
+          "sha256": "bc63369e116d4a61d40dd5ab6863a57489bf9829f48a985968a27d2aee012481"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/evans-home-village-building-detector-db72e8036f-th6-farming-base-layout_jpg.rf.1a275fa67501591a107f3563888631dc.jpg",
+          "sha256": "bc63369e116d4a61d40dd5ab6863a57489bf9829f48a985968a27d2aee012481"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/evans-home-village-building-detector-e8809c8e6d-th6_farm_170_jpg.rf.06a8000d18ee08ab279f19de6a02d4b5.jpg",
+          "sha256": "3a1a699c5bb6b1a7396b41070cfd8edaa155a4c645e1f1f67e34d717bc4c9e27"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/evans-home-village-building-detector-e8809c8e6d-th6_farm_170_jpg.rf.06a8000d18ee08ab279f19de6a02d4b5.jpg",
+          "sha256": "3a1a699c5bb6b1a7396b41070cfd8edaa155a4c645e1f1f67e34d717bc4c9e27"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-38935d56d5-IMG_0112_jpg.rf.2bfed1e3be03d940018685018b695035.jpg",
+          "sha256": "f79f071bccd7c1add1b5879dccdb3b4269384a88c0e0f3a2f9fc720331d62cc0"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-38935d56d5-IMG_0112_jpg.rf.2bfed1e3be03d940018685018b695035.jpg",
+          "sha256": "f79f071bccd7c1add1b5879dccdb3b4269384a88c0e0f3a2f9fc720331d62cc0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-4a250cebde-IMG_0123_jpg.rf.2782c33728f6165f7ffc2a6236695739.jpg",
+          "sha256": "ed4884fd112469b1fad9009d3900e97887d720e0139f5bc091637ae8e3150934"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-4a250cebde-IMG_0123_jpg.rf.2782c33728f6165f7ffc2a6236695739.jpg",
+          "sha256": "ed4884fd112469b1fad9009d3900e97887d720e0139f5bc091637ae8e3150934"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-6020c66e87-IMG_0133_jpg.rf.a15444ca0307ee01d1528c5503577fe9.jpg",
+          "sha256": "dc3edacf19ccc9cc8338d56febc1fac9a4cc61f1d9a26dc85bdad7756b773ecf"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-6020c66e87-IMG_0133_jpg.rf.a15444ca0307ee01d1528c5503577fe9.jpg",
+          "sha256": "dc3edacf19ccc9cc8338d56febc1fac9a4cc61f1d9a26dc85bdad7756b773ecf"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "files": [
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-8c9d6c47d9-IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+          "sha256": "f2935cb1b7b629d470c6edf3f6615cda3c9ddae5e3f604e95b460289c4c936a0"
+        },
+        {
+          "split": "val",
+          "path": "training/dataset/detector/images/val/glenn-th18-gigabomb-8c9d6c47d9-IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+          "sha256": "f2935cb1b7b629d470c6edf3f6615cda3c9ddae5e3f604e95b460289c4c936a0"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/glenn-th18-gigabomb-daf7aaaa9a-IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+          "sha256": "141488d5d93e5bfcc06c92e0ae6f3d82daeb2d4d282d32b5c6c8e7e523958ef7"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-daf7aaaa9a-IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+          "sha256": "141488d5d93e5bfcc06c92e0ae6f3d82daeb2d4d282d32b5c6c8e7e523958ef7"
+        }
+      ]
+    },
+    {
+      "splits": [
+        "test",
+        "train"
+      ],
+      "files": [
+        {
+          "split": "test",
+          "path": "training/dataset/detector/images/test/glenn-th18-gigabomb-f410adbcda-IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.jpg",
+          "sha256": "61c20f18c216e5779fa447ce5969f56ff2d094df196dec2058837a2fa0a05568"
+        },
+        {
+          "split": "train",
+          "path": "training/dataset/detector/images/train/glenn-th18-gigabomb-f410adbcda-IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.jpg",
+          "sha256": "61c20f18c216e5779fa447ce5969f56ff2d094df196dec2058837a2fa0a05568"
+        }
+      ]
+    }
+  ],
+  "clean_train_list": "training/dataset/detector/train-clean.txt",
+  "policy": "Exclude a train image when its relative stem or exact SHA-256 occurs in val/test. Source files are never moved or deleted."
+}

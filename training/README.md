@@ -45,7 +45,23 @@ décompressé son ZIP dans `training/imports/<source>`, l'import se fait ainsi :
 ```
 
 Les labels non compatibles sont ignorés, les polygones de segmentation sont convertis en
-boîtes et l'attribution de licence est ajoutée à `training/dataset/SOURCES.md`.
+boîtes et l'attribution de licence est ajoutée à `training/dataset/SOURCES.md`. Les splits
+`val` et `test` sont protégés : même avec `--as-train`, une image déjà réservée n'est plus
+recopiée dans le train.
+
+## Intégrité des splits
+
+Avant tout fine-tune, générer le train assaini sans supprimer les fichiers sources :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\audit_split_integrity.py
+.\.venv\Scripts\python.exe training\scripts\train_detector.py --prepare-only
+```
+
+L'audit compare les stems et SHA-256 entre train/val/test, écrit le rapport
+`training/reports/split-integrity.json` et génère
+`training/dataset/detector/train-clean.txt`. `train_detector.py` utilise cette liste par
+défaut. L'option `--allow-split-overlap` existe uniquement pour un diagnostic explicite.
 
 ## Commandes prêtes
 
@@ -55,14 +71,17 @@ Test technique synthétique d'une époque :
 .\.venv\Scripts\python.exe training\scripts\smoke_test_yolo.py
 ```
 
-Premier entraînement réel, une fois le dataset validé :
+Fine-tune réel, uniquement après validation et depuis un checkpoint existant :
 
 ```powershell
-.\.venv\Scripts\python.exe training\scripts\train_detector.py --epochs 100 --imgsz 640 --batch 2
+.\.venv\Scripts\python.exe training\scripts\train_detector.py `
+  --model training\runs\building-detector-v5s-distilled-640\weights\epoch79.pt `
+  --epochs 20 --imgsz 640 --batch 2 --name building-detector-v7-experiment
 ```
 
 La GTX 1050 ne dispose que de 3 Go. Si la mémoire est insuffisante, utiliser `--batch 1`
-ou `--imgsz 512`. Les résultats sont écrits dans `training/runs/building-detector`.
+ou `--imgsz 512`. Ne jamais relancer de zéro ni promouvoir sans battre la baseline
+V5 + imgsz 800 + TTA sur le protocole documenté dans `HANDOFF.md`.
 
 ## Classifieurs de niveaux et analyse complète
 

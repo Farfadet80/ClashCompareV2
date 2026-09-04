@@ -20,6 +20,14 @@ TRAINING = ROOT / "training"
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def names_list(value: list[str] | dict[int | str, str]) -> list[str]:
     if isinstance(value, list):
         return value
@@ -77,7 +85,21 @@ def main() -> None:
     target_ids = {name: index for index, name in enumerate(target_names)}
     target_root = TRAINING / "dataset" / "detector"
 
-    imported_images = imported_boxes = 0
+    # Val/test sont des splits protégés. Même avec --as-train, une image déjà
+    # réservée ne doit jamais être recopiée dans train.
+    protected_stems: set[str] = set()
+    protected_hashes: set[str] = set()
+    for protected_split in ("val", "test"):
+        protected_dir = target_root / "images" / protected_split
+        if not protected_dir.exists():
+            continue
+        for protected_image in protected_dir.rglob("*"):
+            if protected_image.suffix.lower() not in IMAGE_SUFFIXES:
+                continue
+            protected_stems.add(protected_image.stem)
+            protected_hashes.add(file_sha256(protected_image))
+
+    imported_images = imported_boxes = protected_skipped = 0
     # Preserve the source test split. It must never be used for validation or
     # hyper-parameter/model selection in future training runs.
     if args.as_train:
@@ -133,6 +155,11 @@ def main() -> None:
             stem = f"{args.source_key}-{digest}-{image.stem}"
             target_image = target_root / "images" / target_split / f"{stem}{image.suffix.lower()}"
             target_label = target_root / "labels" / target_split / f"{stem}.txt"
+            if target_split == "train" and (
+                stem in protected_stems or file_sha256(image) in protected_hashes
+            ):
+                protected_skipped += 1
+                continue
             if target_image.exists() or target_label.exists():
                 continue
             if not args.dry_run:
@@ -151,6 +178,11 @@ def main() -> None:
             attribution.write_text(existing + entry, encoding="utf-8")
     mode = "Simulation" if args.dry_run else "Import"
     print(f"{mode} terminé: {imported_images} images, {imported_boxes} boîtes conservées")
+    if protected_skipped:
+        print(
+            f"Splits protégés: {protected_skipped} image(s) val/test "
+            "non recopiée(s) dans train"
+        )
 
 
 if __name__ == "__main__":
