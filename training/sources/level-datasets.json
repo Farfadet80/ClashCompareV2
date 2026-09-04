@@ -1,0 +1,48 @@
+{
+  "h-th-ad-levels": {
+    "url": "https://universe.roboflow.com/h-urm7l/clash-of-clans-vnd0y",
+    "license": "MIT",
+    "author": "H",
+    "mapping": {
+      "Ad-lvl8": ["air-defense", 8],
+      "Ad-lvl9": ["air-defense", 9],
+      "Ad-lvl10": ["air-defense", 10],
+      "Ad-lvl11": ["air-defense", 11],
+      "Townhall-9": ["town-hall", 9],
+      "Townhall-10": ["town-hall", 10],
+      "Towhall-11": ["town-hall", 11],
+      "Townhall-12": ["town-hall", 12],
+      "Townhall-13": ["town-hall", 13],
+      "Townhall-14": ["town-hall", 14]
+    }
+  },
+  "sascha-cannon-levels": {
+    "url": "https://universe.roboflow.com/sascha/clash-of-clans-6kiky",
+    "license": "CC BY 4.0",
+    "author": "Sascha",
+    "mapping": {
+      "cannon1": ["cannon", 1],
+      "cannon2": ["cannon", 2],
+      "cannon3": ["cannon", 3],
+      "cannon4": ["cannon", 4],
+      "cannon5": ["cannon", 5],
+      "cannon6": ["cannon", 6],
+      "cannon7": ["cannon", 7],
+      "cannon8": ["cannon", 8],
+      "cannon9": ["cannon", 9],
+      "cannon10": ["cannon", 10],
+      "cannon11": ["cannon", 11],
+      "cannon12": ["cannon", 12],
+      "cannon13": ["cannon", 13],
+      "cannon14": ["cannon", 14],
+      "cannon15": ["cannon", 15],
+      "cannon16": ["cannon", 16],
+      "cannon17": ["cannon", 17],
+      "cannon18": ["cannon", 18],
+      "cannon19": ["cannon", 19],
+      "cannon20": ["cannon", 20],
+      "cannon21": ["cannon", 21]
+    }
+  }
+}
+

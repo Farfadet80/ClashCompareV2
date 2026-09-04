@@ -1,0 +1,15 @@
+{
+  "release": "building-detector-v5s-infer800",
+  "weights_train_run": "building-detector-v5s-distilled-640",
+  "imgsz": 800,
+  "promoted_on": "2026-09-04",
+  "decision": "Mêmes poids V5 ; inférence 800 bat 640 sur le test réservé (mAP50-95 0.6121 vs 0.5788).",
+  "pt_sha256": "866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d",
+  "aliases": {
+    "pt": "models/building-detector.pt",
+    "onnx": "models/building-detector.onnx"
+  },
+  "release_dir": "models/releases/building-detector-v5s-infer800",
+  "level_classifiers": ["air-defense", "town-hall"],
+  "not_promoted": ["building-detector-v6-weakclass-ft", "sahi-tiling", "level-cannon"]
+}

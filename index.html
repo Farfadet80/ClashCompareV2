@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#111827" />
+  <title>ClashCompare</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css?v=infer800" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="brand">⚔️ ClashCompare</div>
+      <div class="subtitle">Compare deux villages à partir du # joueur + d'une capture</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="tabs" aria-label="Navigation">
+      <button class="tab active" data-tab="a">Joueur A</button>
+      <button class="tab" data-tab="b">Joueur B</button>
+      <button class="tab" data-tab="compare">Comparatif</button>
+    </section>
+
+    <section id="panel-a" class="panel active"></section>
+    <section id="panel-b" class="panel"></section>
+
+    <section id="panel-compare" class="panel">
+      <div class="card">
+        <h2>Comparatif</h2>
+        <p class="muted">Ajoute les deux joueurs, leurs captures, puis lance l'analyse YOLO sur chaque onglet.</p>
+        <div id="compare-content" class="compare-grid"></div>
+      </div>
+    </section>
+    <section class="card" style="margin-top:14px">
+      <h3>Bibliothèque de reconnaissance</h3>
+      <p class="muted"><span id="catalog-count">Chargement…</span> — les emplacements sont prêts pour plusieurs références par bâtiment et par niveau.</p>
+    </section>
+  <section class="card" style="margin-top:14px">
+      <h3>🤖 Moteur IA</h3>
+      <p class="muted" id="engine-status">Détecteur V5 (YOLO11s, imgsz 800) via le serveur local. Niveaux : air-defense et town-hall seulement, si confiance ≥ 60 % — jamais inventés.</p>
+    </section>
+    <footer class="fan-disclaimer">
+      Ce contenu n'est pas officiel et n'a pas reçu le soutien de Supercell.
+      ClashCompare est une application de fan.
+    </footer>
+  </main>
+
+  <template id="player-template">
+    <div class="card player-card">
+      <div class="player-head">
+        <div>
+          <h2 class="player-title">Joueur</h2>
+          <p class="muted">Le # reste recommandé pour enrichir les données publiques du profil.</p>
+        </div>
+        <span class="status-pill">En attente</span>
+      </div>
+
+      <label class="field">
+        <span># du joueur</span>
+        <input class="tag-input" type="text" autocapitalize="characters" placeholder="#ABC123XYZ" />
+      </label>
+
+      <div class="upload-box">
+        <input class="image-input" type="file" accept="image/*" hidden />
+        <button class="upload-btn" type="button">
+          <span class="upload-icon">📸</span>
+          <span>Ajouter l'image du village</span>
+        </button>
+
+        <div class="photo-tip">
+          <strong>Pour un meilleur traitement :</strong>
+          ouvre Clash of Clans → <b>Modifier le village</b> → <b>Mode photo</b>, puis fais une capture avec tout le village visible et envoie cette image ici.
+        </div>
+
+        <img class="preview" alt="Aperçu du village" hidden />
+      </div>
+
+      <div class="actions">
+        <button class="analyze-btn primary" type="button">Analyser le village</button>
+        <button class="clear-btn ghost" type="button">Effacer</button>
+      </div>
+
+      <div class="analysis-area" hidden>
+        <h3>Résultat de l'analyse</h3>
+        <div class="notice r-notice">
+          Lance l'app avec le serveur local pour analyser vraiment la capture (détecteur V5).
+        </div>
+        <div class="result-grid">
+          <div class="stat"><span>Tag</span><b class="r-tag">—</b></div>
+          <div class="stat"><span>Image</span><b class="r-image">—</b></div>
+          <div class="stat"><span>Qualité de capture</span><b class="r-quality">—</b></div>
+          <div class="stat"><span>Détections</span><b class="r-count">—</b></div>
+        </div>
+        <div class="inventory r-inventory" hidden></div>
+      </div>
+    </div>
+  </template>
+
+  <script src="config.js"></script>
+  <script src="app.js?v=yolo"></script>
+</body>
+</html>

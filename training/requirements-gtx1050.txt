@@ -1,0 +1,12 @@
+# Stack figée pour NVIDIA GeForce GTX 1050 (Compute Capability 6.1 / sm_61).
+# Ne pas « upgrader » Python / PyTorch / CUDA / Ultralytics à la dernière version :
+# les builds récents (souvent CC >= 7.5, ex. cu128) ne supportent plus cette carte.
+# Vérifier d'abord : training/scripts/check_environment.py
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118
+torchaudio==2.7.1+cu118
+ultralytics==8.4.137
+onnx==1.22.0
+onnxruntime==1.29.0
+onnxslim==0.1.96

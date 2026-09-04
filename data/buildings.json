@@ -1,0 +1,934 @@
+{
+  "version": "3.2",
+  "scope": "home_village",
+  "reference_image_policy": "Place authorized/user gameplay crops in references/<building-id>/level-<n>/",
+  "buildings": [
+    {
+      "id": "town-hall",
+      "name": "Hôtel de ville",
+      "category": "core",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "cannon",
+      "name": "Canon",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "archer-tower",
+      "name": "Tour d'archers",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "mortar",
+      "name": "Mortier",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "air-defense",
+      "name": "Défense antiaérienne",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "wizard-tower",
+      "name": "Tour de sorciers",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "air-sweeper",
+      "name": "Propulseur d'air",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "hidden-tesla",
+      "name": "Tesla camouflée",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "bomb-tower",
+      "name": "Tour à bombes",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "x-bow",
+      "name": "Arc-X",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "inferno-tower",
+      "name": "Tour de l'enfer",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "eagle-artillery",
+      "name": "Aigle artilleur",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "scattershot",
+      "name": "Catapulte erratique",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "builders-hut",
+      "name": "Cabane d'ouvrier",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "spell-tower",
+      "name": "Tour de sorts",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "monolith",
+      "name": "Monolithe",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "ricochet-cannon",
+      "name": "Canon ricochet",
+      "category": "merged-defense",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "multi-archer-tower",
+      "name": "Tour multi-archers",
+      "category": "merged-defense",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "firespitter",
+      "name": "Cracheur de feu",
+      "category": "defense",
+      "levels": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "wall",
+      "name": "Mur",
+      "category": "wall",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "gold-mine",
+      "name": "Mine d'or",
+      "category": "resource",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "elixir-collector",
+      "name": "Extracteur d'élixir",
+      "category": "resource",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "dark-elixir-drill",
+      "name": "Foreuse d'élixir noir",
+      "category": "resource",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "gold-storage",
+      "name": "Réserve d'or",
+      "category": "resource",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "elixir-storage",
+      "name": "Réserve d'élixir",
+      "category": "resource",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "dark-elixir-storage",
+      "name": "Réserve d'élixir noir",
+      "category": "resource",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "clan-castle",
+      "name": "Château de clan",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "army-camp",
+      "name": "Camp militaire",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "barracks",
+      "name": "Caserne",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratoire",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "spell-factory",
+      "name": "Usine de sorts",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "dark-spell-factory",
+      "name": "Usine de sorts noirs",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "workshop",
+      "name": "Atelier",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "pet-house",
+      "name": "Animalerie",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "blacksmith",
+      "name": "Forgeron",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "hero-hall",
+      "name": "Hall des héros",
+      "category": "hero",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "dark-barracks",
+      "name": "Caserne noire",
+      "category": "army",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "multi-gear-tower",
+      "name": "Tour multi-équipée",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "revenge-tower",
+      "name": "Tour vengeuse",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "super-wizard-tower",
+      "name": "Tour de super sorciers",
+      "category": "defense",
+      "levels": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "town-hall-guardian",
+      "name": "Gardien d'hôtel de ville",
+      "category": "town-hall-guardian",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "variants": [
+        "guardian-variants"
+      ]
+    },
+    {
+      "id": "crafted-defense",
+      "name": "Défense fabriquée",
+      "category": "crafted-defense",
+      "levels": [],
+      "variants": [
+        "light-beam",
+        "hero-bell",
+        "bomb-hive"
+      ]
+    },
+    {
+      "id": "bomb",
+      "name": "Bombe",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "spring-trap",
+      "name": "Piège à ressort",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "air-bomb",
+      "name": "Bombe aérienne",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "giant-bomb",
+      "name": "Bombe géante",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "seeking-air-mine",
+      "name": "Mine chercheuse",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "skeleton-trap",
+      "name": "Piège squelettique",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "tornado-trap",
+      "name": "Piège tornade",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "giga-bomb",
+      "name": "Giga bombe",
+      "category": "trap",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "updated_through": "2026-08-31",
+  "notes": [
+    "Catalogue étendu pour inclure les catégories visuelles du village principal.",
+    "Les supercharges sont modélisées séparément car elles modifient l'apparence d'un bâtiment au niveau maximum.",
+    "Mise à jour du 31 août 2026 : nouvelles supercharges HDV18 pour Cabane d'ouvrier et Monolithe."
+  ],
+  "supercharges": {
+    "visual_states": [
+      "none",
+      "stage-1",
+      "stage-2",
+      "stage-3"
+    ],
+    "availability_note": "Only applicable to eligible max-level buildings; availability changes when new normal levels are released.",
+    "confirmed_2026_08_31_additions": [
+      "builders-hut",
+      "monolith"
+    ],
+    "other_confirmed_2026_examples": [
+      "mortar",
+      "inferno-tower",
+      "hidden-tesla",
+      "firespitter",
+      "revenge-tower",
+      "multi-gear-tower"
+    ]
+  }
+}

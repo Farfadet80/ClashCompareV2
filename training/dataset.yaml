@@ -1,0 +1,55 @@
+path: ./dataset/detector
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: town-hall
+  1: cannon
+  2: archer-tower
+  3: mortar
+  4: air-defense
+  5: wizard-tower
+  6: air-sweeper
+  7: hidden-tesla
+  8: bomb-tower
+  9: x-bow
+  10: inferno-tower
+  11: eagle-artillery
+  12: scattershot
+  13: builders-hut
+  14: spell-tower
+  15: monolith
+  16: ricochet-cannon
+  17: multi-archer-tower
+  18: firespitter
+  19: wall
+  20: gold-mine
+  21: elixir-collector
+  22: dark-elixir-drill
+  23: gold-storage
+  24: elixir-storage
+  25: dark-elixir-storage
+  26: clan-castle
+  27: army-camp
+  28: barracks
+  29: laboratory
+  30: spell-factory
+  31: dark-spell-factory
+  32: workshop
+  33: pet-house
+  34: blacksmith
+  35: hero-hall
+  36: dark-barracks
+  37: multi-gear-tower
+  38: revenge-tower
+  39: super-wizard-tower
+  40: town-hall-guardian
+  41: crafted-defense
+  42: bomb
+  43: spring-trap
+  44: air-bomb
+  45: giant-bomb
+  46: seeking-air-mine
+  47: skeleton-trap
+  48: tornado-trap
+  49: giga-bomb

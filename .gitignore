@@ -1,0 +1,53 @@
+# Environnements
+.venv/
+.venv-broken-*/
+.matplotlib/
+.ultralytics/
+__pycache__/
+*.pyc
+.Python
+
+# Poids YOLO de base / caches locaux
+yolo11*.pt
+weights/
+Ultralytics/
+runs/
+
+# Données lourdes (ne pas pousser)
+training/dataset/detector/
+training/dataset/levels/
+training/dataset/level-splits.jsonl
+training/classification/
+training/imports/
+training/sources/find-this-base-v1-yolov11/
+training/sources/*/
+!training/sources/*.json
+!training/sources/*.md
+training/inbox/screenshots/*
+!training/inbox/screenshots/README.md
+training/runs/
+training/logs/*.log
+training/exports/
+training/curation/
+training/reports/*.txt
+training/reports/*.md
+!training/reports/.gitkeep
+
+# Modèles binaires lourds (releases via GitHub Releases si besoin)
+models/**/*.pt
+models/**/*.onnx
+!models/.gitkeep
+!models/README.md
+!models/ACTIVE.json
+!models/experimental/README.md
+!models/releases/**/release.json
+
+# OS / IDE
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.msix
+*.exe
+*.zip
