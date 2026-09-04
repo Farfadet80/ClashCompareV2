@@ -1,6 +1,6 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-04 (TTA promue sur imgsz 800)
+Dernière mise à jour : 2026-09-04 (référence HANDOFF + Git + objectifs produit)
 
 ## État actuel
 
@@ -238,50 +238,36 @@ Pièges VAL 640→800 (mAP50-95) : air-bomb 0,12→0,22 ; bomb 0,18→0,24 ; spr
 - models/experimental/level-cannon.pt + README
 - models/README.md, service-worker.js (clashcompare-v3-5-infer800), HANDOFF.md
 
+
+## Objectifs produit (référence Jimmy)
+
+- **Référence principale** : ce HANDOFF.md + l'état du repo GitHub Farfadet80/ClashCompareV2.
+- **API CoC** : pas de clé à transmettre pour l'instant. window.CLASHCOMPARE_API = "" dans config.js est **normal**. Brancher plus tard sans inventer de bâtiments.
+- **UX** : app simple multi-utilisateurs ; saisie/modification des deux tags #....
+- **3 vues** : récap village joueur A, récap joueur B, page de comparaison.
+- **Comparaison** : visuelle et lisible, idéalement avec petites icônes bâtiments ; pour chaque type, quantités **par niveau** (ex. X canons niv.N chez A vs Y chez B).
+- **Progression** : estimation %% maxage HDV + ce qu'il reste à améliorer.
+- **PWA iPhone** : objectif à terme ; **priorité actuelle** = pipeline + détection fiables.
+
+## Règles YOLO / promotion
+
+- **Ne jamais repartir de zéro.** Baseline promue : V5 80/80 + **infer imgsz 800 + TTA**.
+- Continuer uniquement depuis poids / datasets / évals existants.
+- Toute nouvelle tentative se **mesure** contre cette baseline (val d'abord ; test réservé pour promotion).
+- **Ne rien promouvoir** sans amélioration mesurable (surtout mAP50 / mAP50-95 sur le protocole établi).
+- Non promus : V6, SAHI, imgsz 704/832/896/960 seuls, level-cannon expérimental.
+
+## Workflow Git
+
+- Travailler via Git sur Farfadet80/ClashCompareV2.
+- Avant grosses features : vérifier bout-en-bout + commit/tag de sauvegarde propre.
+- Si casse : git checkout / revert vers le dernier tag de sauvegarde.
+
 ## TODO
 
-1. Inférence **imgsz 800 + TTA** promue (2026-09-04 soir) — mêmes poids V5.
-2. SAHI/tiling, V6, imgsz 704/832/896/960 : non promus (sous baseline AP).
+1. Baseline YOLO : V5 + imgsz 800 + TTA — ne pas repartir de zéro ; mesurer toute tentative vs cette baseline.
+2. UX comparaison : 3 vues (A / B / comparatif), tags éditables, quantités par niveau, icônes, %% maxage HDV.
 3. Plus de captures Mode photo (pièges / teslas) — datasets publics épuisés localement.
-4. Plus de crops **niveaux** (canons surtout) avant de sortir level-cannon de la quarantaine.
-5. API CoC pour héros / labo / sorts — jamais inventer les bâtiments.
-6. Réinstaller Git si versionnage souhaité.
-
-## Session 2026-09-04 soir (Cursor) — sweep imgsz + TTA
-
-### Tests exécutés
-- `check_environment.py` : CUDA GTX 1050 OK, release infer800.
-- `validate_dataset.py` : train 999 / val 118 / test 60.
-- `smoke_test_yolo.py` : OK.
-- Classifieurs : air-defense test **100 %** ; town-hall test **98 %**.
-- Sweep imgsz VAL (mêmes poids V5) :
-
-| imgsz | P | R | mAP50 | mAP50-95 |
-|---:|---:|---:|---:|---:|
-| 704 | 0,8257 | 0,8254 | 0,8328 | 0,6130 |
-| **800** | **0,8259** | **0,8236** | **0,8416** | **0,6247** |
-| 832 | 0,8604 | 0,8009 | 0,8343 | 0,6201 |
-| 896 | 0,8617 | 0,7918 | 0,8327 | 0,6186 |
-| 960 | 0,8409 | 0,7774 | 0,8152 | 0,6048 |
-
-- SAHI VAL imgsz 800 / tiles 800 / overlap 20 % : mAP50-95 **0,6166** vs contrôle global **0,6201** → non promu.
-- TTA Ultralytics (`augment=True`, imgsz 800) :
-
-| Split | Config | P | R | mAP50 | mAP50-95 |
-|---|---|---:|---:|---:|---:|
-| Val | 800 | 0,8259 | 0,8236 | 0,8416 | 0,6247 |
-| Val | **800+TTA** | **0,8692** | **0,8259** | **0,8532** | **0,6319** |
-| Test | 800 | 0,8273 | 0,8281 | 0,8390 | 0,6121 |
-| Test | **800+TTA** | **0,8525** | 0,8235 | **0,8573** | **0,6222** |
-
-JSON : `training/runs/evaluations/v5-alias-*-imgsz800-tta/metrics.json`.
-
-### Décisions
-- **Promouvoir TTA** en défaut (`analyze_village` / `serve_compare`) : mAP50 et mAP50-95 progressent sur le test réservé (+1,8 / +1,0 pp). Rappel F1 −0,46 pp accepté (décision AP comme pour SAHI).
-- **Ne pas** promouvoir d'autres imgsz ni SAHI@800.
-- Poids PT/ONNX inchangés. Désactiver TTA : `analyze_village.py … --no-tta`.
-- Smoke analyse test : 44 détections avec TTA.
-
-### Fichiers touchés
-- `training/scripts/analyze_village.py`, `serve_compare.py`, `evaluate_detector.py` (`--augment`), `check_environment.py`
-- `models/ACTIVE.json`, `service-worker.js` (`clashcompare-v3-6-infer800-tta`), `HANDOFF.md`, `models/README.md`
+4. Plus de crops **niveaux** (canons) avant de sortir level-cannon de la quarantaine.
+5. Brancher API CoC plus tard (CLASHCOMPARE_API encore vide — normal) ; jamais inventer les bâtiments.
+6. PWA iPhone soignée — après pipeline fiable.
