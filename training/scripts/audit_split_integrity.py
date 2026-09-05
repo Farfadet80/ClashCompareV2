@@ -23,6 +23,7 @@ class ImageRecord:
     path: Path
     relative_stem: str
     sha256: str
+    village_group: str | None
 
 
 def file_sha256(path: Path) -> str:
@@ -51,12 +52,19 @@ def collect_records(config: dict, dataset_root: Path) -> list[ImageRecord]:
         for path in sorted(image_dir.rglob("*")):
             if path.suffix.lower() not in IMAGE_SUFFIXES:
                 continue
+            provenance_path = dataset_root / "provenance" / f"{path.stem}.json"
+            village_group = None
+            if provenance_path.exists():
+                provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+                value = provenance.get("village_group")
+                village_group = str(value) if value else None
             records.append(
                 ImageRecord(
                     split=split,
                     path=path.resolve(),
                     relative_stem=path.relative_to(image_dir).with_suffix("").as_posix(),
                     sha256=file_sha256(path),
+                    village_group=village_group,
                 )
             )
     return records
@@ -65,7 +73,10 @@ def collect_records(config: dict, dataset_root: Path) -> list[ImageRecord]:
 def cross_split_groups(records: list[ImageRecord], key: str) -> list[list[ImageRecord]]:
     grouped: dict[str, list[ImageRecord]] = defaultdict(list)
     for record in records:
-        grouped[getattr(record, key)].append(record)
+        value = getattr(record, key)
+        if value is None:
+            continue
+        grouped[value].append(record)
     return [
         group
         for group in grouped.values()
@@ -132,6 +143,7 @@ def main() -> None:
     records = collect_records(config, dataset_root)
     stem_groups = cross_split_groups(records, "relative_stem")
     hash_groups = cross_split_groups(records, "sha256")
+    village_groups = cross_split_groups(records, "village_group")
 
     protected_hashes = {
         record.sha256 for record in records if record.split in {"val", "test"}
@@ -139,11 +151,20 @@ def main() -> None:
     protected_stems = {
         record.relative_stem for record in records if record.split in {"val", "test"}
     }
+    protected_village_groups = {
+        record.village_group
+        for record in records
+        if record.split in {"val", "test"} and record.village_group
+    }
     train_records = [record for record in records if record.split == "train"]
     excluded = [
         record
         for record in train_records
-        if record.sha256 in protected_hashes or record.relative_stem in protected_stems
+        if (
+            record.sha256 in protected_hashes
+            or record.relative_stem in protected_stems
+            or record.village_group in protected_village_groups
+        )
     ]
     excluded_paths = {record.path for record in excluded}
     clean_train = [record for record in train_records if record.path not in excluded_paths]
@@ -163,16 +184,24 @@ def main() -> None:
         "split_image_counts": dict(sorted(split_counts.items())),
         "cross_split_same_stem_pairs": overlap_pairs(stem_groups),
         "cross_split_same_hash_pairs": overlap_pairs(hash_groups),
+        "cross_split_same_village_group_pairs": overlap_pairs(village_groups),
         "train_images_before": len(train_records),
         "train_images_excluded": len(excluded),
         "train_images_clean": len(clean_train),
         "excluded_train_files": [relative_to_root(record.path) for record in excluded],
         "same_stem_groups": [serialize_group(group) for group in stem_groups],
         "same_hash_groups": [serialize_group(group) for group in hash_groups],
+        "same_village_group_groups": [
+            {
+                "village_group": group[0].village_group,
+                **serialize_group(group),
+            }
+            for group in village_groups
+        ],
         "clean_train_list": relative_to_root(args.clean_train_list.resolve()),
         "policy": (
-            "Exclude a train image when its relative stem or exact SHA-256 occurs "
-            "in val/test. Source files are never moved or deleted."
+            "Exclude a train image when its relative stem, exact SHA-256 or declared "
+            "village_group occurs in val/test. Source files are never moved or deleted."
         ),
     }
     args.report.parent.mkdir(parents=True, exist_ok=True)
@@ -187,6 +216,7 @@ def main() -> None:
     )
     print(f"Chevauchements même stem: {overlap_pairs(stem_groups)}")
     print(f"Chevauchements SHA-256 exact: {overlap_pairs(hash_groups)}")
+    print(f"Chevauchements village_group: {overlap_pairs(village_groups)}")
     print(
         f"Train propre: {len(clean_train)}/{len(train_records)} images "
         f"({len(excluded)} exclues, aucune supprimée)"

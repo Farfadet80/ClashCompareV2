@@ -38,6 +38,13 @@ Dernière mise à jour : 2026-09-05 (push reconnaissance : policy VAL + import f
 - Benchmark quantité V5 sur la capture correspondante : 84 correspondances
   possibles sur 139 objets hors murs, soit 60,4 % de rappel au mieux. Ce score
   agrégé ne remplace pas une évaluation IoU après annotation manuelle.
+- Interface de validation locale : `training/annotator/`, accessible via
+  `http://127.0.0.1:8765/training/annotator/` avec `serve_compare.py`.
+  Les candidats restent `pending`; l'importeur refuse toute session non
+  exhaustive et écrit une provenance avec `village_group`.
+- Baseline VAL 800+TTA rejouée le 2026-09-05 : mAP50 0,8530,
+  mAP50-95 0,6316. `finetune-readiness.json` bloque actuellement un nouveau
+  run car aucune session humaine exhaustive n'a encore été importée.
 - Le navigateur n’exécute pas ONNX lui-même : il envoie la capture au serveur Python local.
 - Niveaux YOLO désactivés en production : les classifieurs existants
   `air-defense` (8–11) et `town-hall` (10–14) sont désormais expérimentaux.

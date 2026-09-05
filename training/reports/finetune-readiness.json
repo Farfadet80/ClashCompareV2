@@ -1,0 +1,30 @@
+{
+  "ready": false,
+  "decision": "conserver V5",
+  "reasons": [
+    "aucune nouvelle session humaine exhaustive importée"
+  ],
+  "baseline": {
+    "map50": 0.8529980350445072,
+    "map50_95": 0.6316209445855364,
+    "imgsz": 800,
+    "augment_tta": true
+  },
+  "clean_train_images": 968,
+  "human_annotations": [],
+  "coverage_blockers": {
+    "unlearnable": [
+      "town-hall-guardian"
+    ],
+    "very_weak": [
+      "wall",
+      "tornado-trap",
+      "giga-bomb"
+    ],
+    "no_eval_split": [
+      "wall",
+      "town-hall-guardian"
+    ]
+  },
+  "policy": "Ne pas entraîner sur les seuls pseudo-labels ou sur le même dataset sans nouvelles annotations exhaustives validées."
+}

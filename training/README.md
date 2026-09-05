@@ -121,6 +121,43 @@ restaurer les anciens tests qui avaient été fusionnés dans `val` :
 Ce lot de 60 images et 3 630 boîtes est réservé aux comparaisons V4+. Il ne constitue pas
 une mesure indépendante de la V3, car celle-ci l'avait déjà vu pendant sa validation.
 
+## Validation humaine locale
+
+Démarrer le serveur puis ouvrir
+`http://127.0.0.1:8765/training/annotator/` :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\serve_compare.py
+```
+
+Charger dans l'ordre la capture, la session `.annotation-session.json` et,
+si disponible, la vérité terrain export. Les suggestions orange restent en
+attente ; elles doivent être acceptées, corrigées ou supprimées une par une.
+L'export YOLO est bloqué tant que la session n'est pas exhaustive.
+
+Importer une session finalisée uniquement dans `train` :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\import_annotation_session.py `
+  C:\annotations\village.annotation-session.json C:\captures\village.jpg --dry-run
+```
+
+Retirer `--dry-run` seulement après validation. L'import enregistre la provenance
+et `village_group`; `audit_split_integrity.py` exclut désormais aussi les groupes
+de village présents dans VAL/TEST.
+
+Pour une source Internet, exécuter d'abord :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\audit_public_dataset.py `
+  C:\dataset-décompressé source-key --output C:\dataset-audit.json
+```
+
+Un import réel exige ensuite `--audit-report` et
+`--confirm-exhaustive-review`. Une licence explicite et une revue humaine de la
+complétude sont obligatoires ; un dataset structurellement valide n'est pas
+nécessairement annoté exhaustivement.
+
 ## Modèles d'amorçage produits
 
 Fichiers stables dans `models/` :

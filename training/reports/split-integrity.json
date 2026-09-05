@@ -14,6 +14,7 @@
     "test-train": 26,
     "train-val": 42
   },
+  "cross_split_same_village_group_pairs": {},
   "train_images_before": 1036,
   "train_images_excluded": 68,
   "train_images_clean": 968,
@@ -2539,6 +2540,7 @@
       ]
     }
   ],
+  "same_village_group_groups": [],
   "clean_train_list": "training/dataset/detector/train-clean.txt",
-  "policy": "Exclude a train image when its relative stem or exact SHA-256 occurs in val/test. Source files are never moved or deleted."
+  "policy": "Exclude a train image when its relative stem, exact SHA-256 or declared village_group occurs in val/test. Source files are never moved or deleted."
 }

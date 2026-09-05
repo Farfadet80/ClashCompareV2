@@ -58,6 +58,12 @@ def main() -> None:
     parser.add_argument("source_key", help="Clé dans training/sources/public-datasets.json")
     parser.add_argument("--dry-run", action="store_true", help="Compte sans écrire dans le dataset")
     parser.add_argument("--skip-empty", action="store_true", help="Ignore les images sans classe mappée")
+    parser.add_argument("--audit-report", type=Path, help="Rapport créé par audit_public_dataset.py")
+    parser.add_argument(
+        "--confirm-exhaustive-review",
+        action="store_true",
+        help="Confirme qu'un humain a vérifié l'absence de labels visibles manquants.",
+    )
     parser.add_argument(
         "--train-only",
         action="store_true",
@@ -80,6 +86,20 @@ def main() -> None:
             f"Import bloqué pour {args.source_key}: "
             f"{source_info['import_blocked_reason']}"
         )
+    if not args.dry_run:
+        if not args.audit_report or not args.audit_report.exists():
+            raise SystemExit("Import refusé: fournir --audit-report après audit_public_dataset.py")
+        audit = json.loads(args.audit_report.read_text(encoding="utf-8"))
+        if audit.get("source_key") != args.source_key:
+            raise SystemExit("Import refusé: le rapport d'audit concerne une autre source")
+        if Path(audit.get("source", "")).resolve() != args.source.resolve():
+            raise SystemExit("Import refusé: le rapport d'audit concerne un autre dossier")
+        if audit.get("blockers"):
+            raise SystemExit(f"Import refusé: blockers audit = {audit['blockers']}")
+        if not args.confirm_exhaustive_review:
+            raise SystemExit(
+                "Import refusé: ajouter --confirm-exhaustive-review après revue visuelle humaine"
+            )
     mapping: dict[str, str] = source_info["mapping"]
 
     source_yaml = find_yaml(args.source)
@@ -94,17 +114,21 @@ def main() -> None:
     # réservée ne doit jamais être recopiée dans train.
     protected_stems: set[str] = set()
     protected_hashes: set[str] = set()
-    for protected_split in ("val", "test"):
+    existing_hashes: set[str] = set()
+    for protected_split in ("train", "val", "test"):
         protected_dir = target_root / "images" / protected_split
         if not protected_dir.exists():
             continue
         for protected_image in protected_dir.rglob("*"):
             if protected_image.suffix.lower() not in IMAGE_SUFFIXES:
                 continue
-            protected_stems.add(protected_image.stem)
-            protected_hashes.add(file_sha256(protected_image))
+            digest = file_sha256(protected_image)
+            existing_hashes.add(digest)
+            if protected_split in {"val", "test"}:
+                protected_stems.add(protected_image.stem)
+                protected_hashes.add(digest)
 
-    imported_images = imported_boxes = protected_skipped = 0
+    imported_images = imported_boxes = protected_skipped = duplicate_skipped = 0
     # Preserve the source test split. It must never be used for validation or
     # hyper-parameter/model selection in future training runs.
     if args.as_train:
@@ -160,8 +184,12 @@ def main() -> None:
             stem = f"{args.source_key}-{digest}-{image.stem}"
             target_image = target_root / "images" / target_split / f"{stem}{image.suffix.lower()}"
             target_label = target_root / "labels" / target_split / f"{stem}.txt"
+            image_hash = file_sha256(image)
+            if image_hash in existing_hashes:
+                duplicate_skipped += 1
+                continue
             if target_split == "train" and (
-                stem in protected_stems or file_sha256(image) in protected_hashes
+                stem in protected_stems or image_hash in protected_hashes
             ):
                 protected_skipped += 1
                 continue
@@ -174,6 +202,7 @@ def main() -> None:
                 target_label.write_text("\n".join(converted) + ("\n" if converted else ""), encoding="utf-8")
             imported_images += 1
             imported_boxes += len(converted)
+            existing_hashes.add(image_hash)
 
     if not args.dry_run:
         attribution = TRAINING / "dataset" / "SOURCES.md"
@@ -188,6 +217,8 @@ def main() -> None:
             f"Splits protégés: {protected_skipped} image(s) val/test "
             "non recopiée(s) dans train"
         )
+    if duplicate_skipped:
+        print(f"Doublons exacts ignorés: {duplicate_skipped}")
 
 
 if __name__ == "__main__":

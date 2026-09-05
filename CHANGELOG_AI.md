@@ -16,6 +16,31 @@ Format d’entrée :
 
 ---
 
+## 2026-09-05 — Pipeline d'annotation humaine et gate data
+
+- Savepoint : commit `b8ebebb`, tag
+  `savepoint-before-yolo-data-improvement-2026-09-05`.
+- Baseline VAL rejouée sans toucher au TEST : V5 800+TTA,
+  précision 0,8697, rappel 0,8265, mAP50 0,8530, mAP50-95 0,6316.
+- Outil local ajouté dans `training/annotator/` : dessin/déplacement/suppression,
+  suggestions explicitement en attente, quantités export, autosauvegarde et
+  export YOLO bloqué tant que la revue n'est pas exhaustive.
+- `prepare_active_learning_candidates.py` produit maintenant une session de
+  revue ; la capture HDV16 de Jimmy est prête avec 114 suggestions en attente.
+- `import_annotation_session.py` refuse les pseudo-labels, métadonnées/licences
+  absentes, quantités incompatibles, dimensions invalides et doublons ; import
+  train-only avec provenance et `village_group`.
+- L'audit de splits protège aussi les groupes de village.
+- Sources Internet : nouveaux candidats `coc-2` et `Sascha` rejetés (pas de
+  classes faibles / licence insuffisante pour `coc-2`). Téléchargements directs
+  `coc-all-traps` et `glenn-th18-gigabomb` bloqués HTTP 403 Cloudflare ; aucun
+  scraping d'aperçus.
+- `audit_public_dataset.py` et les nouveaux garde-fous de
+  `import_public_dataset.py` imposent audit structurel, licence, revue humaine
+  exhaustive et déduplication exacte.
+- Décision : **pas de fine-tuning** sans nouvelle session exhaustive. Le rapport
+  `finetune-readiness.json` conserve V5 ; TEST réservé non ouvert.
+
 ## 2026-09-05 — Push reconnaissance (policy + import)
 
 - Branche / commits :

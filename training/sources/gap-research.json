@@ -103,6 +103,45 @@
         "Only TH13-era defenses and hero pads.",
         "No gap class."
       ]
+    },
+    {
+      "id": "roboflow-coc-2",
+      "url": "https://universe.roboflow.com/clash-of-clans/coc-2",
+      "author": "Clash of Clans workspace",
+      "license": "Non affichée explicitement sur la page inspectée",
+      "images": 808,
+      "classes_count": 13,
+      "task": "object-detection",
+      "status": "rejected_missing_license_and_gap_classes",
+      "verified": [
+        "Page publique inspectée le 2026-09-05.",
+        "Classes communes uniquement ; aucun piège, mur ou Guardian.",
+        "Aucune licence d'entraînement explicite visible dans le contenu public."
+      ]
+    },
+    {
+      "id": "roboflow-sascha-level-cannons",
+      "url": "https://universe.roboflow.com/sascha/clash-of-clans-6kiky",
+      "author": "Sascha",
+      "license": "CC BY 4.0",
+      "task": "object-detection",
+      "status": "rejected_wrong_objective",
+      "verified": [
+        "Classes par niveau de canon, pas classes de bâtiments rares.",
+        "N'apporte aucun piège, mur, Guardian, bob-hut ou helper-hut."
+      ]
+    },
+    {
+      "id": "roboflow-download-attempt-20260905",
+      "url": "https://universe.roboflow.com/",
+      "task": "access-audit",
+      "status": "blocked_by_cloudflare_or_sign_in",
+      "verified": [
+        "Téléchargements directs testés pour coc-all-traps et glenn-th18-gigabomb.",
+        "Les deux endpoints publics retournent HTTP 403 Cloudflare sans jeton.",
+        "Aucun contournement ni scraping d'aperçus n'a été utilisé."
+      ],
+      "next_step": "Télécharger uniquement depuis l'interface Roboflow authentifiée, puis exécuter audit_public_dataset.py avant toute importation."
     }
   ],
   "official_references": [

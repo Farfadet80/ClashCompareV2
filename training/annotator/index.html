@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClashCompare — Validation YOLO</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">ClashCompare · données locales</p>
+      <h1>Validation des annotations YOLO</h1>
+      <p>Les suggestions restent en attente jusqu’à validation humaine explicite.</p>
+    </div>
+    <a href="../../">Retour à l’application</a>
+  </header>
+
+  <main>
+    <aside class="panel controls">
+      <section>
+        <h2>1. Charger</h2>
+        <label>Capture <input id="image-file" type="file" accept="image/*"></label>
+        <label>Candidats JSON <input id="candidates-file" type="file" accept=".json,application/json"></label>
+        <label>Vérité terrain JSON <input id="ground-file" type="file" accept=".json,application/json"></label>
+        <label>Session existante <input id="session-file" type="file" accept=".json,application/json"></label>
+      </section>
+
+      <section>
+        <h2>2. Métadonnées</h2>
+        <label>Groupe village <input id="village-group" placeholder="ex. jimmy-th16-20260905"></label>
+        <label>Source / auteur <input id="source" placeholder="capture utilisateur ou auteur"></label>
+        <label>Licence <input id="license" placeholder="consentement local ou CC BY 4.0"></label>
+        <label class="check"><input id="exhaustive" type="checkbox"> Tous les objets visibles des 50 classes sont annotés</label>
+      </section>
+
+      <section>
+        <h2>3. Annoter</h2>
+        <label>Classe <select id="class-select"></select></label>
+        <label>Zoom <input id="zoom" type="range" min="50" max="250" value="100" step="10"><output id="zoom-value">100 %</output></label>
+        <div class="button-row">
+          <button id="accept" type="button">Accepter la boîte</button>
+          <button id="delete" type="button" class="danger">Supprimer</button>
+        </div>
+        <p class="hint">Glisser sur une zone vide pour dessiner. Glisser une boîte pour la déplacer. Raccourcis : A accepter, Suppr effacer, Échap désélectionner.</p>
+      </section>
+
+      <section>
+        <h2>4. Exporter</h2>
+        <div id="status" role="status">Charge une capture pour commencer.</div>
+        <div class="button-row">
+          <button id="save-session" type="button">Session JSON</button>
+          <button id="export-yolo" type="button" class="primary">Labels YOLO</button>
+        </div>
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <div class="summary" id="summary">
+        <span>Acceptées <strong id="accepted-count">0</strong></span>
+        <span>En attente <strong id="pending-count">0</strong></span>
+        <span>Classe sélectionnée <strong id="selected-label">—</strong></span>
+      </div>
+      <div class="canvas-shell" id="canvas-shell">
+        <canvas id="canvas" width="1000" height="600"></canvas>
+        <p id="empty-state">Charge une image locale. Rien n’est envoyé sur Internet.</p>
+      </div>
+    </section>
+
+    <aside class="panel counts">
+      <h2>Contrôle des quantités</h2>
+      <p class="hint">L’export officiel contrôle les nombres, jamais les positions.</p>
+      <div id="count-table"></div>
+    </aside>
+  </main>
+
+  <script src="./annotator.js"></script>
+</body>
+</html>

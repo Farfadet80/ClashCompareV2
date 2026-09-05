@@ -42,6 +42,17 @@ Une capture jointe hors de l'inbox peut être conservée explicitement :
 Sortie : `training/curation/active-learning/` (JSON + overlays). Annotation manuelle
 exhaustive obligatoire avant tout import dataset.
 
+Pour valider les suggestions :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\serve_compare.py
+```
+
+Puis ouvrir `http://127.0.0.1:8765/training/annotator/`, charger l'image depuis
+`sources/`, la session `.annotation-session.json` et la vérité terrain éventuelle.
+Les boîtes orange sont des suggestions non acceptées. L'import final passe par
+`import_annotation_session.py`, qui refuse une session partielle.
+
 ## Règles de collecte
 
 - Obtenir l'accord du propriétaire de la capture.

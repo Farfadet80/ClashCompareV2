@@ -74,6 +74,10 @@ def main() -> None:
     )
     parser.add_argument("--town-hall-level", type=int)
     parser.add_argument("--local-training-consent", action="store_true")
+    parser.add_argument("--ground-truth", type=Path, help="Résumé export avec inventory")
+    parser.add_argument("--village-group")
+    parser.add_argument("--source-label", default="capture utilisateur autorisée")
+    parser.add_argument("--license", default="")
     args = parser.parse_args()
 
     inbox_images = [
@@ -91,6 +95,17 @@ def main() -> None:
 
     device = args.device if args.device != "0" or torch.cuda.is_available() else "cpu"
     model = YOLO(str(args.model))
+    class_payload = json.loads((ROOT / "training" / "classes.json").read_text(encoding="utf-8"))
+    class_ids = {
+        item["id"]: index for index, item in enumerate(class_payload["detector_classes"])
+    }
+    expected_counts = {}
+    if args.ground_truth:
+        ground = json.loads(args.ground_truth.read_text(encoding="utf-8"))
+        expected_counts = {
+            name: int(slot.get("total", 0))
+            for name, slot in (ground.get("inventory") or {}).items()
+        }
     args.output = args.output.resolve()
     args.output.mkdir(parents=True, exist_ok=True)
     sources_dir = args.output / "sources"
@@ -157,6 +172,39 @@ def main() -> None:
         }
         out_json.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         cv2.imwrite(str(out_img), canvas)
+        session = {
+            "version": 1,
+            "image": {
+                "name": source_copy.name,
+                "width": image.width,
+                "height": image.height,
+            },
+            "metadata": {
+                "village_group": args.village_group or args.output.name,
+                "source": args.source_label,
+                "license": args.license
+                or ("consentement local entraînement" if args.local_training_consent else ""),
+                "exhaustive": False,
+            },
+            "expected_counts": expected_counts,
+            "boxes": [
+                {
+                    "class_id": class_ids[item["building"]],
+                    "class_name": item["building"],
+                    "x1": item["box"][0],
+                    "y1": item["box"][1],
+                    "x2": item["box"][2],
+                    "y2": item["box"][3],
+                    "status": "pending",
+                }
+                for item in detections
+                if item["building"] in class_ids
+            ],
+        }
+        (args.output / f"{output_stem}.annotation-session.json").write_text(
+            json.dumps(session, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
         summary.append(
             {
                 "image": image_path.name,
