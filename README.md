@@ -15,7 +15,8 @@ PWA locale de comparaison de villages Clash of Clans, avec analyse YOLO réelle 
 | Test réservé | V5 imgsz 640 | 0,802 | 0,579 |
 | Test réservé | V5 imgsz **800** | **0,839** | **0,612** |
 
-Détail technique : `HANDOFF.md` et `models/README.md`.
+Détail technique : `HANDOFF.md`, `CHANGELOG_AI.md` (suivi Cursor ↔ ChatGPT) et `models/README.md`.
+Vision produit : `PASSATION-CHATGPT.md`.
 
 ## Lancement
 
