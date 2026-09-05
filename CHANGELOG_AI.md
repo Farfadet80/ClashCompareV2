@@ -16,6 +16,28 @@ Format d’entrée :
 
 ---
 
+## 2026-09-05 — V8 Stage1 échouée ; V5 conservée
+
+- Branche / commits :
+  - `feature/village-json-import`
+  - `0540377` Add conservative fine-tune controls and promotion gate
+  - `3fedad2` Expose conservative V8 augmentation controls
+  - Tag : `savepoint-before-v8-process-2026-09-05`
+- Fait :
+  - Protocole V8 : départ V5 promu, Stage1 backbone gelé, LR AdamW `5e-5`, warmup 0, mosaic 0, augmentations légères, 4 epochs.
+  - Stage1 VAL 640 interne : meilleur epoch 3 (mAP50-95 0,589) ; epoch 4 en recul.
+  - Stage1 VAL 800+TTA : P **0,855** / R **0,817** / mAP50 **0,847** / mAP50-95 **0,619**.
+  - Gate vs V5 : **échoué** (mAP50 −0,006 ; mAP50-95 −0,013).
+- Décisions :
+  - **Pas de Stage2**, pas de TEST réservé, **pas de promotion**.
+  - Arrêt des sweeps d’entraînement : le goulot est la **données** (pièges/Teslas Mode photo).
+  - V5 `building-detector-v5s-infer800` reste le modèle actif.
+- À faire ensuite :
+  - Collecte/annotation Mode photo ciblée.
+  - Garder le gate `gate_detector_candidate.py` pour tout futur candidat.
+
+---
+
 ## 2026-09-05 — Suivi AI + fine-tune V7 propre
 
 - Branche / commits :

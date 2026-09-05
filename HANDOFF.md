@@ -1,6 +1,6 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-05 (V7 évaluée, non promue)
+Dernière mise à jour : 2026-09-05 (V8 Stage1 échouée, V5 conservée)
 
 **Suivi ChatGPT / Cursor** : lire aussi `CHANGELOG_AI.md` (chronologie des mods agent) et `PASSATION-CHATGPT.md` (vision produit).  
 **Priorité en cas de conflit** : fichiers réels + Git > mémoire ChatGPT.
@@ -19,7 +19,8 @@ Dernière mise à jour : 2026-09-05 (V7 évaluée, non promue)
 - Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800 + TTA**). Archive train : `building-detector-v5s-distilled-640/`.
 - Run V5 `building-detector-v5s-distilled-640` : **terminé 80/80** le 2026-09-02 18:14 (pas un arrêt à 71).
 - Train assaini figé : **931** images (`train-clean.txt`) ; baseline VAL 800+TTA reproduite 2026-09-05 : mAP50 **0,853** / mAP50-95 **0,632**.
-- Fine-tune V7 : `training/runs/building-detector-v7-clean-ft2-20260905/` depuis élève `epoch79`, arrêté proprement à 9/20 par patience 8. VAL 800+TTA : P 0,855 / R 0,837 / mAP50 0,857 / mAP50-95 0,629. **Non promu** : mAP50-95 sous V5 (0,632), TEST réservé non consulté.
+- Fine-tune V7 : `training/runs/building-detector-v7-clean-ft2-20260905/` depuis élève `epoch79`, arrêté proprement à 9/20 par patience 8. VAL 800+TTA : P 0,855 / R 0,837 / mAP50 0,857 / mAP50-95 0,629. **Non promu**.
+- Fine-tune V8 Stage1 : `training/runs/building-detector-v8-stage1-seed0-20260905/` depuis **V5 promu**, backbone gelé, LR `5e-5`, sans mosaic/warmup. VAL 800+TTA : P 0,855 / R 0,817 / mAP50 0,847 / mAP50-95 **0,619**. **Non promu** (sous V5). Stage2 / TEST non lancés.
 - Savepoints : `savepoint-v5-infer800-tta-2026-09-04`, `savepoint-before-village-json-import-2026-09-04`.
 - Branche courante : `feature/village-json-import` → `Farfadet80/ClashCompareV2`.
 
@@ -30,7 +31,7 @@ Dernière mise à jour : 2026-09-05 (V7 évaluée, non promue)
 - Le navigateur n’exécute pas ONNX lui-même : il envoie la capture au serveur Python local.
 - Classifieurs de niveaux : seulement `air-defense` (8–11) et `town-hall` (10–14).
 - `town-hall-guardian` : 0 annotation YOLO (mais IDs Longshot/Smasher mappés depuis l’export).
-- V7 non promue : elle améliore le rappel et plusieurs pièges sur VAL, mais recule en précision et mAP50-95 globales.
+- V7/V8 non promues : l’optimisation d’entraînement seule n’a pas battu V5 globalement. Prochain levier = **nouvelles captures Mode photo** (pièges/Teslas), pas plus de sweeps LR.
 
 ## Architecture
 
@@ -325,8 +326,8 @@ Avant tout nouvel entraînement :
 ## TODO
 
 1. ~~Valider train assaini 931 images~~ — fait (2026-09-04/05).
-2. ~~Fine-tune depuis `epoch79` + VAL 800+TTA~~ — V7 non promue ; TEST volontairement non consulté.
-3. Collecter/annoter captures Mode photo ciblées pièges/Teslas (vrai levier YOLO).
+2. ~~Fine-tune V7 + V8 Stage1~~ — non promus ; V5 reste active ; TEST non consulté.
+3. Collecter/annoter captures Mode photo ciblées pièges/Teslas (**vrai levier YOLO** maintenant).
 4. UX : clarifier dans l’UI que JSON = soi/ami, capture = adversaire.
 5. Plus de crops **niveaux** (canons) avant de sortir level-cannon de la quarantaine.
 6. UX comparaison : quantités par niveau, icônes, % maxage HDV.
