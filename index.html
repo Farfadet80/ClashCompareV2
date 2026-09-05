@@ -6,13 +6,13 @@
   <meta name="theme-color" content="#111827" />
   <title>ClashCompare</title>
   <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css?v=infer800" />
+  <link rel="stylesheet" href="style.css?v=jsonimport" />
 </head>
 <body>
   <header class="topbar">
     <div>
       <div class="brand">⚔️ ClashCompare</div>
-      <div class="subtitle">Compare deux villages à partir du # joueur + d'une capture</div>
+      <div class="subtitle">Compare deux villages via export JSON officiel (# optionnel) + YOLO en complément</div>
     </div>
   </header>
 
@@ -29,7 +29,7 @@
     <section id="panel-compare" class="panel">
       <div class="card">
         <h2>Comparatif</h2>
-        <p class="muted">Ajoute les deux joueurs, leurs captures, puis lance l'analyse YOLO sur chaque onglet.</p>
+        <p class="muted">Importe l'export JSON de chaque joueur (prioritaire). La capture YOLO reste optionnelle pour compléter.</p>
         <div id="compare-content" class="compare-grid"></div>
       </div>
     </section>
@@ -39,7 +39,7 @@
     </section>
   <section class="card" style="margin-top:14px">
       <h3>🤖 Moteur IA</h3>
-      <p class="muted" id="engine-status">Détecteur V5 (YOLO11s, imgsz 800) via le serveur local. Niveaux : air-defense et town-hall seulement, si confiance ≥ 60 % — jamais inventés.</p>
+      <p class="muted" id="engine-status">Export JSON prioritaire. YOLO V5 (imgsz 800 + TTA) en complément local. Niveaux YOLO : air-defense et town-hall seulement (≥ 60 %) — jamais inventés.</p>
     </section>
     <footer class="fan-disclaimer">
       Ce contenu n'est pas officiel et n'a pas reçu le soutien de Supercell.
@@ -52,7 +52,7 @@
       <div class="player-head">
         <div>
           <h2 class="player-title">Joueur</h2>
-          <p class="muted">Le # reste recommandé pour enrichir les données publiques du profil.</p>
+          <p class="muted">Priorité : export JSON du jeu. Le # sert plus tard à l'API publique. Tags et export restent en local.</p>
         </div>
         <span class="status-pill">En attente</span>
       </div>
@@ -62,36 +62,52 @@
         <input class="tag-input" type="text" autocapitalize="characters" placeholder="#ABC123XYZ" />
       </label>
 
+      <div class="export-box">
+        <label class="field">
+          <span>Export village (JSON officiel)</span>
+          <textarea class="export-input" rows="5" placeholder="Colle ici le JSON : Réglages → Plus de réglages → Exporter les données du village"></textarea>
+        </label>
+        <div class="export-actions">
+          <button class="export-btn secondary" type="button">Importer le JSON</button>
+          <label class="file-pill">
+            Fichier .json
+            <input class="export-file" type="file" accept="application/json,.json,text/plain" hidden />
+          </label>
+          <button class="export-clear-btn ghost" type="button">Retirer l'export</button>
+        </div>
+        <p class="export-status muted">Colle le JSON exporté depuis le jeu, ou choisis un fichier .json.</p>
+      </div>
+
       <div class="upload-box">
         <input class="image-input" type="file" accept="image/*" hidden />
         <button class="upload-btn" type="button">
           <span class="upload-icon">📸</span>
-          <span>Ajouter l'image du village</span>
+          <span>Capture YOLO optionnelle</span>
         </button>
 
         <div class="photo-tip">
-          <strong>Pour un meilleur traitement :</strong>
-          ouvre Clash of Clans → <b>Modifier le village</b> → <b>Mode photo</b>, puis fais une capture avec tout le village visible et envoie cette image ici.
+          <strong>Complément YOLO seulement :</strong>
+          utile si l'export manque, ou pour croiser. Mode photo CoC recommandé (village entier visible).
         </div>
 
         <img class="preview" alt="Aperçu du village" hidden />
       </div>
 
       <div class="actions">
-        <button class="analyze-btn primary" type="button">Analyser le village</button>
+        <button class="analyze-btn primary" type="button">Appliquer / Compléter par YOLO</button>
         <button class="clear-btn ghost" type="button">Effacer</button>
       </div>
 
       <div class="analysis-area" hidden>
-        <h3>Résultat de l'analyse</h3>
+        <h3>Inventaire effectif</h3>
         <div class="notice r-notice">
-          Lance l'app avec le serveur local pour analyser vraiment la capture (détecteur V5).
+          Importe l'export JSON pour un inventaire exact. YOLO reste un complément local.
         </div>
         <div class="result-grid">
           <div class="stat"><span>Tag</span><b class="r-tag">—</b></div>
           <div class="stat"><span>Image</span><b class="r-image">—</b></div>
-          <div class="stat"><span>Qualité de capture</span><b class="r-quality">—</b></div>
-          <div class="stat"><span>Détections</span><b class="r-count">—</b></div>
+          <div class="stat"><span>Source</span><b class="r-quality">—</b></div>
+          <div class="stat"><span>Éléments</span><b class="r-count">—</b></div>
         </div>
         <div class="inventory r-inventory" hidden></div>
       </div>
@@ -99,6 +115,7 @@
   </template>
 
   <script src="config.js"></script>
-  <script src="app.js?v=yolo"></script>
+  <script src="village-export.js?v=1"></script>
+  <script src="app.js?v=jsonimport"></script>
 </body>
 </html>

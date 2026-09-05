@@ -1,32 +1,35 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-04 (passation ChatGPT + HANDOFF + Git)
+Dernière mise à jour : 2026-09-04 (import export JSON village)
 
 ## État actuel
 
 ### Ce qui fonctionne
 
 - Marqueur release : `models/ACTIVE.json` → `building-detector-v5s-infer800` (imgsz 800, **TTA on**).
-- PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, import d’image, catalogue 50 bâtiments / 543 niveaux).
-- **Analyse réelle** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**). Plus de fake de métadonnées.
-- Pipeline YOLO local : détection des **types** de bâtiments, puis classifieurs de niveaux partiels (jamais inventés).
+- PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, **import JSON officiel**, capture YOLO optionnelle, catalogue 50 bâtiments).
+- **Inventaire prioritaire** : export JSON in-game (Réglages → Plus de réglages → Exporter) via `village-export.js` + `data/coc-export-mapping.json`. Persisté en `localStorage` (tags + export), jamais uploadé.
+- **Analyse YOLO** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**) en **complément / fallback** seulement.
+- Fusion : export écrase YOLO pour les ids connus ; YOLO peut seulement ajouter des ids absents. Jamais d’invention.
 - Environnement `.venv` : Python 3.12.10, **PyTorch 2.7.1+cu118**, Ultralytics **8.4.137**, CUDA 11.8, GPU **GTX 1050 CC 6.1 (`sm_61`)** — inférence et entraînement CUDA OK.
 - Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800 + TTA**). Archive train : `building-detector-v5s-distilled-640/`.
 - Run V5 `building-detector-v5s-distilled-640` : **terminé 80/80** le 2026-09-02 18:14 (pas un arrêt à 71).
+- Savepoint pré-feature : tag `savepoint-before-village-json-import-2026-09-04`.
 
 ### Ce qui ne fonctionne pas encore
 - L’API officielle Clash of Clans n’est **pas** branchée (`config.js` : `window.CLASHCOMPARE_API = ""`). Elle ne fournit de toute façon pas les niveaux individuels des bâtiments.
+- L’export JSON phase 1 couvre bâtiments/pièges Home Village mappés ; héros/troupes/sorts/familiers hors UI pour l’instant.
 - Le navigateur n’exécute pas ONNX lui-même : il envoie la capture au serveur Python local.
 - Classifieurs de niveaux : seulement `air-defense` (8–11) et `town-hall` (10–14).
-- `town-hall-guardian` : 0 annotation.
-- Dépôt Git actif : `Farfadet80/ClashCompareV2`, branche `main`.
+- `town-hall-guardian` : 0 annotation YOLO (mais IDs Longshot/Smasher mappés depuis l’export).
+- Dépôt Git actif : `Farfadet80/ClashCompareV2`, branche feature `feature/village-json-import`.
 
 ## Architecture
 
 - **Frontend** : PWA statique (HTML/JS/CSS).
 - **Vision** : Ultralytics YOLO11, entraînement Windows + GTX 1050.
 - **API CoC** : prévue plus tard via backend ; pas de clé dans le repo.
-- **Données village détaillées** : vision (YOLO), pas l’API.
+- **Données village détaillées** : **1) export JSON officiel** 2) YOLO en complément 3) API profil plus tard.
 - **Production non tranchée** : backend hébergé, serveur local ou ONNX navigateur restent
   trois options ouvertes. Le serveur local est le pipeline actuel, pas une décision finale.
 - GitHub Pages a seulement été envisagé pour le frontend/PWA statique.

@@ -22,8 +22,17 @@ h2,h3{margin:0 0 8px}
 .status-pill{background:#202b3e;color:#cbd5e1;border:1px solid #334155;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:800;white-space:nowrap}
 .field{display:block;margin-top:18px}
 .field span{display:block;font-weight:800;font-size:13px;margin-bottom:7px}
-.tag-input{width:100%;background:#0b1322;color:white;border:1px solid #334155;border-radius:14px;padding:14px;font-size:17px;outline:none;text-transform:uppercase}
-.tag-input:focus{border-color:var(--accent)}
+.tag-input,.export-input{width:100%;background:#0b1322;color:white;border:1px solid #334155;border-radius:14px;padding:14px;font-size:17px;outline:none}
+.tag-input{text-transform:uppercase}
+.tag-input:focus,.export-input:focus{border-color:var(--accent)}
+.export-input{font-size:13px;line-height:1.4;resize:vertical;min-height:110px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.export-box{margin-top:8px}
+.export-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.secondary{border:0;border-radius:14px;padding:11px 14px;font-weight:900;font-size:14px;background:#1d4ed8;color:white}
+.file-pill{border:1px solid #334155;border-radius:14px;padding:11px 14px;font-weight:800;font-size:13px;background:#172033;color:#e2e8f0;cursor:pointer}
+.export-status{margin:10px 0 0;font-size:13px}
+.export-status.ok{color:#86efac}
+.export-status.bad{color:#fca5a5}
 .upload-box{margin-top:14px}
 .upload-btn{width:100%;border:1px dashed #4b5e7d;border-radius:18px;background:#0d1729;color:white;padding:20px 14px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:16px;font-weight:900}
 .upload-icon{font-size:24px}

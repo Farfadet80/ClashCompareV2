@@ -1,5 +1,15 @@
-const CACHE="clashcompare-v3-6-infer800-tta";
-const ASSETS=["./","./index.html","./style.css","./app.js","./config.js","./manifest.json","./data/buildings.json"];
+const CACHE="clashcompare-v3-7-json-import";
+const ASSETS=[
+  "./",
+  "./index.html",
+  "./style.css",
+  "./app.js",
+  "./village-export.js",
+  "./config.js",
+  "./manifest.json",
+  "./data/buildings.json",
+  "./data/coc-export-mapping.json"
+];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener("fetch",e=>{
