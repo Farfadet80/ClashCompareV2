@@ -80,12 +80,25 @@ def main() -> None:
     parser.add_argument("--cos-lr", action="store_true")
     parser.add_argument("--lr0", type=float, help="Taux d'apprentissage initial explicite")
     parser.add_argument("--lrf", type=float, help="Facteur LR final (lr0 × lrf)")
+    parser.add_argument("--momentum", type=float)
+    parser.add_argument("--weight-decay", type=float)
     parser.add_argument("--warmup-epochs", type=float, help="Durée du warmup en epochs")
+    parser.add_argument("--warmup-bias-lr", type=float)
     parser.add_argument("--freeze", type=int, help="Nombre de premières couches à geler")
     parser.add_argument("--mosaic", type=float, help="Probabilité mosaic (0 désactive)")
     parser.add_argument("--close-mosaic", type=int, help="Désactive mosaic N epochs avant la fin")
     parser.add_argument("--scale", type=float, help="Amplitude de redimensionnement aléatoire")
     parser.add_argument("--erasing", type=float, help="Probabilité d'effacement aléatoire")
+    parser.add_argument("--translate", type=float)
+    parser.add_argument("--hsv-h", type=float)
+    parser.add_argument("--hsv-s", type=float)
+    parser.add_argument("--hsv-v", type=float)
+    parser.add_argument("--fliplr", type=float)
+    parser.add_argument("--flipud", type=float)
+    parser.add_argument("--mixup", type=float)
+    parser.add_argument("--cutmix", type=float)
+    parser.add_argument("--copy-paste", type=float)
+    parser.add_argument("--seed", type=int)
     parser.add_argument("--save-period", type=int, default=-1)
     parser.add_argument("--cls-pw", type=float, default=0.0)
     parser.add_argument("--distill-model", type=Path, help="Modèle professeur pour la distillation")
@@ -186,12 +199,25 @@ def main() -> None:
     optional_options = {
         "lr0": args.lr0,
         "lrf": args.lrf,
+        "momentum": args.momentum,
+        "weight_decay": args.weight_decay,
         "warmup_epochs": args.warmup_epochs,
+        "warmup_bias_lr": args.warmup_bias_lr,
         "freeze": args.freeze,
         "mosaic": args.mosaic,
         "close_mosaic": args.close_mosaic,
         "scale": args.scale,
         "erasing": args.erasing,
+        "translate": args.translate,
+        "hsv_h": args.hsv_h,
+        "hsv_s": args.hsv_s,
+        "hsv_v": args.hsv_v,
+        "fliplr": args.fliplr,
+        "flipud": args.flipud,
+        "mixup": args.mixup,
+        "cutmix": args.cutmix,
+        "copy_paste": args.copy_paste,
+        "seed": args.seed,
     }
     train_options.update(
         {key: value for key, value in optional_options.items() if value is not None}
