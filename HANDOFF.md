@@ -1,6 +1,9 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-04 (import export JSON village)
+Dernière mise à jour : 2026-09-05 (suivi AI + fine-tune V7 en cours)
+
+**Suivi ChatGPT / Cursor** : lire aussi `CHANGELOG_AI.md` (chronologie des mods agent) et `PASSATION-CHATGPT.md` (vision produit).  
+**Priorité en cas de conflit** : fichiers réels + Git > mémoire ChatGPT.
 
 ## État actuel
 
@@ -8,28 +11,36 @@ Dernière mise à jour : 2026-09-04 (import export JSON village)
 
 - Marqueur release : `models/ACTIVE.json` → `building-detector-v5s-infer800` (imgsz 800, **TTA on**).
 - PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, **import JSON officiel**, capture YOLO optionnelle, catalogue 50 bâtiments).
-- **Inventaire prioritaire** : export JSON in-game (Réglages → Plus de réglages → Exporter) via `village-export.js` + `data/coc-export-mapping.json`. Persisté en `localStorage` (tags + export), jamais uploadé.
-- **Analyse YOLO** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**) en **complément / fallback** seulement.
+- **Inventaire propriétaire / ami** : export JSON in-game (Réglages → Plus de réglages → Exporter) via `village-export.js` + `data/coc-export-mapping.json`. Persisté en `localStorage` (tags + export), jamais uploadé.
+- **Limite JSON** : l’export n’est disponible **que** au propriétaire du compte. Impossible de récupérer le JSON d’un adversaire via son tag #. Pour un village tiers → **capture + YOLO obligatoire**.
+- **Analyse YOLO** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**) en complément / fallback **et** chemin principal pour villages sans JSON.
 - Fusion : export écrase YOLO pour les ids connus ; YOLO peut seulement ajouter des ids absents. Jamais d’invention.
 - Environnement `.venv` : Python 3.12.10, **PyTorch 2.7.1+cu118**, Ultralytics **8.4.137**, CUDA 11.8, GPU **GTX 1050 CC 6.1 (`sm_61`)** — inférence et entraînement CUDA OK.
 - Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800 + TTA**). Archive train : `building-detector-v5s-distilled-640/`.
 - Run V5 `building-detector-v5s-distilled-640` : **terminé 80/80** le 2026-09-02 18:14 (pas un arrêt à 71).
-- Savepoint pré-feature : tag `savepoint-before-village-json-import-2026-09-04`.
+- Train assaini figé : **931** images (`train-clean.txt`) ; baseline VAL 800+TTA reproduite 2026-09-05 : mAP50 **0,853** / mAP50-95 **0,632**.
+- Fine-tune en cours : `training/runs/building-detector-v7-clean-ft2-20260905/` depuis élève `epoch79` (20 epochs). **Non promu.**
+- Savepoints : `savepoint-v5-infer800-tta-2026-09-04`, `savepoint-before-village-json-import-2026-09-04`.
+- Branche courante : `feature/village-json-import` → `Farfadet80/ClashCompareV2`.
 
 ### Ce qui ne fonctionne pas encore
 - L’API officielle Clash of Clans n’est **pas** branchée (`config.js` : `window.CLASHCOMPARE_API = ""`). Elle ne fournit de toute façon pas les niveaux individuels des bâtiments.
+- Pas de récupération du JSON d’un village adversaire (limitation jeu, pas bug app).
 - L’export JSON phase 1 couvre bâtiments/pièges Home Village mappés ; héros/troupes/sorts/familiers hors UI pour l’instant.
 - Le navigateur n’exécute pas ONNX lui-même : il envoie la capture au serveur Python local.
 - Classifieurs de niveaux : seulement `air-defense` (8–11) et `town-hall` (10–14).
 - `town-hall-guardian` : 0 annotation YOLO (mais IDs Longshot/Smasher mappés depuis l’export).
-- Dépôt Git actif : `Farfadet80/ClashCompareV2`, branche feature `feature/village-json-import`.
+- V7 en cours : ne pas promouvoir sans gain mesurable vs V5.
 
 ## Architecture
 
 - **Frontend** : PWA statique (HTML/JS/CSS).
 - **Vision** : Ultralytics YOLO11, entraînement Windows + GTX 1050.
 - **API CoC** : prévue plus tard via backend ; pas de clé dans le repo.
-- **Données village détaillées** : **1) export JSON officiel** 2) YOLO en complément 3) API profil plus tard.
+- **Données village détaillées** :
+  1. export JSON officiel **si le joueur le fournit** (soi / ami) ;
+  2. YOLO sur capture pour tout village sans JSON (adversaire typique) ;
+  3. API profil plus tard (tag #) — pas les niveaux bâtiments.
 - **Production non tranchée** : backend hébergé, serveur local ou ONNX navigateur restent
   trois options ouvertes. Le serveur local est le pipeline actuel, pas une décision finale.
 - GitHub Pages a seulement été envisagé pour le frontend/PWA statique.
@@ -313,10 +324,12 @@ Avant tout nouvel entraînement :
 
 ## TODO
 
-1. Valider et figer le train assaini 931 images avant tout fine-tune.
-2. Collecter/annoter des captures Mode photo ciblées pièges/Teslas ; sources publiques locales épuisées.
-3. Fine-tune depuis `epoch79.pt`, puis mesurer VAL 800+TTA avant toute consultation du test.
-4. Plus de crops **niveaux** (canons) avant de sortir level-cannon de la quarantaine.
-5. UX comparaison : 3 vues, tags éditables, quantités par niveau, icônes, %% maxage HDV.
-6. Brancher API CoC plus tard (`CLASHCOMPARE_API` vide — normal) ; jamais inventer les bâtiments.
-7. PWA iPhone soignée — après pipeline fiable.
+1. ~~Valider train assaini 931 images~~ — fait (2026-09-04/05).
+2. ~~Fine-tune depuis `epoch79`~~ — **en cours** V7 ; puis VAL 800+TTA, TEST seulement si VAL gagne.
+3. Collecter/annoter captures Mode photo ciblées pièges/Teslas (vrai levier YOLO).
+4. UX : clarifier dans l’UI que JSON = soi/ami, capture = adversaire.
+5. Plus de crops **niveaux** (canons) avant de sortir level-cannon de la quarantaine.
+6. UX comparaison : quantités par niveau, icônes, % maxage HDV.
+7. Brancher API CoC plus tard (`CLASHCOMPARE_API` vide — normal) ; jamais inventer les bâtiments.
+8. PWA iPhone soignée — après pipeline YOLO fiable.
+9. Après chaque lot agent : mettre à jour `CHANGELOG_AI.md` + ce fichier.
