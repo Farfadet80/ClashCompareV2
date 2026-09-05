@@ -6,8 +6,9 @@ Modèles PyTorch utilisés par le pipeline local :
 - `level-air-defense.pt` : niveaux 8 à 11 de la défense antiaérienne ;
 - `level-town-hall.pt` : niveaux 10 à 14 de l'hôtel de ville.
 
-Les classifieurs de niveaux de production sont allowlistés dans
-`analyze_village.PRODUCTION_LEVEL_CLASSIFIERS` (`air-defense`, `town-hall`).
+Ces deux classifieurs sont conservés pour expérimentation, mais ne sont plus
+allowlistés en production : leurs classes fermées ne couvrent pas les niveaux
+récents et peuvent retourner un ancien niveau avec une confiance élevée.
 Un niveau absent de leur liste d'entraînement ne peut pas être reconnu correctement.
 `level-cannon.pt` est en quarantaine dans `models/experimental/` (dataset trop petit).
 
@@ -60,6 +61,6 @@ indépendant pour la V3 puisqu'il avait été inclus dans sa validation. Il devi
 réservé des versions V4 et suivantes.
 
 La classe `town-hall-guardian` ne possède toujours aucune annotation et ne doit pas être
-présentée comme apprise. Seuls les classifieurs allowlistés (`air-defense`, `town-hall`)
-sont chargés. `analyze_village.py` n'affiche un niveau que si la confiance atteint 60 %.
+présentée comme apprise. Aucun classifieur de niveau n'est actuellement allowlisté :
+`analyze_village.py` n'affiche donc aucun niveau issu d'une capture.
 Le marqueur de release active est `models/ACTIVE.json`.

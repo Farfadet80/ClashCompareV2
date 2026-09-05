@@ -163,7 +163,9 @@ battu 640 sur le même test (mAP50-95 0,6121 vs 0,5788) : les alias actifs point
 .\.venv\Scripts\python.exe training\scripts\serve_compare.py
 ```
 
-Classifieurs production (allowlist) : `air-defense`, `town-hall`. Le canon expérimental
+Classifieurs de niveaux en production : aucun. `air-defense` et `town-hall`
+restent expérimentaux tant que les niveaux récents et le rejet hors distribution
+ne sont pas couverts. Le canon expérimental
 reste dans `models/experimental/`.
 
 Non promus : V6 weakclass-ft, SAHI/tiling.

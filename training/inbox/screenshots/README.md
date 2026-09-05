@@ -14,18 +14,33 @@ niveaux ajoutés après leur publication.
 
 ## Campagne prioritaire
 
-Les classes qui limitent actuellement V5 sont :
+Les classes qui bloquent encore une couverture « tous les bâtiments » :
 
-1. `seeking-air-mine`
-2. `skeleton-trap`
-3. `air-bomb`
-4. `spring-trap`
-5. `bomb`
-6. `hidden-tesla`
-7. `tornado-trap`
+1. `wall` (quasi absent en YOLO — préférer export JSON pour soi/ami)
+2. `town-hall-guardian` (**0** annotation : impossible à apprendre sans labels manuels)
+3. `giga-bomb` / `tornado-trap`
+4. `seeking-air-mine` / `skeleton-trap` / `air-bomb` / `spring-trap` / `bomb`
+5. `hidden-tesla`
+6. bâtiments TH élevés rares : `workshop`, `pet-house`, `hero-hall`, `crafted-defense`
 
 Privilégier des villages propriétaires en mode édition/photo où ces éléments sont
 réellement visibles. Une absence non vérifiable ne doit jamais être annotée comme zéro.
+
+Après dépôt, option revue rapide (pseudo-labels **non importés**) :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\prepare_active_learning_candidates.py
+```
+
+Une capture jointe hors de l'inbox peut être conservée explicitement :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\prepare_active_learning_candidates.py `
+  --image "C:\chemin\village.jpg" --town-hall-level 16 --local-training-consent
+```
+
+Sortie : `training/curation/active-learning/` (JSON + overlays). Annotation manuelle
+exhaustive obligatoire avant tout import dataset.
 
 ## Règles de collecte
 

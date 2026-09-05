@@ -1,0 +1,433 @@
+{
+  "classes": 50,
+  "unlearnable": [
+    "town-hall-guardian"
+  ],
+  "very_weak": [
+    "wall",
+    "tornado-trap",
+    "giga-bomb"
+  ],
+  "weak": [
+    "workshop",
+    "pet-house",
+    "blacksmith",
+    "hero-hall",
+    "multi-gear-tower",
+    "revenge-tower",
+    "crafted-defense"
+  ],
+  "no_eval_split": [
+    "wall",
+    "town-hall-guardian"
+  ],
+  "rows": [
+    {
+      "id": "town-hall",
+      "class_id": 0,
+      "train": 1286,
+      "val": 145,
+      "test": 70,
+      "status": "ok"
+    },
+    {
+      "id": "cannon",
+      "class_id": 1,
+      "train": 2986,
+      "val": 433,
+      "test": 219,
+      "status": "ok"
+    },
+    {
+      "id": "archer-tower",
+      "class_id": 2,
+      "train": 1957,
+      "val": 435,
+      "test": 226,
+      "status": "ok"
+    },
+    {
+      "id": "mortar",
+      "class_id": 3,
+      "train": 1932,
+      "val": 284,
+      "test": 151,
+      "status": "ok"
+    },
+    {
+      "id": "air-defense",
+      "class_id": 4,
+      "train": 2127,
+      "val": 278,
+      "test": 156,
+      "status": "ok"
+    },
+    {
+      "id": "wizard-tower",
+      "class_id": 5,
+      "train": 2004,
+      "val": 293,
+      "test": 157,
+      "status": "ok"
+    },
+    {
+      "id": "air-sweeper",
+      "class_id": 6,
+      "train": 871,
+      "val": 129,
+      "test": 66,
+      "status": "ok"
+    },
+    {
+      "id": "hidden-tesla",
+      "class_id": 7,
+      "train": 496,
+      "val": 91,
+      "test": 47,
+      "status": "ok"
+    },
+    {
+      "id": "bomb-tower",
+      "class_id": 8,
+      "train": 938,
+      "val": 112,
+      "test": 64,
+      "status": "ok"
+    },
+    {
+      "id": "x-bow",
+      "class_id": 9,
+      "train": 1809,
+      "val": 212,
+      "test": 116,
+      "status": "ok"
+    },
+    {
+      "id": "inferno-tower",
+      "class_id": 10,
+      "train": 1286,
+      "val": 138,
+      "test": 83,
+      "status": "ok"
+    },
+    {
+      "id": "eagle-artillery",
+      "class_id": 11,
+      "train": 280,
+      "val": 35,
+      "test": 21,
+      "status": "ok"
+    },
+    {
+      "id": "scattershot",
+      "class_id": 12,
+      "train": 749,
+      "val": 59,
+      "test": 48,
+      "status": "ok"
+    },
+    {
+      "id": "builders-hut",
+      "class_id": 13,
+      "train": 2650,
+      "val": 432,
+      "test": 237,
+      "status": "ok"
+    },
+    {
+      "id": "spell-tower",
+      "class_id": 14,
+      "train": 409,
+      "val": 34,
+      "test": 28,
+      "status": "ok"
+    },
+    {
+      "id": "monolith",
+      "class_id": 15,
+      "train": 211,
+      "val": 17,
+      "test": 14,
+      "status": "ok"
+    },
+    {
+      "id": "ricochet-cannon",
+      "class_id": 16,
+      "train": 512,
+      "val": 34,
+      "test": 28,
+      "status": "ok"
+    },
+    {
+      "id": "multi-archer-tower",
+      "class_id": 17,
+      "train": 499,
+      "val": 34,
+      "test": 30,
+      "status": "ok"
+    },
+    {
+      "id": "firespitter",
+      "class_id": 18,
+      "train": 303,
+      "val": 18,
+      "test": 14,
+      "status": "ok"
+    },
+    {
+      "id": "wall",
+      "class_id": 19,
+      "train": 12,
+      "val": 0,
+      "test": 0,
+      "status": "very_weak"
+    },
+    {
+      "id": "gold-mine",
+      "class_id": 20,
+      "train": 2705,
+      "val": 554,
+      "test": 284,
+      "status": "ok"
+    },
+    {
+      "id": "elixir-collector",
+      "class_id": 21,
+      "train": 2721,
+      "val": 552,
+      "test": 283,
+      "status": "ok"
+    },
+    {
+      "id": "dark-elixir-drill",
+      "class_id": 22,
+      "train": 672,
+      "val": 150,
+      "test": 82,
+      "status": "ok"
+    },
+    {
+      "id": "gold-storage",
+      "class_id": 23,
+      "train": 1369,
+      "val": 285,
+      "test": 143,
+      "status": "ok"
+    },
+    {
+      "id": "elixir-storage",
+      "class_id": 24,
+      "train": 1367,
+      "val": 286,
+      "test": 143,
+      "status": "ok"
+    },
+    {
+      "id": "dark-elixir-storage",
+      "class_id": 25,
+      "train": 285,
+      "val": 54,
+      "test": 28,
+      "status": "ok"
+    },
+    {
+      "id": "clan-castle",
+      "class_id": 26,
+      "train": 738,
+      "val": 102,
+      "test": 53,
+      "status": "ok"
+    },
+    {
+      "id": "army-camp",
+      "class_id": 27,
+      "train": 1578,
+      "val": 305,
+      "test": 148,
+      "status": "ok"
+    },
+    {
+      "id": "barracks",
+      "class_id": 28,
+      "train": 552,
+      "val": 105,
+      "test": 52,
+      "status": "ok"
+    },
+    {
+      "id": "laboratory",
+      "class_id": 29,
+      "train": 460,
+      "val": 91,
+      "test": 44,
+      "status": "ok"
+    },
+    {
+      "id": "spell-factory",
+      "class_id": 30,
+      "train": 383,
+      "val": 75,
+      "test": 41,
+      "status": "ok"
+    },
+    {
+      "id": "dark-spell-factory",
+      "class_id": 31,
+      "train": 205,
+      "val": 51,
+      "test": 27,
+      "status": "ok"
+    },
+    {
+      "id": "workshop",
+      "class_id": 32,
+      "train": 110,
+      "val": 27,
+      "test": 17,
+      "status": "weak"
+    },
+    {
+      "id": "pet-house",
+      "class_id": 33,
+      "train": 77,
+      "val": 11,
+      "test": 12,
+      "status": "weak"
+    },
+    {
+      "id": "blacksmith",
+      "class_id": 34,
+      "train": 188,
+      "val": 51,
+      "test": 25,
+      "status": "weak"
+    },
+    {
+      "id": "hero-hall",
+      "class_id": 35,
+      "train": 69,
+      "val": 5,
+      "test": 3,
+      "status": "weak"
+    },
+    {
+      "id": "dark-barracks",
+      "class_id": 36,
+      "train": 222,
+      "val": 53,
+      "test": 29,
+      "status": "ok"
+    },
+    {
+      "id": "multi-gear-tower",
+      "class_id": 37,
+      "train": 153,
+      "val": 9,
+      "test": 7,
+      "status": "weak"
+    },
+    {
+      "id": "revenge-tower",
+      "class_id": 38,
+      "train": 150,
+      "val": 9,
+      "test": 7,
+      "status": "weak"
+    },
+    {
+      "id": "super-wizard-tower",
+      "class_id": 39,
+      "train": 306,
+      "val": 18,
+      "test": 14,
+      "status": "ok"
+    },
+    {
+      "id": "town-hall-guardian",
+      "class_id": 40,
+      "train": 0,
+      "val": 0,
+      "test": 0,
+      "status": "unlearnable"
+    },
+    {
+      "id": "crafted-defense",
+      "class_id": 41,
+      "train": 121,
+      "val": 5,
+      "test": 5,
+      "status": "weak"
+    },
+    {
+      "id": "bomb",
+      "class_id": 42,
+      "train": 846,
+      "val": 162,
+      "test": 79,
+      "status": "ok"
+    },
+    {
+      "id": "spring-trap",
+      "class_id": 43,
+      "train": 890,
+      "val": 167,
+      "test": 99,
+      "status": "ok"
+    },
+    {
+      "id": "air-bomb",
+      "class_id": 44,
+      "train": 614,
+      "val": 115,
+      "test": 65,
+      "status": "ok"
+    },
+    {
+      "id": "giant-bomb",
+      "class_id": 45,
+      "train": 580,
+      "val": 115,
+      "test": 68,
+      "status": "ok"
+    },
+    {
+      "id": "seeking-air-mine",
+      "class_id": 46,
+      "train": 553,
+      "val": 107,
+      "test": 62,
+      "status": "ok"
+    },
+    {
+      "id": "skeleton-trap",
+      "class_id": 47,
+      "train": 244,
+      "val": 43,
+      "test": 29,
+      "status": "ok"
+    },
+    {
+      "id": "tornado-trap",
+      "class_id": 48,
+      "train": 46,
+      "val": 7,
+      "test": 4,
+      "status": "very_weak"
+    },
+    {
+      "id": "giga-bomb",
+      "class_id": 49,
+      "train": 27,
+      "val": 4,
+      "test": 2,
+      "status": "very_weak"
+    }
+  ],
+  "notes": [
+    "town-hall-guardian : 0 annotation — curation visuelle seulement pour l'instant.",
+    "wall : quasi absent des datasets publics (12 boîtes) — export JSON prioritaire.",
+    "find-this-base importé (37 images train) ; autres sources locales absentes du disque (déjà fusionnées ou à re-télécharger).",
+    "Source mur vérifiée : coc-wall-detection, 50 images CC BY 4.0 ; téléchargement Roboflow avec connexion requis.",
+    "Bake-off VAL 2026-09-05 : politique dual-conf rejetée → conf 0.25 conservée."
+  ]
+}

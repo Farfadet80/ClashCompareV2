@@ -179,7 +179,15 @@ async function pingEngine(){
     const r = await fetch("/api/health");
     if(!r.ok) throw new Error();
     const data = await r.json();
-    if(el) el.textContent = `Moteur local prêt : ${data.engine} • imgsz ${data.imgsz}. Niveaux : air-defense / town-hall seulement (≥ 60 %). Export JSON prioritaire si importé.`;
+    if(el){
+      el.textContent =
+        `Moteur local prêt : ${data.engine} • imgsz ${data.imgsz}` +
+        ` • conf ${data.conf ?? 0.25}` +
+        ` • max_det ${data.max_det ?? 1000}` +
+        ` • politique ${data.inference_policy || "baseline-conf25"}.` +
+        ` Niveaux YOLO : désactivés tant que tous les niveaux récents ne sont pas couverts.` +
+        ` JSON = toi/ami ; capture YOLO = adversaire.`;
+    }
     return true;
   }catch{
     if(el) el.textContent = "Moteur local absent (YOLO optionnel). L'import JSON fonctionne hors ligne. Pour YOLO : .\\.venv\\Scripts\\python.exe training\\scripts\\serve_compare.py";

@@ -1,0 +1,200 @@
+{
+  "updated": "2026-09-05",
+  "target_classes": {
+    "unlearnable": [
+      "town-hall-guardian"
+    ],
+    "very_weak": [
+      "wall",
+      "tornado-trap",
+      "giga-bomb"
+    ],
+    "weak": [
+      "workshop",
+      "pet-house",
+      "blacksmith",
+      "hero-hall",
+      "multi-gear-tower",
+      "revenge-tower",
+      "crafted-defense"
+    ]
+  },
+  "dataset_candidates": [
+    {
+      "id": "pedro-little-guardian",
+      "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model",
+      "author": "Pedros Workspace",
+      "license": "CC BY 4.0",
+      "images": 57,
+      "classes_count": 136,
+      "task": "object-detection",
+      "status": "manual_reference_only",
+      "verified": [
+        "Project class list inspected in browser and contains Little_Guardian.",
+        "Only one unique screenshot / three augmented boxes were reported in the source lineage.",
+        "Dataset mixes buildings, troops, spells, UI and misspelled classes."
+      ],
+      "risk": "One unique Guardian example cannot make the class learnable; importing partial mixed labels would create false negatives.",
+      "next_step": "Use only to help locate a manually reviewed seed example; collect multiple original owner screenshots of both Longshot and Smasher."
+    },
+    {
+      "id": "coc-wall-detection",
+      "url": "https://universe.roboflow.com/kruegerp-stu-proton-me/coc-wall-detection",
+      "author": "Pauls Workspace",
+      "license": "CC BY 4.0",
+      "images": 50,
+      "classes": [
+        "wall"
+      ],
+      "task": "instance-segmentation",
+      "status": "useful_but_not_directly_importable",
+      "verified": [
+        "Project page and gallery inspected in browser.",
+        "Masks trace wall networks in complete village screenshots.",
+        "Download page requires Roboflow sign-in."
+      ],
+      "risk": "Converting each network polygon to one YOLO bounding box would teach giant false boxes and would not count individual wall pieces.",
+      "next_step": "Download after sign-in, preserve raw masks, then evaluate a separate segmentation/counting adapter or manually re-annotate individual wall pieces."
+    },
+    {
+      "id": "mycochere",
+      "url": "https://universe.roboflow.com/coc-o8j54/mycochere",
+      "author": "COC",
+      "license": "CC BY 4.0",
+      "images": 407,
+      "classes_count": 57,
+      "task": "object-detection",
+      "status": "rejected_for_gap_filling",
+      "verified": [
+        "Class list inspected in browser.",
+        "Contains standard buildings and Hidden-Tesla.",
+        "No wall, Guardian, tornado-trap, giga-bomb or TH18 rare defense target."
+      ],
+      "risk": "High source-lineage overlap with other COC workspace datasets already imported."
+    },
+    {
+      "id": "kaggle-clash-objectitem-detection",
+      "url": "https://www.kaggle.com/datasets/kush1203/clash-of-clan-objectitem-detection",
+      "author": "Kush1203",
+      "license": "CC BY-SA 4.0 on Kaggle; embedded Roboflow export says CC BY 4.0",
+      "images": 800,
+      "classes_count": 35,
+      "task": "object-detection",
+      "status": "rejected_duplicate",
+      "verified": [
+        "Archive downloaded and structurally audited.",
+        "Embedded source is targetArch v6 / kgft4gi3aghk82a.",
+        "Same 800-image WalkStation lineage previously rejected.",
+        "No wall, Guardian, tornado-trap or giga-bomb class."
+      ],
+      "local_path": "training/imports/kaggle-clash-objectitem-detection",
+      "risk": "Known corrupt/parasite annotation source and no missing target class."
+    },
+    {
+      "id": "find-this-base-huggingface",
+      "url": "https://huggingface.co/datasets/keremberke/clash-of-clans-object-detection",
+      "author": "Find This Base / Keremberke mirror",
+      "license": "CC BY 4.0",
+      "images": 125,
+      "classes_count": 16,
+      "task": "object-detection",
+      "status": "already_imported_lineage",
+      "verified": [
+        "Only TH13-era defenses and hero pads.",
+        "No gap class."
+      ]
+    }
+  ],
+  "official_references": [
+    {
+      "classes": [
+        "town-hall-guardian",
+        "revenge-tower",
+        "super-wizard-tower",
+        "crafted-defense"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/town-hall-18-crash-lands-update/"
+    },
+    {
+      "classes": [
+        "giga-bomb",
+        "firespitter"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/game-updates/the-town-hall-17-update-is-here-2/"
+    },
+    {
+      "classes": [
+        "multi-gear-tower",
+        "wall"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/welcome-to-clash-anytime-update/"
+    },
+    {
+      "classes": [
+        "town-hall-guardian",
+        "workshop",
+        "blacksmith",
+        "wall",
+        "giant-bomb",
+        "revenge-tower"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-sound-of-clash-update/"
+    },
+    {
+      "classes": [
+        "crafted-defense"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/news/the-awesome-quest-is-here/"
+    },
+    {
+      "classes": [
+        "crafted-defense",
+        "tornado-trap"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/welcome-to-lets-get-crafty-update/"
+    }
+  ],
+  "verified_catalog_corrections": {
+    "town-hall-guardian": {
+      "variants": [
+        "smasher",
+        "longshot",
+        "logger"
+      ],
+      "max_level": 5
+    },
+    "crafted-defense_current_variants": [
+      "cake-a-pult",
+      "hero-hunter",
+      "hot-candle"
+    ],
+    "recent_building_max_levels": {
+      "air-sweeper": 7,
+      "inferno-tower": 12,
+      "dark-elixir-drill": 11,
+      "workshop": 9,
+      "pet-house": 12,
+      "blacksmith": 10,
+      "hero-hall": 12,
+      "multi-gear-tower": 3,
+      "revenge-tower": 2,
+      "super-wizard-tower": 2
+    },
+    "trap_max_levels": {
+      "bomb": 14,
+      "spring-trap": 13,
+      "air-bomb": 13,
+      "giant-bomb": 12,
+      "seeking-air-mine": 8,
+      "skeleton-trap": 5,
+      "tornado-trap": 3,
+      "giga-bomb": 4
+    }
+  },
+  "policy": [
+    "Wiki and official images are visual references, not automatically training data.",
+    "Do not scrape preview overlays as replacement for source annotations.",
+    "Do not import a dataset without explicit license, class audit and duplicate audit.",
+    "Never infer hidden traps from expected counts or base geometry."
+  ]
+}

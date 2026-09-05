@@ -21,7 +21,8 @@ from ultralytics import YOLO
 ACTIVE_RELEASE = "building-detector-v5s-infer800"
 EXPECTED_IMGSZ = 800
 EXPECTED_PT_SHA256 = "866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d"
-PRODUCTION_LEVEL_CLASSIFIERS = ("air-defense", "town-hall")
+EXPERIMENTAL_LEVEL_CLASSIFIERS = ("air-defense", "town-hall")
+PRODUCTION_LEVEL_CLASSIFIERS: tuple[str, ...] = ()
 
 
 def sha256(path: Path) -> str:
@@ -68,10 +69,10 @@ def check_release() -> None:
     if list(shape) != [1, 3, EXPECTED_IMGSZ, EXPECTED_IMGSZ]:
         raise SystemExit(f"ERREUR: forme ONNX {shape}, attendu 1x3x{EXPECTED_IMGSZ}x{EXPECTED_IMGSZ}")
 
-    for building in PRODUCTION_LEVEL_CLASSIFIERS:
+    for building in EXPERIMENTAL_LEVEL_CLASSIFIERS:
         weights = ROOT / "models" / f"level-{building}.pt"
         if not weights.exists():
-            raise SystemExit(f"ERREUR: classifieur production absent: {weights}")
+            raise SystemExit(f"ERREUR: classifieur expérimental absent: {weights}")
     if (ROOT / "models" / "level-cannon.pt").exists():
         raise SystemExit(
             "ERREUR: level-cannon.pt ne doit pas être en production "
@@ -81,7 +82,8 @@ def check_release() -> None:
     print(f"Release active: {ACTIVE_RELEASE} (imgsz {EXPECTED_IMGSZ}, TTA on)")
     print(f"PT SHA-256: {pt_hash}")
     print(f"ONNX input: {shape}")
-    print(f"Classifieurs production: {', '.join(PRODUCTION_LEVEL_CLASSIFIERS)}")
+    print("Classifieurs production: aucun (couverture des niveaux incomplète)")
+    print(f"Classifieurs expérimentaux: {', '.join(EXPERIMENTAL_LEVEL_CLASSIFIERS)}")
 
 
 def main() -> None:

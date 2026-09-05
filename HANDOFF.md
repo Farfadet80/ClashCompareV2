@@ -1,6 +1,6 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-05 (V8 Stage1 échouée, V5 conservée)
+Dernière mise à jour : 2026-09-05 (push reconnaissance : policy VAL + import find-this-base)
 
 **Suivi ChatGPT / Cursor** : lire aussi `CHANGELOG_AI.md` (chronologie des mods agent) et `PASSATION-CHATGPT.md` (vision produit).  
 **Priorité en cas de conflit** : fichiers réels + Git > mémoire ChatGPT.
@@ -10,7 +10,7 @@ Dernière mise à jour : 2026-09-05 (V8 Stage1 échouée, V5 conservée)
 ### Ce qui fonctionne
 
 - Marqueur release : `models/ACTIVE.json` → `building-detector-v5s-infer800` (imgsz 800, **TTA on**).
-- PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, **import JSON officiel**, capture YOLO optionnelle, catalogue 50 bâtiments).
+- PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, **import JSON officiel**, capture YOLO optionnelle, catalogue 52 bâtiments/pièges : 50 classes YOLO + 2 export-only).
 - **Inventaire propriétaire / ami** : export JSON in-game (Réglages → Plus de réglages → Exporter) via `village-export.js` + `data/coc-export-mapping.json`. Persisté en `localStorage` (tags + export), jamais uploadé.
 - **Limite JSON** : l’export n’est disponible **que** au propriétaire du compte. Impossible de récupérer le JSON d’un adversaire via son tag #. Pour un village tiers → **capture + YOLO obligatoire**.
 - **Analyse YOLO** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**) en complément / fallback **et** chemin principal pour villages sans JSON.
@@ -18,20 +18,35 @@ Dernière mise à jour : 2026-09-05 (V8 Stage1 échouée, V5 conservée)
 - Environnement `.venv` : Python 3.12.10, **PyTorch 2.7.1+cu118**, Ultralytics **8.4.137**, CUDA 11.8, GPU **GTX 1050 CC 6.1 (`sm_61`)** — inférence et entraînement CUDA OK.
 - Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800 + TTA**). Archive train : `building-detector-v5s-distilled-640/`.
 - Run V5 `building-detector-v5s-distilled-640` : **terminé 80/80** le 2026-09-02 18:14 (pas un arrêt à 71).
-- Train assaini figé : **931** images (`train-clean.txt`) ; baseline VAL 800+TTA reproduite 2026-09-05 : mAP50 **0,853** / mAP50-95 **0,632**.
+- Train assaini : **968** images (`train-clean.txt`, +37 `find-this-base` le 2026-09-05) ; baseline VAL 800+TTA reproduite 2026-09-05 : mAP50 **0,853** / mAP50-95 **0,632**.
 - Fine-tune V7 : `training/runs/building-detector-v7-clean-ft2-20260905/` depuis élève `epoch79`, arrêté proprement à 9/20 par patience 8. VAL 800+TTA : P 0,855 / R 0,837 / mAP50 0,857 / mAP50-95 0,629. **Non promu**.
 - Fine-tune V8 Stage1 : `training/runs/building-detector-v8-stage1-seed0-20260905/` depuis **V5 promu**, backbone gelé, LR `5e-5`, sans mosaic/warmup. VAL 800+TTA : P 0,855 / R 0,817 / mAP50 0,847 / mAP50-95 **0,619**. **Non promu** (sous V5). Stage2 / TEST non lancés.
-- Savepoints : `savepoint-v5-infer800-tta-2026-09-04`, `savepoint-before-village-json-import-2026-09-04`.
+- Bake-off politiques d’inférence VAL (`inference-policy-val-20260905`) : dual-conf / conf basse **rejetées** (précision pièges s’effondre). Politique active : **conf 0,25**, `max_det=1000`. SAHI/tuiles déjà mesurés : **légère régression** → non activés.
+- Couverture classes : `town-hall-guardian` = 0 ; `wall` ≈ 12 train / 0 val-test ; pièges rares encore faibles. Rapport : `training/reports/class-coverage.json`.
+- Recherche multi-source : `training/sources/gap-research.json` ; guide visuel et règles d’annotation : `training/RARE_CLASSES_GUIDE.md`.
+- Catalogue 2026-09-05 corrigé : Guardians `Smasher` / `Longshot` / `Logger`, Crafted Defenses phases 1–4, niveaux de pièges réels (Bomb 14, Spring/Air 13, Giant 12, Seeking 8, Skeleton 5, Tornado 3, Giga 4) et bâtiments récents. Garde : `training/scripts/test_catalog_data.py`.
+- Savepoints : `savepoint-v5-infer800-tta-2026-09-04`, `savepoint-before-village-json-import-2026-09-04`, `savepoint-before-recognition-push-2026-09-05`.
 - Branche courante : `feature/village-json-import` → `Farfadet80/ClashCompareV2`.
 
 ### Ce qui ne fonctionne pas encore
 - L’API officielle Clash of Clans n’est **pas** branchée (`config.js` : `window.CLASHCOMPARE_API = ""`). Elle ne fournit de toute façon pas les niveaux individuels des bâtiments.
 - Pas de récupération du JSON d’un village adversaire (limitation jeu, pas bug app).
 - L’export JSON phase 1 couvre bâtiments/pièges Home Village mappés ; héros/troupes/sorts/familiers hors UI pour l’instant.
+- Export HDV16 réel vérifié : `1000064` = cabane de B.O.B et `1000093` =
+  cabane des assistants. Après ajout, aucune entrée Home Village bâtiment/piège
+  n'est non résolue sur cet export (420 bâtiments dont 325 murs + 44 pièges).
+- Benchmark quantité V5 sur la capture correspondante : 84 correspondances
+  possibles sur 139 objets hors murs, soit 60,4 % de rappel au mieux. Ce score
+  agrégé ne remplace pas une évaluation IoU après annotation manuelle.
 - Le navigateur n’exécute pas ONNX lui-même : il envoie la capture au serveur Python local.
-- Classifieurs de niveaux : seulement `air-defense` (8–11) et `town-hall` (10–14).
+- Niveaux YOLO désactivés en production : les classifieurs existants
+  `air-defense` (8–11) et `town-hall` (10–14) sont désormais expérimentaux.
+  Une capture TH16 a prouvé qu'un classifieur fermé peut annoncer un ancien
+  niveau avec une confiance élevée. Les niveaux fiables viennent de l'export JSON.
 - `town-hall-guardian` : 0 annotation YOLO (mais IDs Longshot/Smasher mappés depuis l’export).
-- V7/V8 non promues : l’optimisation d’entraînement seule n’a pas battu V5 globalement. Prochain levier = **nouvelles captures Mode photo** (pièges/Teslas), pas plus de sweeps LR.
+- V7/V8 non promues : l’optimisation d’entraînement seule n’a pas battu V5 globalement. Prochain levier = **nouvelles captures Mode photo** (murs / gardiens / pièges), pas plus de sweeps LR ni de conf artificielle.
+- Impossible de « tout reconnaître » sans nouvelles annotations. Une source mur vérifiée reste à télécharger : `coc-wall-detection` (50 images, CC BY 4.0), mais Roboflow exige une connexion. Ses masques couvrent des réseaux de murs : import direct en boîtes **bloqué** car il fausserait le comptage par pièce. `MyCOCHere` a 407 images / 57 libellés mais n’apporte ni pièges, ni murs, ni gardiens.
+- Le dataset Kaggle `Clash Of Clan Object/Item Detection` a été téléchargé et audité : c’est le même export `targetArch v6` / WalkStation (800 images), déjà rejeté ; il reste archivé sous `training/imports/`, non importé.
 
 ## Architecture
 
@@ -72,7 +87,7 @@ python -m venv .venv
 | Dernier run | `training/runs/building-detector-v5s-distilled-640/` |
 | Modèle de base | YOLO11s (`yolo11s.pt`, ~9,45 M params) |
 | Dataset YAML | `training/dataset.yaml` (runtime : `training/runs/dataset.resolved.yaml`) |
-| Images | train 931 / val 118 / test 60 |
+| Images | train **968** clean (`train-clean.txt`) / val 118 / test 60 (disque train brut 1036 dont 68 overlaps exclus) |
 | Classes | 50 (49 annotées ; `town-hall-guardian` vide) |
 | Params V5 | imgsz 640, batch 4, epochs 80, patience 20, `cls_pw=0.25`, cos LR, distillation depuis V4 `models/building-detector.pt` |
 | Ultralytics | 8.4.137 |

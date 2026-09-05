@@ -252,6 +252,16 @@
       "X_Bow": "x-bow"
     }
   },
+  "coc-wall-detection": {
+    "url": "https://universe.roboflow.com/kruegerp-stu-proton-me/coc-wall-detection/dataset/1",
+    "license": "CC BY 4.0",
+    "author": "Pauls Workspace",
+    "task": "instance-segmentation",
+    "import_blocked_reason": "Masques de réseaux de murs : les convertir en une boîte englobante YOLO fausserait le comptage des segments. Prévoir un pipeline segmentation séparé et une validation manuelle.",
+    "mapping": {
+      "wall": "wall"
+    }
+  },
   "find-this-base": {
     "url": "https://universe.roboflow.com/find-this-base/clash-of-clans-vop4y",
     "license": "CC BY 4.0",

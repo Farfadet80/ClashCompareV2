@@ -1,5 +1,5 @@
 {
-  "version": "3.2",
+  "version": "3.3",
   "scope": "home_village",
   "reference_image_policy": "Place authorized/user gameplay crops in references/<building-id>/level-<n>/",
   "buildings": [
@@ -167,8 +167,7 @@
         4,
         5,
         6,
-        7,
-        8
+        7
       ]
     },
     {
@@ -246,7 +245,8 @@
         8,
         9,
         10,
-        11
+        11,
+        12
       ]
     },
     {
@@ -288,6 +288,22 @@
         6,
         7,
         8
+      ]
+    },
+    {
+      "id": "bob-hut",
+      "name": "Cabane de B.O.B",
+      "category": "utility",
+      "levels": [
+        1
+      ]
+    },
+    {
+      "id": "helper-hut",
+      "name": "Cabane des assistants",
+      "category": "utility",
+      "levels": [
+        1
       ]
     },
     {
@@ -428,7 +444,8 @@
         7,
         8,
         9,
-        10
+        10,
+        11
       ]
     },
     {
@@ -623,7 +640,8 @@
         5,
         6,
         7,
-        8
+        8,
+        9
       ]
     },
     {
@@ -641,7 +659,8 @@
         8,
         9,
         10,
-        11
+        11,
+        12
       ]
     },
     {
@@ -675,7 +694,9 @@
         7,
         8,
         9,
-        10
+        10,
+        11,
+        12
       ]
     },
     {
@@ -713,8 +734,7 @@
       "category": "defense",
       "levels": [
         1,
-        2,
-        3
+        2
       ]
     },
     {
@@ -723,8 +743,7 @@
       "category": "defense",
       "levels": [
         1,
-        2,
-        3
+        2
       ]
     },
     {
@@ -734,10 +753,14 @@
       "levels": [
         1,
         2,
-        3
+        3,
+        4,
+        5
       ],
       "variants": [
-        "guardian-variants"
+        "smasher",
+        "longshot",
+        "logger"
       ]
     },
     {
@@ -746,9 +769,23 @@
       "category": "crafted-defense",
       "levels": [],
       "variants": [
+        "hook-tower",
+        "flame-spinner",
+        "crusher-mortar",
         "light-beam",
         "hero-bell",
-        "bomb-hive"
+        "bomb-hive",
+        "roaster",
+        "air-bombs",
+        "lava-launcher",
+        "cake-a-pult",
+        "hero-hunter",
+        "hot-candle"
+      ],
+      "current_variants": [
+        "cake-a-pult",
+        "hero-hunter",
+        "hot-candle"
       ]
     },
     {
@@ -767,7 +804,9 @@
         9,
         10,
         11,
-        12
+        12,
+        13,
+        14
       ]
     },
     {
@@ -786,7 +825,8 @@
         9,
         10,
         11,
-        12
+        12,
+        13
       ]
     },
     {
@@ -805,7 +845,8 @@
         9,
         10,
         11,
-        12
+        12,
+        13
       ]
     },
     {
@@ -839,11 +880,7 @@
         5,
         6,
         7,
-        8,
-        9,
-        10,
-        11,
-        12
+        8
       ]
     },
     {
@@ -855,14 +892,7 @@
         2,
         3,
         4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
+        5
       ]
     },
     {
@@ -872,16 +902,7 @@
       "levels": [
         1,
         2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
+        3
       ]
     },
     {
@@ -892,23 +913,18 @@
         1,
         2,
         3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
+        4
       ]
     }
   ],
-  "updated_through": "2026-08-31",
+  "updated_through": "2026-09-05",
   "notes": [
     "Catalogue étendu pour inclure les catégories visuelles du village principal.",
     "Les supercharges sont modélisées séparément car elles modifient l'apparence d'un bâtiment au niveau maximum.",
-    "Mise à jour du 31 août 2026 : nouvelles supercharges HDV18 pour Cabane d'ouvrier et Monolithe."
+    "Mise à jour du 31 août 2026 : nouvelles supercharges HDV18 pour Cabane d'ouvrier et Monolithe.",
+    "Niveaux de pièges corrigés le 5 septembre 2026 d'après Supercell (Giant Bomb 12, Giga Bomb 4) et recoupement Clash Ninja / guides TH18.",
+    "Guardians : Smasher, Longshot et Logger, niveaux 1 à 5. Crafted Defenses actuelles au 5 septembre 2026 : Cake-A-Pult, Hero Hunter, Hot Candle.",
+    "Niveaux récents corrigés : Air Sweeper 7, Inferno Tower 12, Dark Elixir Drill 11, Workshop 9, Pet House 12, Hero Hall 12, Multi-Gear Tower 3, Revenge Tower 2 et Super Wizard Tower 2."
   ],
   "supercharges": {
     "visual_states": [

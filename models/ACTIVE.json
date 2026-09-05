@@ -11,7 +11,8 @@
     "onnx": "models/building-detector.onnx"
   },
   "release_dir": "models/releases/building-detector-v5s-infer800",
-  "level_classifiers": ["air-defense", "town-hall"],
+  "level_classifiers": [],
+  "experimental_level_classifiers": ["air-defense", "town-hall"],
   "not_promoted": [
     "building-detector-v6-weakclass-ft",
     "sahi-tiling",

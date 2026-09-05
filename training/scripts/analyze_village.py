@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from collections import defaultdict
@@ -21,10 +22,32 @@ from ultralytics import YOLO
 _detector_cache: dict[str, YOLO] = {}
 _classifier_cache: dict[str, YOLO] = {}
 
-# Classifieurs de niveaux autorisés en production.
-# Les modèles expérimentaux (ex. cannon, dataset trop petit) restent hors
-# de models/level-*.pt ou dans models/experimental/ jusqu'à preuve sur test.
-PRODUCTION_LEVEL_CLASSIFIERS = frozenset({"air-defense", "town-hall"})
+# Les classifieurs disponibles sont fermés sur des plages anciennes
+# (air-defense 8–11, town-hall 10–14). Sur un TH16+ ils donnent un niveau
+# faux mais très confiant : aucun n'est donc autorisé en production.
+EXPERIMENTAL_LEVEL_CLASSIFIERS = frozenset({"air-defense", "town-hall"})
+PRODUCTION_LEVEL_CLASSIFIERS: frozenset[str] = frozenset()
+
+# Classes petites / pièges : seuil optionnel (--small-conf). Bake-off VAL
+# 2026-09-05 : baisser ce seuil vs conf détruit la précision → défaut = conf.
+SMALL_OBJECT_CLASSES = frozenset(
+    {
+        "hidden-tesla",
+        "bomb",
+        "spring-trap",
+        "air-bomb",
+        "giant-bomb",
+        "seeking-air-mine",
+        "skeleton-trap",
+        "tornado-trap",
+        "giga-bomb",
+    }
+)
+DEFAULT_BASE_CONF = 0.25
+# Bake-off VAL 2026-09-05 (evaluate_inference_policy) : baisser small_conf
+# remonte un peu le rappel pièges mais détruit la précision focus → défaut = conf.
+DEFAULT_SMALL_CONF = 0.25
+DEFAULT_MAX_DET = 1000
 
 
 def resolve_device(device: str) -> str:
@@ -60,10 +83,21 @@ def inventory_from_detections(detections: list[dict]) -> dict[str, dict]:
     return dict(sorted(inventory.items(), key=lambda pair: (-pair[1]["total"], pair[0])))
 
 
+def safe_output_stem(source: Path, limit: int = 72) -> str:
+    """Évite les chemins Windows trop longs pour les captures jointes Cursor."""
+    stem = "".join(char if char.isalnum() or char in "-_" else "_" for char in source.stem)
+    if len(stem) <= limit:
+        return stem
+    digest = hashlib.sha1(str(source.resolve()).encode("utf-8")).hexdigest()[:10]
+    return f"{stem[: limit - 11]}-{digest}"
+
+
 def analyze_image(
     source: Path,
     detector_path: Path | None = None,
-    conf: float = 0.25,
+    conf: float = DEFAULT_BASE_CONF,
+    small_conf: float = DEFAULT_SMALL_CONF,
+    max_det: int = DEFAULT_MAX_DET,
     level_conf: float = 0.60,
     imgsz: int = 800,
     tta: bool = True,
@@ -77,16 +111,22 @@ def analyze_image(
         raise FileNotFoundError(f"Détecteur absent: {detector_path}")
     if not 0.0 <= level_conf <= 1.0:
         raise ValueError("--level-conf doit être compris entre 0 et 1")
+    if not 0.0 <= conf <= 1.0 or not 0.0 <= small_conf <= 1.0:
+        raise ValueError("--conf et --small-conf doivent être compris entre 0 et 1")
+    if max_det < 1:
+        raise ValueError("--max-det doit être >= 1")
 
     device = resolve_device(device)
     image = Image.open(source).convert("RGB")
     detector = load_detector(detector_path)
+    predict_conf = min(conf, small_conf)
     result = detector.predict(
         image,
         imgsz=imgsz,
-        conf=conf,
+        conf=predict_conf,
         device=device,
         augment=tta,
+        max_det=max_det,
         verbose=False,
     )[0]
 
@@ -94,15 +134,19 @@ def analyze_image(
     crops_by_building: dict[str, list[tuple[int, Image.Image]]] = defaultdict(list)
     if result.boxes is not None:
         for box in result.boxes:
+            building = result.names[int(box.cls.item())]
+            confidence = float(box.conf.item())
+            threshold = small_conf if building in SMALL_OBJECT_CLASSES else conf
+            if confidence < threshold:
+                continue
             left, top, right, bottom = (int(round(value)) for value in box.xyxy[0].tolist())
             left, top = max(0, left), max(0, top)
             right, bottom = min(image.width, right), min(image.height, bottom)
-            building = result.names[int(box.cls.item())]
             item = {
                 "building": building,
                 "level": None,
                 "box": [left, top, right, bottom],
-                "confidence": round(float(box.conf.item()), 5),
+                "confidence": round(confidence, 5),
                 "level_confidence": None,
             }
             index = len(detections)
@@ -137,22 +181,34 @@ def analyze_image(
         "engine": "building-detector-v5s-infer800-tta" if tta else "building-detector-v5s-infer800",
         "imgsz": imgsz,
         "tta": bool(tta),
+        "conf": conf,
+        "small_conf": small_conf,
+        "max_det": max_det,
+        "small_object_classes": sorted(SMALL_OBJECT_CLASSES),
         "device": str(device),
         "count": len(detections),
         "detections": detections,
         "inventory": inventory_from_detections(detections),
+        "coverage_note": (
+            "YOLO ne remplace pas l'export JSON pour un adversaire sans capture. "
+            "Murs et town-hall-guardian restent très sous-annotés : préférer l'export "
+            "JSON quand disponible. Types absents → Non détecté, jamais inventés."
+        ),
         "level_note": (
-            "Un niveau n'est affiché que si un classifieur de production "
-            f"({', '.join(sorted(PRODUCTION_LEVEL_CLASSIFIERS))}) dépasse 60 % de confiance. "
-            "Les autres bâtiments ont un type détecté, pas un niveau inventé."
+            "Niveaux YOLO désactivés : les classifieurs disponibles "
+            f"({', '.join(sorted(EXPERIMENTAL_LEVEL_CLASSIFIERS))}) ne couvrent pas "
+            "les niveaux récents et peuvent être confiants hors distribution. "
+            "Utiliser l'export JSON pour les niveaux vérifiés."
         ),
         "level_classifiers": sorted(PRODUCTION_LEVEL_CLASSIFIERS),
+        "experimental_level_classifiers": sorted(EXPERIMENTAL_LEVEL_CLASSIFIERS),
     }
 
     if output_dir is not None:
         output_dir.mkdir(parents=True, exist_ok=True)
-        json_path = output_dir / f"{source.stem}.json"
-        image_path = output_dir / f"{source.stem}-annotated.jpg"
+        output_stem = safe_output_stem(source)
+        json_path = output_dir / f"{output_stem}.json"
+        image_path = output_dir / f"{output_stem}-annotated.jpg"
         json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         canvas = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
         for item in detections:
@@ -170,7 +226,8 @@ def analyze_image(
                 1,
                 cv2.LINE_AA,
             )
-        cv2.imwrite(str(image_path), canvas)
+        if not cv2.imwrite(str(image_path), canvas):
+            raise OSError(f"Écriture image annotée impossible: {image_path}")
         payload["json_path"] = str(json_path)
         payload["annotated_path"] = str(image_path)
 
@@ -181,7 +238,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path, help="Capture de village à analyser")
     parser.add_argument("--detector", type=Path, default=ROOT / "models" / "building-detector.pt")
-    parser.add_argument("--conf", type=float, default=0.25)
+    parser.add_argument("--conf", type=float, default=DEFAULT_BASE_CONF)
+    parser.add_argument(
+        "--small-conf",
+        type=float,
+        default=DEFAULT_SMALL_CONF,
+        help="Seuil plus bas pour pièges / Tesla / giga-bomb",
+    )
+    parser.add_argument("--max-det", type=int, default=DEFAULT_MAX_DET)
     parser.add_argument("--level-conf", type=float, default=0.60, help="Confiance minimale avant d'afficher un niveau")
     parser.add_argument("--imgsz", type=int, default=800)
     parser.add_argument(
@@ -198,6 +262,8 @@ def main() -> None:
         args.source,
         detector_path=args.detector,
         conf=args.conf,
+        small_conf=args.small_conf,
+        max_det=args.max_det,
         level_conf=args.level_conf,
         imgsz=args.imgsz,
         tta=args.tta,

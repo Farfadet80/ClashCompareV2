@@ -16,7 +16,17 @@ os.environ.setdefault("YOLO_CONFIG_DIR", str(ROOT))
 os.environ.setdefault("MPLCONFIGDIR", str(ROOT / ".matplotlib"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from analyze_village import ROOT as PROJECT_ROOT, analyze_image, load_detector  # noqa: E402
+from analyze_village import (  # noqa: E402
+    DEFAULT_BASE_CONF,
+    DEFAULT_MAX_DET,
+    DEFAULT_SMALL_CONF,
+    EXPERIMENTAL_LEVEL_CLASSIFIERS,
+    PRODUCTION_LEVEL_CLASSIFIERS,
+    ROOT as PROJECT_ROOT,
+    SMALL_OBJECT_CLASSES,
+    analyze_image,
+    load_detector,
+)
 
 ANALYZE_LOCK = threading.Lock()
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024
@@ -84,6 +94,13 @@ class Handler(SimpleHTTPRequestHandler):
                     "engine": "building-detector-v5s-infer800-tta",
                     "imgsz": 800,
                     "tta": True,
+                    "conf": DEFAULT_BASE_CONF,
+                    "small_conf": DEFAULT_SMALL_CONF,
+                    "max_det": DEFAULT_MAX_DET,
+                    "small_object_classes": sorted(SMALL_OBJECT_CLASSES),
+                    "level_classifiers": sorted(PRODUCTION_LEVEL_CLASSIFIERS),
+                    "experimental_level_classifiers": sorted(EXPERIMENTAL_LEVEL_CLASSIFIERS),
+                    "inference_policy": "baseline-conf25",
                 },
             )
             return

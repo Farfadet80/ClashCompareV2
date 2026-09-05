@@ -7,7 +7,9 @@ PWA locale de comparaison de villages Clash of Clans, avec analyse YOLO réelle 
 - **Détecteur** : V5 (YOLO11s), poids `models/building-detector.pt`
 - **Inférence** : **imgsz 800** (promue : bat 640 sur le test réservé)
 - **ONNX** : `models/building-detector.onnx` entrée 800×800, parité PT vérifiée
-- **Niveaux** : classifieurs production `air-defense` (8–11) et `town-hall` (10–14) uniquement — jamais inventés
+- **Niveaux** : export JSON uniquement pour l'instant. Les classifieurs YOLO
+  `air-defense` (8–11) et `town-hall` (10–14) sont expérimentaux : leur plage
+  fermée produit des niveaux faux sur les villages récents.
 - **Non promus** : V6, SAHI/tiling, classifieur canon (quarantaine `models/experimental/`)
 
 | Split | Config | mAP50 | mAP50-95 |

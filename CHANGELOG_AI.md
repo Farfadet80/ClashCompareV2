@@ -16,6 +16,48 @@ Format d’entrée :
 
 ---
 
+## 2026-09-05 — Push reconnaissance (policy + import)
+
+- Branche / commits :
+  - `feature/village-json-import` (travail local en cours)
+  - Tag existant : `savepoint-before-recognition-push-2026-09-05`
+- Fait :
+  - Audit couverture 50 classes → `training/reports/class-coverage.json` (`town-hall-guardian` unlearnable ; `wall`/`tornado-trap`/`giga-bomb` very_weak).
+  - Bake-off VAL `evaluate_inference_policy.py` → **baseline conf 0,25** gagnante ; dual-conf 0,12/0,10/0,08 rejetées (focus_precision chute).
+  - SAHI historique déjà sous V5 global → non réactivé.
+  - Import restant `find-this-base` : **+37 images / 1326 boîtes** train ; `train-clean.txt` → **968**.
+  - Recherche Roboflow vérifiée dans le navigateur : `MyCOCHere` (407 images / 57 labels) n’apporte aucune classe faible ; `coc-wall-detection` (50 images, classe `wall`, CC BY 4.0) ajouté au registre, téléchargement bloqué par connexion Roboflow.
+  - Revue visuelle `coc-wall-detection` : masques de réseaux complets, pas boîtes de pièces individuelles ; garde ajoutée dans `import_public_dataset.py` pour empêcher une conversion polygon→bbox incorrecte.
+  - Kaggle `Clash Of Clan Object/Item Detection` (CC BY-SA 4.0) téléchargé et audité : miroir exact `targetArch v6` / WalkStation, 800 images / 35 classes, aucune classe rare utile → archivé, non importé.
+  - Références Supercell + wiki regroupées dans `training/RARE_CLASSES_GUIDE.md`; résultats reproductibles dans `training/sources/gap-research.json`.
+  - Catalogue corrigé après recoupement : ajout Guardian `Logger`, 12 variantes historiques de Crafted Defenses (phase active : Cake-A-Pult / Hero Hunter / Hot Candle), niveaux réels des pièges et bâtiments récents. Test de non-régression : `test_catalog_data.py`.
+  - Inférence : `max_det=1000` ; `small_conf` aligné sur 0,25 (infra dual gardée pour futurs essais) ; `/api/health` expose la politique.
+  - Test réel sur le village HDV16 de Jimmy : 93 détections, mais murs/pièges
+    très incomplets et plusieurs surcomptages. Le classifieur fermé `town-hall`
+    10–14 annonçait à tort le niveau 12 avec 94 % de confiance.
+  - Export officiel du même village intégré comme vérité terrain locale :
+    420 bâtiments (dont 325 murs) + 44 pièges. V5 atteint une borne supérieure
+    de rappel par quantités de 60,4 % hors murs (84/139), sans validation spatiale.
+  - Catalogue export porté à 52 classes : ajout de la cabane de B.O.B
+    (`1000064`) et de la cabane des assistants (`1000093`). Mapping vérifié :
+    aucune entrée bâtiment/piège inconnue sur cet export.
+  - Sécurité données : niveaux YOLO désactivés en production jusqu'à couverture
+    récente + rejet hors distribution ; niveaux fiables via export JSON.
+  - Sorties d'inférence raccourcies avec empreinte pour éviter l'échec silencieux
+    de `cv2.imwrite` sur les longs chemins Windows.
+  - Outil revue : `prepare_active_learning_candidates.py` (pseudo-labels non importés).
+  - UI : clarif JSON=soi/ami vs YOLO=adversaire ; cache SW
+    `clashcompare-v3-11-export-52`.
+- Décisions :
+  - **Pas de baisse de conf** pour « voir plus de pièges » (trop de faux positifs).
+  - **Pas de promotion** modèle ; V5 reste actif. Pas de TEST réservé.
+  - Capture HDV16 autorisée pour annotation/entraînement local, jamais comme
+    pseudo-label automatique.
+  - Sans Mode photo annoté (murs/gardiens/pièges), YOLO ne peut pas couvrir les 50 classes.
+- À faire ensuite :
+  - Déposer captures dans `training/inbox/screenshots/` puis annoter (priorité wall / guardian / traps).
+  - Après annotations propres : fine-tune court + gate vs V5 800+TTA.
+
 ## 2026-09-05 — V8 Stage1 échouée ; V5 conservée
 
 - Branche / commits :

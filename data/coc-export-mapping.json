@@ -1,10 +1,12 @@
 {
-  "version": "1.0",
+  "version": "1.2",
+  "updated": "2026-09-05",
   "scope": "home_village_buildings_traps",
   "notes": [
     "dataId numériques de l'export village officiel → ids ClashCompare (data/buildings.json).",
-    "town-hall-guardian agrège Longshot et Smasher ; le type exact reste Non détecté si besoin.",
+    "town-hall-guardian agrège Smasher, Longshot et Logger ; seuls les dataId réellement observés sont mappés, le type exact reste Non détecté si absent de l'export.",
     "crafted-defense mappe la Crafting Station (1000097).",
+    "bob-hut (1000064) et helper-hut (1000093) sont fiables via export mais ne font pas encore partie des 50 classes YOLO.",
     "Les sections *2 (Builder Base) sont ignorées volontairement."
   ],
   "dataIdToBuilding": {
@@ -36,6 +38,7 @@
     "1000031": "eagle-artillery",
     "1000032": "bomb-tower",
     "1000059": "workshop",
+    "1000064": "bob-hut",
     "1000067": "scattershot",
     "1000068": "pet-house",
     "1000070": "blacksmith",
@@ -47,6 +50,7 @@
     "1000085": "ricochet-cannon",
     "1000086": "revenge-tower",
     "1000089": "firespitter",
+    "1000093": "helper-hut",
     "1000097": "crafted-defense",
     "1000102": "super-wizard-tower",
     "107000000": "town-hall-guardian",

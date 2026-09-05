@@ -75,6 +75,11 @@ def main() -> None:
     if args.source_key not in registry:
         raise SystemExit(f"Source inconnue: {args.source_key}")
     source_info = registry[args.source_key]
+    if source_info.get("import_blocked_reason"):
+        raise SystemExit(
+            f"Import bloqué pour {args.source_key}: "
+            f"{source_info['import_blocked_reason']}"
+        )
     mapping: dict[str, str] = source_info["mapping"]
 
     source_yaml = find_yaml(args.source)

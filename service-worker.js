@@ -1,4 +1,4 @@
-const CACHE="clashcompare-v3-7-json-import";
+const CACHE="clashcompare-v3-11-export-52";
 const ASSETS=[
   "./",
   "./index.html",
