@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import os
 import subprocess
 import sys
 from pathlib import Path
 
+import torch
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -18,6 +20,51 @@ from ultralytics import YOLO
 
 
 TRAINING = Path(__file__).resolve().parents[1]
+
+
+def materialize_student_weights(checkpoint: Path) -> Path:
+    """Extrait l'élève d'un checkpoint complet de distillation Ultralytics.
+
+    Les checkpoints périodiques V5 stockent ``ema`` comme DistillationModel :
+    leurs clés commencent par ``student_model.`` et ne peuvent donc pas être
+    chargées directement par ``YOLO(...).train()``. L'original reste intact ;
+    seule une copie standard, sans optimizer, est créée pour le fine-tune.
+    """
+
+    payload = torch.load(checkpoint, map_location="cpu", weights_only=False)
+    ema = payload.get("ema") if isinstance(payload, dict) else None
+    student = getattr(ema, "student_model", None)
+    if student is None:
+        return checkpoint
+
+    output_dir = TRAINING / "runs" / "checkpoints"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output = output_dir / f"{checkpoint.parent.parent.name}-{checkpoint.stem}-student.pt"
+
+    model = copy.deepcopy(student).half()
+    for parameter in model.parameters():
+        parameter.requires_grad = False
+    normalized = {
+        key: value
+        for key, value in payload.items()
+        if key not in {"model", "ema", "optimizer", "scaler"}
+    }
+    normalized.update(
+        {
+            "epoch": -1,
+            "source_epoch": payload.get("epoch"),
+            "model": model,
+            "ema": None,
+            "optimizer": None,
+            "scaler": None,
+        }
+    )
+    torch.save(normalized, output)
+    print(
+        f"Checkpoint distillé détecté (epoch {payload.get('epoch')}) : "
+        f"poids élève matérialisés dans {output}"
+    )
+    return output
 
 
 def main() -> None:
@@ -99,7 +146,10 @@ def main() -> None:
             "--reuse-run-name en connaissance de cause."
         )
 
-    model = YOLO(args.model)
+    model_path = Path(args.model)
+    if model_path.suffix.lower() == ".pt" and model_path.exists():
+        model_path = materialize_student_weights(model_path.resolve())
+    model = YOLO(str(model_path))
     teacher = str(args.distill_model.resolve()) if args.distill_model else None
     if args.distill_model and not args.distill_model.exists():
         raise SystemExit(f"Modèle professeur absent: {args.distill_model}")
