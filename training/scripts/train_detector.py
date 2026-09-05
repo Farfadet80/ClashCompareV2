@@ -78,6 +78,14 @@ def main() -> None:
     parser.add_argument("--device", default="0")
     parser.add_argument("--optimizer", default="auto")
     parser.add_argument("--cos-lr", action="store_true")
+    parser.add_argument("--lr0", type=float, help="Taux d'apprentissage initial explicite")
+    parser.add_argument("--lrf", type=float, help="Facteur LR final (lr0 × lrf)")
+    parser.add_argument("--warmup-epochs", type=float, help="Durée du warmup en epochs")
+    parser.add_argument("--freeze", type=int, help="Nombre de premières couches à geler")
+    parser.add_argument("--mosaic", type=float, help="Probabilité mosaic (0 désactive)")
+    parser.add_argument("--close-mosaic", type=int, help="Désactive mosaic N epochs avant la fin")
+    parser.add_argument("--scale", type=float, help="Amplitude de redimensionnement aléatoire")
+    parser.add_argument("--erasing", type=float, help="Probabilité d'effacement aléatoire")
     parser.add_argument("--save-period", type=int, default=-1)
     parser.add_argument("--cls-pw", type=float, default=0.0)
     parser.add_argument("--distill-model", type=Path, help="Modèle professeur pour la distillation")
@@ -153,23 +161,50 @@ def main() -> None:
     teacher = str(args.distill_model.resolve()) if args.distill_model else None
     if args.distill_model and not args.distill_model.exists():
         raise SystemExit(f"Modèle professeur absent: {args.distill_model}")
-    model.train(
-        data=str(runtime_config),
-        epochs=args.epochs,
-        imgsz=args.imgsz,
-        batch=args.batch,
-        device=args.device,
-        workers=0,
-        project=str(TRAINING / "runs"),
-        name=args.name,
-        exist_ok=args.reuse_run_name,
-        patience=args.patience,
-        optimizer=args.optimizer,
-        cos_lr=args.cos_lr,
-        save_period=args.save_period,
-        cls_pw=args.cls_pw,
-        distill_model=teacher,
+    if args.optimizer.lower() == "auto" and args.lr0 is not None:
+        raise SystemExit(
+            "--optimizer auto ignore --lr0. Choisir explicitement AdamW, Adam ou SGD."
+        )
+
+    train_options = {
+        "data": str(runtime_config),
+        "epochs": args.epochs,
+        "imgsz": args.imgsz,
+        "batch": args.batch,
+        "device": args.device,
+        "workers": 0,
+        "project": str(TRAINING / "runs"),
+        "name": args.name,
+        "exist_ok": args.reuse_run_name,
+        "patience": args.patience,
+        "optimizer": args.optimizer,
+        "cos_lr": args.cos_lr,
+        "save_period": args.save_period,
+        "cls_pw": args.cls_pw,
+        "distill_model": teacher,
+    }
+    optional_options = {
+        "lr0": args.lr0,
+        "lrf": args.lrf,
+        "warmup_epochs": args.warmup_epochs,
+        "freeze": args.freeze,
+        "mosaic": args.mosaic,
+        "close_mosaic": args.close_mosaic,
+        "scale": args.scale,
+        "erasing": args.erasing,
+    }
+    train_options.update(
+        {key: value for key, value in optional_options.items() if value is not None}
     )
+    print(
+        "Configuration fine-tune contrôlée: "
+        + ", ".join(
+            f"{key}={train_options[key]}"
+            for key in optional_options
+            if key in train_options
+        )
+    )
+    model.train(**train_options)
 
 
 if __name__ == "__main__":
