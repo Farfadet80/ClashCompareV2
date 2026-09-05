@@ -28,18 +28,18 @@ Format d’entrée :
   - Confirmé limite produit : le JSON officiel n’est récupérable **que** par le propriétaire du compte (pas via tag # d’un adversaire). YOLO reste indispensable pour les villages tiers.
   - Dataset assaini : **931** images train (68 overlaps exclus, non détruits).
   - Baseline VAL reproduite `imgsz 800 + TTA` : P 0,870 / R 0,826 / mAP50 **0,853** / mAP50-95 **0,632**.
-  - Fine-tune `building-detector-v7-clean-ft2-20260905` lancé depuis élève de `epoch79.pt` (checkpoint distillé extrait, original intact). 20 epochs, batch 2, `cls_pw=0.25`, cos LR, distillation V5.
-  - Epochs 1–5 : meilleur mAP50-95 provisoire = **epoch 1 (0,588)** ; epochs 2–4 en baisse puis remontée à l’epoch 5 (0,577).
+  - Fine-tune `building-detector-v7-clean-ft2-20260905` lancé depuis élève de `epoch79.pt` (checkpoint distillé extrait, original intact). Prévu 20 epochs, arrêté proprement à **9/20** par early-stop patience 8.
+  - Meilleur checkpoint interne : epoch 1. Évaluation comparable VAL `800+TTA` : P **0,855** / R **0,837** / mAP50 **0,857** / mAP50-95 **0,629**.
+  - Baseline V5 VAL `800+TTA` : P **0,870** / R **0,826** / mAP50 **0,853** / mAP50-95 **0,632**.
+  - V7 améliore le rappel (+0,010), mAP50 (+0,004) et les pièges sur VAL (`skeleton-trap` +0,064 ; `air-bomb` +0,036 ; `spring-trap` +0,028), mais baisse précision (−0,015) et mAP50-95 globale (−0,003).
 - Décisions :
   - Ne pas importer WalkStation (annotations corrompues / classes parasites).
   - Ne pas entraîner sur icônes `clash-of-clans-data` (pas des captures village).
-  - Ne pas promouvoir V7 sans battre baseline VAL puis TEST `800+TTA`.
+  - **V7 non promue** : elle ne bat pas V5 sur les critères globaux VAL. TEST réservé volontairement non consulté.
   - Ne pas upgrader Python / PyTorch / CUDA (GTX 1050 sm_61).
 - À faire ensuite :
-  - Finir V7 (ou early-stop patience 8).
-  - Évaluer meilleur checkpoint en VAL 800+TTA vs baseline.
-  - TEST réservé seulement si VAL gagne.
   - Collecter captures Mode photo (pièges / Teslas) — vrai levier YOLO.
+  - Conserver V5 comme modèle actif.
 
 ---
 
