@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__workshop__coc-all-traps__coc-all-traps-val-th15-farm-1478-jpg-rf-__0.jpg",
+    "width": 621,
+    "height": 694
+  },
+  "metadata": {
+    "village_group": "focus-crop-workshop-a2b3e511332a",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "workshop",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "workshop": 1
+  },
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 104.0,
+      "y1": 116.5,
+      "x2": 518.0,
+      "y2": 579.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

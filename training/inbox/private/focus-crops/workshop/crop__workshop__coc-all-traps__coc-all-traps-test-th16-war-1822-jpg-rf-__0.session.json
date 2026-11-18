@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__workshop__coc-all-traps__coc-all-traps-test-th16-war-1822-jpg-rf-__0.jpg",
+    "width": 2031,
+    "height": 1006
+  },
+  "metadata": {
+    "village_group": "focus-crop-workshop-c49dafb13185",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "workshop",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "workshop": 1
+  },
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 406.5,
+      "y1": 183.5,
+      "x2": 2031,
+      "y2": 916.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

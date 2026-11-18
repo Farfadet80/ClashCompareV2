@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__pet-house__coc-all-traps__coc-all-traps-train-th15-war-1475-jpg-rf__0.jpg",
+    "width": 1376,
+    "height": 820
+  },
+  "metadata": {
+    "village_group": "focus-crop-pet-house-f220ce412f1d",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "pet-house",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "pet-house": 1
+  },
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 230.26,
+      "y1": 164.31,
+      "x2": 1147.62,
+      "y2": 820,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

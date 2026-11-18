@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-pet-house-cdbe963dead1",
+  "class_focus": "pet-house",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/pet-house/coc-all-traps__val__th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.session.json",
+  "source_image": "coc-all-traps__val__th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+  "sha256": "cdbe963dead18d483bb3b5ab443dae1ed2bf19870b33e973b08dc8392238addb",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

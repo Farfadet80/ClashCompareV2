@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-blacksmith-f1b5498d7ab4",
+  "class_focus": "blacksmith",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.session.json",
+  "source_image": "coc-all-traps__val__th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+  "sha256": "f1b5498d7ab4e532c223f6cda6e6fdccadbef81494a4b2f95cca39202585a681",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

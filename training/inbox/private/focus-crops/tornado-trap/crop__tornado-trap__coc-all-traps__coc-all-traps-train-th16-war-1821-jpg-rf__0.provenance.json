@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-tornado-trap-1cc231198ce5",
+  "class_focus": "tornado-trap",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th16_war_1821_jpg.rf.f83d90f188924e4206c323771465a268.session.json",
+  "source_image": "coc-all-traps__train__th16_war_1821_jpg.rf.f83d90f188924e4206c323771465a268.jpg",
+  "sha256": "1cc231198ce5f12297287bc045297ef356ef269d51b6c143108f18f58e05664a",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

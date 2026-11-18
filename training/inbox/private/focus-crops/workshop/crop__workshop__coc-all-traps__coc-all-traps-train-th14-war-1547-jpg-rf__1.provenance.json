@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-workshop-98dbdfb2bbce",
+  "class_focus": "workshop",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/workshop/coc-all-traps__train__th14_war_1547_jpg.rf.d680cce7ef42fb655a3c24a0ec9cea60.session.json",
+  "source_image": "coc-all-traps__train__th14_war_1547_jpg.rf.d680cce7ef42fb655a3c24a0ec9cea60.jpg",
+  "sha256": "98dbdfb2bbcee6c640adf31ea087e596afe2b9aaab8900ee855e73d4a68e7fa7",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

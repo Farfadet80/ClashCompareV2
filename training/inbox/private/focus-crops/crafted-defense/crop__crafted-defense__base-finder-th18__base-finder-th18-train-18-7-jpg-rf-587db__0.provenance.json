@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-crafted-defense-db09e956a041",
+  "class_focus": "crafted-defense",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-7_jpg.rf.587dbc866bdb4e8108a13e59aa77d507.session.json",
+  "source_image": "base-finder-th18__train__18-7_jpg.rf.587dbc866bdb4e8108a13e59aa77d507.jpg",
+  "sha256": "db09e956a0411e638d8b75087c859309a9871171628fe54ba733b58ffb610f6e",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

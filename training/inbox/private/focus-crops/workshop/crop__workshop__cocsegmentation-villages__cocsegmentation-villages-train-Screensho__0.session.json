@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+    "width": 801,
+    "height": 299
+  },
+  "metadata": {
+    "village_group": "focus-crop-workshop-96e3d62947a4",
+    "source": "focus-crop:cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "workshop",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "workshop": 1
+  },
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 133.77,
+      "y1": 59.95,
+      "x2": 667.92,
+      "y2": 299,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

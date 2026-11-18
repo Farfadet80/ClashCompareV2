@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-workshop-e373dcb7977d",
+  "class_focus": "workshop",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/workshop/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-53-47_png.rf.adbdd300906f0e0308513fc42a25d7c1.session.json",
+  "source_image": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-53-47_png.rf.adbdd300906f0e0308513fc42a25d7c1.jpg",
+  "sha256": "e373dcb7977d471829011b0f440cf43b37947f01b890b2f5dfa3f6b4434819e3",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

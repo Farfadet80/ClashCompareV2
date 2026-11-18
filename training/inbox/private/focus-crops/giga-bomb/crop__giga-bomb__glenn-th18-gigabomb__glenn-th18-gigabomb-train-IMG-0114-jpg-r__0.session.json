@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0114-jpg-r__0.jpg",
+    "width": 96,
+    "height": 96
+  },
+  "metadata": {
+    "village_group": "focus-crop-giga-bomb-618657b820a0",
+    "source": "focus-crop:glenn-th18-gigabomb",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "giga-bomb",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "giga-bomb": 1
+  },
+  "boxes": [
+    {
+      "class_id": 49,
+      "class_name": "giga-bomb",
+      "x1": 42.5,
+      "y1": 38.0,
+      "x2": 54.5,
+      "y2": 58.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

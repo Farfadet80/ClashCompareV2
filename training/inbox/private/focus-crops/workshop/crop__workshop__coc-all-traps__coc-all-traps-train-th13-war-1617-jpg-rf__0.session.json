@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__workshop__coc-all-traps__coc-all-traps-train-th13-war-1617-jpg-rf__0.jpg",
+    "width": 1060,
+    "height": 948
+  },
+  "metadata": {
+    "village_group": "focus-crop-workshop-0e5693e332eb",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "workshop",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "workshop": 1
+  },
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 176.81,
+      "y1": 189.7,
+      "x2": 883.99,
+      "y2": 948,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

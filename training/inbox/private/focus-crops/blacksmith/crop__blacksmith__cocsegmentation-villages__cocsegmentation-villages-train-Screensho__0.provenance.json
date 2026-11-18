@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-blacksmith-5e935bb06269",
+  "class_focus": "blacksmith",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153423_com-supercell-clashofclans_jpg.rf.5c9506c975cc977ee7a9097c1d98e6db.session.json",
+  "source_image": "cocsegmentation-villages__train__Screenshot_20241028_153423_com-supercell-clashofclans_jpg.rf.5c9506c975cc977ee7a9097c1d98e6db.jpg",
+  "sha256": "5e935bb06269cea6dfcd301790af5248e01bbb79ec424b8701197787995a9cee",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

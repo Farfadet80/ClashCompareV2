@@ -1,0 +1,2610 @@
+{
+  "updated": "2026-11-18",
+  "dry_run": false,
+  "finetune": false,
+  "targets": [
+    "tornado-trap",
+    "giga-bomb",
+    "wall",
+    "hero-hall",
+    "crafted-defense",
+    "workshop",
+    "pet-house",
+    "blacksmith"
+  ],
+  "extracted_counts": {
+    "tornado-trap": 18,
+    "giga-bomb": 26,
+    "wall": 40,
+    "hero-hall": 15,
+    "crafted-defense": 40,
+    "workshop": 40,
+    "pet-house": 38,
+    "blacksmith": 39
+  },
+  "import_totals": {},
+  "extracted": {
+    "tornado-trap": [
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1827-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1827-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4447,
+        "wh": [
+          1238,
+          968
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1858-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1858-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          2019,
+          471
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-war-1963-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-war-1963-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1374,
+          930
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1925-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1925-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4751,
+        "wh": [
+          2140,
+          270
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1931-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1931-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4447,
+        "wh": [
+          1461,
+          766
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1929-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1929-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1437,
+          525
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1936-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1936-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.445,
+        "wh": [
+          1402,
+          752
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-defence-1595-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-defence-1595-jp__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.445,
+        "wh": [
+          1090,
+          819
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-war-1604-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-war-1604-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4449,
+        "wh": [
+          1024,
+          928
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-defence-1543-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-defence-1543-jp__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.445,
+        "wh": [
+          1450,
+          872
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-war-1691-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-war-1691-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1905,
+          360
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1477-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1477-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1860,
+          708
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1479-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1479-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1830,
+          426
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-war-1474-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-war-1474-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4448,
+        "wh": [
+          1842,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1818-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1818-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1869,
+          201
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1821-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1821-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.445,
+        "wh": [
+          1759,
+          475
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th11-farm-1837-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th11-farm-1837-jpg-rf-__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4834,
+        "wh": [
+          1180,
+          992
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th13-defence-1639-jpg-__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th13-defence-1639-jpg-__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1044,
+          882
+        ]
+      }
+    ],
+    "giga-bomb": [
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-test-IMG-0125-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-test-IMG-0125-jpg-rf__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0358,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-test-IMG-0134-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-test-IMG-0134-jpg-rf__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0404,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0111-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0111-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0337,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0114-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0114-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.026,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0115-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0115-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0211,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0118-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0118-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0292,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0119-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0119-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0322,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0120-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0120-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0267,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0121-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0121-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0264,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0122-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0122-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0311,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0124-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0124-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0346,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0126-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0126-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0469,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0127-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0127-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0231,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0128-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0128-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0232,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0129-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0129-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0534,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0130-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0130-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0352,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0131-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0131-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0216,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0132-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0132-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0254,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0135-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0135-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0393,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0136-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0136-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0292,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0138-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0138-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0263,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0148-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0148-jpg-r__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0209,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0112-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0112-jpg-rf-__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0267,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0113-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0113-jpg-rf-__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0327,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0123-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0123-jpg-rf-__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.025,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0133-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/giga-bomb/crop__giga-bomb__glenn-th18-gigabomb__glenn-th18-gigabomb-val-IMG-0133-jpg-rf-__0.jpg",
+        "target": "giga-bomb",
+        "coverage": 0.0339,
+        "wh": [
+          96,
+          96
+        ]
+      }
+    ],
+    "wall": [
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__1.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__1.jpg",
+        "target": "wall",
+        "coverage": 0.0239,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__2.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__2.jpg",
+        "target": "wall",
+        "coverage": 0.0245,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__4.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__4.jpg",
+        "target": "wall",
+        "coverage": 0.0258,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__5.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__5.jpg",
+        "target": "wall",
+        "coverage": 0.0258,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__6.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__6.jpg",
+        "target": "wall",
+        "coverage": 0.0374,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__7.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__7.jpg",
+        "target": "wall",
+        "coverage": 0.033,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__8.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__8.jpg",
+        "target": "wall",
+        "coverage": 0.0312,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__9.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__9.jpg",
+        "target": "wall",
+        "coverage": 0.0245,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__10.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__10.jpg",
+        "target": "wall",
+        "coverage": 0.0318,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__11.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__11.jpg",
+        "target": "wall",
+        "coverage": 0.0366,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.jpg",
+        "target": "wall",
+        "coverage": 0.5052,
+        "wh": [
+          549,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.jpg",
+        "target": "wall",
+        "coverage": 0.5619,
+        "wh": [
+          574,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall2__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall2__0.jpg",
+        "target": "wall",
+        "coverage": 0.4451,
+        "wh": [
+          331,
+          471
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4449,
+        "wh": [
+          306,
+          538
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4865,
+        "wh": [
+          498,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.487,
+        "wh": [
+          472,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.5807,
+        "wh": [
+          613,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.5167,
+        "wh": [
+          588,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.5265,
+        "wh": [
+          601,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4448,
+        "wh": [
+          306,
+          565
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4451,
+        "wh": [
+          331,
+          471
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4454,
+        "wh": [
+          421,
+          565
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4454,
+        "wh": [
+          421,
+          565
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4677,
+        "wh": [
+          471,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4494,
+        "wh": [
+          535,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4449,
+        "wh": [
+          535,
+          633
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4449,
+        "wh": [
+          294,
+          484
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4444,
+        "wh": [
+          318,
+          525
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4451,
+        "wh": [
+          331,
+          633
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4444,
+        "wh": [
+          306,
+          633
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.487,
+        "wh": [
+          445,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall11__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall11__0.jpg",
+        "target": "wall",
+        "coverage": 0.524,
+        "wh": [
+          549,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall4-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall4-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4588,
+        "wh": [
+          484,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4448,
+        "wh": [
+          345,
+          592
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4444,
+        "wh": [
+          357,
+          633
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall9-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall9-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4776,
+        "wh": [
+          445,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__142.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__142.jpg",
+        "target": "wall",
+        "coverage": 0.0201,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__285.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__285.jpg",
+        "target": "wall",
+        "coverage": 0.0215,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__324.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__324.jpg",
+        "target": "wall",
+        "coverage": 0.0215,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__142.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-0__142.jpg",
+        "target": "wall",
+        "coverage": 0.0201,
+        "wh": [
+          96,
+          96
+        ]
+      }
+    ],
+    "hero-hall": [
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0117-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0117-jpg-r__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.1248,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-test-resized-C3F4__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-test-resized-C3F4__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4486,
+        "wh": [
+          148,
+          151
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4451,
+        "wh": [
+          176,
+          164
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4458,
+        "wh": [
+          202,
+          193
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4472,
+        "wh": [
+          237,
+          225
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4456,
+        "wh": [
+          246,
+          233
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4457,
+        "wh": [
+          294,
+          269
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4459,
+        "wh": [
+          178,
+          183
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4518,
+        "wh": [
+          173,
+          185
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4491,
+        "wh": [
+          160,
+          140
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4949,
+        "wh": [
+          172,
+          77
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-175__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-175__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4479,
+        "wh": [
+          129,
+          131
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-BC4__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-BC4__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4725,
+        "wh": [
+          186,
+          159
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-val-resized-17518__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-val-resized-17518__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4479,
+        "wh": [
+          131,
+          121
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4457,
+        "wh": [
+          204,
+          178
+        ]
+      }
+    ],
+    "crafted-defense": [
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-10-jpg-rf-9ba0__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-10-jpg-rf-9ba0__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.05,
+        "wh": [
+          96,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-13-jpg-rf-14bf__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-13-jpg-rf-14bf__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4606,
+        "wh": [
+          312,
+          438
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-2-jpg-rf-83447__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-2-jpg-rf-83447__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4469,
+        "wh": [
+          290,
+          379
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-3-jpg-rf-82bca__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-3-jpg-rf-82bca__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4447,
+        "wh": [
+          408,
+          315
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-4-jpg-rf-16cee__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-4-jpg-rf-16cee__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4452,
+        "wh": [
+          415,
+          347
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-5-jpg-rf-73ef9__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-5-jpg-rf-73ef9__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4464,
+        "wh": [
+          300,
+          347
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-6-jpg-rf-4e4e6__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-6-jpg-rf-4e4e6__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.47,
+        "wh": [
+          443,
+          330
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-7-jpg-rf-587db__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-7-jpg-rf-587db__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4456,
+        "wh": [
+          410,
+          383
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-8-jpg-rf-1a196__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-8-jpg-rf-1a196__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4465,
+        "wh": [
+          292,
+          315
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-9-jpg-rf-2d072__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-9-jpg-rf-2d072__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4461,
+        "wh": [
+          363,
+          392
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4464,
+        "wh": [
+          367,
+          356
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4467,
+        "wh": [
+          369,
+          319
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4456,
+        "wh": [
+          320,
+          314
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4456,
+        "wh": [
+          422,
+          414
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4456,
+        "wh": [
+          382,
+          346
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4462,
+        "wh": [
+          294,
+          384
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4466,
+        "wh": [
+          309,
+          436
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.5333,
+        "wh": [
+          427,
+          418
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4461,
+        "wh": [
+          390,
+          397
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4454,
+        "wh": [
+          390,
+          427
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4462,
+        "wh": [
+          252,
+          394
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4463,
+        "wh": [
+          247,
+          395
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4498,
+        "wh": [
+          439,
+          251
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4472,
+        "wh": [
+          277,
+          352
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4454,
+        "wh": [
+          394,
+          414
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4459,
+        "wh": [
+          428,
+          309
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4945,
+        "wh": [
+          428,
+          423
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4668,
+        "wh": [
+          393,
+          434
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4667,
+        "wh": [
+          380,
+          435
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.465,
+        "wh": [
+          436,
+          390
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.5094,
+        "wh": [
+          428,
+          320
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.5029,
+        "wh": [
+          385,
+          431
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4812,
+        "wh": [
+          404,
+          429
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4458,
+        "wh": [
+          389,
+          405
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-defence-19-j__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-defence-19-j__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4534,
+        "wh": [
+          436,
+          325
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-troll-8-jpg-__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-troll-8-jpg-__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4447,
+        "wh": [
+          185,
+          346
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-war-26-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-war-26-jpg-r__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4898,
+        "wh": [
+          432,
+          446
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-11-jpg-rf-ef2118__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-11-jpg-rf-ef2118__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4594,
+        "wh": [
+          435,
+          431
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-12-jpg-rf-898c13__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-12-jpg-rf-898c13__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4455,
+        "wh": [
+          404,
+          384
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-14-jpg-rf-e0a01d__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-14-jpg-rf-e0a01d__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4455,
+        "wh": [
+          388,
+          294
+        ]
+      }
+    ],
+    "workshop": [
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th13-defence-1642-jpg__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th13-defence-1642-jpg__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5332,
+        "wh": [
+          1426,
+          915
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th13-defence-1642-jpg__1.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th13-defence-1642-jpg__1.jpg",
+        "target": "workshop",
+        "coverage": 0.5331,
+        "wh": [
+          1372,
+          967
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th13-war-1608-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th13-war-1608-jpg-rf-__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4444,
+        "wh": [
+          1224,
+          237
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th14-defence-1695-jpg__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th14-defence-1695-jpg__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5329,
+        "wh": [
+          1281,
+          952
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th14-farm-1548-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th14-farm-1548-jpg-rf__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5335,
+        "wh": [
+          1746,
+          761
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th14-war-1545-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th14-war-1545-jpg-rf-__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5694,
+        "wh": [
+          2143,
+          903
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th16-war-1822-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-test-th16-war-1822-jpg-rf-__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5828,
+        "wh": [
+          2031,
+          1006
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th13-war-1617-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th13-war-1617-jpg-rf__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5337,
+        "wh": [
+          1060,
+          948
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th14-war-1547-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th14-war-1547-jpg-rf__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5329,
+        "wh": [
+          1815,
+          760
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th14-war-1547-jpg-rf__1.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th14-war-1547-jpg-rf__1.jpg",
+        "target": "workshop",
+        "coverage": 0.5335,
+        "wh": [
+          1816,
+          765
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th15-farm-1473-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th15-farm-1473-jpg-r__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4463,
+        "wh": [
+          1613,
+          133
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th16-defence-1856-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th16-defence-1856-jp__0.jpg",
+        "target": "workshop",
+        "coverage": 0.6398,
+        "wh": [
+          2023,
+          962
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th16-defence-1871-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th16-defence-1871-jp__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4457,
+        "wh": [
+          2107,
+          187
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th16-war-1872-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-train-th16-war-1872-jpg-rf__0.jpg",
+        "target": "workshop",
+        "coverage": 0.534,
+        "wh": [
+          1972,
+          406
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th12-war-1928-jpg-rf-5__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th12-war-1928-jpg-rf-5__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5331,
+        "wh": [
+          1630,
+          750
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th12-war-1928-jpg-rf-5__1.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th12-war-1928-jpg-rf-5__1.jpg",
+        "target": "workshop",
+        "coverage": 0.5331,
+        "wh": [
+          1698,
+          826
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th13-defence-2009-jpg-__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th13-defence-2009-jpg-__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4444,
+        "wh": [
+          789,
+          534
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th15-farm-1478-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__coc-all-traps__coc-all-traps-val-th15-farm-1478-jpg-rf-__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4448,
+        "wh": [
+          621,
+          694
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5327,
+        "wh": [
+          815,
+          312
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5357,
+        "wh": [
+          823,
+          168
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4465,
+        "wh": [
+          300,
+          272
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4449,
+        "wh": [
+          421,
+          172
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5319,
+        "wh": [
+          836,
+          307
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5334,
+        "wh": [
+          812,
+          307
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5349,
+        "wh": [
+          800,
+          261
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.534,
+        "wh": [
+          601,
+          354
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.446,
+        "wh": [
+          206,
+          340
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.447,
+        "wh": [
+          194,
+          340
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.533,
+        "wh": [
+          867,
+          358
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5503,
+        "wh": [
+          876,
+          364
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5798,
+        "wh": [
+          816,
+          408
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.458,
+        "wh": [
+          874,
+          124
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4733,
+        "wh": [
+          876,
+          152
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5349,
+        "wh": [
+          782,
+          296
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5332,
+        "wh": [
+          767,
+          261
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5324,
+        "wh": [
+          805,
+          313
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5329,
+        "wh": [
+          798,
+          370
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "workshop",
+        "coverage": 0.5331,
+        "wh": [
+          801,
+          299
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4456,
+        "wh": [
+          216,
+          193
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/workshop/crop__workshop__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json",
+        "image": "training/inbox/private/focus-crops/workshop/crop__workshop__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+        "target": "workshop",
+        "coverage": 0.4444,
+        "wh": [
+          168,
+          180
+        ]
+      }
+    ],
+    "pet-house": [
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__coc-all-traps__coc-all-traps-test-th15-war-1471-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__coc-all-traps__coc-all-traps-test-th15-war-1471-jpg-rf-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5335,
+        "wh": [
+          2035,
+          844
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__coc-all-traps__coc-all-traps-train-th15-war-1475-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__coc-all-traps__coc-all-traps-train-th15-war-1475-jpg-rf__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5331,
+        "wh": [
+          1376,
+          820
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__coc-all-traps__coc-all-traps-val-th14-defence-1544-jpg-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__coc-all-traps__coc-all-traps-val-th14-defence-1544-jpg-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5332,
+        "wh": [
+          1971,
+          885
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5339,
+        "wh": [
+          814,
+          230
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.2802,
+        "wh": [
+          637,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4451,
+        "wh": [
+          272,
+          380
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4455,
+        "wh": [
+          567,
+          382
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-th16-defen__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-th16-defen__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4462,
+        "wh": [
+          363,
+          294
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-th16-war-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-th16-war-1__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4872,
+        "wh": [
+          869,
+          107
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5337,
+        "wh": [
+          786,
+          381
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4488,
+        "wh": [
+          854,
+          104
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-defe__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-defe__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5341,
+        "wh": [
+          791,
+          262
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5323,
+        "wh": [
+          777,
+          330
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5595,
+        "wh": [
+          829,
+          405
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4458,
+        "wh": [
+          267,
+          369
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5333,
+        "wh": [
+          751,
+          319
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th14-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5337,
+        "wh": [
+          608,
+          317
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4465,
+        "wh": [
+          540,
+          106
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5328,
+        "wh": [
+          825,
+          356
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.2756,
+        "wh": [
+          889,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4464,
+        "wh": [
+          866,
+          148
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.6248,
+        "wh": [
+          852,
+          394
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4462,
+        "wh": [
+          504,
+          167
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5324,
+        "wh": [
+          574,
+          329
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-defe__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-defe__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.549,
+        "wh": [
+          822,
+          409
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-defe__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-defe__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.6355,
+        "wh": [
+          854,
+          379
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-farm__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-farm__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4453,
+        "wh": [
+          582,
+          166
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-war-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-war-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5323,
+        "wh": [
+          697,
+          306
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.638,
+        "wh": [
+          830,
+          390
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.533,
+        "wh": [
+          866,
+          324
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5338,
+        "wh": [
+          815,
+          211
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-Screenshot-__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5953,
+        "wh": [
+          866,
+          358
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th14-farm-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th14-farm-1__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4459,
+        "wh": [
+          556,
+          98
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th15-war-14__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th15-war-14__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5322,
+        "wh": [
+          706,
+          296
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th16-defenc__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th16-defenc__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5332,
+        "wh": [
+          881,
+          358
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th16-war-18__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th16-war-18__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5337,
+        "wh": [
+          834,
+          226
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th16-war-18__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th16-war-18__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.5332,
+        "wh": [
+          772,
+          264
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/pet-house/crop__pet-house__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json",
+        "image": "training/inbox/private/focus-crops/pet-house/crop__pet-house__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+        "target": "pet-house",
+        "coverage": 0.4461,
+        "wh": [
+          136,
+          117
+        ]
+      }
+    ],
+    "blacksmith": [
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-test-th10-war-1984-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-test-th10-war-1984-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5333,
+        "wh": [
+          2014,
+          693
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-test-th8-war-2010-jpg-rf-0__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-test-th8-war-2010-jpg-rf-0__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5331,
+        "wh": [
+          2101,
+          865
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-defence-1792-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-defence-1792-jp__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4447,
+        "wh": [
+          828,
+          880
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-defence-1903-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-defence-1903-jp__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5331,
+        "wh": [
+          2032,
+          732
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-defence-1904-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-defence-1904-jp__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5332,
+        "wh": [
+          2000,
+          681
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-farm-1793-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-farm-1793-jpg-r__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5333,
+        "wh": [
+          1977,
+          867
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-war-1985-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-war-1985-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5052,
+        "wh": [
+          2106,
+          976
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-war-1987-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-war-1987-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5329,
+        "wh": [
+          1702,
+          836
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-war-1990-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th10-war-1990-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.6253,
+        "wh": [
+          2107,
+          962
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-1874-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-1874-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5335,
+        "wh": [
+          1312,
+          950
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-1884-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-1884-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5331,
+        "wh": [
+          2106,
+          763
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-1943-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-1943-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5331,
+        "wh": [
+          2072,
+          777
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-2000-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-2000-jpg-rf__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4446,
+        "wh": [
+          1162,
+          795
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-1986-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-1986-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.6281,
+        "wh": [
+          2108,
+          965
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2011-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2011-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5333,
+        "wh": [
+          1979,
+          760
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2014-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2014-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5332,
+        "wh": [
+          2006,
+          606
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2017-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2017-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.445,
+        "wh": [
+          1404,
+          415
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-defence-1679-jpg__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-defence-1679-jpg__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.518,
+        "wh": [
+          2133,
+          634
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-war-1676-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-war-1676-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5839,
+        "wh": [
+          2154,
+          775
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-war-1699-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-war-1699-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5601,
+        "wh": [
+          2148,
+          885
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-war-1701-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-train-th9-war-1701-jpg-rf-__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4458,
+        "wh": [
+          2155,
+          352
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th10-war-1988-jpg-rf-e__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th10-war-1988-jpg-rf-e__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5338,
+        "wh": [
+          1955,
+          547
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th8-defence-1897-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th8-defence-1897-jpg-r__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.6398,
+        "wh": [
+          2063,
+          980
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-defence-1666-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-defence-1666-jpg-r__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.625,
+        "wh": [
+          2101,
+          941
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-defence-1677-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-defence-1677-jpg-r__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4656,
+        "wh": [
+          1029,
+          1008
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-defence-1680-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-defence-1680-jpg-r__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4453,
+        "wh": [
+          1264,
+          346
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-farm-1678-jpg-rf-0__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-farm-1678-jpg-rf-0__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4446,
+        "wh": [
+          1996,
+          111
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-farm-1698-jpg-rf-c__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-farm-1698-jpg-rf-c__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4449,
+        "wh": [
+          1030,
+          940
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-war-1700-jpg-rf-b3__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-war-1700-jpg-rf-b3__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4518,
+        "wh": [
+          1162,
+          1017
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5322,
+        "wh": [
+          633,
+          332
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5329,
+        "wh": [
+          566,
+          348
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.3593,
+        "wh": [
+          883,
+          96
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5317,
+        "wh": [
+          856,
+          179
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4457,
+        "wh": [
+          482,
+          183
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4471,
+        "wh": [
+          661,
+          160
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5324,
+        "wh": [
+          669,
+          392
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.5373,
+        "wh": [
+          849,
+          112
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__cocsegmentation-villages__cocsegmentation-villages-train-Screensho__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4457,
+        "wh": [
+          427,
+          233
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json",
+        "image": "training/inbox/private/focus-crops/blacksmith/crop__blacksmith__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+        "target": "blacksmith",
+        "coverage": 0.4459,
+        "wh": [
+          154,
+          141
+        ]
+      }
+    ]
+  },
+  "imports": [],
+  "notes": [
+    "Crops mono-objet pour combler seuils pré-FT sans poison multi-classe.",
+    "Pas de fine-tune dans ce script ; gate Jimmy inchangé.",
+    "Images focus-crops gitignorées via inbox/private/**/*.jpg."
+  ]
+}

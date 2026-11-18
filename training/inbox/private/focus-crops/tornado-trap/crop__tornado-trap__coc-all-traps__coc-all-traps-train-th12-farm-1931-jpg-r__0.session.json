@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1931-jpg-r__0.jpg",
+    "width": 1461,
+    "height": 766
+  },
+  "metadata": {
+    "village_group": "focus-crop-tornado-trap-24e67bf3cb20",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "tornado-trap": 1
+  },
+  "boxes": [
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 244.0,
+      "y1": 128.5,
+      "x2": 1218.0,
+      "y2": 639.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

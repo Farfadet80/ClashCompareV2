@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-war-1963-jpg-rf__0.jpg",
+    "width": 1374,
+    "height": 930
+  },
+  "metadata": {
+    "village_group": "focus-crop-tornado-trap-4e6614837f58",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "tornado-trap": 1
+  },
+  "boxes": [
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 229.0,
+      "y1": 155.0,
+      "x2": 1145.0,
+      "y2": 775.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

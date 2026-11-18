@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__hero-hall__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0117-jpg-r__0.jpg",
+    "width": 96,
+    "height": 96
+  },
+  "metadata": {
+    "village_group": "focus-crop-hero-hall-f05d4cca57a4",
+    "source": "focus-crop:glenn-th18-gigabomb",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "hero-hall",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "hero-hall": 1
+  },
+  "boxes": [
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 33.75,
+      "y1": 28.5,
+      "x2": 63.25,
+      "y2": 67.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

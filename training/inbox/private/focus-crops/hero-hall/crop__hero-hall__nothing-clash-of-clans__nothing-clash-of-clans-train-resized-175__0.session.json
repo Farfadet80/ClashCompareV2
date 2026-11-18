@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-175__0.jpg",
+    "width": 129,
+    "height": 131
+  },
+  "metadata": {
+    "village_group": "focus-crop-hero-hall-3072cf3c47ca",
+    "source": "focus-crop:nothing-clash-of-clans",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "hero-hall",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "hero-hall": 1
+  },
+  "boxes": [
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 21.88,
+      "y1": 22.62,
+      "x2": 108.24,
+      "y2": 110.27,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

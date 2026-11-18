@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-wall-b255b56c0694",
+  "class_focus": "wall",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/wall/evans-home-village-building-detector__train__th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314.session.json",
+  "source_image": "evans-home-village-building-detector__train__th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314.jpg",
+  "sha256": "b255b56c0694846fd980bb003cc71867b1243f76502feeb576c736670add9efc",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

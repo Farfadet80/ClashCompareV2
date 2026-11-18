@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__workshop__coc-all-traps__coc-all-traps-val-th12-war-1928-jpg-rf-5__0.jpg",
+    "width": 1630,
+    "height": 750
+  },
+  "metadata": {
+    "village_group": "focus-crop-workshop-046732ccf46c",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "workshop",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "workshop": 1
+  },
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 272.17,
+      "y1": 150.5,
+      "x2": 1359.17,
+      "y2": 750,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

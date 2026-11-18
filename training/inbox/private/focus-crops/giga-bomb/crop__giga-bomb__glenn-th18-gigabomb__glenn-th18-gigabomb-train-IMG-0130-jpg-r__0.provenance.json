@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-giga-bomb-9bb44f591ea1",
+  "class_focus": "giga-bomb",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0130_jpg.rf.96bc333e88d579b2b1682dd44dedd6a3.session.json",
+  "source_image": "glenn-th18-gigabomb__train__IMG_0130_jpg.rf.96bc333e88d579b2b1682dd44dedd6a3.jpg",
+  "sha256": "9bb44f591ea1658ac23b32334c18bb828acde7292fed67127da17687ebb80ace",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

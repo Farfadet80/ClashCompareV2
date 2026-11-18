@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-pet-house-3cc750d747d0",
+  "class_focus": "pet-house",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__Screenshot_20241028_154115_com-supercell-clashofclans_jpg.rf.730b135de98504ecb046449463567523.session.json",
+  "source_image": "cocsegmentation-villages__test__Screenshot_20241028_154115_com-supercell-clashofclans_jpg.rf.730b135de98504ecb046449463567523.jpg",
+  "sha256": "3cc750d747d0823b1f6ceda1cba1ce197ff41ca8a32ec8d86c072e634f140632",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

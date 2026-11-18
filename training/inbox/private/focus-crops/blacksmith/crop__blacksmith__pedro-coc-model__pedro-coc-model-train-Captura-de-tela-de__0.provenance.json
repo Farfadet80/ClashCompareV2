@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-blacksmith-da6c5aebf829",
+  "class_focus": "blacksmith",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/blacksmith/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-50-52_png.rf.05537c4c0eee58a6103486891015e2d8.session.json",
+  "source_image": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-50-52_png.rf.05537c4c0eee58a6103486891015e2d8.jpg",
+  "sha256": "da6c5aebf8292802bf1061b268fa337df528d408146eeb2e0a0b62090f0058f3",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}
