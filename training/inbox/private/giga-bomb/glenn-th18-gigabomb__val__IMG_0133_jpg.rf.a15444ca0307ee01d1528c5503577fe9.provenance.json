@@ -1,0 +1,17 @@
+{
+  "village_group": "private-glenn-th18-gigabomb-IMG_0133_jpg",
+  "class_focus": "giga-bomb",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
+  "source_key": "glenn-th18-gigabomb",
+  "source_split": "val",
+  "sha256": "dc3edacf19ccc9cc8338d56febc1fac9a4cc61f1d9a26dc85bdad7756b773ecf",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "village_group": "private-kiet-walls-v6-curated-train30-6-_jpg",
+  "class_focus": "wall",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/clash-of-clan/clash-of-clan-vzsst/dataset/6",
+  "source_key": "kiet-walls-v6-curated",
+  "source_split": "train",
+  "sha256": "575585ad123c357886b613a7e67128a6eff3fd53ba360dc84c3348b21c39b1e3",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "notes": [
+    "Copie locale privée pour élargir la file murs.",
+    "Ne pas republier / ne pas committer l'image.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

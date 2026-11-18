@@ -1,0 +1,850 @@
+{
+  "updated": "2026-11-18",
+  "dry_run": false,
+  "policy": {
+    "th19_classes_ignored": [
+      "firecracker-tower",
+      "guardian-shrine",
+      "spiky-tower",
+      "squad-barracks"
+    ],
+    "allowed_focus": [
+      "blacksmith",
+      "crafted-defense",
+      "giga-bomb",
+      "hero-hall",
+      "pet-house",
+      "tornado-trap",
+      "town-hall-guardian",
+      "wall",
+      "workshop"
+    ],
+    "strict_crops_only": true,
+    "import_detector": false,
+    "finetune": false,
+    "note": "Exhaustive = removebg/sprites mur seulement. Villages plein cadre restent draft même si focus boxes accepted."
+  },
+  "totals": {
+    "seen": 704,
+    "skipped": 684,
+    "demoted": 90,
+    "promoted": 20,
+    "focus_wall": 20
+  },
+  "demoted_sessions": [
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210500_com-supercell-clashofclans_jpg.rf.c13e2a2416087832f60ed696cb0c1aeb.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-13_jpg.rf.14bf91fd042a3ad55b3fde215c5e76a6.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-2_jpg.rf.83447b3233d5f81bd42c9eadb3a9a232.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-3_jpg.rf.82bcafd62847d5ae573cb333b0407f24.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-4_jpg.rf.16cee22765052704ba292c1360361204.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-5_jpg.rf.73ef9a0acade92f2d16ea3c82881a0a3.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-6_jpg.rf.4e4e6186979491ad0b3eae12df5a1f0f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-7_jpg.rf.587dbc866bdb4e8108a13e59aa77d507.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-8_jpg.rf.1a1961b933f01fd4c304224024a94c19.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-9_jpg.rf.2d072ec78533bfdc220b5e7ed7e612f7.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-31-28-87_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.58d30d52e0ea0996f5a779ad87900dae.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-53-34-41_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.7d29f8f53f90ba14301627896dde6090.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-54-14-81_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.2ab761421fe3829b1f37483976cc0b58.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-58-49-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.21b109607c49c1c20ebf86fdcd7b75e9.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-59-42-91_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.3653d036f0fe2a76710eb4a31870ae26.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-26-30-23_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.5936c29333d25cb8abd067eedc0df35c.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-28-39-66_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.85082fefd708052d6324353a2582cf0f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-06-12_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.7587aabd6153d9256a71b4ba235ae56f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-34-61_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1286d1cc4ec9111f1b0607745020d85a.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-57-83_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.12f14e290c5b72712836da77b22f4f1f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.44787c81c9a9426c754f08a080b03185.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-30-52-85_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.39ebc0ca710d87c1fb165fdcc21c4213.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-31-18-21_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.3b556a364a6c79c9435df0e0a6d52357.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-31-38-35_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1d25bed6bd020be97bf9e4a5e6e349e3.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-32-21-55_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1a6af1aee6d1717b71aa53397df4ad0f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-32-43-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.02d1327b540c5d02fa43e21505409e26.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-11-23_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.27fb835dd8be060d87ea2c5d617c03ae.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-37-02_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.0e9df6c5a97dba53e2dac5d7af12d2bd.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-57-02_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.06cc50df25c5be4ae0dc33910a5a77f5.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-34-22-29_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.00ae073f51987773a98b897a01bb2f2a.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-35-39-27_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.6f130d12b4434718af81da9e6d037611.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.80b726b138e4acf8fa14750ce2957b06.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-28-15_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.59b6ed41f46e18025a4b42bf533157d2.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-53-59_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.148d07595633240c631a844964a4350c.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__th18_defence_19_jpg.rf.5cf0fa320f958ca2e535c47162e01167.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__th18_war_26_jpg.rf.442cf5d3e94aa4f7dbd7d5b32115561a.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__val__18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__val__18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__val__18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_farm_1480_jpg.rf.6ae18671eea02f5d7cf6c309212f237b.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210500_com-supercell-clashofclans_jpg.rf.c13e2a2416087832f60ed696cb0c1aeb.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-13_jpg.rf.14bf91fd042a3ad55b3fde215c5e76a6.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-2_jpg.rf.83447b3233d5f81bd42c9eadb3a9a232.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-3_jpg.rf.82bcafd62847d5ae573cb333b0407f24.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-4_jpg.rf.16cee22765052704ba292c1360361204.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-5_jpg.rf.73ef9a0acade92f2d16ea3c82881a0a3.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-6_jpg.rf.4e4e6186979491ad0b3eae12df5a1f0f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-7_jpg.rf.587dbc866bdb4e8108a13e59aa77d507.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-8_jpg.rf.1a1961b933f01fd4c304224024a94c19.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__18-9_jpg.rf.2d072ec78533bfdc220b5e7ed7e612f7.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-31-28-87_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.58d30d52e0ea0996f5a779ad87900dae.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-53-34-41_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.7d29f8f53f90ba14301627896dde6090.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-54-14-81_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.2ab761421fe3829b1f37483976cc0b58.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-58-49-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.21b109607c49c1c20ebf86fdcd7b75e9.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-59-42-91_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.3653d036f0fe2a76710eb4a31870ae26.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-26-30-23_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.5936c29333d25cb8abd067eedc0df35c.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-28-39-66_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.85082fefd708052d6324353a2582cf0f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-06-12_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.7587aabd6153d9256a71b4ba235ae56f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-34-61_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1286d1cc4ec9111f1b0607745020d85a.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-57-83_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.12f14e290c5b72712836da77b22f4f1f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.44787c81c9a9426c754f08a080b03185.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-30-52-85_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.39ebc0ca710d87c1fb165fdcc21c4213.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-31-18-21_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.3b556a364a6c79c9435df0e0a6d52357.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-31-38-35_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1d25bed6bd020be97bf9e4a5e6e349e3.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-32-21-55_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1a6af1aee6d1717b71aa53397df4ad0f.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-32-43-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.02d1327b540c5d02fa43e21505409e26.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-11-23_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.27fb835dd8be060d87ea2c5d617c03ae.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-37-02_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.0e9df6c5a97dba53e2dac5d7af12d2bd.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-57-02_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.06cc50df25c5be4ae0dc33910a5a77f5.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-34-22-29_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.00ae073f51987773a98b897a01bb2f2a.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-35-39-27_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.6f130d12b4434718af81da9e6d037611.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.80b726b138e4acf8fa14750ce2957b06.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-28-15_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.59b6ed41f46e18025a4b42bf533157d2.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-53-59_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.148d07595633240c631a844964a4350c.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__th18_defence_19_jpg.rf.5cf0fa320f958ca2e535c47162e01167.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__train__th18_war_26_jpg.rf.442cf5d3e94aa4f7dbd7d5b32115561a.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__val__18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__val__18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/crafted-defense/base-finder-th18__val__18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/pet-house/cocsegmentation-villages__train__th15_farm_1480_jpg.rf.6ae18671eea02f5d7cf6c309212f237b.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_49_png.rf.7be638c5b6bdd44b3b52acdab3ed38f0.session.json",
+      "demoted": true,
+      "reason": "non-crop (cov=14.28% area=409600 focus=wall)"
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_49_png.rf.f7128fa3726f4396e373beb3f91fa801.session.json",
+      "demoted": true,
+      "reason": "non-crop (cov=14.28% area=409600 focus=wall)"
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_5_png.rf.eb95771f1003580c1b370978434fefbb.session.json",
+      "demoted": true,
+      "reason": "non-crop (cov=115.26% area=409600 focus=wall)"
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_5_png.rf.fe57914af086fa1ff836ed668ffb3c97.session.json",
+      "demoted": true,
+      "reason": "non-crop (cov=121.49% area=409600 focus=wall)"
+    },
+    {
+      "path": "training/inbox/private/wall/peters-walls-16-17-v2__train__frame_123_png.rf.b90960c51db784f19ed0f6a1aeab2c96.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/wall/peters-walls-16-17-v2__train__frame_124_png.rf.d183771e45f64469d65aee6cd5c922ca.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/wall/peters-walls-16-17-v2__train__frame_138_png.rf.c1358df2b173d16bc4ca31dca6c82d2c.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/wall/peters-walls-16-17-v2__train__frame_1_png.rf.1832120e5ddfa36e3db82d078b7c8cda.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/wall/peters-walls-16-17-v2__val__frame_106_png.rf.3e7f3709dff3146b42ce82b70f02d8e6.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/private/wall/peters-walls-16-17-v2__val__frame_110_png.rf.432ec0481bb49d48c4d145e5a3b1fa02.session.json",
+      "demoted": true,
+      "reason": "indice village/plein cadre"
+    }
+  ],
+  "promoted_sessions": [
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__train__Wall1-removebg-preview_png.rf.65cb402aa6cee2523fbf4a6b0516954e.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__train__Wall2-removebg-preview_png.rf.33ee64c3c77525e8b0d6c9c8e6cf3e29.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__train__Wall3-removebg-preview_png.rf.5042d8691eb497de7d4204d615a2d1ef.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__train__Wall6-removebg-preview_png.rf.50601a6520061d96edddac07b435b029.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__train__Wall7-removebg-preview_png.rf.6d3189c8b0d5dc89d13ba4f79dae02f7.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__val__Wall4-removebg-preview_png.rf.5fa8f11a12627e7e436c2a5b30acef5a.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__val__Wall8-removebg-preview_png.rf.c538163ace87bfbf456f5c727a455a69.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall1-removebg-preview_png.rf.c96fc3a3266284320d58cdebb6aae2a0.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall10-removebg-preview_png.rf.2f3710ef0f844126790a6ec2cabf0bcb.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall12-removebg-preview_png.rf.b28f23fe6d4c5d87b23d5a98af2d2ffc.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall15-removebg-preview_png.rf.8d4358eeac853fec454d4e5f24d14174.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall16-removebg-preview_png.rf.c058b62b578d7dec4a8755b46806a16f.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall17-removebg-preview_png.rf.7e3c796a6a29e34858f25539f7854291.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall19-removebg-preview_png.rf.b977f77ee880a9bd428740c890445aeb.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall2-removebg-preview_png.rf.db2723630358b6713594ac2a44b34217.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall3-removebg-preview_png.rf.59547e7156f01bf80183eb766ef9f4bf.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall5-removebg-preview_png.rf.43cca01d7a45228e4b54021893008bf8.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall6-removebg-preview_png.rf.c9457ab174c7c2c99464f49e46a19271.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    },
+    {
+      "path": "training/inbox/private/wall/clashia-detectwall-v7__train__Wall7-removebg-preview_png.rf.86838d15cdf5f24690ff5c85c5ddb49b.session.json",
+      "promoted": true,
+      "reason": "removebg wall crop",
+      "focus": "wall",
+      "accepted_boxes": 1,
+      "already_accepted": 1
+    }
+  ],
+  "skipped_sample": [
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__test__th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__test__th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_defence_1792_jpg.rf.f6bde84fa2eb824bf7e90f7b05156a5b.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_defence_1903_jpg.rf.a915b6a80438bf67b6461a8455d90413.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_defence_1904_jpg.rf.230755f3779f9ac86773bf63b8b8db01.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_farm_1793_jpg.rf.0ba00c1ad7f0459eb8c980e8701b67d7.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1985_jpg.rf.211584d2a013116f941c05ee5ca12c54.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1987_jpg.rf.b76f84d35b5646bc5f6779d1d03b0edc.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1990_jpg.rf.24ed0a268bd4f63e78b8f0559beba23f.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_1874_jpg.rf.8c9689e3417c268cb69fcd169ecde574.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_1884_jpg.rf.27c8f6971bc87fe1c20d3140bea0a57f.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_1943_jpg.rf.b521f5f55b9d7773c5304dd08f85d21f.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_2000_jpg.rf.a0ee51c89756363a664c169e18a2ac72.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_1986_jpg.rf.5d9e39525bac9b56bafc851f01469eaa.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_2011_jpg.rf.57a37045c4db8c4e384af4961819a928.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_2014_jpg.rf.41f6bcfa608e3ca7a48f9cc16c59004c.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_2017_jpg.rf.a86077f3a3455ca81aa373a1e95ec7de.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_defence_1679_jpg.rf.9254eb51d710eae892918e79c75c1b7f.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_war_1676_jpg.rf.b41601c17e92878634b7f39c439b4667.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_war_1699_jpg.rf.6e3b08a391ed65f0081be14a5c412f11.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_war_1701_jpg.rf.0a467ed0a5591541950207a15f3a5005.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210500_com-supercell-clashofclans_jpg.rf.c13e2a2416087832f60ed696cb0c1aeb.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210600_com-supercell-clashofclans_jpg.rf.a31d49427c876b9ae85adedf85582f2a.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210611_com-supercell-clashofclans_jpg.rf.3d60aac6321e50bb92aa216376473995.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210614_com-supercell-clashofclans_jpg.rf.fc8d85c53aa972dd66a5685bc2a94eac.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210619_com-supercell-clashofclans_jpg.rf.0e4847a3418e3b4bbaec948eecf947ae.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210622_com-supercell-clashofclans_jpg.rf.fab0ae7a99bb138211b769a94c436369.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153409_com-supercell-clashofclans_jpg.rf.61ac1045b8249152c16247999524defe.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153420_com-supercell-clashofclans_jpg.rf.ba0a36f8fdcfac26f5223728816442f5.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153423_com-supercell-clashofclans_jpg.rf.5c9506c975cc977ee7a9097c1d98e6db.session.json",
+      "promoted": false,
+      "reason": "indice village/plein cadre"
+    },
+    {
+      "path": "training/inbox/public-reference/blacksmith/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-50-52_png.rf.05537c4c0eee58a6103486891015e2d8.session.json",
+      "promoted": false,
+      "reason": "non-crop (cov=1.24% area=2027520 focus=blacksmith)"
+    }
+  ]
+}

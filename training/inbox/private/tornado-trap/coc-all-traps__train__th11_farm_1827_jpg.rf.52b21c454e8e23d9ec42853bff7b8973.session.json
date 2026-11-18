@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th11_farm_1827_jpg.rf.52b21c454e8e23d9ec42853bff7b8973.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th11_farm_1827_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 314.03,
+      "y1": 362.24,
+      "x2": 971.75,
+      "y2": 1066.95,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 398.1,
+      "y1": 337.52,
+      "x2": 1223.96,
+      "y2": 982.88,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

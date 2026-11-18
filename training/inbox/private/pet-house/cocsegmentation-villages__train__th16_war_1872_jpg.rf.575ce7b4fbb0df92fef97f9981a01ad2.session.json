@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th16_war_1872_jpg.rf.575ce7b4fbb0df92fef97f9981a01ad2.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-th16_war_1872_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 379.15,
+      "y1": 55.51,
+      "x2": 1024,
+      "y2": 178.65,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 295.84,
+      "y1": 0.0,
+      "x2": 883.46,
+      "y2": 2.63,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

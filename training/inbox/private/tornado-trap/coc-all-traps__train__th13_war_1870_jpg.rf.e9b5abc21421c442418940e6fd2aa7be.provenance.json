@@ -1,0 +1,17 @@
+{
+  "village_group": "private-coc-all-traps-th13_war_1870_jpg",
+  "class_focus": "tornado-trap",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "source_key": "coc-all-traps",
+  "source_split": "train",
+  "sha256": "966b4a38e7f687ec53ba871d23c75f7991b29f3887139069c1400d1ac6da4805",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

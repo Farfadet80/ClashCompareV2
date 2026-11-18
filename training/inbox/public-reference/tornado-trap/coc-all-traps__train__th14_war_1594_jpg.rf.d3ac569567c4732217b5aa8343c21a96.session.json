@@ -22,8 +22,9 @@
       "y1": 327.63,
       "x2": 605.8,
       "y2": 963.1,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "accepted",
+      "origin": "public-source-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
     },
     {
       "class_id": 33,
@@ -32,8 +33,9 @@
       "y1": 579.84,
       "x2": 1844.6,
       "y2": 1170,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "accepted",
+      "origin": "public-source-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
     },
     {
       "class_id": 33,
@@ -42,8 +44,9 @@
       "y1": 567.47,
       "x2": 1894.05,
       "y2": 1170,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "accepted",
+      "origin": "public-source-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
     },
     {
       "class_id": 32,
@@ -52,8 +55,9 @@
       "y1": 459.91,
       "x2": 1398.29,
       "y2": 1170,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "accepted",
+      "origin": "public-source-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
     },
     {
       "class_id": 48,

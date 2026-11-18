@@ -1,0 +1,349 @@
+{
+  "dry_run": false,
+  "finetune": false,
+  "attempted": 20,
+  "ok": 20,
+  "failed": 0,
+  "results": [
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__train__Wall1-removebg-preview_png.rf.65cb402aa6cee2523fbf4a6b0516954e.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall1-removebg-preview-adfdb36437d7.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall1-removebg-preview-adfdb36437d7.txt",
+      "sha256": "adfdb36437d79d76961934acd4d29573df3c1c9aeabb026d66cfb732e6c6b151",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall1-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:16.469617+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__train__Wall2-removebg-preview_png.rf.33ee64c3c77525e8b0d6c9c8e6cf3e29.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall2-removebg-preview-1a3efe0c95aa.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall2-removebg-preview-1a3efe0c95aa.txt",
+      "sha256": "1a3efe0c95aa36cc6177d01c898196c50ac35f0e94d59976dbcc638639a8317c",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall2-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:18.658601+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__train__Wall3-removebg-preview_png.rf.5042d8691eb497de7d4204d615a2d1ef.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall3-removebg-preview-10fb2b361e21.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall3-removebg-preview-10fb2b361e21.txt",
+      "sha256": "10fb2b361e21e2e821e05cf90c5df0b0f2ab69066644359fad4d4ff2e1777f4d",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall3-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:20.730988+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__train__Wall6-removebg-preview_png.rf.50601a6520061d96edddac07b435b029.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall6-removebg-preview-4c4c403d42a5.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall6-removebg-preview-4c4c403d42a5.txt",
+      "sha256": "4c4c403d42a55f3ef80bf20c355ddb9edf00605d7169300ec05d1717affc9c16",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall6-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:22.852235+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__train__Wall7-removebg-preview_png.rf.6d3189c8b0d5dc89d13ba4f79dae02f7.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall7-removebg-preview-324665aaa4a6.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall7-removebg-preview-324665aaa4a6.txt",
+      "sha256": "324665aaa4a6fc16710fa8437700e66dafc2dd59791d00ad58cf80255bfa422b",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall7-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:24.865646+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__val__Wall4-removebg-preview_png.rf.5fa8f11a12627e7e436c2a5b30acef5a.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall4-removebg-preview-8769e39fdac5.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall4-removebg-preview-8769e39fdac5.txt",
+      "sha256": "8769e39fdac50bc615536337a783d63f1484210dd1a606f0bef3a2dc98492df5",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall4-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:26.887276+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__val__Wall8-removebg-preview_png.rf.c538163ace87bfbf456f5c727a455a69.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall8-removebg-preview-694081601edb.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall8-removebg-preview-694081601edb.txt",
+      "sha256": "694081601edb5f8c91b6cbf7fc50ef37ca8bfba1e342e07cec1588ae78bbc0e7",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall8-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:28.899011+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall9-removebg-preview-8f99e0e6d8f9.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-curated-wall9-removebg-preview-8f99e0e6d8f9.txt",
+      "sha256": "8f99e0e6d8f9f283950ee01c98502595ad23f75613f86f0a817666daf1434765",
+      "village_group": "private-clashia-detectwall-v7-curated-Wall9-removebg-preview_png",
+      "source": "clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:31.011994+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall1-removebg-preview_png.rf.c96fc3a3266284320d58cdebb6aae2a0.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall1-removebg-preview-png-29d7fbbd9392.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall1-removebg-preview-png-29d7fbbd9392.txt",
+      "sha256": "29d7fbbd93923545e1626ceefc593c3680ee9b43d20e7e02dacb530e9d3afc8c",
+      "village_group": "private-clashia-detectwall-v7-Wall1-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:33.244024+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall10-removebg-preview_png.rf.2f3710ef0f844126790a6ec2cabf0bcb.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall10-removebg-preview-png-dde9e7fb432d.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall10-removebg-preview-png-dde9e7fb432d.txt",
+      "sha256": "dde9e7fb432d2db54f6d2afbeb930cc5f0b18f0a4a925fcb5873e0267249309c",
+      "village_group": "private-clashia-detectwall-v7-Wall10-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:35.347663+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall12-removebg-preview_png.rf.b28f23fe6d4c5d87b23d5a98af2d2ffc.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall12-removebg-preview-png-56adde1b72a4.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall12-removebg-preview-png-56adde1b72a4.txt",
+      "sha256": "56adde1b72a45ab80548b655873322e636ed30a3eb21223daadbded57e383792",
+      "village_group": "private-clashia-detectwall-v7-Wall12-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:37.572960+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall15-removebg-preview_png.rf.8d4358eeac853fec454d4e5f24d14174.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall15-removebg-preview-png-52c4e2252903.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall15-removebg-preview-png-52c4e2252903.txt",
+      "sha256": "52c4e225290308a4e10588c54e6374d187c0b7a1f93896830b431399ee0fabd1",
+      "village_group": "private-clashia-detectwall-v7-Wall15-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:39.613854+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall16-removebg-preview_png.rf.c058b62b578d7dec4a8755b46806a16f.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall16-removebg-preview-png-37794f278ee0.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall16-removebg-preview-png-37794f278ee0.txt",
+      "sha256": "37794f278ee01c46262c14eb719e36db8f5f450f1c40af4a84b5d33d2600315b",
+      "village_group": "private-clashia-detectwall-v7-Wall16-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:41.646460+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall17-removebg-preview_png.rf.7e3c796a6a29e34858f25539f7854291.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall17-removebg-preview-png-709783a478ce.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall17-removebg-preview-png-709783a478ce.txt",
+      "sha256": "709783a478ce3baafb63ec5cf84656651d946ffc96102641835b248bc7b96525",
+      "village_group": "private-clashia-detectwall-v7-Wall17-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:43.693344+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall19-removebg-preview_png.rf.b977f77ee880a9bd428740c890445aeb.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall19-removebg-preview-png-5d9b980feca5.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall19-removebg-preview-png-5d9b980feca5.txt",
+      "sha256": "5d9b980feca53baf9d748df49247d0ddf3c0de510718c9e260d95debf8ee9d3d",
+      "village_group": "private-clashia-detectwall-v7-Wall19-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:45.733955+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall2-removebg-preview_png.rf.db2723630358b6713594ac2a44b34217.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall2-removebg-preview-png-e4d1c40938f5.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall2-removebg-preview-png-e4d1c40938f5.txt",
+      "sha256": "e4d1c40938f57258895f7d60c9b32573ea8da2d402c4d3fa617fbc2acc954095",
+      "village_group": "private-clashia-detectwall-v7-Wall2-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:47.772461+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall3-removebg-preview_png.rf.59547e7156f01bf80183eb766ef9f4bf.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall3-removebg-preview-png-c60f6a8d6fae.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall3-removebg-preview-png-c60f6a8d6fae.txt",
+      "sha256": "c60f6a8d6fae7e7b5724c022fc37b6f6062ed4c6ff948fd61ff9fb607ffa7bb1",
+      "village_group": "private-clashia-detectwall-v7-Wall3-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:49.814861+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall5-removebg-preview_png.rf.43cca01d7a45228e4b54021893008bf8.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall5-removebg-preview-png-409fbb8b4577.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall5-removebg-preview-png-409fbb8b4577.txt",
+      "sha256": "409fbb8b45770ba08f2d40ff743ca44e7d01c8e99e40154501b02d1668686b59",
+      "village_group": "private-clashia-detectwall-v7-Wall5-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:51.980434+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall6-removebg-preview_png.rf.c9457ab174c7c2c99464f49e46a19271.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall6-removebg-preview-png-27760ac588ec.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall6-removebg-preview-png-27760ac588ec.txt",
+      "sha256": "27760ac588ec966bcd1163c694d5e56202fb4e5c286fe79561838eca4c861669",
+      "village_group": "private-clashia-detectwall-v7-Wall6-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:54.087213+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall7-removebg-preview_png.rf.86838d15cdf5f24690ff5c85c5ddb49b.session.json",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall7-removebg-preview-png-0d8d5b21e194.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall7-removebg-preview-png-0d8d5b21e194.txt",
+      "sha256": "0d8d5b21e194f40db057ab0a8dbda697b37b0898a4ab6adbc62dee21f8f88115",
+      "village_group": "private-clashia-detectwall-v7-Wall7-removebg-preview_png",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:15:56.213166+00:00"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "image": {
+    "name": "glenn-th18-gigabomb__val__IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-glenn-th18-gigabomb-IMG_0113_jpg",
+    "source": "glenn-th18-gigabomb",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "giga-bomb",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 505.75,
+      "y1": 260.5,
+      "x2": 533.25,
+      "y2": 306.5,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 49,
+      "class_name": "giga-bomb",
+      "x1": 457.0,
+      "y1": 264.25,
+      "x2": 471.0,
+      "y2": 285.75,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

@@ -2,10 +2,12 @@
 
 Dossier **gitignoré pour les images** : captures Mode photo / screens amis /
 référence TH19 téléchargée localement. **Ne jamais pousser les binaires** sur
-le remote public (ni LFS public).
+le remote public (ni LFS public). Les `.session.json` / `.provenance.json`
+peuvent être versionnés (annotation sans image).
 
 Préférence Jimmy (2026-11-18) : collecte privée OK pour datasets locaux ;
-ne pas redistribuer les images.
+ne pas redistribuer les images. **Focus TH10–18** ; TH19 (dataIds + classes
+YOLO 50–53) **à la fin**.
 
 ## Arborescence
 
@@ -13,7 +15,7 @@ ne pas redistribuer les images.
 training/inbox/private/
   README.md                          # ce fichier (versionné)
   drop/                              # déposer ici les captures brutes
-  <class-id>/                        # staging annotateur (wall, spiky-tower, …)
+  <class-id>/                        # staging annotateur (wall, workshop, …)
   reference-only/th19-visual/        # blog / guides — hors train YOLO
   exports-json/                      # exports village JSON amis (dataIds)
 ```
@@ -25,7 +27,10 @@ training/inbox/private/
 2. Pas de fine-tune tant que `check_finetune_readiness` rouge **et** sans OK Jimmy.
 3. Pas d’invention de `dataId` : coller un export TH19 réel dans `exports-json/`.
 4. Annotation **exhaustive** via `http://127.0.0.1:8765/training/annotator/`
-   avant `import_annotation_session.py`.
+   avant `import_annotation_session.py` (villages). Crops isolés :
+   `promote_isolated_crop_sessions.py`.
+5. Ignorer classes YOLO `spiky-tower` / `firecracker-tower` /
+   `guardian-shrine` / `squad-barracks` jusqu’à la phase TH19.
 
 ## Staging
 
@@ -40,21 +45,28 @@ Depuis une capture déposée dans `drop/` :
 
 ```powershell
 .\.venv\Scripts\python.exe training\scripts\stage_private_visual_candidates.py `
-  --from-wall-imports --max-per-source 40
+  --from-wall-imports --max-per-source 60
 ```
 
-Référence visuelle TH19 (hors train) :
+Élargir P1/P2 TH10–18 (tornado / giga / workshop / pet-house / …) :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\stage_private_visual_candidates.py `
+  --from-priority-imports --max-per-class 40
+```
+
+Référence visuelle TH19 (hors train, fin de roadmap) :
 
 ```powershell
 .\.venv\Scripts\python.exe training\scripts\stage_private_visual_candidates.py `
   --fetch-th19-reference
 ```
 
-## Priorités
+## Priorités (TH10–18)
 
-| P0 | `spiky-tower`, `firecracker-tower`, `guardian-shrine`, `squad-barracks`, vrai `town-hall-guardian` |
-| P1 | `wall` (+ val/test), `tornado-trap`, `giga-bomb` |
+| P1 | `wall` (+ val/test), `tornado-trap`, `giga-bomb`, vrai `town-hall-guardian` |
 | P2 | workshop / pet-house / blacksmith / hero-hall / crafted-defense |
+| Fin | classes YOLO 50–53 + dataIds TH19 (hors scope actuel) |
 
 ## Séparation licence
 

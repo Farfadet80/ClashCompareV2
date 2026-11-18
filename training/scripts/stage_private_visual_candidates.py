@@ -43,7 +43,46 @@ WALL_IMPORTS = {
         "url": "https://universe.roboflow.com/peters-workspace-y70qq/coc-mauern",
         "map_all_to": "wall",
     },
+    "kiet-walls-v6-curated": {
+        "license": "CC BY 4.0",
+        "url": "https://universe.roboflow.com/clash-of-clan/clash-of-clan-vzsst/dataset/6",
+        "map_prefix": "wall",
+    },
+    "kiet-walls-v6": {
+        "license": "CC BY 4.0",
+        "url": "https://universe.roboflow.com/clash-of-clan/clash-of-clan-vzsst/dataset/6",
+        "map_prefix": "wall",
+    },
 }
+
+# P1/P2 TH10–18 — hors classes YOLO 50–53 / dataIds TH19
+TH10_18_PRIORITY = [
+    "wall",
+    "tornado-trap",
+    "giga-bomb",
+    "workshop",
+    "pet-house",
+    "blacksmith",
+    "hero-hall",
+    "crafted-defense",
+    "town-hall-guardian",
+]
+TH19_SKIP = {
+    "spiky-tower",
+    "firecracker-tower",
+    "guardian-shrine",
+    "squad-barracks",
+}
+PRIORITY_SOURCE_KEYS = [
+    "coc-all-traps",
+    "glenn-th18-gigabomb",
+    "evans-home-village-building-detector",
+    "base-finder-th18",
+    "pedro-coc-model",
+    "cocsegmentation-villages",
+    "nothing-clash-of-clans",
+]
+REGISTRY = TRAINING / "sources" / "public-datasets.json"
 
 TH19_REFERENCE = [
     {
@@ -260,6 +299,8 @@ def stage_drop(class_focus: str) -> list[str]:
     ids = class_ids()
     if class_focus not in ids:
         raise SystemExit(f"Classe inconnue: {class_focus}")
+    if class_focus in TH19_SKIP:
+        raise SystemExit(f"TH19 différé — ne pas stager {class_focus}")
     drop = PRIVATE / "drop"
     drop.mkdir(parents=True, exist_ok=True)
     out: list[str] = []
@@ -295,6 +336,146 @@ def stage_drop(class_focus: str) -> list[str]:
     return out
 
 
+def stage_priority_imports(max_per_class: int) -> dict[str, list[str]]:
+    """Élargit la file privée TH10–18 depuis imports CC BY locaux (images hors git)."""
+    ids = class_ids()
+    registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
+    staged: dict[str, list[str]] = defaultdict(list)
+    hash_seen: set[str] = set()
+    family_seen: dict[str, set[str]] = defaultdict(set)
+
+    for source_key in PRIORITY_SOURCE_KEYS:
+        source_root = TRAINING / "imports" / source_key
+        if not source_root.exists() or source_key not in registry:
+            continue
+        info = registry[source_key]
+        mapping: dict[str, str] = info.get("mapping") or {}
+        # ignore TH19 + ne garder que P1/P2 TH10–18
+        wanted_src = {
+            src: dst
+            for src, dst in mapping.items()
+            if dst in TH10_18_PRIORITY and dst not in TH19_SKIP
+        }
+        if not wanted_src:
+            continue
+        # Pedro Little_Guardian = UI troupes — skip guardian
+        if source_key == "pedro-coc-model":
+            wanted_src = {k: v for k, v in wanted_src.items() if v != "town-hall-guardian"}
+            if not wanted_src:
+                continue
+        source_yaml = next(iter([*source_root.glob("*.yaml"), *source_root.glob("*.yml")]), None)
+        if source_yaml is None:
+            continue
+        names = names_list(yaml.safe_load(source_yaml.read_text(encoding="utf-8"))["names"])
+        wanted_ids = {
+            index: wanted_src[name]
+            for index, name in enumerate(names)
+            if name in wanted_src
+        }
+        if not wanted_ids:
+            continue
+
+        for split in ("train", "val", "test"):
+            dirs = split_dirs(source_root, split)
+            if not dirs:
+                continue
+            image_dir, label_dir = dirs
+            for image_path in sorted(image_dir.rglob("*")):
+                if image_path.suffix.lower() not in IMAGE_SUFFIXES:
+                    continue
+                label_path = (label_dir / image_path.relative_to(image_dir)).with_suffix(".txt")
+                if not label_path.exists():
+                    continue
+                digest = sha256(image_path)
+                if digest in hash_seen:
+                    continue
+                with Image.open(image_path) as image:
+                    width, height = image.size
+                boxes: list[dict] = []
+                focus_counts: Counter = Counter()
+                for line in label_path.read_text(encoding="utf-8").splitlines():
+                    parts = line.split()
+                    if len(parts) < 5:
+                        continue
+                    try:
+                        class_id = int(parts[0])
+                        values = [float(v) for v in parts[1:5]]
+                    except ValueError:
+                        continue
+                    dst = wanted_ids.get(class_id)
+                    if not dst or dst not in ids:
+                        continue
+                    x1, y1, x2, y2 = yolo_to_xyxy(*values, width, height)
+                    boxes.append(
+                        {
+                            "class_id": ids[dst],
+                            "class_name": dst,
+                            "x1": x1,
+                            "y1": y1,
+                            "x2": x2,
+                            "y2": y2,
+                            "status": "pending",
+                            "origin": "private-priority-import-yolo",
+                        }
+                    )
+                    focus_counts[dst] += 1
+                if not boxes:
+                    continue
+                primary = next(
+                    (
+                        name
+                        for name in TH10_18_PRIORITY
+                        if name in focus_counts and len(staged[name]) < max_per_class
+                    ),
+                    None,
+                )
+                if primary is None:
+                    continue
+                family = family_key(image_path.stem)
+                if family in family_seen[primary]:
+                    continue
+                dest_name = f"{source_key}__{split}__{image_path.name}"
+                provenance = {
+                    "village_group": f"private-{source_key}-{family}",
+                    "class_focus": primary,
+                    "license": info.get("license"),
+                    "source_url": info.get("url"),
+                    "source_key": source_key,
+                    "source_split": split,
+                    "sha256": digest,
+                    "usage": "private_local_annotation_queue",
+                    "publish": False,
+                    "scope": "TH10-18",
+                    "notes": [
+                        "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+                        "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+                        "Annotation exhaustive requise avant import detector.",
+                    ],
+                }
+                metadata = {
+                    "village_group": provenance["village_group"],
+                    "source": source_key,
+                    "license": info.get("license"),
+                    "exhaustive": False,
+                    "draft": True,
+                    "class_focus": primary,
+                    "private": True,
+                    "scope": "TH10-18",
+                }
+                dest = write_pair(
+                    PRIVATE / primary,
+                    image_path,
+                    dest_name,
+                    boxes,
+                    provenance,
+                    metadata,
+                )
+                hash_seen.add(digest)
+                family_seen[primary].add(family)
+                staged[primary].append(dest.relative_to(ROOT).as_posix())
+    return staged
+
+
 def fetch_th19_reference() -> list[str]:
     written: list[str] = []
     for item in TH19_REFERENCE:
@@ -328,8 +509,18 @@ def main() -> None:
     parser.add_argument("--from-drop", action="store_true")
     parser.add_argument("--class-focus", default="wall")
     parser.add_argument("--from-wall-imports", action="store_true")
+    parser.add_argument(
+        "--from-priority-imports",
+        action="store_true",
+        help="Stager P1/P2 TH10–18 depuis imports CC BY locaux (ignore classes 50–53)",
+    )
     parser.add_argument("--max-per-source", type=int, default=40)
-    parser.add_argument("--fetch-th19-reference", action="store_true")
+    parser.add_argument("--max-per-class", type=int, default=40)
+    parser.add_argument(
+        "--fetch-th19-reference",
+        action="store_true",
+        help="Réf visuelle TH19 hors train seulement (fin de roadmap)",
+    )
     parser.add_argument(
         "--output-report",
         type=Path,
@@ -346,23 +537,45 @@ def main() -> None:
         "publish_images": False,
         "train_now": False,
         "invent_dataids": False,
+        "scope": "TH10-18",
+        "th19_deferred": True,
         "staged": {},
         "notes": [
             "Images privées gitignorées ; JSON de session/provenance peuvent rester locaux.",
             "Pas d'import detector / pas de fine-tune dans ce script.",
+            "Priorité TH10–18 ; classes YOLO 50–53 / dataIds TH19 ignorées.",
         ],
     }
 
     if args.from_wall_imports:
         summary["staged"]["wall_imports"] = stage_wall_imports(args.max_per_source)
+    if args.from_priority_imports:
+        summary["staged"]["priority_imports"] = stage_priority_imports(args.max_per_class)
     if args.from_drop:
         summary["staged"]["drop"] = stage_drop(args.class_focus)
     if args.fetch_th19_reference:
         summary["staged"]["th19_reference"] = fetch_th19_reference()
 
-    if not any([args.from_wall_imports, args.from_drop, args.fetch_th19_reference]):
-        parser.error("Choisir --from-wall-imports et/ou --from-drop et/ou --fetch-th19-reference")
+    if not any(
+        [
+            args.from_wall_imports,
+            args.from_priority_imports,
+            args.from_drop,
+            args.fetch_th19_reference,
+        ]
+    ):
+        parser.error(
+            "Choisir --from-wall-imports et/ou --from-priority-imports "
+            "et/ou --from-drop et/ou --fetch-th19-reference"
+        )
 
+    class_counts = {}
+    for name in TH10_18_PRIORITY:
+        folder = PRIVATE / name
+        class_counts[name] = (
+            len(list(folder.glob("*.session.json"))) if folder.exists() else 0
+        )
+    summary["private_sessions_by_class"] = class_counts
     wall_sessions = list((PRIVATE / "wall").glob("*.session.json")) if (PRIVATE / "wall").exists() else []
     summary["private_wall_sessions"] = len(wall_sessions)
     args.output_report.parent.mkdir(parents=True, exist_ok=True)

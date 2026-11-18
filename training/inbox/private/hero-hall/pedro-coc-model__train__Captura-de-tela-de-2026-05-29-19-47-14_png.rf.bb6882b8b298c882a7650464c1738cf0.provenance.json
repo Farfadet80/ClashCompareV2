@@ -1,0 +1,17 @@
+{
+  "village_group": "private-pedro-coc-model-Captura-de-tela-de-2026-05-29-19-47-14_png",
+  "class_focus": "hero-hall",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model/dataset/2",
+  "source_key": "pedro-coc-model",
+  "source_split": "train",
+  "sha256": "8cf062c488bdf44b6d2fde35fc645b4c6bc49f0fbba5bcbd4c8b575c407ddf4f",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

@@ -1,9 +1,11 @@
 {
-  "ready": false,
-  "decision": "conserver V5",
-  "reasons": [
-    "aucune nouvelle session humaine exhaustive importée"
-  ],
+  "ready": true,
+  "decision": "fine-tune autorisé (mécanique) — GATE JIMMY BLOQUANT",
+  "jimmy_gate": {
+    "train_authorized": false,
+    "reason": "OK Jimmy explicite requis (CC-8). ready=true seulement grâce à 20 crops mur removebg importés ; wall reste very_weak / no_eval_split dans class-coverage. Pas de fine-tune lancé."
+  },
+  "reasons": [],
   "baseline": {
     "map50": 0.8529980350445072,
     "map50_95": 0.6316209445855364,
@@ -11,7 +13,108 @@
     "augment_tta": true
   },
   "clean_train_images": 1196,
-  "human_annotations": [],
+  "human_annotations": [
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall1-removebg-preview-adfdb36437d7.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall1-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall2-removebg-preview-1a3efe0c95aa.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall2-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall3-removebg-preview-10fb2b361e21.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall3-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall4-removebg-preview-8769e39fdac5.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall4-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall6-removebg-preview-4c4c403d42a5.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall6-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall7-removebg-preview-324665aaa4a6.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall7-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall8-removebg-preview-694081601edb.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall8-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall9-removebg-preview-8f99e0e6d8f9.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-curated-Wall9-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall1-removebg-preview-png-29d7fbbd9392.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall1-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall10-removebg-preview-png-dde9e7fb432d.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall10-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall12-removebg-preview-png-56adde1b72a4.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall12-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall15-removebg-preview-png-52c4e2252903.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall15-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall16-removebg-preview-png-37794f278ee0.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall16-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall17-removebg-preview-png-709783a478ce.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall17-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall19-removebg-preview-png-5d9b980feca5.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall19-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall2-removebg-preview-png-e4d1c40938f5.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall2-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall3-removebg-preview-png-c60f6a8d6fae.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall3-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall5-removebg-preview-png-409fbb8b4577.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall5-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall6-removebg-preview-png-27760ac588ec.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall6-removebg-preview_png"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-wall7-removebg-preview-png-0d8d5b21e194.json",
+      "box_count": 1,
+      "village_group": "private-clashia-detectwall-v7-Wall7-removebg-preview_png"
+    }
+  ],
   "coverage_blockers": {
     "unlearnable": [
       "town-hall-guardian",

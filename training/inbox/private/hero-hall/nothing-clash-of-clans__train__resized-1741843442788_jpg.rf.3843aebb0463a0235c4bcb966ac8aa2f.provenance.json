@@ -1,0 +1,17 @@
+{
+  "village_group": "private-nothing-clash-of-clans-resized-1741843442788_jpg",
+  "class_focus": "hero-hall",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/nothing-frjvr/clash-of-clans-vh2sj",
+  "source_key": "nothing-clash-of-clans",
+  "source_split": "train",
+  "sha256": "42bfc3cc13d9cc9442cd72ec8113f7c2ec9ba41d3395bb98d6be44b6cb9e8597",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}
