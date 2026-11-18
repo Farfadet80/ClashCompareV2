@@ -4,9 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#111827" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ClashCompare" />
   <title>ClashCompare</title>
   <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css?v=jsonimport" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+  <link rel="stylesheet" href="style.css?v=th19-maxage" />
 </head>
 <body>
   <header class="topbar">
@@ -29,7 +34,7 @@
     <section id="panel-compare" class="panel">
       <div class="card">
         <h2>Comparatif</h2>
-        <p class="muted">JSON officiel = inventaire exact (toi ou un ami qui partage). Pour un adversaire : capture Mode photo + YOLO. Murs / gardiens HDV : JSON prioritaire.</p>
+        <p class="muted">JSON officiel = inventaire exact (toi ou un ami). % maxage HDV + restes à améliorer sur l'export. Adversaire : capture Mode photo + YOLO. Murs / gardiens : JSON prioritaire.</p>
         <div id="compare-content" class="compare-grid"></div>
       </div>
     </section>
@@ -38,8 +43,8 @@
       <p class="muted"><span id="catalog-count">Chargement…</span> — les emplacements sont prêts pour plusieurs références par bâtiment et par niveau.</p>
     </section>
   <section class="card" style="margin-top:14px">
-      <h3>🤖 Moteur IA</h3>
-      <p class="muted" id="engine-status">Export JSON prioritaire. YOLO V5 (imgsz 800 + TTA) en complément local. Niveaux YOLO : air-defense et town-hall seulement (≥ 60 %) — jamais inventés.</p>
+      <h3>Moteur IA</h3>
+      <p class="muted" id="engine-status">Export JSON prioritaire. YOLO V5 (imgsz 800 + TTA) en complément local. Niveaux YOLO prod : town-hall seulement — jamais inventés.</p>
     </section>
     <footer class="fan-disclaimer">
       Ce contenu n'est pas officiel et n'a pas reçu le soutien de Supercell.
@@ -111,12 +116,15 @@
           <div class="stat"><span>Éléments</span><b class="r-count">—</b></div>
         </div>
         <div class="inventory r-inventory" hidden></div>
+        <div class="maxage-box r-maxage" hidden></div>
       </div>
     </div>
   </template>
 
   <script src="config.js"></script>
   <script src="village-export.js?v=1"></script>
-  <script src="app.js?v=jsonimport"></script>
+  <script src="maxage.js?v=1"></script>
+  <script src="coc-api.js?v=1"></script>
+  <script src="app.js?v=th19-maxage"></script>
 </body>
 </html>

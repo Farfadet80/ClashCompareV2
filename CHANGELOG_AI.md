@@ -16,6 +16,25 @@ Format d’entrée :
 
 ---
 
+## 2026-11-18 — TH19 catalogue + % maxage HDV + PWA iPhone
+
+- Branche / commits : `cursor/th19-maxage-pwa-60e6` (PR vers `feature/village-json-import`).
+- Fait :
+  - Catalogue `data/buildings.json` v3.4 aligné Clash of Titans / TH19 (Spiky Tower, Firecracker Tower, Guardian Shrine, Squad Barracks ; plafonds à jour).
+  - `data/th-caps.json` : plafonds relatifs HDV 16–19 pour le % maxage.
+  - Mapping export : notes + `pendingNewBuildings` (dataIds TH19 non inventés — aucun export local TH19).
+  - `maxage.js` + UI : % maxage HDV + restes à améliorer sur inventaire JSON uniquement.
+  - Stub `coc-api.js` / `CLASHCOMPARE_API=""` documenté.
+  - Polish PWA iPhone : apple-touch-icon, meta Apple, cache SW v3-12-th19-maxage.
+  - Icônes initials comparatif ; texte moteur YOLO corrigé (TH seul en prod).
+- Décisions :
+  - Pas de YOLO train, pas d'upgrade CUDA/torch, baseline V5 intacte.
+  - Maxage v1 ignore YOLO-seul et crafted-defense ; hors table TH → Non disponible.
+  - Ne pas merger main sans OK Jimmy.
+- À faire ensuite :
+  - Export JSON TH19 → remplir dataIds pendingNewBuildings.
+  - Recouper TH17 caps ; soft-cap murs ; API profil quand proxy/clé dispo.
+
 ## 2026-09-05 — Pipeline d'annotation humaine et gate data
 
 - Savepoint : commit `b8ebebb`, tag
