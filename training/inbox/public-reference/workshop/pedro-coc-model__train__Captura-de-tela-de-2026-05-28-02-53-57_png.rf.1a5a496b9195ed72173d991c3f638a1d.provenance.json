@@ -1,0 +1,22 @@
+{
+  "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-53-57_png",
+  "class_focus": "workshop",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model/dataset/2",
+  "author": "Pedro's Workspace",
+  "source_key": "pedro-coc-model",
+  "source_split": "train",
+  "source_image": "training/imports/pedro-coc-model/train/images/Captura-de-tela-de-2026-05-28-02-53-57_png.rf.1a5a496b9195ed72173d991c3f638a1d.jpg",
+  "sha256": "2d4cb1e3ec3b993dc221b249a00801ff1665309f58fb0ddf7b72351b1e9a4862",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

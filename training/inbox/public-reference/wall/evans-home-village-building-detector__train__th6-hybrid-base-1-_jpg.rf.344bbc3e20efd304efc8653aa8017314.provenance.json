@@ -1,0 +1,22 @@
+{
+  "village_group": "public-evans-home-village-building-detector-th6-hybrid-base-1-_jpg",
+  "class_focus": "wall",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/evans-workspace-drjs1/home-village-building-detector/dataset/3",
+  "author": "Evans Workspace",
+  "source_key": "evans-home-village-building-detector",
+  "source_split": "train",
+  "source_image": "training/imports/evans-home-village-building-detector/train/images/th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314.jpg",
+  "sha256": "24c698874378997067b1f4c381fc5c52c790b6208091238abb120cc07cbc1cca",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

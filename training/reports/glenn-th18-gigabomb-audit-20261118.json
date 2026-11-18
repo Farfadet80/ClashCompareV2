@@ -1,0 +1,68 @@
+{
+  "source_key": "glenn-th18-gigabomb",
+  "source": "D:\\Clashcompare\\ClashCompareV2-main\\training\\imports\\glenn-th18-gigabomb",
+  "url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
+  "author": "Glenns Workspace",
+  "license": "CC BY 4.0",
+  "task": "object-detection",
+  "splits": {
+    "train": {
+      "images": 23,
+      "duplicates_existing": 23,
+      "boxes": 1225,
+      "ignored_unmapped_boxes": 92
+    },
+    "val": {
+      "images": 4,
+      "duplicates_existing": 4,
+      "boxes": 212,
+      "ignored_unmapped_boxes": 17
+    },
+    "test": {
+      "images": 2,
+      "duplicates_existing": 2,
+      "boxes": 108,
+      "ignored_unmapped_boxes": 9
+    }
+  },
+  "class_boxes": {
+    "AD": 112,
+    "AirSweeper": 59,
+    "ArcherTower": 58,
+    "BombTower": 58,
+    "BuilderHut": 142,
+    "Canon": 6,
+    "ClanCastle": 30,
+    "Eagle": 1,
+    "FireSpitter": 57,
+    "GigaBomb": 27,
+    "HeroBanner": 89,
+    "HeroHall": 27,
+    "Inferno": 86,
+    "Monolith": 29,
+    "Mortar": 118,
+    "MultiArcherTower": 83,
+    "MultiGearTower": 29,
+    "MultiWizardTower": 61,
+    "RevengeTower": 29,
+    "RicochetCannon": 87,
+    "Scattershot": 69,
+    "SeasonalDefense": 29,
+    "SpellTower": 57,
+    "TH": 29,
+    "WizzTower": 57,
+    "Xbow": 116
+  },
+  "ignore_unmapped": [
+    "HeroBanner",
+    "SeasonalDefense"
+  ],
+  "ignored_unmapped_boxes": 118,
+  "duplicates": {
+    "existing_dataset": 29,
+    "inside_source": 0
+  },
+  "blockers": [],
+  "status": "manual_exhaustiveness_review_required",
+  "human_review_required": "Vérifier visuellement que toutes les classes cibles visibles sont annotées. Un audit structurel ne peut pas détecter les faux négatifs."
+}

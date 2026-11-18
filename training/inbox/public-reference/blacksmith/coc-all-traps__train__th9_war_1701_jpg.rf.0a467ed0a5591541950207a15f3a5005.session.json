@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th9_war_1701_jpg.rf.0a467ed0a5591541950207a15f3a5005.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th9_war_1701_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "blacksmith"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 737.5,
+      "y1": 110.5,
+      "x2": 2176.5,
+      "y2": 345.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

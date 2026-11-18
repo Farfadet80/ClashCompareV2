@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th15_farm_1479_jpg.rf.5e0a5f0e23a39eaa187e6c2074a9a2d0.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "public-cocsegmentation-villages-th15_farm_1479_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 97.87,
+      "y1": 118.7,
+      "x2": 293.61,
+      "y2": 358.52,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 290.38,
+      "y1": 43.07,
+      "x2": 867.89,
+      "y2": 142.15,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

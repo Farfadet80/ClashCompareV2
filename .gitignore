@@ -25,6 +25,12 @@ training/sources/*/
 !training/sources/*.md
 training/inbox/screenshots/*
 !training/inbox/screenshots/README.md
+# Binaires inbox publique (recréables via stage_priority_visual_candidates.py)
+training/inbox/public-reference/**/*.jpg
+training/inbox/public-reference/**/*.jpeg
+training/inbox/public-reference/**/*.png
+training/inbox/public-reference/**/*.webp
+# Seeds Guardian : petits, trackés sous reference-only/
 training/runs/
 training/logs/*.log
 training/exports/

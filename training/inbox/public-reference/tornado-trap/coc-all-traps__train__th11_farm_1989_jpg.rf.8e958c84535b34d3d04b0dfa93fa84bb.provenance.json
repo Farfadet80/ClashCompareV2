@@ -1,0 +1,22 @@
+{
+  "village_group": "public-coc-all-traps-th11_farm_1989_jpg",
+  "class_focus": "tornado-trap",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "author": "COC",
+  "source_key": "coc-all-traps",
+  "source_split": "train",
+  "source_image": "training/imports/coc-all-traps/train/images/th11_farm_1989_jpg.rf.8e958c84535b34d3d04b0dfa93fa84bb.jpg",
+  "sha256": "f54fdad817347efee7085fabc7744573b7aac6443d00cd53383834536d3adcc4",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

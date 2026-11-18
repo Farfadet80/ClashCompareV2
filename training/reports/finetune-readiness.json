@@ -10,11 +10,15 @@
     "imgsz": 800,
     "augment_tta": true
   },
-  "clean_train_images": 968,
+  "clean_train_images": 1196,
   "human_annotations": [],
   "coverage_blockers": {
     "unlearnable": [
-      "town-hall-guardian"
+      "town-hall-guardian",
+      "spiky-tower",
+      "firecracker-tower",
+      "guardian-shrine",
+      "squad-barracks"
     ],
     "very_weak": [
       "wall",
@@ -23,7 +27,11 @@
     ],
     "no_eval_split": [
       "wall",
-      "town-hall-guardian"
+      "town-hall-guardian",
+      "spiky-tower",
+      "firecracker-tower",
+      "guardian-shrine",
+      "squad-barracks"
     ]
   },
   "policy": "Ne pas entraîner sur les seuls pseudo-labels ou sur le même dataset sans nouvelles annotations exhaustives validées."

@@ -146,6 +146,10 @@
     "url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
     "license": "CC BY 4.0",
     "author": "Glenns Workspace",
+    "ignore_unmapped": [
+      "HeroBanner",
+      "SeasonalDefense"
+    ],
     "mapping": {
       "AD": "air-defense",
       "AirSweeper": "air-sweeper",
@@ -177,6 +181,12 @@
     "url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
     "license": "CC BY 4.0",
     "author": "COC",
+    "ignore_unmapped": [
+      "archer_queen_altar",
+      "barbarian_king_altar",
+      "grand_warden_altar",
+      "royal_champion_altar"
+    ],
     "mapping": {
       "air_bomb": "air-bomb",
       "air_defense": "air-defense",
@@ -225,6 +235,10 @@
     "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model/dataset/2",
     "license": "CC BY 4.0",
     "author": "Pedro's Workspace",
+    "notes": [
+      "Little_Guardian = seed reference seulement (1 screenshot unique / 3 augmentations).",
+      "Dataset mixte (troupes/UI) : ne jamais importer sans revue exhaustive."
+    ],
     "mapping": {
       "Air_Blaster": "air-sweeper",
       "Air_Bomb": "air-bomb",
@@ -252,6 +266,7 @@
       "Hero_Hall": "hero-hall",
       "Infernal_Tower": "inferno-tower",
       "Laboratory": "laboratory",
+      "Little_Guardian": "town-hall-guardian",
       "Monolith": "monolith",
       "Mortar": "mortar",
       "Pet_House": "pet-house",

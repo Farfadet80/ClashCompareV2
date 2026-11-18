@@ -1,0 +1,22 @@
+{
+  "village_group": "public-nothing-clash-of-clans-resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg",
+  "class_focus": "hero-hall",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/nothing-frjvr/clash-of-clans-vh2sj",
+  "author": "Nothing",
+  "source_key": "nothing-clash-of-clans",
+  "source_split": "train",
+  "source_image": "training/imports/nothing-clash-of-clans/train/images/resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg.rf.922d27cd438bc95b4fbb9407614488e2.jpg",
+  "sha256": "f1131d92a8b4937e3706a79cf05627e795b60a5c0aac50cd00382a721f90f739",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

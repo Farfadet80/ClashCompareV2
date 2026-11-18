@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__test__th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th15_war_1471_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 904.5,
+      "y1": 264.5,
+      "x2": 2532,
+      "y2": 827.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

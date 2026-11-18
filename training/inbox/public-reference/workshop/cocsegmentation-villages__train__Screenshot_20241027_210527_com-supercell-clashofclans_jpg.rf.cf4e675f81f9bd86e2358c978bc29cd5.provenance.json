@@ -1,0 +1,22 @@
+{
+  "village_group": "public-cocsegmentation-villages-Screenshot_20241027_210527_com-supercell-clashofclans_jpg",
+  "class_focus": "workshop",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/cocsegmentation/clash-of-clans-villages",
+  "author": "Cocsegmentation",
+  "source_key": "cocsegmentation-villages",
+  "source_split": "train",
+  "source_image": "training/imports/cocsegmentation-villages/train/images/Screenshot_20241027_210527_com-supercell-clashofclans_jpg.rf.cf4e675f81f9bd86e2358c978bc29cd5.jpg",
+  "sha256": "d27dd081354aa4da93f3d71bc98045e752421a317148ff172ced533a26486245",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

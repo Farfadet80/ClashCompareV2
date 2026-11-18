@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th15_war_1470_jpg.rf.0c537c0bf46723f70a58986ca0fb6707.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th15_war_1470_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 374.0,
+      "y1": 104.5,
+      "x2": 1126.0,
+      "y2": 361.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 507.5,
+      "y1": 0.0,
+      "x2": 1518.5,
+      "y2": 3.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

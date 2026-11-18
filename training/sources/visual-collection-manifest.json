@@ -1,5 +1,20 @@
 {
   "updated": "2026-11-18",
+  "phase_c1_c2": {
+    "status": "executed",
+    "report": "training/reports/visual-collection-c1c2-20261118.json",
+    "finetune_readiness": false,
+    "readiness_report": "training/reports/finetune-readiness.json",
+    "staged_images_total": 245,
+    "th19_public_labeled_datasets": 0,
+    "notes": [
+      "Audits structuraux coc-all-traps + glenn-th18-gigabomb verts (ignore_unmapped autels/bannières).",
+      "245 candidats CC BY stagés dans inbox/public-reference avec sessions annotateur draft (pending).",
+      "Images prioritaires déjà dans detector (doublons SHA) — file de réannotation, pas nouvel import brut.",
+      "Pedro Little_Guardian rejeté en revue visuelle (UI troupes, pas guardian village).",
+      "Aucun fine-tune ; attendre OK Jimmy (CC-8) + readiness vert."
+    ]
+  },
   "policy": {
     "jimmy_captures": "not_required",
     "train_now": false,
@@ -106,9 +121,17 @@
         "air-bomb",
         "spring-trap",
         "bomb",
-        "hidden-tesla"
+        "hidden-tesla",
+        "blacksmith",
+        "pet-house",
+        "workshop"
       ],
-      "status": "known_in_public_datasets_json"
+      "notes": [
+        "Audit 2026-11-18 : blockers vides après ignore_unmapped des autels héros.",
+        "139/139 images déjà dans detector — staged pour file d'annotation exhaustive."
+      ],
+      "status": "audited_20261118_staged_inbox",
+      "audit_report": "training/reports/coc-all-traps-audit-20261118.json"
     },
     {
       "id": "roboflow-glenn-th18-gigabomb",
@@ -121,7 +144,12 @@
         "hero-hall",
         "super-wizard-tower"
       ],
-      "status": "known_in_public_datasets_json"
+      "notes": [
+        "Audit 2026-11-18 : blockers vides après ignore_unmapped HeroBanner/SeasonalDefense.",
+        "29/29 images déjà dans detector — staged giga-bomb/hero-hall."
+      ],
+      "status": "audited_20261118_staged_inbox",
+      "audit_report": "training/reports/glenn-th18-gigabomb-audit-20261118.json"
     },
     {
       "id": "roboflow-coc-analyzer-v5",
@@ -145,14 +173,15 @@
       "id": "roboflow-pedro-little-guardian",
       "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model",
       "license": "CC BY 4.0",
-      "usage": "reference_seed_only",
+      "usage": "manual_negative_reference_only",
       "targets": [
         "town-hall-guardian"
       ],
       "notes": [
-        "Un seul screenshot Guardian utile ; insuffisant pour apprendre. Seed de revue seulement."
+        "Revue visuelle 2026-11-18 : 1 screenshot unique / 3 augs = UI tray troupes, pas Guardian village.",
+        "Boîtes marquées rejected ; conserver comme contre-exemple seulement."
       ],
-      "status": "manual_reference_only"
+      "status": "rejected_after_visual_review"
     },
     {
       "id": "roboflow-coc-wall-detection",
@@ -180,11 +209,11 @@
         "squad-barracks"
       ],
       "notes": [
-        "Aucun dataset Roboflow/GitHub annoté TH19 trouvé au 2026-11-18.",
+        "Re-vérifié 2026-11-18 : 0 dataset annoté TH19 (Roboflow search + web).",
         "Surveiller Universe Roboflow + Reddit/Discord base-sharing sous licence claire.",
         "Dépôt local : training/inbox/public-reference/<class-id>/ + sidecars provenance."
       ],
-      "status": "watching"
+      "status": "watching_no_public_labeled_dataset"
     }
   ]
 }

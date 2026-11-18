@@ -1,0 +1,22 @@
+{
+  "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-54-17_png",
+  "class_focus": "pet-house",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model/dataset/2",
+  "author": "Pedro's Workspace",
+  "source_key": "pedro-coc-model",
+  "source_split": "train",
+  "source_image": "training/imports/pedro-coc-model/train/images/Captura-de-tela-de-2026-05-28-02-54-17_png.rf.227d73e7c026677c243c1d58a0a3356f.jpg",
+  "sha256": "3d174869fcbd8de6e5ecad4a157be281bc1b838c4c4f39bf8445d32a93e44877",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

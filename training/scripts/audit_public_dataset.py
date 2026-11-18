@@ -80,6 +80,7 @@ def main() -> None:
         raise SystemExit(f"Source absente du registre: {args.source_key}")
     source_info = registry[args.source_key]
     mapping = source_info.get("mapping") or {}
+    ignore_unmapped = set(source_info.get("ignore_unmapped") or [])
     source_yaml = find_yaml(args.source)
     names = names_list(yaml.safe_load(source_yaml.read_text(encoding="utf-8"))["names"])
     known_hashes = existing_hashes()
@@ -87,6 +88,7 @@ def main() -> None:
     class_boxes: Counter[str] = Counter()
     split_rows = {}
     total_missing_labels = total_invalid_lines = total_unmapped_boxes = 0
+    total_ignored_unmapped = 0
     total_duplicates_existing = total_duplicates_internal = 0
 
     for split in ("train", "val", "test"):
@@ -133,8 +135,12 @@ def main() -> None:
                 row["boxes"] += 1
                 class_boxes[source_name] += 1
                 if source_name not in mapping:
-                    row["unmapped_boxes"] += 1
-                    total_unmapped_boxes += 1
+                    if source_name in ignore_unmapped:
+                        row["ignored_unmapped_boxes"] += 1
+                        total_ignored_unmapped += 1
+                    else:
+                        row["unmapped_boxes"] += 1
+                        total_unmapped_boxes += 1
         split_rows[split] = dict(row)
 
     blockers = []
@@ -161,6 +167,8 @@ def main() -> None:
         "task": source_info.get("task", "object-detection"),
         "splits": split_rows,
         "class_boxes": dict(sorted(class_boxes.items())),
+        "ignore_unmapped": sorted(ignore_unmapped),
+        "ignored_unmapped_boxes": total_ignored_unmapped,
         "duplicates": {
             "existing_dataset": total_duplicates_existing,
             "inside_source": total_duplicates_internal,

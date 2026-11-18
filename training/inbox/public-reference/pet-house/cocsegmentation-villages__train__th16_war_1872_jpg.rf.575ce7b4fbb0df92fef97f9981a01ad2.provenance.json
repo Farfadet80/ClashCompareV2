@@ -1,0 +1,22 @@
+{
+  "village_group": "public-cocsegmentation-villages-th16_war_1872_jpg",
+  "class_focus": "pet-house",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/cocsegmentation/clash-of-clans-villages",
+  "author": "Cocsegmentation",
+  "source_key": "cocsegmentation-villages",
+  "source_split": "train",
+  "source_image": "training/imports/cocsegmentation-villages/train/images/th16_war_1872_jpg.rf.575ce7b4fbb0df92fef97f9981a01ad2.jpg",
+  "sha256": "cca7a4c6de64f8f60bd6c531d2c67d842a97077ffcf541f823960b994020a4fe",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

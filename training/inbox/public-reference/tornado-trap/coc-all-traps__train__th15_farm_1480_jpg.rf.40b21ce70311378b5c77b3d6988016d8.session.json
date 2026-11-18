@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th15_farm_1480_jpg.rf.40b21ce70311378b5c77b3d6988016d8.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th15_farm_1480_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 618.8,
+      "y1": 0.0,
+      "x2": 1710.8,
+      "y2": 0.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 875.5,
+      "y1": 325.5,
+      "x2": 2532,
+      "y2": 1020.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 854.5,
+      "y1": 283.0,
+      "x2": 2532,
+      "y2": 857.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

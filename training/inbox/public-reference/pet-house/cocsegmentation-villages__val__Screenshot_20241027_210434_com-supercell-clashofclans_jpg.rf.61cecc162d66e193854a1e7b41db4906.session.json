@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__val__Screenshot_20241027_210434_com-supercell-clashofclans_jpg.rf.61cecc162d66e193854a1e7b41db4906.jpg",
+    "width": 1024,
+    "height": 478
+  },
+  "metadata": {
+    "village_group": "public-cocsegmentation-villages-Screenshot_20241027_210434_com-supercell-clashofclans_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 360.53,
+      "y1": 166.75,
+      "x2": 1024,
+      "y2": 478,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 390.42,
+      "y1": 83.04,
+      "x2": 1024,
+      "y2": 248.25,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

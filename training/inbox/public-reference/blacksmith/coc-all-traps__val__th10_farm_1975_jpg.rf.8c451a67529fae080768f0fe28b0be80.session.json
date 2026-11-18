@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__val__th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th10_farm_1975_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "blacksmith"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 666.14,
+      "y1": 0.0,
+      "x2": 1891.14,
+      "y2": 0.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

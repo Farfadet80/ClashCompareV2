@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th14_war_1546_jpg.rf.d3f253cb1177aefcdc7c3504a3cea79f.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "public-cocsegmentation-villages-th14_war_1546_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 429.3,
+      "y1": 123.75,
+      "x2": 1024,
+      "y2": 370.45,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 81.09,
+      "y1": 122.34,
+      "x2": 259.44,
+      "y2": 368.63,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 254.18,
+      "y1": 235.58,
+      "x2": 756.07,
+      "y2": 473,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

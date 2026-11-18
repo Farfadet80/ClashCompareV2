@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__test__th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th14_defence_1695_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 995.5,
+      "y1": 185.5,
+      "x2": 2532,
+      "y2": 576.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 1028.0,
+      "y1": 204.0,
+      "x2": 2532,
+      "y2": 666.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 434.0,
+      "y1": 409.0,
+      "x2": 1288.0,
+      "y2": 1170,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

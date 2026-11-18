@@ -1,0 +1,22 @@
+{
+  "village_group": "public-coc-all-traps-th8_farm_1943_jpg",
+  "class_focus": "blacksmith",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "author": "COC",
+  "source_key": "coc-all-traps",
+  "source_split": "train",
+  "source_image": "training/imports/coc-all-traps/train/images/th8_farm_1943_jpg.rf.b521f5f55b9d7773c5304dd08f85d21f.jpg",
+  "sha256": "00d5e1cec706b7b58327c57e7b5659d8fb5e4f03bf486a5cd692d91c038cbe42",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

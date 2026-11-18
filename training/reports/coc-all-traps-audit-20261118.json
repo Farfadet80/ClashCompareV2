@@ -1,0 +1,89 @@
+{
+  "source_key": "coc-all-traps",
+  "source": "D:\\Clashcompare\\ClashCompareV2-main\\training\\imports\\coc-all-traps",
+  "url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "author": "COC",
+  "license": "CC BY 4.0",
+  "task": "object-detection",
+  "splits": {
+    "train": {
+      "images": 97,
+      "duplicates_existing": 97,
+      "boxes": 8798,
+      "ignored_unmapped_boxes": 189
+    },
+    "val": {
+      "images": 28,
+      "duplicates_existing": 28,
+      "boxes": 2673,
+      "ignored_unmapped_boxes": 57
+    },
+    "test": {
+      "images": 14,
+      "duplicates_existing": 14,
+      "boxes": 1402,
+      "ignored_unmapped_boxes": 34
+    }
+  },
+  "class_boxes": {
+    "air_bomb": 504,
+    "air_defense": 422,
+    "air_sweeper": 190,
+    "archer_queen_altar": 80,
+    "archer_tower": 750,
+    "army_camp": 496,
+    "barbarian_king_altar": 100,
+    "barrack": 141,
+    "blacksmith": 80,
+    "bomb": 660,
+    "bomb_tower": 160,
+    "canon": 684,
+    "clan_castle": 139,
+    "dark_barrack": 97,
+    "dark_elexir_drill": 274,
+    "dark_elexir_storage": 100,
+    "dark_spell_factory": 91,
+    "eagle_artillery": 60,
+    "elexir_collector": 866,
+    "elexir_storage": 451,
+    "giant_bomb": 521,
+    "gold_mine": 861,
+    "gold_storage": 448,
+    "grand_warden_altar": 60,
+    "hidden_tesla": 409,
+    "hut": 642,
+    "inferno_tower": 195,
+    "laboratory": 137,
+    "monolith": 20,
+    "mortar": 436,
+    "multi_archer_tower": 20,
+    "pet_house": 31,
+    "ricochet_canon": 20,
+    "royal_champion_altar": 40,
+    "scattershot": 80,
+    "seeking_air_mine": 529,
+    "skeleton_trap": 232,
+    "spell_factory": 116,
+    "spell_tower": 40,
+    "spring_trap": 703,
+    "tornado_trap": 43,
+    "town_hall": 142,
+    "wizard_tower": 462,
+    "workshop": 50,
+    "x_bow": 291
+  },
+  "ignore_unmapped": [
+    "archer_queen_altar",
+    "barbarian_king_altar",
+    "grand_warden_altar",
+    "royal_champion_altar"
+  ],
+  "ignored_unmapped_boxes": 280,
+  "duplicates": {
+    "existing_dataset": 139,
+    "inside_source": 0
+  },
+  "blockers": [],
+  "status": "manual_exhaustiveness_review_required",
+  "human_review_required": "Vérifier visuellement que toutes les classes cibles visibles sont annotées. Un audit structurel ne peut pas détecter les faux négatifs."
+}

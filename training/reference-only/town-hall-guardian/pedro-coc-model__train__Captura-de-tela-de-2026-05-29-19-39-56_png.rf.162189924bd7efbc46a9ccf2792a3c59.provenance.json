@@ -1,0 +1,29 @@
+{
+  "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-29-19-39-56_png",
+  "class_focus": "town-hall-guardian",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model/dataset/2",
+  "author": "Pedro's Workspace",
+  "source_key": "pedro-coc-model",
+  "source_split": "train",
+  "source_image": "training/imports/pedro-coc-model/train/images/Captura-de-tela-de-2026-05-29-19-39-56_png.rf.162189924bd7efbc46a9ccf2792a3c59.jpg",
+  "sha256": "3f7230a8fdee6333b412b763179f4d80bee046be30d70259ae30fa93ad4523bd",
+  "usage": "manual_negative_reference_only",
+  "already_in_detector_dataset": false,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Seed Guardian unique (Pedro CC BY). Insuffisant pour apprendre.",
+    "Hors dataset/detector tant que < 20 boîtes / 8 villages.",
+    "Capture UI selection troupes/heros (tray), pas un Guardian Longshot/Smasher/Logger en village gameplay. Label Pedro Little_Guardian non utilisable pour apprendre town-hall-guardian."
+  ],
+  "visual_review": {
+    "reviewed_on": "2026-11-18",
+    "reviewer": "agent-c1c2",
+    "verdict": "reject_as_town_hall_guardian_train_seed",
+    "reason": "Capture UI selection troupes/heros (tray), pas un Guardian Longshot/Smasher/Logger en village gameplay. Label Pedro Little_Guardian non utilisable pour apprendre town-hall-guardian.",
+    "keep_as": "manual_negative_reference_only"
+  }
+}

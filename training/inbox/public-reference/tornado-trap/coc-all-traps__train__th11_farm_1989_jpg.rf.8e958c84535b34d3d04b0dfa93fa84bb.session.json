@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th11_farm_1989_jpg.rf.8e958c84535b34d3d04b0dfa93fa84bb.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th11_farm_1989_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 677.5,
+      "y1": 251.0,
+      "x2": 1996.5,
+      "y2": 777.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

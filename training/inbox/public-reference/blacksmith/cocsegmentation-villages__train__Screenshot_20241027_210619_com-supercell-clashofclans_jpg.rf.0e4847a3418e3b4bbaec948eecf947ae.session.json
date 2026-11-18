@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__Screenshot_20241027_210619_com-supercell-clashofclans_jpg.rf.0e4847a3418e3b4bbaec948eecf947ae.jpg",
+    "width": 1024,
+    "height": 478
+  },
+  "metadata": {
+    "village_group": "public-cocsegmentation-villages-Screenshot_20241027_210619_com-supercell-clashofclans_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "blacksmith"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 360.75,
+      "y1": 153.25,
+      "x2": 1024,
+      "y2": 467.71,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 144.83,
+      "y1": 52.26,
+      "x2": 466.38,
+      "y2": 174.51,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}
