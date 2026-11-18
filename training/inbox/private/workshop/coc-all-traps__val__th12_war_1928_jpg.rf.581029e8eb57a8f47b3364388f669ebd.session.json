@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__val__th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th12_war_1928_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 425.5,
+      "y1": 456.0,
+      "x2": 1260.5,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 587.17,
+      "y1": 570.5,
+      "x2": 1674.17,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 576.0,
+      "y1": 509.5,
+      "x2": 1708.0,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

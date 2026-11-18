@@ -1,0 +1,16 @@
+{
+  "village_group": "private-peters-walls-16-17-v2-frame_126_png",
+  "class_focus": "wall",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/peters-workspace-y70qq/coc-mauern",
+  "source_key": "peters-walls-16-17-v2",
+  "source_split": "train",
+  "sha256": "d1e7c4521d7ac0be50d7f83ed3f62a53677baa3f0e53b7cbe8b434351d2fadbb",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "notes": [
+    "Copie locale privée pour élargir la file murs.",
+    "Ne pas republier / ne pas committer l'image.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

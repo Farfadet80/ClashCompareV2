@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "image": {
+    "name": "kiet-walls-v6-curated__train__train29-2-_png.rf.4aed4cf5110f3076c5ac8ee7f09a2613.jpg",
+    "width": 704,
+    "height": 704
+  },
+  "metadata": {
+    "village_group": "private-kiet-walls-v6-curated-train29-2-_png",
+    "source": "kiet-walls-v6-curated",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 402.25,
+      "y1": 133.75,
+      "x2": 417.75,
+      "y2": 171.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 271.5,
+      "y1": 133.25,
+      "x2": 285.5,
+      "y2": 172.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 273.75,
+      "y1": 374.25,
+      "x2": 287.25,
+      "y2": 411.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 428.5,
+      "y1": 547.5,
+      "x2": 443.5,
+      "y2": 584.5,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 586.75,
+      "y1": 376.75,
+      "x2": 598.25,
+      "y2": 413.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 362.25,
+      "y1": 83.75,
+      "x2": 378.75,
+      "y2": 117.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 218.5,
+      "y1": 341.25,
+      "x2": 235.5,
+      "y2": 375.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 261.25,
+      "y1": 151.75,
+      "x2": 274.75,
+      "y2": 189.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 363.25,
+      "y1": 253.0,
+      "x2": 376.75,
+      "y2": 294.0,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 495.0,
+      "y1": 496.25,
+      "x2": 507.0,
+      "y2": 534.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 349.75,
+      "y1": 443.5,
+      "x2": 366.25,
+      "y2": 482.5,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 362.25,
+      "y1": 463.5,
+      "x2": 377.75,
+      "y2": 497.5,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 221.25,
+      "y1": 199.75,
+      "x2": 235.75,
+      "y2": 238.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 533.25,
+      "y1": 445.25,
+      "x2": 548.75,
+      "y2": 480.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 415.25,
+      "y1": 150.25,
+      "x2": 428.75,
+      "y2": 188.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 207.0,
+      "y1": 325.5,
+      "x2": 220.0,
+      "y2": 362.5,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 194.0,
+      "y1": 236.75,
+      "x2": 208.0,
+      "y2": 276.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 428.0,
+      "y1": 338.0,
+      "x2": 442.0,
+      "y2": 379.0,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 547.5,
+      "y1": 428.25,
+      "x2": 560.5,
+      "y2": 462.75,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 415.75,
+      "y1": 354.75,
+      "x2": 430.25,
+      "y2": 396.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__val__th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th15_farm_1478_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 755.0,
+      "y1": 0.0,
+      "x2": 2201.0,
+      "y2": 14.0,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 212.0,
+      "y1": 228.5,
+      "x2": 626.0,
+      "y2": 691.5,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "image": {
+    "name": "peters-walls-16-17-v2__train__frame_10_png.rf.c273bdad970616da2a25c6c8ea0fa364.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-peters-walls-16-17-v2-frame_10_png",
+    "source": "peters-walls-16-17-v2",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 131.5,
+      "y1": 95.55,
+      "x2": 430.29,
+      "y2": 238.27,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 10.41% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 106.26,
+      "y1": 213.95,
+      "x2": 357.45,
+      "y2": 554.0,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 20.85% > plafond 8%"
+    }
+  ]
+}

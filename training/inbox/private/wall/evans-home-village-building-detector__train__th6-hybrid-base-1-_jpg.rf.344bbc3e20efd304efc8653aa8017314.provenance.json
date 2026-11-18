@@ -1,0 +1,17 @@
+{
+  "village_group": "private-evans-home-village-building-detector-th6-hybrid-base-1-_jpg",
+  "class_focus": "wall",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/evans-workspace-drjs1/home-village-building-detector/dataset/3",
+  "source_key": "evans-home-village-building-detector",
+  "source_split": "train",
+  "sha256": "24c698874378997067b1f4c381fc5c52c790b6208091238abb120cc07cbc1cca",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

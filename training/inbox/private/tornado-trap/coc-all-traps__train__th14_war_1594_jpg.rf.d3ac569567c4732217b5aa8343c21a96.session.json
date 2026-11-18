@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th14_war_1594_jpg.rf.d3ac569567c4732217b5aa8343c21a96.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th14_war_1594_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 195.34,
+      "y1": 327.63,
+      "x2": 605.8,
+      "y2": 963.1,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 608.27,
+      "y1": 579.84,
+      "x2": 1844.6,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 628.05,
+      "y1": 567.47,
+      "x2": 1894.05,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 461.15,
+      "y1": 459.91,
+      "x2": 1398.29,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 772.71,
+      "y1": 323.92,
+      "x2": 2332.95,
+      "y2": 966.81,
+      "status": "rejected",
+      "origin": "private-priority-import-yolo",
+      "review_note": "hygiène auto: aire 33.86% > plafond 20%"
+    }
+  ]
+}

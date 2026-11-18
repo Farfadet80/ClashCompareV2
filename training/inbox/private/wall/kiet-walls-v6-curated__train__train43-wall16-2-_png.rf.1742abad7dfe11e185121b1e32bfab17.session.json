@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "image": {
+    "name": "kiet-walls-v6-curated__train__train43-wall16-2-_png.rf.1742abad7dfe11e185121b1e32bfab17.jpg",
+    "width": 704,
+    "height": 704
+  },
+  "metadata": {
+    "village_group": "private-kiet-walls-v6-curated-train43-wall16-2-_png",
+    "source": "kiet-walls-v6-curated",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 527.5,
+      "y1": 275.0,
+      "x2": 553.5,
+      "y2": 285.0,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 526.5,
+      "y1": 421.0,
+      "x2": 552.5,
+      "y2": 431.0,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 547.0,
+      "y1": 249.0,
+      "x2": 575.0,
+      "y2": 259.0,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 383.5,
+      "y1": 161.0,
+      "x2": 411.5,
+      "y2": 171.0,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 397.5,
+      "y1": 168.5,
+      "x2": 417.5,
+      "y2": 180.5,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

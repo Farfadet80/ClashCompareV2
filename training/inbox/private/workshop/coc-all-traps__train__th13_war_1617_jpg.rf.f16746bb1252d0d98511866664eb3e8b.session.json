@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th13_war_1617_jpg.rf.f16746bb1252d0d98511866664eb3e8b.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th13_war_1617_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 563.77,
+      "y1": 50.69,
+      "x2": 1711.08,
+      "y2": 132.29,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 333.81,
+      "y1": 411.7,
+      "x2": 1040.99,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

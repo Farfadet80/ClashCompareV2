@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "image": {
+    "name": "peters-walls-16-17-v2__test__frame_101_png.rf.b57a090650e92445064cd7a9f1908937.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-peters-walls-16-17-v2-frame_101_png",
+    "source": "peters-walls-16-17-v2",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 157.99,
+      "y1": 212.54,
+      "x2": 474.5,
+      "y2": 620.42,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 31.52% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 149.8,
+      "y1": 222.09,
+      "x2": 449.4,
+      "y2": 640,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 30.57% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 166.44,
+      "y1": 202.03,
+      "x2": 499.87,
+      "y2": 583.16,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 31.03% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 175.17,
+      "y1": 190.09,
+      "x2": 524.97,
+      "y2": 550.21,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 30.75% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 128.32,
+      "y1": 159.52,
+      "x2": 381.74,
+      "y2": 464.24,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 18.85% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 150.34,
+      "y1": 131.82,
+      "x2": 448.86,
+      "y2": 377.31,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 17.89% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 106.04,
+      "y1": 189.13,
+      "x2": 311.14,
+      "y2": 567.4,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 18.94% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 172.62,
+      "y1": 110.57,
+      "x2": 516.78,
+      "y2": 313.55,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 17.06% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 161.88,
+      "y1": 150.21,
+      "x2": 483.49,
+      "y2": 424.84,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 21.56% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 151.28,
+      "y1": 145.67,
+      "x2": 446.31,
+      "y2": 434.15,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 20.78% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 133.56,
+      "y1": 151.88,
+      "x2": 398.52,
+      "y2": 441.31,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 18.72% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 112.21,
+      "y1": 168.6,
+      "x2": 330.2,
+      "y2": 501.01,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 17.69% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 117.32,
+      "y1": 208.96,
+      "x2": 349.26,
+      "y2": 602.03,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 22.26% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 85.1,
+      "y1": 211.82,
+      "x2": 245.64,
+      "y2": 634.51,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 16.57% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 88.72,
+      "y1": 192.0,
+      "x2": 264.56,
+      "y2": 570.27,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 16.24% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 101.61,
+      "y1": 177.19,
+      "x2": 295.7,
+      "y2": 525.85,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 16.52% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 132.75,
+      "y1": 229.73,
+      "x2": 399.33,
+      "y2": 640,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 26.70% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 144.7,
+      "y1": 215.88,
+      "x2": 432.48,
+      "y2": 625.67,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 28.79% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 145.91,
+      "y1": 182.21,
+      "x2": 429.13,
+      "y2": 545.67,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 25.13% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 163.09,
+      "y1": 152.84,
+      "x2": 479.6,
+      "y2": 457.55,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 23.55% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 173.02,
+      "y1": 146.39,
+      "x2": 513.15,
+      "y2": 436.3,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 24.07% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 195.7,
+      "y1": 107.94,
+      "x2": 579.6,
+      "y2": 322.87,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 20.14% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 207.79,
+      "y1": 72.12,
+      "x2": 613.15,
+      "y2": 213.49,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 13.99% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 94.36,
+      "y1": 249.07,
+      "x2": 281.48,
+      "y2": 640,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 17.86% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 172.48,
+      "y1": 159.04,
+      "x2": 515.3,
+      "y2": 464.72,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 25.58% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 125.23,
+      "y1": 194.87,
+      "x2": 373.02,
+      "y2": 593.19,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 24.10% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 122.28,
+      "y1": 215.88,
+      "x2": 364.7,
+      "y2": 640,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 25.10% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 111.68,
+      "y1": 232.84,
+      "x2": 331.28,
+      "y2": 640,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 21.83% > plafond 8%"
+    }
+  ]
+}

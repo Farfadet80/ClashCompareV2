@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "clashia-detectwall-v7__train__Wall15_webp.rf.cd602d38dcd7ceb9e29a9849d78a23ee.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-clashia-detectwall-v7-Wall15_webp",
+    "source": "clashia-detectwall-v7",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 125.0,
+      "y1": 31.5,
+      "x2": 491.0,
+      "y2": 94.5,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

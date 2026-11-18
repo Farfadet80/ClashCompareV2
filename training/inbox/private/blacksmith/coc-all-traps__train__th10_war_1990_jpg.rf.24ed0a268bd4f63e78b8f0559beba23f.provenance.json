@@ -1,0 +1,17 @@
+{
+  "village_group": "private-coc-all-traps-th10_war_1990_jpg",
+  "class_focus": "blacksmith",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "source_key": "coc-all-traps",
+  "source_split": "train",
+  "sha256": "e6ad3a44c25a3fe27e41c627198d420e1a90ec98ef55615dcfaef8384e8a8213",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

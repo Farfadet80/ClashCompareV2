@@ -1,0 +1,17 @@
+{
+  "village_group": "private-cocsegmentation-villages-th16_defence_1871_jpg",
+  "class_focus": "pet-house",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/cocsegmentation/clash-of-clans-villages",
+  "source_key": "cocsegmentation-villages",
+  "source_split": "val",
+  "sha256": "a48f99d37f6124e3847eefefccc6ca928dfc82fa0634ead9b5e73656beda678b",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "village_group": "private-clashia-detectwall-v7-train_wall_5_png",
+  "class_focus": "wall",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/clashia/detectwall",
+  "source_key": "clashia-detectwall-v7",
+  "source_split": "train",
+  "sha256": "fc18a1e6511d7b71abcd3c986cfc0e22704e7ef6387f1992aa8cdb200653891f",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "notes": [
+    "Copie locale privée pour élargir la file murs.",
+    "Ne pas republier / ne pas committer l'image.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

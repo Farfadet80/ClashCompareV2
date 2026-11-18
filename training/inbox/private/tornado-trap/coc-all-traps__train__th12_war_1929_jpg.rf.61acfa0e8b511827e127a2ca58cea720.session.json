@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th12_war_1929_jpg.rf.61acfa0e8b511827e127a2ca58cea720.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th12_war_1929_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 492.0,
+      "y1": 174.0,
+      "x2": 1450.0,
+      "y2": 524.0,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 878.5,
+      "y1": 138.5,
+      "x2": 2532,
+      "y2": 419.5,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 654.9,
+      "y1": 0.0,
+      "x2": 1919.9,
+      "y2": 0.0,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

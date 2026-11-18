@@ -1,0 +1,17 @@
+{
+  "village_group": "private-coc-all-traps-th16_defence_1856_jpg",
+  "class_focus": "workshop",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "source_key": "coc-all-traps",
+  "source_split": "train",
+  "sha256": "9f594f1f2128275e33c64f2754b709a7000ee79a082dc6198a91dc58349dc1d2",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

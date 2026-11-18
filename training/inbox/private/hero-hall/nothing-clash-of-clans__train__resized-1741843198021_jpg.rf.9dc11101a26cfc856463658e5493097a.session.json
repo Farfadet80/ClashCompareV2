@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "image": {
+    "name": "nothing-clash-of-clans__train__resized-1741843198021_jpg.rf.9dc11101a26cfc856463658e5493097a.jpg",
+    "width": 2048,
+    "height": 945
+  },
+  "metadata": {
+    "village_group": "private-nothing-clash-of-clans-resized-1741843198021_jpg",
+    "source": "nothing-clash-of-clans",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "hero-hall",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 910.28,
+      "y1": 82.2,
+      "x2": 1027.67,
+      "y2": 191.64,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

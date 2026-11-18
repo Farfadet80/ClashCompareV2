@@ -183,7 +183,7 @@
     {
       "id": "wall",
       "class_id": 19,
-      "train": 12,
+      "train": 32,
       "val": 0,
       "test": 0,
       "status": "very_weak"

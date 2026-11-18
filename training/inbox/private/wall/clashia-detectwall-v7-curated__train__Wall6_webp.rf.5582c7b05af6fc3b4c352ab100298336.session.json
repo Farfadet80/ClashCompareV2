@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "clashia-detectwall-v7-curated__train__Wall6_webp.rf.5582c7b05af6fc3b4c352ab100298336.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-clashia-detectwall-v7-curated-Wall6_webp",
+    "source": "clashia-detectwall-v7-curated",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 248.0,
+      "y1": 91.0,
+      "x2": 460.0,
+      "y2": 441.0,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 18.12% > plafond 8%"
+    }
+  ]
+}

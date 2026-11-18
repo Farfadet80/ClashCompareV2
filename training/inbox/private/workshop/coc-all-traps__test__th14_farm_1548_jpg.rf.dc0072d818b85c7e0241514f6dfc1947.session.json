@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__test__th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th14_farm_1548_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 623.11,
+      "y1": 87.78,
+      "x2": 1908.89,
+      "y2": 213.88,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 545.22,
+      "y1": 561.29,
+      "x2": 1709.84,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 631.76,
+      "y1": 524.2,
+      "x2": 1910.13,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

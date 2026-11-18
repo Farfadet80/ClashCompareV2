@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__test__th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th14_war_1545_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 359.0,
+      "y1": 113.0,
+      "x2": 1075.0,
+      "y2": 385.0,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 771.0,
+      "y1": 448.0,
+      "x2": 2297.0,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 915.0,
+      "y1": 310.5,
+      "x2": 2532,
+      "y2": 949.5,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 511.5,
+      "y1": 313.5,
+      "x2": 1528.5,
+      "y2": 978.5,
+      "status": "rejected",
+      "origin": "private-priority-import-yolo",
+      "review_note": "hygiène auto: aire 22.83% > plafond 20%"
+    }
+  ]
+}

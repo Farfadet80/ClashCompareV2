@@ -1,0 +1,17 @@
+{
+  "village_group": "private-coc-all-traps-th14_defence_1544_jpg",
+  "class_focus": "pet-house",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "source_key": "coc-all-traps",
+  "source_split": "val",
+  "sha256": "76dd7b7d85c127dd194352142366e1fe76ba9630164d4f0fbdd2cb3a8b26407a",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

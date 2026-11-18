@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "clashia-detectwall-v7-curated__train__Wall12-removebg-preview_png.rf.ac85858548026c37eb4ee7ed81e4bd06.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-clashia-detectwall-v7-curated-Wall12-removebg-preview_png",
+    "source": "clashia-detectwall-v7-curated",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 43.0,
+      "y1": 10.0,
+      "x2": 597.0,
+      "y2": 585.0,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 77.77% > plafond 35%"
+    }
+  ]
+}

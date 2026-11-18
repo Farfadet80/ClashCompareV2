@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__Screenshot_20241027_210406_com-supercell-clashofclans_jpg.rf.10beaebf7f2b2d0e4b9c3092677b6b32.jpg",
+    "width": 1024,
+    "height": 478
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-Screenshot_20241027_210406_com-supercell-clashofclans_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 88.58,
+      "y1": 124.24,
+      "x2": 284.35,
+      "y2": 360.3,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 362.52,
+      "y1": 170.3,
+      "x2": 1024,
+      "y2": 478,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 144.83,
+      "y1": 53.81,
+      "x2": 425.63,
+      "y2": 168.53,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th10_war_1987_jpg.rf.b76f84d35b5646bc5f6779d1d03b0edc.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th10_war_1987_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "blacksmith",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 555.11,
+      "y1": 501.95,
+      "x2": 1690.06,
+      "y2": 1170,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

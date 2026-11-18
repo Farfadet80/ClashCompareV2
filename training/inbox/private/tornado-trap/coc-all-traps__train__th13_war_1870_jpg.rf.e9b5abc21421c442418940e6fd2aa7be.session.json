@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th13_war_1870_jpg.rf.e9b5abc21421c442418940e6fd2aa7be.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "private-coc-all-traps-th13_war_1870_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 254.5,
+      "y1": 217.5,
+      "x2": 739.5,
+      "y2": 696.5,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 678.5,
+      "y1": 0.0,
+      "x2": 2001.5,
+      "y2": 34.5,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 637.53,
+      "y1": 291.17,
+      "x2": 1880.38,
+      "y2": 898.55,
+      "status": "rejected",
+      "origin": "private-priority-import-yolo",
+      "review_note": "hygiène auto: aire 25.48% > plafond 20%"
+    }
+  ]
+}

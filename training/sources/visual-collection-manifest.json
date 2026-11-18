@@ -1,5 +1,25 @@
 {
   "updated": "2026-11-18",
+  "phase_th10_18_strengthen": {
+    "status": "executed",
+    "scope": "TH10-18",
+    "th19_deferred": true,
+    "report": "training/reports/private-collection-th1018-20261118.json",
+    "finetune_readiness": true,
+    "jimmy_train_gate": false,
+    "readiness_report": "training/reports/finetune-readiness.json",
+    "draft_hygiene_report": "training/reports/draft-review-hygiene-th1018.json",
+    "crop_promote_report": "training/reports/crop-promote-20261118.json",
+    "crop_import_report": "training/reports/crop-import-attempt-20261118.json",
+    "notes": [
+      "Priorité TH10–18 ; classes YOLO 50–53 / dataIds TH19 ignorées jusqu'à la fin.",
+      "Collecte privée élargie : murs (+kiet) + P1/P2 CC BY → inbox/private (images hors git).",
+      "Hygiène : boîtes géométrie OK → accepted ; villages restent draft/non exhaustifs.",
+      "20 crops mur removebg promus exhaustive + importés detector (local gitignoré).",
+      "check_finetune_readiness ready=true mécanique — PAS de fine-tune sans OK Jimmy.",
+      "town-hall-guardian : toujours 0 label village (Pedro UI rejected) ; 0 dataset public dédié."
+    ]
+  },
   "phase_c1_c2": {
     "status": "executed",
     "report": "training/reports/visual-collection-c1c2-20261118.json",
@@ -24,10 +44,11 @@
     "train_now": false,
     "invent_dataids": false,
     "keep_v5_baseline": true,
+    "th19_last": true,
     "min_boxes_before_finetune_per_weak_class": 20,
     "min_independent_villages_per_new_class": 8,
-    "annotation": "exhaustive via training/annotator/ then import_annotation_session.py",
-    "promotion_gate": "check_finetune_readiness.py ready=true AND reserved test vs V5 800+TTA improves"
+    "annotation": "exhaustive via training/annotator/ then import_annotation_session.py ; crops isolés via promote_isolated_crop_sessions.py",
+    "promotion_gate": "check_finetune_readiness.py ready=true AND OK Jimmy AND reserved test vs V5 800+TTA improves"
   },
   "target_classes": {
     "reserved_th19_yolo": [
@@ -36,6 +57,7 @@
       "guardian-shrine",
       "squad-barracks"
     ],
+    "th19_deferred": true,
     "unlearnable_or_empty": [
       "town-hall-guardian"
     ],

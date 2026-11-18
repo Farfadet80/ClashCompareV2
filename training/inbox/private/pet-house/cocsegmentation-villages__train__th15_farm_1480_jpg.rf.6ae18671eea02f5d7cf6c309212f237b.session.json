@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th15_farm_1480_jpg.rf.6ae18671eea02f5d7cf6c309212f237b.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-th15_farm_1480_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house",
+    "private": true,
+    "scope": "TH10-18",
+    "crop_promoted": false,
+    "crop_promote_reason": "single-class compact crop",
+    "crop_promote_date": "2026-11-18",
+    "crop_demoted_reason": "indice village/plein cadre",
+    "crop_demote_date": "2026-11-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 342.55,
+      "y1": 156.31,
+      "x2": 1024,
+      "y2": 464.08,
+      "status": "accepted",
+      "origin": "private-priority-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}

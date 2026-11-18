@@ -11,7 +11,12 @@
     "license": "CC BY 4.0",
     "exhaustive": false,
     "draft": true,
-    "class_focus": "pet-house"
+    "class_focus": "pet-house",
+    "crop_promoted": false,
+    "crop_promote_reason": "single-class compact crop",
+    "crop_promote_date": "2026-11-18",
+    "crop_demoted_reason": "indice village/plein cadre",
+    "crop_demote_date": "2026-11-18"
   },
   "expected_counts": null,
   "boxes": [

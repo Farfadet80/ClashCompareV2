@@ -26,9 +26,20 @@ training/sources/*/
 training/inbox/screenshots/*
 !training/inbox/screenshots/README.md
 # Collecte privée élargie — JAMAIS pousser les images / exports JSON amis
+# Sessions / provenance JSON OK (annotation locale) ; binaires exclus.
 training/inbox/private/**
+!training/inbox/private/
+!training/inbox/private/**/
 !training/inbox/private/README.md
 !training/inbox/private/**/.gitkeep
+!training/inbox/private/**/*.session.json
+!training/inbox/private/**/*.provenance.json
+training/inbox/private/**/*.jpg
+training/inbox/private/**/*.jpeg
+training/inbox/private/**/*.png
+training/inbox/private/**/*.webp
+training/inbox/private/exports-json/**
+!training/inbox/private/exports-json/.gitkeep
 # Binaires inbox publique (recréables via stage_priority_visual_candidates.py)
 training/inbox/public-reference/**/*.jpg
 training/inbox/public-reference/**/*.jpeg

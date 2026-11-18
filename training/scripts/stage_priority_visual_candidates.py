@@ -170,20 +170,21 @@ def main() -> None:
                 focus_counts = Counter(name for name, _ in focus_boxes)
                 # Une image peut servir plusieurs classes cibles ; on la rattache
                 # à la classe prioritaire la plus rare encore sous quota.
+                # TH10–18 d'abord ; classes YOLO 50–53 / TH19 en tout dernier
                 priority_order = [
-                    "spiky-tower",
-                    "firecracker-tower",
-                    "guardian-shrine",
-                    "squad-barracks",
-                    "town-hall-guardian",
                     "wall",
                     "tornado-trap",
                     "giga-bomb",
+                    "town-hall-guardian",
                     "workshop",
                     "pet-house",
                     "blacksmith",
                     "hero-hall",
                     "crafted-defense",
+                    "spiky-tower",
+                    "firecracker-tower",
+                    "guardian-shrine",
+                    "squad-barracks",
                 ]
                 primary = next(
                     (

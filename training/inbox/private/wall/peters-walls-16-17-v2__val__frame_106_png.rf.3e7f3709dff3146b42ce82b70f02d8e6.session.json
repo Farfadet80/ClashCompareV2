@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "image": {
+    "name": "peters-walls-16-17-v2__val__frame_106_png.rf.3e7f3709dff3146b42ce82b70f02d8e6.jpg",
+    "width": 640,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "private-peters-walls-16-17-v2-frame_106_png",
+    "source": "peters-walls-16-17-v2",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true,
+    "crop_promoted": false,
+    "crop_promote_reason": "single-class compact crop",
+    "crop_promote_date": "2026-11-18",
+    "crop_demoted_reason": "indice village/plein cadre",
+    "crop_demote_date": "2026-11-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 170.07,
+      "y1": 132.06,
+      "x2": 506.44,
+      "y2": 353.19,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 18.16% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 148.32,
+      "y1": 144.72,
+      "x2": 453.56,
+      "y2": 432.24,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 21.43% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 64.7,
+      "y1": 146.39,
+      "x2": 195.17,
+      "y2": 422.93,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 8.81% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 107.38,
+      "y1": 75.22,
+      "x2": 335.57,
+      "y2": 226.63,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 8.44% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 121.21,
+      "y1": 37.73,
+      "x2": 370.07,
+      "y2": 107.46,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 144.16,
+      "y1": 25.79,
+      "x2": 431.95,
+      "y2": 55.4,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 100.0,
+      "y1": 21.49,
+      "x2": 308.05,
+      "y2": 69.25,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 144.83,
+      "y1": 58.27,
+      "x2": 432.35,
+      "y2": 134.69,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 83.09,
+      "y1": 76.18,
+      "x2": 253.02,
+      "y2": 225.67,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 119.06,
+      "y1": 0.0,
+      "x2": 356.64,
+      "y2": 3.34,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 139.19,
+      "y1": 165.97,
+      "x2": 418.66,
+      "y2": 484.54,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 21.74% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 126.04,
+      "y1": 189.61,
+      "x2": 373.83,
+      "y2": 536.36,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 20.98% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 64.7,
+      "y1": 212.78,
+      "x2": 194.63,
+      "y2": 619.22,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 12.89% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 144.03,
+      "y1": 106.99,
+      "x2": 433.15,
+      "y2": 307.58,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 14.16% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 113.56,
+      "y1": 120.36,
+      "x2": 342.28,
+      "y2": 345.79,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 12.59% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 105.23,
+      "y1": 125.37,
+      "x2": 313.56,
+      "y2": 337.91,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 10.81% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 94.77,
+      "y1": 177.91,
+      "x2": 283.22,
+      "y2": 495.52,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 14.61% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 158.26,
+      "y1": 85.73,
+      "x2": 488.19,
+      "y2": 236.18,
+      "status": "rejected",
+      "origin": "private-wall-import-yolo",
+      "review_note": "hygiène auto: aire 12.12% > plafond 8%"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 198.12,
+      "y1": 0.0,
+      "x2": 592.75,
+      "y2": 2.87,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 163.36,
+      "y1": 55.4,
+      "x2": 490.6,
+      "y2": 147.1,
+      "status": "accepted",
+      "origin": "private-wall-import-yolo",
+      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+    }
+  ]
+}
