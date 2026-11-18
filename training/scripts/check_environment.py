@@ -21,8 +21,10 @@ from ultralytics import YOLO
 ACTIVE_RELEASE = "building-detector-v5s-infer800"
 EXPECTED_IMGSZ = 800
 EXPECTED_PT_SHA256 = "866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d"
-EXPERIMENTAL_LEVEL_CLASSIFIERS = ("air-defense", "town-hall")
-PRODUCTION_LEVEL_CLASSIFIERS: tuple[str, ...] = ()
+EXPERIMENTAL_LEVEL_CLASSIFIERS = {
+    "air-defense": Path("models/level-air-defense.pt"),
+    "wall": Path("models/experimental/level-wall.pt"),
+}
 
 
 def sha256(path: Path) -> str:
@@ -69,10 +71,39 @@ def check_release() -> None:
     if list(shape) != [1, 3, EXPECTED_IMGSZ, EXPECTED_IMGSZ]:
         raise SystemExit(f"ERREUR: forme ONNX {shape}, attendu 1x3x{EXPECTED_IMGSZ}x{EXPECTED_IMGSZ}")
 
-    for building in EXPERIMENTAL_LEVEL_CLASSIFIERS:
-        weights = ROOT / "models" / f"level-{building}.pt"
+    for building, relative_path in EXPERIMENTAL_LEVEL_CLASSIFIERS.items():
+        weights = ROOT / relative_path
         if not weights.exists():
             raise SystemExit(f"ERREUR: classifieur expérimental absent: {weights}")
+
+    production_levels = meta.get("level_classifiers", [])
+    level_releases = meta.get("level_classifier_releases", {})
+    for building in production_levels:
+        release_meta = level_releases.get(building)
+        if not release_meta:
+            raise SystemExit(f"ERREUR: métadonnées de release absentes pour {building}")
+        level_pt = ROOT / "models" / f"level-{building}.pt"
+        level_onnx = ROOT / "models" / f"level-{building}.onnx"
+        level_release_dir = ROOT / "models" / "releases" / release_meta["release"]
+        release_pt = level_release_dir / level_pt.name
+        release_onnx = level_release_dir / level_onnx.name
+        for path in (level_pt, level_onnx, release_pt, release_onnx):
+            if not path.exists():
+                raise SystemExit(f"ERREUR: classifieur de niveau absent: {path}")
+        if sha256(level_pt) != release_meta["pt_sha256"]:
+            raise SystemExit(f"ERREUR: SHA-256 PT inattendu pour {building}")
+        if sha256(level_onnx) != release_meta["onnx_sha256"]:
+            raise SystemExit(f"ERREUR: SHA-256 ONNX inattendu pour {building}")
+        if sha256(level_pt) != sha256(release_pt) or sha256(level_onnx) != sha256(release_onnx):
+            raise SystemExit(f"ERREUR: alias de niveau ≠ release pour {building}")
+        level_session = ort.InferenceSession(
+            str(level_onnx), providers=["CPUExecutionProvider"]
+        )
+        level_shape = level_session.get_inputs()[0].shape
+        if list(level_shape) != [1, 3, 224, 224]:
+            raise SystemExit(
+                f"ERREUR: forme ONNX de {building}: {level_shape}, attendu 1x3x224x224"
+            )
     if (ROOT / "models" / "level-cannon.pt").exists():
         raise SystemExit(
             "ERREUR: level-cannon.pt ne doit pas être en production "
@@ -82,7 +113,10 @@ def check_release() -> None:
     print(f"Release active: {ACTIVE_RELEASE} (imgsz {EXPECTED_IMGSZ}, TTA on)")
     print(f"PT SHA-256: {pt_hash}")
     print(f"ONNX input: {shape}")
-    print("Classifieurs production: aucun (couverture des niveaux incomplète)")
+    print(
+        "Classifieurs production: "
+        + (", ".join(production_levels) if production_levels else "aucun")
+    )
     print(f"Classifieurs expérimentaux: {', '.join(EXPERIMENTAL_LEVEL_CLASSIFIERS)}")
 
 

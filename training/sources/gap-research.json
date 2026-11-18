@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05",
+  "updated": "2026-09-12",
   "target_classes": {
     "unlearnable": [
       "town-hall-guardian"
@@ -20,6 +20,80 @@
     ]
   },
   "dataset_candidates": [
+    {
+      "id": "cod-clash-of-clans-v1-v2",
+      "url": "https://universe.roboflow.com/cod-lnrdx/clash-of-clans-vnd0y-laeh4",
+      "author": "cod",
+      "license": "MIT",
+      "images_per_version": 1030,
+      "status": "rejected_missing_target_annotations_and_duplicate_lineage",
+      "verified": [
+        "Authenticated YOLOv11 archives for versions 1 and 2 inspected on 2026-09-12 without importing either version.",
+        "Project overview advertises helper_hut, but v1 data.yaml has 38 classes and v2 data.yaml has 23 classes; neither export contains helper_hut or bob_hut annotations.",
+        "For v1, 972 of 1028 original filename families overlap existing imports. The other 56 images have partial labels for existing building classes, not the missing target classes."
+      ],
+      "risk": "The project overview class list is not the frozen version export. Importing it as new training or test data would duplicate prior examples and leave helper_hut unlearned.",
+      "next_step": "Look for a version with actual helper_hut boxes or manually curate independent village captures; do not use either inspected export for this gap."
+    },
+    {
+      "id": "htrg-clash-of-clan-v2",
+      "url": "https://universe.roboflow.com/htrg/clash-of-clan-vzsst-hj8pj/dataset/2",
+      "author": "htrg",
+      "license": "CC BY 4.0",
+      "images": 1883,
+      "classes_count": 29,
+      "task": "object-detection",
+      "status": "rejected_duplicate_lineage",
+      "verified": [
+        "Authenticated YOLOv11 archive downloaded and structurally audited on 2026-09-10.",
+        "The 1883 exported images reduce to 431 original .rf. families after augmentation grouping.",
+        "All 431 original family identifiers exactly match the existing kiet-walls-v6 source; there are zero new independent families.",
+        "The published version applies ten outputs per training example plus horizontal flips and 90-degree rotations."
+      ],
+      "local_path": "training/imports/htrg-clash-of-clan-v2",
+      "curated_audit_path": "training/imports/htrg-clash-of-clan-v2-curated/curation-report.json",
+      "risk": "Adding this fork would duplicate the same underlying images, overweight easy examples and make validation gains misleading.",
+      "next_step": "Keep excluded from train/validation/test; look for independent owner gameplay screenshots instead."
+    },
+    {
+      "id": "clashia-detectwall-v7",
+      "url": "https://universe.roboflow.com/clashia/detectwall/dataset/7",
+      "author": "clashia",
+      "license": "CC BY 4.0",
+      "images": 74,
+      "classes_count": 19,
+      "task": "object-detection",
+      "status": "accepted_as_reference_only",
+      "verified": [
+        "Authenticated YOLOv11 archive downloaded and structurally audited on 2026-09-10.",
+        "Brightness/blur variants reduce to two isolated sprite renders for each wall level 1-19.",
+        "Wall levels 18 and 19 are present, but the source has no independent gameplay examples."
+      ],
+      "local_path": "training/imports/clashia-detectwall-v7",
+      "curated_audit_path": "training/imports/clashia-detectwall-v7-curated/curation-report.json",
+      "risk": "Training and validating on two near-canonical renders per level would overfit and produce misleading level accuracy.",
+      "next_step": "Use only to verify labels on future licensed gameplay crops for wall levels 1-19."
+    },
+    {
+      "id": "coc-analyzer-v5",
+      "url": "https://universe.roboflow.com/cocanalyzer/coc-analyzer/dataset/5",
+      "author": "CoCAnalyzer",
+      "license": "CC BY 4.0",
+      "images": 228,
+      "classes_count": 9,
+      "task": "object-detection",
+      "status": "accepted_for_controlled_detector_candidate",
+      "verified": [
+        "Authenticated YOLOv11 archive downloaded and structurally audited on 2026-09-10.",
+        "The version contains 228 unaugmented gameplay screenshots, 1246 boxes and no exact overlap with the current ClashCompare dataset.",
+        "Annotations cover TH18, Monolith, Revenge Tower, both Multi-Gear Tower modes and all four Firespitter orientations.",
+        "Five distributed source images were visually inspected and confirmed to be real gameplay captures rather than canonical sprites."
+      ],
+      "local_path": "training/imports/coc-analyzer-v5",
+      "audit": "training/reports/coc-analyzer-v5-audit-20260910.json",
+      "risk": "The source specializes in recent TH18 structures and does not label every older building visible in each village.",
+      "next_step": "Import as training-only data, fine-tune from frozen V5 with teacher distillation and promote only if the unchanged reserved test improves."
+    },
     {
       "id": "pedro-little-guardian",
       "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model",
@@ -142,6 +216,101 @@
         "Aucun contournement ni scraping d'aperçus n'a été utilisé."
       ],
       "next_step": "Télécharger uniquement depuis l'interface Roboflow authentifiée, puis exécuter audit_public_dataset.py avant toute importation."
+    },
+    {
+      "id": "tokke-macle-v13",
+      "url": "https://universe.roboflow.com/tokke/macle-tm-yv-5jvrx/dataset/13",
+      "author": "Tokke",
+      "license": "CC BY 4.0",
+      "images": 250,
+      "classes_count": 13,
+      "task": "instance-segmentation",
+      "status": "accepted_for_level_classification",
+      "verified": [
+        "All 13 explicit building-level classes were visually audited.",
+        "151 independent source families; none cross train, validation and test splits.",
+        "No exact or dHash<=4 cross-split duplicate was found.",
+        "One medoid was retained per two-way colour-augmentation family and polygons were converted to tight boxes."
+      ],
+      "local_path": "training/imports/tokke-macle-v13-curated"
+    },
+    {
+      "id": "tokke-coc-v2-v6",
+      "url": "https://universe.roboflow.com/tokke/coc-v2/dataset/6",
+      "author": "Tokke",
+      "license": "CC BY 4.0",
+      "images": 326,
+      "classes_count": 11,
+      "task": "object-detection",
+      "status": "rejected_after_visual_audit",
+      "verified": [
+        "Class names encode building levels, but most boxes are abnormally tall and narrow.",
+        "Five exact duplicate groups and two source families crossing dataset splits were detected.",
+        "dHash audit found near-duplicate train/test images."
+      ],
+      "local_path": "training/imports/tokke-coc-v2-v6",
+      "risk": "Poor box geometry and split contamination would reduce classifier quality and inflate evaluation metrics."
+    },
+    {
+      "id": "freaky-coc",
+      "url": "https://universe.roboflow.com/coc-d9d5a/freaky-coc",
+      "author": "coc",
+      "license": "CC BY 4.0",
+      "images": 126,
+      "classes_count": 202,
+      "task": "object-detection",
+      "status": "blocked_no_published_version",
+      "verified": [
+        "Project page inspected again on 2026-09-09.",
+        "The 202 explicit level classes include archer towers, cannons, mortars and many other home-village buildings.",
+        "Roboflow reports 126 source images but zero dataset versions and zero downloadable models."
+      ],
+      "risk": "Raw gallery previews cannot replace a versioned export: annotations, split integrity and duplicate families cannot be audited reliably.",
+      "next_step": "Revisit only if the author publishes a versioned export; otherwise collect owner screenshots and annotate them locally."
+    },
+    {
+      "id": "chiefpansancolt-clash-of-clans-data",
+      "url": "https://github.com/chiefpansancolt/clash-of-clans-data",
+      "author": "Christopher Pezza / chiefpansancolt",
+      "license": "MIT for the repository; underlying game images also remain subject to the Supercell Fan Content Policy",
+      "task": "canonical-level-reference",
+      "status": "accepted_as_reference_only",
+      "verified": [
+        "Repository license and README inspected on 2026-09-09.",
+        "All referenced PNG paths were checked locally; no referenced image is missing.",
+        "521 of the corrected catalog's 531 building-level pairs have at least one canonical reference (98.12%).",
+        "The audit detected duplicate level records in 13 source building files and 32 level/path inconsistencies.",
+        "Blacksmith levels 1/2, 3/4, 5/6 and 7/8 intentionally share the same source image and are therefore not visually separable from this source alone.",
+        "The remaining ten gaps are Builder's Hut 8, Monolith 5, Workshop 9, Blacksmith 10, Giant Bomb 12 and Town Hall Guardian levels 1-5; the five non-Guardian gaps now have separately verified Google-discovered references."
+      ],
+      "local_path": "training/imports/chiefpansancolt-clash-of-clans-data",
+      "audit": "training/reports/canonical-reference-audit-20260909.json",
+      "risk": "Canonical transparent assets are not independent gameplay screenshots. Using them in validation/test would inflate metrics, and directly augmenting/redistributing modified assets is not authorized by the repository license alone.",
+      "next_step": "Use only for label and visual review of real licensed gameplay crops; keep it outside train/validation/test until the upstream asset rights and domain-gap protocol are explicitly resolved."
+    },
+    {
+      "id": "google-verified-reference-pack-20260909",
+      "author": "GoblinsFarm and Clash Ninja; levels cross-checked against official Supercell release notes",
+      "license": "No machine-learning training licence established; Supercell game art remains subject to the Supercell Fan Content Policy",
+      "task": "canonical-level-reference",
+      "status": "accepted_as_reference_only",
+      "building_levels": [
+        "builders-hut:8",
+        "monolith:5",
+        "workshop:9",
+        "blacksmith:10",
+        "giant-bomb:12"
+      ],
+      "verified": [
+        "Results were discovered through Google Images/web search, then checked on their original pages rather than trusted from thumbnails.",
+        "Each downloaded file was opened and visually checked against its page label.",
+        "SHA-256 hashes, source pages, direct image URLs and official release-note confirmations are recorded in the local manifest.",
+        "Official Supercell notes confirm Builder's Hut 8 and Monolith 5 in Anime Fury, and Workshop 9, Blacksmith 10 and Giant Bomb 12 in Sound of Clash."
+      ],
+      "local_path": "training/reference-only/google-verified",
+      "manifest": "training/reference-only/google-verified/manifest.json",
+      "risk": "These are isolated canonical renders, not diverse gameplay crops. Their public availability does not provide permission to train on them, and using them for validation would produce misleading metrics.",
+      "next_step": "Use the images only to verify labels on independently licensed or owner-provided gameplay screenshots."
     }
   ],
   "official_references": [
@@ -181,6 +350,15 @@
     },
     {
       "classes": [
+        "builders-hut",
+        "monolith",
+        "cannon",
+        "archer-tower"
+      ],
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-anime-fury-update-is-here/"
+    },
+    {
+      "classes": [
         "crafted-defense"
       ],
       "url": "https://supercell.com/en/games/clashofclans/blog/news/the-awesome-quest-is-here/"
@@ -208,9 +386,15 @@
       "hot-candle"
     ],
     "recent_building_max_levels": {
+      "cannon": 21,
+      "archer-tower": 21,
       "air-sweeper": 7,
       "inferno-tower": 12,
       "dark-elixir-drill": 11,
+      "dark-elixir-storage": 13,
+      "gold-storage": 19,
+      "elixir-storage": 19,
+      "wall": 19,
       "workshop": 9,
       "pet-house": 12,
       "blacksmith": 10,

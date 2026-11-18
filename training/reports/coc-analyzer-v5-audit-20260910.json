@@ -1,0 +1,36 @@
+{
+  "source_key": "coc-analyzer-v5",
+  "source": "C:\\Users\\jimmy\\Desktop\\Clashcompare\\ClashCompareV2-main\\training\\imports\\coc-analyzer-v5",
+  "url": "https://universe.roboflow.com/cocanalyzer/coc-analyzer/dataset/5",
+  "author": "CoCAnalyzer",
+  "license": "CC BY 4.0",
+  "task": "object-detection",
+  "splits": {
+    "train": {
+      "images": 223,
+      "boxes": 1218
+    },
+    "val": {
+      "images": 5,
+      "boxes": 28
+    }
+  },
+  "class_boxes": {
+    "box_fs_bottom_left": 100,
+    "box_fs_bottom_right": 184,
+    "box_fs_top_left": 83,
+    "box_fs_top_right": 75,
+    "box_mg_long": 103,
+    "box_mg_short": 111,
+    "box_monolith": 227,
+    "box_revenge_tower": 163,
+    "box_th_18": 200
+  },
+  "duplicates": {
+    "existing_dataset": 0,
+    "inside_source": 0
+  },
+  "blockers": [],
+  "status": "manual_exhaustiveness_review_required",
+  "human_review_required": "Vérifier visuellement que toutes les classes cibles visibles sont annotées. Un audit structurel ne peut pas détecter les faux négatifs."
+}

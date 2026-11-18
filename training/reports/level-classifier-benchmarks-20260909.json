@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-09",
+  "environment": {
+    "python": "3.12.10",
+    "pytorch": "2.7.1+cu118",
+    "ultralytics": "8.4.137",
+    "gpu": "NVIDIA GeForce GTX 1050",
+    "compute_capability": "6.1"
+  },
+  "training": {
+    "architecture": "yolo11n-cls",
+    "imgsz": 224,
+    "batch": 16,
+    "max_epochs": 30,
+    "early_stopping_patience": 5
+  },
+  "candidates": [
+    {
+      "building": "elixir-storage",
+      "run": "training/runs/levels/elixir-storage-v1",
+      "best_epoch": 2,
+      "validation_top1": 0.97661,
+      "test_correct": 75,
+      "test_total": 86,
+      "test_accuracy": 0.87209,
+      "test_levels": [17, 18, 19],
+      "decision": "candidate_not_promoted",
+      "reason": "Good independent test, but the closed-set model does not cover every catalog level."
+    },
+    {
+      "building": "gold-storage",
+      "run": "training/runs/levels/gold-storage-v1",
+      "best_epoch": 2,
+      "validation_top1": 1.0,
+      "test_correct": 82,
+      "test_total": 82,
+      "test_accuracy": 1.0,
+      "test_levels": [18, 19],
+      "decision": "candidate_not_promoted",
+      "reason": "Perfect independent test for levels 18 and 19 only; level 11 and all other catalog levels are not independently covered."
+    },
+    {
+      "building": "elixir-collector",
+      "run": "training/runs/levels/elixir-collector-v1",
+      "best_epoch": 1,
+      "validation_top1": 1.0,
+      "test_correct": 96,
+      "test_total": 98,
+      "test_accuracy": 0.97959,
+      "test_levels": [10, 16],
+      "decision": "candidate_not_promoted",
+      "reason": "Strong independent test for levels 10 and 16, but level 13 and the remaining catalog levels are not independently covered."
+    },
+    {
+      "building": "gold-mine",
+      "run": "training/runs/levels/gold-mine-v1",
+      "best_epoch": 1,
+      "validation_top1": 0.99422,
+      "test_correct": 82,
+      "test_total": 83,
+      "test_accuracy": 0.98795,
+      "test_levels": [16],
+      "decision": "candidate_not_promoted",
+      "reason": "The independent test contains only level 16, so it cannot measure two-level discrimination."
+    },
+    {
+      "building": "dark-elixir-drill",
+      "run": "training/runs/levels/dark-elixir-drill-v1",
+      "best_epoch": 1,
+      "validation_top1": 1.0,
+      "test_correct": 58,
+      "test_total": 58,
+      "test_accuracy": 1.0,
+      "test_levels": [10],
+      "decision": "candidate_not_promoted",
+      "reason": "The independent test contains only level 10, so it cannot measure two-level discrimination."
+    },
+    {
+      "building": "wall",
+      "run": "training/runs/levels/wall-v1",
+      "best_epoch": 6,
+      "validation_top1": 0.9969,
+      "test_correct": 366,
+      "test_total": 372,
+      "test_accuracy": 0.98387,
+      "test_levels": [1, 2, 3, 4, 5, 6, 16, 17],
+      "exports": {
+        "pt": "models/experimental/level-wall.pt",
+        "pt_sha256": "aa8a8c1e0b746e62666c83ef041fe7282ca23a7c1b4d478199d3440ed7c2b729",
+        "onnx": "models/experimental/level-wall.onnx",
+        "onnx_sha256": "312d90eaa64dd750324e33b3c27251921940e94349e73349515ddf25a24e336a",
+        "parity_samples": 32,
+        "parity_same_top1": 32,
+        "max_confidence_delta": 0.00000066
+      },
+      "decision": "candidate_not_promoted",
+      "reason": "Strong independent test across eight levels, but catalog levels 7-15, 18 and 19 are absent and the closed-set model cannot reject them safely."
+    }
+  ],
+  "production_policy": "Do not allowlist a closed-set level classifier until recent catalog levels are covered and unknown levels can be rejected safely."
+}

@@ -13,8 +13,6 @@
     "pet-house",
     "blacksmith",
     "hero-hall",
-    "multi-gear-tower",
-    "revenge-tower",
     "crafted-defense"
   ],
   "no_eval_split": [
@@ -25,7 +23,7 @@
     {
       "id": "town-hall",
       "class_id": 0,
-      "train": 1286,
+      "train": 1486,
       "val": 145,
       "test": 70,
       "status": "ok"
@@ -145,7 +143,7 @@
     {
       "id": "monolith",
       "class_id": 15,
-      "train": 211,
+      "train": 438,
       "val": 17,
       "test": 14,
       "status": "ok"
@@ -169,7 +167,7 @@
     {
       "id": "firespitter",
       "class_id": 18,
-      "train": 303,
+      "train": 745,
       "val": 18,
       "test": 14,
       "status": "ok"
@@ -321,18 +319,18 @@
     {
       "id": "multi-gear-tower",
       "class_id": 37,
-      "train": 153,
+      "train": 367,
       "val": 9,
       "test": 7,
-      "status": "weak"
+      "status": "ok"
     },
     {
       "id": "revenge-tower",
       "class_id": 38,
-      "train": 150,
+      "train": 313,
       "val": 9,
       "test": 7,
-      "status": "weak"
+      "status": "ok"
     },
     {
       "id": "super-wizard-tower",

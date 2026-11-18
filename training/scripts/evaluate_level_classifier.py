@@ -20,9 +20,20 @@ def main() -> None:
     parser.add_argument("building")
     parser.add_argument("--split", default="test")
     parser.add_argument("--batch", type=int, default=32)
+    parser.add_argument("--imgsz", type=int, default=224)
+    parser.add_argument(
+        "--weights",
+        type=Path,
+        default=None,
+        help="Poids à évaluer; utilise le run de production du bâtiment par défaut.",
+    )
     args = parser.parse_args()
 
-    weights = ROOT / "training" / "runs" / "levels" / args.building / "weights" / "best.pt"
+    weights = args.weights or (
+        ROOT / "training" / "runs" / "levels" / args.building / "weights" / "best.pt"
+    )
+    if not weights.is_absolute():
+        weights = ROOT / weights
     manifest = ROOT / "training" / "dataset" / "level-splits.jsonl"
     if not weights.exists():
         raise SystemExit(f"Poids absents: {weights}")
@@ -52,7 +63,7 @@ def main() -> None:
     confusion: dict[int, Counter[int]] = defaultdict(Counter)
     predictions = model.predict(
         source=[str(path) for path, _ in samples],
-        imgsz=224,
+        imgsz=args.imgsz,
         batch=args.batch,
         device=0,
         verbose=False,
