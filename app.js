@@ -6,6 +6,7 @@ const players = {
 };
 
 let exportMapping = null;
+let thCaps = null;
 
 function emptyPlayer(){
   return {
@@ -16,8 +17,86 @@ function emptyPlayer(){
     height:0,
     quality:"—",
     analysis:null,
-    villageExport:null
+    villageExport:null,
+    profile:null
   };
+}
+
+function buildingIcon(id){
+  const name = buildingName(id);
+  const letters = name
+    .replace(/[^A-Za-zÀ-ÿ0-9 ]/g, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(w => w[0]?.toUpperCase() || "")
+    .join("");
+  return letters || "?";
+}
+
+function maxageFor(player){
+  const api = window.ClashCompareMaxage;
+  if(!api || !thCaps || !window.CLASHCOMPARE_BUILDINGS){
+    return {
+      ok:false,
+      status:"Non disponible",
+      reason:"Module maxage indisponible.",
+      percent:null,
+      byGroup:{},
+      remaining:[]
+    };
+  }
+  const eff = effectiveFor(player);
+  // Maxage v1 : inventaire JSON prioritaire uniquement (pas YOLO seul)
+  const inv = player.villageExport?.inventory;
+  if(!inv || !Object.keys(inv).length){
+    return {
+      ok:false,
+      status:"Non disponible",
+      reason:"Export JSON requis pour le % maxage (YOLO seul exclu en v1).",
+      percent:null,
+      byGroup:{},
+      remaining:[]
+    };
+  }
+  return api.computeMaxage(
+    inv,
+    player.villageExport?.townHallLevel ?? null,
+    thCaps,
+    window.CLASHCOMPARE_BUILDINGS
+  );
+}
+
+function renderMaxage(panel, player){
+  const box = panel.querySelector(".r-maxage");
+  if(!box) return;
+  const m = maxageFor(player);
+  const fmt = window.ClashCompareMaxage?.formatPercent || (v => v==null ? "Non disponible" : `${v} %`);
+  if(!m.ok){
+    box.hidden = false;
+    box.innerHTML = `<div class="maxage-head"><b>% maxage HDV</b><span>Non disponible</span></div>
+      <p class="muted maxage-reason">${m.reason || "Non disponible"}</p>`;
+    return;
+  }
+  const groups = Object.values(m.byGroup || {})
+    .sort((a,b) => a.label.localeCompare(b.label, "fr"))
+    .map(g => `<div class="maxage-pill"><span>${g.label}</span><b>${fmt(g.percent)}</b></div>`)
+    .join("");
+  const remaining = (m.remaining || []).slice(0, 12).map(r =>
+    `<div class="remain-row"><span class="b-icon" aria-hidden="true">${buildingIcon(r.id)}</span><b>${r.name}</b><span>${r.count}× niv.${r.level} → ${r.max}</span></div>`
+  ).join("");
+  const more = (m.remaining || []).length > 12
+    ? `<p class="muted">+ ${(m.remaining.length - 12)} autre(s) écart(s).</p>`
+    : "";
+  box.hidden = false;
+  box.innerHTML = `
+    <div class="maxage-head"><b>% maxage HDV ${m.townHallLevel}</b><span class="maxage-score">${fmt(m.percent)}</span></div>
+    <div class="maxage-groups">${groups}</div>
+    <h4>Reste à améliorer</h4>
+    ${remaining || `<p class="muted">Rien à signaler sur les bâtiments scorés.</p>`}
+    ${more}
+  `;
 }
 
 function normalizeTag(v){
@@ -118,11 +197,17 @@ function refreshPlayerResult(key){
   if(player.analysis?.level_note){
     bits.push(player.analysis.level_note);
   }
+  if(player.profile?.name){
+    bits.push(`Profil API : ${player.profile.name}.`);
+  }else if(player.tag && window.CLASHCOMPARE_API === ""){
+    bits.push("Profil API : Non disponible (stub, pas de clé).");
+  }
   if(!player.villageExport && !player.analysis){
     bits.push("Aucune donnée importée.");
   }
   notice.textContent = bits.join(" ");
   renderInventory(inventoryEl, eff.inventory);
+  renderMaxage(panel, player);
 
   if(player.villageExport && player.analysis) status.textContent = "Export + YOLO";
   else if(player.villageExport) status.textContent = "Export importé";
@@ -185,12 +270,12 @@ async function pingEngine(){
         ` • conf ${data.conf ?? 0.25}` +
         ` • max_det ${data.max_det ?? 1000}` +
         ` • politique ${data.inference_policy || "baseline-conf25"}.` +
-        ` Niveaux YOLO : désactivés tant que tous les niveaux récents ne sont pas couverts.` +
+        ` Niveaux YOLO prod : town-hall seulement (baseline V5 intact).` +
         ` JSON = toi/ami ; capture YOLO = adversaire.`;
     }
     return true;
   }catch{
-    if(el) el.textContent = "Moteur local absent (YOLO optionnel). L'import JSON fonctionne hors ligne. Pour YOLO : .\\.venv\\Scripts\\python.exe training\\scripts\\serve_compare.py";
+    if(el) el.textContent = "Moteur local absent (YOLO optionnel). L'import JSON + % maxage fonctionnent hors ligne. Pour YOLO : .\\.venv\\Scripts\\python.exe training\\scripts\\serve_compare.py";
     return false;
   }
 }
@@ -221,6 +306,7 @@ function buildPlayerPanel(key, label){
     persistState();
     refreshPlayerResult(key);
     renderCompare();
+    maybeLoadProfile(key);
   });
 
   uploadBtn.addEventListener("click",()=>imageInput.click());
@@ -358,6 +444,9 @@ function renderCompare(){
   const A=players.a, B=players.b;
   const effA=effectiveFor(A);
   const effB=effectiveFor(B);
+  const mA=maxageFor(A);
+  const mB=maxageFor(B);
+  const fmt=window.ClashCompareMaxage?.formatPercent || (v => v==null ? "Non disponible" : `${v} %`);
   const rows=[
     ["# joueur", A.tag||A.villageExport?.tag||"—", B.tag||B.villageExport?.tag||"—"],
     ["Source données", sourceLabel(effA.source), sourceLabel(effB.source)],
@@ -365,6 +454,7 @@ function renderCompare(){
     ["Capture", A.imageName?"Ajoutée":"—", B.imageName?"Ajoutée":"—"],
     ["Résolution", A.width?`${A.width}×${A.height}`:"—", B.width?`${B.width}×${B.height}`:"—"],
     ["HDV (export)", A.villageExport?.townHallLevel!=null?`niv.${A.villageExport.townHallLevel}`:"Non détecté", B.villageExport?.townHallLevel!=null?`niv.${B.villageExport.townHallLevel}`:"Non détecté"],
+    ["% maxage HDV", mA.ok?fmt(mA.percent):"Non disponible", mB.ok?fmt(mB.percent):"Non disponible"],
     ["Bâtiments / pièges", Object.keys(effA.inventory).length?String(Object.values(effA.inventory).reduce((n,s)=>n+(s.total||0),0)):"—", Object.keys(effB.inventory).length?String(Object.values(effB.inventory).reduce((n,s)=>n+(s.total||0),0)):"—"]
   ];
   const ids=new Set([
@@ -382,6 +472,7 @@ function renderCompare(){
         ? `${countOf(B,id)} — ${formatLevels(effB.inventory[id].levels)}`
         : "Non disponible";
       return {
+        id,
         label: buildingName(id),
         a: aText,
         b: bText,
@@ -392,8 +483,22 @@ function renderCompare(){
   el.innerHTML=`
     <div class="compare-row"><b>Critère</b><b>Joueur A</b><b>Joueur B</b></div>
     ${rows.map(r=>`<div class="compare-row"><span class="label">${r[0]}</span><b>${r[1]}</b><b>${r[2]}</b></div>`).join("")}
-    ${buildingRows.map(r=>`<div class="compare-row${r.diff?" diff":""}"><span class="label">${r.label}</span><b>${r.a}</b><b>${r.b}</b></div>`).join("")}
+    ${buildingRows.map(r=>`<div class="compare-row${r.diff?" diff":""}"><span class="label"><span class="b-icon" aria-hidden="true">${buildingIcon(r.id)}</span>${r.label}</span><b>${r.a}</b><b>${r.b}</b></div>`).join("")}
   `;
+}
+
+async function maybeLoadProfile(key){
+  const api = window.ClashCompareCocApi;
+  const player = players[key];
+  if(!api || !player?.tag) return;
+  if(!window.CLASHCOMPARE_API){
+    player.profile = null;
+    return;
+  }
+  const result = await api.fetchPlayerProfile(player.tag);
+  player.profile = result.ok ? api.summarizeProfile(result.profile) : null;
+  refreshPlayerResult(key);
+  renderCompare();
 }
 
 function restorePersisted(panelByKey){
@@ -445,14 +550,20 @@ if("serviceWorker" in navigator){
 
 Promise.all([
   fetch("./data/buildings.json").then(r => r.json()),
-  fetch("./data/coc-export-mapping.json").then(r => r.json())
+  fetch("./data/coc-export-mapping.json").then(r => r.json()),
+  fetch("./data/th-caps.json").then(r => r.json())
 ])
-  .then(([catalog, mapping]) => {
+  .then(([catalog, mapping, caps]) => {
     exportMapping = mapping;
+    thCaps = caps;
     window.CLASHCOMPARE_BUILDINGS = catalog;
+    window.CLASHCOMPARE_TH_CAPS = caps;
     const levels = catalog.buildings.reduce((n,b)=>n+b.levels.length,0);
     const el = document.querySelector("#catalog-count");
-    if(el) el.textContent = `${catalog.buildings.length} types de bâtiments • ${levels} emplacements niveau • import JSON prêt`;
+    if(el){
+      el.textContent =
+        `${catalog.buildings.length} types • ${levels} niveaux • TH max ${catalog.max_town_hall || caps.max_town_hall || "?"} • % maxage HDV prêt`;
+    }
     restorePersisted({
       a: document.querySelector("#panel-a"),
       b: document.querySelector("#panel-b")
@@ -461,5 +572,5 @@ Promise.all([
   })
   .catch(()=>{
     const el=document.querySelector("#catalog-count");
-    if(el) el.textContent="Catalogue / mapping indisponible";
+    if(el) el.textContent="Catalogue / mapping / plafonds HDV indisponibles";
   });

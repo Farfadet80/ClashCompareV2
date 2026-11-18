@@ -1,13 +1,42 @@
 {
-  "version": "1.2",
-  "updated": "2026-09-05",
+  "version": "1.3",
+  "updated": "2026-11-18",
   "scope": "home_village_buildings_traps",
   "notes": [
     "dataId numériques de l'export village officiel → ids ClashCompare (data/buildings.json).",
     "town-hall-guardian agrège Smasher, Longshot et Logger ; seuls les dataId réellement observés sont mappés, le type exact reste Non détecté si absent de l'export.",
     "crafted-defense mappe la Crafting Station (1000097).",
     "bob-hut (1000064) et helper-hut (1000093) sont fiables via export mais ne font pas encore partie des 50 classes YOLO.",
-    "Les sections *2 (Builder Base) sont ignorées volontairement."
+    "Les sections *2 (Builder Base) sont ignorées volontairement.",
+    "TH19 (Clash of Titans, 16 nov. 2026) : spiky-tower, firecracker-tower, guardian-shrine, squad-barracks ajoutés au catalogue.",
+    "INCERTITUDE : aucun export JSON TH19 local disponible au 18 nov. 2026 — dataIds des 4 nouveaux bâtiments NON inventés. Ils apparaîtront en « Non détecté » jusqu'à observation d'un vrai export ; renseigner alors pendingNewBuildings."
+  ],
+  "pendingNewBuildings": [
+    {
+      "id": "spiky-tower",
+      "name": "Tour à pointes / Spiky Tower",
+      "dataId": null,
+      "status": "awaiting_export"
+    },
+    {
+      "id": "firecracker-tower",
+      "name": "Tour pétards / Firecracker Tower",
+      "dataId": null,
+      "status": "awaiting_export"
+    },
+    {
+      "id": "guardian-shrine",
+      "name": "Sanctuaire des gardiens / Guardian Shrine",
+      "dataId": null,
+      "status": "awaiting_export"
+    },
+    {
+      "id": "squad-barracks",
+      "name": "Caserne d'escouade / Squad Barracks",
+      "dataId": null,
+      "status": "awaiting_export",
+      "note": "Existe dès TH8 selon Supercell ; absent des exports mappés HDV16 (sept. 2026) — probablement ajouté avec Clash of Titans."
+    }
   ],
   "dataIdToBuilding": {
     "1000000": "army-camp",
