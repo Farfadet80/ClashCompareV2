@@ -42,8 +42,9 @@
       "y1": 269.19,
       "x2": 1937.95,
       "y2": 834.45,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "rejected",
+      "origin": "public-source-yolo",
+      "review_note": "hygiène auto: aire 24.45% > plafond 20%"
     },
     {
       "class_id": 32,

@@ -86,13 +86,26 @@ def main() -> None:
 
     caps = json.loads((ROOT / "data" / "th-caps.json").read_text(encoding="utf-8"))
     assert caps["max_town_hall"] == 19
+    assert caps["supported_town_halls"] == list(range(10, 20))
     assert caps["by_th"]["19"]["air-defense"] == 17
     assert caps["by_th"]["19"]["wall"] == 20
     assert caps["by_th"]["19"]["spiky-tower"] == 2
     assert caps["by_th"]["18"]["air-defense"] == 16
     assert caps["by_th"]["16"]["laboratory"] == 14
+    # TH10–15 (ClashRecord 2026-11-18)
+    assert caps["by_th"]["10"]["wall"] == 11
+    assert caps["by_th"]["10"]["inferno-tower"] == 3
+    assert caps["by_th"]["11"]["eagle-artillery"] == 2
+    assert caps["by_th"]["12"]["workshop"] == 3
+    assert caps["by_th"]["13"]["scattershot"] == 2
+    assert caps["by_th"]["14"]["builders-hut"] == 4
+    assert caps["by_th"]["14"]["pet-house"] == 4
+    assert caps["by_th"]["15"]["monolith"] == 2
+    assert caps["by_th"]["15"]["spell-tower"] == 3
+    assert caps["counts_by_th"]["10"]["wall"] == 275
+    assert caps["counts_by_th"]["14"]["wall"] == 325
 
-    print(f"OK catalogue: {len(rows)} classes, TH19 + th-caps vérifiés")
+    print(f"OK catalogue: {len(rows)} classes, TH10–19 + th-caps vérifiés")
 
 
 if __name__ == "__main__":

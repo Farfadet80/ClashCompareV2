@@ -32,8 +32,9 @@
       "y1": 448.0,
       "x2": 2297.0,
       "y2": 1170,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "accepted",
+      "origin": "public-source-yolo",
+      "review_note": "focus géométrie OK — session toujours draft/non exhaustive"
     },
     {
       "class_id": 33,
@@ -52,8 +53,9 @@
       "y1": 313.5,
       "x2": 1528.5,
       "y2": 978.5,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "rejected",
+      "origin": "public-source-yolo",
+      "review_note": "hygiène auto: aire 22.83% > plafond 20%"
     }
   ]
 }

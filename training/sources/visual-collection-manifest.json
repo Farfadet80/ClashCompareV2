@@ -7,11 +7,15 @@
     "readiness_report": "training/reports/finetune-readiness.json",
     "staged_images_total": 245,
     "th19_public_labeled_datasets": 0,
+    "draft_hygiene_report": "training/reports/draft-review-hygiene.json",
+    "private_collection_report": "training/reports/private-collection-20261118.json",
     "notes": [
       "Audits structuraux coc-all-traps + glenn-th18-gigabomb verts (ignore_unmapped autels/bannières).",
-      "245 candidats CC BY stagés dans inbox/public-reference avec sessions annotateur draft (pending).",
+      "245 candidats CC BY stagés dans inbox/public-reference avec sessions annotateur draft.",
+      "Hygiène 2026-11-18 : focus boxes géométrie OK → accepted ; oversized rejetées ; exhaustive jamais auto.",
+      "Collecte privée : inbox/private (gitignore images) + ~97 sessions murs + ref TH19 blog hors train.",
       "Images prioritaires déjà dans detector (doublons SHA) — file de réannotation, pas nouvel import brut.",
-      "Pedro Little_Guardian rejeté en revue visuelle (UI troupes, pas guardian village).",
+      "Pedro Little_Guardian rejeté en revue visuelle (UI tray troupes, pas guardian village).",
       "Aucun fine-tune ; attendre OK Jimmy (CC-8) + readiness vert."
     ]
   },

@@ -16,6 +16,21 @@ Format d’entrée :
 
 ---
 
+## 2026-11-18 — Complétude JSON TH10–19 + collecte privée
+
+- Branche / commits : `cursor/th10-15-caps-complete-246d` (PR → `feature/village-json-import`).
+- Fait :
+  - `data/th-caps.json` v1.1 : plafonds **TH10–15** (ClashRecord) + TH16–19 ; maxage OK dès TH10.
+  - Mapping v1.5 : veille dataIds TH19 (npm 0.19.1, GitHub 0 hit) → **toujours null**, pas inventés.
+  - Collecte privée : `training/inbox/private/` (gitignore images) + `stage_private_visual_candidates.py` + consigne README ; staging murs CC BY locaux + ref TH19 blog hors train.
+  - Revue hygiène drafts C1–C2 : `review_draft_annotation_sessions.py` (rejets oversized ; **pas** d’exhaustive auto).
+  - Tests `test_catalog_data.py` / `test_maxage.py` étendus TH10–15 ; SW `v3-15-th10-caps`.
+- Décisions :
+  - Acceptation import YOLO impossible sans annotation exhaustive humaine → drafts restent non importables.
+  - Pas de fine-tune / pas merge `main` / pas push images.
+- À faire ensuite :
+  - Export TH19 ami → dataIds ; annotation exhaustive file privée + C1–C2 ; OK Jimmy pour train.
+
 ## 2026-11-18 — Reconnaissance visuelle autonome (sans captures Jimmy)
 
 - Branche / commits : `cursor/visual-recognition-autonomous-600b` (PR vers `feature/village-json-import`).
