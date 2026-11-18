@@ -56,11 +56,25 @@ def main() -> None:
     lab_only = {"laboratory": {"total": 1, "levels": {"14": 1}}}
     full = compute_maxage(lab_only, 16, caps)
     assert full["ok"] and full["percent"] == 100.0 and full["remaining"] == 0
-    # Sans HDV / hors table
-    assert compute_maxage(inventory, 12, caps)["ok"] is False
+    # TH10–15 désormais supportés (ClashRecord)
+    th10 = compute_maxage(
+        {"cannon": {"total": 6, "levels": {"13": 6}}, "wall": {"total": 10, "levels": {"11": 10}}},
+        10,
+        caps,
+    )
+    assert th10["ok"] and th10["percent"] == 100.0 and th10["remaining"] == 0
+    th12_partial = compute_maxage(
+        {"workshop": {"total": 1, "levels": {"2": 1}}},
+        12,
+        caps,
+    )
+    assert th12_partial["ok"] and th12_partial["percent"] < 100 and th12_partial["remaining"] == 1
+    # Hors table (sous TH10)
+    assert compute_maxage(inventory, 9, caps)["ok"] is False
     print(
         f"OK maxage TH16 Jimmy ~{result['percent']} % "
-        f"({result['remaining']} unités sous plafond, {result['weight']} scorées)"
+        f"({result['remaining']} unités sous plafond, {result['weight']} scorées); "
+        f"TH10/12 OK"
     )
 
 

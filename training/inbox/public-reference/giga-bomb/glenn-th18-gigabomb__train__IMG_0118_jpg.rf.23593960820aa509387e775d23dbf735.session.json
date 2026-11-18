@@ -32,8 +32,9 @@
       "y1": 253.75,
       "x2": 319.75,
       "y2": 275.25,
-      "status": "pending",
-      "origin": "public-source-yolo"
+      "status": "accepted",
+      "origin": "public-source-yolo",
+      "review_note": "focus géométrie OK — session toujours draft/non exhaustive"
     }
   ]
 }

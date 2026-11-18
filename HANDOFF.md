@@ -297,7 +297,7 @@ Si conflit technique : **fichiers / métriques / Git réels** prioritaires.
 - **UX** : app simple multi-utilisateurs ; saisie/modification des deux tags #....
 - **3 vues** : récap village joueur A, récap joueur B, page de comparaison.
 - **Comparaison** : visuelle et lisible, idéalement avec petites icônes bâtiments ; pour chaque type, quantités **par niveau** (ex. X canons niv.N chez A vs Y chez B).
-- **Progression** : `% maxage` HDV + restes à améliorer — **implémenté v1** (`maxage.js` + `data/th-caps.json`) sur inventaire JSON (TH16–19). Hors table / sans export → « Non disponible ».
+- **Progression** : `% maxage` HDV + restes à améliorer — **implémenté v1** (`maxage.js` + `data/th-caps.json`) sur inventaire JSON (**TH10–19**, ClashRecord). Hors table / sans export → « Non disponible ». dataIds TH19 des 4 nouveautés toujours `null` (pas inventés).
 - **PWA iPhone** : polish basique (`apple-touch-icon`, meta Apple) ; YOLO reste PC local.
 
 ## Règles YOLO / promotion

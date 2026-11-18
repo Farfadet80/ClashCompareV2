@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "updated": "2026-11-18",
   "scope": "home_village_buildings_traps",
   "recognitionMinTh": 10,
@@ -11,7 +11,7 @@
     "Les sections *2 (Builder Base) sont ignorées volontairement.",
     "TH19 (Clash of Titans, 16 nov. 2026) : spiky-tower, firecracker-tower, guardian-shrine, squad-barracks ajoutés au catalogue.",
     "Stratégie 2026-11-18 : NE PLUS bloquer sur un export Jimmy. recognitionMinTh=10 (config bot). dataIds des 4 nouveautés NON inventés.",
-    "Sources publiques croisées (aucune ID TH19) : clash-of-clans-data@0.19.1 (release 2026-10-29, max home building 1000102 Super Wizard Tower), ClashPrime cocBuildingIds.ts, Kuswaa/clash-timers names.json, gist pghant export mapping.",
+    "Veille dataIds TH19 (2026-11-18 soir) : clash-of-clans-data npm toujours 0.19.1 (max 1000102 Super Wizard Tower) ; GitHub code search SpikyTower/Firecracker/1000103+ = 0 hit utile ; gists export mapping pré-TH19. → dataId reste null.",
     "Remplir pendingNewBuildings seulement après observation d'un vrai export / package dataId sourcé (ami, sample public, ou clash-of-clans-data post-TH19)."
   ],
   "pendingNewBuildings": [

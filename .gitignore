@@ -25,6 +25,10 @@ training/sources/*/
 !training/sources/*.md
 training/inbox/screenshots/*
 !training/inbox/screenshots/README.md
+# Collecte privée élargie — JAMAIS pousser les images / exports JSON amis
+training/inbox/private/**
+!training/inbox/private/README.md
+!training/inbox/private/**/.gitkeep
 # Binaires inbox publique (recréables via stage_priority_visual_candidates.py)
 training/inbox/public-reference/**/*.jpg
 training/inbox/public-reference/**/*.jpeg
