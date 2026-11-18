@@ -1,5 +1,10 @@
 # Captures à annoter
 
+**Priorité 2026-11-18 :** la collecte est **autonome** via sources publiques licenciées
+(`training/inbox/public-reference/` + `visual-collection-manifest.json`). Aucune capture
+Jimmy n’est requise. Ce dossier reste disponible pour d’éventuelles captures Mode photo
+volontaires (ami / communauté), pas comme prérequis.
+
 Déposer ici des captures complètes prises en **mode photo**, sans menu ouvert et à la
 résolution originale. Conserver plusieurs villages, niveaux d'hôtel de ville, zooms et
 appareils différents. Ne pas recadrer les bâtiments avant l'annotation du détecteur.

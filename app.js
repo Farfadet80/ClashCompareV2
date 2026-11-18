@@ -136,8 +136,8 @@ function effectiveFor(player){
 
 function sourceLabel(source){
   if(source === "export") return "Export JSON officiel";
-  if(source === "yolo") return "YOLO (complément / fallback)";
-  if(source === "mixed") return "Export JSON + complément YOLO";
+  if(source === "yolo") return "Reconnu visuellement (YOLO)";
+  if(source === "mixed") return "Export JSON + reconnu visuellement";
   return "Aucune donnée";
 }
 
@@ -573,6 +573,8 @@ Promise.all([
     window.CLASHCOMPARE_RECOGNITION_MIN_TH = recognitionMinTh;
     const minThEl = document.querySelector("#recognition-min-th");
     if(minThEl) minThEl.textContent = String(recognitionMinTh);
+    const photoMinThEl = document.querySelector("#photo-min-th");
+    if(photoMinThEl) photoMinThEl.textContent = String(recognitionMinTh);
     const pending = Array.isArray(mapping.pendingNewBuildings)
       ? mapping.pendingNewBuildings.filter((row) => row && row.dataId == null)
       : [];

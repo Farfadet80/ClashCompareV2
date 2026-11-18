@@ -53,3 +53,9 @@ names:
   47: skeleton-trap
   48: tornado-trap
   49: giga-bomb
+  # Réservées TH19 / Clash of Titans — noms seulement ; V5 actif reste à 50 classes.
+  # Aucune annotation tant que des images sous licence claire n'ont pas été importées.
+  50: spiky-tower
+  51: firecracker-tower
+  52: guardian-shrine
+  53: squad-barracks

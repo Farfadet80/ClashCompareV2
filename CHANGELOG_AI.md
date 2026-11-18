@@ -16,6 +16,21 @@ Format d’entrée :
 
 ---
 
+## 2026-11-18 — Reconnaissance visuelle autonome (sans captures Jimmy)
+
+- Branche / commits : `cursor/visual-recognition-autonomous-600b` (PR vers `feature/village-json-import`).
+- Fait :
+  - Stratégie corrigée : **zéro capture Jimmy** ; collecte via sources publiques licenciées (`visual-collection-manifest.json` + inbox `public-reference/`).
+  - Schéma YOLO : classes 50–53 réservées (`spiky-tower`, `firecracker-tower`, `guardian-shrine`, `squad-barracks`) dans `dataset.yaml` + `classes.json` v3.4 — **sans dataIds inventés**, **sans train**.
+  - Script `stage_public_visual_collection.py` + garde `test_yolo_class_schema.py`.
+  - UI : libellé **« Reconnu visuellement (YOLO) »** ; tip Mode photo TH min ; SW `v3-14-visual-recog`.
+- Décisions :
+  - Blog Supercell / guides tiers = reference-only ; train seulement CC BY audité + annotation exhaustive.
+  - V5 inchangé ; fine-tune uniquement plus tard si readiness vert **et** OK Jimmy.
+- À faire ensuite :
+  - Surveiller / importer datasets CC BY pour classes faibles + TH19 quand disponibles.
+  - Ne pas lancer de train dans cette PR.
+
 ## 2026-11-18 — Scope TH10+ sans export Jimmy (dataIds TH19 toujours pending)
 
 - Branche / commits : `cursor/th10-recognition-min-th-3bcc` (PR vers `feature/village-json-import`).

@@ -1,4 +1,4 @@
-"""Fusionne un export YOLO public dans les 50 classes ClashCompare.
+"""Fusionne un export YOLO public dans les classes detector ClashCompare.
 
 Le script accepte les boîtes YOLO et les polygones YOLO segmentation. Les classes
 absentes du mapping sont ignorées. Il préfixe les noms pour éviter les collisions.

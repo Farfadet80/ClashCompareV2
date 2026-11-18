@@ -1,0 +1,16 @@
+{
+  "village_group": "public-town-hall-guardian-TODO",
+  "class_focus": "town-hall-guardian",
+  "town_hall": null,
+  "capture_mode": "public-gameplay-or-reference",
+  "license": "TODO — CC BY 4.0 / CC BY-SA / consentement auteur",
+  "source_url": "TODO",
+  "author": "TODO",
+  "usage": "train_candidate_after_audit",
+  "levels_verified": false,
+  "consent": false,
+  "notes": [
+    "Remplir avant annotation. Ne jamais inventer de niveaux.",
+    "Annotation exhaustive via training/annotator/ obligatoire avant import."
+  ]
+}
