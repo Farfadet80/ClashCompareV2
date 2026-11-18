@@ -1,4 +1,4 @@
-const CACHE="clashcompare-v3-12-th19-maxage";
+const CACHE="clashcompare-v3-13-th10-recog";
 const ASSETS=[
   "./",
   "./index.html",

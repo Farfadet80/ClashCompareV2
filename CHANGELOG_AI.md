@@ -16,6 +16,23 @@ Format d’entrée :
 
 ---
 
+## 2026-11-18 — Scope TH10+ sans export Jimmy (dataIds TH19 toujours pending)
+
+- Branche / commits : `cursor/th10-recognition-min-th-3bcc` (PR vers `feature/village-json-import`).
+- Fait :
+  - `CLASHCOMPARE_RECOGNITION_MIN_TH = 10` dans `config.js` + affichage UI catalogue / sous-titre.
+  - Mapping v1.4 : plus bloqué sur export Jimmy ; `pendingNewBuildings` en `awaiting_sourced_dataid` ; notes des sources publiques croisées (clash-of-clans-data@0.19.1, ClashPrime, clash-timers, gist pghant) — **aucune ID TH19 fiable**.
+  - UI : liste les `dataId` unresolved à l'import (pour remplir le mapping dès qu'un ami/sample colle un export).
+  - Cache SW v3-13-th10-recog.
+- Décisions :
+  - Ne **pas** inventer Spiky/Firecracker/Shrine/Squad Barracks dataIds.
+  - Reconnaissance JSON TH10–TH18 (et TH19 hors 4 nouveautés) déjà OK ; 4 gaps restent placeholders.
+  - YOLO train / CUDA / merge `main` toujours interdits ici.
+- À faire ensuite :
+  - Attendre package/export sourcé → remplir les 4 dataIds.
+  - Étendre `th-caps` TH10–15 (ClashRecord) pour maxage bas TH ; YOLO plus tard.
+
+
 ## 2026-11-18 — TH19 catalogue + % maxage HDV + PWA iPhone
 
 - Branche / commits : `cursor/th19-maxage-pwa-60e6` (PR vers `feature/village-json-import`).

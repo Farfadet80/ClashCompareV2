@@ -1032,7 +1032,7 @@
     "Nouveaux bâtiments : spiky-tower, firecracker-tower, guardian-shrine, squad-barracks.",
     "Gardien : Smasher max 10 à TH19 ; Longshot / Logger restent 5 (variant_max_levels).",
     "Murs : 350 pièces, jusqu'à 150 en niveau 20 (soft_cap_at_max).",
-    "dataId export des nouveaux bâtiments : non observés localement — laisser Non détecté jusqu'à un vrai export TH19.",
+    "dataId export des 4 nouveautés : non sourcés (veille package/export ami) — pas bloqué sur Jimmy ; Non détecté jusqu'à observation.",
     "Catalogue absolu = plafonds TH19 ; plafonds relatifs HDV dans data/th-caps.json."
   ],
   "supercharges": {

@@ -189,7 +189,15 @@ function refreshPlayerResult(key){
     bits.push(`HDV export : niv.${player.villageExport.townHallLevel}.`);
   }
   if(player.villageExport?.unresolved?.length){
-    bits.push(`${player.villageExport.unresolved.length} entrée(s) Non détectée(s) (hors mapping).`);
+    const ids = [...new Set(
+      player.villageExport.unresolved
+        .map((row) => row && row.dataId)
+        .filter((id) => id != null)
+    )].sort((a, b) => a - b);
+    const idPart = ids.length ? ` dataId: ${ids.join(", ")}` : "";
+    bits.push(
+      `${player.villageExport.unresolved.length} entrée(s) Non détectée(s) (hors mapping)${idPart}.`
+    );
   }
   if(eff.complementIds.length){
     bits.push(`Complément YOLO : ${eff.complementIds.map(buildingName).join(", ")}.`);
@@ -558,11 +566,24 @@ Promise.all([
     thCaps = caps;
     window.CLASHCOMPARE_BUILDINGS = catalog;
     window.CLASHCOMPARE_TH_CAPS = caps;
+    const minTh = Number(window.CLASHCOMPARE_RECOGNITION_MIN_TH);
+    const recognitionMinTh = Number.isFinite(minTh) && minTh > 0
+      ? Math.trunc(minTh)
+      : (Number(mapping.recognitionMinTh) || 10);
+    window.CLASHCOMPARE_RECOGNITION_MIN_TH = recognitionMinTh;
+    const minThEl = document.querySelector("#recognition-min-th");
+    if(minThEl) minThEl.textContent = String(recognitionMinTh);
+    const pending = Array.isArray(mapping.pendingNewBuildings)
+      ? mapping.pendingNewBuildings.filter((row) => row && row.dataId == null)
+      : [];
     const levels = catalog.buildings.reduce((n,b)=>n+b.levels.length,0);
     const el = document.querySelector("#catalog-count");
     if(el){
+      const pendingNote = pending.length
+        ? ` • ${pending.length} dataId pending (Non détecté jusqu'à source)`
+        : "";
       el.textContent =
-        `${catalog.buildings.length} types • ${levels} niveaux • TH max ${catalog.max_town_hall || caps.max_town_hall || "?"} • % maxage HDV prêt`;
+        `${catalog.buildings.length} types • ${levels} niveaux • scope TH${recognitionMinTh}+ → TH${catalog.max_town_hall || caps.max_town_hall || "?"} • % maxage HDV prêt${pendingNote}`;
     }
     restorePersisted({
       a: document.querySelector("#panel-a"),
