@@ -11,13 +11,13 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
-  <link rel="stylesheet" href="style.css?v=th19-maxage" />
+  <link rel="stylesheet" href="style.css?v=th10-recog" />
 </head>
 <body>
   <header class="topbar">
     <div>
       <div class="brand">ClashCompare</div>
-      <div class="subtitle">Toi / ami : export JSON. Adversaire : capture YOLO. Tags # optionnels pour le profil.</div>
+      <div class="subtitle">Reconnaissance HV dès TH<span id="recognition-min-th">10</span>+ (JSON prioritaire). Ami / sample : coller un export. Adversaire : YOLO. Tags # optionnels.</div>
     </div>
   </header>
 
@@ -40,7 +40,7 @@
     </section>
     <section class="card" style="margin-top:14px">
       <h3>Bibliothèque de reconnaissance</h3>
-      <p class="muted"><span id="catalog-count">Chargement…</span> — les emplacements sont prêts pour plusieurs références par bâtiment et par niveau.</p>
+      <p class="muted"><span id="catalog-count">Chargement…</span> — scope TH min configurable dans <code>config.js</code> (<code>CLASHCOMPARE_RECOGNITION_MIN_TH</code>). Placeholders TH19 sans dataId sourcé restent « Non détecté ».</p>
     </section>
   <section class="card" style="margin-top:14px">
       <h3>Moteur IA</h3>
