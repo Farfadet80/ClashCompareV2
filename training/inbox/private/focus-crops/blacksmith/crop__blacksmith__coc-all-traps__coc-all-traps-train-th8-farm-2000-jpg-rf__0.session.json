@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-farm-2000-jpg-rf__0.jpg",
+    "width": 1162,
+    "height": 795
+  },
+  "metadata": {
+    "village_group": "focus-crop-blacksmith-8e86adba4b9a",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "blacksmith",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "blacksmith": 1
+  },
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 194.5,
+      "y1": 133.0,
+      "x2": 969.5,
+      "y2": 663.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

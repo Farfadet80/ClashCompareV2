@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-val-th15-war-14__0.jpg",
+    "width": 706,
+    "height": 296
+  },
+  "metadata": {
+    "village_group": "focus-crop-pet-house-bff5d00a9700",
+    "source": "focus-crop:cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "pet-house",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "pet-house": 1
+  },
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 118.41,
+      "y1": 59.71,
+      "x2": 589.12,
+      "y2": 296,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

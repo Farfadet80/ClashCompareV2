@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__blacksmith__coc-all-traps__coc-all-traps-train-th8-war-2011-jpg-rf-__0.jpg",
+    "width": 1979,
+    "height": 760
+  },
+  "metadata": {
+    "village_group": "focus-crop-blacksmith-f1782f88b8e6",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "blacksmith",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "blacksmith": 1
+  },
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 396.5,
+      "y1": 127.39,
+      "x2": 1979,
+      "y2": 634.29,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

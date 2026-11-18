@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-3-jpg-rf-82bca__0.jpg",
+    "width": 408,
+    "height": 315
+  },
+  "metadata": {
+    "village_group": "focus-crop-crafted-defense-4319a6afef55",
+    "source": "focus-crop:base-finder-th18",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "crafted-defense",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "crafted-defense": 1
+  },
+  "boxes": [
+    {
+      "class_id": 41,
+      "class_name": "crafted-defense",
+      "x1": 68.76,
+      "y1": 52.62,
+      "x2": 340.76,
+      "y2": 262.74,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

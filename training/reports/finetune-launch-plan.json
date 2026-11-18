@@ -1,0 +1,36 @@
+{
+  "updated": "2026-11-18",
+  "execute_now": false,
+  "jimmy_ok_required": true,
+  "check_finetune_readiness": true,
+  "baseline": "building-detector-v5s-infer800 (imgsz 800 + TTA)",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "training\\scripts\\train_detector.py",
+    "--model",
+    "models\\building-detector.pt",
+    "--name",
+    "building-detector-v5-th1018-ft1",
+    "--epochs",
+    "50",
+    "--imgsz",
+    "640",
+    "--batch",
+    "2",
+    "--device",
+    "0",
+    "--patience",
+    "20"
+  ],
+  "eval_after": {
+    "imgsz": 800,
+    "tta": true,
+    "promote_if": "reserved test mAP and weak-class AP >= V5 baseline"
+  },
+  "forbidden": [
+    "from-scratch",
+    "CUDA/Python/torch upgrade",
+    "TH19 classes 50-53",
+    "merge main without Jimmy"
+  ]
+}

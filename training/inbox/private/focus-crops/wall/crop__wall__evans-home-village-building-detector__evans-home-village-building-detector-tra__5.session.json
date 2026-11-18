@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__wall__evans-home-village-building-detector__evans-home-village-building-detector-tra__5.jpg",
+    "width": 96,
+    "height": 96
+  },
+  "metadata": {
+    "village_group": "focus-crop-wall-84243adc1585",
+    "source": "focus-crop:evans-home-village-building-detector",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "wall",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "wall": 1
+  },
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 42.25,
+      "y1": 39.0,
+      "x2": 54.75,
+      "y2": 58.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__blacksmith__coc-all-traps__coc-all-traps-test-th8-war-2010-jpg-rf-0__0.jpg",
+    "width": 2101,
+    "height": 865
+  },
+  "metadata": {
+    "village_group": "focus-crop-blacksmith-7554a5990e83",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "blacksmith",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "blacksmith": 1
+  },
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 420.5,
+      "y1": 144.5,
+      "x2": 2099.5,
+      "y2": 721.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

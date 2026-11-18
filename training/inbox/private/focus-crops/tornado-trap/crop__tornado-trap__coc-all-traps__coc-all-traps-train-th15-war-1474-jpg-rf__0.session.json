@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-war-1474-jpg-rf__0.jpg",
+    "width": 1842,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "focus-crop-tornado-trap-950d5ffa0bbe",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "tornado-trap": 1
+  },
+  "boxes": [
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 307.0,
+      "y1": 107.5,
+      "x2": 1535.0,
+      "y2": 534.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

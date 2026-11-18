@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__blacksmith__coc-all-traps__coc-all-traps-test-th10-war-1984-jpg-rf-__0.jpg",
+    "width": 2014,
+    "height": 693
+  },
+  "metadata": {
+    "village_group": "focus-crop-blacksmith-9721adaf25ca",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "blacksmith",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "blacksmith": 1
+  },
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 403.0,
+      "y1": 116.0,
+      "x2": 2014,
+      "y2": 578.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

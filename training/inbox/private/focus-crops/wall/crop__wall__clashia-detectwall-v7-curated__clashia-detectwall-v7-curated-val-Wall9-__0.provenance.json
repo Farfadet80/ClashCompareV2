@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-wall-3c696359b2b4",
+  "class_focus": "wall",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/private/wall/clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.session.json",
+  "source_image": "clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.jpg",
+  "sha256": "3c696359b2b449386366290c586190cef92789ca47c1334c8f1fbf577ccb153f",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

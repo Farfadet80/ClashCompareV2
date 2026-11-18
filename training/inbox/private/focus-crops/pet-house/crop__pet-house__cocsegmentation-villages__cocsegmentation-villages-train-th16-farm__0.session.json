@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th16-farm__0.jpg",
+    "width": 582,
+    "height": 166
+  },
+  "metadata": {
+    "village_group": "focus-crop-pet-house-e00522915559",
+    "source": "focus-crop:cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "pet-house",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "pet-house": 1
+  },
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 97.65,
+      "y1": 28.28,
+      "x2": 485.9,
+      "y2": 139.09,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

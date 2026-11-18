@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+    "width": 445,
+    "height": 640
+  },
+  "metadata": {
+    "village_group": "focus-crop-wall-f42ce37a450e",
+    "source": "focus-crop:clashia-detectwall-v7-curated",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "wall",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "wall": 1
+  },
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 75.0,
+      "y1": 64.0,
+      "x2": 372.0,
+      "y2": 531.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

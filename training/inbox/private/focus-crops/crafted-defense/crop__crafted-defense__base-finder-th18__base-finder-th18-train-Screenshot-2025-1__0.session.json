@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+    "width": 389,
+    "height": 405
+  },
+  "metadata": {
+    "village_group": "focus-crop-crafted-defense-eb9bc7a1e620",
+    "source": "focus-crop:base-finder-th18",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "crafted-defense",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "crafted-defense": 1
+  },
+  "boxes": [
+    {
+      "class_id": 41,
+      "class_name": "crafted-defense",
+      "x1": 65.76,
+      "y1": 68.21,
+      "x2": 325.43,
+      "y2": 338.68,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

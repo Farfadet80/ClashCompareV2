@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-test-Screenshot__0.jpg",
+    "width": 567,
+    "height": 382
+  },
+  "metadata": {
+    "village_group": "focus-crop-pet-house-3cc750d747d0",
+    "source": "focus-crop:cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "pet-house",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "pet-house": 1
+  },
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 95.03,
+      "y1": 64.11,
+      "x2": 473.28,
+      "y2": 319.23,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

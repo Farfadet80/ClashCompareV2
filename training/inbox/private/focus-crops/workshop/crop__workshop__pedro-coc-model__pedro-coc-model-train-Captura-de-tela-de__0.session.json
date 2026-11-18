@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__workshop__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+    "width": 168,
+    "height": 180
+  },
+  "metadata": {
+    "village_group": "focus-crop-workshop-e373dcb7977d",
+    "source": "focus-crop:pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "workshop",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "workshop": 1
+  },
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 28.0,
+      "y1": 30.0,
+      "x2": 140.0,
+      "y2": 150.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

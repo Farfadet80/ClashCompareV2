@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__blacksmith__coc-all-traps__coc-all-traps-val-th9-farm-1678-jpg-rf-0__0.jpg",
+    "width": 1996,
+    "height": 111
+  },
+  "metadata": {
+    "village_group": "focus-crop-blacksmith-5d8e9908d2d4",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "blacksmith",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "blacksmith": 1
+  },
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 333.5,
+      "y1": 18.0,
+      "x2": 1664.5,
+      "y2": 92.0,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-defence-1595-jp__0.jpg",
+    "width": 1090,
+    "height": 819
+  },
+  "metadata": {
+    "village_group": "focus-crop-tornado-trap-ca6a23f770ba",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "tornado-trap",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "tornado-trap": 1
+  },
+  "boxes": [
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 182.59,
+      "y1": 137.12,
+      "x2": 909.55,
+      "y2": 683.58,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

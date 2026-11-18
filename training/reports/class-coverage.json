@@ -7,17 +7,15 @@
     "guardian-shrine",
     "squad-barracks"
   ],
-  "very_weak": [
-    "tornado-trap",
-    "giga-bomb"
-  ],
+  "very_weak": [],
   "weak": [
     "wall",
     "workshop",
     "pet-house",
-    "blacksmith",
     "hero-hall",
-    "crafted-defense"
+    "crafted-defense",
+    "tornado-trap",
+    "giga-bomb"
   ],
   "no_eval_split": [
     "town-hall-guardian",
@@ -182,9 +180,9 @@
     {
       "id": "wall",
       "class_id": 19,
-      "train": 51,
-      "val": 5,
-      "test": 7,
+      "train": 74,
+      "val": 11,
+      "test": 14,
       "status": "weak"
     },
     {
@@ -286,33 +284,33 @@
     {
       "id": "workshop",
       "class_id": 32,
-      "train": 110,
-      "val": 27,
-      "test": 17,
+      "train": 126,
+      "val": 29,
+      "test": 19,
       "status": "weak"
     },
     {
       "id": "pet-house",
       "class_id": 33,
-      "train": 77,
-      "val": 11,
-      "test": 12,
+      "train": 94,
+      "val": 13,
+      "test": 14,
       "status": "weak"
     },
     {
       "id": "blacksmith",
       "class_id": 34,
-      "train": 188,
-      "val": 51,
-      "test": 25,
-      "status": "weak"
+      "train": 213,
+      "val": 54,
+      "test": 28,
+      "status": "ok"
     },
     {
       "id": "hero-hall",
       "class_id": 35,
-      "train": 69,
-      "val": 5,
-      "test": 3,
+      "train": 73,
+      "val": 6,
+      "test": 5,
       "status": "weak"
     },
     {
@@ -358,9 +356,9 @@
     {
       "id": "crafted-defense",
       "class_id": 41,
-      "train": 121,
-      "val": 5,
-      "test": 5,
+      "train": 136,
+      "val": 6,
+      "test": 6,
       "status": "weak"
     },
     {
@@ -414,18 +412,18 @@
     {
       "id": "tornado-trap",
       "class_id": 48,
-      "train": 46,
-      "val": 7,
-      "test": 4,
-      "status": "very_weak"
+      "train": 63,
+      "val": 12,
+      "test": 8,
+      "status": "weak"
     },
     {
       "id": "giga-bomb",
       "class_id": 49,
-      "train": 27,
+      "train": 50,
       "val": 4,
-      "test": 2,
-      "status": "very_weak"
+      "test": 5,
+      "status": "weak"
     },
     {
       "id": "spiky-tower",

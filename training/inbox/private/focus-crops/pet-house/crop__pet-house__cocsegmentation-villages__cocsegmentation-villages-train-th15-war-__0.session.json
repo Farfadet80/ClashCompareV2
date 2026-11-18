@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__pet-house__cocsegmentation-villages__cocsegmentation-villages-train-th15-war-__0.jpg",
+    "width": 574,
+    "height": 329
+  },
+  "metadata": {
+    "village_group": "focus-crop-pet-house-0b57c2ff77d8",
+    "source": "focus-crop:cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "pet-house",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "pet-house": 1
+  },
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 96.15,
+      "y1": 66.5,
+      "x2": 479.14,
+      "y2": 329,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

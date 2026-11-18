@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-test-resized-C3F4__0.jpg",
+    "width": 148,
+    "height": 151
+  },
+  "metadata": {
+    "village_group": "focus-crop-hero-hall-9fe4521d0507",
+    "source": "focus-crop:nothing-clash-of-clans",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "hero-hall",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "hero-hall": 1
+  },
+  "boxes": [
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 25.08,
+      "y1": 26.07,
+      "x2": 124.22,
+      "y2": 127.19,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

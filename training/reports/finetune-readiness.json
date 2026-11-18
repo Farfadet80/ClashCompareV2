@@ -1,16 +1,13 @@
 {
-  "ready": false,
+  "ready": true,
   "mechanical_ready": true,
-  "decision": "conserver V5 — données insuffisantes pour FT utile",
+  "decision": "fine-tune données OK — attendre OK Jimmy",
   "jimmy_gate": {
     "train_authorized": false,
     "reason": "OK Jimmy explicite toujours requis (préférence projet). Ne pas lancer train_detector sans validation verbale."
   },
   "reasons": [],
-  "data_gaps": [
-    "tornado-trap train < 50 (46)",
-    "giga-bomb train < 50 (27)"
-  ],
+  "data_gaps": [],
   "thresholds": {
     "min_wall_train": 40,
     "min_wall_eval_boxes": 5,
@@ -27,8 +24,1112 @@
     "imgsz": 800,
     "augment_tta": true
   },
-  "clean_train_images": 1235,
+  "clean_train_images": 1372,
   "human_annotations": [
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-06eee900b7f1-06eee900b7f1.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-06eee900b7f1",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-2c1aa1b59b34-2c1aa1b59b34.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-2c1aa1b59b34",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-5928b12aa90b-5928b12aa90b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-5928b12aa90b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-5b2f2ee82f1e-5b2f2ee82f1e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-5b2f2ee82f1e",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-5d8e9908d2d4-5d8e9908d2d4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-5d8e9908d2d4",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-5e935bb06269-5e935bb06269.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-5e935bb06269",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-6c4dfdd94023-6c4dfdd94023.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-6c4dfdd94023",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-7554a5990e83-7554a5990e83.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-7554a5990e83",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-75ca571871f5-75ca571871f5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-75ca571871f5",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-77a636343fbc-77a636343fbc.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-77a636343fbc",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-7dac1014e66d-7dac1014e66d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-7dac1014e66d",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-89b7d84fd595-89b7d84fd595.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-89b7d84fd595",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-8e86adba4b9a-8e86adba4b9a.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-8e86adba4b9a",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-9721adaf25ca-9721adaf25ca.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-9721adaf25ca",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-97c5015d9696-97c5015d9696.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-97c5015d9696",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-9a615d6bf7c1-9a615d6bf7c1.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-9a615d6bf7c1",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-9e79e8f14407-9e79e8f14407.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-9e79e8f14407",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-b60d18ab4d4b-b60d18ab4d4b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-b60d18ab4d4b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-c0b0f5d6ba03-c0b0f5d6ba03.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-c0b0f5d6ba03",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-c7fd4d245668-c7fd4d245668.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-c7fd4d245668",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-cc320697c298-cc320697c298.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-cc320697c298",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-da6c5aebf829-da6c5aebf829.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-da6c5aebf829",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-db9e157103ec-db9e157103ec.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-db9e157103ec",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-de736c67c3f0-de736c67c3f0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-de736c67c3f0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-e18d90fe04a3-e18d90fe04a3.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-e18d90fe04a3",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-e74afa506f85-e74afa506f85.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-e74afa506f85",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-eb6f4bd10ef5-eb6f4bd10ef5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-eb6f4bd10ef5",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-f1782f88b8e6-f1782f88b8e6.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-f1782f88b8e6",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-f1b5498d7ab4-f1b5498d7ab4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-f1b5498d7ab4",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-f2d57f272a4f-f2d57f272a4f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-f2d57f272a4f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-ff110b35237f-ff110b35237f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-blacksmith-ff110b35237f",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-04c17add3636-04c17add3636.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-04c17add3636",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-04fe73f6c961-04fe73f6c961.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-04fe73f6c961",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-41814fb90aa8-41814fb90aa8.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-41814fb90aa8",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-4319a6afef55-4319a6afef55.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-4319a6afef55",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-47b319e80f53-47b319e80f53.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-47b319e80f53",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-63ebfef135d0-63ebfef135d0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-63ebfef135d0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-8454044f143b-8454044f143b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-8454044f143b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-97937f49540b-97937f49540b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-97937f49540b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-99d530af63d8-99d530af63d8.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-99d530af63d8",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-9f60a841bd7c-9f60a841bd7c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-9f60a841bd7c",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-acea334e6215-acea334e6215.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-acea334e6215",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-b13c7fadbdb2-b13c7fadbdb2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-b13c7fadbdb2",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-c076250f1e54-c076250f1e54.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-c076250f1e54",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-db09e956a041-db09e956a041.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-db09e956a041",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-dd9c9359c859-dd9c9359c859.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-dd9c9359c859",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-eb9bc7a1e620",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-crafted-defense-f88277c3bb93-f88277c3bb93.json",
+      "box_count": 1,
+      "village_group": "focus-crop-crafted-defense-f88277c3bb93",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-04cb1f1fe33d-04cb1f1fe33d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-04cb1f1fe33d",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-053a860323fb-053a860323fb.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-053a860323fb",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-0972d185c76c-0972d185c76c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-0972d185c76c",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-1efc5d4e167e-1efc5d4e167e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-1efc5d4e167e",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-206fb36bb59f-206fb36bb59f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-206fb36bb59f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-29e9f21a9c28-29e9f21a9c28.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-29e9f21a9c28",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-2ef38d4c75ad-2ef38d4c75ad.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-2ef38d4c75ad",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-3c24c569151b-3c24c569151b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-3c24c569151b",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-4c07c64288a5-4c07c64288a5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-4c07c64288a5",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-4e4fa905959a-4e4fa905959a.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-4e4fa905959a",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-618657b820a0-618657b820a0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-618657b820a0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-7972c98553f1-7972c98553f1.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-7972c98553f1",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-8ff7a652819b-8ff7a652819b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-8ff7a652819b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-9459ac42b99d-9459ac42b99d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-9459ac42b99d",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-94674843758d-94674843758d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-94674843758d",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-9bb44f591ea1-9bb44f591ea1.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-9bb44f591ea1",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-9c0e38e0b43c-9c0e38e0b43c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-9c0e38e0b43c",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-a51d4236d795-a51d4236d795.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-a51d4236d795",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-a70a8b4917e2-a70a8b4917e2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-a70a8b4917e2",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-ac8a3eb25254-ac8a3eb25254.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-ac8a3eb25254",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-acfc1df94ca5-acfc1df94ca5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-acfc1df94ca5",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-b343335ebbc2-b343335ebbc2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-b343335ebbc2",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-b5754942b7c4-b5754942b7c4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-b5754942b7c4",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-d8d2897e590b-d8d2897e590b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-d8d2897e590b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-e3aaaf7ca28d-e3aaaf7ca28d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-e3aaaf7ca28d",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-ee088f71da6e-ee088f71da6e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-ee088f71da6e",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-233f65e1303f-233f65e1303f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-233f65e1303f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-3072cf3c47ca-3072cf3c47ca.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-3072cf3c47ca",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-92ce6b4125b2",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-9fe4521d0507-9fe4521d0507.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-9fe4521d0507",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-a06026da3ff0-a06026da3ff0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-a06026da3ff0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-c1fc2a89a11f-c1fc2a89a11f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-c1fc2a89a11f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-hero-hall-f05d4cca57a4-f05d4cca57a4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-hero-hall-f05d4cca57a4",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-0674449dc304-0674449dc304.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-0674449dc304",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-073fdc96b9ee-073fdc96b9ee.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-073fdc96b9ee",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-0b57c2ff77d8-0b57c2ff77d8.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-0b57c2ff77d8",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-1010e0106896-1010e0106896.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-1010e0106896",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-150467d973cd-150467d973cd.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-150467d973cd",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-25f909d4a6dc-25f909d4a6dc.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-25f909d4a6dc",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-3cc750d747d0-3cc750d747d0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-3cc750d747d0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-56d1fb74d7d7-56d1fb74d7d7.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-56d1fb74d7d7",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-5cb1b20c37dc-5cb1b20c37dc.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-5cb1b20c37dc",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-9adc088ffc5b-9adc088ffc5b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-9adc088ffc5b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-a63ee07df904-a63ee07df904.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-a63ee07df904",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-adde403ff3c3-adde403ff3c3.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-adde403ff3c3",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-b6c5dfdfa226-b6c5dfdfa226.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-b6c5dfdfa226",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-bff5d00a9700-bff5d00a9700.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-bff5d00a9700",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-cd67825d079a-cd67825d079a.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-cd67825d079a",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-cdbe963dead1-cdbe963dead1.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-cdbe963dead1",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-cf057568c6c5-cf057568c6c5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-cf057568c6c5",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-d8813bf7bc1f-d8813bf7bc1f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-d8813bf7bc1f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-e00522915559-e00522915559.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-e00522915559",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-f220ce412f1d-f220ce412f1d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-f220ce412f1d",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-pet-house-f249f0a97744-f249f0a97744.json",
+      "box_count": 1,
+      "village_group": "focus-crop-pet-house-f249f0a97744",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-08ef32a51f8e-08ef32a51f8e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-08ef32a51f8e",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-1cc231198ce5-1cc231198ce5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-1cc231198ce5",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-1f2e9370c2ab-1f2e9370c2ab.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-1f2e9370c2ab",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-2378327fa029-2378327fa029.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-2378327fa029",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-24e67bf3cb20-24e67bf3cb20.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-24e67bf3cb20",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-27574458cd5e-27574458cd5e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-27574458cd5e",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-31540229f4f2-31540229f4f2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-31540229f4f2",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-41df50815d04-41df50815d04.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-41df50815d04",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-4e6614837f58-4e6614837f58.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-4e6614837f58",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-51094157a035-51094157a035.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-51094157a035",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-7db06f2e5c64-7db06f2e5c64.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-7db06f2e5c64",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-93cff5396e2f-93cff5396e2f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-93cff5396e2f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-94c05b450aa0-94c05b450aa0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-94c05b450aa0",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-950d5ffa0bbe-950d5ffa0bbe.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-950d5ffa0bbe",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-9e004e0dab0f-9e004e0dab0f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-9e004e0dab0f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-b25c1d61de5d-b25c1d61de5d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-b25c1d61de5d",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-c396ea930915-c396ea930915.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-c396ea930915",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-c3dfb0c53164-c3dfb0c53164.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-c3dfb0c53164",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-c9f54f16e915-c9f54f16e915.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-c9f54f16e915",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-ca2a2c411a40-ca2a2c411a40.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-ca2a2c411a40",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-ca6a23f770ba-ca6a23f770ba.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-ca6a23f770ba",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-e623fe568191-e623fe568191.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-e623fe568191",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-ea743d680b88-ea743d680b88.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-ea743d680b88",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-eeda996255bf-eeda996255bf.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-eeda996255bf",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-f23361d28923-f23361d28923.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-f23361d28923",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-tornado-trap-f86b8b63a119-f86b8b63a119.json",
+      "box_count": 1,
+      "village_group": "focus-crop-tornado-trap-f86b8b63a119",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-16e0eada7169-16e0eada7169.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-16e0eada7169",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-19290f993100-19290f993100.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-19290f993100",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-20f58f2ff6f3-20f58f2ff6f3.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-20f58f2ff6f3",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-21a5c8a262bd-21a5c8a262bd.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-21a5c8a262bd",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-2684179200fa-2684179200fa.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-2684179200fa",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-2775c38baece-2775c38baece.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-2775c38baece",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-30a57260e9cb-30a57260e9cb.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-30a57260e9cb",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-360ab9378625-360ab9378625.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-360ab9378625",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-3c696359b2b4-3c696359b2b4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-3c696359b2b4",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-53672ea46de7-53672ea46de7.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-53672ea46de7",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-67599d8169ea-67599d8169ea.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-67599d8169ea",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-68fd63704015-68fd63704015.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-68fd63704015",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-6cc8b93a14b5-6cc8b93a14b5.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-6cc8b93a14b5",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-6e386bfc4b6b-6e386bfc4b6b.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-6e386bfc4b6b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-70f30b7a0fbc-70f30b7a0fbc.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-70f30b7a0fbc",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-7ca68e729c1e-7ca68e729c1e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-7ca68e729c1e",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-84243adc1585-84243adc1585.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-84243adc1585",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-8bf91c1456c3-8bf91c1456c3.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-8bf91c1456c3",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-964778a63984-964778a63984.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-964778a63984",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-a0290f46697f-a0290f46697f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-a0290f46697f",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-a70248cf71cd-a70248cf71cd.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-a70248cf71cd",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-b255b56c0694-b255b56c0694.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-b255b56c0694",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-b4dea83b9a09-b4dea83b9a09.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-b4dea83b9a09",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-b762d0855063-b762d0855063.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-b762d0855063",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-bc306c973bf2-bc306c973bf2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-bc306c973bf2",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-bfaef8d08376-bfaef8d08376.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-bfaef8d08376",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-c042d9e517f7-c042d9e517f7.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-c042d9e517f7",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-cdef1c4540e4-cdef1c4540e4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-cdef1c4540e4",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-d8517f69f7f0-d8517f69f7f0.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-d8517f69f7f0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-d86e242799cf-d86e242799cf.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-d86e242799cf",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-ec56192bb7be-ec56192bb7be.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-ec56192bb7be",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-f30fb28c9ad1-f30fb28c9ad1.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-f30fb28c9ad1",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-f42ce37a450e",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-fa45d0b154a2-fa45d0b154a2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-fa45d0b154a2",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-feacc4d3856e-feacc4d3856e.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-feacc4d3856e",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-wall-ffa81a896f75-ffa81a896f75.json",
+      "box_count": 1,
+      "village_group": "focus-crop-wall-ffa81a896f75",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-046732ccf46c-046732ccf46c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-046732ccf46c",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-0e5693e332eb-0e5693e332eb.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-0e5693e332eb",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-1a66530e3dda-1a66530e3dda.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-1a66530e3dda",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-269a2ea6a250-269a2ea6a250.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-269a2ea6a250",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-3b472c1b2c4c-3b472c1b2c4c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-3b472c1b2c4c",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-3d92c8170f4f-3d92c8170f4f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-3d92c8170f4f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-4dc00c2d5a66-4dc00c2d5a66.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-4dc00c2d5a66",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-60dd3d3f93a3-60dd3d3f93a3.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-60dd3d3f93a3",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-8cef06221183-8cef06221183.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-8cef06221183",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-8e442dd3eda4-8e442dd3eda4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-8e442dd3eda4",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-96e3d62947a4-96e3d62947a4.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-96e3d62947a4",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-98dbdfb2bbce-98dbdfb2bbce.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-98dbdfb2bbce",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-9eaf7bb2efcc-9eaf7bb2efcc.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-9eaf7bb2efcc",
+      "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-a2b3e511332a-a2b3e511332a.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-a2b3e511332a",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-c49dafb13185-c49dafb13185.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-c49dafb13185",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-ca9f65e24435-ca9f65e24435.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-ca9f65e24435",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-dc69b6523732-dc69b6523732.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-dc69b6523732",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-e373dcb7977d-e373dcb7977d.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-e373dcb7977d",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-ea9963a1cca2-ea9963a1cca2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-ea9963a1cca2",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-workshop-fba35e8ed666-fba35e8ed666.json",
+      "box_count": 1,
+      "village_group": "focus-crop-workshop-fba35e8ed666",
+      "split": "train"
+    },
     {
       "file": "training/dataset/detector/provenance/human-private-clashia-detectwall-v7-curated-wall1-removebg-preview-adfdb36437d7.json",
       "box_count": 1,
@@ -344,10 +1445,7 @@
       "guardian-shrine",
       "squad-barracks"
     ],
-    "very_weak": [
-      "tornado-trap",
-      "giga-bomb"
-    ],
+    "very_weak": [],
     "no_eval_split": [
       "town-hall-guardian",
       "spiky-tower",

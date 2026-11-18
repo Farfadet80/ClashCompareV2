@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop__pet-house__coc-all-traps__coc-all-traps-test-th15-war-1471-jpg-rf-__0.jpg",
+    "width": 2035,
+    "height": 844
+  },
+  "metadata": {
+    "village_group": "focus-crop-pet-house-f249f0a97744",
+    "source": "focus-crop:coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "pet-house",
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "focus-crop-extract"
+  },
+  "expected_counts": {
+    "pet-house": 1
+  },
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 407.5,
+      "y1": 141.5,
+      "x2": 2035,
+      "y2": 704.5,
+      "status": "accepted",
+      "origin": "focus-crop-extract",
+      "review_note": "crop isolé depuis focus accepted"
+    }
+  ]
+}

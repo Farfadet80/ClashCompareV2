@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-workshop-96e3d62947a4",
+  "class_focus": "workshop",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210556_com-supercell-clashofclans_jpg.rf.20b6405f907d6eea993e798387694d00.session.json",
+  "source_image": "cocsegmentation-villages__train__Screenshot_20241027_210556_com-supercell-clashofclans_jpg.rf.20b6405f907d6eea993e798387694d00.jpg",
+  "sha256": "96e3d62947a4f42f6e28edb9aa50d0dd766cc94975f0a0d9a9addd936c96609a",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

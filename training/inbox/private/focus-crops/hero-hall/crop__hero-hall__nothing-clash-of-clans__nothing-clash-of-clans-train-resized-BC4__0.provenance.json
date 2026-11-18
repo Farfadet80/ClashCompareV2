@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-hero-hall-a06026da3ff0",
+  "class_focus": "hero-hall",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg.rf.922d27cd438bc95b4fbb9407614488e2.session.json",
+  "source_image": "nothing-clash-of-clans__train__resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg.rf.922d27cd438bc95b4fbb9407614488e2.jpg",
+  "sha256": "a06026da3ff02143422d8ca861f20f75d5a5347fb548a54e6974f5296558f9cf",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "village_group": "focus-crop-hero-hall-233f65e1303f",
+  "class_focus": "hero-hall",
+  "license": "CC BY 4.0",
+  "source_session": "training/inbox/public-reference/hero-hall/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-47-14_png.rf.bb6882b8b298c882a7650464c1738cf0.session.json",
+  "source_image": "pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-47-14_png.rf.bb6882b8b298c882a7650464c1738cf0.jpg",
+  "sha256": "233f65e1303f9f76e3b74787a6d567dfba4508c379a4510bacfe397ac7e1a7f0",
+  "usage": "pretrain_focus_crop",
+  "publish": false,
+  "notes": [
+    "Crop mono-objet depuis boîte focus accepted.",
+    "Exhaustive pour cette image isolée uniquement.",
+    "Ne pas republier l'image."
+  ]
+}
