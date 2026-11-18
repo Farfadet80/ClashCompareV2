@@ -9,10 +9,13 @@
     "village_group": "private-clashia-detectwall-v7-curated-Wall15_webp",
     "source": "clashia-detectwall-v7-curated",
     "license": "CC BY 4.0",
-    "exhaustive": false,
-    "draft": true,
+    "exhaustive": true,
+    "draft": false,
     "class_focus": "wall",
-    "private": true
+    "private": true,
+    "crop_promoted": true,
+    "crop_promote_reason": "wall sprite prep",
+    "crop_promote_date": "2026-11-18"
   },
   "expected_counts": null,
   "boxes": [
@@ -23,9 +26,9 @@
       "y1": 63.0,
       "x2": 529.0,
       "y2": 568.0,
-      "status": "rejected",
+      "status": "accepted",
       "origin": "private-wall-import-yolo",
-      "review_note": "hygiène auto: aire 49.44% > plafond 8%"
+      "review_note": "sprite mur isolé réparé/accepté"
     }
   ]
 }

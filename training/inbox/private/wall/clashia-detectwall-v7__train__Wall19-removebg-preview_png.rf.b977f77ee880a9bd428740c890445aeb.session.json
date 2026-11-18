@@ -14,7 +14,7 @@
     "class_focus": "wall",
     "private": true,
     "crop_promoted": true,
-    "crop_promote_reason": "removebg wall crop",
+    "crop_promote_reason": "wall sprite prep",
     "crop_promote_date": "2026-11-18"
   },
   "expected_counts": null,

@@ -1,0 +1,1540 @@
+{
+  "updated": "2026-11-18",
+  "dry_run": false,
+  "finetune": false,
+  "policy": {
+    "sprites_only": true,
+    "village_wall_only_not_imported": true,
+    "note": "Sprites mur OK pour val/test. Villages peters mur-only non importés (poison multi-classe). Pas de fine-tune."
+  },
+  "repair_totals": {
+    "promoted": 51,
+    "no_accepted_wall": 13,
+    "skip_not_sprite": 131,
+    "skip_village": 23
+  },
+  "promoted_count": 51,
+  "import_totals": {
+    "attempt_train": 31,
+    "fail": 38,
+    "attempt_val": 10,
+    "attempt_test": 10,
+    "ok": 13
+  },
+  "imports": [
+    {
+      "session": "clashia-detectwall-v7-curated__test__Wall11-removebg-preview_png.rf.c9a3b8247ddff683ac574b3c57afb988.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall11-removebg-previe-dd0997752992.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__test__Wall14-removebg-preview_png.rf.e8d2dd35689fc73bbee074b091c24a12.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall14-removebg-previe-fad815999d8d.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__test__Wall2_webp.rf.a1aaa7bb02ded62851ba87d8d7a033e2.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall2-webp-d8e91f40cbc9.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall1-removebg-preview_png.rf.65cb402aa6cee2523fbf4a6b0516954e.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall1-removebg-preview-adfdb36437d7.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall10-removebg-preview_png.rf.15a5d18cceebf995085717558907f1a0.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-private-clashia-detectwall-v7-curated-wall10-removebg-previe-82b073e02a87.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall10_webp.rf.e75b6ae46847cb98e54086416be5072f.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall10-webp-d65fa4c22574.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall14_webp.rf.69d889e0d89adf7d4fc8b93287ef81e7.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall14-webp-9049eaedc587.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall15-removebg-preview_png.rf.3726c76ce2212ef68a1cb667cb4f3fb8.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall15-removebg-previe-952702832f0d.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall15_webp.rf.a5c6839cdb6a5990a896167782e68417.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/val/human-private-clashia-detectwall-v7-curated-wall15-webp-5b5ebdf4569b.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall1_webp.rf.7910dc45b1d138de65b9723cd3c0e44e.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-private-clashia-detectwall-v7-curated-wall1-webp-965f630fbde7.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall2-removebg-preview_png.rf.33ee64c3c77525e8b0d6c9c8e6cf3e29.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall2-removebg-preview-1a3efe0c95aa.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall3-removebg-preview_png.rf.5042d8691eb497de7d4204d615a2d1ef.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall3-removebg-preview-10fb2b361e21.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall3_webp.rf.490340cc06316544ed2a9b34bc3a9379.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall3-webp-113c015055c5.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall4_webp.rf.4b8183ad3e29700dac4c71c10b93ffdc.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/val/human-private-clashia-detectwall-v7-curated-wall4-webp-4e7127a22f08.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall5-removebg-preview_png.rf.20ebf7ddb447445c08a1051fb8ae847e.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-private-clashia-detectwall-v7-curated-wall5-removebg-preview-8b9672427c94.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall5_webp.rf.4735336e4f2700dc7ecdefca0d4baf62.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall5-webp-114fae4aa600.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall6-removebg-preview_png.rf.50601a6520061d96edddac07b435b029.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall6-removebg-preview-4c4c403d42a5.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall6_webp.rf.5582c7b05af6fc3b4c352ab100298336.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall6-webp-3613a290197b.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall7-removebg-preview_png.rf.6d3189c8b0d5dc89d13ba4f79dae02f7.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall7-removebg-preview-324665aaa4a6.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall7_webp.rf.ef2bc036bce822b70776a4cf8408f3f7.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-private-clashia-detectwall-v7-curated-wall7-webp-1df84d6427a1.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__train__Wall9_webp.rf.12bc9322fd940e1b35c3ba6e56a4768d.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall9-webp-aea9b0b0be80.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__val__Wall11_webp.rf.a17c7f127e96f81e7c365d1685966424.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall11-webp-a39fc9696732.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__val__Wall4-removebg-preview_png.rf.5fa8f11a12627e7e436c2a5b30acef5a.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall4-removebg-preview-8769e39fdac5.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__val__Wall8-removebg-preview_png.rf.c538163ace87bfbf456f5c727a455a69.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall8-removebg-preview-694081601edb.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__val__Wall8_webp.rf.796a1da679cd380c8b4fac3e4beda436.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-private-clashia-detectwall-v7-curated-wall8-webp-90667655a7fc.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-curated-wall9-removebg-preview-8f99e0e6d8f9.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall1-removebg-preview_png.rf.c96fc3a3266284320d58cdebb6aae2a0.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall1-removebg-preview-png-29d7fbbd9392.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall10-removebg-preview_png.rf.2f3710ef0f844126790a6ec2cabf0bcb.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall10-removebg-preview-png-dde9e7fb432d.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall10_webp.rf.ee5441cec5338263993279b91efbda84.session.json",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-private-clashia-detectwall-v7-wall10-webp-fa197074259a.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-private-clashia-detectwall-v7-wall10-webp-fa197074259a.txt",
+      "sha256": "fa197074259a937624882e2ff04f8065d941ed58c39b772c1f4baa1ad89e7721",
+      "village_group": "private-clashia-detectwall-v7-Wall10_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:54:54.064304+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall12-removebg-preview_png.rf.b28f23fe6d4c5d87b23d5a98af2d2ffc.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall12-removebg-preview-png-56adde1b72a4.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall12_webp.rf.f37475d5598bc3345026fe6afee5d5d6.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall12-webp-d9b885627515.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall12-webp-d9b885627515.txt",
+      "sha256": "d9b88562751577841083336d982f7c53359e5b3b3731c56b9eb17db21f256f15",
+      "village_group": "private-clashia-detectwall-v7-Wall12_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:54:58.394221+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall14_webp.rf.f2acfb0e24f26df423434b3619e0c707.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall14-webp-7efff8126394.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall14-webp-7efff8126394.txt",
+      "sha256": "7efff812639439c1554c4fed9ee44a34235c0febc54d4f96bb81d55d88ed65a8",
+      "village_group": "private-clashia-detectwall-v7-Wall14_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:00.768382+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall15-removebg-preview_png.rf.8d4358eeac853fec454d4e5f24d14174.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall15-removebg-preview-png-52c4e2252903.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall15_webp.rf.cd602d38dcd7ceb9e29a9849d78a23ee.session.json",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-private-clashia-detectwall-v7-wall15-webp-a6e4f622acf8.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-private-clashia-detectwall-v7-wall15-webp-a6e4f622acf8.txt",
+      "sha256": "a6e4f622acf8e8bc8cbdbe6a10c7d7380133b3cebdc78720994458c0d89fdc9d",
+      "village_group": "private-clashia-detectwall-v7-Wall15_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:05.093367+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall16-removebg-preview_png.rf.c058b62b578d7dec4a8755b46806a16f.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall16-removebg-preview-png-37794f278ee0.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall16_webp.rf.6c56587aaf549ac50121efbb0563d70e.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall16-webp-aaf095c133e2.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall16-webp-aaf095c133e2.txt",
+      "sha256": "aaf095c133e2f986764ce04069746593c9435c84be6f9590098ab43782ca3bba",
+      "village_group": "private-clashia-detectwall-v7-Wall16_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:09.460006+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall17-removebg-preview_png.rf.7e3c796a6a29e34858f25539f7854291.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall17-removebg-preview-png-709783a478ce.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall17_webp.rf.7f24ccba809118b7d4159579a61a1d5b.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall17-webp-b0c6244f6b5a.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall17-webp-b0c6244f6b5a.txt",
+      "sha256": "b0c6244f6b5a3cc01e5b41ae2f81fc93fbc947bb9fdd00d46dae84398b2de8b6",
+      "village_group": "private-clashia-detectwall-v7-Wall17_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:13.750702+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall19-removebg-preview_png.rf.b977f77ee880a9bd428740c890445aeb.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall19-removebg-preview-png-5d9b980feca5.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall1_webp.rf.de783d55c1a2079dbc9e55ec92362278.session.json",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-private-clashia-detectwall-v7-wall1-webp-b6dec1034261.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-private-clashia-detectwall-v7-wall1-webp-b6dec1034261.txt",
+      "sha256": "b6dec103426150038262f3d8eb47e1885cebfece1d5eefe2c23b761a28eaa920",
+      "village_group": "private-clashia-detectwall-v7-Wall1_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:18.125012+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall2-removebg-preview_png.rf.db2723630358b6713594ac2a44b34217.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall2-removebg-preview-png-e4d1c40938f5.jpg']"
+      ]
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall3-removebg-preview_png.rf.59547e7156f01bf80183eb766ef9f4bf.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall3-removebg-preview-png-c60f6a8d6fae.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall3_webp.rf.ab7be94c2601a87a73e51bbc7bcd5817.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall3-webp-c7fad7b2db0f.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall3-webp-c7fad7b2db0f.txt",
+      "sha256": "c7fad7b2db0fe4557b9b358a6e6fc6256fd0cde47f43c0a05cec3f1ca5778c2e",
+      "village_group": "private-clashia-detectwall-v7-Wall3_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:24.704759+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall4_webp.rf.b1dc2011477ed2db61f31bfd5f4b9dd5.session.json",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-private-clashia-detectwall-v7-wall4-webp-74fc52e8b974.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-private-clashia-detectwall-v7-wall4-webp-74fc52e8b974.txt",
+      "sha256": "74fc52e8b974355d0776964f94c096a1b959ac3f16072cdb456919d5ea0601c7",
+      "village_group": "private-clashia-detectwall-v7-Wall4_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:26.894067+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall5-removebg-preview_png.rf.43cca01d7a45228e4b54021893008bf8.session.json",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall5-removebg-preview-png-409fbb8b4577.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall5_webp.rf.f46f36d6d51bdae5a43164da02a80cca.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall5-webp-8fa664e3ab5f.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall5-webp-8fa664e3ab5f.txt",
+      "sha256": "8fa664e3ab5f892b2d7bbadbda091b8a93e982eff8deb34c469ad1866f1ce468",
+      "village_group": "private-clashia-detectwall-v7-Wall5_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:31.173913+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall6-removebg-preview_png.rf.c9457ab174c7c2c99464f49e46a19271.session.json",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall6-removebg-preview-png-27760ac588ec.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall6_webp.rf.8938c42f45cc03b3dab66d2b1a5151d5.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall6-webp-2b6fb72aaa58.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall6-webp-2b6fb72aaa58.txt",
+      "sha256": "2b6fb72aaa58c91572e5852cc2c28375139f3c2ce5a2d792ee404f5fd9d22bb3",
+      "village_group": "private-clashia-detectwall-v7-Wall6_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:35.739192+00:00"
+    },
+    {
+      "session": "clashia-detectwall-v7__train__Wall7-removebg-preview_png.rf.86838d15cdf5f24690ff5c85c5ddb49b.session.json",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall7-removebg-preview-png-0d8d5b21e194.jpg']"
+      ]
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall7_webp.rf.efba63e77c087d526b8c5d74b0240c7d.session.json",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-private-clashia-detectwall-v7-wall7-webp-ec001fb69e01.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-private-clashia-detectwall-v7-wall7-webp-ec001fb69e01.txt",
+      "sha256": "ec001fb69e013d7232be6361f841578ee1edf66d18fd042552d90f9352fae486",
+      "village_group": "private-clashia-detectwall-v7-Wall7_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:39.955255+00:00"
+    },
+    {
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\wall\\clashia-detectwall-v7__train__Wall9_webp.rf.4f44b7bf6677312f73dd39f1eb376c04.session.json",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-private-clashia-detectwall-v7-wall9-webp-34929be0e0c2.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-private-clashia-detectwall-v7-wall9-webp-34929be0e0c2.txt",
+      "sha256": "34929be0e0c270112def362328ede30f78f0abe91b0bd9c170bab351977d916c",
+      "village_group": "private-clashia-detectwall-v7-Wall9_webp",
+      "source": "clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T20:55:42.089861+00:00"
+    }
+  ],
+  "repaired": [
+    {
+      "path": "clashia-detectwall-v7-curated__test__Wall11-removebg-preview_png.rf.c9a3b8247ddff683ac574b3c57afb988.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__test__Wall11-removebg-preview_png.rf.c9a3b8247ddff683ac574b3c57afb988.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__test__Wall14-removebg-preview_png.rf.e8d2dd35689fc73bbee074b091c24a12.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__test__Wall14-removebg-preview_png.rf.e8d2dd35689fc73bbee074b091c24a12.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__test__Wall18-removebg-preview_png.rf.e05f13c0fca4d7c6d5db8f99a00d5656.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__test__Wall2_webp.rf.a1aaa7bb02ded62851ba87d8d7a033e2.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__test__Wall2_webp.rf.a1aaa7bb02ded62851ba87d8d7a033e2.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall1-removebg-preview_png.rf.65cb402aa6cee2523fbf4a6b0516954e.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall1-removebg-preview_png.rf.65cb402aa6cee2523fbf4a6b0516954e.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall10-removebg-preview_png.rf.15a5d18cceebf995085717558907f1a0.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall10-removebg-preview_png.rf.15a5d18cceebf995085717558907f1a0.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall10_webp.rf.e75b6ae46847cb98e54086416be5072f.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall10_webp.rf.e75b6ae46847cb98e54086416be5072f.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall12-removebg-preview_png.rf.ac85858548026c37eb4ee7ed81e4bd06.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall12_webp.rf.8c96fbb2d6469388bc08720edfb1665e.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall13_webp.rf.5f98f185c8813c44cafca547967b01b2.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall14_webp.rf.69d889e0d89adf7d4fc8b93287ef81e7.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall14_webp.rf.69d889e0d89adf7d4fc8b93287ef81e7.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall15-removebg-preview_png.rf.3726c76ce2212ef68a1cb667cb4f3fb8.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall15-removebg-preview_png.rf.3726c76ce2212ef68a1cb667cb4f3fb8.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall15_webp.rf.a5c6839cdb6a5990a896167782e68417.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall15_webp.rf.a5c6839cdb6a5990a896167782e68417.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall16-removebg-preview_png.rf.3209eb5f776d1d780f6f49b3a65c5531.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall16_webp.rf.24c42b00700632d7d2131af3d7916993.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall17-removebg-preview_png.rf.4435d50b00f9339fa5f563ba751c0121.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall17_webp.rf.7110dbdafb55cd88a874cc96ee46d86a.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall19-removebg-preview_png.rf.237f7caab462c11df0939b99dcb71101.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall1_webp.rf.7910dc45b1d138de65b9723cd3c0e44e.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall1_webp.rf.7910dc45b1d138de65b9723cd3c0e44e.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall2-removebg-preview_png.rf.33ee64c3c77525e8b0d6c9c8e6cf3e29.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall2-removebg-preview_png.rf.33ee64c3c77525e8b0d6c9c8e6cf3e29.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall3-removebg-preview_png.rf.5042d8691eb497de7d4204d615a2d1ef.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall3-removebg-preview_png.rf.5042d8691eb497de7d4204d615a2d1ef.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall3_webp.rf.490340cc06316544ed2a9b34bc3a9379.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall3_webp.rf.490340cc06316544ed2a9b34bc3a9379.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall4_webp.rf.4b8183ad3e29700dac4c71c10b93ffdc.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall4_webp.rf.4b8183ad3e29700dac4c71c10b93ffdc.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall5-removebg-preview_png.rf.20ebf7ddb447445c08a1051fb8ae847e.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall5-removebg-preview_png.rf.20ebf7ddb447445c08a1051fb8ae847e.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall5_webp.rf.4735336e4f2700dc7ecdefca0d4baf62.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall5_webp.rf.4735336e4f2700dc7ecdefca0d4baf62.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall6-removebg-preview_png.rf.50601a6520061d96edddac07b435b029.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall6-removebg-preview_png.rf.50601a6520061d96edddac07b435b029.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall6_webp.rf.5582c7b05af6fc3b4c352ab100298336.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall6_webp.rf.5582c7b05af6fc3b4c352ab100298336.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall7-removebg-preview_png.rf.6d3189c8b0d5dc89d13ba4f79dae02f7.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall7-removebg-preview_png.rf.6d3189c8b0d5dc89d13ba4f79dae02f7.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall7_webp.rf.ef2bc036bce822b70776a4cf8408f3f7.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall7_webp.rf.ef2bc036bce822b70776a4cf8408f3f7.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__train__Wall9_webp.rf.12bc9322fd940e1b35c3ba6e56a4768d.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__train__Wall9_webp.rf.12bc9322fd940e1b35c3ba6e56a4768d.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall11_webp.rf.a17c7f127e96f81e7c365d1685966424.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__val__Wall11_webp.rf.a17c7f127e96f81e7c365d1685966424.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall13-removebg-preview_png.rf.fac892e1018b9ffba1233987cc7ba32f.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall18_webp.rf.cecb96095f11af105d37df9a334572b6.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall19_webp.rf.db276cfee89c6edf62200cbaa6aa4abf.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall4-removebg-preview_png.rf.5fa8f11a12627e7e436c2a5b30acef5a.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__val__Wall4-removebg-preview_png.rf.5fa8f11a12627e7e436c2a5b30acef5a.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall8-removebg-preview_png.rf.c538163ace87bfbf456f5c727a455a69.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__val__Wall8-removebg-preview_png.rf.c538163ace87bfbf456f5c727a455a69.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall8_webp.rf.796a1da679cd380c8b4fac3e4beda436.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__val__Wall8_webp.rf.796a1da679cd380c8b4fac3e4beda436.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7-curated__val__Wall9-removebg-preview_png.rf.19a39f9c9a9bd2f03757f74d2e8c42be.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_0_png.rf.62bbd05eb5eb0c4e505b369b4421cacf.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_0_png.rf.8b70fe43032995d14310335c9ccda4a2.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_1_png.rf.84384ab0af7a421830f67b2655b1c2ac.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_1_png.rf.d1b576bc2b8c3e648577b34ed72456ca.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_27_png.rf.15b196c6d59647735e52eece43438a97.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_27_png.rf.a84424ae6547241da8260ac98f4d4b02.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_49_png.rf.7be638c5b6bdd44b3b52acdab3ed38f0.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_49_png.rf.f7128fa3726f4396e373beb3f91fa801.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_5_png.rf.eb95771f1003580c1b370978434fefbb.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__train_wall_5_png.rf.fe57914af086fa1ff836ed668ffb3c97.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall1-removebg-preview_png.rf.c96fc3a3266284320d58cdebb6aae2a0.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall1-removebg-preview_png.rf.c96fc3a3266284320d58cdebb6aae2a0.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall10-removebg-preview_png.rf.2f3710ef0f844126790a6ec2cabf0bcb.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall10-removebg-preview_png.rf.2f3710ef0f844126790a6ec2cabf0bcb.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall10_webp.rf.ee5441cec5338263993279b91efbda84.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall10_webp.rf.ee5441cec5338263993279b91efbda84.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall12-removebg-preview_png.rf.b28f23fe6d4c5d87b23d5a98af2d2ffc.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall12-removebg-preview_png.rf.b28f23fe6d4c5d87b23d5a98af2d2ffc.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall12_webp.rf.f37475d5598bc3345026fe6afee5d5d6.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall12_webp.rf.f37475d5598bc3345026fe6afee5d5d6.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall13_webp.rf.9deeb466e2d14ce7e54ecbdb41b25db6.session.json",
+      "action": "no_accepted_wall"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall14_webp.rf.f2acfb0e24f26df423434b3619e0c707.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall14_webp.rf.f2acfb0e24f26df423434b3619e0c707.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall15-removebg-preview_png.rf.8d4358eeac853fec454d4e5f24d14174.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall15-removebg-preview_png.rf.8d4358eeac853fec454d4e5f24d14174.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall15_webp.rf.cd602d38dcd7ceb9e29a9849d78a23ee.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall15_webp.rf.cd602d38dcd7ceb9e29a9849d78a23ee.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall16-removebg-preview_png.rf.c058b62b578d7dec4a8755b46806a16f.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall16-removebg-preview_png.rf.c058b62b578d7dec4a8755b46806a16f.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall16_webp.rf.6c56587aaf549ac50121efbb0563d70e.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall16_webp.rf.6c56587aaf549ac50121efbb0563d70e.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall17-removebg-preview_png.rf.7e3c796a6a29e34858f25539f7854291.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall17-removebg-preview_png.rf.7e3c796a6a29e34858f25539f7854291.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall17_webp.rf.7f24ccba809118b7d4159579a61a1d5b.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall17_webp.rf.7f24ccba809118b7d4159579a61a1d5b.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall19-removebg-preview_png.rf.b977f77ee880a9bd428740c890445aeb.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall19-removebg-preview_png.rf.b977f77ee880a9bd428740c890445aeb.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall1_webp.rf.de783d55c1a2079dbc9e55ec92362278.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall1_webp.rf.de783d55c1a2079dbc9e55ec92362278.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall2-removebg-preview_png.rf.db2723630358b6713594ac2a44b34217.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall2-removebg-preview_png.rf.db2723630358b6713594ac2a44b34217.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall3-removebg-preview_png.rf.59547e7156f01bf80183eb766ef9f4bf.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall3-removebg-preview_png.rf.59547e7156f01bf80183eb766ef9f4bf.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall3_webp.rf.ab7be94c2601a87a73e51bbc7bcd5817.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall3_webp.rf.ab7be94c2601a87a73e51bbc7bcd5817.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall4_webp.rf.b1dc2011477ed2db61f31bfd5f4b9dd5.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall4_webp.rf.b1dc2011477ed2db61f31bfd5f4b9dd5.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall5-removebg-preview_png.rf.43cca01d7a45228e4b54021893008bf8.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall5-removebg-preview_png.rf.43cca01d7a45228e4b54021893008bf8.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall5_webp.rf.f46f36d6d51bdae5a43164da02a80cca.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall5_webp.rf.f46f36d6d51bdae5a43164da02a80cca.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall6-removebg-preview_png.rf.c9457ab174c7c2c99464f49e46a19271.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall6-removebg-preview_png.rf.c9457ab174c7c2c99464f49e46a19271.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall6_webp.rf.8938c42f45cc03b3dab66d2b1a5151d5.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall6_webp.rf.8938c42f45cc03b3dab66d2b1a5151d5.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall7-removebg-preview_png.rf.86838d15cdf5f24690ff5c85c5ddb49b.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall7-removebg-preview_png.rf.86838d15cdf5f24690ff5c85c5ddb49b.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall7_webp.rf.efba63e77c087d526b8c5d74b0240c7d.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall7_webp.rf.efba63e77c087d526b8c5d74b0240c7d.jpg"
+    },
+    {
+      "path": "clashia-detectwall-v7__train__Wall9_webp.rf.4f44b7bf6677312f73dd39f1eb376c04.session.json",
+      "action": "promoted",
+      "accepted": 1,
+      "image": "clashia-detectwall-v7__train__Wall9_webp.rf.4f44b7bf6677312f73dd39f1eb376c04.jpg"
+    },
+    {
+      "path": "evans-home-village-building-detector__train__th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train-5_jpg.rf.85b69f2ada127ab545593081df7fae60.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train11_jpg.rf.03b4f0d8a32e5bbf90a714d6575832c3.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train12_jpg.rf.bbaadbae86f71ce766e9ff926b4951ce.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train14_jpg.rf.5747df44210f63725963b5adf37fd5dd.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train16_jpg.rf.933b2d9e38dbfee45305dbe9c060ee63.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train19_jpg.rf.102759621aebe52c2ba7ae88e9fc2917.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train20_jpg.rf.6ab923479a694b6037372f319f4e19cd.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train21_jpg.rf.43dbd3225f43ac6dd6bb61357623f4d5.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train22_jpg.rf.cd3d7cc6f7cb7495275dc76ad4b3d9ec.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train23_jpg.rf.8ad3ba4e905a01e7ee7735e9917613c0.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train26_png.rf.4e7158d1fe4acee15f0ba10772baa10a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train28_png.rf.518382dc4b675626d3f13eb6ec733657.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train29-1-_png.rf.4bf0fd84185b87160d353a789adabdfb.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train29-2-_png.rf.4aed4cf5110f3076c5ac8ee7f09a2613.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train29-5-_png.rf.9adf33949d7f61586c83337364294a87.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train29-7-_png.rf.0aa62e63b96d68c5672d222fe0eabb2a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train2_jpg.rf.4592d7948dccf883a91d3dd3c22d6025.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train30-1-_jpg.rf.5c4056d0abb2a89870b26539cccbdeca.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train30-6-_jpg.rf.43d7e0fed3fa37bb20144cca9c70ec0d.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train30-7-_jpg.rf.823a84ccbcce0c6ebac6b8eec45e1e90.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train30-8-_jpg.rf.5e49f410a29449fba77ae7287733427c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train31-wall3-1-_png.rf.ca3db3d46bf0adaa083a0e74e7a6b129.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train31-wall3-2-_png.rf.3abdb4e656982e83fba6a5eb520c06ab.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train31-wall3-3-_png.rf.81c47267d976cd36b134523d3084a341.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train32-wall4-2-_png.rf.3633f8c65ca5418e2217532279f81eca.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train33-wall5-1-_png.rf.1abcec05f1dee7047781d171c515f5b4.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train34-wall6-2-_png.rf.7d3749a3445747c40323d051fe26fb44.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train34-wall6-3-_png.rf.614ff10ab3835d6079828ab4a7195fbb.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train35-wall7-2-_png.rf.07093f867130b878bc70ff89f6dc2020.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train36-wall8-1-_png.rf.4edadaf9582d10ff88886529213b5bf4.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train3_jpg.rf.566badbe171da8fdbff3a2dd3eb007c4.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train40-wall13-2-_png.rf.31d1178644c255588eb26ac4ab6ffa0d.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train41-wall14-2-_png.rf.6f91d1d9dd1790581279885d3a0a7b4d.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train43-wall16-2-_png.rf.1742abad7dfe11e185121b1e32bfab17.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-11-_jpg.rf.84815c3509273c77bcc733dbad171bbf.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-14-_jpg.rf.1d2049d77ffd80c6e7f45e1979d0360a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-15-_jpg.rf.1b2ea85b474a2a1be4fb17c5bce2874b.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-16-_jpg.rf.0b87521dba1c680af4f77b219f4a5844.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-18-_jpg.rf.7314ad540bf3b5d28f7cdaa8630b7ac6.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-19-_jpg.rf.1d512bae2ded01ea62295e65287f3730.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-19-_png.rf.2e05fd00f0822c3e8c05106e0adc2a8e.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-2-_png.rf.916e34181c7ab5dcefe0db5537ec212f.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-21-_jpg.rf.3c99fe564f884ef779abdb841834fc3a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-21-_png.rf.24f55477925efd2aa0b4763b95f4be62.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-24-_png.rf.9c2ea97f0f30745ef0505b3a48c355e5.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-3-_jpg.rf.8b80b8e8e69f450ec2efc3d1f6a8efb4.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-6-_png.rf.04ce56b8b0d758b347d4008e18800289.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-8-_jpg.rf.82697b8b3f8a8fab71db4ae769445590.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-8-_png.rf.a3abdc592e4c5f0f90abc866e400cd37.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train45-9-_jpg.rf.5dd850ddcfdd44fa7e5e083ddf03c670.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-11-_png.rf.546f90cf014711a6ebf0841451e33166.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-16-_png.rf.743579b98e88214b90ee566bb41fb8b6.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-17-_png.rf.21bd23cfd5ae78526a5c0c75cd3fcf5c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-21-_png.rf.1d335d9bdd8260d33fc6a842f2573505.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-24-_png.rf.dca4684fbd2bb233b44b0ed5a9dbe4e7.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-28-_png.rf.9c124a06fb9aef903b7d75b3e5636359.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-32-_png.rf.77b1d0de941bec1c9687cd255d68843e.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-38-_png.rf.50be87c0375ed8c69b47dfca21d2e639.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train46-41-_png.rf.b5c758cce420f8ece4859407fbf0acbd.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6-curated__train__train47-1-_png.rf.597ffb49f70092a6b157285a7d77e09a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train-5_jpg.rf.10dbee20c887bc2010c828fe5aeb92a5.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train10_jpg.rf.8cded8071c63d32e3ba44a1af63ab9ee.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train10_jpg.rf.ba7f6b0e1e073101fdeae97afedac7a0.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train11_jpg.rf.d6b57ad04d9b520121b8d3da66855ac1.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train14_jpg.rf.2c2a41668062e58e5c430a01e3204f61.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train16_jpg.rf.c3bc5804bcffaf6cb7645874beb35fe1.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train19_jpg.rf.b0d5702ec1e990bba59949a1792fe91c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train20_jpg.rf.503efdeb671e904fa2c192102d62b49e.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train21_jpg.rf.52ccb7f569bf36bdda9ffe8062e6e70c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train22_jpg.rf.1a47abb4d2d2972ef575c4c3a1352a4b.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train23_jpg.rf.b1a21da3788e7fb1852c9daa763bd887.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train28_png.rf.76a851c0825d57d5f0cf71a3ed6cda58.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train29-1-_png.rf.8b9aa4f43c6e411791280863d2720339.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train29-2-_png.rf.b314649afdf675377237506b9b8e1f44.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train29-5-_png.rf.b5021ac3c0173ea74cec59d6a233fd5f.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train29-7-_png.rf.b6396b787e793679674587afc90ee23a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train2_jpg.rf.ed6ec2072ea6b4ceccd7ba86f0a88639.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train30-1-_jpg.rf.f00e4cabb78cd2526988a06efbb689dc.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train30-6-_jpg.rf.dd5cdaa310de9007a33c23a432dfefc6.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train30-7-_jpg.rf.a368d97fccff82f433be041666b16b39.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train30-8-_jpg.rf.0ab22114a4fd0d69345ad103aa12b5e1.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train31-wall3-1-_png.rf.867fb239e3a2fe01a3284473cdcac707.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train31-wall3-2-_png.rf.3f66347a0fd2bdacb758a517590211cb.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train31-wall3-3-_png.rf.8bbe672abb4228c2180313411d774264.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train32-wall4-2-_png.rf.46b1b1ced40b12ddba6a9498b53248f3.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train32-wall4-2-_png.rf.f3fefb5d043f674b4c52df40da83c6a0.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train33-wall5-1-_png.rf.58d1c8226e5d1a4b147de771340863d6.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train34-wall6-2-_png.rf.46334201d52b1d817b078dce3f9cc2d3.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train34-wall6-2-_png.rf.858931e071d05a06a8a6abeb247e16ad.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train34-wall6-3-_png.rf.412d322bad8b6697eeb51a97e82934f3.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train35-wall7-1-_png.rf.3005428d1cc64e7c975462df82737a8f.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train35-wall7-1-_png.rf.c06461a1eb1403ffda7423b552d0c7e9.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train35-wall7-2-_png.rf.79ba64b39b6557bbfaceef0996a3098a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train35-wall7-3-_png.rf.8d5be62ab67bd6c9581218f93ad1bb80.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train35-wall7-3-_png.rf.9d205da70f8a473f6d4dbcdba2feb912.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train35-wall7-3-_png.rf.bde50714ea1842b4796a2df327fc6681.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train36-wall8-1-_png.rf.0dd608566bcbeca6f45a9e458997ee6a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train36-wall8-1-_png.rf.827874fe9ec311cb22e15f436bb1f996.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train36-wall8-2-_png.rf.a144062126da6e15068e887bad39c069.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train36-wall8-2-_png.rf.aaf266bed49084c6030e008b3eb8a774.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train37-wall9-1-_png.rf.616e73ecbda51d9c8ba2e9dc0ba74617.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train37-wall9-1-_png.rf.e1291bbac7abb5880ebdb52b90557243.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train37-wall9-2-_png.rf.49b2c6c13aa49d436a55fe6037fc84d5.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train37-wall9-2-_png.rf.62e4e41434afb3d841d86905b5738e8c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train37-wall9-2-_png.rf.7111ed53c10b34b294cef55262943723.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train38-wall10-2-_png.rf.427683d99ef3eb152dc6f268082bdecc.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train38-wall10-2-_png.rf.7b8987b72bacdc7d21efc04a6291a920.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train38-wall10-3-_png.rf.340687be86bebbd259c3c4e94f3f9f13.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall-11-2-_png.rf.2f86561aa15a97de9d6028fb8b21e9be.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall-11-2-_png.rf.680b868f876e9014ffab0615300bbf05.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall-11-2-_png.rf.f4666cf3b9c7bb5f69408ac6a6875311.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall-11-3-_png.rf.07cf1e67e2030bfa77679a4587d9aaad.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall-11-3-_png.rf.47ddc0048c216ed9ea6b5dd544255a3f.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall-11-3-_png.rf.9ca01a9217f17d6339d0324387ffce50.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall12-3-_png.rf.2f8588c1198ed09d005d5e33ae56acf1.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train39-wall12-3-_png.rf.cfa2382bdbb7b89df2894b3a45369974.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train3_jpg.rf.accd5f303bde4c3f84872f4215f20a0c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train40-wall13-1-_png.rf.53cb8a1dff25a1dad42240b225fc2c1a.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train40-wall13-1-_png.rf.c0093f73b2169e86cde8f8d62921172e.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "kiet-walls-v6__train__train40-wall13-2-_png.rf.7f139b1cba8fd70cf7568ac9d2d3a38c.session.json",
+      "action": "skip_not_sprite"
+    },
+    {
+      "path": "peters-walls-16-17-v2__test__frame_101_png.rf.b57a090650e92445064cd7a9f1908937.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__test__frame_140_png.rf.296461edb91f198c25d8d648ffe65bd9.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_0_png.rf.33a04863093b44b880080e05e738b199.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_100_png.rf.7fe3187b3980431eecf5e87a76c34809.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_102_png.rf.53c3da1fb73964754a8e5038d99478b8.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_108_png.rf.e5aedb86e7a3eb39dff882d44b3d7273.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_10_png.rf.c273bdad970616da2a25c6c8ea0fa364.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_117_png.rf.f2c498c8f581df0ecdbaacd4102ba489.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_11_png.rf.dc5d82e5909179930f17fd9c5ab2e852.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_120_png.rf.81569a2799543a35a3533211a73f2731.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_121_png.rf.c312138b8589039a37fa5167c2f49dbc.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_122_png.rf.37da5bd1fa840f049b7fff0762f9c5b0.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_123_png.rf.b90960c51db784f19ed0f6a1aeab2c96.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_124_png.rf.d183771e45f64469d65aee6cd5c922ca.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_126_png.rf.abca1e7934b072c5b0abb8410c763173.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_12_png.rf.67af6072d5a89b5ce40e4f5bb4dd7e33.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_138_png.rf.c1358df2b173d16bc4ca31dca6c82d2c.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_13_png.rf.4f91448e543c26d68ab0086975b37cf0.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_141_png.rf.91e0209569e4be92f54493e884ad3185.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_14_png.rf.5ff5a583b2a7d9ade0d527d1a15b07d8.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__train__frame_1_png.rf.1832120e5ddfa36e3db82d078b7c8cda.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__val__frame_106_png.rf.3e7f3709dff3146b42ce82b70f02d8e6.session.json",
+      "action": "skip_village"
+    },
+    {
+      "path": "peters-walls-16-17-v2__val__frame_110_png.rf.432ec0481bb49d48c4d145e5a3b1fa02.session.json",
+      "action": "skip_village"
+    }
+  ]
+}
