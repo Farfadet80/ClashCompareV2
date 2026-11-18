@@ -146,6 +146,12 @@ def main() -> None:
     parser.add_argument("session", type=Path)
     parser.add_argument("image", type=Path)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--split",
+        choices=("train", "val", "test"),
+        default="train",
+        help="Split detector cible (défaut: train).",
+    )
     args = parser.parse_args()
 
     if not args.image.is_file() or args.image.suffix.lower() not in IMAGE_SUFFIXES:
@@ -162,8 +168,8 @@ def main() -> None:
 
     metadata = session["metadata"]
     stem = f"human-{slug(metadata['village_group'])}-{digest[:12]}"
-    target_image = DATASET / "images" / "train" / f"{stem}{args.image.suffix.lower()}"
-    target_label = DATASET / "labels" / "train" / f"{stem}.txt"
+    target_image = DATASET / "images" / args.split / f"{stem}{args.image.suffix.lower()}"
+    target_label = DATASET / "labels" / args.split / f"{stem}.txt"
     provenance = DATASET / "provenance" / f"{stem}.json"
     width, height = validated["width"], validated["height"]
     labels = []
@@ -186,6 +192,7 @@ def main() -> None:
         "source": metadata["source"],
         "license": metadata["license"],
         "exhaustive": True,
+        "split": args.split,
         "counts": validated["counts"],
         "box_count": len(labels),
         "imported_at": datetime.now(timezone.utc).isoformat(),

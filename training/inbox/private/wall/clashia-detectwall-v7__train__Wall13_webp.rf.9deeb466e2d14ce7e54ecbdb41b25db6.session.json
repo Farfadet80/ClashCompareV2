@@ -23,9 +23,9 @@
       "y1": 0.0,
       "x2": 469.5,
       "y2": 0.0,
-      "status": "accepted",
+      "status": "rejected",
       "origin": "private-wall-import-yolo",
-      "review_note": "géométrie OK — session toujours draft/non exhaustive"
+      "review_note": "sprite prep: aire 0.00% hors [0,60%]"
     }
   ]
 }
