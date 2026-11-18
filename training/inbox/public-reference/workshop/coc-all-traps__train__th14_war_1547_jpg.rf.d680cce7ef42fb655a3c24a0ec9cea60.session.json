@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__train__th14_war_1547_jpg.rf.d680cce7ef42fb655a3c24a0ec9cea60.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th14_war_1547_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 839.0,
+      "y1": 402.5,
+      "x2": 2519.0,
+      "y2": 1170,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 606.0,
+      "y1": 562.5,
+      "x2": 1816.0,
+      "y2": 1170,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 605.5,
+      "y1": 558.0,
+      "x2": 1816.5,
+      "y2": 1170,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

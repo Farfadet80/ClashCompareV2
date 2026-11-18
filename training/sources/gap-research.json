@@ -1,5 +1,12 @@
 {
   "updated": "2026-11-18",
+  "phase_c1_c2": {
+    "status": "done_collection_staging",
+    "report": "training/reports/visual-collection-c1c2-20261118.json",
+    "finetune_readiness": false,
+    "staged_images": 245,
+    "th19_labeled_public": 0
+  },
   "target_classes": {
     "reserved_th19_yolo": [
       "spiky-tower",
@@ -35,6 +42,7 @@
       "status": "watching_no_labeled_public_dataset",
       "verified": [
         "2026-11-18 : aucun export Roboflow/GitHub annoté Spiky/Firecracker/Shrine/Squad Barracks trouvé.",
+        "Re-check C1-C2 : Roboflow Universe search « clash of clans th19 » sans classes Spiky/Firecracker/Shrine/Squad.",
         "Schéma YOLO local réservé (classes 50–53) sans dataIds inventés.",
         "Collecte autonome documentée dans training/sources/visual-collection-manifest.json."
       ],
@@ -123,14 +131,16 @@
       "images": 57,
       "classes_count": 136,
       "task": "object-detection",
-      "status": "manual_reference_only",
+      "status": "rejected_after_visual_review",
       "verified": [
         "Project class list inspected in browser and contains Little_Guardian.",
         "Only one unique screenshot / three augmented boxes were reported in the source lineage.",
-        "Dataset mixes buildings, troops, spells, UI and misspelled classes."
+        "Dataset mixes buildings, troops, spells, UI and misspelled classes.",
+        "2026-11-18 C1-C2 : image ouverte — UI tray troupes/héros, pas Guardian village ; boîtes marquées rejected."
       ],
-      "risk": "One unique Guardian example cannot make the class learnable; importing partial mixed labels would create false negatives.",
-      "next_step": "Use only to help locate a manually reviewed seed example; collect multiple original owner screenshots of both Longshot and Smasher."
+      "local_path": "training/reference-only/town-hall-guardian/",
+      "risk": "One unique non-village UI example cannot make the class learnable; importing it would poison town-hall-guardian.",
+      "next_step": "Collecter des captures gameplay licenciées Longshot/Smasher/Logger ; ignorer ce seed pour le train."
     },
     {
       "id": "coc-wall-detection",

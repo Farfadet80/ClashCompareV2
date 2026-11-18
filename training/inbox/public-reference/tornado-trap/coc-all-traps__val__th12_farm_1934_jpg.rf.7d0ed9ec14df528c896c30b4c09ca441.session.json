@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__val__th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th12_farm_1934_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 1022.5,
+      "y1": 274.0,
+      "x2": 2532,
+      "y2": 824.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 558.15,
+      "y1": 320.83,
+      "x2": 1703.17,
+      "y2": 936.43,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

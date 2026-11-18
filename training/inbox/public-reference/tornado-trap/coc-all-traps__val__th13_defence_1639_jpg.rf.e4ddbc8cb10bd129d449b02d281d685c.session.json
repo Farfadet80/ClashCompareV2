@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "image": {
+    "name": "coc-all-traps__val__th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+    "width": 2532,
+    "height": 1170
+  },
+  "metadata": {
+    "village_group": "public-coc-all-traps-th13_defence_1639_jpg",
+    "source": "coc-all-traps",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "tornado-trap"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 945.5,
+      "y1": 217.0,
+      "x2": 2532,
+      "y2": 655.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 48,
+      "class_name": "tornado-trap",
+      "x1": 368.0,
+      "y1": 289.0,
+      "x2": 1064.0,
+      "y2": 877.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 616.0,
+      "y1": 457.5,
+      "x2": 1834.0,
+      "y2": 1170,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

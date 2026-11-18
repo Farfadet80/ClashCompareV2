@@ -1,0 +1,1837 @@
+{
+  "updated": "2026-11-18",
+  "phase": "C1-C2",
+  "train_now": false,
+  "invent_dataids": false,
+  "policy": {
+    "jimmy_captures": "not_required",
+    "train_now": false,
+    "invent_dataids": false,
+    "keep_v5_baseline": true,
+    "min_boxes_before_finetune_per_weak_class": 20,
+    "min_independent_villages_per_new_class": 8,
+    "annotation": "exhaustive via training/annotator/ then import_annotation_session.py",
+    "promotion_gate": "check_finetune_readiness.py ready=true AND reserved test vs V5 800+TTA improves"
+  },
+  "staged_images_by_class": {
+    "blacksmith": 40,
+    "crafted-defense": 40,
+    "giga-bomb": 27,
+    "hero-hall": 15,
+    "pet-house": 39,
+    "tornado-trap": 40,
+    "town-hall-guardian": 3,
+    "wall": 1,
+    "workshop": 40
+  },
+  "staged_images_total": 245,
+  "draft_target_boxes": {
+    "blacksmith": 137,
+    "crafted-defense": 40,
+    "giga-bomb": 27,
+    "hero-hall": 43,
+    "pet-house": 82,
+    "tornado-trap": 44,
+    "town-hall-guardian": 3,
+    "wall": 12,
+    "workshop": 110
+  },
+  "draft_target_boxes_total": 498,
+  "unique_families_by_class": {
+    "blacksmith": 40,
+    "crafted-defense": 40,
+    "giga-bomb": 27,
+    "hero-hall": 15,
+    "pet-house": 39,
+    "tornado-trap": 40,
+    "town-hall-guardian": 1,
+    "wall": 1,
+    "workshop": 40
+  },
+  "reference_seeds": [
+    "training/reference-only/town-hall-guardian/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.162189924bd7efbc46a9ccf2792a3c59.jpg",
+    "training/reference-only/town-hall-guardian/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.b4fb38ceff0873515afce56bc7913811.jpg",
+    "training/reference-only/town-hall-guardian/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.ded0daf70cb186f57d9f719a4a41518d.jpg"
+  ],
+  "th19_watch": {
+    "checked_on": "2026-11-18",
+    "classes": [
+      "spiky-tower",
+      "firecracker-tower",
+      "guardian-shrine",
+      "squad-barracks"
+    ],
+    "public_labeled_datasets_found": 0,
+    "images_staged_for_train": 0,
+    "notes": [
+      "Aucun dataset Roboflow/HuggingFace/GitHub annoté Spiky/Firecracker/Shrine/Squad Barracks au 2026-11-18.",
+      "Blog Supercell = reference-only (copyright) — non copié dans inbox train.",
+      "Fandom Spiky Tower = HTTP 403 au fetch ; pages encore instables."
+    ],
+    "reference_only_dirs": [
+      "training/reference-only/th19-visual/spiky-tower",
+      "training/reference-only/th19-visual/firecracker-tower",
+      "training/reference-only/th19-visual/guardian-shrine",
+      "training/reference-only/th19-visual/squad-barracks"
+    ]
+  },
+  "notes": [
+    "Images déjà présentes dans detector (doublons SHA) : refile annotateur pour exhaustivité, pas nouvel import brut.",
+    "Sessions .session.json = brouillons pending ; import_annotation_session refusera tant que exhaustive≠true.",
+    "Aucun fine-tune lancé."
+  ],
+  "details": {
+    "blacksmith": [
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_defence_1792_jpg.rf.f6bde84fa2eb824bf7e90f7b05156a5b.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_defence_1792_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_defence_1903_jpg.rf.a915b6a80438bf67b6461a8455d90413.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_defence_1903_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_defence_1904_jpg.rf.230755f3779f9ac86773bf63b8b8db01.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_defence_1904_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_farm_1793_jpg.rf.0ba00c1ad7f0459eb8c980e8701b67d7.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_farm_1793_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1985_jpg.rf.211584d2a013116f941c05ee5ca12c54.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_war_1985_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1987_jpg.rf.b76f84d35b5646bc5f6779d1d03b0edc.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_war_1987_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1990_jpg.rf.24ed0a268bd4f63e78b8f0559beba23f.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_war_1990_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_1874_jpg.rf.8c9689e3417c268cb69fcd169ecde574.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_farm_1874_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_1884_jpg.rf.27c8f6971bc87fe1c20d3140bea0a57f.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_farm_1884_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_1943_jpg.rf.b521f5f55b9d7773c5304dd08f85d21f.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_farm_1943_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_farm_2000_jpg.rf.a0ee51c89756363a664c169e18a2ac72.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_farm_2000_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_1986_jpg.rf.5d9e39525bac9b56bafc851f01469eaa.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_war_1986_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_2011_jpg.rf.57a37045c4db8c4e384af4961819a928.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_war_2011_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_2014_jpg.rf.41f6bcfa608e3ca7a48f9cc16c59004c.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_war_2014_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_2017_jpg.rf.a86077f3a3455ca81aa373a1e95ec7de.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_war_2017_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_defence_1679_jpg.rf.9254eb51d710eae892918e79c75c1b7f.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_defence_1679_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_war_1676_jpg.rf.b41601c17e92878634b7f39c439b4667.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_war_1676_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_war_1699_jpg.rf.6e3b08a391ed65f0081be14a5c412f11.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_war_1699_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th9_war_1701_jpg.rf.0a467ed0a5591541950207a15f3a5005.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_war_1701_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th10_farm_1975_jpg.rf.8c451a67529fae080768f0fe28b0be80.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_farm_1975_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th10_war_1988_jpg.rf.e75a9edcbd2c1c389bdfcee4be157447.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_war_1988_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_defence_1897_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_defence_1666_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1677_jpg.rf.ce51b17544930f35b498bd5171d0c3f5.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_defence_1677_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1680_jpg.rf.7d1de7c05a59c0421f0157fff51a04f2.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_defence_1680_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_farm_1678_jpg.rf.098050d8953f17a8f38c24f8cbd6e886.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_farm_1678_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_farm_1698_jpg.rf.cdecbc0dc868bc5776cc0022bc6436d3.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_farm_1698_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_war_1700_jpg.rf.b39aa57564503120b44c62f983703153.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th9_war_1700_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__test__th10_war_1984_jpg.rf.56ec0fdbab9d7c61094e4e3428898db1.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th10_war_1984_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/coc-all-traps__test__th8_war_2010_jpg.rf.051981660b333225b320b5e1b7437c62.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th8_war_2010_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-50-52_png.rf.05537c4c0eee58a6103486891015e2d8.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-28-02-50-52_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210500_com-supercell-clashofclans_jpg.rf.c13e2a2416087832f60ed696cb0c1aeb.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210500_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210600_com-supercell-clashofclans_jpg.rf.a31d49427c876b9ae85adedf85582f2a.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210600_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210611_com-supercell-clashofclans_jpg.rf.3d60aac6321e50bb92aa216376473995.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210611_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210614_com-supercell-clashofclans_jpg.rf.fc8d85c53aa972dd66a5685bc2a94eac.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210614_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210619_com-supercell-clashofclans_jpg.rf.0e4847a3418e3b4bbaec948eecf947ae.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210619_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241027_210622_com-supercell-clashofclans_jpg.rf.fab0ae7a99bb138211b769a94c436369.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210622_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153409_com-supercell-clashofclans_jpg.rf.61ac1045b8249152c16247999524defe.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241028_153409_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153420_com-supercell-clashofclans_jpg.rf.ba0a36f8fdcfac26f5223728816442f5.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241028_153420_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/blacksmith/cocsegmentation-villages__train__Screenshot_20241028_153423_com-supercell-clashofclans_jpg.rf.5c9506c975cc977ee7a9097c1d98e6db.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241028_153423_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      }
+    ],
+    "crafted-defense": [
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-10_jpg.rf.9ba015ce3474a628bd04c2f7e1fba6bb.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-10_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-13_jpg.rf.14bf91fd042a3ad55b3fde215c5e76a6.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-13_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-2_jpg.rf.83447b3233d5f81bd42c9eadb3a9a232.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-2_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-3_jpg.rf.82bcafd62847d5ae573cb333b0407f24.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-3_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-4_jpg.rf.16cee22765052704ba292c1360361204.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-4_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-5_jpg.rf.73ef9a0acade92f2d16ea3c82881a0a3.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-5_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-6_jpg.rf.4e4e6186979491ad0b3eae12df5a1f0f.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-6_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-7_jpg.rf.587dbc866bdb4e8108a13e59aa77d507.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-7_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-8_jpg.rf.1a1961b933f01fd4c304224024a94c19.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-8_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-9_jpg.rf.2d072ec78533bfdc220b5e7ed7e612f7.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-9_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-31-28-87_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.58d30d52e0ea0996f5a779ad87900dae.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-15-31-28-87_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-53-34-41_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.7d29f8f53f90ba14301627896dde6090.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-15-53-34-41_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-54-14-81_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.2ab761421fe3829b1f37483976cc0b58.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-15-54-14-81_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-58-49-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.21b109607c49c1c20ebf86fdcd7b75e9.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-15-58-49-07_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-15-59-42-91_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.3653d036f0fe2a76710eb4a31870ae26.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-15-59-42-91_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-26-30-23_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.5936c29333d25cb8abd067eedc0df35c.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-26-30-23_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-28-39-66_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.85082fefd708052d6324353a2582cf0f.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-28-39-66_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-06-12_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.7587aabd6153d9256a71b4ba235ae56f.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-29-06-12_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-34-61_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1286d1cc4ec9111f1b0607745020d85a.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-29-34-61_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-29-57-83_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.12f14e290c5b72712836da77b22f4f1f.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-29-57-83_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.44787c81c9a9426c754f08a080b03185.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-30-52-85_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.39ebc0ca710d87c1fb165fdcc21c4213.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-30-52-85_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-31-18-21_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.3b556a364a6c79c9435df0e0a6d52357.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-31-18-21_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-31-38-35_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1d25bed6bd020be97bf9e4a5e6e349e3.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-31-38-35_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-32-21-55_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.1a6af1aee6d1717b71aa53397df4ad0f.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-32-21-55_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-32-43-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.02d1327b540c5d02fa43e21505409e26.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-32-43-07_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-11-23_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.27fb835dd8be060d87ea2c5d617c03ae.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-33-11-23_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-37-02_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.0e9df6c5a97dba53e2dac5d7af12d2bd.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-33-37-02_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-33-57-02_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.06cc50df25c5be4ae0dc33910a5a77f5.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-33-57-02_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-34-22-29_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.00ae073f51987773a98b897a01bb2f2a.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-34-22-29_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-35-39-27_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.6f130d12b4434718af81da9e6d037611.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-35-39-27_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.80b726b138e4acf8fa14750ce2957b06.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-28-15_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.59b6ed41f46e18025a4b42bf533157d2.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-36-28-15_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__Screenshot_2025-12-15-20-36-53-59_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.148d07595633240c631a844964a4350c.jpg",
+        "source_key": "base-finder-th18",
+        "family": "Screenshot_2025-12-15-20-36-53-59_b864ea0b534de5941fd13c5c04397e2b_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__th18_defence_19_jpg.rf.5cf0fa320f958ca2e535c47162e01167.jpg",
+        "source_key": "base-finder-th18",
+        "family": "th18_defence_19_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__th18_troll_8_jpg.rf.225932b91c9a46e1ffd91f9c82af113d.jpg",
+        "source_key": "base-finder-th18",
+        "family": "th18_troll_8_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__th18_war_26_jpg.rf.442cf5d3e94aa4f7dbd7d5b32115561a.jpg",
+        "source_key": "base-finder-th18",
+        "family": "th18_war_26_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__val__18-11_jpg.rf.ef2118d8b5d25c81cb48969ba8529643.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-11_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__val__18-12_jpg.rf.898c135999fabdc809d4a6a6420b8a73.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-12_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/crafted-defense/base-finder-th18__val__18-14_jpg.rf.e0a01de15c488938f4c8840c51af4338.jpg",
+        "source_key": "base-finder-th18",
+        "family": "18-14_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      }
+    ],
+    "giga-bomb": [
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0111_jpg.rf.7906a341e9ea444d7686c023cf7047bc.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0111_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0114_jpg.rf.ebafc773bf82dd67630807308cbd1f16.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0114_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0115_jpg.rf.df369fa370c4d33ab7a2421f81288d5e.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0115_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0116_jpg.rf.5bd1b5189ca1fb59097e3e2cd5fe39fe.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0116_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0118_jpg.rf.23593960820aa509387e775d23dbf735.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0118_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0119_jpg.rf.237f2a2612b0f5b099f128d6feac5291.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0119_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0120_jpg.rf.8882a2ec541c42ac42c380d656fc5980.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0120_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0121_jpg.rf.09bbf4f44dfdacb150ead1975b2f22f3.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0121_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0122_jpg.rf.e4214bd4920a35a6f0f4ec4eaacac6b0.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0122_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0124_jpg.rf.f30c0b5c57495bd4d20b50473a911ce2.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0124_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0126_jpg.rf.0f4fdffd205aee7b4cba0292371b7977.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0126_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0127_jpg.rf.04389e474e0afa79a0600f94920bd12c.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0127_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0128_jpg.rf.5f381f97d8a731c05176046c2dba5d71.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0128_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0129_jpg.rf.b5a47918e11e3592bac83afdad9396ac.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0129_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0130_jpg.rf.96bc333e88d579b2b1682dd44dedd6a3.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0130_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0131_jpg.rf.7cb2f902fd697d325b502a9ce3317d79.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0131_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0132_jpg.rf.077997e5c108041177cda9b1ca258f72.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0132_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0135_jpg.rf.eef402c8b483db75cb576b9e526de0fe.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0135_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0136_jpg.rf.120e73baaf0d4cbbe2fd37259d2963f5.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0136_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0138_jpg.rf.6fa416f6dc98f20005d4a5598fa91063.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0138_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0148_jpg.rf.d69d864ff1eb764ecf8cfea5183f9c6a.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0148_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__val__IMG_0112_jpg.rf.2bfed1e3be03d940018685018b695035.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0112_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__val__IMG_0113_jpg.rf.a39f53c5d8966844e8a21a75739eb565.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0113_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__val__IMG_0123_jpg.rf.2782c33728f6165f7ffc2a6236695739.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0123_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__val__IMG_0133_jpg.rf.a15444ca0307ee01d1528c5503577fe9.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0133_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__test__IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0125_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__test__IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0134_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      }
+    ],
+    "hero-hall": [
+      {
+        "image": "training/inbox/public-reference/hero-hall/glenn-th18-gigabomb__train__IMG_0117_jpg.rf.efce1b6dd98d6190d36a6c97b2630479.jpg",
+        "source_key": "glenn-th18-gigabomb",
+        "family": "IMG_0117_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-47-14_png.rf.bb6882b8b298c882a7650464c1738cf0.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-29-19-47-14_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843198021_jpg.rf.9dc11101a26cfc856463658e5493097a.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1741843198021_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843255280_jpg.rf.7d54666e3f80f556175345fd43aa52c5.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1741843255280_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843316371_jpg.rf.2cf64013c7f9581111797efcc1ede98d.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1741843316371_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843385465_jpg.rf.1fbc02c14324a5d2864dbd1717ba2c3d.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1741843385465_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843442788_jpg.rf.3843aebb0463a0235c4bcb966ac8aa2f.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1741843442788_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1746721685430_jpg.rf.021d48a3016cde69057b3e0425459233.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1746721685430_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1746721685599_jpg.rf.8d80cc1dc005472440175808dc75952b.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1746721685599_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1746907573854_jpg.rf.4ab11ec9bf3948de479b914402370635.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1746907573854_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1748295654958_jpg.rf.c88b6d50b9416e7fba9318904f043744.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1748295654958_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1751659240998_jpg.rf.26317b4dda2ecad193db547cef16a426.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1751659240998_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg.rf.922d27cd438bc95b4fbb9407614488e2.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__val__resized-1751818960944_jpg.rf.d86ca5877405a134ecf9c258d07b0f88.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-1751818960944_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__test__resized-C3F48734-8B00-4A61-97B6-F111EC87C81C_jpg.rf.208aeb23f21afc348c9ad20e04751473.jpg",
+        "source_key": "nothing-clash-of-clans",
+        "family": "resized-C3F48734-8B00-4A61-97B6-F111EC87C81C_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      }
+    ],
+    "pet-house": [
+      {
+        "image": "training/inbox/public-reference/pet-house/coc-all-traps__train__th15_war_1475_jpg.rf.3485cf835f079eefb92e41c72ee17894.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_war_1475_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/coc-all-traps__val__th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_defence_1544_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/coc-all-traps__test__th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_war_1471_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-54-17_png.rf.227d73e7c026677c243c1d58a0a3356f.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-28-02-54-17_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__Screenshot_20241027_210454_com-supercell-clashofclans_jpg.rf.c117f416f82d5f8b73bb662f7e6972d3.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210454_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__Screenshot_20241027_210514_com-supercell-clashofclans_jpg.rf.47eedd81798fe867c44854425cf009e5.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210514_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th14_defence_1695_jpg.rf.55a1874780c2411ce26f5d05275a8b22.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_defence_1695_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th14_farm_1548_jpg.rf.05954c7dbbf16d3666ca31d30f3c2ed6.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_farm_1548_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th14_war_1545_jpg.rf.604cd9872c8ee9dd3441b0170fb9889a.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_war_1545_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th14_war_1546_jpg.rf.d3f253cb1177aefcdc7c3504a3cea79f.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_war_1546_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th14_war_1594_jpg.rf.72a0d30ea38e5ec3121fe83cfb9ef72b.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_war_1594_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th14_war_1691_jpg.rf.f0821ed45cdb97bfc891fd804ae0e4f5.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_war_1691_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_farm_1473_jpg.rf.78fffc3a8b9358c424590219f3c01ee1.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_farm_1473_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_farm_1477_jpg.rf.08e437efb35cd41cc8381cd996ae6719.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_farm_1477_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_farm_1478_jpg.rf.ed244f9c26e06e9aa537d3178647956b.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_farm_1478_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_farm_1479_jpg.rf.5e0a5f0e23a39eaa187e6c2074a9a2d0.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_farm_1479_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_farm_1480_jpg.rf.6ae18671eea02f5d7cf6c309212f237b.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_farm_1480_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_war_1470_jpg.rf.9b363d6ccb9dc946d5136607a7137ba8.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_war_1470_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th15_war_1476_jpg.rf.08d3d7945b218ea94724fb70202efa79.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_war_1476_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th16_defence_1854_jpg.rf.6d8d0c075d217d22f801c3105dec60a3.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_defence_1854_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th16_defence_1856_jpg.rf.b95b1ee533152071edd8ec4ecc3a5416.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_defence_1856_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th16_farm_1855_jpg.rf.7015c756a2ca068615a938d7bf2cbd16.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_farm_1855_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th16_war_1818_jpg.rf.ce4b8b4dc69c98b609fac11f25082d00.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_war_1818_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th16_war_1872_jpg.rf.575ce7b4fbb0df92fef97f9981a01ad2.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_war_1872_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__Screenshot_20241027_210434_com-supercell-clashofclans_jpg.rf.61cecc162d66e193854a1e7b41db4906.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210434_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__Screenshot_20241027_210449_com-supercell-clashofclans_jpg.rf.7a60c501104b00f509a2f81e7a9031cf.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210449_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__Screenshot_20241027_210457_com-supercell-clashofclans_jpg.rf.8ac1e412ed091c0d8865d185f7df248c.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210457_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__Screenshot_20241027_210506_com-supercell-clashofclans_jpg.rf.707c0105f46dfa3ed918e8f8cdc60632.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210506_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__th14_farm_1542_jpg.rf.2d7879f77b9296889c0f37a0096e5230.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th14_farm_1542_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__th15_war_1474_jpg.rf.622b4dff3355f692223c0a742df97e87.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th15_war_1474_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__th16_defence_1871_jpg.rf.ce763bb025240b17528be5b70b9a2648.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_defence_1871_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__th16_war_1821_jpg.rf.8e737950ac97579dafa760a3485f6555.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_war_1821_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__val__th16_war_1873_jpg.rf.bbeb02f4ddcddd69a9e7e765f86fe557.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_war_1873_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__Screenshot_20241027_210431_com-supercell-clashofclans_jpg.rf.9a27dfb1960b7766100b7956f9bdbcc7.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210431_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__Screenshot_20241027_210509_com-supercell-clashofclans_jpg.rf.e23067e6e513df9ded1a424f50d7498a.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210509_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__Screenshot_20241027_210512_com-supercell-clashofclans_jpg.rf.e39c98012ffd724eff4b3de393a4a408.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210512_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__Screenshot_20241028_154115_com-supercell-clashofclans_jpg.rf.730b135de98504ecb046449463567523.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241028_154115_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__th16_defence_1857_jpg.rf.0a4bc773c7e15d8c9f6ac322539c6709.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_defence_1857_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/pet-house/cocsegmentation-villages__test__th16_war_1822_jpg.rf.3a7dc2a00fe17f523a105c3866127e08.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "th16_war_1822_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      }
+    ],
+    "tornado-trap": [
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_farm_1827_jpg.rf.52b21c454e8e23d9ec42853bff7b8973.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_farm_1827_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_farm_1858_jpg.rf.092691771e6a8aa7bf31e4136f8216ce.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_farm_1858_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_farm_1989_jpg.rf.8e958c84535b34d3d04b0dfa93fa84bb.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_farm_1989_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_war_1963_jpg.rf.69ff232041dbcb1fc8477aaa4355402e.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_war_1963_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_war_1995_jpg.rf.69e04d357a3de4ae76eae7b24702400e.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_war_1995_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_war_1998_jpg.rf.006143a90490de4a2ea6398f40f751f4.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_war_1998_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th11_war_1999_jpg.rf.5feaf5ff17be681190797eb0addb3032.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_war_1999_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_farm_1925_jpg.rf.9981509175ca73bde27ce9c0fedf0f6c.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_farm_1925_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_farm_1926_jpg.rf.c1d2cf425aec6d1474c5d9c639cffde7.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_farm_1926_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_farm_1931_jpg.rf.e0040ffaf3053dd6b3531f57e62f79f3.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_farm_1931_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_war_1929_jpg.rf.61acfa0e8b511827e127a2ca58cea720.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_war_1929_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_war_1930_jpg.rf.3b591f81333428ca2d9dc5d18339202b.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_war_1930_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_war_1936_jpg.rf.07c8e0c0c3b00014c4b89372144f5a81.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_war_1936_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th13_defence_1595_jpg.rf.8725b41a6ce5566fb02e3fa9e181c090.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_defence_1595_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th13_war_1604_jpg.rf.b05ef875994ef496ef148ed298ed2298.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_war_1604_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th13_war_1757_jpg.rf.69378bdc6e832290ac5247f8183e7e48.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_war_1757_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th13_war_1870_jpg.rf.e9b5abc21421c442418940e6fd2aa7be.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_war_1870_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th14_defence_1543_jpg.rf.10f8cb6e523b3488684ff078b7832b2e.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_defence_1543_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th14_farm_1542_jpg.rf.b4206e6c8786bcab5a4b122631e24f6c.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_farm_1542_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 5
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th14_war_1546_jpg.rf.1835885255bad2acd9e8de5db71a42ac.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_war_1546_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 5
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th14_war_1594_jpg.rf.d3ac569567c4732217b5aa8343c21a96.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_war_1594_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 5
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th14_war_1691_jpg.rf.e47dbcbc32aeb3c2ab9bbbf38d8abf10.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_war_1691_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_farm_1477_jpg.rf.be886483a58df776c4df79e277247143.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_farm_1477_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_farm_1479_jpg.rf.cbe18d0ee58e0a6abd27653fc020c387.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_farm_1479_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_farm_1480_jpg.rf.40b21ce70311378b5c77b3d6988016d8.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_farm_1480_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_war_1474_jpg.rf.a995d2c075ab1d24e1171be70412d028.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_war_1474_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_war_1476_jpg.rf.df66f227954db59f8f7d8349aa332bb1.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_war_1476_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th16_defence_1857_jpg.rf.0c1164f120c0eb0cd1585f568f3e8497.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_defence_1857_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th16_farm_1855_jpg.rf.840df315cb0f839bb2a8cd98fab55805.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_farm_1855_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th16_war_1818_jpg.rf.1cee3215c7b2275531cbc7d7a9bd3a30.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_war_1818_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th16_war_1821_jpg.rf.f83d90f188924e4206c323771465a268.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_war_1821_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th16_war_1873_jpg.rf.e8619f75115501ac2ec8430ae94f120d.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_war_1873_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th11_defence_1840_jpg.rf.30b6a7a7d93e256d45a1ea2df0965aa1.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_defence_1840_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th11_farm_1837_jpg.rf.bfc096c53cf76310302cb16c16f3f191.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_farm_1837_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th12_defence_2008_jpg.rf.d858ea14f1e6c15180e06a69aa9641a2.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_defence_2008_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th12_farm_1934_jpg.rf.7d0ed9ec14df528c896c30b4c09ca441.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_farm_1934_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th12_war_1935_jpg.rf.3da541582c05ba5b6efff266ae6b0949.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_war_1935_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th13_defence_1639_jpg.rf.e4ddbc8cb10bd129d449b02d281d685c.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_defence_1639_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__val__th13_farm_1592_jpg.rf.0c4ab5cbb4c66bafecded99f0dca9763.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_farm_1592_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/tornado-trap/coc-all-traps__test__th11_war_2007_jpg.rf.50d0cb2b2b6ef9b512c3f7d9a22ee356.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th11_war_2007_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      }
+    ],
+    "town-hall-guardian": [
+      {
+        "image": "training/inbox/public-reference/town-hall-guardian/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.162189924bd7efbc46a9ccf2792a3c59.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-29-19-39-56_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/town-hall-guardian/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.b4fb38ceff0873515afce56bc7913811.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-29-19-39-56_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      },
+      {
+        "image": "training/inbox/public-reference/town-hall-guardian/pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.ded0daf70cb186f57d9f719a4a41518d.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-29-19-39-56_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 1
+      }
+    ],
+    "wall": [
+      {
+        "image": "training/inbox/public-reference/wall/evans-home-village-building-detector__train__th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314.jpg",
+        "source_key": "evans-home-village-building-detector",
+        "family": "th6-hybrid-base-1-_jpg",
+        "focus_boxes": 12,
+        "all_target_boxes": 12
+      }
+    ],
+    "workshop": [
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th13_war_1617_jpg.rf.f16746bb1252d0d98511866664eb3e8b.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_war_1617_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th14_war_1547_jpg.rf.d680cce7ef42fb655a3c24a0ec9cea60.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_war_1547_jpg",
+        "focus_boxes": 2,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th15_farm_1473_jpg.rf.38fe88b9338eb1d2e85c0f0c5cc43bf8.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_farm_1473_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th15_war_1470_jpg.rf.0c537c0bf46723f70a58986ca0fb6707.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_war_1470_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th16_defence_1854_jpg.rf.e6a7233659db202e3a89f282eb11e5ae.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_defence_1854_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th16_defence_1856_jpg.rf.7efd93222ba047d657d52d6533057d67.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_defence_1856_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th16_defence_1871_jpg.rf.42590d4bf4c4cf0468c1dec97018f1ee.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_defence_1871_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__train__th16_war_1872_jpg.rf.10442b32b3032b1f4ccfae3dc3dca838.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_war_1872_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__val__th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th12_war_1928_jpg",
+        "focus_boxes": 2,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__val__th13_defence_2009_jpg.rf.0d50abe1d3bdbbf0de5345f49b40bdcb.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_defence_2009_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__val__th15_farm_1478_jpg.rf.87e73812bf3bfe31fdb1cc821af1561d.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th15_farm_1478_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__test__th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_defence_1642_jpg",
+        "focus_boxes": 2,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__test__th13_war_1608_jpg.rf.d30574b69c60006884d3803575752727.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th13_war_1608_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__test__th14_defence_1695_jpg.rf.cc473367852645b4c88e943c60374700.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_defence_1695_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__test__th14_farm_1548_jpg.rf.dc0072d818b85c7e0241514f6dfc1947.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_farm_1548_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__test__th14_war_1545_jpg.rf.9cce617bb03310424e2933b61cda278e.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th14_war_1545_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/coc-all-traps__test__th16_war_1822_jpg.rf.7514c8c571050d5ecca478a1539f8173.jpg",
+        "source_key": "coc-all-traps",
+        "family": "th16_war_1822_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-51-03_png.rf.041afa8b54b086abb4f04bfab91c77ab.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-28-02-51-03_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-53-47_png.rf.adbdd300906f0e0308513fc42a25d7c1.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-28-02-53-47_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 4
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-53-57_png.rf.1a5a496b9195ed72173d991c3f638a1d.jpg",
+        "source_key": "pedro-coc-model",
+        "family": "Captura-de-tela-de-2026-05-28-02-53-57_png",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210349_com-supercell-clashofclans_jpg.rf.e769529a1112117823e94ead81571763.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210349_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210354_com-supercell-clashofclans_jpg.rf.861c96a70869cd8b46f5123c5262f0d5.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210354_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210358_com-supercell-clashofclans_jpg.rf.77748f6580a840d4561b6ddcfe65ce8d.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210358_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210406_com-supercell-clashofclans_jpg.rf.10beaebf7f2b2d0e4b9c3092677b6b32.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210406_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210416_com-supercell-clashofclans_jpg.rf.cd647cee7ae5dfa432e9cc2068ced38c.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210416_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210420_com-supercell-clashofclans_jpg.rf.869b8d49c316b1ce192121e0575280d3.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210420_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210424_com-supercell-clashofclans_jpg.rf.714a52a3d109a7c475388e5c9dac3034.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210424_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210427_com-supercell-clashofclans_jpg.rf.fb6810a9646ed94e4dab59f4910efcd6.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210427_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210437_com-supercell-clashofclans_jpg.rf.2d98dc687b0ef98f45f3b62fa501e956.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210437_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210440_com-supercell-clashofclans_jpg.rf.1735e6aaa45185a65eb61cb2db7c35b0.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210440_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210443_com-supercell-clashofclans_jpg.rf.d8cf537563c6185a964c51bd66ab7add.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210443_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210446_com-supercell-clashofclans_jpg.rf.4b2f7e6c48ba12b86b7344ec45ff9aeb.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210446_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210451_com-supercell-clashofclans_jpg.rf.c42fe177fb142bf874ba544ee961e5d2.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210451_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210503_com-supercell-clashofclans_jpg.rf.d5a73e6f6a3d6e61120aac298d55c172.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210503_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 3
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210517_com-supercell-clashofclans_jpg.rf.00dc97c3fe6ffb640f3dee6d6836a809.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210517_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210519_com-supercell-clashofclans_jpg.rf.c2634ff4f1be088706d6651b32753650.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210519_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210522_com-supercell-clashofclans_jpg.rf.6783cfebd1e13bfa0d5c795593c99116.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210522_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210527_com-supercell-clashofclans_jpg.rf.cf4e675f81f9bd86e2358c978bc29cd5.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210527_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210550_com-supercell-clashofclans_jpg.rf.e7739b128afd2379ae3e08f2aca8d71e.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210550_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      },
+      {
+        "image": "training/inbox/public-reference/workshop/cocsegmentation-villages__train__Screenshot_20241027_210556_com-supercell-clashofclans_jpg.rf.20b6405f907d6eea993e798387694d00.jpg",
+        "source_key": "cocsegmentation-villages",
+        "family": "Screenshot_20241027_210556_com-supercell-clashofclans_jpg",
+        "focus_boxes": 1,
+        "all_target_boxes": 2
+      }
+    ]
+  },
+  "guardian_seed_review": {
+    "verdict": "reject_as_town_hall_guardian_train_seed",
+    "reason": "Pedro Little_Guardian = UI tray troupes/heros, pas Guardian village gameplay.",
+    "images_reviewed": 3,
+    "keep_as": "manual_negative_reference_only"
+  },
+  "finetune_readiness": {
+    "ready": false,
+    "decision": "conserver V5",
+    "reasons": [
+      "aucune nouvelle session humaine exhaustive importée"
+    ],
+    "report": "training/reports/finetune-readiness.json"
+  },
+  "audits": {
+    "coc-all-traps": "training/reports/coc-all-traps-audit-20261118.json",
+    "glenn-th18-gigabomb": "training/reports/glenn-th18-gigabomb-audit-20261118.json",
+    "status": "manual_exhaustiveness_review_required"
+  }
+}

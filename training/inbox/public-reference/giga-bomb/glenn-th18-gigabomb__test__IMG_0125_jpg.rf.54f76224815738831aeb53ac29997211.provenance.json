@@ -1,0 +1,22 @@
+{
+  "village_group": "public-glenn-th18-gigabomb-IMG_0125_jpg",
+  "class_focus": "giga-bomb",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
+  "author": "Glenns Workspace",
+  "source_key": "glenn-th18-gigabomb",
+  "source_split": "test",
+  "source_image": "training/imports/glenn-th18-gigabomb/test/images/IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.jpg",
+  "sha256": "141488d5d93e5bfcc06c92e0ae6f3d82daeb2d4d282d32b5c6c8e7e523958ef7",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

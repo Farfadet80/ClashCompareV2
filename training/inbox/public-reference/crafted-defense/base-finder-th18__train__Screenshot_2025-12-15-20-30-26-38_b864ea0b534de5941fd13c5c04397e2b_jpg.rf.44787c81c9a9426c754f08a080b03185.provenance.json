@@ -1,0 +1,22 @@
+{
+  "village_group": "public-base-finder-th18-Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg",
+  "class_focus": "crafted-defense",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/base-finder/my-first-project-w53ao/dataset/4",
+  "author": "Base Finder",
+  "source_key": "base-finder-th18",
+  "source_split": "train",
+  "source_image": "training/imports/base-finder-th18/train/images/Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.44787c81c9a9426c754f08a080b03185.jpg",
+  "sha256": "f94799c97af907f9fec6bd1ed62a703569a529f664a15388ad96a3b779df1dae",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

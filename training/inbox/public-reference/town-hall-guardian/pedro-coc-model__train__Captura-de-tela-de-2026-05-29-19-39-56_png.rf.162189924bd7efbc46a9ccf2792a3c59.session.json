@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "image": {
+    "name": "pedro-coc-model__train__Captura-de-tela-de-2026-05-29-19-39-56_png.rf.162189924bd7efbc46a9ccf2792a3c59.jpg",
+    "width": 1980,
+    "height": 1024
+  },
+  "metadata": {
+    "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-29-19-39-56_png",
+    "source": "pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "town-hall-guardian",
+    "visual_review": {
+      "reviewed_on": "2026-11-18",
+      "reviewer": "agent-c1c2",
+      "verdict": "reject_as_town_hall_guardian_train_seed",
+      "reason": "Capture UI selection troupes/heros (tray), pas un Guardian Longshot/Smasher/Logger en village gameplay. Label Pedro Little_Guardian non utilisable pour apprendre town-hall-guardian.",
+      "keep_as": "manual_negative_reference_only"
+    }
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 40,
+      "class_name": "town-hall-guardian",
+      "x1": 1608.0,
+      "y1": 314.5,
+      "x2": 1802.0,
+      "y2": 501.5,
+      "status": "rejected",
+      "origin": "public-source-yolo",
+      "review_note": "Capture UI selection troupes/heros (tray), pas un Guardian Longshot/Smasher/Logger en village gameplay. Label Pedro Little_Guardian non utilisable pour apprendre town-hall-guardian."
+    }
+  ]
+}

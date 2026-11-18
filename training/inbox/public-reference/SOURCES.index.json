@@ -67,7 +67,7 @@
       "url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
       "license": "CC BY 4.0",
       "usage": "train_candidate_after_audit",
-      "status": "known_in_public_datasets_json",
+      "status": "audited_20261118_staged_inbox",
       "targets": [
         "tornado-trap",
         "seeking-air-mine",
@@ -75,7 +75,10 @@
         "air-bomb",
         "spring-trap",
         "bomb",
-        "hidden-tesla"
+        "hidden-tesla",
+        "blacksmith",
+        "pet-house",
+        "workshop"
       ]
     },
     {
@@ -83,7 +86,7 @@
       "url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
       "license": "CC BY 4.0",
       "usage": "train_candidate_after_audit",
-      "status": "known_in_public_datasets_json",
+      "status": "audited_20261118_staged_inbox",
       "targets": [
         "giga-bomb",
         "hero-hall",
@@ -108,8 +111,8 @@
       "id": "roboflow-pedro-little-guardian",
       "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model",
       "license": "CC BY 4.0",
-      "usage": "reference_seed_only",
-      "status": "manual_reference_only",
+      "usage": "manual_negative_reference_only",
+      "status": "rejected_after_visual_review",
       "targets": [
         "town-hall-guardian"
       ]
@@ -129,7 +132,7 @@
       "url": null,
       "license": "à documenter cas par cas (CC / consentement auteur)",
       "usage": "train_when_licensed_gameplay_appears",
-      "status": "watching",
+      "status": "watching_no_public_labeled_dataset",
       "targets": [
         "spiky-tower",
         "firecracker-tower",

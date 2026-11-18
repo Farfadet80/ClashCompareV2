@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "image": {
+    "name": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-53-57_png.rf.1a5a496b9195ed72173d991c3f638a1d.jpg",
+    "width": 1980,
+    "height": 1024
+  },
+  "metadata": {
+    "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-53-57_png",
+    "source": "pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 608.5,
+      "y1": 585.0,
+      "x2": 689.5,
+      "y2": 667.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 820.5,
+      "y1": 138.0,
+      "x2": 937.5,
+      "y2": 264.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

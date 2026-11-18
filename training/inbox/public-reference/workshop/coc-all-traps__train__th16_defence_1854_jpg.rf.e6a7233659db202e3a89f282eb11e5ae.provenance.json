@@ -1,0 +1,22 @@
+{
+  "village_group": "public-coc-all-traps-th16_defence_1854_jpg",
+  "class_focus": "workshop",
+  "town_hall": null,
+  "capture_mode": "public-roboflow-yolo",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+  "author": "COC",
+  "source_key": "coc-all-traps",
+  "source_split": "train",
+  "source_image": "training/imports/coc-all-traps/train/images/th16_defence_1854_jpg.rf.e6a7233659db202e3a89f282eb11e5ae.jpg",
+  "sha256": "48a815e1c3c4fecc50cf2e63d416fd5cffd8f896188728fed3a4104df7992c25",
+  "usage": "train_candidate_after_audit",
+  "already_in_detector_dataset": true,
+  "levels_verified": false,
+  "consent": true,
+  "notes": [
+    "Brouillon issu des labels YOLO publics mappés.",
+    "Annotation exhaustive obligatoire avant import_annotation_session.",
+    "Ne pas inventer de dataIds JSON."
+  ]
+}

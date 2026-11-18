@@ -1,7 +1,11 @@
 {
-  "classes": 50,
+  "classes": 54,
   "unlearnable": [
-    "town-hall-guardian"
+    "town-hall-guardian",
+    "spiky-tower",
+    "firecracker-tower",
+    "guardian-shrine",
+    "squad-barracks"
   ],
   "very_weak": [
     "wall",
@@ -17,7 +21,11 @@
   ],
   "no_eval_split": [
     "wall",
-    "town-hall-guardian"
+    "town-hall-guardian",
+    "spiky-tower",
+    "firecracker-tower",
+    "guardian-shrine",
+    "squad-barracks"
   ],
   "rows": [
     {
@@ -419,6 +427,38 @@
       "val": 4,
       "test": 2,
       "status": "very_weak"
+    },
+    {
+      "id": "spiky-tower",
+      "class_id": 50,
+      "train": 0,
+      "val": 0,
+      "test": 0,
+      "status": "unlearnable"
+    },
+    {
+      "id": "firecracker-tower",
+      "class_id": 51,
+      "train": 0,
+      "val": 0,
+      "test": 0,
+      "status": "unlearnable"
+    },
+    {
+      "id": "guardian-shrine",
+      "class_id": 52,
+      "train": 0,
+      "val": 0,
+      "test": 0,
+      "status": "unlearnable"
+    },
+    {
+      "id": "squad-barracks",
+      "class_id": 53,
+      "train": 0,
+      "val": 0,
+      "test": 0,
+      "status": "unlearnable"
     }
   ],
   "notes": [

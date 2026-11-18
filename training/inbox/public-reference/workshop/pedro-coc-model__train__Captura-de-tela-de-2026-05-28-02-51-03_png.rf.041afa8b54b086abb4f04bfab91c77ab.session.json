@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "image": {
+    "name": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-51-03_png.rf.041afa8b54b086abb4f04bfab91c77ab.jpg",
+    "width": 1980,
+    "height": 1024
+  },
+  "metadata": {
+    "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-51-03_png",
+    "source": "pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 338.5,
+      "y1": 44.0,
+      "x2": 447.5,
+      "y2": 130.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 312.5,
+      "y1": 513.5,
+      "x2": 407.5,
+      "y2": 598.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 1242.0,
+      "y1": 30.5,
+      "x2": 1386.0,
+      "y2": 159.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}

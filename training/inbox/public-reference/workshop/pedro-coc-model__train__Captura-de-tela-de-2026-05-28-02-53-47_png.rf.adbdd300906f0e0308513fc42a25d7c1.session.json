@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "image": {
+    "name": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-53-47_png.rf.adbdd300906f0e0308513fc42a25d7c1.jpg",
+    "width": 1980,
+    "height": 1024
+  },
+  "metadata": {
+    "village_group": "public-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-53-47_png",
+    "source": "pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 1392.0,
+      "y1": 322.0,
+      "x2": 1504.0,
+      "y2": 442.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 1309.0,
+      "y1": 248.0,
+      "x2": 1389.0,
+      "y2": 336.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 1156.5,
+      "y1": 166.5,
+      "x2": 1237.5,
+      "y2": 239.5,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    },
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 1416.5,
+      "y1": 587.0,
+      "x2": 1497.5,
+      "y2": 671.0,
+      "status": "pending",
+      "origin": "public-source-yolo"
+    }
+  ]
+}
