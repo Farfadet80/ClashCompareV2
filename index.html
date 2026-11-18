@@ -92,8 +92,10 @@
         </button>
 
         <div class="photo-tip">
-          <strong>Complément YOLO seulement :</strong>
-          utile si l'export manque, ou pour croiser. Mode photo CoC recommandé (village entier visible).
+          <strong>Reconnu visuellement (YOLO) :</strong>
+          utile si l'export manque, ou pour croiser un adversaire.
+          Mode photo CoC recommandé (village entier, TH<span id="photo-min-th">10</span>+).
+          V5 actif : classes TH19 réservées, pas encore apprises.
         </div>
 
         <img class="preview" alt="Aperçu du village" hidden />
@@ -107,7 +109,7 @@
       <div class="analysis-area" hidden>
         <h3>Inventaire effectif</h3>
         <div class="notice r-notice">
-          Importe l'export JSON pour un inventaire exact. YOLO reste un complément local.
+          Export JSON = inventaire exact. Sans export, les détections s'affichent comme « Reconnu visuellement (YOLO) ».
         </div>
         <div class="result-grid">
           <div class="stat"><span>Tag</span><b class="r-tag">—</b></div>

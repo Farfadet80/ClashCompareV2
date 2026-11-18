@@ -1,0 +1,142 @@
+{
+  "updated": "2026-11-18",
+  "policy": {
+    "jimmy_captures": "not_required",
+    "train_now": false,
+    "invent_dataids": false,
+    "keep_v5_baseline": true,
+    "min_boxes_before_finetune_per_weak_class": 20,
+    "min_independent_villages_per_new_class": 8,
+    "annotation": "exhaustive via training/annotator/ then import_annotation_session.py",
+    "promotion_gate": "check_finetune_readiness.py ready=true AND reserved test vs V5 800+TTA improves"
+  },
+  "sources": [
+    {
+      "id": "supercell-clash-of-titans-blog",
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-clash-of-titans-update-is-rolling-out/",
+      "license": "Supercell copyright — reference-only",
+      "usage": "reference_only",
+      "status": "documented",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks",
+        "town-hall-guardian"
+      ]
+    },
+    {
+      "id": "cocwiki-th19-guide",
+      "url": "https://cocwiki.com/guides/town-hall-19",
+      "license": "Site tiers — reference-only (droits non clairs pour entraînement)",
+      "usage": "reference_only",
+      "status": "documented",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks"
+      ]
+    },
+    {
+      "id": "gameboost-th19-towers",
+      "url": "https://gameboost.com/blog/th19-spiky-tower-firecracker-tower",
+      "license": "Site tiers — reference-only",
+      "usage": "reference_only",
+      "status": "documented",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower"
+      ]
+    },
+    {
+      "id": "fandom-coc-wiki-pending-th19-pages",
+      "url": "https://clashofclans.fandom.com/wiki/Defensive_Buildings",
+      "license": "CC BY-SA (contenu wiki) — vérifier page + fichier média avant tout import train",
+      "usage": "candidate_when_pages_exist",
+      "status": "watching",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks"
+      ]
+    },
+    {
+      "id": "roboflow-coc-all-traps",
+      "url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+      "license": "CC BY 4.0",
+      "usage": "train_candidate_after_audit",
+      "status": "known_in_public_datasets_json",
+      "targets": [
+        "tornado-trap",
+        "seeking-air-mine",
+        "skeleton-trap",
+        "air-bomb",
+        "spring-trap",
+        "bomb",
+        "hidden-tesla"
+      ]
+    },
+    {
+      "id": "roboflow-glenn-th18-gigabomb",
+      "url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
+      "license": "CC BY 4.0",
+      "usage": "train_candidate_after_audit",
+      "status": "known_in_public_datasets_json",
+      "targets": [
+        "giga-bomb",
+        "hero-hall",
+        "super-wizard-tower"
+      ]
+    },
+    {
+      "id": "roboflow-coc-analyzer-v5",
+      "url": "https://universe.roboflow.com/cocanalyzer/coc-analyzer/dataset/5",
+      "license": "CC BY 4.0",
+      "usage": "train_candidate_after_audit",
+      "status": "audited_local_import_exists",
+      "targets": [
+        "firespitter",
+        "multi-gear-tower",
+        "revenge-tower",
+        "monolith",
+        "town-hall"
+      ]
+    },
+    {
+      "id": "roboflow-pedro-little-guardian",
+      "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model",
+      "license": "CC BY 4.0",
+      "usage": "reference_seed_only",
+      "status": "manual_reference_only",
+      "targets": [
+        "town-hall-guardian"
+      ]
+    },
+    {
+      "id": "roboflow-coc-wall-detection",
+      "url": "https://universe.roboflow.com/kruegerp-stu-proton-me/coc-wall-detection/dataset/1",
+      "license": "CC BY 4.0",
+      "usage": "blocked_direct_box_import",
+      "status": "import_blocked",
+      "targets": [
+        "wall"
+      ]
+    },
+    {
+      "id": "public-th19-gameplay-screenshots-watch",
+      "url": null,
+      "license": "à documenter cas par cas (CC / consentement auteur)",
+      "usage": "train_when_licensed_gameplay_appears",
+      "status": "watching",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks"
+      ]
+    }
+  ],
+  "note": "Les médias reference_only restent hors dataset/detector. Les imports CC BY passent par audit_public_dataset.py puis revue exhaustive."
+}

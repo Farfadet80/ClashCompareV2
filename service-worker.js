@@ -1,4 +1,4 @@
-const CACHE="clashcompare-v3-13-th10-recog";
+const CACHE="clashcompare-v3-14-visual-recog";
 const ASSETS=[
   "./",
   "./index.html",

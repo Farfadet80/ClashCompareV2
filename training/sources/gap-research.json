@@ -1,6 +1,12 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-11-18",
   "target_classes": {
+    "reserved_th19_yolo": [
+      "spiky-tower",
+      "firecracker-tower",
+      "guardian-shrine",
+      "squad-barracks"
+    ],
     "unlearnable": [
       "town-hall-guardian"
     ],
@@ -20,6 +26,21 @@
     ]
   },
   "dataset_candidates": [
+    {
+      "id": "th19-clash-of-titans-visual-watch",
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-clash-of-titans-update-is-rolling-out/",
+      "author": "Supercell + community watch",
+      "license": "mixed — blog = reference-only ; gameplay public = cas par cas",
+      "images": 0,
+      "status": "watching_no_labeled_public_dataset",
+      "verified": [
+        "2026-11-18 : aucun export Roboflow/GitHub annoté Spiky/Firecracker/Shrine/Squad Barracks trouvé.",
+        "Schéma YOLO local réservé (classes 50–53) sans dataIds inventés.",
+        "Collecte autonome documentée dans training/sources/visual-collection-manifest.json."
+      ],
+      "risk": "Importer des captures blog copyrightées dans le train sans licence claire.",
+      "next_step": "Surveiller Roboflow/wiki CC ; stager dans inbox/public-reference ; annoter exhaustivement ; ne pas fine-tuner sans OK Jimmy."
+    },
     {
       "id": "cod-clash-of-clans-v1-v2",
       "url": "https://universe.roboflow.com/cod-lnrdx/clash-of-clans-vnd0y-laeh4",
@@ -418,6 +439,8 @@
     "Wiki and official images are visual references, not automatically training data.",
     "Do not scrape preview overlays as replacement for source annotations.",
     "Do not import a dataset without explicit license, class audit and duplicate audit.",
-    "Never infer hidden traps from expected counts or base geometry."
+    "Never infer hidden traps from expected counts or base geometry.",
+    "Jimmy captures are not required ; prefer licensed public gameplay sources.",
+    "Do not launch YOLO fine-tune until check_finetune_readiness.py is green and Jimmy OK."
   ]
 }

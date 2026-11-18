@@ -1,0 +1,190 @@
+{
+  "updated": "2026-11-18",
+  "policy": {
+    "jimmy_captures": "not_required",
+    "train_now": false,
+    "invent_dataids": false,
+    "keep_v5_baseline": true,
+    "min_boxes_before_finetune_per_weak_class": 20,
+    "min_independent_villages_per_new_class": 8,
+    "annotation": "exhaustive via training/annotator/ then import_annotation_session.py",
+    "promotion_gate": "check_finetune_readiness.py ready=true AND reserved test vs V5 800+TTA improves"
+  },
+  "target_classes": {
+    "reserved_th19_yolo": [
+      "spiky-tower",
+      "firecracker-tower",
+      "guardian-shrine",
+      "squad-barracks"
+    ],
+    "unlearnable_or_empty": [
+      "town-hall-guardian"
+    ],
+    "very_weak": [
+      "wall",
+      "tornado-trap",
+      "giga-bomb"
+    ],
+    "weak": [
+      "workshop",
+      "pet-house",
+      "blacksmith",
+      "hero-hall",
+      "crafted-defense"
+    ]
+  },
+  "sources": [
+    {
+      "id": "supercell-clash-of-titans-blog",
+      "url": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-clash-of-titans-update-is-rolling-out/",
+      "license": "Supercell copyright — reference-only",
+      "usage": "reference_only",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks",
+        "town-hall-guardian"
+      ],
+      "notes": [
+        "Visuels officiels et descriptions Clash of Titans (16 nov. 2026).",
+        "Ne pas importer dans le train YOLO sans autorisation explicite ; servir à la revue visuelle / guide d'annotation."
+      ],
+      "status": "documented"
+    },
+    {
+      "id": "cocwiki-th19-guide",
+      "url": "https://cocwiki.com/guides/town-hall-19",
+      "license": "Site tiers — reference-only (droits non clairs pour entraînement)",
+      "usage": "reference_only",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks"
+      ],
+      "status": "documented"
+    },
+    {
+      "id": "gameboost-th19-towers",
+      "url": "https://gameboost.com/blog/th19-spiky-tower-firecracker-tower",
+      "license": "Site tiers — reference-only",
+      "usage": "reference_only",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower"
+      ],
+      "status": "documented"
+    },
+    {
+      "id": "fandom-coc-wiki-pending-th19-pages",
+      "url": "https://clashofclans.fandom.com/wiki/Defensive_Buildings",
+      "license": "CC BY-SA (contenu wiki) — vérifier page + fichier média avant tout import train",
+      "usage": "candidate_when_pages_exist",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks"
+      ],
+      "notes": [
+        "Au 2026-11-18 les pages dédiées TH19 ne sont pas encore stables (403 / absentes).",
+        "Quand les pages existent : télécharger uniquement les médias avec licence claire + attribution."
+      ],
+      "status": "watching"
+    },
+    {
+      "id": "roboflow-coc-all-traps",
+      "registry_key": "coc-all-traps",
+      "url": "https://universe.roboflow.com/coc-o8j54/instance-mq5kw-rejsf/dataset/2",
+      "license": "CC BY 4.0",
+      "usage": "train_candidate_after_audit",
+      "targets": [
+        "tornado-trap",
+        "seeking-air-mine",
+        "skeleton-trap",
+        "air-bomb",
+        "spring-trap",
+        "bomb",
+        "hidden-tesla"
+      ],
+      "status": "known_in_public_datasets_json"
+    },
+    {
+      "id": "roboflow-glenn-th18-gigabomb",
+      "registry_key": "glenn-th18-gigabomb",
+      "url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
+      "license": "CC BY 4.0",
+      "usage": "train_candidate_after_audit",
+      "targets": [
+        "giga-bomb",
+        "hero-hall",
+        "super-wizard-tower"
+      ],
+      "status": "known_in_public_datasets_json"
+    },
+    {
+      "id": "roboflow-coc-analyzer-v5",
+      "registry_key": "coc-analyzer-v5",
+      "url": "https://universe.roboflow.com/cocanalyzer/coc-analyzer/dataset/5",
+      "license": "CC BY 4.0",
+      "usage": "train_candidate_after_audit",
+      "targets": [
+        "firespitter",
+        "multi-gear-tower",
+        "revenge-tower",
+        "monolith",
+        "town-hall"
+      ],
+      "notes": [
+        "Déjà audité localement (228 images gameplay). Import train-only seulement après revue exhaustive."
+      ],
+      "status": "audited_local_import_exists"
+    },
+    {
+      "id": "roboflow-pedro-little-guardian",
+      "url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model",
+      "license": "CC BY 4.0",
+      "usage": "reference_seed_only",
+      "targets": [
+        "town-hall-guardian"
+      ],
+      "notes": [
+        "Un seul screenshot Guardian utile ; insuffisant pour apprendre. Seed de revue seulement."
+      ],
+      "status": "manual_reference_only"
+    },
+    {
+      "id": "roboflow-coc-wall-detection",
+      "registry_key": "coc-wall-detection",
+      "url": "https://universe.roboflow.com/kruegerp-stu-proton-me/coc-wall-detection/dataset/1",
+      "license": "CC BY 4.0",
+      "usage": "blocked_direct_box_import",
+      "targets": [
+        "wall"
+      ],
+      "notes": [
+        "Segmentation de réseaux de murs : conversion bbox unique = faux comptage. Pipeline séparé ou réannotation pièce par pièce."
+      ],
+      "status": "import_blocked"
+    },
+    {
+      "id": "public-th19-gameplay-screenshots-watch",
+      "url": null,
+      "license": "à documenter cas par cas (CC / consentement auteur)",
+      "usage": "train_when_licensed_gameplay_appears",
+      "targets": [
+        "spiky-tower",
+        "firecracker-tower",
+        "guardian-shrine",
+        "squad-barracks"
+      ],
+      "notes": [
+        "Aucun dataset Roboflow/GitHub annoté TH19 trouvé au 2026-11-18.",
+        "Surveiller Universe Roboflow + Reddit/Discord base-sharing sous licence claire.",
+        "Dépôt local : training/inbox/public-reference/<class-id>/ + sidecars provenance."
+      ],
+      "status": "watching"
+    }
+  ]
+}

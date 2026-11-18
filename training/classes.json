@@ -1,5 +1,5 @@
 {
-  "version": "3.3",
+  "version": "3.4",
   "detector_classes": [
     {
       "id": "town-hall",
@@ -250,6 +250,34 @@
       "id": "giga-bomb",
       "name": "Giga bombe",
       "category": "trap"
+    },
+    {
+      "id": "spiky-tower",
+      "name": "Tour à pointes",
+      "category": "defense",
+      "status": "reserved_th19",
+      "note": "Classe YOLO réservée ; pas de dataId inventé ; pas encore dans V5."
+    },
+    {
+      "id": "firecracker-tower",
+      "name": "Tour pétards",
+      "category": "merged-defense",
+      "status": "reserved_th19",
+      "note": "Classe YOLO réservée ; pas de dataId inventé ; pas encore dans V5."
+    },
+    {
+      "id": "guardian-shrine",
+      "name": "Sanctuaire des gardiens",
+      "category": "army",
+      "status": "reserved_th19",
+      "note": "Classe YOLO réservée ; pas de dataId inventé ; pas encore dans V5."
+    },
+    {
+      "id": "squad-barracks",
+      "name": "Caserne d'escouade",
+      "category": "army",
+      "status": "reserved_th19",
+      "note": "Classe YOLO réservée ; pas de dataId inventé ; pas encore dans V5."
     }
   ],
   "strategy": {
