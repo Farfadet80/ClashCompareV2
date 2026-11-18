@@ -1,0 +1,77 @@
+{
+  "candidate": "building-detector-v9-coc-analyzer-ft",
+  "evaluated_on": "2026-09-10",
+  "status": "rejected_keep_v5",
+  "training": {
+    "planned_epochs": 12,
+    "completed_epochs": 11,
+    "stopped_early": true,
+    "patience": 6,
+    "best_validation_epoch": 5,
+    "added_training_images": 228,
+    "added_targeted_boxes": 1246,
+    "source": "CoCAnalyzer TH18"
+  },
+  "evaluation_policy": {
+    "split": "unchanged_reserved_test",
+    "imgsz": 800,
+    "tta": true
+  },
+  "baseline_v5": {
+    "precision": 0.8525,
+    "recall": 0.8235,
+    "map50": 0.8573,
+    "map50_95": 0.6222
+  },
+  "candidate_v9": {
+    "precision": 0.8308560458314851,
+    "recall": 0.7356364166932389,
+    "map50": 0.8099275801637292,
+    "map50_95": 0.5643816241612393,
+    "inference_ms_per_image": 77.064
+  },
+  "delta_percentage_points": {
+    "precision": -2.16439541685149,
+    "recall": -8.78635833067611,
+    "map50": -4.73724198362708,
+    "map50_95": -5.78183758387607
+  },
+  "targeted_class_map_comparison": [
+    {
+      "class": "town-hall",
+      "baseline_map50": 0.995,
+      "candidate_map50": 0.9793315486256663,
+      "baseline_map50_95": 0.8044561727369028,
+      "candidate_map50_95": 0.7153548781703687
+    },
+    {
+      "class": "monolith",
+      "baseline_map50": 0.9812500000000002,
+      "candidate_map50": 0.9608749999999999,
+      "baseline_map50_95": 0.6111419552669554,
+      "candidate_map50_95": 0.5581685185185185
+    },
+    {
+      "class": "firespitter",
+      "baseline_map50": 0.9381642512077296,
+      "candidate_map50": 0.925,
+      "baseline_map50_95": 0.625883124725516,
+      "candidate_map50_95": 0.5678422771672771
+    },
+    {
+      "class": "multi-gear-tower",
+      "baseline_map50": 0.8613636363636363,
+      "candidate_map50": 0.6868136363636363,
+      "baseline_map50_95": 0.5014772727272728,
+      "candidate_map50_95": 0.42419545454545454
+    },
+    {
+      "class": "revenge-tower",
+      "baseline_map50": 0.7891666666666668,
+      "candidate_map50": 0.645,
+      "baseline_map50_95": 0.47619523809523806,
+      "candidate_map50_95": 0.46299999999999997
+    }
+  ],
+  "decision": "Do not promote V9. Keep building-detector-v5s-infer800 active. Preserve the added data and V9 weights for a future balanced experiment, because both global metrics and every targeted class measured here regressed on the reserved test set."
+}

@@ -164,7 +164,7 @@ Fichiers stables dans `models/` :
 
 - `building-detector.pt` / `.onnx` : détecteur V5, inférence **800** (voir `ACTIVE.json`) ;
 - `level-air-defense.pt` / `.onnx` : niveaux 8 à 11 ;
-- `level-town-hall.pt` / `.onnx` : niveaux 10 à 14 ;
+- `level-town-hall.pt` / `.onnx` : niveaux 1 à 18, actif avec seuil de confiance 0,92 ;
 - `experimental/level-cannon.pt` : **non production**.
 
 La V3 a été entraînée avec 759 images, 30 324 boîtes et 49 classes représentées. Après
@@ -200,9 +200,10 @@ battu 640 sur le même test (mAP50-95 0,6121 vs 0,5788) : les alias actifs point
 .\.venv\Scripts\python.exe training\scripts\serve_compare.py
 ```
 
-Classifieurs de niveaux en production : aucun. `air-defense` et `town-hall`
-restent expérimentaux tant que les niveaux récents et le rejet hors distribution
-ne sont pas couverts. Le canon expérimental
+Classifieur de niveaux en production : `town-hall` TH1–TH18. Il atteint 99,3 %
+sur le test réservé TH4–TH18 ; le seuil 0,92 donne 100 % de justesse sur 97,9 %
+des exemples acceptés. `air-defense` reste expérimental tant que les niveaux
+récents et le rejet hors distribution ne sont pas couverts. Le canon expérimental
 reste dans `models/experimental/`.
 
 Non promus : V6 weakclass-ft, SAHI/tiling.

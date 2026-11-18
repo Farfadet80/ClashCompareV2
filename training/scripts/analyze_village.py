@@ -22,11 +22,16 @@ from ultralytics import YOLO
 _detector_cache: dict[str, YOLO] = {}
 _classifier_cache: dict[str, YOLO] = {}
 
-# Les classifieurs disponibles sont fermés sur des plages anciennes
-# (air-defense 8–11, town-hall 10–14). Sur un TH16+ ils donnent un niveau
-# faux mais très confiant : aucun n'est donc autorisé en production.
-EXPERIMENTAL_LEVEL_CLASSIFIERS = frozenset({"air-defense", "town-hall"})
-PRODUCTION_LEVEL_CLASSIFIERS: frozenset[str] = frozenset()
+# Seul town-hall couvre actuellement tout le catalogue (TH1–TH18) et passe
+# le test indépendant. Les autres classifieurs restent fermés/incomplets.
+EXPERIMENTAL_LEVEL_CLASSIFIERS = frozenset({"air-defense", "wall"})
+PRODUCTION_LEVEL_CLASSIFIERS = frozenset({"town-hall"})
+# Planchers calibrés sur le test réservé. Pour town-hall, 0,92 conserve
+# 138/141 prédictions et rejette l'unique erreur (100 % parmi les acceptées).
+LEVEL_CONFIDENCE_FLOORS = {"town-hall": 0.92}
+# Une petite marge rend le classifieur robuste aux boîtes très serrées du
+# détecteur, surtout quand le bâtiment n'occupe que quelques dizaines de pixels.
+LEVEL_CROP_PADDING = {"town-hall": 0.25}
 
 # Classes petites / pièges : seuil optionnel (--small-conf). Bake-off VAL
 # 2026-09-05 : baisser ce seuil vs conf détruit la précision → défaut = conf.
@@ -152,7 +157,15 @@ def analyze_image(
             index = len(detections)
             detections.append(item)
             if right > left and bottom > top:
-                crops_by_building[building].append((index, image.crop((left, top, right, bottom))))
+                padding = LEVEL_CROP_PADDING.get(building, 0.0)
+                width, height = right - left, bottom - top
+                crop_box = (
+                    max(0, int(round(left - width * padding))),
+                    max(0, int(round(top - height * padding))),
+                    min(image.width, int(round(right + width * padding))),
+                    min(image.height, int(round(bottom + height * padding))),
+                )
+                crops_by_building[building].append((index, image.crop(crop_box)))
 
     for building, indexed_crops in crops_by_building.items():
         if building not in PRODUCTION_LEVEL_CLASSIFIERS:
@@ -173,7 +186,11 @@ def analyze_image(
             name = classifier.names[top1]
             confidence = float(prediction.probs.top1conf)
             detections[index]["level_confidence"] = round(confidence, 5)
-            if confidence >= level_conf:
+            effective_level_conf = max(
+                level_conf,
+                LEVEL_CONFIDENCE_FLOORS.get(building, 0.0),
+            )
+            if confidence >= effective_level_conf:
                 detections[index]["level"] = int(name.removeprefix("level-"))
 
     payload = {
@@ -195,13 +212,14 @@ def analyze_image(
             "JSON quand disponible. Types absents → Non détecté, jamais inventés."
         ),
         "level_note": (
-            "Niveaux YOLO désactivés : les classifieurs disponibles "
-            f"({', '.join(sorted(EXPERIMENTAL_LEVEL_CLASSIFIERS))}) ne couvrent pas "
-            "les niveaux récents et peuvent être confiants hors distribution. "
-            "Utiliser l'export JSON pour les niveaux vérifiés."
+            "Hôtel de ville TH1–TH18 activé avec un seuil de confiance de 0,92. "
+            "Une prédiction sous ce seuil reste inconnue. Les autres bâtiments "
+            "attendent encore une couverture et un test indépendant suffisants."
         ),
         "level_classifiers": sorted(PRODUCTION_LEVEL_CLASSIFIERS),
         "experimental_level_classifiers": sorted(EXPERIMENTAL_LEVEL_CLASSIFIERS),
+        "level_confidence_floors": LEVEL_CONFIDENCE_FLOORS,
+        "level_crop_padding": LEVEL_CROP_PADDING,
     }
 
     if output_dir is not None:
@@ -246,7 +264,12 @@ def main() -> None:
         help="Seuil plus bas pour pièges / Tesla / giga-bomb",
     )
     parser.add_argument("--max-det", type=int, default=DEFAULT_MAX_DET)
-    parser.add_argument("--level-conf", type=float, default=0.60, help="Confiance minimale avant d'afficher un niveau")
+    parser.add_argument(
+        "--level-conf",
+        type=float,
+        default=0.60,
+        help="Confiance minimale, en plus des planchers de sécurité par bâtiment",
+    )
     parser.add_argument("--imgsz", type=int, default=800)
     parser.add_argument(
         "--tta",

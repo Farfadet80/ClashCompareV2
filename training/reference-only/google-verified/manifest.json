@@ -1,0 +1,53 @@
+{
+  "created": "2026-09-09",
+  "discovery_method": "Google Images and Google web search, followed by verification on the original source page",
+  "usage": "reference_only",
+  "policy": "These canonical images are excluded from training, validation and test. A public source page does not by itself grant machine-learning training rights or make a canonical sprite representative of an in-game screenshot.",
+  "items": [
+    {
+      "building": "builders-hut",
+      "level": 8,
+      "file": "builders-hut/level-8/reference.webp",
+      "sha256": "fe49f9ae35791545eb5058cc51a1880e6a5791fd74276f486f8f36bcdcc9d874",
+      "direct_url": "https://goblinsfarm.com/assets/art/buildings/levels/builders-hut-8.webp",
+      "source_page": "https://goblinsfarm.com/wiki/buildings/builders-hut.html",
+      "official_confirmation": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-anime-fury-update-is-here/"
+    },
+    {
+      "building": "monolith",
+      "level": 5,
+      "file": "monolith/level-5/reference.png",
+      "sha256": "4e216fd89ffcd707fd82ffb97440db4ef91901f4289ec2da0e03f8f927cf056e",
+      "direct_url": "https://www.clash.ninja/images/entities/136_5.png",
+      "source_page": "https://www.clash.ninja/share/village/mr-kay-fgnfnvs",
+      "official_confirmation": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-anime-fury-update-is-here/"
+    },
+    {
+      "building": "workshop",
+      "level": 9,
+      "file": "workshop/level-9/reference.png",
+      "sha256": "c65647e1f4db8273540b782bb50b31cd323c151f3f368f1a379d81baba770956",
+      "direct_url": "https://www.clash.ninja/images/entities/104_9.png",
+      "source_page": "https://www.clash.ninja/share/village/mr-kay-fgnfnvs",
+      "official_confirmation": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-sound-of-clash-update/"
+    },
+    {
+      "building": "blacksmith",
+      "level": 10,
+      "file": "blacksmith/level-10/reference.png",
+      "sha256": "2004b51c593401454581cc26ccc081e79560126134c93807060a5a6be7d295ed",
+      "direct_url": "https://www.clash.ninja/images/entities/152_10.png",
+      "source_page": "https://www.clash.ninja/share/village/mr-kay-fgnfnvs",
+      "official_confirmation": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-sound-of-clash-update/"
+    },
+    {
+      "building": "giant-bomb",
+      "level": 12,
+      "file": "giant-bomb/level-12/reference.png",
+      "sha256": "4c127f78eb2a751f1f4cfc12a22584a16cca58f591bdf050f436cecc1019f133",
+      "direct_url": "https://www.clash.ninja/images/entities/28_12.png",
+      "source_page": "https://www.clash.ninja/share/village/mr-kay-fgnfnvs",
+      "official_confirmation": "https://supercell.com/en/games/clashofclans/blog/release-notes/the-sound-of-clash-update/"
+    }
+  ]
+}

@@ -125,6 +125,23 @@
       "X Bow": "x-bow"
     }
   },
+  "coc-analyzer-v5": {
+    "url": "https://universe.roboflow.com/cocanalyzer/coc-analyzer/dataset/5",
+    "license": "CC BY 4.0",
+    "author": "CoCAnalyzer",
+    "task": "object-detection",
+    "mapping": {
+      "box_fs_bottom_left": "firespitter",
+      "box_fs_bottom_right": "firespitter",
+      "box_fs_top_left": "firespitter",
+      "box_fs_top_right": "firespitter",
+      "box_mg_long": "multi-gear-tower",
+      "box_mg_short": "multi-gear-tower",
+      "box_monolith": "monolith",
+      "box_revenge_tower": "revenge-tower",
+      "box_th_18": "town-hall"
+    }
+  },
   "glenn-th18-gigabomb": {
     "url": "https://universe.roboflow.com/glenns-workspace-qt9jr/my-first-project-nqdma/dataset/1",
     "license": "CC BY 4.0",

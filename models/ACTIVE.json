@@ -11,8 +11,34 @@
     "onnx": "models/building-detector.onnx"
   },
   "release_dir": "models/releases/building-detector-v5s-infer800",
-  "level_classifiers": [],
-  "experimental_level_classifiers": ["air-defense", "town-hall"],
+  "level_classifiers": ["town-hall"],
+  "level_classifier_releases": {
+    "town-hall": {
+      "release": "level-town-hall-v4-th1-th18",
+      "levels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+      "confidence_floor": 0.92,
+      "test_accuracy": 0.9930555555555556,
+      "accepted_test_accuracy": 1.0,
+      "accepted_test_coverage": 0.9787234042553191,
+      "pt_sha256": "de20800d68e0b039a9465295d67fac2433559875f52d374243b66acfbe6d4a1c",
+      "onnx_sha256": "050b02a9dc454832edb5e33a0135cd481bca1891df4aed02b46122cde394dca4"
+    }
+  },
+  "experimental_level_classifiers": ["air-defense", "wall"],
+  "experimental_level_classifier_releases": {
+    "wall": {
+      "release": "level-wall-v2-9classes",
+      "levels": [1, 2, 3, 4, 5, 6, 7, 16, 17],
+      "confidence_floor": 0.87,
+      "test_accuracy": 0.97911227154047,
+      "accepted_test_accuracy": 0.9946380697050938,
+      "accepted_test_coverage": 0.9738903394255874,
+      "status": "experimental_partial_catalog",
+      "missing_levels": [8, 9, 10, 11, 12, 13, 14, 15, 18, 19],
+      "pt_sha256": "d867777e8dd16f399c37c348a76460a4d143d2a42f1a63dbda2823dcc71a86d2",
+      "onnx_sha256": "3b9b0517d5ec4be587c75020ce4d69f26c2335b4096748ae8c4b6901696d9fe5"
+    }
+  },
   "not_promoted": [
     "building-detector-v6-weakclass-ft",
     "sahi-tiling",
@@ -21,6 +47,7 @@
     "imgsz-832",
     "imgsz-896",
     "imgsz-960",
-    "level-cannon"
+    "level-cannon",
+    "building-detector-v9-coc-analyzer-ft"
   ]
 }

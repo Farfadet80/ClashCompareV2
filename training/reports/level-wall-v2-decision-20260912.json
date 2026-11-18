@@ -1,0 +1,35 @@
+{
+  "candidate": "level-wall-v2-9classes",
+  "dataset": "training/classification/wall-v2-final",
+  "run": "training/runs/levels/wall-v2-final",
+  "levels": [1, 2, 3, 4, 5, 6, 7, 16, 17],
+  "test": {
+    "correct": 375,
+    "samples": 383,
+    "accuracy": 0.97911227154047,
+    "level_7": {
+      "correct": 11,
+      "samples": 11,
+      "accuracy": 1.0
+    }
+  },
+  "confidence_policy": {
+    "floor": 0.87,
+    "accepted": 373,
+    "coverage": 0.9738903394255874,
+    "accepted_accuracy": 0.9946380697050938
+  },
+  "onnx_parity": {
+    "samples": 32,
+    "same_top1": 32,
+    "max_confidence_delta": 2.980232238769531e-07
+  },
+  "decision": "experimental_only",
+  "reason": "Le catalogue des murs est incomplet. Les niveaux 8 a 15, 18 et 19 ne disposent pas encore de captures de jeu independantes suffisantes; un classifieur ferme pourrait donc leur attribuer un niveau connu avec une confiance trompeuse.",
+  "artifacts": {
+    "pt": "models/experimental/releases/level-wall-v2-9classes/level-wall.pt",
+    "onnx": "models/experimental/releases/level-wall-v2-9classes/level-wall.onnx",
+    "pt_sha256": "d867777e8dd16f399c37c348a76460a4d143d2a42f1a63dbda2823dcc71a86d2",
+    "onnx_sha256": "3b9b0517d5ec4be587c75020ce4d69f26c2335b4096748ae8c4b6901696d9fe5"
+  }
+}

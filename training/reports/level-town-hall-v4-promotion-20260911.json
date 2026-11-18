@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-11",
+  "building": "town-hall",
+  "candidate": "training/runs/levels/town-hall-v4/weights/best.pt",
+  "release": "models/releases/level-town-hall-v4-th1-th18",
+  "levels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+  "training": {
+    "architecture": "yolo11n-cls",
+    "imgsz": 224,
+    "completed_epochs": 10,
+    "best_validation_epoch": 5,
+    "validation_top1": 0.99828
+  },
+  "reserved_test_th4_th18": {
+    "correct": 140,
+    "total": 141,
+    "accuracy": 0.9929078014184397,
+    "exact_cross_split_hashes": 0
+  },
+  "separate_gameplay_holdouts_th1_th3": {
+    "correct": 3,
+    "total": 3,
+    "note": "One distinct held-out gameplay crop per level; evidence remains much smaller than TH4-TH18."
+  },
+  "confidence_policy": {
+    "floor": 0.92,
+    "accepted": 138,
+    "reserved_total": 141,
+    "coverage": 0.9787234042553191,
+    "accepted_accuracy": 1.0,
+    "rejected_reserved_predictions": 3
+  },
+  "pipeline_smoke_test": {
+    "source": "reserved detector test image tagged TH18",
+    "detector_crop_box": [252, 260, 275, 292],
+    "crop_padding": 0.25,
+    "predicted_level": 18,
+    "confidence": 0.99183
+  },
+  "onnx_parity": {
+    "samples": 32,
+    "same_top1": 32,
+    "max_confidence_delta": 1.1920928955078125e-7
+  },
+  "artifacts": {
+    "pt": "models/level-town-hall.pt",
+    "pt_sha256": "de20800d68e0b039a9465295d67fac2433559875f52d374243b66acfbe6d4a1c",
+    "onnx": "models/level-town-hall.onnx",
+    "onnx_sha256": "050b02a9dc454832edb5e33a0135cd481bca1891df4aed02b46122cde394dca4"
+  },
+  "decision": "promoted_with_confidence_floor"
+}

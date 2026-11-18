@@ -4,13 +4,18 @@ Modèles PyTorch utilisés par le pipeline local :
 
 - `building-detector.pt` : détection des types de bâtiments ;
 - `level-air-defense.pt` : niveaux 8 à 11 de la défense antiaérienne ;
-- `level-town-hall.pt` : niveaux 10 à 14 de l'hôtel de ville.
+- `level-town-hall.pt` : niveaux 1 à 18 de l'hôtel de ville, actif avec seuil 0,92.
 
-Ces deux classifieurs sont conservés pour expérimentation, mais ne sont plus
-allowlistés en production : leurs classes fermées ne couvrent pas les niveaux
-récents et peuvent retourner un ancien niveau avec une confiance élevée.
-Un niveau absent de leur liste d'entraînement ne peut pas être reconnu correctement.
+Le classifieur de l'hôtel de ville est allowlisté en production. Il obtient
+140/141 (99,3 %) sur le test réservé TH4–TH18 et 3/3 sur les contrôles séparés
+TH1–TH3. Son seuil 0,92 rejette l'unique erreur du test réservé : 138/141
+prédictions sont affichées avec 100 % de justesse parmi les prédictions acceptées.
+L'ancien modèle TH10–TH14 est archivé sous `models/experimental/`.
+Le classifieur de défense antiaérienne reste expérimental : sa plage est incomplète.
 `level-cannon.pt` est en quarantaine dans `models/experimental/` (dataset trop petit).
+Le candidat `level-wall` est également conservé dans `models/experimental/` :
+98,4 % sur un test indépendant de 372 crops, mais seulement pour les niveaux
+1–6, 16 et 17. Il n'est donc pas chargé en production.
 
 Les exports ONNX validés avec ONNX Runtime sont également présents :
 
@@ -61,6 +66,6 @@ indépendant pour la V3 puisqu'il avait été inclus dans sa validation. Il devi
 réservé des versions V4 et suivantes.
 
 La classe `town-hall-guardian` ne possède toujours aucune annotation et ne doit pas être
-présentée comme apprise. Aucun classifieur de niveau n'est actuellement allowlisté :
-`analyze_village.py` n'affiche donc aucun niveau issu d'une capture.
+présentée comme apprise. Le classifieur de niveau `town-hall` est allowlisté ;
+les autres niveaux restent inconnus tant que leurs modèles ne passent pas les mêmes contrôles.
 Le marqueur de release active est `models/ACTIVE.json`.

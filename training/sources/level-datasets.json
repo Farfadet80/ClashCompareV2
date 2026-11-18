@@ -43,6 +43,871 @@
       "cannon20": ["cannon", 20],
       "cannon21": ["cannon", 21]
     }
+  },
+  "project-xmb2o-coc-th-detector-v1": {
+    "url": "https://universe.roboflow.com/project-xmb2o/coc-th-detector/dataset/1",
+    "license": "CC BY 4.0",
+    "author": "project-xmb2o",
+    "curation": "one medoid image per .rf. original family; unmapped generic class excluded",
+    "mapping": {
+      "th9": ["town-hall", 9],
+      "th10": ["town-hall", 10],
+      "th11": ["town-hall", 11],
+      "th12": ["town-hall", 12]
+    }
+  },
+  "clash-of-clans-vmlu7-th6-th7-v5": {
+    "url": "https://universe.roboflow.com/clash-of-clans-vmlu7/detect-and-classify-object-detection-upnqq/dataset/5",
+    "license": "CC BY 4.0",
+    "author": "Clash of Clans (Roboflow Universe)",
+    "curation": "one medoid image per .rf. original family; only hdv 6/7; near-square boxes",
+    "mapping": {
+      "hdv 6": ["town-hall", 6],
+      "hdv 7": ["town-hall", 7]
+    }
+  },
+  "basevisionbot-town-halls-v4": {
+    "url": "https://universe.roboflow.com/basevisionbot/clash-of-clans-vop4y-w1wzu/dataset/4",
+    "license": "CC BY 4.0",
+    "author": "BaseVisionbot / Find This Base",
+    "lineage": "Find This Base v1 plus BaseVisionbot additions; level crops only",
+    "curation": "all upstream v4 images (version declares no augmentations); near-square boxes; deterministic holdouts for classes published train-only",
+    "mapping": {
+      "TH8": ["town-hall", 8],
+      "TH9": ["town-hall", 9],
+      "TH10": ["town-hall", 10],
+      "TH11": ["town-hall", 11],
+      "TH12": ["town-hall", 12],
+      "TH13": ["town-hall", 13],
+      "TH14": ["town-hall", 14],
+      "TH15": ["town-hall", 15],
+      "TH16": ["town-hall", 16],
+      "TH17": ["town-hall", 17],
+      "TH18": ["town-hall", 18]
+    }
+  },
+  "coc-bases-all-town-halls-v1": {
+    "url": "https://universe.roboflow.com/coc-bases/coc-all-town-hall-identifier/dataset/1",
+    "license": "CC BY 4.0",
+    "author": "CoC Bases",
+    "curation": "home-village town halls only; malformed narrow boxes excluded; deterministic holdouts for classes missing test",
+    "mapping": {
+      "th4": ["town-hall", 4],
+      "th5": ["town-hall", 5],
+      "th6": ["town-hall", 6],
+      "th7": ["town-hall", 7],
+      "th8": ["town-hall", 8],
+      "th9": ["town-hall", 9],
+      "th10": ["town-hall", 10],
+      "th11": ["town-hall", 11],
+      "th12": ["town-hall", 12],
+      "th13": ["town-hall", 13],
+      "th14": ["town-hall", 14]
+    }
+  },
+  "bbs-clash-of-clan-v1": {
+    "url": "https://universe.roboflow.com/bbs-workspac/clash-of-clan-kiy6t/dataset/1",
+    "license": "CC BY 4.0",
+    "author": "bbs-workspac",
+    "curation": "segmentation polygons converted to bounding boxes; ambiguous multi-building reference sheets excluded; visually audited",
+    "mapping": {
+      "HDV 01": ["town-hall", 1],
+      "HDV 2": ["town-hall", 2],
+      "HDV 3": ["town-hall", 3],
+      "HDV 4": ["town-hall", 4],
+      "HDV 5": ["town-hall", 5],
+      "HDV 6": ["town-hall", 6],
+      "HDV 7": ["town-hall", 7],
+      "HDV 8": ["town-hall", 8],
+      "HDV 9": ["town-hall", 9],
+      "HDV 10": ["town-hall", 10],
+      "HDV 11": ["town-hall", 11],
+      "HDV 12": ["town-hall", 12],
+      "HDV 13": ["town-hall", 13],
+      "HDV 14": ["town-hall", 14],
+      "HDV 15": ["town-hall", 15],
+      "HDV 16": ["town-hall", 16],
+      "HDV 17": ["town-hall", 17],
+      "HDV 18": ["town-hall", 18]
+    }
+  },
+  "bbs-clash-of-clan-v1-th1-th2": {
+    "url": "https://universe.roboflow.com/bbs-workspac/clash-of-clan-kiy6t/dataset/1",
+    "license": "CC BY 4.0",
+    "author": "bbs-workspac",
+    "curation": "only visually verified TH1/TH2 polygons retained from the multi-building reference sheets",
+    "mapping": {
+      "HDV 01": ["town-hall", 1],
+      "HDV 2": ["town-hall", 2]
+    }
+  },
+  "jack-freeth-elixir-collectors-v9": {
+    "url": "https://universe.roboflow.com/jack-freeth-waaxu/nqehqedblhwje-enqnd-ww-dnnwqn/dataset/9",
+    "license": "CC BY 4.0",
+    "author": "jack freeth",
+    "curation": "one medoid per augmented .rf. family; collector state suffixes 0/1 merged into the same visual level; visually audited",
+    "mapping": {
+      "AirDefence5": ["air-defense", 5],
+      "ElixirCollector_1_0": ["elixir-collector", 1],
+      "ElixirCollector_1_1": ["elixir-collector", 1],
+      "ElixirCollector_2_1": ["elixir-collector", 2],
+      "ElixirCollector_3_1": ["elixir-collector", 3],
+      "ElixirCollector_4_0": ["elixir-collector", 4],
+      "ElixirCollector_4_1": ["elixir-collector", 4],
+      "ElixirCollector_5_0": ["elixir-collector", 5],
+      "ElixirCollector_5_1": ["elixir-collector", 5],
+      "ElixirCollector_6_0": ["elixir-collector", 6],
+      "ElixirCollector_6_1": ["elixir-collector", 6],
+      "ElixirCollector_7_0": ["elixir-collector", 7],
+      "ElixirCollector_7_1": ["elixir-collector", 7],
+      "ElixirCollector_8_0": ["elixir-collector", 8],
+      "ElixirCollector_8_1": ["elixir-collector", 8],
+      "ElixirCollector_9_0": ["elixir-collector", 9],
+      "ElixirCollector_9_1": ["elixir-collector", 9],
+      "ElixirCollector_10_0": ["elixir-collector", 10],
+      "ElixirCollector_10_1": ["elixir-collector", 10],
+      "ElixirCollector_11_0": ["elixir-collector", 11],
+      "ElixirCollector_11_1": ["elixir-collector", 11],
+      "ElixirCollector_12_0": ["elixir-collector", 12],
+      "ElixirCollector_12_1": ["elixir-collector", 12]
+    }
+  },
+  "kiet-walls-v6": {
+    "url": "https://universe.roboflow.com/kiet-jpg30/clash-of-clan-vzsst/dataset/6",
+    "license": "CC BY 4.0",
+    "author": "kiet",
+    "curation": "one medoid per rotated .rf. family; exact and cross-split near duplicates excluded; at most 20 wall crops per level and source image",
+    "mapping": {
+      "wall 1": ["wall", 1],
+      "wall 2": ["wall", 2],
+      "wall 3": ["wall", 3],
+      "wall 4": ["wall", 4],
+      "wall 5": ["wall", 5],
+      "wall 6": ["wall", 6],
+      "wall 7": ["wall", 7],
+      "wall 8": ["wall", 8],
+      "wall 9": ["wall", 9],
+      "wall 10": ["wall", 10],
+      "wall 11": ["wall", 11],
+      "wall 12": ["wall", 12],
+      "wall 13": ["wall", 13],
+      "wall 14": ["wall", 14],
+      "wall 15": ["wall", 15],
+      "wall 16": ["wall", 16],
+      "wall 17": ["wall", 17]
+    }
+  },
+  "htrg-clash-of-clan-v2": {
+    "url": "https://universe.roboflow.com/htrg/clash-of-clan-vzsst-hj8pj/dataset/2",
+    "license": "CC BY 4.0",
+    "author": "htrg",
+    "lineage": "Apparent fork/augmentation of the kiet clash-of-clan-vzsst wall dataset; overlap audit required before use",
+    "curation": "one medoid per .rf. original family; wall classes only; cross-source family overlap must be excluded",
+    "mapping": {
+      "wall 1": ["wall", 1],
+      "wall 2": ["wall", 2],
+      "wall 3": ["wall", 3],
+      "wall 4": ["wall", 4],
+      "wall 5": ["wall", 5],
+      "wall 6": ["wall", 6],
+      "wall 7": ["wall", 7],
+      "wall 8": ["wall", 8],
+      "wall 9": ["wall", 9],
+      "wall 10": ["wall", 10],
+      "wall 11": ["wall", 11],
+      "wall 12": ["wall", 12],
+      "wall 13": ["wall", 13],
+      "wall 14": ["wall", 14],
+      "wall 15": ["wall", 15],
+      "wall 16": ["wall", 16],
+      "wall 17": ["wall", 17]
+    }
+  },
+  "clashia-detectwall-v7": {
+    "url": "https://universe.roboflow.com/clashia/detectwall/dataset/7",
+    "license": "CC BY 4.0",
+    "author": "clashia",
+    "curation": "one medoid per brightness/blur augmented .rf. family; visual and domain audit required before training",
+    "mapping": {
+      "wall1": ["wall", 1],
+      "wall2": ["wall", 2],
+      "wall3": ["wall", 3],
+      "wall4": ["wall", 4],
+      "wall5": ["wall", 5],
+      "wall6": ["wall", 6],
+      "wall7": ["wall", 7],
+      "wall8": ["wall", 8],
+      "wall9": ["wall", 9],
+      "wall10": ["wall", 10],
+      "wall11": ["wall", 11],
+      "wall12": ["wall", 12],
+      "wall13": ["wall", 13],
+      "wall14": ["wall", 14],
+      "wall15": ["wall", 15],
+      "wall16": ["wall", 16],
+      "wall17": ["wall", 17],
+      "wall18": ["wall", 18],
+      "wall19": ["wall", 19]
+    }
+  },
+  "coc-bases-defense-levels-v1": {
+  "url": "https://universe.roboflow.com/coc-bases/coc-defense-detector/dataset/1",
+  "license": "CC BY 4.0",
+  "author": "CoC Bases",
+  "role": "reference_only",
+  "curation": "151 isolated building renders on black backgrounds, expanded to 453 augmented files. Two distinct source images were visually checked; 448/453 exported files have four nearly black corners. Keep as visual references, not gameplay training or evaluation.",
+  "mapping": {
+    "Air_Defense_1": [
+      "air-defense",
+      1
+    ],
+    "Air_Defense_10": [
+      "air-defense",
+      10
+    ],
+    "Air_Defense_11": [
+      "air-defense",
+      11
+    ],
+    "Air_Defense_12": [
+      "air-defense",
+      12
+    ],
+    "Air_Defense_13": [
+      "air-defense",
+      13
+    ],
+    "Air_Defense_2": [
+      "air-defense",
+      2
+    ],
+    "Air_Defense_3": [
+      "air-defense",
+      3
+    ],
+    "Air_Defense_4": [
+      "air-defense",
+      4
+    ],
+    "Air_Defense_5": [
+      "air-defense",
+      5
+    ],
+    "Air_Defense_6": [
+      "air-defense",
+      6
+    ],
+    "Air_Defense_7": [
+      "air-defense",
+      7
+    ],
+    "Air_Defense_8": [
+      "air-defense",
+      8
+    ],
+    "Air_Defense_9": [
+      "air-defense",
+      9
+    ],
+    "Air_Sweeper_1": [
+      "air-sweeper",
+      1
+    ],
+    "Air_Sweeper_2": [
+      "air-sweeper",
+      2
+    ],
+    "Air_Sweeper_3": [
+      "air-sweeper",
+      3
+    ],
+    "Air_Sweeper_4": [
+      "air-sweeper",
+      4
+    ],
+    "Air_Sweeper_5": [
+      "air-sweeper",
+      5
+    ],
+    "Air_Sweeper_6": [
+      "air-sweeper",
+      6
+    ],
+    "Air_Sweeper_7": [
+      "air-sweeper",
+      7
+    ],
+    "Archer_Tower_1": [
+      "archer-tower",
+      1
+    ],
+    "Archer_Tower_10": [
+      "archer-tower",
+      10
+    ],
+    "Archer_Tower_11": [
+      "archer-tower",
+      11
+    ],
+    "Archer_Tower_12": [
+      "archer-tower",
+      12
+    ],
+    "Archer_Tower_13": [
+      "archer-tower",
+      13
+    ],
+    "Archer_Tower_14": [
+      "archer-tower",
+      14
+    ],
+    "Archer_Tower_15": [
+      "archer-tower",
+      15
+    ],
+    "Archer_Tower_16": [
+      "archer-tower",
+      16
+    ],
+    "Archer_Tower_17": [
+      "archer-tower",
+      17
+    ],
+    "Archer_Tower_18": [
+      "archer-tower",
+      18
+    ],
+    "Archer_Tower_19": [
+      "archer-tower",
+      19
+    ],
+    "Archer_Tower_2": [
+      "archer-tower",
+      2
+    ],
+    "Archer_Tower_20": [
+      "archer-tower",
+      20
+    ],
+    "Archer_Tower_21": [
+      "archer-tower",
+      21
+    ],
+    "Archer_Tower_3": [
+      "archer-tower",
+      3
+    ],
+    "Archer_Tower_4": [
+      "archer-tower",
+      4
+    ],
+    "Archer_Tower_5": [
+      "archer-tower",
+      5
+    ],
+    "Archer_Tower_6": [
+      "archer-tower",
+      6
+    ],
+    "Archer_Tower_7": [
+      "archer-tower",
+      7
+    ],
+    "Archer_Tower_8": [
+      "archer-tower",
+      8
+    ],
+    "Archer_Tower_9": [
+      "archer-tower",
+      9
+    ],
+    "Builder_Hut_1": [
+      "builders-hut",
+      1
+    ],
+    "Builder_Hut_2": [
+      "builders-hut",
+      2
+    ],
+    "Builder_Hut_3": [
+      "builders-hut",
+      3
+    ],
+    "Builder_Hut_4": [
+      "builders-hut",
+      4
+    ],
+    "Cannon_1": [
+      "cannon",
+      1
+    ],
+    "Cannon_10": [
+      "cannon",
+      10
+    ],
+    "Cannon_11": [
+      "cannon",
+      11
+    ],
+    "Cannon_12": [
+      "cannon",
+      12
+    ],
+    "Cannon_13": [
+      "cannon",
+      13
+    ],
+    "Cannon_14": [
+      "cannon",
+      14
+    ],
+    "Cannon_2": [
+      "cannon",
+      2
+    ],
+    "Cannon_20": [
+      "cannon",
+      20
+    ],
+    "Cannon_21": [
+      "cannon",
+      21
+    ],
+    "Cannon_3": [
+      "cannon",
+      3
+    ],
+    "Cannon_4": [
+      "cannon",
+      4
+    ],
+    "Cannon_5": [
+      "cannon",
+      5
+    ],
+    "Cannon_6": [
+      "cannon",
+      6
+    ],
+    "Cannon_7": [
+      "cannon",
+      7
+    ],
+    "Cannon_8": [
+      "cannon",
+      8
+    ],
+    "Cannon_9": [
+      "cannon",
+      9
+    ],
+    "Clan_Castle_1": [
+      "clan-castle",
+      1
+    ],
+    "Clan_Castle_10": [
+      "clan-castle",
+      10
+    ],
+    "Clan_Castle_11": [
+      "clan-castle",
+      11
+    ],
+    "Clan_Castle_2": [
+      "clan-castle",
+      2
+    ],
+    "Clan_Castle_3": [
+      "clan-castle",
+      3
+    ],
+    "Clan_Castle_4": [
+      "clan-castle",
+      4
+    ],
+    "Clan_Castle_5": [
+      "clan-castle",
+      5
+    ],
+    "Clan_Castle_6": [
+      "clan-castle",
+      6
+    ],
+    "Clan_Castle_7": [
+      "clan-castle",
+      7
+    ],
+    "Clan_Castle_8": [
+      "clan-castle",
+      8
+    ],
+    "Clan_Castle_9": [
+      "clan-castle",
+      9
+    ],
+    "Eagle_Artillery_1": [
+      "eagle-artillery",
+      1
+    ],
+    "Eagle_Artillery_2": [
+      "eagle-artillery",
+      2
+    ],
+    "Eagle_Artillery_3": [
+      "eagle-artillery",
+      3
+    ],
+    "Eagle_Artillery_4": [
+      "eagle-artillery",
+      4
+    ],
+    "Eagle_Artillery_5": [
+      "eagle-artillery",
+      5
+    ],
+    "Gold_Storage_1": [
+      "gold-storage",
+      1
+    ],
+    "Gold_Storage_10": [
+      "gold-storage",
+      10
+    ],
+    "Gold_Storage_11": [
+      "gold-storage",
+      11
+    ],
+    "Gold_Storage_12": [
+      "gold-storage",
+      12
+    ],
+    "Gold_Storage_13": [
+      "gold-storage",
+      13
+    ],
+    "Gold_Storage_14": [
+      "gold-storage",
+      14
+    ],
+    "Gold_Storage_15": [
+      "gold-storage",
+      15
+    ],
+    "Gold_Storage_16": [
+      "gold-storage",
+      16
+    ],
+    "Gold_Storage_2": [
+      "gold-storage",
+      2
+    ],
+    "Gold_Storage_3": [
+      "gold-storage",
+      3
+    ],
+    "Gold_Storage_4": [
+      "gold-storage",
+      4
+    ],
+    "Gold_Storage_5": [
+      "gold-storage",
+      5
+    ],
+    "Gold_Storage_6": [
+      "gold-storage",
+      6
+    ],
+    "Gold_Storage_7": [
+      "gold-storage",
+      7
+    ],
+    "Gold_Storage_8": [
+      "gold-storage",
+      8
+    ],
+    "Gold_Storage_9": [
+      "gold-storage",
+      9
+    ],
+    "Pet_House_1": [
+      "pet-house",
+      1
+    ],
+    "Pet_House_2": [
+      "pet-house",
+      2
+    ],
+    "Pet_House_3": [
+      "pet-house",
+      3
+    ],
+    "Pet_House_4": [
+      "pet-house",
+      4
+    ],
+    "Pet_House_5": [
+      "pet-house",
+      5
+    ],
+    "Pet_House_6": [
+      "pet-house",
+      6
+    ],
+    "Pet_House_7": [
+      "pet-house",
+      7
+    ],
+    "Pet_House_8": [
+      "pet-house",
+      8
+    ],
+    "Spell_Factory_1": [
+      "spell-factory",
+      1
+    ],
+    "Spell_Factory_2": [
+      "spell-factory",
+      2
+    ],
+    "Spell_Factory_3": [
+      "spell-factory",
+      3
+    ],
+    "Spell_Factory_5": [
+      "spell-factory",
+      5
+    ],
+    "Spell_Factory_6": [
+      "spell-factory",
+      6
+    ],
+    "Spell_Factory_7": [
+      "spell-factory",
+      7
+    ],
+    "Tesla_1": [
+      "hidden-tesla",
+      1
+    ],
+    "Tesla_10": [
+      "hidden-tesla",
+      10
+    ],
+    "Tesla_11": [
+      "hidden-tesla",
+      11
+    ],
+    "Tesla_12": [
+      "hidden-tesla",
+      12
+    ],
+    "Tesla_13": [
+      "hidden-tesla",
+      13
+    ],
+    "Tesla_2": [
+      "hidden-tesla",
+      2
+    ],
+    "Tesla_3": [
+      "hidden-tesla",
+      3
+    ],
+    "Tesla_4": [
+      "hidden-tesla",
+      4
+    ],
+    "Tesla_5": [
+      "hidden-tesla",
+      5
+    ],
+    "Tesla_6": [
+      "hidden-tesla",
+      6
+    ],
+    "Tesla_7": [
+      "hidden-tesla",
+      7
+    ],
+    "Tesla_8": [
+      "hidden-tesla",
+      8
+    ],
+    "Tesla_9": [
+      "hidden-tesla",
+      9
+    ],
+    "Townhall_1": [
+      "town-hall",
+      1
+    ],
+    "Townhall_10": [
+      "town-hall",
+      10
+    ],
+    "Townhall_11": [
+      "town-hall",
+      11
+    ],
+    "Townhall_12_1": [
+      "town-hall",
+      12
+    ],
+    "Townhall_12_2": [
+      "town-hall",
+      12
+    ],
+    "Townhall_12_3": [
+      "town-hall",
+      12
+    ],
+    "Townhall_12_4": [
+      "town-hall",
+      12
+    ],
+    "Townhall_12_5": [
+      "town-hall",
+      12
+    ],
+    "Townhall_13_1": [
+      "town-hall",
+      13
+    ],
+    "Townhall_13_2": [
+      "town-hall",
+      13
+    ],
+    "Townhall_13_3": [
+      "town-hall",
+      13
+    ],
+    "Townhall_13_4": [
+      "town-hall",
+      13
+    ],
+    "Townhall_13_5": [
+      "town-hall",
+      13
+    ],
+    "Townhall_14_1": [
+      "town-hall",
+      14
+    ],
+    "Townhall_14_2": [
+      "town-hall",
+      14
+    ],
+    "Townhall_14_3": [
+      "town-hall",
+      14
+    ],
+    "Townhall_14_4": [
+      "town-hall",
+      14
+    ],
+    "Townhall_14_5": [
+      "town-hall",
+      14
+    ],
+    "Townhall_15_1": [
+      "town-hall",
+      15
+    ],
+    "Townhall_2": [
+      "town-hall",
+      2
+    ],
+    "Townhall_3": [
+      "town-hall",
+      3
+    ],
+    "Townhall_4": [
+      "town-hall",
+      4
+    ],
+    "Townhall_5": [
+      "town-hall",
+      5
+    ],
+    "Townhall_6": [
+      "town-hall",
+      6
+    ],
+    "Townhall_7": [
+      "town-hall",
+      7
+    ],
+    "Townhall_8": [
+      "town-hall",
+      8
+    ],
+    "Townhall_9": [
+      "town-hall",
+      9
+    ]
+  }
+},
+"hi-coc-v5": {
+  "url": "https://universe.roboflow.com/hi-04wnc/coc-2tfxe/dataset/5",
+  "license": "CC BY 4.0",
+  "author": "hi",
+  "curation": "unaugmented upstream images; generic classes excluded; exact and cross-split near duplicates excluded; visually audited",
+  "mapping": {
+    "air_defence_7": ["air-defense", 7],
+    "air_sweeper_7": ["air-sweeper", 7],
+    "archer_tower_13": ["archer-tower", 13],
+    "army_camp_8": ["army-camp", 8],
+    "barracks_12": ["barracks", 12],
+    "blacksmith_4": ["blacksmith", 4],
+    "bomb_tower_4": ["bomb-tower", 4],
+    "cannon_13": ["cannon", 13],
+    "clan_castle_6": ["clan-castle", 6],
+    "dark_barracks_7": ["dark-barracks", 7],
+    "dark_elixir_drill_7": ["dark-elixir-drill", 7],
+    "dark_elixir_storage_6": ["dark-elixir-storage", 6],
+    "dark_spell_factory_4": ["dark-spell-factory", 4],
+    "elixir_collector_13": ["elixir-collector", 13],
+    "elixir_storage_11": ["elixir-storage", 11],
+    "gold_mine_13": ["gold-mine", 13],
+    "gold_storage_11": ["gold-storage", 11],
+    "inferno_tower_3": ["inferno-tower", 3],
+    "laboratory_8": ["laboratory", 8],
+    "mortar_8": ["mortar", 8],
+    "spell_factory_5": ["spell-factory", 5],
+    "townhall_10": ["town-hall", 10],
+    "wizard_tower_9": ["wizard-tower", 9],
+    "x_bow_5": ["x-bow", 5]
+  }
+},
+"peters-walls-16-17-v2": {
+  "url": "https://universe.roboflow.com/peters-workspace-y70qq/coc-mauern/dataset/2",
+  "license": "CC BY 4.0",
+  "author": "Peters Workspace",
+  "curation": "unaugmented upstream images; exact and cross-split near duplicates excluded; at most 20 wall crops per level and source image; visually audited",
+  "mapping": {
+    "Mauer_lvl16": ["wall", 16],
+    "Mauer_lvl17": ["wall", 17]
+  }
+},
+"tokke-macle-v13": {
+  "url": "https://universe.roboflow.com/tokke/macle-tm-yv-5jvrx/dataset/13",
+  "license": "CC BY 4.0",
+  "author": "Tokke",
+  "curation": "one medoid per two-way colour-augmented .rf. family; source families do not cross splits; segmentation polygons converted to boxes; visually audited",
+  "mapping": {
+    "ded10": ["dark-elixir-drill", 10],
+    "ds11": ["dark-elixir-storage", 11],
+    "ds12": ["dark-elixir-storage", 12],
+    "ds13": ["dark-elixir-storage", 13],
+    "ec16": ["elixir-collector", 16],
+    "es17": ["elixir-storage", 17],
+    "es18": ["elixir-storage", 18],
+    "es19": ["elixir-storage", 19],
+    "gm16": ["gold-mine", 16],
+    "gs18": ["gold-storage", 18],
+    "gs19": ["gold-storage", 19],
+    "th17": ["town-hall", 17],
+    "th18": ["town-hall", 18]
   }
 }
-
+}

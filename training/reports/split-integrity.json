@@ -3,7 +3,7 @@
   "dataset_root": "training/dataset/detector",
   "split_image_counts": {
     "test": 60,
-    "train": 1036,
+    "train": 1264,
     "val": 118
   },
   "cross_split_same_stem_pairs": {
@@ -15,9 +15,9 @@
     "train-val": 42
   },
   "cross_split_same_village_group_pairs": {},
-  "train_images_before": 1036,
+  "train_images_before": 1264,
   "train_images_excluded": 68,
-  "train_images_clean": 968,
+  "train_images_clean": 1196,
   "excluded_train_files": [
     "training/dataset/detector/images/train/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
     "training/dataset/detector/images/train/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",

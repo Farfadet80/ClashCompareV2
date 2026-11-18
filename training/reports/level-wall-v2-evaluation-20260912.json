@@ -1,0 +1,403 @@
+{
+  "dataset": "wall-v2-final",
+  "weights": "training\\runs\\levels\\wall-v2-final\\weights\\best.pt",
+  "split": "test",
+  "samples": 383,
+  "accuracy": 0.97911227154047,
+  "per_level": {
+    "1": {
+      "1": 39,
+      "5": 1
+    },
+    "2": {
+      "2": 23,
+      "3": 1,
+      "7": 1
+    },
+    "3": {
+      "3": 19,
+      "6": 2,
+      "7": 1
+    },
+    "4": {
+      "4": 48
+    },
+    "5": {
+      "5": 156
+    },
+    "6": {
+      "6": 55
+    },
+    "7": {
+      "7": 11
+    },
+    "16": {
+      "7": 1,
+      "16": 12
+    },
+    "17": {
+      "7": 1,
+      "17": 12
+    }
+  },
+  "thresholds": [
+    {
+      "threshold": 0.5,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.51,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.52,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.53,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.54,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.55,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.56,
+      "accepted": 383,
+      "coverage": 1.0,
+      "accuracy": 0.97911227154047
+    },
+    {
+      "threshold": 0.57,
+      "accepted": 382,
+      "coverage": 0.9973890339425587,
+      "accuracy": 0.981675392670157
+    },
+    {
+      "threshold": 0.58,
+      "accepted": 381,
+      "coverage": 0.9947780678851175,
+      "accuracy": 0.984251968503937
+    },
+    {
+      "threshold": 0.59,
+      "accepted": 381,
+      "coverage": 0.9947780678851175,
+      "accuracy": 0.984251968503937
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.61,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.62,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.63,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.64,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.65,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.66,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.67,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.68,
+      "accepted": 380,
+      "coverage": 0.9921671018276762,
+      "accuracy": 0.9842105263157894
+    },
+    {
+      "threshold": 0.69,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.71,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.72,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.73,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.74,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.75,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.76,
+      "accepted": 379,
+      "coverage": 0.9895561357702349,
+      "accuracy": 0.9868073878627969
+    },
+    {
+      "threshold": 0.77,
+      "accepted": 378,
+      "coverage": 0.9869451697127938,
+      "accuracy": 0.9867724867724867
+    },
+    {
+      "threshold": 0.78,
+      "accepted": 377,
+      "coverage": 0.9843342036553525,
+      "accuracy": 0.986737400530504
+    },
+    {
+      "threshold": 0.79,
+      "accepted": 377,
+      "coverage": 0.9843342036553525,
+      "accuracy": 0.986737400530504
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 376,
+      "coverage": 0.9817232375979112,
+      "accuracy": 0.9867021276595744
+    },
+    {
+      "threshold": 0.81,
+      "accepted": 376,
+      "coverage": 0.9817232375979112,
+      "accuracy": 0.9867021276595744
+    },
+    {
+      "threshold": 0.82,
+      "accepted": 375,
+      "coverage": 0.97911227154047,
+      "accuracy": 0.9893333333333333
+    },
+    {
+      "threshold": 0.83,
+      "accepted": 374,
+      "coverage": 0.9765013054830287,
+      "accuracy": 0.9919786096256684
+    },
+    {
+      "threshold": 0.84,
+      "accepted": 374,
+      "coverage": 0.9765013054830287,
+      "accuracy": 0.9919786096256684
+    },
+    {
+      "threshold": 0.85,
+      "accepted": 374,
+      "coverage": 0.9765013054830287,
+      "accuracy": 0.9919786096256684
+    },
+    {
+      "threshold": 0.86,
+      "accepted": 374,
+      "coverage": 0.9765013054830287,
+      "accuracy": 0.9919786096256684
+    },
+    {
+      "threshold": 0.87,
+      "accepted": 373,
+      "coverage": 0.9738903394255874,
+      "accuracy": 0.9946380697050938
+    },
+    {
+      "threshold": 0.88,
+      "accepted": 373,
+      "coverage": 0.9738903394255874,
+      "accuracy": 0.9946380697050938
+    },
+    {
+      "threshold": 0.89,
+      "accepted": 373,
+      "coverage": 0.9738903394255874,
+      "accuracy": 0.9946380697050938
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 373,
+      "coverage": 0.9738903394255874,
+      "accuracy": 0.9946380697050938
+    },
+    {
+      "threshold": 0.91,
+      "accepted": 373,
+      "coverage": 0.9738903394255874,
+      "accuracy": 0.9946380697050938
+    },
+    {
+      "threshold": 0.92,
+      "accepted": 373,
+      "coverage": 0.9738903394255874,
+      "accuracy": 0.9946380697050938
+    },
+    {
+      "threshold": 0.93,
+      "accepted": 371,
+      "coverage": 0.9686684073107049,
+      "accuracy": 0.9946091644204852
+    },
+    {
+      "threshold": 0.94,
+      "accepted": 370,
+      "coverage": 0.9660574412532638,
+      "accuracy": 0.9945945945945946
+    },
+    {
+      "threshold": 0.95,
+      "accepted": 368,
+      "coverage": 0.9608355091383812,
+      "accuracy": 0.9945652173913043
+    },
+    {
+      "threshold": 0.96,
+      "accepted": 367,
+      "coverage": 0.95822454308094,
+      "accuracy": 0.9945504087193461
+    },
+    {
+      "threshold": 0.97,
+      "accepted": 366,
+      "coverage": 0.9556135770234987,
+      "accuracy": 0.994535519125683
+    },
+    {
+      "threshold": 0.98,
+      "accepted": 364,
+      "coverage": 0.9503916449086162,
+      "accuracy": 0.9945054945054945
+    },
+    {
+      "threshold": 0.99,
+      "accepted": 353,
+      "coverage": 0.9216710182767625,
+      "accuracy": 0.9971671388101983
+    }
+  ],
+  "errors": [
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-1\\ef5317e1ab4a-kiet-walls-v6-test-03db79f8bcc8-0.jpg",
+      "expected": 1,
+      "predicted": 5,
+      "confidence": 0.9829506278038025,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-16\\7357e7d2f8ea-kiet-walls-v6-test-03db79f8bcc8-7.jpg",
+      "expected": 16,
+      "predicted": 7,
+      "confidence": 0.8168208599090576,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-17\\f4717dc337e4-kiet-walls-v6-test-03db79f8bcc8-8.jpg",
+      "expected": 17,
+      "predicted": 7,
+      "confidence": 0.8646383285522461,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-2\\5dc7db1e4f44-kiet-walls-v6-test-03db79f8bcc8-9.jpg",
+      "expected": 2,
+      "predicted": 7,
+      "confidence": 0.8274450302124023,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-2\\be5783f22bc8-kiet-walls-v6-test-2b2818f51c30-8.jpg",
+      "expected": 2,
+      "predicted": 3,
+      "confidence": 0.5689272284507751,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-3\\4a5aac3df0db-kiet-walls-v6-test-03db79f8bcc8-10.jpg",
+      "expected": 3,
+      "predicted": 7,
+      "confidence": 0.689888060092926,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-3\\661c7265265c-kiet-walls-v6-test-6765491c7b83-0.jpg",
+      "expected": 3,
+      "predicted": 6,
+      "confidence": 0.9997673630714417,
+      "correct": false
+    },
+    {
+      "path": "training\\classification\\wall-v2-final\\test\\level-3\\c5994f6b081f-kiet-walls-v6-test-f5fa9e13723b-2.jpg",
+      "expected": 3,
+      "predicted": 6,
+      "confidence": 0.5721649527549744,
+      "correct": false
+    }
+  ]
+}
