@@ -57,6 +57,8 @@ def main() -> None:
     class_ids = {item["id"]: i for i, item in enumerate(class_payload["detector_classes"])}
     tesla_id = class_ids[TESLA]
 
+    args.input_dir = args.input_dir.resolve()
+    args.output = args.output.resolve()
     args.output.mkdir(parents=True, exist_ok=True)
     model = YOLO(str(args.model))
     rows = []

@@ -15,7 +15,10 @@
     "private": true,
     "p0_assist": true,
     "p0_assist_model": "building-detector-v5",
-    "scope": "TH10-18"
+    "scope": "TH10-18",
+    "perfect_pass_cleaned": "2026-11-19",
+    "perfect_pass_note": "Village entier: exhaustive impossible sans revue humaine Jimmy/annotator",
+    "focus_still_present": true
   },
   "expected_counts": {},
   "boxes": [
@@ -612,10 +615,10 @@
       "y1": 293.3446044921875,
       "x2": 511.0074157714844,
       "y2": 333.2257995605469,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.4164,
-      "review_note": "V5 assist conf=0.416 pending revue"
+      "review_note": "V5 assist conf=0.416 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 14,
@@ -624,10 +627,10 @@
       "y1": 137.4294891357422,
       "x2": 350.0744323730469,
       "y2": 167.48159790039062,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.266,
-      "review_note": "V5 assist conf=0.266 pending revue"
+      "review_note": "V5 assist conf=0.266 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 13,
@@ -636,10 +639,10 @@
       "y1": 337.60595703125,
       "x2": 233.30459594726562,
       "y2": 367.9790954589844,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2241,
-      "review_note": "V5 assist conf=0.224 pending revue"
+      "review_note": "V5 assist conf=0.224 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 49,
@@ -648,10 +651,10 @@
       "y1": 160.3217010498047,
       "x2": 356.2374572753906,
       "y2": 182.139892578125,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.209,
-      "review_note": "V5 assist conf=0.209 pending revue"
+      "review_note": "V5 assist conf=0.209 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     }
   ]
 }

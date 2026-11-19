@@ -23,13 +23,14 @@ training/inbox/private/
   exports-json/                      # exports village JSON amis (dataIds)
 ```
 
-## P0 pré-train (2026-11-19)
+## P0 / perfect-pass pré-train (2026-11-19)
 
 1. Assist villages : `assist_fill_village_sessions.py` → `p0-mode-photo/`
 2. Ne **jamais** `exhaustive=true` sans revue annotator + `promote_p0_assisted_sessions.py --i-reviewed`
 3. Hard-neg tesla : `mine_tesla_hard_negatives.py` (pas baisser conf inférence)
-4. Val/test wall+giga : `rebalance_weak_val_test.py` (dataset local gitignoré)
-5. Synthèse : `training/reports/p0-priority-pass-summary-20261119.json`
+4. Val/test faibles : `rebalance_weak_val_test.py` (tornado/crafted/giga/wall — dataset local)
+5. Perfect-pass : nettoyage file + rebalance eval ; `ready=false` tant que giga train < 50 **ou** villages non exhaustifs
+6. Synthèses : `p0-priority-pass-summary-20261119.json`, `perfect-pass-summary-20261119.json`
 
 ## Règles
 

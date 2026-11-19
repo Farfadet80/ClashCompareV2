@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "image": {
+    "name": "wall-tile-private-kiet-walls-v6-train39-wall12-3-_-b3d3fcb8a63d.jpg",
+    "width": 256,
+    "height": 256
+  },
+  "metadata": {
+    "village_group": "wall-tile-b3d3fcb8a63d",
+    "source": "wall-tile:kiet-walls-v6",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true,
+    "p0_wall_tile": true,
+    "parent_village_group": "private-kiet-walls-v6-train39-wall12-3-_png",
+    "tile_xyxy": [
+      0,
+      384,
+      256,
+      640
+    ],
+    "scope": "TH10-18",
+    "p0_demoted": "perfect-pass visual: non-wall buildings/UI present — not imported",
+    "perfect_pass_review": "2026-11-19"
+  },
+  "expected_counts": {
+    "wall": 36
+  },
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 228.0,
+      "y1": 101.5,
+      "x2": 250.0,
+      "y2": 107.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 220.5,
+      "y1": 95.0,
+      "x2": 238.5,
+      "y2": 101.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 209.0,
+      "y1": 102.0,
+      "x2": 231.0,
+      "y2": 108.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 198.5,
+      "y1": 97.5,
+      "x2": 222.5,
+      "y2": 102.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 192.0,
+      "y1": 90.5,
+      "x2": 212.0,
+      "y2": 96.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 181.0,
+      "y1": 85.5,
+      "x2": 202.0,
+      "y2": 90.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 174.5,
+      "y1": 79.0,
+      "x2": 194.5,
+      "y2": 86.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 162.0,
+      "y1": 73.0,
+      "x2": 184.0,
+      "y2": 79.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 150.5,
+      "y1": 67.5,
+      "x2": 174.5,
+      "y2": 73.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 143.0,
+      "y1": 61.5,
+      "x2": 165.0,
+      "y2": 67.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 132.5,
+      "y1": 55.5,
+      "x2": 154.5,
+      "y2": 61.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 125.0,
+      "y1": 50.0,
+      "x2": 145.0,
+      "y2": 56.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 130.5,
+      "y1": 43.5,
+      "x2": 154.5,
+      "y2": 49.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 125.5,
+      "y1": 39.0,
+      "x2": 147.5,
+      "y2": 44.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 115.5,
+      "y1": 33.0,
+      "x2": 137.5,
+      "y2": 39.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 106.5,
+      "y1": 26.0,
+      "x2": 128.5,
+      "y2": 32.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 112.0,
+      "y1": 21.5,
+      "x2": 136.0,
+      "y2": 25.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 106.0,
+      "y1": 16.5,
+      "x2": 126.0,
+      "y2": 22.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 96.0,
+      "y1": 10.0,
+      "x2": 116.0,
+      "y2": 16.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 101.5,
+      "y1": 3.5,
+      "x2": 127.5,
+      "y2": 9.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 163.5,
+      "y1": 3.0,
+      "x2": 183.5,
+      "y2": 9.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 156.5,
+      "y1": 8.5,
+      "x2": 174.5,
+      "y2": 15.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 167.5,
+      "y1": 15.5,
+      "x2": 183.5,
+      "y2": 21.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 172.5,
+      "y1": 21.5,
+      "x2": 192.5,
+      "y2": 26.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 183.5,
+      "y1": 26.5,
+      "x2": 202.5,
+      "y2": 32.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 194.0,
+      "y1": 20.5,
+      "x2": 211.0,
+      "y2": 26.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 187.0,
+      "y1": 15.0,
+      "x2": 205.0,
+      "y2": 21.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 177.0,
+      "y1": 10.0,
+      "x2": 195.0,
+      "y2": 15.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 201.0,
+      "y1": 26.5,
+      "x2": 221.0,
+      "y2": 33.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 207.5,
+      "y1": 19.5,
+      "x2": 231.5,
+      "y2": 25.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 216.0,
+      "y1": 27.5,
+      "x2": 240.0,
+      "y2": 33.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 227.5,
+      "y1": 32.5,
+      "x2": 250.5,
+      "y2": 38.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 215.5,
+      "y1": 38.5,
+      "x2": 239.5,
+      "y2": 44.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 226.5,
+      "y1": 44.0,
+      "x2": 248.5,
+      "y2": 50.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 226.0,
+      "y1": 20.0,
+      "x2": 249.0,
+      "y2": 26.0,
+      "status": "accepted",
+      "origin": "wall-tile"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 230.5,
+      "y1": 54.5,
+      "x2": 249.5,
+      "y2": 60.5,
+      "status": "accepted",
+      "origin": "wall-tile"
+    }
+  ]
+}

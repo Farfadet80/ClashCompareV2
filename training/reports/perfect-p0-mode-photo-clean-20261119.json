@@ -1,0 +1,101 @@
+{
+  "updated": "2026-11-19",
+  "purpose": "Nettoyage p0-mode-photo — jamais exhaustive auto sur village entier",
+  "stats": {
+    "rejected_pending": 129,
+    "files_changed": 11,
+    "focus_lost": 3,
+    "rejected_oversized_tornado-trap": 2
+  },
+  "rows": [
+    {
+      "session": "crafted-defense__base-finder-th18__train__Screenshot_2025-12--44405cffa4.session.json",
+      "focus": "crafted-defense",
+      "focus_ok": true,
+      "accepted": 35,
+      "ncls": 17,
+      "wall": 0
+    },
+    {
+      "session": "crafted-defense__base-finder-th18__train__th18_war_26_jpg_rf_-512ceb6ec7.session.json",
+      "focus": "crafted-defense",
+      "focus_ok": false,
+      "accepted": 26,
+      "ncls": 13,
+      "wall": 0
+    },
+    {
+      "session": "giga-bomb__glenn-th18-gigabomb__test__IMG_0134_jpg_rf_65b6b34-22cb2b0e4e.session.json",
+      "focus": "giga-bomb",
+      "focus_ok": true,
+      "accepted": 45,
+      "ncls": 21,
+      "wall": 0
+    },
+    {
+      "session": "giga-bomb__glenn-th18-gigabomb__train__IMG_0126_jpg_rf_0f4fdf-b04263cdd8.session.json",
+      "focus": "giga-bomb",
+      "focus_ok": true,
+      "accepted": 49,
+      "ncls": 22,
+      "wall": 0
+    },
+    {
+      "session": "giga-bomb__glenn-th18-gigabomb__train__IMG_0129_jpg_rf_b5a479-a9c4005a95.session.json",
+      "focus": "giga-bomb",
+      "focus_ok": true,
+      "accepted": 43,
+      "ncls": 21,
+      "wall": 0
+    },
+    {
+      "session": "tornado-trap__coc-all-traps__train__th11_war_1963_jpg_rf_69ff-b7caa1cebb.session.json",
+      "focus": "tornado-trap",
+      "focus_ok": false,
+      "accepted": 106,
+      "ncls": 30,
+      "wall": 0
+    },
+    {
+      "session": "tornado-trap__coc-all-traps__train__th15_farm_1477_jpg_rf_be8-ba32d1b5d5.session.json",
+      "focus": "tornado-trap",
+      "focus_ok": false,
+      "accepted": 99,
+      "ncls": 31,
+      "wall": 0
+    },
+    {
+      "session": "wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.session.json",
+      "focus": "wall",
+      "focus_ok": true,
+      "accepted": 333,
+      "ncls": 6,
+      "wall": 325
+    },
+    {
+      "session": "wall__clashia-detectwall-v7__train__train_wall_27_png_rf_15b1-ec2fa57a05.session.json",
+      "focus": "wall",
+      "focus_ok": true,
+      "accepted": 329,
+      "ncls": 6,
+      "wall": 323
+    },
+    {
+      "session": "wall__kiet-walls-v6__train__train39-wall12-3-_png_rf_cfa2382b-cabd4d569a.session.json",
+      "focus": "wall",
+      "focus_ok": true,
+      "accepted": 303,
+      "ncls": 2,
+      "wall": 295
+    },
+    {
+      "session": "wall__kiet-walls-v6__train__train40-wall13-1-_png_rf_53cb8a1d-03a16e4db0.session.json",
+      "focus": "wall",
+      "focus_ok": true,
+      "accepted": 307,
+      "ncls": 6,
+      "wall": 294
+    }
+  ],
+  "blocker": "Annotation humaine pleine village requise pour exhaustive=true"
+}

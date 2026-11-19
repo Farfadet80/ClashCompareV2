@@ -2,9 +2,9 @@
   "dataset_yaml": "training/dataset.yaml",
   "dataset_root": "training/dataset/detector",
   "split_image_counts": {
-    "test": 95,
-    "train": 1435,
-    "val": 149
+    "test": 105,
+    "train": 1415,
+    "val": 159
   },
   "cross_split_same_stem_pairs": {
     "test-train": 26,
@@ -15,9 +15,9 @@
     "train-val": 42
   },
   "cross_split_same_village_group_pairs": {},
-  "train_images_before": 1435,
+  "train_images_before": 1415,
   "train_images_excluded": 68,
-  "train_images_clean": 1367,
+  "train_images_clean": 1347,
   "excluded_train_files": [
     "training/dataset/detector/images/train/base-finder-th18-0854261691-18-1_jpg.rf.a3252a8524a83bf57cac008ea38e1895.jpg",
     "training/dataset/detector/images/train/base-finder-th18-745655830f-18-15_jpg.rf.2ceb4520efa273668f3d7150e2ae2998.jpg",

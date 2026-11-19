@@ -15,7 +15,10 @@
     "private": true,
     "p0_assist": true,
     "p0_assist_model": "building-detector-v5",
-    "scope": "TH10-18"
+    "scope": "TH10-18",
+    "perfect_pass_cleaned": "2026-11-19",
+    "perfect_pass_note": "Village entier: exhaustive impossible sans revue humaine Jimmy/annotator",
+    "focus_still_present": true
   },
   "expected_counts": {},
   "boxes": [
@@ -3367,10 +3370,10 @@
       "y1": 273.8459777832031,
       "x2": 583.391357421875,
       "y2": 297.6692810058594,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.3461,
-      "review_note": "V5 assist conf=0.346 pending revue"
+      "review_note": "V5 assist conf=0.346 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 27,
@@ -3379,10 +3382,10 @@
       "y1": 530.5217895507812,
       "x2": 287.5111083984375,
       "y2": 552.5519409179688,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2414,
-      "review_note": "V5 assist conf=0.241 pending revue"
+      "review_note": "V5 assist conf=0.241 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 30,
@@ -3391,10 +3394,10 @@
       "y1": 420.1961364746094,
       "x2": 542.1556396484375,
       "y2": 455.65899658203125,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2327,
-      "review_note": "V5 assist conf=0.233 pending revue"
+      "review_note": "V5 assist conf=0.233 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 5,
@@ -3403,10 +3406,10 @@
       "y1": 579.6431884765625,
       "x2": 325.445556640625,
       "y2": 614.3759155273438,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2135,
-      "review_note": "V5 assist conf=0.213 pending revue"
+      "review_note": "V5 assist conf=0.213 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 4,
@@ -3415,10 +3418,10 @@
       "y1": 565.10546875,
       "x2": 297.81610107421875,
       "y2": 596.244140625,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2112,
-      "review_note": "V5 assist conf=0.211 pending revue"
+      "review_note": "V5 assist conf=0.211 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 20,
@@ -3427,10 +3430,10 @@
       "y1": 526.0731201171875,
       "x2": 214.29734802246094,
       "y2": 545.2463989257812,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2109,
-      "review_note": "V5 assist conf=0.211 pending revue"
+      "review_note": "V5 assist conf=0.211 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 1,
@@ -3439,10 +3442,10 @@
       "y1": 487.0949401855469,
       "x2": 209.71592712402344,
       "y2": 506.02783203125,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2106,
-      "review_note": "V5 assist conf=0.211 pending revue"
+      "review_note": "V5 assist conf=0.211 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 12,
@@ -3451,10 +3454,10 @@
       "y1": 454.4291076660156,
       "x2": 493.275390625,
       "y2": 484.0404968261719,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2102,
-      "review_note": "V5 assist conf=0.210 pending revue"
+      "review_note": "V5 assist conf=0.210 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 20,
@@ -3463,10 +3466,10 @@
       "y1": 575.0763549804688,
       "x2": 353.7803649902344,
       "y2": 597.4439697265625,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2077,
-      "review_note": "V5 assist conf=0.208 pending revue"
+      "review_note": "V5 assist conf=0.208 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     }
   ]
 }

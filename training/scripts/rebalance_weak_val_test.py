@@ -1,8 +1,8 @@
-"""Rééquilibre val/test pour wall + giga-bomb (P0) sans fine-tune.
+"""Rééquilibre val/test pour classes faibles (wall/giga/tornado/crafted).
 
 Déplace des images train → val/test en respectant village_group disjoint
 (aucune fuite cross-split). Préfère les villages Mode photo legacy multi-classe
-(non focus-crop) quand disponibles.
+(non focus-crop) quand disponibles. Pas de fine-tune.
 """
 
 from __future__ import annotations
@@ -113,11 +113,22 @@ def move_one(row: dict, dest_split: str) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--wall-val", type=int, default=4)
-    parser.add_argument("--wall-test", type=int, default=4)
-    parser.add_argument("--giga-val", type=int, default=4)
-    parser.add_argument("--giga-test", type=int, default=3)
+    parser.add_argument("--wall-val", type=int, default=0)
+    parser.add_argument("--wall-test", type=int, default=0)
+    parser.add_argument("--giga-val", type=int, default=0)
+    parser.add_argument("--giga-test", type=int, default=0)
+    parser.add_argument("--tornado-val", type=int, default=0)
+    parser.add_argument("--tornado-test", type=int, default=0)
+    parser.add_argument("--crafted-val", type=int, default=0)
+    parser.add_argument("--crafted-test", type=int, default=0)
+    parser.add_argument("--min-classes", type=int, default=10)
+    parser.add_argument("--prefer-mode-photo", action="store_true", default=True)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--report-name",
+        default="",
+        help="Nom fichier rapport (défaut auto daté)",
+    )
     args = parser.parse_args()
 
     class_ids = load_classes()
@@ -131,6 +142,10 @@ def main() -> None:
         ("wall", "test", args.wall_test),
         ("giga-bomb", "val", args.giga_val),
         ("giga-bomb", "test", args.giga_test),
+        ("tornado-trap", "val", args.tornado_val),
+        ("tornado-trap", "test", args.tornado_test),
+        ("crafted-defense", "val", args.crafted_val),
+        ("crafted-defense", "test", args.crafted_test),
     ]
     for class_name, dest_split, need in plan:
         if need <= 0:
@@ -139,28 +154,31 @@ def main() -> None:
         for row in candidates_for(class_name, class_ids[class_name]):
             if got >= need:
                 break
+            if row["n_classes"] < args.min_classes and class_name != "wall":
+                continue
+            if args.prefer_mode_photo and row["focus_crop"] and class_name != "wall":
+                continue
             vg = row["village_group"]
-            if vg in blocked or vg in used_groups or vg in occupied["train"] and False:
-                pass
             if vg in blocked or vg in used_groups:
                 continue
-            # ne pas vider totalement un village_group encore référencé ailleurs train
-            # (une image = un stem ; vg focus-crop est unique)
             if args.dry_run:
-                moved.append({**row, "dest_split": dest_split, "dry_run": True})
+                entry = {**row, "dest_split": dest_split, "class_name": class_name, "dry_run": True}
             else:
-                moved.append(move_one(row, dest_split))
+                entry = {**move_one(row, dest_split), "class_name": class_name}
+            moved.append(entry)
             used_groups.add(vg)
             blocked.add(vg)
             got += 1
 
     report = {
         "updated": date.today().isoformat(),
-        "purpose": "P0 rebalance val/test wall+giga disjoint village_group",
+        "purpose": "Rebalance val/test weak classes disjoint village_group",
         "dry_run": args.dry_run,
+        "min_classes": args.min_classes,
         "moved_count": len(moved),
         "moved": [
             {
+                "class_name": row.get("class_name"),
                 "stem": row.get("stem"),
                 "dest_split": row.get("dest_split"),
                 "village_group": row.get("village_group"),
@@ -172,12 +190,10 @@ def main() -> None:
             for row in moved
         ],
     }
-    out = (
-        ROOT
-        / "training"
-        / "reports"
-        / f"p0-rebalance-weak-val-test-{date.today().isoformat().replace('-', '')}.json"
+    name = args.report_name or (
+        f"perfect-rebalance-weak-val-test-{date.today().isoformat().replace('-', '')}.json"
     )
+    out = ROOT / "training" / "reports" / name
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"report": str(out), "moved_count": len(moved)}, indent=2))
 
