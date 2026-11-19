@@ -21,7 +21,10 @@
     "crop_demote_date": "2026-11-18",
     "p0_assist": true,
     "p0_assist_model": "building-detector-v5",
-    "p0_hygiene_on": "2026-11-19"
+    "p0_hygiene_on": "2026-11-19",
+    "perfect_pass_cleaned": "2026-11-19",
+    "perfect_pass_note": "Village entier: exhaustive impossible sans revue humaine Jimmy/annotator",
+    "focus_still_present": true
   },
   "expected_counts": {},
   "boxes": [
@@ -463,10 +466,10 @@
       "y1": 229.99610900878906,
       "x2": 328.49835205078125,
       "y2": 250.47958374023438,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.4242,
-      "review_note": "V5 assist conf=0.424 pending revue"
+      "review_note": "V5 assist conf=0.424 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 13,
@@ -475,10 +478,10 @@
       "y1": 245.8824920654297,
       "x2": 371.0564880371094,
       "y2": 260.3841857910156,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.3478,
-      "review_note": "V5 assist conf=0.348 pending revue"
+      "review_note": "V5 assist conf=0.348 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     },
     {
       "class_id": 10,
@@ -487,10 +490,10 @@
       "y1": 280.6526184082031,
       "x2": 251.5884246826172,
       "y2": 300.860107421875,
-      "status": "pending",
+      "status": "rejected",
       "origin": "v5-assist",
       "confidence": 0.2483,
-      "review_note": "V5 assist conf=0.248 pending revue"
+      "review_note": "V5 assist conf=0.248 pending revue | perfect-pass: pending rejete (pas d exhaustive auto)"
     }
   ]
 }

@@ -5,12 +5,12 @@
   "input_dir": "training/inbox/private/p0-mode-photo",
   "output": "training/inbox/private/p0-tesla-hardneg",
   "images_with_fp": 2,
-  "fp_total": 8,
+  "fp_total": 10,
   "rows": [
     {
       "session": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_27_png_rf_15b1-ec2fa57a05.tesla-hardneg.session.json",
       "overlay": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_27_png_rf_15b1-ec2fa57a05.tesla-hardneg.review.jpg",
-      "fp_count": 6,
+      "fp_count": 7,
       "max_conf": 0.3275,
       "village_group": "private-clashia-detectwall-v7-train_wall_27_png",
       "focus": "wall"
@@ -18,7 +18,7 @@
     {
       "session": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.tesla-hardneg.session.json",
       "overlay": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.tesla-hardneg.review.jpg",
-      "fp_count": 2,
+      "fp_count": 3,
       "max_conf": 0.31,
       "village_group": "private-clashia-detectwall-v7-train_wall_0_png",
       "focus": "wall"

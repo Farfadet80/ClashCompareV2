@@ -70,6 +70,7 @@ def main() -> None:
             (ROOT / "training" / "inbox" / "private" / "p0-mode-photo").glob("wall__*.session.json")
         )[: args.max_images]
 
+    args.output = args.output.resolve()
     args.output.mkdir(parents=True, exist_ok=True)
     model = YOLO(str(args.model))
     rows = []

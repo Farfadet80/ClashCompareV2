@@ -1,0 +1,33 @@
+{
+  "updated": "2026-11-19",
+  "branch": "cursor/yolo-pretrain-perfect-pass-5b0a",
+  "ready": false,
+  "mechanical_ready": true,
+  "jimmy_gate": false,
+  "data_gaps": [
+    "giga-bomb train < 50 (39)"
+  ],
+  "blocker_human_village_exhaustive": true,
+  "val_test_strengthened": {
+    "tornado-trap": {
+      "val": 16,
+      "test": 12
+    },
+    "crafted-defense": {
+      "val": 10,
+      "test": 10
+    },
+    "giga-bomb": {
+      "val": 10,
+      "test": 10
+    },
+    "wall": {
+      "val": 13,
+      "test": 15
+    }
+  },
+  "p0_mode_photo": "cleaned, exhaustive=false, focus pending where needed",
+  "strict_wall_tiles_imported": 0,
+  "kept_wall_catalog_tiles": 2,
+  "doc": "clashcompare-yolo-pretrain-perfect-pass.md"
+}

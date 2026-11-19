@@ -1,0 +1,209 @@
+{
+  "updated": "2026-11-19",
+  "purpose": "Rebalance val/test weak classes disjoint village_group",
+  "dry_run": false,
+  "min_classes": 10,
+  "moved_count": 20,
+  "moved": [
+    {
+      "class_name": "giga-bomb",
+      "stem": "glenn-th18-gigabomb-36bc7b30c0-IMG_0136_jpg.rf.120e73baaf0d4cbbe2fd37259d2963f5",
+      "dest_split": "val",
+      "village_group": "glenn-th18-gigabomb-36bc7b30c0-IMG_0136_jpg.rf.120e73baaf0d4cbbe2fd37259d2963f5",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "giga-bomb",
+      "stem": "glenn-th18-gigabomb-44c8f33311-IMG_0115_jpg.rf.df369fa370c4d33ab7a2421f81288d5e",
+      "dest_split": "val",
+      "village_group": "glenn-th18-gigabomb-44c8f33311-IMG_0115_jpg.rf.df369fa370c4d33ab7a2421f81288d5e",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "giga-bomb",
+      "stem": "glenn-th18-gigabomb-76883b4e01-IMG_0130_jpg.rf.96bc333e88d579b2b1682dd44dedd6a3",
+      "dest_split": "test",
+      "village_group": "glenn-th18-gigabomb-76883b4e01-IMG_0130_jpg.rf.96bc333e88d579b2b1682dd44dedd6a3",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "giga-bomb",
+      "stem": "glenn-th18-gigabomb-a68c97667a-IMG_0120_jpg.rf.8882a2ec541c42ac42c380d656fc5980",
+      "dest_split": "test",
+      "village_group": "glenn-th18-gigabomb-a68c97667a-IMG_0120_jpg.rf.8882a2ec541c42ac42c380d656fc5980",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-103914978f-th16_defence_1857_jpg.rf.0c1164f120c0eb0cd1585f568f3e8497",
+      "dest_split": "val",
+      "village_group": "coc-all-traps-103914978f-th16_defence_1857_jpg.rf.0c1164f120c0eb0cd1585f568f3e8497",
+      "source": "legacy",
+      "n_classes": 41,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-1c0c9c9f21-th16_farm_1855_jpg.rf.840df315cb0f839bb2a8cd98fab55805",
+      "dest_split": "val",
+      "village_group": "coc-all-traps-1c0c9c9f21-th16_farm_1855_jpg.rf.840df315cb0f839bb2a8cd98fab55805",
+      "source": "legacy",
+      "n_classes": 41,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-07c56e9cad-th16_war_1818_jpg.rf.1cee3215c7b2275531cbc7d7a9bd3a30",
+      "dest_split": "val",
+      "village_group": "coc-all-traps-07c56e9cad-th16_war_1818_jpg.rf.1cee3215c7b2275531cbc7d7a9bd3a30",
+      "source": "legacy",
+      "n_classes": 40,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-7d14ba0662-th16_war_1873_jpg.rf.e8619f75115501ac2ec8430ae94f120d",
+      "dest_split": "val",
+      "village_group": "coc-all-traps-7d14ba0662-th16_war_1873_jpg.rf.e8619f75115501ac2ec8430ae94f120d",
+      "source": "legacy",
+      "n_classes": 40,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-809f91d093-th16_war_1821_jpg.rf.f83d90f188924e4206c323771465a268",
+      "dest_split": "test",
+      "village_group": "coc-all-traps-809f91d093-th16_war_1821_jpg.rf.f83d90f188924e4206c323771465a268",
+      "source": "legacy",
+      "n_classes": 40,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-2ceae2f282-th15_war_1476_jpg.rf.df66f227954db59f8f7d8349aa332bb1",
+      "dest_split": "test",
+      "village_group": "coc-all-traps-2ceae2f282-th15_war_1476_jpg.rf.df66f227954db59f8f7d8349aa332bb1",
+      "source": "legacy",
+      "n_classes": 38,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-30c074322b-th15_farm_1480_jpg.rf.40b21ce70311378b5c77b3d6988016d8",
+      "dest_split": "test",
+      "village_group": "coc-all-traps-30c074322b-th15_farm_1480_jpg.rf.40b21ce70311378b5c77b3d6988016d8",
+      "source": "legacy",
+      "n_classes": 38,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "tornado-trap",
+      "stem": "coc-all-traps-49fe6069bc-th15_war_1474_jpg.rf.a995d2c075ab1d24e1171be70412d028",
+      "dest_split": "test",
+      "village_group": "coc-all-traps-49fe6069bc-th15_war_1474_jpg.rf.a995d2c075ab1d24e1171be70412d028",
+      "source": "legacy",
+      "n_classes": 38,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-016f8c16bc-Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.b1e65c09c430b73e0ad34be6c6c405a6",
+      "dest_split": "val",
+      "village_group": "base-finder-th18-016f8c16bc-Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.b1e65c09c430b73e0ad34be6c6c405a6",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-04677ee2f5-Screenshot_2025-12-15-15-58-49-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.21b109607c49c1c20ebf86fdcd7b75e9",
+      "dest_split": "val",
+      "village_group": "base-finder-th18-04677ee2f5-Screenshot_2025-12-15-15-58-49-07_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.21b109607c49c1c20ebf86fdcd7b75e9",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-0549b2b47c-Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.590648eff4df6c5869b6ac31c876aae9",
+      "dest_split": "val",
+      "village_group": "base-finder-th18-0549b2b47c-Screenshot_2025-12-15-20-30-26-38_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.590648eff4df6c5869b6ac31c876aae9",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-071ee2ae07-Screenshot_2025-12-15-20-28-39-66_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.b4a69a7eb22abafd1e7ca19b4d61bad2",
+      "dest_split": "val",
+      "village_group": "base-finder-th18-071ee2ae07-Screenshot_2025-12-15-20-28-39-66_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.b4a69a7eb22abafd1e7ca19b4d61bad2",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-0833595889-Screenshot_2025-12-15-20-34-22-29_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.00ae073f51987773a98b897a01bb2f2a",
+      "dest_split": "test",
+      "village_group": "base-finder-th18-0833595889-Screenshot_2025-12-15-20-34-22-29_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.00ae073f51987773a98b897a01bb2f2a",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-08820dcaf3-th18_troll_8_jpg.rf.af7cc400a3e9a52ca8449db4c5578a9e",
+      "dest_split": "test",
+      "village_group": "base-finder-th18-08820dcaf3-th18_troll_8_jpg.rf.af7cc400a3e9a52ca8449db4c5578a9e",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-0aa877094b-18-9_jpg.rf.2d072ec78533bfdc220b5e7ed7e612f7",
+      "dest_split": "test",
+      "village_group": "base-finder-th18-0aa877094b-18-9_jpg.rf.2d072ec78533bfdc220b5e7ed7e612f7",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "class_name": "crafted-defense",
+      "stem": "base-finder-th18-0dee0aec53-Screenshot_2025-12-15-20-31-38-35_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c3d8c8e770aaaac59b4107fc9c95bd49",
+      "dest_split": "test",
+      "village_group": "base-finder-th18-0dee0aec53-Screenshot_2025-12-15-20-31-38-35_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.c3d8c8e770aaaac59b4107fc9c95bd49",
+      "source": "legacy",
+      "n_classes": 17,
+      "boxes": 1,
+      "focus_crop": false
+    }
+  ]
+}

@@ -16,6 +16,9 @@
     "p0_assist": true,
     "p0_assist_model": "building-detector-v5",
     "scope": "TH10-18",
+    "perfect_pass_cleaned": "2026-11-19",
+    "perfect_pass_note": "Village entier: exhaustive impossible sans revue humaine Jimmy/annotator",
+    "focus_still_present": true,
     "p0_tesla_hardneg": true
   },
   "expected_counts": {},
@@ -3713,6 +3716,18 @@
       "status": "rejected",
       "origin": "v5-hardneg-candidate",
       "confidence": 0.1927,
+      "review_note": "FP candidat hidden-tesla sur image sans tesla acceptée — hard-neg / revue précision"
+    },
+    {
+      "class_id": 7,
+      "class_name": "hidden-tesla",
+      "x1": 227.34507751464844,
+      "y1": 401.8855285644531,
+      "x2": 243.0210418701172,
+      "y2": 429.5947265625,
+      "status": "rejected",
+      "origin": "v5-hardneg-candidate",
+      "confidence": 0.1464,
       "review_note": "FP candidat hidden-tesla sur image sans tesla acceptée — hard-neg / revue précision"
     }
   ]

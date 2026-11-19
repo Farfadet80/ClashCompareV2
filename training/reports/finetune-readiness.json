@@ -1,13 +1,15 @@
 {
-  "ready": true,
+  "ready": false,
   "mechanical_ready": true,
-  "decision": "fine-tune données OK — attendre OK Jimmy",
+  "decision": "conserver V5 — données insuffisantes pour FT utile",
   "jimmy_gate": {
     "train_authorized": false,
     "reason": "OK Jimmy explicite toujours requis (préférence projet). Ne pas lancer train_detector sans validation verbale."
   },
   "reasons": [],
-  "data_gaps": [],
+  "data_gaps": [
+    "giga-bomb train < 50 (39)"
+  ],
   "thresholds": {
     "min_wall_train": 40,
     "min_wall_eval_boxes": 5,
@@ -24,7 +26,7 @@
     "imgsz": 800,
     "augment_tta": true
   },
-  "clean_train_images": 1372,
+  "clean_train_images": 1347,
   "human_annotations": [
     {
       "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-06eee900b7f1-06eee900b7f1.json",
@@ -1435,6 +1437,18 @@
       "box_count": 1,
       "village_group": "private-clashia-detectwall-v7-Wall9_webp",
       "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-wall-tile-49e68dd39b45-49e68dd39b45.json",
+      "box_count": 140,
+      "village_group": "wall-tile-49e68dd39b45",
+      "split": "val"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-wall-tile-53e4d375593e-53e4d375593e.json",
+      "box_count": 180,
+      "village_group": "wall-tile-53e4d375593e",
+      "split": "test"
     }
   ],
   "coverage_blockers": {
@@ -1445,7 +1459,9 @@
       "guardian-shrine",
       "squad-barracks"
     ],
-    "very_weak": [],
+    "very_weak": [
+      "giga-bomb"
+    ],
     "no_eval_split": [
       "town-hall-guardian",
       "spiky-tower",
