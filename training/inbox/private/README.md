@@ -16,9 +16,20 @@ training/inbox/private/
   README.md                          # ce fichier (versionné)
   drop/                              # déposer ici les captures brutes
   <class-id>/                        # staging annotateur (wall, workshop, …)
+  p0-mode-photo/                     # P0 assist V5 (exhaustive=false) wall/tornado/giga/crafted
+  p0-tesla-hardneg/                  # FP hidden-tesla documentés (rejected)
+  p0-wall-tiles/                     # tuiles mur Mode photo (revue visuelle stricte)
   reference-only/th19-visual/        # blog / guides — hors train YOLO
   exports-json/                      # exports village JSON amis (dataIds)
 ```
+
+## P0 pré-train (2026-11-19)
+
+1. Assist villages : `assist_fill_village_sessions.py` → `p0-mode-photo/`
+2. Ne **jamais** `exhaustive=true` sans revue annotator + `promote_p0_assisted_sessions.py --i-reviewed`
+3. Hard-neg tesla : `mine_tesla_hard_negatives.py` (pas baisser conf inférence)
+4. Val/test wall+giga : `rebalance_weak_val_test.py` (dataset local gitignoré)
+5. Synthèse : `training/reports/p0-priority-pass-summary-20261119.json`
 
 ## Règles
 

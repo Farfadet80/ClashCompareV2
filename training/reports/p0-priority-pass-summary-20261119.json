@@ -1,0 +1,33 @@
+{
+  "updated": "2026-11-19",
+  "branch": "cursor/yolo-p0-priority-pass-5b0a",
+  "no_finetune": true,
+  "no_cuda_upgrade": true,
+  "no_th19": true,
+  "assist_sessions_dir": "training/inbox/private/p0-mode-photo",
+  "tesla_hardneg_dir": "training/inbox/private/p0-tesla-hardneg",
+  "wall_tiles_kept": [
+    "human-wall-tile-49e68dd39b45-49e68dd39b45",
+    "human-wall-tile-53e4d375593e-53e4d375593e"
+  ],
+  "reports": [
+    "training/reports/p0-assist-fill-20261119.json",
+    "training/reports/p0-rebalance-weak-val-test-20261119.json",
+    "training/reports/p0-tesla-hardneg-20261119.json",
+    "training/reports/p0-wall-modephoto-tiles-20261119.json",
+    "training/reports/p0-wall-tiles-demote-20261119.json",
+    "training/reports/p0-wall-tiles-import-20261119.json"
+  ],
+  "scripts": [
+    "training/scripts/assist_fill_village_sessions.py",
+    "training/scripts/promote_p0_assisted_sessions.py",
+    "training/scripts/extract_wall_modephoto_tiles.py",
+    "training/scripts/rebalance_weak_val_test.py",
+    "training/scripts/mine_tesla_hard_negatives.py"
+  ],
+  "notes": [
+    "Villages assistés non exhaustifs — file annotator.",
+    "Dataset detector gitignoré : rebalance + tuiles mur appliqués en local.",
+    "Doc store: clashcompare-yolo-pretrain-priority-pass.md"
+  ]
+}

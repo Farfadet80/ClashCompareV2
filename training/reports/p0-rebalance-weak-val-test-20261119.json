@@ -1,0 +1,80 @@
+{
+  "updated": "2026-11-19",
+  "purpose": "P0 rebalance val/test wall+giga disjoint village_group",
+  "dry_run": false,
+  "moved_count": 8,
+  "moved": [
+    {
+      "stem": "evans-home-village-building-detector-25417a3cbb-th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314",
+      "dest_split": "val",
+      "village_group": "evans-home-village-building-detector-25417a3cbb-th6-hybrid-base-1-_jpg.rf.344bbc3e20efd304efc8653aa8017314",
+      "source": "legacy",
+      "n_classes": 21,
+      "boxes": 12,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-1d23fa0017-IMG_0116_jpg.rf.5bd1b5189ca1fb59097e3e2cd5fe39fe",
+      "dest_split": "val",
+      "village_group": "glenn-th18-gigabomb-1d23fa0017-IMG_0116_jpg.rf.5bd1b5189ca1fb59097e3e2cd5fe39fe",
+      "source": "legacy",
+      "n_classes": 23,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-b5089fd67e-IMG_0129_jpg.rf.b5a47918e11e3592bac83afdad9396ac",
+      "dest_split": "val",
+      "village_group": "glenn-th18-gigabomb-b5089fd67e-IMG_0129_jpg.rf.b5a47918e11e3592bac83afdad9396ac",
+      "source": "legacy",
+      "n_classes": 23,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-d9711698f7-IMG_0132_jpg.rf.077997e5c108041177cda9b1ca258f72",
+      "dest_split": "val",
+      "village_group": "glenn-th18-gigabomb-d9711698f7-IMG_0132_jpg.rf.077997e5c108041177cda9b1ca258f72",
+      "source": "legacy",
+      "n_classes": 23,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-ed31305159-IMG_0128_jpg.rf.5f381f97d8a731c05176046c2dba5d71",
+      "dest_split": "val",
+      "village_group": "glenn-th18-gigabomb-ed31305159-IMG_0128_jpg.rf.5f381f97d8a731c05176046c2dba5d71",
+      "source": "legacy",
+      "n_classes": 23,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-13e701adf2-IMG_0148_jpg.rf.d69d864ff1eb764ecf8cfea5183f9c6a",
+      "dest_split": "test",
+      "village_group": "glenn-th18-gigabomb-13e701adf2-IMG_0148_jpg.rf.d69d864ff1eb764ecf8cfea5183f9c6a",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-26c0c4725d-IMG_0118_jpg.rf.23593960820aa509387e775d23dbf735",
+      "dest_split": "test",
+      "village_group": "glenn-th18-gigabomb-26c0c4725d-IMG_0118_jpg.rf.23593960820aa509387e775d23dbf735",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    },
+    {
+      "stem": "glenn-th18-gigabomb-30ba793f9b-IMG_0122_jpg.rf.e4214bd4920a35a6f0f4ec4eaacac6b0",
+      "dest_split": "test",
+      "village_group": "glenn-th18-gigabomb-30ba793f9b-IMG_0122_jpg.rf.e4214bd4920a35a6f0f4ec4eaacac6b0",
+      "source": "legacy",
+      "n_classes": 22,
+      "boxes": 1,
+      "focus_crop": false
+    }
+  ]
+}

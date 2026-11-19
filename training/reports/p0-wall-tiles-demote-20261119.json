@@ -1,0 +1,36 @@
+{
+  "kept": [
+    "human-wall-tile-49e68dd39b45-49e68dd39b45",
+    "human-wall-tile-53e4d375593e-53e4d375593e"
+  ],
+  "removed": [
+    {
+      "split": "train",
+      "stem": "human-wall-tile-73bff8cefa1a-73bff8cefa1a"
+    },
+    {
+      "split": "train",
+      "stem": "human-wall-tile-84790e10d1f7-84790e10d1f7"
+    },
+    {
+      "split": "train",
+      "stem": "human-wall-tile-c01bbe0b0a8f-c01bbe0b0a8f"
+    },
+    {
+      "split": "val",
+      "stem": "human-wall-tile-9a3dd9cb7103-9a3dd9cb7103"
+    },
+    {
+      "split": "val",
+      "stem": "human-wall-tile-b1de520fb869-b1de520fb869"
+    },
+    {
+      "split": "test",
+      "stem": "human-wall-tile-46b1a5f776dd-46b1a5f776dd"
+    },
+    {
+      "split": "test",
+      "stem": "human-wall-tile-4f303aff2f82-4f303aff2f82"
+    }
+  ]
+}
