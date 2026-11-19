@@ -1,0 +1,2581 @@
+{
+  "updated": "2026-11-18",
+  "dry_run": false,
+  "finetune": false,
+  "targets": [
+    "tornado-trap",
+    "giga-bomb",
+    "wall",
+    "hero-hall",
+    "crafted-defense"
+  ],
+  "extracted_counts": {
+    "tornado-trap": 18,
+    "giga-bomb": 0,
+    "wall": 40,
+    "hero-hall": 15,
+    "crafted-defense": 39
+  },
+  "import_totals": {
+    "attempt_train": 68,
+    "ok": 47,
+    "ok_tornado-trap": 18,
+    "attempt_val": 22,
+    "attempt_test": 22,
+    "ok_wall": 22,
+    "fail": 65,
+    "ok_hero-hall": 7,
+    "ok_crafted-defense": 0
+  },
+  "extracted": {
+    "tornado-trap": [
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1827-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1827-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1239,
+          968
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1858-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1858-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          2019,
+          471
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-war-1963-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-war-1963-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1374,
+          930
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1925-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1925-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4751,
+        "wh": [
+          2140,
+          270
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1931-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1931-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4442,
+        "wh": [
+          1461,
+          767
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1929-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1929-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1437,
+          525
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1936-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1936-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1402,
+          753
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-defence-1595-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-defence-1595-jp__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.444,
+        "wh": [
+          1091,
+          820
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-war-1604-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-war-1604-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.444,
+        "wh": [
+          1025,
+          929
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-defence-1543-jp__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-defence-1543-jp__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4442,
+        "wh": [
+          1451,
+          873
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-war-1691-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-war-1691-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1905,
+          360
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1477-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1477-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1860,
+          708
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1479-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1479-jpg-r__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1830,
+          426
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-war-1474-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-war-1474-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4441,
+        "wh": [
+          1842,
+          641
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1818-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1818-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1869,
+          201
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1821-jpg-rf__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1821-jpg-rf__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.445,
+        "wh": [
+          1759,
+          475
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th11-farm-1837-jpg-rf-__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th11-farm-1837-jpg-rf-__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.483,
+        "wh": [
+          1181,
+          992
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th13-defence-1639-jpg-__0.session.json",
+        "image": "training/inbox/private/focus-crops/tornado-trap/crop__tornado-trap__coc-all-traps__coc-all-traps-val-th13-defence-1639-jpg-__0.jpg",
+        "target": "tornado-trap",
+        "coverage": 0.4444,
+        "wh": [
+          1044,
+          882
+        ]
+      }
+    ],
+    "giga-bomb": [],
+    "wall": [
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.jpg",
+        "target": "wall",
+        "coverage": 0.5052,
+        "wh": [
+          549,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.jpg",
+        "target": "wall",
+        "coverage": 0.5619,
+        "wh": [
+          574,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall2__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall2__0.jpg",
+        "target": "wall",
+        "coverage": 0.4438,
+        "wh": [
+          332,
+          471
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4449,
+        "wh": [
+          306,
+          538
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4865,
+        "wh": [
+          498,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.487,
+        "wh": [
+          472,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.5797,
+        "wh": [
+          614,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.5167,
+        "wh": [
+          588,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.5256,
+        "wh": [
+          602,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4472,
+        "wh": [
+          306,
+          562
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4438,
+        "wh": [
+          332,
+          471
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4435,
+        "wh": [
+          422,
+          566
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4435,
+        "wh": [
+          422,
+          566
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4721,
+        "wh": [
+          471,
+          634
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.463,
+        "wh": [
+          536,
+          620
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4615,
+        "wh": [
+          536,
+          609
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4449,
+        "wh": [
+          294,
+          484
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4444,
+        "wh": [
+          318,
+          525
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4827,
+        "wh": [
+          332,
+          582
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4834,
+        "wh": [
+          306,
+          582
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.jpg",
+        "target": "wall",
+        "coverage": 0.4859,
+        "wh": [
+          446,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall11__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall11__0.jpg",
+        "target": "wall",
+        "coverage": 0.524,
+        "wh": [
+          549,
+          640
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall4-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall4-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4713,
+        "wh": [
+          484,
+          623
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4448,
+        "wh": [
+          345,
+          592
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.jpg",
+        "target": "wall",
+        "coverage": 0.462,
+        "wh": [
+          357,
+          609
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall9-__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall9-__0.jpg",
+        "target": "wall",
+        "coverage": 0.4795,
+        "wh": [
+          446,
+          636
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__0.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__0.jpg",
+        "target": "wall",
+        "coverage": 0.4467,
+        "wh": [
+          127,
+          415
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__1.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__1.jpg",
+        "target": "wall",
+        "coverage": 0.444,
+        "wh": [
+          72,
+          485
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__2.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__2.jpg",
+        "target": "wall",
+        "coverage": 0.446,
+        "wh": [
+          109,
+          437
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__3.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__3.jpg",
+        "target": "wall",
+        "coverage": 0.4458,
+        "wh": [
+          163,
+          366
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__4.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__4.jpg",
+        "target": "wall",
+        "coverage": 0.4463,
+        "wh": [
+          181,
+          343
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__5.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__5.jpg",
+        "target": "wall",
+        "coverage": 0.4451,
+        "wh": [
+          192,
+          343
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__6.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__6.jpg",
+        "target": "wall",
+        "coverage": 0.4427,
+        "wh": [
+          215,
+          293
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__7.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__7.jpg",
+        "target": "wall",
+        "coverage": 0.4446,
+        "wh": [
+          287,
+          247
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__8.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__8.jpg",
+        "target": "wall",
+        "coverage": 0.4436,
+        "wh": [
+          269,
+          222
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__11.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__11.jpg",
+        "target": "wall",
+        "coverage": 0.4464,
+        "wh": [
+          267,
+          208
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__12.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__12.jpg",
+        "target": "wall",
+        "coverage": 0.4434,
+        "wh": [
+          287,
+          185
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__13.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__13.jpg",
+        "target": "wall",
+        "coverage": 0.4472,
+        "wh": [
+          301,
+          207
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__14.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__14.jpg",
+        "target": "wall",
+        "coverage": 0.444,
+        "wh": [
+          299,
+          237
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__16.session.json",
+        "image": "training/inbox/private/focus-crops/wall/crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__16.jpg",
+        "target": "wall",
+        "coverage": 0.4449,
+        "wh": [
+          108,
+          535
+        ]
+      }
+    ],
+    "hero-hall": [
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0117-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0117-jpg-r__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4432,
+        "wh": [
+          44,
+          59
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-test-resized-C3F4__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-test-resized-C3F4__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4426,
+        "wh": [
+          149,
+          152
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4426,
+        "wh": [
+          177,
+          164
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4436,
+        "wh": [
+          203,
+          193
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4434,
+        "wh": [
+          238,
+          226
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.47,
+        "wh": [
+          247,
+          220
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.5334,
+        "wh": [
+          295,
+          224
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4459,
+        "wh": [
+          178,
+          183
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4518,
+        "wh": [
+          173,
+          185
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4459,
+        "wh": [
+          160,
+          141
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.5293,
+        "wh": [
+          172,
+          72
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-175__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-175__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4445,
+        "wh": [
+          129,
+          132
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-BC4__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-BC4__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4725,
+        "wh": [
+          186,
+          159
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-val-resized-17518__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-val-resized-17518__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4443,
+        "wh": [
+          131,
+          122
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json",
+        "image": "training/inbox/private/focus-crops/hero-hall/crop__hero-hall__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.jpg",
+        "target": "hero-hall",
+        "coverage": 0.4432,
+        "wh": [
+          204,
+          179
+        ]
+      }
+    ],
+    "crafted-defense": [
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-13-jpg-rf-14bf__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-13-jpg-rf-14bf__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4606,
+        "wh": [
+          312,
+          438
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-2-jpg-rf-83447__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-2-jpg-rf-83447__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4442,
+        "wh": [
+          291,
+          380
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-3-jpg-rf-82bca__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-3-jpg-rf-82bca__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4447,
+        "wh": [
+          408,
+          315
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-4-jpg-rf-16cee__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-4-jpg-rf-16cee__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4452,
+        "wh": [
+          415,
+          347
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-5-jpg-rf-73ef9__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-5-jpg-rf-73ef9__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4449,
+        "wh": [
+          301,
+          347
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-6-jpg-rf-4e4e6__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-6-jpg-rf-4e4e6__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4686,
+        "wh": [
+          443,
+          331
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-7-jpg-rf-587db__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-7-jpg-rf-587db__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4456,
+        "wh": [
+          410,
+          383
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-8-jpg-rf-1a196__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-8-jpg-rf-1a196__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4436,
+        "wh": [
+          293,
+          316
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-9-jpg-rf-2d072__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-18-9-jpg-rf-2d072__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4449,
+        "wh": [
+          364,
+          392
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4439,
+        "wh": [
+          368,
+          357
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4455,
+        "wh": [
+          370,
+          319
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4428,
+        "wh": [
+          321,
+          315
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4445,
+        "wh": [
+          422,
+          415
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4431,
+        "wh": [
+          383,
+          347
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4436,
+        "wh": [
+          295,
+          385
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4441,
+        "wh": [
+          310,
+          437
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.5333,
+        "wh": [
+          427,
+          418
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4438,
+        "wh": [
+          391,
+          398
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4454,
+        "wh": [
+          390,
+          427
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4451,
+        "wh": [
+          252,
+          395
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4463,
+        "wh": [
+          247,
+          395
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.448,
+        "wh": [
+          439,
+          252
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4443,
+        "wh": [
+          278,
+          353
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4443,
+        "wh": [
+          394,
+          415
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4459,
+        "wh": [
+          428,
+          309
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4934,
+        "wh": [
+          428,
+          424
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4656,
+        "wh": [
+          394,
+          434
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4667,
+        "wh": [
+          380,
+          435
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.465,
+        "wh": [
+          436,
+          390
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.5094,
+        "wh": [
+          428,
+          320
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.5029,
+        "wh": [
+          385,
+          431
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.48,
+        "wh": [
+          405,
+          429
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-Screenshot-2025-1__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4436,
+        "wh": [
+          390,
+          406
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-defence-19-j__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-defence-19-j__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4534,
+        "wh": [
+          436,
+          325
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-troll-8-jpg-__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-troll-8-jpg-__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4423,
+        "wh": [
+          186,
+          346
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-war-26-jpg-r__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-train-th18-war-26-jpg-r__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4898,
+        "wh": [
+          432,
+          446
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-11-jpg-rf-ef2118__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-11-jpg-rf-ef2118__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4594,
+        "wh": [
+          435,
+          431
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-12-jpg-rf-898c13__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-12-jpg-rf-898c13__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4455,
+        "wh": [
+          404,
+          384
+        ]
+      },
+      {
+        "session": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-14-jpg-rf-e0a01d__0.session.json",
+        "image": "training/inbox/private/focus-crops/crafted-defense/crop__crafted-defense__base-finder-th18__base-finder-th18-val-18-14-jpg-rf-e0a01d__0.jpg",
+        "target": "crafted-defense",
+        "coverage": 0.4443,
+        "wh": [
+          389,
+          294
+        ]
+      }
+    ]
+  },
+  "imports": [
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-41df50815d04-41df50815d04.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-41df50815d04-41df50815d04.txt",
+      "sha256": "41df50815d0417071b14929e129168276cb4c1ecca862a69c5223b059c3e65d5",
+      "village_group": "focus-crop-tornado-trap-41df50815d04",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:56:24.235434+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1827-jpg-r__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-9e004e0dab0f-9e004e0dab0f.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-9e004e0dab0f-9e004e0dab0f.txt",
+      "sha256": "9e004e0dab0fc3e483a0f1565ec10f848649dcefb732b1e637854c45a8d7e81f",
+      "village_group": "focus-crop-tornado-trap-9e004e0dab0f",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:56:37.014803+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-farm-1858-jpg-r__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-4e6614837f58-4e6614837f58.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-4e6614837f58-4e6614837f58.txt",
+      "sha256": "4e6614837f584c56906e408d069aefa2ce38e684a692e21d70bbfcccbccda956",
+      "village_group": "focus-crop-tornado-trap-4e6614837f58",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:56:50.053938+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th11-war-1963-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-tornado-trap-c9f54f16e915-c9f54f16e915.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-tornado-trap-c9f54f16e915-c9f54f16e915.txt",
+      "sha256": "c9f54f16e915692a9ef11a951ad3ed6dd23308aa5539cd41b80c74460fdb4206",
+      "village_group": "focus-crop-tornado-trap-c9f54f16e915",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:57:02.652999+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1925-jpg-r__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-tornado-trap-f86b8b63a119-f86b8b63a119.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-tornado-trap-f86b8b63a119-f86b8b63a119.txt",
+      "sha256": "f86b8b63a119aefcedc224bfa4ec54b8ece33f3d8adea4b8ec7dfc9c2c36caa9",
+      "village_group": "focus-crop-tornado-trap-f86b8b63a119",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:57:15.264438+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-farm-1931-jpg-r__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-1f2e9370c2ab-1f2e9370c2ab.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-1f2e9370c2ab-1f2e9370c2ab.txt",
+      "sha256": "1f2e9370c2ab50eaa7742d0e05203f73838c4ab6d58f061abf9399b2dc479025",
+      "village_group": "focus-crop-tornado-trap-1f2e9370c2ab",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:57:28.835501+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1929-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-eeda996255bf-eeda996255bf.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-eeda996255bf-eeda996255bf.txt",
+      "sha256": "eeda996255bf369c73e952bd518e6772133e350a6c107c1d8b528e235c2b0b0c",
+      "village_group": "focus-crop-tornado-trap-eeda996255bf",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:57:41.588367+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th12-war-1936-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-c3dfb0c53164-c3dfb0c53164.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-c3dfb0c53164-c3dfb0c53164.txt",
+      "sha256": "c3dfb0c5316452b40aca1c63a0e1948eccb4e9b459e02fe8563234efb302537b",
+      "village_group": "focus-crop-tornado-trap-c3dfb0c53164",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:57:54.571279+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-defence-1595-jp__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-tornado-trap-08ef32a51f8e-08ef32a51f8e.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-tornado-trap-08ef32a51f8e-08ef32a51f8e.txt",
+      "sha256": "08ef32a51f8e6c3619ab999a59d56d99df0739afc3761d869bc13d46bb1aca13",
+      "village_group": "focus-crop-tornado-trap-08ef32a51f8e",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:58:07.282095+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th13-war-1604-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-tornado-trap-b25c1d61de5d-b25c1d61de5d.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-tornado-trap-b25c1d61de5d-b25c1d61de5d.txt",
+      "sha256": "b25c1d61de5de360793b6fb6a7f5e78be6d5804d536cc84a14e0820f6512603e",
+      "village_group": "focus-crop-tornado-trap-b25c1d61de5d",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:58:20.225189+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-defence-1543-jp__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-ea743d680b88-ea743d680b88.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-ea743d680b88-ea743d680b88.txt",
+      "sha256": "ea743d680b880edec0f6d769a9ec8481af44b475b2b0b3327c90bdbb99f0e857",
+      "village_group": "focus-crop-tornado-trap-ea743d680b88",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:58:33.186878+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th14-war-1691-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-93cff5396e2f-93cff5396e2f.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-93cff5396e2f-93cff5396e2f.txt",
+      "sha256": "93cff5396e2f3fb31a20e613bc354ec56f218c29d0bb78c00fa1ca81b4fb240f",
+      "village_group": "focus-crop-tornado-trap-93cff5396e2f",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:58:54.878165+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1477-jpg-r__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-51094157a035-51094157a035.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-51094157a035-51094157a035.txt",
+      "sha256": "51094157a035fb5f9f9df85d3eb42e2893c5d27b78d2365bedeb9d1ac438704e",
+      "village_group": "focus-crop-tornado-trap-51094157a035",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:59:20.506120+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-farm-1479-jpg-r__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-tornado-trap-e623fe568191-e623fe568191.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-tornado-trap-e623fe568191-e623fe568191.txt",
+      "sha256": "e623fe568191af53c83750424eb1ca0c5820d344f28e1b33c4306866ff20add6",
+      "village_group": "focus-crop-tornado-trap-e623fe568191",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:59:35.596328+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th15-war-1474-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-tornado-trap-94c05b450aa0-94c05b450aa0.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-tornado-trap-94c05b450aa0-94c05b450aa0.txt",
+      "sha256": "94c05b450aa04091b759c12738cfb19b36b6d5f8d3aad7a51a290bb9b97c8dfb",
+      "village_group": "focus-crop-tornado-trap-94c05b450aa0",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T21:59:50.199542+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1818-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-1cc231198ce5-1cc231198ce5.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-1cc231198ce5-1cc231198ce5.txt",
+      "sha256": "1cc231198ce5f12297287bc045297ef356ef269d51b6c143108f18f58e05664a",
+      "village_group": "focus-crop-tornado-trap-1cc231198ce5",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:00:03.337988+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-train-th16-war-1821-jpg-rf__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-ca2a2c411a40-ca2a2c411a40.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-ca2a2c411a40-ca2a2c411a40.txt",
+      "sha256": "ca2a2c411a408ee2be807d4ab7ebc73b99ff79f4e71a6d50a8f0733aaad384ae",
+      "village_group": "focus-crop-tornado-trap-ca2a2c411a40",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:00:16.180097+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-val-th11-farm-1837-jpg-rf-__0.session.json"
+    },
+    {
+      "target": "tornado-trap",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-tornado-trap-2378327fa029-2378327fa029.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-tornado-trap-2378327fa029-2378327fa029.txt",
+      "sha256": "2378327fa0291ab72f409057aa34dd92883551b63dac799c8b2dc73e1338c7a9",
+      "village_group": "focus-crop-tornado-trap-2378327fa029",
+      "source": "focus-crop:coc-all-traps",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "tornado-trap": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:00:29.342731+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\tornado-trap\\crop__tornado-trap__coc-all-traps__coc-all-traps-val-th13-defence-1639-jpg-__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-wall-d86e242799cf-d86e242799cf.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-wall-d86e242799cf-d86e242799cf.txt",
+      "sha256": "d86e242799cf87a36ea423a53a5bc29a701b7fe732f41fd1cc4dcc0be6e98566",
+      "village_group": "focus-crop-wall-d86e242799cf",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:00:52.751218+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall1__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/val/human-focus-crop-wall-d86e242799cf-d86e242799cf.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-67599d8169ea-67599d8169ea.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-67599d8169ea-67599d8169ea.txt",
+      "sha256": "67599d8169ea6efd55f4a194e69cb23ca1a2d7f47f04de21834ab88a0e3badc4",
+      "village_group": "focus-crop-wall-67599d8169ea",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:01:25.820989+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-test-Wall2__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-70f30b7a0fbc-70f30b7a0fbc.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-70f30b7a0fbc-70f30b7a0fbc.txt",
+      "sha256": "70f30b7a0fbc97659cc08153edcb8fd4736c27ee1d231c3caada3133aa4b1c6a",
+      "village_group": "focus-crop-wall-70f30b7a0fbc",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:01:38.818157+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-wall-70f30b7a0fbc-70f30b7a0fbc.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-wall-70f30b7a0fbc-70f30b7a0fbc.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.txt",
+      "sha256": "f42ce37a450e779682edbeefb1ec0f10124689a012c6965404e83ab4ce4cf656",
+      "village_group": "focus-crop-wall-f42ce37a450e",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:02:49.467982+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-train-Wall__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-wall-f42ce37a450e-f42ce37a450e.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-wall-bc306c973bf2-bc306c973bf2.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-wall-bc306c973bf2-bc306c973bf2.txt",
+      "sha256": "bc306c973bf288c0e776b0039cf6fd18b1052efad081719fdf6f4fc3c4b2f654",
+      "village_group": "focus-crop-wall-bc306c973bf2",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:36.099623+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall11__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-feacc4d3856e-feacc4d3856e.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-feacc4d3856e-feacc4d3856e.txt",
+      "sha256": "feacc4d3856e3f6d8cb442aa67222955390e3850d719e9ef13eaa538ffbafad4",
+      "village_group": "focus-crop-wall-feacc4d3856e",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:38.641585+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall4-__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-d8517f69f7f0-d8517f69f7f0.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-d8517f69f7f0-d8517f69f7f0.txt",
+      "sha256": "d8517f69f7f071c89937c9642df6df85ccbd8eb61ce1ca962470446811642ee1",
+      "village_group": "focus-crop-wall-d8517f69f7f0",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:40.970988+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall8-__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-wall-d8517f69f7f0-d8517f69f7f0.jpg']"
+      ]
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-wall-3c696359b2b4-3c696359b2b4.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-wall-3c696359b2b4-3c696359b2b4.txt",
+      "sha256": "3c696359b2b449386366290c586190cef92789ca47c1334c8f1fbf577ccb153f",
+      "village_group": "focus-crop-wall-3c696359b2b4",
+      "source": "focus-crop:clashia-detectwall-v7-curated",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:45.821906+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7-curated__clashia-detectwall-v7-curated-val-Wall9-__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-wall-360ab9378625-360ab9378625.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-wall-360ab9378625-360ab9378625.txt",
+      "sha256": "360ab937862513abf54775e6fb30ccf44bf8ae6df837ca22f213f07aa0332013",
+      "village_group": "focus-crop-wall-360ab9378625",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:48.291366+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__0.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-53672ea46de7-53672ea46de7.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-53672ea46de7-53672ea46de7.txt",
+      "sha256": "53672ea46de7538325795c8d1e50d574f753fd577a33581178eb514b8fb3c0d1",
+      "village_group": "focus-crop-wall-53672ea46de7",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:50.673824+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__1.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-30a57260e9cb-30a57260e9cb.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-30a57260e9cb-30a57260e9cb.txt",
+      "sha256": "30a57260e9cb3d2cfb4685e6d9849a7eb314f5ced2ce4721ba8655708858facb",
+      "village_group": "focus-crop-wall-30a57260e9cb",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:52.997538+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__2.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-2684179200fa-2684179200fa.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-2684179200fa-2684179200fa.txt",
+      "sha256": "2684179200fa6586b62f5c65853969fec9f189f49cc51f48867300b87bc1988a",
+      "village_group": "focus-crop-wall-2684179200fa",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:55.330122+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__3.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-wall-f30fb28c9ad1-f30fb28c9ad1.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-wall-f30fb28c9ad1-f30fb28c9ad1.txt",
+      "sha256": "f30fb28c9ad1b4e9c8860d1fa4c5ad2574f39d96c490ea9c3ffbaca633050ac6",
+      "village_group": "focus-crop-wall-f30fb28c9ad1",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:04:57.774630+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__4.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-wall-68fd63704015-68fd63704015.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-wall-68fd63704015-68fd63704015.txt",
+      "sha256": "68fd63704015d8682976a7eea2f1c95ded8ab81a4f4db4fbd7e1857d503eb2fc",
+      "village_group": "focus-crop-wall-68fd63704015",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:00.376494+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__5.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-6cc8b93a14b5-6cc8b93a14b5.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-6cc8b93a14b5-6cc8b93a14b5.txt",
+      "sha256": "6cc8b93a14b585460b356cf66e763453876951096324ca6e7015e0ea8f6442c6",
+      "village_group": "focus-crop-wall-6cc8b93a14b5",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:02.913692+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__6.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-21a5c8a262bd-21a5c8a262bd.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-21a5c8a262bd-21a5c8a262bd.txt",
+      "sha256": "21a5c8a262bd5dcc320a1b353a11aea94a87c0279c21d9a84b3b4c4ea0347fe3",
+      "village_group": "focus-crop-wall-21a5c8a262bd",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:05.327238+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__7.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-964778a63984-964778a63984.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-964778a63984-964778a63984.txt",
+      "sha256": "964778a639841b92d313eb73e3708f88cfdf8ed92a8624ca24d13a7bdbf7720d",
+      "village_group": "focus-crop-wall-964778a63984",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:07.651582+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__8.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-wall-7ca68e729c1e-7ca68e729c1e.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-wall-7ca68e729c1e-7ca68e729c1e.txt",
+      "sha256": "7ca68e729c1e3960af9e9b106c4b17e020a6c9a2ce61dc407f0918fb87ac16d1",
+      "village_group": "focus-crop-wall-7ca68e729c1e",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:10.081906+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__11.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-wall-ffa81a896f75-ffa81a896f75.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-wall-ffa81a896f75-ffa81a896f75.txt",
+      "sha256": "ffa81a896f7550f795a130b250f340d1a86a0e487e58b9d557f2371d1f88d2e2",
+      "village_group": "focus-crop-wall-ffa81a896f75",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:12.443564+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__12.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-8bf91c1456c3-8bf91c1456c3.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-8bf91c1456c3-8bf91c1456c3.txt",
+      "sha256": "8bf91c1456c3c7227dddae973672f3111d225057b3bf2e860738307941a7e634",
+      "village_group": "focus-crop-wall-8bf91c1456c3",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:14.907067+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__13.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-20f58f2ff6f3-20f58f2ff6f3.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-20f58f2ff6f3-20f58f2ff6f3.txt",
+      "sha256": "20f58f2ff6f333d90e239edfe3a183ffde852b149c2435c907d2be07afed74f0",
+      "village_group": "focus-crop-wall-20f58f2ff6f3",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:17.315092+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__14.session.json"
+    },
+    {
+      "target": "wall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-wall-c042d9e517f7-c042d9e517f7.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-wall-c042d9e517f7-c042d9e517f7.txt",
+      "sha256": "c042d9e517f7edf42671fffa38d9eaf671b5ae033d045b5a8e531c7984a17b1e",
+      "village_group": "focus-crop-wall-c042d9e517f7",
+      "source": "focus-crop:clashia-detectwall-v7",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "wall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:19.744585+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\wall\\crop__wall__clashia-detectwall-v7__clashia-detectwall-v7-train-train-wall-5__16.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "val",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/val/human-focus-crop-hero-hall-f05d4cca57a4-f05d4cca57a4.jpg",
+      "target_label": "training/dataset/detector/labels/val/human-focus-crop-hero-hall-f05d4cca57a4-f05d4cca57a4.txt",
+      "sha256": "f05d4cca57a45ba443948824818a85d825bc318a6db9d764bae71d3b6dd90d8d",
+      "village_group": "focus-crop-hero-hall-f05d4cca57a4",
+      "source": "focus-crop:glenn-th18-gigabomb",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:22.110703+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__glenn-th18-gigabomb__glenn-th18-gigabomb-train-IMG-0117-jpg-r__0.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-hero-hall-9fe4521d0507-9fe4521d0507.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-hero-hall-9fe4521d0507-9fe4521d0507.txt",
+      "sha256": "9fe4521d05076cdcbd3b0fa803840b69b6918f9ea54aa3ce8e060c67e632ed27",
+      "village_group": "focus-crop-hero-hall-9fe4521d0507",
+      "source": "focus-crop:nothing-clash-of-clans",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:24.629519+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-test-resized-C3F4__0.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.txt",
+      "sha256": "92ce6b4125b224a97567147c93dc1ebfa7706ed812d36d75baf1aa0e28243f73",
+      "village_group": "focus-crop-hero-hall-92ce6b4125b2",
+      "source": "focus-crop:nothing-clash-of-clans",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:27.043608+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-174__0.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-hero-hall-92ce6b4125b2-92ce6b4125b2.jpg']"
+      ]
+    },
+    {
+      "target": "hero-hall",
+      "split": "test",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/test/human-focus-crop-hero-hall-3072cf3c47ca-3072cf3c47ca.jpg",
+      "target_label": "training/dataset/detector/labels/test/human-focus-crop-hero-hall-3072cf3c47ca-3072cf3c47ca.txt",
+      "sha256": "3072cf3c47caa943aa4729b5ae40b3533aac02c7110b3820beea4067cdfdb099",
+      "village_group": "focus-crop-hero-hall-3072cf3c47ca",
+      "source": "focus-crop:nothing-clash-of-clans",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:49.470604+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-175__0.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-hero-hall-a06026da3ff0-a06026da3ff0.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-hero-hall-a06026da3ff0-a06026da3ff0.txt",
+      "sha256": "a06026da3ff02143422d8ca861f20f75d5a5347fb548a54e6974f5296558f9cf",
+      "village_group": "focus-crop-hero-hall-a06026da3ff0",
+      "source": "focus-crop:nothing-clash-of-clans",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:51.881875+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-train-resized-BC4__0.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-hero-hall-c1fc2a89a11f-c1fc2a89a11f.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-hero-hall-c1fc2a89a11f-c1fc2a89a11f.txt",
+      "sha256": "c1fc2a89a11fb4ca84d9af3faf31d3b42e3d27ad4b1468ae7dd9f92b1e3f13f1",
+      "village_group": "focus-crop-hero-hall-c1fc2a89a11f",
+      "source": "focus-crop:nothing-clash-of-clans",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:54.375546+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__nothing-clash-of-clans__nothing-clash-of-clans-val-resized-17518__0.session.json"
+    },
+    {
+      "target": "hero-hall",
+      "split": "train",
+      "ok": true,
+      "dry_run": false,
+      "target_image": "training/dataset/detector/images/train/human-focus-crop-hero-hall-233f65e1303f-233f65e1303f.jpg",
+      "target_label": "training/dataset/detector/labels/train/human-focus-crop-hero-hall-233f65e1303f-233f65e1303f.txt",
+      "sha256": "233f65e1303f9f76e3b74787a6d567dfba4508c379a4510bacfe397ac7e1a7f0",
+      "village_group": "focus-crop-hero-hall-233f65e1303f",
+      "source": "focus-crop:pedro-coc-model",
+      "license": "CC BY 4.0",
+      "exhaustive": true,
+      "counts": {
+        "hero-hall": 1
+      },
+      "box_count": 1,
+      "imported_at": "2026-11-18T22:05:57.010948+00:00",
+      "session": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\focus-crops\\hero-hall\\crop__hero-hall__pedro-coc-model__pedro-coc-model-train-Captura-de-tela-de__0.session.json"
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-f88277c3bb93-f88277c3bb93.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-8454044f143b-8454044f143b.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-4319a6afef55-4319a6afef55.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-c076250f1e54-c076250f1e54.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-04fe73f6c961-04fe73f6c961.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-9f60a841bd7c-9f60a841bd7c.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/val/human-focus-crop-crafted-defense-db09e956a041-db09e956a041.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/test/human-focus-crop-crafted-defense-99d530af63d8-99d530af63d8.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-04c17add3636-04c17add3636.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-eb9bc7a1e620-eb9bc7a1e620.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-47b319e80f53-47b319e80f53.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-63ebfef135d0-63ebfef135d0.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "val",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-acea334e6215-acea334e6215.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "test",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-97937f49540b-97937f49540b.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-41814fb90aa8-41814fb90aa8.jpg']"
+      ]
+    },
+    {
+      "target": "crafted-defense",
+      "split": "train",
+      "ok": false,
+      "errors": [
+        "image dÃ©jÃ  prÃ©sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-crafted-defense-b13c7fadbdb2-b13c7fadbdb2.jpg']"
+      ]
+    }
+  ],
+  "notes": [
+    "Crops mono-objet pour combler seuils pré-FT sans poison multi-classe.",
+    "Pas de fine-tune dans ce script ; gate Jimmy inchangé.",
+    "Images focus-crops gitignorées via inbox/private/**/*.jpg."
+  ]
+}

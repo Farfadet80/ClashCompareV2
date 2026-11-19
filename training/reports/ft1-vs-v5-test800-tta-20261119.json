@@ -1,0 +1,40 @@
+{
+  "updated": "2026-11-19",
+  "protocol": "imgsz 800 + TTA Ultralytics augment=True, split=test, batch=2, device=0",
+  "dataset": "training/dataset.yaml (105 images test, 4772 instances)",
+  "ft": {
+    "model": "training/runs/building-detector-v5-th1018-ft1/weights/best.pt",
+    "train_best_epoch": 35,
+    "train_val_640_map50": 0.79003,
+    "train_val_640_map50_95": 0.56644,
+    "eval_run": "training/runs/evaluations/ft1-th1018-test800-tta",
+    "precision": 0.8209944245166994,
+    "recall": 0.7826353778912608,
+    "map50": 0.805310492798284,
+    "map50_95": 0.5799646354974725
+  },
+  "v5_same_split": {
+    "model": "models/releases/building-detector-v5s-infer800/building-detector-v5s-infer800.pt",
+    "eval_run": "training/runs/evaluations/v5-baseline-test800-tta-20261119",
+    "precision": 0.7430577464891251,
+    "recall": 0.7657787410277024,
+    "map50": 0.7523437506665221,
+    "map50_95": 0.5416414921845215
+  },
+  "delta_ft_minus_v5": {
+    "precision": 0.0779,
+    "recall": 0.0169,
+    "map50": 0.0530,
+    "map50_95": 0.0383
+  },
+  "weak_classes_map50": {
+    "tornado-trap": {"ft": 0.305, "v5": 0.0},
+    "giga-bomb": {"ft": 0.689, "v5": 0.608},
+    "wall": {"ft": 0.040, "v5": 0.0},
+    "crafted-defense": {"ft": 0.569, "v5": 0.569},
+    "hidden-tesla": {"ft": 0.490, "v5": 0.629}
+  },
+  "decision": "promote",
+  "release": "building-detector-v5-th1018-ft1-infer800",
+  "note": "Comparaison juste sur le test réservé actuel (post préparation données). L'ancien score V5 historique 0.857/0.622 portait sur un autre contenu de test."
+}

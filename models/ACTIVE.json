@@ -1,16 +1,37 @@
 {
-  "release": "building-detector-v5s-infer800",
-  "weights_train_run": "building-detector-v5s-distilled-640",
+  "release": "building-detector-v5-th1018-ft1-infer800",
+  "weights_train_run": "building-detector-v5-th1018-ft1",
   "imgsz": 800,
   "tta": true,
-  "promoted_on": "2026-09-04",
-  "decision": "Mêmes poids V5 ; imgsz 800 + TTA Ultralytics (augment=True). Test réservé : mAP50 0.857 / mAP50-95 0.622 vs baseline 800 sans TTA 0.839 / 0.612. Rappel F1 légèrement inférieur (−0,46 pp) ; décision sur les AP.",
-  "pt_sha256": "866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d",
+  "promoted_on": "2026-11-19",
+  "decision": "Fine-tune V5 th1018 ft1 (epoch 35 best) promu après mesure juste sur le test réservé actuel, imgsz 800 + TTA. FT mAP50 0.805 / mAP50-95 0.580 vs V5 0.752 / 0.542 (+5,3 / +3,8 pts). Précision 0.821 vs 0.743. Gains notables tornado-trap, giga-bomb, murs (encore faibles). Régression hidden-tesla acceptée face au gain global. Inférence inchangée : 800 + TTA.",
+  "pt_sha256": "a06eebc79506788fbbbb6ed054faf649a65318afcc65840d00f8373e4a7b6fc5",
+  "onnx_sha256": "fb0d65537abb77c4323c2456ed65c14996374db7b3919e2083cbc4c5621ee585",
   "aliases": {
     "pt": "models/building-detector.pt",
     "onnx": "models/building-detector.onnx"
   },
-  "release_dir": "models/releases/building-detector-v5s-infer800",
+  "release_dir": "models/releases/building-detector-v5-th1018-ft1-infer800",
+  "previous_release": "building-detector-v5s-infer800",
+  "eval_compare": {
+    "split": "test",
+    "imgsz": 800,
+    "tta": true,
+    "ft": {
+      "precision": 0.821,
+      "recall": 0.783,
+      "map50": 0.805,
+      "map50_95": 0.580,
+      "run": "training/runs/evaluations/ft1-th1018-test800-tta"
+    },
+    "v5_same_split": {
+      "precision": 0.743,
+      "recall": 0.766,
+      "map50": 0.752,
+      "map50_95": 0.542,
+      "run": "training/runs/evaluations/v5-baseline-test800-tta-20261119"
+    }
+  },
   "level_classifiers": ["town-hall"],
   "level_classifier_releases": {
     "town-hall": {

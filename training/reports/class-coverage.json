@@ -7,9 +7,7 @@
     "guardian-shrine",
     "squad-barracks"
   ],
-  "very_weak": [
-    "giga-bomb"
-  ],
+  "very_weak": [],
   "weak": [
     "wall",
     "dark-spell-factory",
@@ -17,7 +15,8 @@
     "pet-house",
     "hero-hall",
     "crafted-defense",
-    "tornado-trap"
+    "tornado-trap",
+    "giga-bomb"
   ],
   "no_eval_split": [
     "town-hall-guardian",
@@ -422,10 +421,10 @@
     {
       "id": "giga-bomb",
       "class_id": 49,
-      "train": 39,
+      "train": 54,
       "val": 10,
       "test": 10,
-      "status": "very_weak"
+      "status": "weak"
     },
     {
       "id": "spiky-tower",

@@ -19,36 +19,35 @@ Le candidat `level-wall` est également conservé dans `models/experimental/` :
 
 Les exports ONNX validés avec ONNX Runtime sont également présents :
 
-- `building-detector.onnx` (entrée **800 × 800**, mêmes poids V5) ;
+- `building-detector.onnx` (entrée **800 × 800**, poids actifs FT1) ;
 - `level-air-defense.onnx` (entrée 224 × 224) ;
 - `level-town-hall.onnx` (entrée 224 × 224).
 
-## Version active V5 (inférence imgsz 800)
+## Version active FT1 (inférence imgsz 800 + TTA)
 
-Poids entraînés V5 (`building-detector-v5s-distilled-640`). Alias actifs :
+Poids : fine-tune depuis V5 (`building-detector-v5-th1018-ft1`, best epoch 35). Alias actifs :
 
-- PT/ONNX → `models/releases/building-detector-v5s-infer800/` (inférence **800**)
-- Archive entraînement 640 → `models/releases/building-detector-v5s-distilled-640/`
-- V4 → `models/releases/building-detector-v4-pedro-no-guardian/`
+- PT/ONNX → `models/releases/building-detector-v5-th1018-ft1-infer800/` (inférence **800**)
+- Précédent V5 → `models/releases/building-detector-v5s-infer800/`
+- Archive entraînement V5 640 → `models/releases/building-detector-v5s-distilled-640/`
 
-Décision 2026-09-03 : V5 bat V4 sur le **test réservé** (imgsz 640).
-Décision 2026-09-04 : **inférence 800** bat 640 sur le même test réservé (mêmes poids).
+Décision 2026-11-19 : FT1 bat V5 sur le **même test réservé actuel**, imgsz **800 + TTA**.
 
 | Split | Config | Précision | Rappel | mAP50 | mAP50-95 |
 |---|---|---:|---:|---:|---:|
-| Val | V4 alias 512 | 0,6729 | 0,3940 | 0,4382 | 0,3055 |
-| Val | V5 imgsz 640 | 0,8519 | 0,7890 | 0,8241 | 0,6022 |
-| Val | V5 imgsz 800 | 0,8259 | 0,8236 | 0,8416 | 0,6247 |
-| Test | V4 alias 512 | 0,6765 | 0,3669 | 0,4284 | 0,2880 |
-| Test | V5 imgsz 640 | 0,7878 | 0,7915 | 0,8022 | 0,5788 |
-| Test | V5 imgsz **800** | **0,8273** | **0,8281** | **0,8390** | **0,6121** |
-| Test | V5 imgsz **800 + TTA** | **0,8525** | 0,8235 | **0,8573** | **0,6222** |
+| Test actuel | V5 800+TTA | 0,7431 | 0,7658 | 0,7523 | 0,5416 |
+| Test actuel | **FT1 800+TTA** | **0,8210** | **0,7826** | **0,8053** | **0,5800** |
 
-Parité PT/ONNX 800 (2026-09-04) : 36 détections, classes identiques, Δconf max < 0,000002.
-SHA-256 PT : `866595fad39a5b7dfdf87076332faadc40a88bc55eae1b02f093d996362fb93d` (inchangé).
+SHA-256 PT FT1 : `a06eebc79506788fbbbb6ed054faf649a65318afcc65840d00f8373e4a7b6fc5`.
 Inférence : `analyze_village.py` / `serve_compare.py` utilisent `--imgsz 800` et **TTA on** par défaut (`--no-tta` pour désactiver).
 
-Non promu (sous baseline AP) : V6 weakclass-ft, SAHI/tiling (640 et 800), imgsz 704/832/896/960.
+### Historique V5 (ancien test réservé, 2026-09-04)
+
+| Split | Config | Précision | Rappel | mAP50 | mAP50-95 |
+|---|---|---:|---:|---:|---:|
+| Test | V5 imgsz **800 + TTA** | **0,8525** | 0,8235 | **0,8573** | **0,6222** |
+
+Non promu (sous baseline AP) : V6 weakclass-ft, SAHI/tiling (640 et 800), imgsz 704/832/896/960, V9 coc-analyzer-ft.
 `town-hall-guardian` n'a toujours aucune annotation.
 
 ## Version V3 — 49 classes annotées
