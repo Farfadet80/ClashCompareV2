@@ -1,6 +1,7 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "execute_now": false,
+  "status": "completed_promoted",
   "jimmy_ok_required": true,
   "check_finetune_readiness": true,
   "baseline": "building-detector-v5s-infer800 (imgsz 800 + TTA)",
@@ -25,12 +26,21 @@
   "eval_after": {
     "imgsz": 800,
     "tta": true,
-    "promote_if": "reserved test mAP and weak-class AP >= V5 baseline"
+    "promote_if": "reserved test mAP and weak-class AP >= V5 baseline",
+    "completed": true,
+    "compare_report": "training/reports/ft1-vs-v5-test800-tta-20261119.json",
+    "ft_map50": 0.805,
+    "v5_map50": 0.752,
+    "decision": "promote"
   },
   "forbidden": [
     "from-scratch",
     "CUDA/Python/torch upgrade",
     "TH19 classes 50-53",
     "merge main without Jimmy"
-  ]
+  ],
+  "jimmy_ok_received": true,
+  "jimmy_ok_at": "2026-11-19",
+  "promoted_release": "building-detector-v5-th1018-ft1-infer800",
+  "note": "OK Jimmy chat 2026-11-19 — FT terminé, eval 800+TTA FT>V5, ACTIVE promu"
 }

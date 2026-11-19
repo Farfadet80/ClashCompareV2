@@ -1,0 +1,20 @@
+{
+  "imported_ok": 0,
+  "fails": [
+    [
+      "image d\u00c3\u00a9j\u00c3\u00a0 pr\u00c3\u00a9sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-giga-bomb-c53fde8e4acd-c53fde8e4acd.jpg']"
+    ],
+    [
+      "image d\u00c3\u00a9j\u00c3\u00a0 pr\u00c3\u00a9sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-giga-bomb-215d7b47ef19-215d7b47ef19.jpg']"
+    ],
+    [
+      "image d\u00c3\u00a9j\u00c3\u00a0 pr\u00c3\u00a9sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-giga-bomb-6f7736f5c8ac-6f7736f5c8ac.jpg']"
+    ],
+    [
+      "image d\u00c3\u00a9j\u00c3\u00a0 pr\u00c3\u00a9sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-giga-bomb-fec00a7fdb11-fec00a7fdb11.jpg']"
+    ],
+    [
+      "image d\u00c3\u00a9j\u00c3\u00a0 pr\u00c3\u00a9sente dans le dataset: ['training/dataset/detector/images/train/human-focus-crop-giga-bomb-299e25e9f1aa-299e25e9f1aa.jpg']"
+    ]
+  ]
+}

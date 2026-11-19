@@ -1,6 +1,6 @@
 # ClashCompare — mémoire technique
 
-Dernière mise à jour : 2026-09-05 (push reconnaissance : policy VAL + import find-this-base)
+Dernière mise à jour : 2026-11-19 (FT1 th1018 promu vs V5 sur test 800+TTA)
 
 **Suivi ChatGPT / Cursor** : lire aussi `CHANGELOG_AI.md` (chronologie des mods agent) et `PASSATION-CHATGPT.md` (vision produit).  
 **Priorité en cas de conflit** : fichiers réels + Git > mémoire ChatGPT.
@@ -9,18 +9,16 @@ Dernière mise à jour : 2026-09-05 (push reconnaissance : policy VAL + import f
 
 ### Ce qui fonctionne
 
-- Marqueur release : `models/ACTIVE.json` → `building-detector-v5s-infer800` (imgsz 800, **TTA on**).
+- Marqueur release : `models/ACTIVE.json` → `building-detector-v5-th1018-ft1-infer800` (imgsz 800, **TTA on**). Précédent V5 archivé dans `models/releases/building-detector-v5s-infer800/`.
 - PWA locale : `index.html` / `app.js` / `style.css` (onglets Joueur A, Joueur B, Comparatif, tags, **import JSON officiel**, capture YOLO optionnelle, catalogue 52 bâtiments/pièges : 50 classes YOLO + 2 export-only).
 - **Inventaire propriétaire / ami** : export JSON in-game (Réglages → Plus de réglages → Exporter) via `village-export.js` + `data/coc-export-mapping.json`. Persisté en `localStorage` (tags + export), jamais uploadé.
 - **Limite JSON** : l’export n’est disponible **que** au propriétaire du compte. Impossible de récupérer le JSON d’un adversaire via son tag #. Pour un village tiers → **capture + YOLO obligatoire**.
-- **Analyse YOLO** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur V5, **imgsz 800 + TTA**) en complément / fallback **et** chemin principal pour villages sans JSON.
+- **Analyse YOLO** : `training/scripts/serve_compare.py` sert la PWA et `POST /api/analyze` (détecteur FT1, **imgsz 800 + TTA**) en complément / fallback **et** chemin principal pour villages sans JSON.
 - Fusion : export écrase YOLO pour les ids connus ; YOLO peut seulement ajouter des ids absents. Jamais d’invention.
 - Environnement `.venv` : Python 3.12.10, **PyTorch 2.7.1+cu118**, Ultralytics **8.4.137**, CUDA 11.8, GPU **GTX 1050 CC 6.1 (`sm_61`)** — inférence et entraînement CUDA OK.
-- Détecteur **V5 promu** : poids V5 inchangés ; alias PT/ONNX -> `models/releases/building-detector-v5s-infer800/` (**imgsz 800 + TTA**). Archive train : `building-detector-v5s-distilled-640/`.
-- Run V5 `building-detector-v5s-distilled-640` : **terminé 80/80** le 2026-09-02 18:14 (pas un arrêt à 71).
-- Train assaini : **968** images (`train-clean.txt`, +37 `find-this-base` le 2026-09-05) ; baseline VAL 800+TTA reproduite 2026-09-05 : mAP50 **0,853** / mAP50-95 **0,632**.
-- Fine-tune V7 : `training/runs/building-detector-v7-clean-ft2-20260905/` depuis élève `epoch79`, arrêté proprement à 9/20 par patience 8. VAL 800+TTA : P 0,855 / R 0,837 / mAP50 0,857 / mAP50-95 0,629. **Non promu**.
-- Fine-tune V8 Stage1 : `training/runs/building-detector-v8-stage1-seed0-20260905/` depuis **V5 promu**, backbone gelé, LR `5e-5`, sans mosaic/warmup. VAL 800+TTA : P 0,855 / R 0,817 / mAP50 0,847 / mAP50-95 **0,619**. **Non promu** (sous V5). Stage2 / TEST non lancés.
+- Détecteur **FT1 promu** (2026-11-19) : fine-tune depuis V5 `building-detector-v5-th1018-ft1` (best epoch 35) ; alias PT/ONNX → `models/releases/building-detector-v5-th1018-ft1-infer800/` (**imgsz 800 + TTA**). Test actuel 800+TTA : mAP50 **0,805** / mAP50-95 **0,580** vs V5 même split **0,752** / **0,542**.
+- Archive V5 : `models/releases/building-detector-v5s-infer800/` + train `building-detector-v5s-distilled-640/` (80/80, 2026-09-02).
+- Fine-tune V7 / V8 Stage1 : **non promus** (sous V5 à l’époque).
 - Bake-off politiques d’inférence VAL (`inference-policy-val-20260905`) : dual-conf / conf basse **rejetées** (précision pièges s’effondre). Politique active : **conf 0,25**, `max_det=1000`. SAHI/tuiles déjà mesurés : **légère régression** → non activés.
 - Couverture classes : `town-hall-guardian` = 0 ; `wall` ≈ 12 train / 0 val-test ; pièges rares encore faibles. Rapport : `training/reports/class-coverage.json`.
 - Recherche multi-source : `training/sources/gap-research.json` ; guide visuel et règles d’annotation : `training/RARE_CLASSES_GUIDE.md`.

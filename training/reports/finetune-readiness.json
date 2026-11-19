@@ -1,15 +1,14 @@
 {
-  "ready": false,
+  "ready": true,
   "mechanical_ready": true,
-  "decision": "conserver V5 — données insuffisantes pour FT utile",
+  "decision": "fine-tune autorisé — OK Jimmy + données prêtes",
   "jimmy_gate": {
-    "train_authorized": false,
-    "reason": "OK Jimmy explicite toujours requis (préférence projet). Ne pas lancer train_detector sans validation verbale."
+    "train_authorized": true,
+    "reason": "OK Jimmy reçu pour ce run (chat 2026-11-19).",
+    "authorized_at": "2026-11-19T04:33:08.585745+00:00"
   },
   "reasons": [],
-  "data_gaps": [
-    "giga-bomb train < 50 (39)"
-  ],
+  "data_gaps": [],
   "thresholds": {
     "min_wall_train": 40,
     "min_wall_eval_boxes": 5,
@@ -26,7 +25,7 @@
     "imgsz": 800,
     "augment_tta": true
   },
-  "clean_train_images": 1347,
+  "clean_train_images": 1362,
   "human_annotations": [
     {
       "file": "training/dataset/detector/provenance/human-focus-crop-blacksmith-06eee900b7f1-06eee900b7f1.json",
@@ -335,6 +334,12 @@
       "split": "train"
     },
     {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-0c4b0388942c-0c4b0388942c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-0c4b0388942c",
+      "split": "train"
+    },
+    {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-1efc5d4e167e-1efc5d4e167e.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-1efc5d4e167e",
@@ -344,6 +349,18 @@
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-206fb36bb59f-206fb36bb59f.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-206fb36bb59f",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-215d7b47ef19-215d7b47ef19.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-215d7b47ef19",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-299e25e9f1aa-299e25e9f1aa.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-299e25e9f1aa",
       "split": "train"
     },
     {
@@ -359,10 +376,22 @@
       "split": "train"
     },
     {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-2f041bb6e529-2f041bb6e529.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-2f041bb6e529",
+      "split": "train"
+    },
+    {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-3c24c569151b-3c24c569151b.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-3c24c569151b",
       "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-496b62b52571-496b62b52571.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-496b62b52571",
+      "split": "train"
     },
     {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-4c07c64288a5-4c07c64288a5.json",
@@ -380,6 +409,24 @@
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-618657b820a0-618657b820a0.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-618657b820a0",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-6b83e5430862-6b83e5430862.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-6b83e5430862",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-6c4598337d03-6c4598337d03.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-6c4598337d03",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-6f7736f5c8ac-6f7736f5c8ac.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-6f7736f5c8ac",
       "split": "train"
     },
     {
@@ -405,6 +452,12 @@
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-94674843758d",
       "split": "test"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-9580e5323e2f-9580e5323e2f.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-9580e5323e2f",
+      "split": "train"
     },
     {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-9bb44f591ea1-9bb44f591ea1.json",
@@ -443,6 +496,12 @@
       "split": "train"
     },
     {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-af99f5475a14-af99f5475a14.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-af99f5475a14",
+      "split": "train"
+    },
+    {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-b343335ebbc2-b343335ebbc2.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-b343335ebbc2",
@@ -455,9 +514,27 @@
       "split": "train"
     },
     {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-b86032a6debe-b86032a6debe.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-b86032a6debe",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-c53fde8e4acd-c53fde8e4acd.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-c53fde8e4acd",
+      "split": "train"
+    },
+    {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-d8d2897e590b-d8d2897e590b.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-d8d2897e590b",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-db4e4cdfb56c-db4e4cdfb56c.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-db4e4cdfb56c",
       "split": "train"
     },
     {
@@ -467,9 +544,21 @@
       "split": "train"
     },
     {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-e3b907d6a8c2-e3b907d6a8c2.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-e3b907d6a8c2",
+      "split": "train"
+    },
+    {
       "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-ee088f71da6e-ee088f71da6e.json",
       "box_count": 1,
       "village_group": "focus-crop-giga-bomb-ee088f71da6e",
+      "split": "train"
+    },
+    {
+      "file": "training/dataset/detector/provenance/human-focus-crop-giga-bomb-fec00a7fdb11-fec00a7fdb11.json",
+      "box_count": 1,
+      "village_group": "focus-crop-giga-bomb-fec00a7fdb11",
       "split": "train"
     },
     {
@@ -1459,9 +1548,7 @@
       "guardian-shrine",
       "squad-barracks"
     ],
-    "very_weak": [
-      "giga-bomb"
-    ],
+    "very_weak": [],
     "no_eval_split": [
       "town-hall-guardian",
       "spiky-tower",

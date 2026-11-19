@@ -34,6 +34,11 @@ def main() -> None:
         type=Path,
         default=TRAINING / "reports" / "finetune-readiness.json",
     )
+    parser.add_argument(
+        "--jimmy-ok",
+        action="store_true",
+        help="Enregistre l'OK Jimmy explicite pour autoriser le fine-tune de ce run.",
+    )
     args = parser.parse_args()
 
     split_report = json.loads(
@@ -91,19 +96,34 @@ def main() -> None:
     mechanical_ready = not reasons
     useful_ready = mechanical_ready and not data_gaps
 
+    jimmy_ok = bool(args.jimmy_ok)
+    if useful_ready and jimmy_ok:
+        decision = "fine-tune autorisé — OK Jimmy + données prêtes"
+    elif useful_ready:
+        decision = "fine-tune données OK — attendre OK Jimmy"
+    else:
+        decision = "conserver V5 — données insuffisantes pour FT utile"
+
     payload = {
         "ready": useful_ready,
         "mechanical_ready": mechanical_ready,
-        "decision": (
-            "fine-tune données OK — attendre OK Jimmy"
-            if useful_ready
-            else "conserver V5 — données insuffisantes pour FT utile"
-        ),
+        "decision": decision,
         "jimmy_gate": {
-            "train_authorized": False,
+            "train_authorized": jimmy_ok and useful_ready,
             "reason": (
-                "OK Jimmy explicite toujours requis (préférence projet). "
-                "Ne pas lancer train_detector sans validation verbale."
+                "OK Jimmy reçu pour ce run (chat 2026-11-19)."
+                if jimmy_ok
+                else (
+                    "OK Jimmy explicite toujours requis (préférence projet). "
+                    "Ne pas lancer train_detector sans validation verbale."
+                )
+            ),
+            "authorized_at": (
+                __import__("datetime").datetime.now(
+                    __import__("datetime").timezone.utc
+                ).isoformat()
+                if jimmy_ok
+                else None
             ),
         },
         "reasons": reasons,
