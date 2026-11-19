@@ -1,0 +1,64 @@
+{
+  "updated": "2026-11-19",
+  "purpose": "Tuiles Mode photo mur-only exhaustives (domaine village, sans poison multi-classe)",
+  "device": "0",
+  "tile": 320,
+  "min_walls": 6,
+  "tiles": 9,
+  "rows": [
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-b1de520fb869.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-b1de520fb869.jpg",
+      "walls": 79,
+      "parent": "private-clashia-detectwall-v7-train_wall_0_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-53e4d375593e.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-53e4d375593e.jpg",
+      "walls": 180,
+      "parent": "private-clashia-detectwall-v7-train_wall_0_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-c01bbe0b0a8f.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-c01bbe0b0a8f.jpg",
+      "walls": 99,
+      "parent": "private-clashia-detectwall-v7-train_wall_0_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-49e68dd39b45.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-49e68dd39b45.jpg",
+      "walls": 140,
+      "parent": "private-clashia-detectwall-v7-train_wall_27_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-46b1a5f776dd.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-clashia-detectwall-v7-train_wall-46b1a5f776dd.jpg",
+      "walls": 78,
+      "parent": "private-clashia-detectwall-v7-train_wall_27_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train39-wall12-3-_-73bff8cefa1a.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train39-wall12-3-_-73bff8cefa1a.jpg",
+      "walls": 38,
+      "parent": "private-kiet-walls-v6-train39-wall12-3-_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train39-wall12-3-_-9a3dd9cb7103.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train39-wall12-3-_-9a3dd9cb7103.jpg",
+      "walls": 92,
+      "parent": "private-kiet-walls-v6-train39-wall12-3-_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train40-wall13-1-_-4f303aff2f82.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train40-wall13-1-_-4f303aff2f82.jpg",
+      "walls": 157,
+      "parent": "private-kiet-walls-v6-train40-wall13-1-_png"
+    },
+    {
+      "session": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train40-wall13-1-_-84790e10d1f7.session.json",
+      "image": "training/inbox/private/p0-wall-tiles/wall-tile-private-kiet-walls-v6-train40-wall13-1-_-84790e10d1f7.jpg",
+      "walls": 104,
+      "parent": "private-kiet-walls-v6-train40-wall13-1-_png"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "updated": "2026-11-19",
+  "purpose": "Hard-neg / FP pack hidden-tesla (pas d'import auto, pas de baisse conf)",
+  "device": "0",
+  "input_dir": "training/inbox/private/p0-mode-photo",
+  "output": "training/inbox/private/p0-tesla-hardneg",
+  "images_with_fp": 2,
+  "fp_total": 8,
+  "rows": [
+    {
+      "session": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_27_png_rf_15b1-ec2fa57a05.tesla-hardneg.session.json",
+      "overlay": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_27_png_rf_15b1-ec2fa57a05.tesla-hardneg.review.jpg",
+      "fp_count": 6,
+      "max_conf": 0.3275,
+      "village_group": "private-clashia-detectwall-v7-train_wall_27_png",
+      "focus": "wall"
+    },
+    {
+      "session": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.tesla-hardneg.session.json",
+      "overlay": "training/inbox/private/p0-tesla-hardneg/wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.tesla-hardneg.review.jpg",
+      "fp_count": 2,
+      "max_conf": 0.31,
+      "village_group": "private-clashia-detectwall-v7-train_wall_0_png",
+      "focus": "wall"
+    }
+  ],
+  "notes": [
+    "Les boîtes tesla sont rejected (documentation FP).",
+    "Pour entraîner un hard-neg utile: importer des villages exhaustifs SANS tesla,",
+    "ou annoter manuellement les confusions (pas baisser conf inférence)."
+  ]
+}

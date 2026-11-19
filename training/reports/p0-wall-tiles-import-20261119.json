@@ -1,0 +1,85 @@
+{
+  "imports": [
+    {
+      "split": "val",
+      "ok": true,
+      "walls": 79,
+      "parent": "private-clashia-detectwall-v7-train_wall_0_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/val/human-wall-tile-b1de520fb869-b1de520fb869.jpg",
+      "box_count": 79
+    },
+    {
+      "split": "test",
+      "ok": true,
+      "walls": 180,
+      "parent": "private-clashia-detectwall-v7-train_wall_0_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/test/human-wall-tile-53e4d375593e-53e4d375593e.jpg",
+      "box_count": 180
+    },
+    {
+      "split": "train",
+      "ok": true,
+      "walls": 99,
+      "parent": "private-clashia-detectwall-v7-train_wall_0_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/train/human-wall-tile-c01bbe0b0a8f-c01bbe0b0a8f.jpg",
+      "box_count": 99
+    },
+    {
+      "split": "val",
+      "ok": true,
+      "walls": 140,
+      "parent": "private-clashia-detectwall-v7-train_wall_27_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/val/human-wall-tile-49e68dd39b45-49e68dd39b45.jpg",
+      "box_count": 140
+    },
+    {
+      "split": "test",
+      "ok": true,
+      "walls": 78,
+      "parent": "private-clashia-detectwall-v7-train_wall_27_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/test/human-wall-tile-46b1a5f776dd-46b1a5f776dd.jpg",
+      "box_count": 78
+    },
+    {
+      "split": "train",
+      "ok": true,
+      "walls": 38,
+      "parent": "private-kiet-walls-v6-train39-wall12-3-_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/train/human-wall-tile-73bff8cefa1a-73bff8cefa1a.jpg",
+      "box_count": 38
+    },
+    {
+      "split": "val",
+      "ok": true,
+      "walls": 92,
+      "parent": "private-kiet-walls-v6-train39-wall12-3-_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/val/human-wall-tile-9a3dd9cb7103-9a3dd9cb7103.jpg",
+      "box_count": 92
+    },
+    {
+      "split": "test",
+      "ok": true,
+      "walls": 157,
+      "parent": "private-kiet-walls-v6-train40-wall13-1-_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/test/human-wall-tile-4f303aff2f82-4f303aff2f82.jpg",
+      "box_count": 157
+    },
+    {
+      "split": "train",
+      "ok": true,
+      "walls": 104,
+      "parent": "private-kiet-walls-v6-train40-wall13-1-_png",
+      "errors": null,
+      "target": "training/dataset/detector/images/train/human-wall-tile-84790e10d1f7-84790e10d1f7.jpg",
+      "box_count": 104
+    }
+  ]
+}
