@@ -98,9 +98,10 @@ def load_shortlist(path: Path, foci: tuple[str, ...], per_class: int) -> list[di
             session = json.loads(session_path.read_text(encoding="utf-8"))
             meta = session.get("metadata") or {}
             vg = str(meta.get("village_group") or session_path.stem)
-            # dédupliquer path exact + village_group
-            key = f"{focus}:{vg}"
-            if key in seen_groups:
+            image_name = str((session.get("image") or {}).get("name") or session_path.stem)
+            # dédupliquer path exact + village_group + image (évite doublons rf)
+            key = f"{focus}:{vg}:{image_name}"
+            if key in seen_groups or resolved in seen_paths:
                 continue
             seen_groups.add(key)
             seen_paths.add(resolved)
@@ -145,15 +146,32 @@ def assist_one(
     dest_img = out_dir / f"{stem}{image_path.suffix.lower()}"
     dest_session = out_dir / f"{stem}.session.json"
     dest_overlay = out_dir / f"{stem}.review.jpg"
+    if dest_session.exists():
+        return {
+            "ok": True,
+            "skipped_existing": True,
+            "focus": focus,
+            "village_group": item["village_group"],
+            "source": item["source"],
+            "session": str(dest_session.relative_to(ROOT)).replace("\\", "/"),
+        }
     if not dest_img.exists() or dest_img.stat().st_size != image_path.stat().st_size:
         shutil.copy2(image_path, dest_img)
 
     kept_boxes: list[dict] = []
     for box in session.get("boxes") or []:
-        if box.get("status") != "accepted":
-            continue
         name = box.get("class_name")
         if name in TH19:
+            continue
+        status = box.get("status")
+        origin = str(box.get("origin") or "")
+        # Garder accepted + labels import privés du focus (pending YOLO source)
+        keep = status == "accepted" or (
+            status == "pending"
+            and name == focus
+            and "import-yolo" in origin
+        )
+        if not keep:
             continue
         xyxy = box_xyxy(box)
         if xyxy[2] - xyxy[0] < 2 or xyxy[3] - xyxy[1] < 2:
@@ -167,8 +185,13 @@ def assist_one(
                 "x2": xyxy[2],
                 "y2": xyxy[3],
                 "status": "accepted",
-                "origin": "human-focus",
-                "review_note": box.get("review_note") or "focus accepté (source inbox)",
+                "origin": "human-focus" if status == "accepted" else "import-focus",
+                "review_note": box.get("review_note")
+                or (
+                    "focus accepté (source inbox)"
+                    if status == "accepted"
+                    else "label import privé promu pour assist (revue annotator requise)"
+                ),
             }
         )
 
@@ -214,9 +237,9 @@ def assist_one(
                 continue
             status = "accepted" if conf_v >= auto_accept_conf else "pending"
             note = (
-                f"V5 assist conf={conf_v:.3f} auto-accept>={auto_accept_conf}"
+                f"ACTIVE assist conf={conf_v:.3f} auto-accept>={auto_accept_conf}"
                 if status == "accepted"
-                else f"V5 assist conf={conf_v:.3f} pending revue"
+                else f"ACTIVE assist conf={conf_v:.3f} pending revue"
             )
             kept_boxes.append(
                 {
@@ -364,17 +387,28 @@ def main() -> None:
             )
         )
 
+    model_resolved = args.model.expanduser().resolve()
+    try:
+        model_rel = str(model_resolved.relative_to(ROOT)).replace("\\", "/")
+    except ValueError:
+        model_rel = str(args.model).replace("\\", "/")
+    out_resolved = args.output.expanduser().resolve()
+    try:
+        out_rel = str(out_resolved.relative_to(ROOT)).replace("\\", "/")
+    except ValueError:
+        out_rel = str(args.output).replace("\\", "/")
     report = {
         "updated": date.today().isoformat(),
-        "purpose": "P0 assist V5 Mode photo — exhaustive=false jusqu'à revue",
+        "purpose": "P0 assist ACTIVE Mode photo — exhaustive=false jusqu'à revue",
         "device": device,
-        "model": str(args.model.relative_to(ROOT)).replace("\\", "/"),
+        "model": model_rel,
         "conf": args.conf,
         "auto_accept_conf": args.auto_accept_conf,
         "imgsz": args.imgsz,
-        "output": str(args.output.relative_to(ROOT)).replace("\\", "/"),
+        "output": out_rel,
         "selected": len(selected),
         "ok": sum(1 for r in rows if r.get("ok")),
+        "skipped_existing": sum(1 for r in rows if r.get("skipped_existing")),
         "rows": rows,
     }
     report_path = (

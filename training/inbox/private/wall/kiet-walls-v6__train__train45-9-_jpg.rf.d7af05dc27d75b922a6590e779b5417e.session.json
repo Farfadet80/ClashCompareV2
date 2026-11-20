@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "image": {
+    "name": "kiet-walls-v6__train__train45-9-_jpg.rf.d7af05dc27d75b922a6590e779b5417e.jpg",
+    "width": 704,
+    "height": 704
+  },
+  "metadata": {
+    "village_group": "private-kiet-walls-v6-train45-9-_jpg",
+    "source": "kiet-walls-v6",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 463.0,
+      "y1": 651.0,
+      "x2": 497.0,
+      "y2": 669.0,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 448.0,
+      "y1": 638.5,
+      "x2": 485.0,
+      "y2": 656.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 433.5,
+      "y1": 627.0,
+      "x2": 470.5,
+      "y2": 644.0,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 409.0,
+      "y1": 611.5,
+      "x2": 447.0,
+      "y2": 630.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 436.5,
+      "y1": 554.5,
+      "x2": 467.5,
+      "y2": 568.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 351.0,
+      "y1": 567.5,
+      "x2": 381.0,
+      "y2": 581.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 366.5,
+      "y1": 578.5,
+      "x2": 398.5,
+      "y2": 592.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 446.0,
+      "y1": 567.5,
+      "x2": 484.0,
+      "y2": 579.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    }
+  ]
+}

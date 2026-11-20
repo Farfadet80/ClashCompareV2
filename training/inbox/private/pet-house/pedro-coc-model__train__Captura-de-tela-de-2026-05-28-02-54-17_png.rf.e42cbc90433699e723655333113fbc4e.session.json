@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "image": {
+    "name": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-54-17_png.rf.e42cbc90433699e723655333113fbc4e.jpg",
+    "width": 1980,
+    "height": 1024
+  },
+  "metadata": {
+    "village_group": "private-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-54-17_png",
+    "source": "pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 752.5,
+      "y1": 223.5,
+      "x2": 817.5,
+      "y2": 286.5,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    },
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 673.5,
+      "y1": 279.0,
+      "x2": 764.5,
+      "y2": 357.0,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

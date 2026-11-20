@@ -1,0 +1,17 @@
+{
+  "village_group": "private-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-54-17_png",
+  "class_focus": "pet-house",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/pedros-workspace-7azcy/coc_model/dataset/2",
+  "source_key": "pedro-coc-model",
+  "source_split": "train",
+  "sha256": "bd95d3a2ee24c047f8202c2cc408413473e42f9742393ebd6a82b5850a9eb5d5",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

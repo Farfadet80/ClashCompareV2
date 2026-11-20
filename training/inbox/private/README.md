@@ -57,15 +57,30 @@ Depuis une capture déposée dans `drop/` :
 
 ```powershell
 .\.venv\Scripts\python.exe training\scripts\stage_private_visual_candidates.py `
-  --from-wall-imports --max-per-source 60
+  --from-wall-imports --max-per-source 120
 ```
 
 Élargir P1/P2 TH10–18 (tornado / giga / workshop / pet-house / …) :
 
 ```powershell
 .\.venv\Scripts\python.exe training\scripts\stage_private_visual_candidates.py `
-  --from-priority-imports --max-per-class 40
+  --from-priority-imports --max-per-class 80
 ```
+
+Shortlist Mode photo (pénalise sprites mur) + assist ACTIVE (`exhaustive=false`) :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\shortlist_pretrain_annotation.py `
+  --prefer-mode-photo --per-class 8
+.\.venv\Scripts\python.exe training\scripts\assist_fill_village_sessions.py `
+  --shortlist training\reports\pretrain-annotation-shortlist-YYYYMMDD.json `
+  --per-class 6 --foci wall,tornado-trap,giga-bomb,crafted-defense
+.\.venv\Scripts\python.exe training\scripts\mine_tesla_hard_negatives.py
+.\.venv\Scripts\python.exe training\scripts\inventory_private_collection.py
+```
+
+**Ne pas** importer wall-only / tiles poison dans `dataset/detector` sans revue.
+Le staging skip déjà les SHA déjà présents dans les provenance privées.
 
 Référence visuelle TH19 (hors train, fin de roadmap) :
 

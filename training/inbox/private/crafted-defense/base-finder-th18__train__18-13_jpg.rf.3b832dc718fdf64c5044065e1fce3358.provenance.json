@@ -1,0 +1,17 @@
+{
+  "village_group": "private-base-finder-th18-18-13_jpg",
+  "class_focus": "crafted-defense",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/base-finder/my-first-project-w53ao/dataset/4",
+  "source_key": "base-finder-th18",
+  "source_split": "train",
+  "sha256": "efc37682c8608d4f43293b748c646c4f0bac145ca742ea3d11bc24ccc99d878b",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

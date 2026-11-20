@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "image": {
+    "name": "kiet-walls-v6-curated__val__train47-29-_png.rf.078e4b0a10225cd4bafb0cffe6f760f0.jpg",
+    "width": 704,
+    "height": 704
+  },
+  "metadata": {
+    "village_group": "private-kiet-walls-v6-curated-train47-29-_png",
+    "source": "kiet-walls-v6-curated",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 457.25,
+      "y1": 284.25,
+      "x2": 471.75,
+      "y2": 322.75,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 599.0,
+      "y1": 435.5,
+      "x2": 615.0,
+      "y2": 473.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 244.5,
+      "y1": 113.0,
+      "x2": 257.5,
+      "y2": 152.0,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 428.75,
+      "y1": 660.5,
+      "x2": 445.25,
+      "y2": 700.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 200.25,
+      "y1": 282.25,
+      "x2": 214.75,
+      "y2": 319.75,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 173.75,
+      "y1": 244.25,
+      "x2": 187.25,
+      "y2": 281.75,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 255.25,
+      "y1": 207.5,
+      "x2": 268.75,
+      "y2": 243.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 340.5,
+      "y1": 281.5,
+      "x2": 356.5,
+      "y2": 321.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 585.75,
+      "y1": 453.75,
+      "x2": 600.25,
+      "y2": 493.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 542.5,
+      "y1": 510.75,
+      "x2": 558.5,
+      "y2": 550.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 229.75,
+      "y1": 170.75,
+      "x2": 243.25,
+      "y2": 209.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 159.75,
+      "y1": 263.75,
+      "x2": 174.25,
+      "y2": 298.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 571.25,
+      "y1": 472.5,
+      "x2": 586.75,
+      "y2": 512.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 369.25,
+      "y1": 206.75,
+      "x2": 385.75,
+      "y2": 245.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 369.5,
+      "y1": 320.0,
+      "x2": 385.5,
+      "y2": 360.0,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 171.0,
+      "y1": 397.75,
+      "x2": 188.0,
+      "y2": 434.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 485.75,
+      "y1": 585.75,
+      "x2": 501.25,
+      "y2": 625.25,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 258.5,
+      "y1": 434.25,
+      "x2": 273.5,
+      "y2": 472.75,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 227.0,
+      "y1": 434.25,
+      "x2": 243.0,
+      "y2": 473.75,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    },
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 642.25,
+      "y1": 378.0,
+      "x2": 657.75,
+      "y2": 417.0,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    }
+  ]
+}

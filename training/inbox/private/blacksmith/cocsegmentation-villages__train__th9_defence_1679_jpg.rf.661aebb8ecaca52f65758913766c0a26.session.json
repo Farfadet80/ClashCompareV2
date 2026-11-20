@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th9_defence_1679_jpg.rf.661aebb8ecaca52f65758913766c0a26.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-th9_defence_1679_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "blacksmith",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 338.5,
+      "y1": 79.0,
+      "x2": 997.5,
+      "y2": 223.0,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

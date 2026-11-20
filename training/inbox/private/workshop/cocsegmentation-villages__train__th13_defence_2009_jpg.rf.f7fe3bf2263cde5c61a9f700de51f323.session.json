@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th13_defence_2009_jpg.rf.f7fe3bf2263cde5c61a9f700de51f323.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-th13_defence_2009_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 289.16,
+      "y1": 0.0,
+      "x2": 857.78,
+      "y2": 1.82,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 111.42,
+      "y1": 76.64,
+      "x2": 323.74,
+      "y2": 232.34,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

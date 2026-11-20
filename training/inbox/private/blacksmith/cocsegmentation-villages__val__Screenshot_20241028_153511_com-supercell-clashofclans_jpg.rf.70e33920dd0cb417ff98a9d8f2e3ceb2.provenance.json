@@ -1,0 +1,17 @@
+{
+  "village_group": "private-cocsegmentation-villages-Screenshot_20241028_153511_com-supercell-clashofclans_jpg",
+  "class_focus": "blacksmith",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/cocsegmentation/clash-of-clans-villages",
+  "source_key": "cocsegmentation-villages",
+  "source_split": "val",
+  "sha256": "a5959c0be3b32ad8524bc29217db470c6eeedc789fe0c8197b19dc3748e79c07",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "image": {
+    "name": "crop-ft__giga__c128__glenn-th18-gigabomb-test-IMG-0134-jp__0.jpg",
+    "width": 128,
+    "height": 128
+  },
+  "metadata": {
+    "village_group": "focus-crop-giga-bomb-887fe8061fc9",
+    "source": "focus-crop:glenn-th18-gigabomb",
+    "license": "CC BY 4.0",
+    "exhaustive": true,
+    "draft": false,
+    "class_focus": "giga-bomb",
+    "private": true,
+    "crop_promoted": true,
+    "ft_giga_boost": true,
+    "min_crop": 128
+  },
+  "expected_counts": {
+    "giga-bomb": 1
+  },
+  "boxes": [
+    {
+      "class_id": 49,
+      "class_name": "giga-bomb",
+      "x1": 56.75,
+      "y1": 52.0,
+      "x2": 72.25,
+      "y2": 76.0,
+      "status": "accepted",
+      "origin": "focus-crop-ft-boost"
+    }
+  ]
+}

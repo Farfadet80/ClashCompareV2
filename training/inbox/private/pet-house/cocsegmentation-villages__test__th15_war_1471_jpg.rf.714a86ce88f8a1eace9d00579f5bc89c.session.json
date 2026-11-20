@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__test__th15_war_1471_jpg.rf.714a86ce88f8a1eace9d00579f5bc89c.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-th15_war_1471_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "pet-house",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 33,
+      "class_name": "pet-house",
+      "x1": 371.06,
+      "y1": 127.6,
+      "x2": 1024,
+      "y2": 366.61,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

@@ -144,6 +144,22 @@ def class_ids() -> dict[str, int]:
     return {row["id"]: index for index, row in enumerate(rows)}
 
 
+def existing_private_digests() -> set[str]:
+    """SHA déjà présents dans les provenance privées (évite de re-stager)."""
+    seen: set[str] = set()
+    if not PRIVATE.exists():
+        return seen
+    for path in PRIVATE.rglob("*.provenance.json"):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        digest = payload.get("sha256")
+        if isinstance(digest, str) and len(digest) >= 16:
+            seen.add(digest)
+    return seen
+
+
 def write_pair(
     dest_dir: Path,
     image_path: Path,
@@ -192,7 +208,8 @@ def map_wall_name(raw: str, cfg: dict) -> str | None:
 def stage_wall_imports(max_per_source: int) -> dict:
     ids = class_ids()
     staged: dict[str, list[str]] = defaultdict(list)
-    hash_seen: set[str] = set()
+    hash_seen: set[str] = existing_private_digests()
+    skipped_existing = 0
     for source_key, cfg in WALL_IMPORTS.items():
         source_root = TRAINING / "imports" / source_key
         if not source_root.exists():
@@ -224,6 +241,12 @@ def stage_wall_imports(max_per_source: int) -> dict:
                     continue
                 digest = sha256(image_path)
                 if digest in hash_seen:
+                    skipped_existing += 1
+                    continue
+                dest_name = f"{source_key}__{split}__{image_path.name}"
+                if (PRIVATE / "wall" / dest_name).exists():
+                    hash_seen.add(digest)
+                    skipped_existing += 1
                     continue
                 with Image.open(image_path) as image:
                     width, height = image.size
@@ -255,7 +278,6 @@ def stage_wall_imports(max_per_source: int) -> dict:
                     )
                 if not boxes:
                     continue
-                dest_name = f"{source_key}__{split}__{image_path.name}"
                 provenance = {
                     "village_group": f"private-{source_key}-{family_key(image_path.stem)}",
                     "class_focus": "wall",
@@ -292,6 +314,7 @@ def stage_wall_imports(max_per_source: int) -> dict:
                 hash_seen.add(digest)
                 staged["wall"].append(dest.relative_to(ROOT).as_posix())
                 count += 1
+    staged["meta_skipped_existing"] = skipped_existing  # type: ignore[assignment]
     return staged
 
 
@@ -341,8 +364,9 @@ def stage_priority_imports(max_per_class: int) -> dict[str, list[str]]:
     ids = class_ids()
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
     staged: dict[str, list[str]] = defaultdict(list)
-    hash_seen: set[str] = set()
+    hash_seen: set[str] = existing_private_digests()
     family_seen: dict[str, set[str]] = defaultdict(set)
+    skipped_existing = 0
 
     for source_key in PRIORITY_SOURCE_KEYS:
         source_root = TRAINING / "imports" / source_key
@@ -388,6 +412,7 @@ def stage_priority_imports(max_per_class: int) -> dict[str, list[str]]:
                     continue
                 digest = sha256(image_path)
                 if digest in hash_seen:
+                    skipped_existing += 1
                     continue
                 with Image.open(image_path) as image:
                     width, height = image.size
@@ -435,6 +460,10 @@ def stage_priority_imports(max_per_class: int) -> dict[str, list[str]]:
                 if family in family_seen[primary]:
                     continue
                 dest_name = f"{source_key}__{split}__{image_path.name}"
+                if (PRIVATE / primary / dest_name).exists():
+                    hash_seen.add(digest)
+                    skipped_existing += 1
+                    continue
                 provenance = {
                     "village_group": f"private-{source_key}-{family}",
                     "class_focus": primary,
@@ -473,6 +502,7 @@ def stage_priority_imports(max_per_class: int) -> dict[str, list[str]]:
                 hash_seen.add(digest)
                 family_seen[primary].add(family)
                 staged[primary].append(dest.relative_to(ROOT).as_posix())
+    staged["meta_skipped_existing"] = skipped_existing  # type: ignore[assignment]
     return staged
 
 
@@ -548,9 +578,15 @@ def main() -> None:
     }
 
     if args.from_wall_imports:
-        summary["staged"]["wall_imports"] = stage_wall_imports(args.max_per_source)
+        wall_staged = stage_wall_imports(args.max_per_source)
+        summary["wall_skipped_existing"] = wall_staged.pop("meta_skipped_existing", 0)
+        summary["staged"]["wall_imports"] = wall_staged
     if args.from_priority_imports:
-        summary["staged"]["priority_imports"] = stage_priority_imports(args.max_per_class)
+        priority_staged = stage_priority_imports(args.max_per_class)
+        summary["priority_skipped_existing"] = priority_staged.pop(
+            "meta_skipped_existing", 0
+        )
+        summary["staged"]["priority_imports"] = priority_staged
     if args.from_drop:
         summary["staged"]["drop"] = stage_drop(args.class_focus)
     if args.fetch_th19_reference:
