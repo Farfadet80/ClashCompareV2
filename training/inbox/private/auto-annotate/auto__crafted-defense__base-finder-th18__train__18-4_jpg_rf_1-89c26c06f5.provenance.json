@@ -1,0 +1,15 @@
+{
+  "sha256": "6c26820a1da3946fcd2dbc6b888154999ea59b32f7595d24caafa7044728e962",
+  "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\p0-mode-photo\\crafted-defense__base-finder-th18__train__18-4_jpg_rf_16cee22-c513921049.jpg",
+  "publish": false,
+  "usage": "private_auto_annotate_queue",
+  "model": "building-detector-v5-th1018-ft1-infer800",
+  "imgsz": 800,
+  "tta": true,
+  "conf": 0.2,
+  "auto_accept_conf": 0.5,
+  "village_confidence": 0.7573,
+  "quality_flags": [
+    "walls_missing_suspect"
+  ]
+}

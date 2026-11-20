@@ -121,6 +121,19 @@ restaurer les anciens tests qui avaient été fusionnés dans `val` :
 Ce lot de 60 images et 3 630 boîtes est réservé aux comparaisons V4+. Il ne constitue pas
 une mesure indépendante de la V3, car celle-ci l'avait déjà vu pendant sa validation.
 
+## Auto-annotator Mode photo (sans train)
+
+Pré-labels ACTIVE (`exhaustive=false`, murs toujours pending) :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\auto_annotate_villages.py `
+  --input training\inbox\private\drop `
+  --output training\inbox\private\auto-annotate
+```
+
+Sortie : `*.session.json` + overlays dans `inbox/private/auto-annotate/` (images hors git).
+Ne remplace pas une revue mur : le détecteur reste faible sur les murs.
+
 ## Validation humaine locale
 
 Démarrer le serveur puis ouvrir
@@ -130,10 +143,10 @@ Démarrer le serveur puis ouvrir
 .\.venv\Scripts\python.exe training\scripts\serve_compare.py
 ```
 
-Charger dans l'ordre la capture, la session `.annotation-session.json` et,
-si disponible, la vérité terrain export. Les suggestions orange restent en
-attente ; elles doivent être acceptées, corrigées ou supprimées une par une.
-L'export YOLO est bloqué tant que la session n'est pas exhaustive.
+Charger la capture puis **Pré-labels auto / session JSON**
+(`auto-annotate/*.session.json` ou session existante). Les suggestions orange
+restent en attente ; elles doivent être acceptées, corrigées ou supprimées une
+par une. L'export YOLO est bloqué tant que la session n'est pas exhaustive.
 
 Importer une session finalisée uniquement dans `train` :
 
