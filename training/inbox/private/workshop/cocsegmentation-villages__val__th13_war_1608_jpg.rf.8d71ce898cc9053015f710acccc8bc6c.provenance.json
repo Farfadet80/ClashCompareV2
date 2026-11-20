@@ -1,0 +1,17 @@
+{
+  "village_group": "private-cocsegmentation-villages-th13_war_1608_jpg",
+  "class_focus": "workshop",
+  "license": "CC BY 4.0",
+  "source_url": "https://universe.roboflow.com/cocsegmentation/clash-of-clans-villages",
+  "source_key": "cocsegmentation-villages",
+  "source_split": "val",
+  "sha256": "10560857b6ab26a76d45d428e66f4aafd6cd714e180c523417199f0809e3b654",
+  "usage": "private_local_annotation_queue",
+  "publish": false,
+  "scope": "TH10-18",
+  "notes": [
+    "Copie locale privée TH10–18 (CC BY) — ne pas republier l'image.",
+    "Classes YOLO 50–53 / TH19 ignorées volontairement.",
+    "Annotation exhaustive requise avant import detector."
+  ]
+}

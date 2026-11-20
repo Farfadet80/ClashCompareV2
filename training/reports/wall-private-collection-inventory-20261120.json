@@ -1,0 +1,523 @@
+{
+  "updated": "2026-11-20",
+  "publish_images": false,
+  "train_now": false,
+  "private_root": "training/inbox/private",
+  "folders": {
+    "blacksmith": {
+      "sessions": 105,
+      "images": 105
+    },
+    "crafted-defense": {
+      "sessions": 84,
+      "images": 84
+    },
+    "drop": {
+      "sessions": 0,
+      "images": 0
+    },
+    "exports-json": {
+      "sessions": 0,
+      "images": 0
+    },
+    "focus-crops": {
+      "sessions": 200,
+      "images": 200
+    },
+    "giga-bomb": {
+      "sessions": 27,
+      "images": 27
+    },
+    "hero-hall": {
+      "sessions": 26,
+      "images": 26
+    },
+    "p0-mode-photo": {
+      "sessions": 21,
+      "images": 21
+    },
+    "p0-tesla-hardneg": {
+      "sessions": 3,
+      "images": 3
+    },
+    "p0-wall-tiles": {
+      "sessions": 9,
+      "images": 9
+    },
+    "p0-wall-tiles-strict": {
+      "sessions": 9,
+      "images": 9
+    },
+    "pet-house": {
+      "sessions": 43,
+      "images": 43
+    },
+    "reference-only": {
+      "sessions": 0,
+      "images": 1
+    },
+    "tornado-trap": {
+      "sessions": 41,
+      "images": 41
+    },
+    "wall": {
+      "sessions": 458,
+      "images": 458
+    },
+    "workshop": {
+      "sessions": 67,
+      "images": 67
+    }
+  },
+  "totals": {
+    "sessions": 1093,
+    "images": 1094
+  },
+  "sessions_by_class_focus": {
+    "blacksmith": 136,
+    "crafted-defense": 109,
+    "giga-bomb": 82,
+    "hero-hall": 33,
+    "pet-house": 64,
+    "tornado-trap": 63,
+    "wall": 519,
+    "workshop": 87
+  },
+  "exhaustive_flags": {
+    "False": 840,
+    "True": 253
+  },
+  "top_sources": [
+    [
+      "kiet-walls-v6",
+      185
+    ],
+    [
+      "kiet-walls-v6-curated",
+      180
+    ],
+    [
+      "cocsegmentation-villages",
+      155
+    ],
+    [
+      "coc-all-traps",
+      94
+    ],
+    [
+      "base-finder-th18",
+      92
+    ],
+    [
+      "focus-crop:coc-all-traps",
+      68
+    ],
+    [
+      "focus-crop:glenn-th18-gigabomb",
+      53
+    ],
+    [
+      "clashia-detectwall-v7",
+      40
+    ],
+    [
+      "clashia-detectwall-v7-curated",
+      38
+    ],
+    [
+      "glenn-th18-gigabomb",
+      31
+    ],
+    [
+      "nothing-clash-of-clans",
+      24
+    ],
+    [
+      "peters-walls-16-17-v2",
+      23
+    ],
+    [
+      "focus-crop:cocsegmentation-villages",
+      19
+    ],
+    [
+      "focus-crop:base-finder-th18",
+      17
+    ],
+    [
+      "focus-crop:clashia-detectwall-v7",
+      17
+    ],
+    [
+      "pedro-coc-model",
+      12
+    ],
+    [
+      "wall-tile:kiet-walls-v6",
+      11
+    ],
+    [
+      "focus-crop:evans-home-village-building-detector",
+      10
+    ],
+    [
+      "focus-crop:clashia-detectwall-v7-curated",
+      7
+    ],
+    [
+      "wall-tile:clashia-detectwall-v7",
+      7
+    ]
+  ],
+  "p0_mode_photo": {
+    "count": 21,
+    "rows": [
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__18-10_jpg_rf_9ba015-de2f99d65f.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 44,
+        "accepted": 29,
+        "pending": 15,
+        "n_classes": 15,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__18-13_jpg_rf_14bf91-37bb6efa7f.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 42,
+        "accepted": 35,
+        "pending": 7,
+        "n_classes": 17,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__18-2_jpg_rf_83447b3-5c326e23de.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 37,
+        "accepted": 34,
+        "pending": 3,
+        "n_classes": 17,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__18-3_jpg_rf_82bcafd-bd698a9ddf.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 45,
+        "accepted": 40,
+        "pending": 5,
+        "n_classes": 18,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__18-4_jpg_rf_16cee22-c513921049.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 48,
+        "accepted": 42,
+        "pending": 6,
+        "n_classes": 17,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__18-5_jpg_rf_73ef9a0-00f5f673fd.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 47,
+        "accepted": 37,
+        "pending": 10,
+        "n_classes": 17,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__Screenshot_2025-12--44405cffa4.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 39,
+        "accepted": 35,
+        "pending": 0,
+        "n_classes": 17,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/crafted-defense__base-finder-th18__train__th18_war_26_jpg_rf_-512ceb6ec7.session.json",
+        "focus": "crafted-defense",
+        "source": "base-finder-th18",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 38,
+        "accepted": 26,
+        "pending": 1,
+        "n_classes": 15,
+        "wh": [
+          512,
+          512
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/giga-bomb__glenn-th18-gigabomb__test__IMG_0134_jpg_rf_65b6b34-22cb2b0e4e.session.json",
+        "focus": "giga-bomb",
+        "source": "glenn-th18-gigabomb",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 50,
+        "accepted": 45,
+        "pending": 0,
+        "n_classes": 21,
+        "wh": [
+          640,
+          640
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/giga-bomb__glenn-th18-gigabomb__train__IMG_0126_jpg_rf_0f4fdf-b04263cdd8.session.json",
+        "focus": "giga-bomb",
+        "source": "glenn-th18-gigabomb",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 53,
+        "accepted": 49,
+        "pending": 0,
+        "n_classes": 22,
+        "wh": [
+          640,
+          640
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/giga-bomb__glenn-th18-gigabomb__train__IMG_0129_jpg_rf_b5a479-a9c4005a95.session.json",
+        "focus": "giga-bomb",
+        "source": "glenn-th18-gigabomb",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 50,
+        "accepted": 43,
+        "pending": 0,
+        "n_classes": 22,
+        "wh": [
+          640,
+          640
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/tornado-trap__coc-all-traps__train__th11_war_1963_jpg_rf_69ff-b7caa1cebb.session.json",
+        "focus": "tornado-trap",
+        "source": "coc-all-traps",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 121,
+        "accepted": 106,
+        "pending": 1,
+        "n_classes": 32,
+        "wh": [
+          2532,
+          1170
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/tornado-trap__coc-all-traps__train__th14_defence_1543_jpg_rf_-80642d0cf9.session.json",
+        "focus": "tornado-trap",
+        "source": "coc-all-traps",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 142,
+        "accepted": 114,
+        "pending": 28,
+        "n_classes": 34,
+        "wh": [
+          2532,
+          1170
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/tornado-trap__coc-all-traps__train__th15_farm_1477_jpg_rf_be8-ba32d1b5d5.session.json",
+        "focus": "tornado-trap",
+        "source": "coc-all-traps",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 145,
+        "accepted": 99,
+        "pending": 1,
+        "n_classes": 35,
+        "wh": [
+          2532,
+          1170
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/tornado-trap__coc-all-traps__train__th15_war_1474_jpg_rf_a995-9af81c8cdd.session.json",
+        "focus": "tornado-trap",
+        "source": "coc-all-traps",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 172,
+        "accepted": 120,
+        "pending": 52,
+        "n_classes": 37,
+        "wh": [
+          2532,
+          1170
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.session.json",
+        "focus": "wall",
+        "source": "clashia-detectwall-v7",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 346,
+        "accepted": 333,
+        "pending": 0,
+        "n_classes": 10,
+        "wh": [
+          640,
+          640
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/wall__clashia-detectwall-v7__train__train_wall_27_png_rf_15b1-ec2fa57a05.session.json",
+        "focus": "wall",
+        "source": "clashia-detectwall-v7",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 344,
+        "accepted": 329,
+        "pending": 0,
+        "n_classes": 12,
+        "wh": [
+          640,
+          640
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/wall__kiet-walls-v6__train__train39-wall12-3-_png_rf_cfa2382b-cabd4d569a.session.json",
+        "focus": "wall",
+        "source": "kiet-walls-v6",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 312,
+        "accepted": 303,
+        "pending": 0,
+        "n_classes": 8,
+        "wh": [
+          704,
+          704
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/wall__kiet-walls-v6__train__train40-wall13-1-_png_rf_53cb8a1d-03a16e4db0.session.json",
+        "focus": "wall",
+        "source": "kiet-walls-v6",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 315,
+        "accepted": 307,
+        "pending": 0,
+        "n_classes": 8,
+        "wh": [
+          704,
+          704
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/wall__kiet-walls-v6__train__train42-wall15-2-_png_rf_0ebfb1b1-ef63e0dbc9.session.json",
+        "focus": "wall",
+        "source": "kiet-walls-v6",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 369,
+        "accepted": 332,
+        "pending": 37,
+        "n_classes": 14,
+        "wh": [
+          704,
+          704
+        ]
+      },
+      {
+        "folder": "p0-mode-photo",
+        "session": "training/inbox/private/p0-mode-photo/wall__kiet-walls-v6__train__train44-wall17-1-_png_rf_8c73439a-2251a6fa22.session.json",
+        "focus": "wall",
+        "source": "kiet-walls-v6",
+        "exhaustive": false,
+        "draft": true,
+        "boxes": 328,
+        "accepted": 324,
+        "pending": 4,
+        "n_classes": 4,
+        "wh": [
+          704,
+          704
+        ]
+      }
+    ]
+  },
+  "poison_risk_wall_only_or_sprite": {
+    "count": 0,
+    "note": "Ne pas importer dans detector sans revue exhaustive multi-classe",
+    "rows": []
+  },
+  "blocked_without_annotator": [
+    "exhaustive=true sur villages Mode photo complets",
+    "import_annotation_session village multi-classe honnête",
+    "murs correctement labellés sur villages (pas seulement crops)"
+  ]
+}

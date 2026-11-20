@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "image": {
+    "name": "pedro-coc-model__train__Captura-de-tela-de-2026-05-28-02-50-52_png.rf.b4919dbc97ddfe075ab34eac52627fb0.jpg",
+    "width": 1980,
+    "height": 1024
+  },
+  "metadata": {
+    "village_group": "private-pedro-coc-model-Captura-de-tela-de-2026-05-28-02-50-52_png",
+    "source": "pedro-coc-model",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "blacksmith",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 562.5,
+      "y1": 390.0,
+      "x2": 665.5,
+      "y2": 484.0,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    },
+    {
+      "class_id": 35,
+      "class_name": "hero-hall",
+      "x1": 652.5,
+      "y1": 304.0,
+      "x2": 781.5,
+      "y2": 424.0,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "updated": "2026-11-20",
+  "purpose": "P0 assist ACTIVE Mode photo — exhaustive=false jusqu'à revue",
+  "model": "models/building-detector.pt",
+  "active_release": "building-detector-v5-th1018-ft1-infer800",
+  "conf": 0.2,
+  "auto_accept_conf": 0.5,
+  "imgsz": 800,
+  "foci": ["wall", "tornado-trap", "giga-bomb", "crafted-defense"],
+  "per_class": 6,
+  "shortlist": "training/reports/pretrain-annotation-shortlist-modephoto-20261120.json",
+  "output": "training/inbox/private/p0-mode-photo",
+  "p0_mode_photo_sessions_after": 21,
+  "note": "Run terminé côté assist; rapport script a planté sur relative_to C:/ vs D:/ (corrigé ensuite). Sessions écrites OK."
+}

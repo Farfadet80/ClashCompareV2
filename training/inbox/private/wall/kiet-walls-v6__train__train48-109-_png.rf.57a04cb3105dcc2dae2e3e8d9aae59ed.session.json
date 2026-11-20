@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "image": {
+    "name": "kiet-walls-v6__train__train48-109-_png.rf.57a04cb3105dcc2dae2e3e8d9aae59ed.jpg",
+    "width": 704,
+    "height": 704
+  },
+  "metadata": {
+    "village_group": "private-kiet-walls-v6-train48-109-_png",
+    "source": "kiet-walls-v6",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "wall",
+    "private": true
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 19,
+      "class_name": "wall",
+      "x1": 690.75,
+      "y1": 518.5,
+      "x2": 700.25,
+      "y2": 544.5,
+      "status": "pending",
+      "origin": "private-wall-import-yolo"
+    }
+  ]
+}

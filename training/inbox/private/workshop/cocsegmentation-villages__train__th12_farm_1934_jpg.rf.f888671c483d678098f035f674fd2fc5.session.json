@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "image": {
+    "name": "cocsegmentation-villages__train__th12_farm_1934_jpg.rf.f888671c483d678098f035f674fd2fc5.jpg",
+    "width": 1024,
+    "height": 473
+  },
+  "metadata": {
+    "village_group": "private-cocsegmentation-villages-th12_farm_1934_jpg",
+    "source": "cocsegmentation-villages",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "workshop",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 34,
+      "class_name": "blacksmith",
+      "x1": 396.33,
+      "y1": 116.27,
+      "x2": 1024,
+      "y2": 369.04,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    },
+    {
+      "class_id": 32,
+      "class_name": "workshop",
+      "x1": 119.71,
+      "y1": 61.27,
+      "x2": 361.55,
+      "y2": 197.56,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "updated": "2026-11-20",
+  "purpose": "Collecte privée murs + villages Mode photo — sans train",
+  "publish_images": false,
+  "train_now": false,
+  "cuda_upgrade": false,
+  "merge_main": false,
+  "active_detector": "building-detector-v5-th1018-ft1-infer800",
+  "actions": [
+    "stage_private_visual_candidates --from-wall-imports --max-per-source 120 --from-priority-imports --max-per-class 80",
+    "shortlist_pretrain_annotation --prefer-mode-photo --per-class 8",
+    "assist_fill_village_sessions foci=wall,tornado-trap,giga-bomb,crafted-defense per-class=6 exhaustive=false",
+    "mine_tesla_hard_negatives on p0-mode-photo",
+    "inventory_private_collection"
+  ],
+  "wall_sessions_before": 218,
+  "wall_sessions_after": 458,
+  "p0_mode_photo_before": 11,
+  "p0_mode_photo_after": 21,
+  "p0_tesla_hardneg": 3,
+  "wall_tiles_not_imported": true,
+  "wall_tiles_strict_not_imported": true,
+  "detector_import": false,
+  "notes": [
+    "Images privées gitignorées — ne pas publier.",
+    "Assist ACTIVE avec exhaustive=false uniquement.",
+    "Tuiles mur / wall-only poison non importées dans dataset/detector.",
+    "Annotation humaine toujours requise pour exhaustive Mode photo."
+  ]
+}

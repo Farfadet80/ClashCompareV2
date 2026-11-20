@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "base-finder-th18__train__Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg.rf.b1e65c09c430b73e0ad34be6c6c405a6.jpg",
+    "width": 512,
+    "height": 512
+  },
+  "metadata": {
+    "village_group": "private-base-finder-th18-Screenshot_2025-12-15-20-36-01-10_b864ea0b534de5941fd13c5c04397e2b_jpg",
+    "source": "base-finder-th18",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "crafted-defense",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 41,
+      "class_name": "crafted-defense",
+      "x1": 167.02,
+      "y1": 125.89,
+      "x2": 497.37,
+      "y2": 383.24,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}

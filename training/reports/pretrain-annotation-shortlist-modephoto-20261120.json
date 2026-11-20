@@ -1,0 +1,1257 @@
+{
+  "updated": "2026-11-20",
+  "purpose": "File Mode photo assist (exhaustive=false)",
+  "prefer_mode_photo": true,
+  "per_class": 8,
+  "annotator": "http://127.0.0.1:8765/training/annotator/",
+  "shortlist": {
+    "wall": [
+      {
+        "score": 645.35,
+        "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_0_png.rf.62bbd05eb5eb0c4e505b369b4421cacf.session.json",
+        "focus": "wall",
+        "focus_accepted": 325,
+        "focus_boxes": 325,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.07,
+        "n_classes": 1,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "clashia-detectwall-v7",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 645.35,
+        "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_0_png.rf.8b70fe43032995d14310335c9ccda4a2.session.json",
+        "focus": "wall",
+        "focus_accepted": 325,
+        "focus_boxes": 325,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.07,
+        "n_classes": 1,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "clashia-detectwall-v7",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 641.462,
+        "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_27_png.rf.15b196c6d59647735e52eece43438a97.session.json",
+        "focus": "wall",
+        "focus_accepted": 323,
+        "focus_boxes": 323,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0924,
+        "n_classes": 1,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "clashia-detectwall-v7",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 641.462,
+        "path": "training/inbox/private/wall/clashia-detectwall-v7__train__train_wall_27_png.rf.a84424ae6547241da8260ac98f4d4b02.session.json",
+        "focus": "wall",
+        "focus_accepted": 323,
+        "focus_boxes": 323,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0924,
+        "n_classes": 1,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "clashia-detectwall-v7",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 627.158,
+        "path": "training/inbox/private/wall/kiet-walls-v6__train__train44-wall17-1-_png.rf.8c73439a861b07ee59a647676c4e0ae7.session.json",
+        "focus": "wall",
+        "focus_accepted": 0,
+        "focus_boxes": 324,
+        "pending": 324,
+        "rejected": 0,
+        "coverage": 0.0716,
+        "n_classes": 1,
+        "wh": [
+          704,
+          704
+        ],
+        "source": "kiet-walls-v6",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 627.158,
+        "path": "training/inbox/private/wall/kiet-walls-v6__train__train44-wall17-1-_png.rf.bb0bc198dc5eb92405f9d90e440b6e36.session.json",
+        "focus": "wall",
+        "focus_accepted": 0,
+        "focus_boxes": 324,
+        "pending": 324,
+        "rejected": 0,
+        "coverage": 0.0716,
+        "n_classes": 1,
+        "wh": [
+          704,
+          704
+        ],
+        "source": "kiet-walls-v6",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 627.158,
+        "path": "training/inbox/private/wall/kiet-walls-v6__train__train44-wall17-1-_png.rf.d7988cb44c2e8ffd23b57e7ff472867f.session.json",
+        "focus": "wall",
+        "focus_accepted": 0,
+        "focus_boxes": 324,
+        "pending": 324,
+        "rejected": 0,
+        "coverage": 0.0716,
+        "n_classes": 1,
+        "wh": [
+          704,
+          704
+        ],
+        "source": "kiet-walls-v6",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 597.908,
+        "path": "training/inbox/private/wall/kiet-walls-v6__train__train42-wall15-2-_png.rf.0ebfb1b166914c3cd6ef39efc775a8de.session.json",
+        "focus": "wall",
+        "focus_accepted": 0,
+        "focus_boxes": 309,
+        "pending": 309,
+        "rejected": 0,
+        "coverage": 0.0717,
+        "n_classes": 1,
+        "wh": [
+          704,
+          704
+        ],
+        "source": "kiet-walls-v6",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      }
+    ],
+    "tornado-trap": [
+      {
+        "score": 11.988,
+        "path": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_farm_1477_jpg.rf.be886483a58df776c4df79e277247143.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.1976,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.988,
+        "path": "training/inbox/private/tornado-trap/coc-all-traps__train__th15_farm_1477_jpg.rf.be886483a58df776c4df79e277247143.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.1976,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.95,
+        "path": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th14_defence_1543_jpg.rf.10f8cb6e523b3488684ff078b7832b2e.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.1899,
+        "n_classes": 4,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.95,
+        "path": "training/inbox/private/tornado-trap/coc-all-traps__train__th14_defence_1543_jpg.rf.10f8cb6e523b3488684ff078b7832b2e.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.1899,
+        "n_classes": 4,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.885,
+        "path": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th15_war_1474_jpg.rf.a995d2c075ab1d24e1171be70412d028.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.177,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.885,
+        "path": "training/inbox/private/tornado-trap/coc-all-traps__train__th15_war_1474_jpg.rf.a995d2c075ab1d24e1171be70412d028.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.177,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.84,
+        "path": "training/inbox/public-reference/tornado-trap/coc-all-traps__train__th12_farm_1931_jpg.rf.e0040ffaf3053dd6b3531f57e62f79f3.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.168,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 11.84,
+        "path": "training/inbox/private/tornado-trap/coc-all-traps__train__th12_farm_1931_jpg.rf.e0040ffaf3053dd6b3531f57e62f79f3.session.json",
+        "focus": "tornado-trap",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.168,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      }
+    ],
+    "giga-bomb": [
+      {
+        "score": 5.006,
+        "path": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0129_jpg.rf.b5a47918e11e3592bac83afdad9396ac.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0012,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.006,
+        "path": "training/inbox/private/giga-bomb/glenn-th18-gigabomb__train__IMG_0129_jpg.rf.b5a47918e11e3592bac83afdad9396ac.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0012,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.005,
+        "path": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__test__IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0009,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.005,
+        "path": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0126_jpg.rf.0f4fdffd205aee7b4cba0292371b7977.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0011,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.005,
+        "path": "training/inbox/private/giga-bomb/glenn-th18-gigabomb__test__IMG_0134_jpg.rf.65b6b34709ba5337fc2510d523ef1312.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0009,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.005,
+        "path": "training/inbox/private/giga-bomb/glenn-th18-gigabomb__train__IMG_0126_jpg.rf.0f4fdffd205aee7b4cba0292371b7977.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0011,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.004,
+        "path": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__test__IMG_0125_jpg.rf.54f76224815738831aeb53ac29997211.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0008,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 5.004,
+        "path": "training/inbox/public-reference/giga-bomb/glenn-th18-gigabomb__train__IMG_0111_jpg.rf.7906a341e9ea444d7686c023cf7047bc.session.json",
+        "focus": "giga-bomb",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0008,
+        "n_classes": 2,
+        "wh": [
+          640,
+          640
+        ],
+        "source": "glenn-th18-gigabomb",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      }
+    ],
+    "hero-hall": [
+      {
+        "score": 10.091,
+        "path": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843442788_jpg.rf.3843aebb0463a0235c4bcb966ac8aa2f.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0182,
+        "n_classes": 1,
+        "wh": [
+          2048,
+          945
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.091,
+        "path": "training/inbox/private/hero-hall/nothing-clash-of-clans__train__resized-1741843442788_jpg.rf.3843aebb0463a0235c4bcb966ac8aa2f.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0182,
+        "n_classes": 1,
+        "wh": [
+          2048,
+          945
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.066,
+        "path": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843385465_jpg.rf.1fbc02c14324a5d2864dbd1717ba2c3d.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0132,
+        "n_classes": 1,
+        "wh": [
+          2048,
+          945
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.066,
+        "path": "training/inbox/private/hero-hall/nothing-clash-of-clans__train__resized-1741843385465_jpg.rf.1fbc02c14324a5d2864dbd1717ba2c3d.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0132,
+        "n_classes": 1,
+        "wh": [
+          2048,
+          945
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.062,
+        "path": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-1741843316371_jpg.rf.2cf64013c7f9581111797efcc1ede98d.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0123,
+        "n_classes": 1,
+        "wh": [
+          2048,
+          945
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.062,
+        "path": "training/inbox/private/hero-hall/nothing-clash-of-clans__train__resized-1741843316371_jpg.rf.2cf64013c7f9581111797efcc1ede98d.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0123,
+        "n_classes": 1,
+        "wh": [
+          2048,
+          945
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.047,
+        "path": "training/inbox/public-reference/hero-hall/nothing-clash-of-clans__train__resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg.rf.922d27cd438bc95b4fbb9407614488e2.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0094,
+        "n_classes": 1,
+        "wh": [
+          1792,
+          828
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.047,
+        "path": "training/inbox/private/hero-hall/nothing-clash-of-clans__train__resized-BC4C7A98-05A7-4D82-9E18-4EA717F9DABC_jpg.rf.922d27cd438bc95b4fbb9407614488e2.session.json",
+        "focus": "hero-hall",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0094,
+        "n_classes": 1,
+        "wh": [
+          1792,
+          828
+        ],
+        "source": "nothing-clash-of-clans",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      }
+    ],
+    "crafted-defense": [
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-10_jpg.rf.9ba015ce3474a628bd04c2f7e1fba6bb.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.0018,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-13_jpg.rf.14bf91fd042a3ad55b3fde215c5e76a6.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.2401,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-2_jpg.rf.83447b3233d5f81bd42c9eadb3a9a232.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.1874,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-3_jpg.rf.82bcafd62847d5ae573cb333b0407f24.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.218,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-4_jpg.rf.16cee22765052704ba292c1360361204.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.2446,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-5_jpg.rf.73ef9a0acade92f2d16ea3c82881a0a3.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.1773,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-6_jpg.rf.4e4e6186979491ad0b3eae12df5a1f0f.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.2621,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 0.5,
+        "path": "training/inbox/public-reference/crafted-defense/base-finder-th18__train__18-7_jpg.rf.587dbc866bdb4e8108a13e59aa77d507.session.json",
+        "focus": "crafted-defense",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.2669,
+        "n_classes": 1,
+        "wh": [
+          512,
+          512
+        ],
+        "source": "base-finder-th18",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      }
+    ],
+    "workshop": [
+      {
+        "score": 15.368,
+        "path": "training/inbox/public-reference/workshop/coc-all-traps__test__th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.session.json",
+        "focus": "workshop",
+        "focus_accepted": 2,
+        "focus_boxes": 2,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4736,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 15.368,
+        "path": "training/inbox/private/workshop/coc-all-traps__test__th13_defence_1642_jpg.rf.dbc04e8d0e3c9f138da785d8f4795285.session.json",
+        "focus": "workshop",
+        "focus_accepted": 2,
+        "focus_boxes": 2,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4736,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 13.492,
+        "path": "training/inbox/public-reference/workshop/coc-all-traps__train__th14_war_1547_jpg.rf.d680cce7ef42fb655a3c24a0ec9cea60.session.json",
+        "focus": "workshop",
+        "focus_accepted": 2,
+        "focus_boxes": 2,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4983,
+        "n_classes": 2,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 13.492,
+        "path": "training/inbox/private/workshop/coc-all-traps__train__th14_war_1547_jpg.rf.d680cce7ef42fb655a3c24a0ec9cea60.session.json",
+        "focus": "workshop",
+        "focus_accepted": 2,
+        "focus_boxes": 2,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4983,
+        "n_classes": 2,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 13.362,
+        "path": "training/inbox/public-reference/workshop/coc-all-traps__val__th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.session.json",
+        "focus": "workshop",
+        "focus_accepted": 2,
+        "focus_boxes": 2,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4724,
+        "n_classes": 2,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 13.362,
+        "path": "training/inbox/private/workshop/coc-all-traps__val__th12_war_1928_jpg.rf.581029e8eb57a8f47b3364388f669ebd.session.json",
+        "focus": "workshop",
+        "focus_accepted": 2,
+        "focus_boxes": 2,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4724,
+        "n_classes": 2,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 13.102,
+        "path": "training/inbox/public-reference/workshop/coc-all-traps__train__th16_defence_1856_jpg.rf.7efd93222ba047d657d52d6533057d67.session.json",
+        "focus": "workshop",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4203,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 13.102,
+        "path": "training/inbox/private/workshop/coc-all-traps__train__th16_defence_1856_jpg.rf.7efd93222ba047d657d52d6533057d67.session.json",
+        "focus": "workshop",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4203,
+        "n_classes": 3,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      }
+    ],
+    "pet-house": [
+      {
+        "score": 11.546,
+        "path": "training/inbox/public-reference/pet-house/coc-all-traps__test__th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.3093,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 11.546,
+        "path": "training/inbox/private/pet-house/coc-all-traps__test__th15_war_1471_jpg.rf.9e564a080a695d21e2a120bb0c2366fc.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.3093,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 11.015,
+        "path": "training/inbox/public-reference/pet-house/coc-all-traps__train__th15_war_1475_jpg.rf.3485cf835f079eefb92e41c72ee17894.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.203,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 11.015,
+        "path": "training/inbox/private/pet-house/coc-all-traps__train__th15_war_1475_jpg.rf.3485cf835f079eefb92e41c72ee17894.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.203,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 10.57,
+        "path": "training/inbox/public-reference/pet-house/coc-all-traps__val__th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.314,
+        "n_classes": 2,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 10.57,
+        "path": "training/inbox/private/pet-house/coc-all-traps__val__th14_defence_1544_jpg.rf.c8273bc5ac72306d482e597dd856c37f.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.314,
+        "n_classes": 2,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 9.123,
+        "path": "training/inbox/public-reference/pet-house/cocsegmentation-villages__train__th16_defence_1856_jpg.rf.b95b1ee533152071edd8ec4ecc3a5416.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4247,
+        "n_classes": 3,
+        "wh": [
+          1024,
+          473
+        ],
+        "source": "cocsegmentation-villages",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      },
+      {
+        "score": 9.123,
+        "path": "training/inbox/private/pet-house/cocsegmentation-villages__train__th16_defence_1856_jpg.rf.b95b1ee533152071edd8ec4ecc3a5416.session.json",
+        "focus": "pet-house",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4247,
+        "n_classes": 3,
+        "wh": [
+          1024,
+          473
+        ],
+        "source": "cocsegmentation-villages",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": true
+      }
+    ],
+    "blacksmith": [
+      {
+        "score": 12.183,
+        "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4367,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.183,
+        "path": "training/inbox/private/blacksmith/coc-all-traps__val__th8_defence_1897_jpg.rf.a2983105644c7ac433c07d936d3a472d.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4367,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.156,
+        "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th8_war_1986_jpg.rf.5d9e39525bac9b56bafc851f01469eaa.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4313,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.156,
+        "path": "training/inbox/private/blacksmith/coc-all-traps__train__th8_war_1986_jpg.rf.5d9e39525bac9b56bafc851f01469eaa.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4313,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.139,
+        "path": "training/inbox/public-reference/blacksmith/coc-all-traps__train__th10_war_1990_jpg.rf.24ed0a268bd4f63e78b8f0559beba23f.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4278,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.139,
+        "path": "training/inbox/private/blacksmith/coc-all-traps__train__th10_war_1990_jpg.rf.24ed0a268bd4f63e78b8f0559beba23f.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4278,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.085,
+        "path": "training/inbox/public-reference/blacksmith/coc-all-traps__val__th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4171,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": false,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      },
+      {
+        "score": 12.085,
+        "path": "training/inbox/private/blacksmith/coc-all-traps__val__th9_defence_1666_jpg.rf.2fdccf3a4a716f6a65a928aba5112404.session.json",
+        "focus": "blacksmith",
+        "focus_accepted": 1,
+        "focus_boxes": 1,
+        "pending": 0,
+        "rejected": 0,
+        "coverage": 0.4171,
+        "n_classes": 1,
+        "wh": [
+          2532,
+          1170
+        ],
+        "source": "coc-all-traps",
+        "private": true,
+        "sprite_like": false,
+        "mode_photo_candidate": false
+      }
+    ]
+  },
+  "counts": {
+    "wall": 8,
+    "tornado-trap": 8,
+    "giga-bomb": 8,
+    "hero-hall": 8,
+    "crafted-defense": 8,
+    "workshop": 8,
+    "pet-house": 8,
+    "blacksmith": 8
+  },
+  "notes": [
+    "Villages mur-only (peters): utiles classifieur niveaux, dangereux detector multi-classe.",
+    "Classes 50-53 ignorees.",
+    "Apres exhaustive: import_annotation_session.py puis audit_split_integrity.",
+    "Ne jamais importer wall-only poison / tiles poison sans revue."
+  ]
+}

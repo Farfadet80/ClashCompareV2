@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "image": {
+    "name": "base-finder-th18__train__th18_troll_8_jpg.rf.2a7ab5a7b78488a8b3a78046132fa3c9.jpg",
+    "width": 512,
+    "height": 512
+  },
+  "metadata": {
+    "village_group": "private-base-finder-th18-th18_troll_8_jpg",
+    "source": "base-finder-th18",
+    "license": "CC BY 4.0",
+    "exhaustive": false,
+    "draft": true,
+    "class_focus": "crafted-defense",
+    "private": true,
+    "scope": "TH10-18"
+  },
+  "expected_counts": null,
+  "boxes": [
+    {
+      "class_id": 41,
+      "class_name": "crafted-defense",
+      "x1": 85.47,
+      "y1": 50.52,
+      "x2": 279.9,
+      "y2": 163.3,
+      "status": "pending",
+      "origin": "private-priority-import-yolo"
+    }
+  ]
+}
