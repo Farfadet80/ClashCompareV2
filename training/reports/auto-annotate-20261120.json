@@ -1,0 +1,151 @@
+{
+  "updated": "2026-11-20",
+  "purpose": "Auto-annotator Mode photo ACTIVE → file revue (exhaustive=false)",
+  "train_now": false,
+  "publish_images": false,
+  "active_release": "building-detector-v5-th1018-ft1-infer800",
+  "model": "D:/Clashcompare/ClashCompareV2-main/models/building-detector.pt",
+  "input": "D:/Clashcompare/ClashCompareV2-main/training/inbox/private/p0-mode-photo",
+  "output": "training/inbox/private/auto-annotate",
+  "device": "0",
+  "imgsz": 800,
+  "tta": true,
+  "conf": 0.2,
+  "auto_accept_conf": 0.5,
+  "wall_policy": "always_pending",
+  "images_seen": 5,
+  "annotated": 5,
+  "skipped_existing": 0,
+  "mean_village_confidence": 0.7506,
+  "quality_flag_counts": {
+    "walls_missing_suspect": 5
+  },
+  "totals": {
+    "boxes": 230,
+    "accepted": 176,
+    "pending": 54,
+    "walls": 0
+  },
+  "blocked": [
+    "exhaustive=true sans revue humaine",
+    "import detector wall-tiles / mur-only poison",
+    "fine-tune sans OK Jimmy"
+  ],
+  "rows": [
+    {
+      "ok": true,
+      "session": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-10_jpg_rf_-ccaa7933f5.session.json",
+      "image": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-10_jpg_rf_-ccaa7933f5.jpg",
+      "overlay": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-10_jpg_rf_-ccaa7933f5.review.jpg",
+      "village_confidence": 0.6611,
+      "quality_flags": [
+        "walls_missing_suspect"
+      ],
+      "boxes": 52,
+      "accepted": 28,
+      "pending": 24,
+      "wall_count": 0,
+      "n_classes": 15,
+      "skipped_th19": 0,
+      "skipped_area": 0,
+      "skipped_wall_low": 0,
+      "wh": [
+        512,
+        512
+      ],
+      "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\p0-mode-photo\\crafted-defense__base-finder-th18__train__18-10_jpg_rf_9ba015-de2f99d65f.jpg"
+    },
+    {
+      "ok": true,
+      "session": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-13_jpg_rf_-8191e081fc.session.json",
+      "image": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-13_jpg_rf_-8191e081fc.jpg",
+      "overlay": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-13_jpg_rf_-8191e081fc.review.jpg",
+      "village_confidence": 0.7641,
+      "quality_flags": [
+        "walls_missing_suspect"
+      ],
+      "boxes": 43,
+      "accepted": 34,
+      "pending": 9,
+      "wall_count": 0,
+      "n_classes": 17,
+      "skipped_th19": 0,
+      "skipped_area": 0,
+      "skipped_wall_low": 0,
+      "wh": [
+        512,
+        512
+      ],
+      "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\p0-mode-photo\\crafted-defense__base-finder-th18__train__18-13_jpg_rf_14bf91-37bb6efa7f.jpg"
+    },
+    {
+      "ok": true,
+      "session": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-2_jpg_rf_8-41e809f169.session.json",
+      "image": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-2_jpg_rf_8-41e809f169.jpg",
+      "overlay": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-2_jpg_rf_8-41e809f169.review.jpg",
+      "village_confidence": 0.7989,
+      "quality_flags": [
+        "walls_missing_suspect"
+      ],
+      "boxes": 38,
+      "accepted": 33,
+      "pending": 5,
+      "wall_count": 0,
+      "n_classes": 17,
+      "skipped_th19": 0,
+      "skipped_area": 0,
+      "skipped_wall_low": 0,
+      "wh": [
+        512,
+        512
+      ],
+      "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\p0-mode-photo\\crafted-defense__base-finder-th18__train__18-2_jpg_rf_83447b3-5c326e23de.jpg"
+    },
+    {
+      "ok": true,
+      "session": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-3_jpg_rf_8-e1d485a209.session.json",
+      "image": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-3_jpg_rf_8-e1d485a209.jpg",
+      "overlay": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-3_jpg_rf_8-e1d485a209.review.jpg",
+      "village_confidence": 0.7718,
+      "quality_flags": [
+        "walls_missing_suspect"
+      ],
+      "boxes": 46,
+      "accepted": 39,
+      "pending": 7,
+      "wall_count": 0,
+      "n_classes": 18,
+      "skipped_th19": 0,
+      "skipped_area": 0,
+      "skipped_wall_low": 0,
+      "wh": [
+        512,
+        512
+      ],
+      "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\p0-mode-photo\\crafted-defense__base-finder-th18__train__18-3_jpg_rf_82bcafd-bd698a9ddf.jpg"
+    },
+    {
+      "ok": true,
+      "session": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-4_jpg_rf_1-89c26c06f5.session.json",
+      "image": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-4_jpg_rf_1-89c26c06f5.jpg",
+      "overlay": "training/inbox/private/auto-annotate/auto__crafted-defense__base-finder-th18__train__18-4_jpg_rf_1-89c26c06f5.review.jpg",
+      "village_confidence": 0.7573,
+      "quality_flags": [
+        "walls_missing_suspect"
+      ],
+      "boxes": 51,
+      "accepted": 42,
+      "pending": 9,
+      "wall_count": 0,
+      "n_classes": 17,
+      "skipped_th19": 0,
+      "skipped_area": 0,
+      "skipped_wall_low": 0,
+      "wh": [
+        512,
+        512
+      ],
+      "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\p0-mode-photo\\crafted-defense__base-finder-th18__train__18-4_jpg_rf_16cee22-c513921049.jpg"
+    }
+  ]
+}

@@ -16,7 +16,8 @@ training/inbox/private/
   README.md                          # ce fichier (versionné)
   drop/                              # déposer ici les captures brutes
   <class-id>/                        # staging annotateur (wall, workshop, …)
-  p0-mode-photo/                     # P0 assist V5 (exhaustive=false) wall/tornado/giga/crafted
+  p0-mode-photo/                     # P0 assist ACTIVE (exhaustive=false) wall/tornado/giga/crafted
+  auto-annotate/                     # Auto-annotator Mode photo (ACTIVE → sessions à revoir)
   p0-tesla-hardneg/                  # FP hidden-tesla documentés (rejected)
   p0-wall-tiles/                     # tuiles mur Mode photo (revue visuelle stricte)
   reference-only/th19-visual/        # blog / guides — hors train YOLO
@@ -81,6 +82,22 @@ Shortlist Mode photo (pénalise sprites mur) + assist ACTIVE (`exhaustive=false`
 
 **Ne pas** importer wall-only / tiles poison dans `dataset/detector` sans revue.
 Le staging skip déjà les SHA déjà présents dans les provenance privées.
+
+## Auto-annotator (sans Jimmy)
+
+Dépose des captures Mode photo dans `drop/`, puis :
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\auto_annotate_villages.py `
+  --input training\inbox\private\drop `
+  --output training\inbox\private\auto-annotate `
+  --max-images 20
+```
+
+- Produit `*.session.json` + overlay `*.review.jpg` (`exhaustive=false`).
+- **Murs toujours pending** (jamais auto-acceptés).
+- Revue : `http://127.0.0.1:8765/training/annotator/` → charger image + session JSON.
+- `promote_p0_assisted_sessions.py --mark-exhaustive` **interdit** sans `--i-reviewed`.
 
 Référence visuelle TH19 (hors train, fin de roadmap) :
 

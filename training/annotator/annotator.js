@@ -91,7 +91,14 @@
     state.boxes.forEach((box, index) => {
       const selected = index === state.selected;
       const pending = box.status !== "accepted";
-      ctx.strokeStyle = selected ? "#ffffff" : pending ? "#ffbd59" : "#63da78";
+      const wallDoubt = box.qualityFlag === "wall_douteux";
+      ctx.strokeStyle = selected
+        ? "#ffffff"
+        : wallDoubt
+          ? "#ff7a59"
+          : pending
+            ? "#ffbd59"
+            : "#63da78";
       ctx.fillStyle = ctx.strokeStyle;
       const x = box.x1 * state.zoom;
       const y = box.y1 * state.zoom;
@@ -174,10 +181,15 @@
 
   function applySession(payload) {
     const metadata = payload.metadata || {};
+    const auto = metadata.auto_annotate === true || metadata.p0_assist === true;
     $("#village-group").value = metadata.village_group || "";
     $("#source").value = metadata.source || "";
     $("#license").value = metadata.license || "";
-    $("#exhaustive").checked = metadata.exhaustive === true;
+    // Auto / assist : jamais cocher exhaustive sans revue humaine
+    $("#exhaustive").checked = !auto && metadata.exhaustive === true;
+    if (auto) {
+      $("#exhaustive").checked = false;
+    }
     state.expected = payload.expected_counts || {};
     state.boxes = (payload.boxes || []).map((box) => ({
       classId: Number.isInteger(box.class_id) ? box.class_id : classIndex(box.class_name),
@@ -186,10 +198,23 @@
       x2: Number(box.x2),
       y2: Number(box.y2),
       status: box.status === "accepted" ? "accepted" : "pending",
+      confidence: Number.isFinite(Number(box.confidence)) ? Number(box.confidence) : null,
+      origin: box.origin || null,
+      qualityFlag: box.quality_flag || null,
+      reviewNote: box.review_note || null,
     })).filter((box) => box.classId >= 0 && [box.x1, box.y1, box.x2, box.y2].every(Number.isFinite));
     state.selected = -1;
     draw();
-    setStatus(`${state.boxes.length} boîte(s) chargée(s). Vérifie chaque suggestion.`, true);
+    const pending = state.boxes.filter((box) => box.status !== "accepted").length;
+    const score = metadata.village_confidence;
+    const flags = Array.isArray(metadata.quality_flags) ? metadata.quality_flags.join(", ") : "";
+    const scoreText = Number.isFinite(Number(score)) ? ` · score village ${Number(score).toFixed(2)}` : "";
+    const flagText = flags ? ` · flags: ${flags}` : "";
+    const autoText = auto ? " Pré-labels auto — revue obligatoire." : "";
+    setStatus(
+      `${state.boxes.length} boîte(s) (${pending} en attente)${scoreText}${flagText}.${autoText}`,
+      true
+    );
   }
 
   async function loadImage(file) {
