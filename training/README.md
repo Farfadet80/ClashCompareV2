@@ -126,12 +126,16 @@ une mesure indépendante de la V3, car celle-ci l'avait déjà vu pendant sa val
 Pré-labels ACTIVE (`exhaustive=false`, murs toujours pending) :
 
 ```powershell
+.\.venv\Scripts\python.exe training\scripts\index_fandom_wall_levels.py
 .\.venv\Scripts\python.exe training\scripts\auto_annotate_villages.py `
   --input training\inbox\private\drop `
   --output training\inbox\private\auto-annotate
 ```
 
 Sortie : `*.session.json` + overlays dans `inbox/private/auto-annotate/` (images hors git).
+Si l’index Fandom est présent (`reference-only/wall-fandom/`), les sessions
+reçoivent `wall_visual_refs` + un bandeau Wall1..N sur l’overlay (référence
+visuelle only, hors train).
 Ne remplace pas une revue mur : le détecteur reste faible sur les murs.
 
 ## Validation humaine locale

@@ -1,15 +1,17 @@
 {
   "sha256": "845719cceb958c8d1c5b60ccf1b382ed2dc8d3a6599d5f3ab4f1453fe466062f",
-  "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\drop\\auto-smoke-wall\\wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.jpg",
+  "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\drop\\fandom-smoke\\wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.jpg",
   "publish": false,
   "usage": "private_auto_annotate_queue",
   "model": "building-detector-v5-th1018-ft1-infer800",
   "imgsz": 800,
   "tta": true,
-  "conf": 0.18,
+  "conf": 0.2,
   "auto_accept_conf": 0.5,
-  "village_confidence": 0.5286,
+  "village_confidence": 0.5351,
   "quality_flags": [
-    "walls_low_mean_conf"
-  ]
+    "walls_low_mean_conf",
+    "consult_wall_fandom_refs"
+  ],
+  "wall_fandom_index": "training/inbox/private/reference-only/wall-fandom/index.json"
 }

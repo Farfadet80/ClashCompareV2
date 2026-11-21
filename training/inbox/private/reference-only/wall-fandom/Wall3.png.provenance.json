@@ -1,0 +1,20 @@
+{
+  "source_page": "https://clashofclans.fandom.com/wiki/Wall/Home_Village",
+  "source_file": "File:Wall3.png",
+  "source_url": "https://static.wikia.nocookie.net/clashofclans/images/f/f5/Wall3.png/revision/latest?cb=20171205125432",
+  "level": 3,
+  "license": "Supercell copyright — Fandom fair-use display; reference-only local copy",
+  "usage": "reference_only_visual",
+  "publish": false,
+  "train": false,
+  "detector_import": false,
+  "sha256": "980c2ec3ae1b815a77f727cf327cf5c57b13546101dafc1eb281cb9024e7a7b6",
+  "bytes": 2928,
+  "width": 127,
+  "height": 121,
+  "notes": [
+    "Ne pas republier / ne pas committer l'image.",
+    "Référence visuelle pour revue auto-annotator / annotator humain.",
+    "Hors dataset/detector."
+  ]
+}
