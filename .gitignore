@@ -34,6 +34,7 @@ training/inbox/private/**
 !training/inbox/private/**/.gitkeep
 !training/inbox/private/**/*.session.json
 !training/inbox/private/**/*.provenance.json
+!training/inbox/private/reference-only/wall-fandom/index.json
 training/inbox/private/**/*.jpg
 training/inbox/private/**/*.jpeg
 training/inbox/private/**/*.png

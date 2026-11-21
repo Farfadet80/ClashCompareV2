@@ -63,6 +63,9 @@ WALL_ALWAYS_PENDING = True
 WALL_MIN_CONF_KEEP = 0.18
 WALL_DOUBT_CONF = 0.35
 WALL_MAX_COUNT_SOFT = 350
+DEFAULT_WALL_FANDOM_INDEX = (
+    TRAINING / "inbox" / "private" / "reference-only" / "wall-fandom" / "index.json"
+)
 
 
 def sha256_file(path: Path) -> str:
@@ -93,6 +96,88 @@ def load_active_meta() -> dict:
     if not path.exists():
         return {"release": "unknown", "imgsz": 800, "tta": True}
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_wall_fandom_index(path: Path | None) -> dict | None:
+    """Charge l'index Fandom murs (référence visuelle locale)."""
+    if path is None:
+        path = DEFAULT_WALL_FANDOM_INDEX
+    if not path.is_absolute():
+        path = ROOT / path
+    if not path.is_file():
+        return None
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    levels = []
+    for row in payload.get("levels") or []:
+        rel = row.get("path")
+        if not rel:
+            continue
+        local = ROOT / rel
+        if not local.is_file():
+            continue
+        levels.append(
+            {
+                "level": int(row["level"]),
+                "path": str(Path(rel).as_posix()),
+                "file": row.get("file") or local.name,
+                "th19_adjacent": bool(row.get("th19_adjacent") or int(row["level"]) >= 19),
+            }
+        )
+    if not levels:
+        return None
+    return {
+        "index": str(path.relative_to(ROOT)).replace("\\", "/"),
+        "source_page": payload.get("source_page"),
+        "levels": sorted(levels, key=lambda item: item["level"]),
+        "level_count": len(levels),
+    }
+
+
+def build_wall_ref_strip(wall_index: dict, thumb: int = 64) -> np.ndarray | None:
+    """Bandeau horizontal Wall1..N pour collage sous l'overlay de revue."""
+    tiles: list[np.ndarray] = []
+    for row in wall_index.get("levels") or []:
+        # Focus revue TH10–18 : on montre 1–18 en priorité, 19–20 en petit rappel
+        level = int(row["level"])
+        if level > 20:
+            continue
+        path = ROOT / row["path"]
+        if not path.is_file():
+            continue
+        img = cv2.imread(str(path), cv2.IMREAD_UNCHANGED)
+        if img is None:
+            continue
+        if img.ndim == 2:
+            img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+        elif img.shape[2] == 4:
+            alpha = img[:, :, 3:4] / 255.0
+            rgb = img[:, :, :3]
+            img = (rgb * alpha + 255 * (1.0 - alpha)).astype(np.uint8)
+        h, w = img.shape[:2]
+        scale = thumb / max(h, w)
+        resized = cv2.resize(
+            img,
+            (max(1, int(w * scale)), max(1, int(h * scale))),
+            interpolation=cv2.INTER_AREA,
+        )
+        canvas = np.full((thumb, thumb, 3), 30, dtype=np.uint8)
+        y0 = (thumb - resized.shape[0]) // 2
+        x0 = (thumb - resized.shape[1]) // 2
+        canvas[y0 : y0 + resized.shape[0], x0 : x0 + resized.shape[1]] = resized
+        cv2.putText(
+            canvas,
+            str(level),
+            (2, thumb - 4),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.35,
+            (220, 220, 220),
+            1,
+            cv2.LINE_AA,
+        )
+        tiles.append(canvas)
+    if not tiles:
+        return None
+    return np.hstack(tiles)
 
 
 def collect_images(input_path: Path) -> list[Path]:
@@ -175,6 +260,7 @@ def annotate_one(
     tta: bool,
     iou_nms: float,
     write_overlay: bool,
+    wall_fandom_index: dict | None = None,
 ) -> dict:
     image = Image.open(image_path).convert("RGB")
     width, height = image.size
@@ -268,6 +354,8 @@ def annotate_one(
             else:
                 box["quality_flag"] = "wall_pending_revue"
             note += " | mur jamais auto-accepté"
+            if wall_fandom_index:
+                note += " | comparer refs Fandom Wall1..N"
         elif conf_v >= auto_accept_conf:
             status = "accepted"
             note += f" | auto-accept>={auto_accept_conf}"
@@ -313,6 +401,29 @@ def annotate_one(
             "Ne pas importer wall-tiles / mur-only poison dans detector.",
         ],
     }
+    if wall_fandom_index:
+        # Réfs 1–18 pour TH10–18 ; 19–20 marquées adjacent (hors focus train actuel)
+        refs = [
+            {
+                "level": row["level"],
+                "path": row["path"],
+                "th19_adjacent": row.get("th19_adjacent", False),
+            }
+            for row in wall_fandom_index["levels"]
+            if int(row["level"]) <= 20
+        ]
+        metadata["wall_visual_refs"] = {
+            "index": wall_fandom_index.get("index"),
+            "source_page": wall_fandom_index.get("source_page"),
+            "levels": refs,
+            "usage": "reference_only_visual",
+        }
+        metadata["notes"].append(
+            "Référence visuelle Fandom Wall/Home_Village branchée (hors train)."
+        )
+        if "walls_missing_suspect" in flags or "walls_low_mean_conf" in flags:
+            flags.append("consult_wall_fandom_refs")
+            metadata["quality_flags"] = flags
     session = {
         "version": 1,
         "image": {"name": dest_img.name, "width": width, "height": height},
@@ -333,6 +444,7 @@ def annotate_one(
         "auto_accept_conf": auto_accept_conf,
         "village_confidence": village_score,
         "quality_flags": flags,
+        "wall_fandom_index": (wall_fandom_index or {}).get("index"),
     }
     dest_prov.write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -359,6 +471,18 @@ def annotate_one(
                 1,
                 cv2.LINE_AA,
             )
+        if wall_fandom_index:
+            strip = build_wall_ref_strip(wall_fandom_index, thumb=48)
+            if strip is not None:
+                # Adapter largeur au canvas
+                if strip.shape[1] != canvas.shape[1]:
+                    scale = canvas.shape[1] / strip.shape[1]
+                    strip = cv2.resize(
+                        strip,
+                        (canvas.shape[1], max(24, int(strip.shape[0] * scale))),
+                        interpolation=cv2.INTER_AREA,
+                    )
+                canvas = np.vstack([canvas, strip])
         cv2.imwrite(str(dest_overlay), canvas)
 
     return {
@@ -413,6 +537,17 @@ def main() -> None:
     parser.add_argument("--max-images", type=int, default=0, help="0 = toutes")
     parser.add_argument("--no-overlay", action="store_true")
     parser.add_argument(
+        "--wall-fandom-index",
+        type=Path,
+        default=DEFAULT_WALL_FANDOM_INDEX,
+        help="Index JSON murs Fandom (réf visuelle). Défaut: reference-only/wall-fandom/index.json",
+    )
+    parser.add_argument(
+        "--no-wall-fandom",
+        action="store_true",
+        help="Désactive l'attache des références Fandom murs",
+    )
+    parser.add_argument(
         "--report",
         type=Path,
         default=None,
@@ -426,6 +561,7 @@ def main() -> None:
     tta = False if args.no_tta else True
     active = load_active_meta()
     class_ids, class_names = load_classes()
+    wall_fandom_index = None if args.no_wall_fandom else load_wall_fandom_index(args.wall_fandom_index)
 
     input_path = args.input if args.input.is_absolute() else (ROOT / args.input)
     out_dir = args.output if args.output.is_absolute() else (ROOT / args.output)
@@ -457,6 +593,7 @@ def main() -> None:
                 tta=tta,
                 iou_nms=args.iou_nms,
                 write_overlay=not args.no_overlay,
+                wall_fandom_index=wall_fandom_index,
             )
         )
 
@@ -482,6 +619,8 @@ def main() -> None:
         "conf": args.conf,
         "auto_accept_conf": args.auto_accept_conf,
         "wall_policy": "always_pending",
+        "wall_fandom_index": (wall_fandom_index or {}).get("index"),
+        "wall_fandom_levels": (wall_fandom_index or {}).get("level_count", 0),
         "images_seen": len(images),
         "annotated": len(ok_rows),
         "skipped_existing": len(skipped),

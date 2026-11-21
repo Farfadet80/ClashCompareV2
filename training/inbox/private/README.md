@@ -21,6 +21,7 @@ training/inbox/private/
   p0-tesla-hardneg/                  # FP hidden-tesla documentés (rejected)
   p0-wall-tiles/                     # tuiles mur Mode photo (revue visuelle stricte)
   reference-only/th19-visual/        # blog / guides — hors train YOLO
+  reference-only/wall-fandom/        # sprites Wall1..N (Fandom) — référence visuelle only
   exports-json/                      # exports village JSON amis (dataIds)
 ```
 
@@ -83,6 +84,15 @@ Shortlist Mode photo (pénalise sprites mur) + assist ACTIVE (`exhaustive=false`
 **Ne pas** importer wall-only / tiles poison dans `dataset/detector` sans revue.
 Le staging skip déjà les SHA déjà présents dans les provenance privées.
 
+## Référence visuelle murs Fandom
+
+```powershell
+.\.venv\Scripts\python.exe training\scripts\index_fandom_wall_levels.py
+```
+
+Écrit `reference-only/wall-fandom/Wall1.png` … `Wall20.png` + `index.json`  
+(**copyright Supercell / Fandom — reference-only, hors train, images hors git**).
+
 ## Auto-annotator (sans Jimmy)
 
 Dépose des captures Mode photo dans `drop/`, puis :
@@ -96,6 +106,7 @@ Dépose des captures Mode photo dans `drop/`, puis :
 
 - Produit `*.session.json` + overlay `*.review.jpg` (`exhaustive=false`).
 - **Murs toujours pending** (jamais auto-acceptés).
+- Si l’index Fandom est présent : attache `wall_visual_refs` + bandeau niveaux sur l’overlay.
 - Revue : `http://127.0.0.1:8765/training/annotator/` → charger image + session JSON.
 - `promote_p0_assisted_sessions.py --mark-exhaustive` **interdit** sans `--i-reviewed`.
 

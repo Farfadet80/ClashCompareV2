@@ -15,16 +15,125 @@
     "scope": "TH10-18",
     "auto_annotate": true,
     "auto_annotate_model": "building-detector-v5-th1018-ft1-infer800",
-    "auto_annotate_on": "2026-11-20",
-    "village_confidence": 0.5286,
+    "auto_annotate_on": "2026-11-21",
+    "village_confidence": 0.5351,
     "quality_flags": [
-      "walls_low_mean_conf"
+      "walls_low_mean_conf",
+      "consult_wall_fandom_refs"
     ],
     "class_focus": "wall",
     "notes": [
       "Pré-labels automatiques — revue humaine obligatoire avant exhaustive.",
-      "Ne pas importer wall-tiles / mur-only poison dans detector."
-    ]
+      "Ne pas importer wall-tiles / mur-only poison dans detector.",
+      "Référence visuelle Fandom Wall/Home_Village branchée (hors train)."
+    ],
+    "wall_visual_refs": {
+      "index": "training/inbox/private/reference-only/wall-fandom/index.json",
+      "source_page": "https://clashofclans.fandom.com/wiki/Wall/Home_Village",
+      "levels": [
+        {
+          "level": 1,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall1.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 2,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall2.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 3,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall3.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 4,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall4.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 5,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall5.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 6,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall6.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 7,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall7.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 8,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall8.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 9,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall9.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 10,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall10.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 11,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall11.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 12,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall12.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 13,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall13.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 14,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall14.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 15,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall15.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 16,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall16.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 17,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall17.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 18,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall18.png",
+          "th19_adjacent": false
+        },
+        {
+          "level": 19,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall19.png",
+          "th19_adjacent": true
+        },
+        {
+          "level": 20,
+          "path": "training/inbox/private/reference-only/wall-fandom/Wall20.png",
+          "th19_adjacent": true
+        }
+      ],
+      "usage": "reference_only_visual"
+    }
   },
   "expected_counts": {},
   "boxes": [
@@ -113,18 +222,6 @@
       "review_note": "auto conf=0.203 | pending revue"
     },
     {
-      "class_id": 13,
-      "class_name": "builders-hut",
-      "x1": 337.61,
-      "y1": 411.48,
-      "x2": 366.63,
-      "y2": 455.63,
-      "confidence": 0.1975,
-      "origin": "auto-annotate-active",
-      "status": "pending",
-      "review_note": "auto conf=0.198 | pending revue"
-    },
-    {
       "class_id": 0,
       "class_name": "town-hall",
       "x1": 447.64,
@@ -185,18 +282,6 @@
       "review_note": "auto conf=0.215 | pending revue"
     },
     {
-      "class_id": 5,
-      "class_name": "wizard-tower",
-      "x1": 338.01,
-      "y1": 354.31,
-      "x2": 367.48,
-      "y2": 397.24,
-      "confidence": 0.1969,
-      "origin": "auto-annotate-active",
-      "status": "pending",
-      "review_note": "auto conf=0.197 | pending revue"
-    },
-    {
       "class_id": 2,
       "class_name": "archer-tower",
       "x1": 338.27,
@@ -243,30 +328,6 @@
       "origin": "auto-annotate-active",
       "status": "pending",
       "review_note": "auto conf=0.244 | pending revue"
-    },
-    {
-      "class_id": 2,
-      "class_name": "archer-tower",
-      "x1": 380.23,
-      "y1": 415.16,
-      "x2": 413.62,
-      "y2": 460.19,
-      "confidence": 0.1947,
-      "origin": "auto-annotate-active",
-      "status": "pending",
-      "review_note": "auto conf=0.195 | pending revue"
-    },
-    {
-      "class_id": 2,
-      "class_name": "archer-tower",
-      "x1": 293.6,
-      "y1": 295.26,
-      "x2": 325.17,
-      "y2": 342.56,
-      "confidence": 0.1891,
-      "origin": "auto-annotate-active",
-      "status": "pending",
-      "review_note": "auto conf=0.189 | pending revue"
     },
     {
       "class_id": 22,
@@ -351,19 +412,7 @@
       "origin": "auto-annotate-active",
       "quality_flag": "wall_douteux",
       "status": "pending",
-      "review_note": "auto conf=0.232 | wall_douteux | mur jamais auto-accepté"
-    },
-    {
-      "class_id": 26,
-      "class_name": "clan-castle",
-      "x1": 502.63,
-      "y1": 238.21,
-      "x2": 529.33,
-      "y2": 277.22,
-      "confidence": 0.1951,
-      "origin": "auto-annotate-active",
-      "status": "pending",
-      "review_note": "auto conf=0.195 | pending revue"
+      "review_note": "auto conf=0.232 | wall_douteux | mur jamais auto-accepté | comparer refs Fandom Wall1..N"
     }
   ]
 }

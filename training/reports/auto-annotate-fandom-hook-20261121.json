@@ -1,0 +1,63 @@
+{
+  "updated": "2026-11-21",
+  "purpose": "Auto-annotator Mode photo ACTIVE → file revue (exhaustive=false)",
+  "train_now": false,
+  "publish_images": false,
+  "active_release": "building-detector-v5-th1018-ft1-infer800",
+  "model": "D:/Clashcompare/ClashCompareV2-main/models/building-detector.pt",
+  "input": "D:/Clashcompare/ClashCompareV2-main/training/inbox/private/drop/fandom-smoke",
+  "output": "training/inbox/private/auto-annotate",
+  "device": "0",
+  "imgsz": 800,
+  "tta": true,
+  "conf": 0.2,
+  "auto_accept_conf": 0.5,
+  "wall_policy": "always_pending",
+  "wall_fandom_index": "training/inbox/private/reference-only/wall-fandom/index.json",
+  "wall_fandom_levels": 20,
+  "images_seen": 1,
+  "annotated": 1,
+  "skipped_existing": 0,
+  "mean_village_confidence": 0.5351,
+  "quality_flag_counts": {
+    "walls_low_mean_conf": 1,
+    "consult_wall_fandom_refs": 1
+  },
+  "totals": {
+    "boxes": 23,
+    "accepted": 8,
+    "pending": 15,
+    "walls": 1
+  },
+  "blocked": [
+    "exhaustive=true sans revue humaine",
+    "import detector wall-tiles / mur-only poison",
+    "fine-tune sans OK Jimmy"
+  ],
+  "rows": [
+    {
+      "ok": true,
+      "session": "training/inbox/private/auto-annotate/auto__wall__clashia-detectwall-v7__train__train_wall_0_png_rf-9d67bd70f1.session.json",
+      "image": "training/inbox/private/auto-annotate/auto__wall__clashia-detectwall-v7__train__train_wall_0_png_rf-9d67bd70f1.jpg",
+      "overlay": "training/inbox/private/auto-annotate/auto__wall__clashia-detectwall-v7__train__train_wall_0_png_rf-9d67bd70f1.review.jpg",
+      "village_confidence": 0.5351,
+      "quality_flags": [
+        "walls_low_mean_conf",
+        "consult_wall_fandom_refs"
+      ],
+      "boxes": 23,
+      "accepted": 8,
+      "pending": 15,
+      "wall_count": 1,
+      "n_classes": 8,
+      "skipped_th19": 0,
+      "skipped_area": 10,
+      "skipped_wall_low": 0,
+      "wh": [
+        640,
+        640
+      ],
+      "source_image": "D:\\Clashcompare\\ClashCompareV2-main\\training\\inbox\\private\\drop\\fandom-smoke\\wall__clashia-detectwall-v7__train__train_wall_0_png_rf_62bbd-ba0ca6a11e.jpg"
+    }
+  ]
+}

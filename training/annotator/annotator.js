@@ -211,8 +211,12 @@
     const scoreText = Number.isFinite(Number(score)) ? ` · score village ${Number(score).toFixed(2)}` : "";
     const flagText = flags ? ` · flags: ${flags}` : "";
     const autoText = auto ? " Pré-labels auto — revue obligatoire." : "";
+    const wallRefs = metadata.wall_visual_refs;
+    const wallText = wallRefs?.levels?.length
+      ? ` · refs murs Fandom: ${wallRefs.levels.length} niveaux (hors train)`
+      : "";
     setStatus(
-      `${state.boxes.length} boîte(s) (${pending} en attente)${scoreText}${flagText}.${autoText}`,
+      `${state.boxes.length} boîte(s) (${pending} en attente)${scoreText}${flagText}${wallText}.${autoText}`,
       true
     );
   }

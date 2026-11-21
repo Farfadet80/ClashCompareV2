@@ -1,0 +1,218 @@
+{
+  "updated": "2026-11-21",
+  "source_page": "https://clashofclans.fandom.com/wiki/Wall/Home_Village",
+  "purpose": "Référence visuelle niveaux de mur (Home Village) — hors train",
+  "publish_images": false,
+  "train_now": false,
+  "detector_import": false,
+  "output": "training/inbox/private/reference-only/wall-fandom",
+  "levels": [
+    {
+      "level": 1,
+      "file": "Wall1.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall1.png",
+      "sha256": "20f404205c80beaf4b715f7b6ad2206ccb20359f1ba63e5efaf15c17cde2c1e3",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/7/74/Wall1.png/revision/latest?cb=20171205125404",
+      "th19_adjacent": false
+    },
+    {
+      "level": 2,
+      "file": "Wall2.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall2.png",
+      "sha256": "2d4e4108c5d1c3687994b23048377d55b30b5bf831e8ac43c2f20210c1134f87",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/9/97/Wall2.png/revision/latest?cb=20171205125418",
+      "th19_adjacent": false
+    },
+    {
+      "level": 3,
+      "file": "Wall3.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall3.png",
+      "sha256": "980c2ec3ae1b815a77f727cf327cf5c57b13546101dafc1eb281cb9024e7a7b6",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/f/f5/Wall3.png/revision/latest?cb=20171205125432",
+      "th19_adjacent": false
+    },
+    {
+      "level": 4,
+      "file": "Wall4.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall4.png",
+      "sha256": "fbc1c534e863f1618aa9504beac0c385fe74b9907544c7635d216231c1c9c52e",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/6/62/Wall4.png/revision/latest?cb=20171205125448",
+      "th19_adjacent": false
+    },
+    {
+      "level": 5,
+      "file": "Wall5.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall5.png",
+      "sha256": "1e41d08c55f128a08bfde8387e15e2a0f7c2847b01db7446aafeee0e0eaf8eb1",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/c/c4/Wall5.png/revision/latest?cb=20171205125503",
+      "th19_adjacent": false
+    },
+    {
+      "level": 6,
+      "file": "Wall6.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall6.png",
+      "sha256": "890407cecc14fcf152faf96f9415e934baa9216eca889264e0a6e9c71640863e",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/c/c7/Wall6.png/revision/latest?cb=20171205125519",
+      "th19_adjacent": false
+    },
+    {
+      "level": 7,
+      "file": "Wall7.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall7.png",
+      "sha256": "c6cc59ad24a06faf8823cb6d6c8bad9946d3cd23908e3baa94d8ac5d6f37486a",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/b/be/Wall7.png/revision/latest?cb=20171205125539",
+      "th19_adjacent": false
+    },
+    {
+      "level": 8,
+      "file": "Wall8.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall8.png",
+      "sha256": "6b50f31a8a811f4b3718088fed21127579ff87efbeedb3711c6f900e25245eb7",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/0/06/Wall8.png/revision/latest?cb=20171205125553",
+      "th19_adjacent": false
+    },
+    {
+      "level": 9,
+      "file": "Wall9.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall9.png",
+      "sha256": "a1a228c08f5340875570923b137d058c48ca208388e3f14be8f130a8d0eb3cfa",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/9/93/Wall9.png/revision/latest?cb=20171205125607",
+      "th19_adjacent": false
+    },
+    {
+      "level": 10,
+      "file": "Wall10.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall10.png",
+      "sha256": "c8be4287273699993f0a42d3ae9b0b6f9fcd88655554fc21c93b64e7c4b85f5d",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/8/8b/Wall10.png/revision/latest?cb=20171205125626",
+      "th19_adjacent": false
+    },
+    {
+      "level": 11,
+      "file": "Wall11.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall11.png",
+      "sha256": "e2f16d0a0eceaa76ced5a10f80c8667f3bea51ca9faca1dd71765059209dd22e",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/8/86/Wall11.png/revision/latest?cb=20171205125639",
+      "th19_adjacent": false
+    },
+    {
+      "level": 12,
+      "file": "Wall12.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall12.png",
+      "sha256": "3130cbac429d21bd45c20ea2333af0f55f06f02344c39a865152e7a51436071b",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/4/41/Wall12.png/revision/latest?cb=20171205125655",
+      "th19_adjacent": false
+    },
+    {
+      "level": 13,
+      "file": "Wall13.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall13.png",
+      "sha256": "80e3f47fa2b7e6985e8afd39e6b360d960d10088c380ad242ca135a35e90e74d",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/2/23/Wall13.png/revision/latest?cb=20180604155743",
+      "th19_adjacent": false
+    },
+    {
+      "level": 14,
+      "file": "Wall14.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall14.png",
+      "sha256": "a8c5f3a998f267697dc33165dabeaae6bef5a2d5a0d80cfe441ab054455d40f0",
+      "width": 127,
+      "height": 121,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/5/53/Wall14.png/revision/latest?cb=20201023201151",
+      "th19_adjacent": false
+    },
+    {
+      "level": 15,
+      "file": "Wall15.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall15.png",
+      "sha256": "0b59651126a1682d20e45cdeef0358076d21fcd70ed780e2ee7ba98e19e4cf8e",
+      "width": 100,
+      "height": 96,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/6/61/Wall15.png/revision/latest?cb=20210413212225",
+      "th19_adjacent": false
+    },
+    {
+      "level": 16,
+      "file": "Wall16.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall16.png",
+      "sha256": "a75a420876b0508ee35de6ecdaa4a88d8acc4f20512a99d6ac2b48b7683037b5",
+      "width": 140,
+      "height": 133,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/8/81/Wall16.png/revision/latest?cb=20221010075457",
+      "th19_adjacent": false
+    },
+    {
+      "level": 17,
+      "file": "Wall17.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall17.png",
+      "sha256": "1d1c9e64f1d6d8dfeb4caf266f52f4e4abba193ae3f622193bc3244821fad5fa",
+      "width": 68,
+      "height": 93,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/6/6c/Wall17.png/revision/latest?cb=20251209003136",
+      "th19_adjacent": false
+    },
+    {
+      "level": 18,
+      "file": "Wall18.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall18.png",
+      "sha256": "9e208777ca9f6d05e5c4ad54b7f83cf84176390c71c1dc2dfc980fc675936e81",
+      "width": 65,
+      "height": 96,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/0/02/Wall18.png/revision/latest?cb=20251211120721",
+      "th19_adjacent": false
+    },
+    {
+      "level": 19,
+      "file": "Wall19.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall19.png",
+      "sha256": "2c4a92feae38f248c81b92a7837b647cd40dab7d5d54d981c0b2a612110160e0",
+      "width": 75,
+      "height": 95,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/4/4d/Wall19.png/revision/latest?cb=20260226043604",
+      "th19_adjacent": true
+    },
+    {
+      "level": 20,
+      "file": "Wall20.png",
+      "path": "training/inbox/private/reference-only/wall-fandom/Wall20.png",
+      "sha256": "b5dfb96f5584b8891ab77f40b3a4183d1b17809023abdb3dc00610d30db53a1f",
+      "width": 150,
+      "height": 230,
+      "source_url": "https://static.wikia.nocookie.net/clashofclans/images/6/6d/Wall20.png/revision/latest?cb=20261115165822",
+      "th19_adjacent": true
+    }
+  ],
+  "level_count": 20,
+  "downloaded": 20,
+  "skipped_existing": 0,
+  "auto_annotate_hook": {
+    "env_or_flag": "--wall-fandom-index",
+    "default_index": "training/inbox/private/reference-only/wall-fandom/index.json"
+  }
+}
